@@ -1,4 +1,4 @@
-package gradingTools.comp533s19.assignment0;
+package comp533.mvc;
 
 import java.beans.PropertyChangeEvent;
 
