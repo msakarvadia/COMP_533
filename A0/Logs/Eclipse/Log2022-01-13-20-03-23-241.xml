@@ -1,0 +1,96 @@
+<Events startTimestamp="1642122203241" logVersion="1.0.0.202111260825">
+  <Command __id="5" _type="RunCommand" className="/A0/src/greeting/RunS22A0Tests.java" date="Thu Jan 13 20:07:58 EST 2022" kind="HitBreakPoint" projectName="A0" starttimestamp="1642122203241" timestamp="275247" type="Run" />
+  <Command __id="7" _type="PauseCommand" date="Thu Jan 13 20:08:00 EST 2022" range="1s-2s" starttimestamp="1642122203241" timestamp="276812">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[1565]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6" _type="ShellCommand" date="Thu Jan 13 20:08:00 EST 2022" starttimestamp="1642122203241" timestamp="276812" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="9" _type="PauseCommand" date="Thu Jan 13 20:08:10 EST 2022" range="10s-20s" starttimestamp="1642122203241" timestamp="287398">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[10586]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="8" _type="ConsoleOutput" date="Thu Jan 13 20:08:10 EST 2022" overflow="false" starttimestamp="1642122203241" timestamp="287398" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):9
+Test execution time (ms):14
+]]></outputString>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="10" _type="ExceptionCommand" date="Thu Jan 13 20:08:10 EST 2022" starttimestamp="1642122203241" timestamp="287550" type="Exception">
+    <exceptionString><![CDATA[Error: Main method not found in class greeting.cls, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+]]></exceptionString>
+    <language><![CDATA[SML]]></language>
+  </Command>
+  <Command __id="11" _type="ConsoleOutput" date="Thu Jan 13 20:08:10 EST 2022" overflow="false" starttimestamp="1642122203241" timestamp="287564" type="ConsoleOutput">
+    <outputString><![CDATA[Error: Main method not found in class greeting.cls, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):9¶Test execution time (ms):14"), Diff(INSERT,"Error: Main method not found in class greeting.cls, please define the main method as:¶   public static void main(String[] args)¶or a JavaFX application class must extend javafx.application.Application"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="12" _type="ConsoleOutput" date="Thu Jan 13 20:08:11 EST 2022" overflow="false" starttimestamp="1642122203241" timestamp="288023" type="ConsoleOutput">
+    <outputString><![CDATA[GreetingRun did not pass completely:Output  did not match:[.*ello.*?, .*oodbye.*?]%0.0
+
+Test execution time (ms):558
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Error: Main method not found in class greeting.cls, please define the main method as:¶   public static void main(String[] args)¶or a JavaFX application class must extend javafx.application.Application"), Diff(INSERT,"GreetingRun did not pass completely:Output  did not match:[.*ello.*?, .*oodbye.*?]%0.0¶¶Test execution time (ms):558"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="14" _type="PauseCommand" date="Thu Jan 13 20:08:25 EST 2022" range="10s-20s" starttimestamp="1642122203241" timestamp="301781">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[13758]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="13" _type="ConsoleOutput" date="Thu Jan 13 20:08:25 EST 2022" overflow="false" starttimestamp="1642122203241" timestamp="301781" type="ConsoleOutput">
+    <outputString><![CDATA[Please run the checkstle plugin on your project
+Could not initialize checkstyle. Please make sure you have installed the plugin and run checkstyle on the project 
+
+Test execution time (ms):1
+A0MnemonicNames did not pass completely:No checkstyle output, check console error messages%0.0
+
+A0NoCheckstyleWarnings did not pass completely:Could not run checkstyle%0.0
+Test execution time (ms):1
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"GreetingRun"), Diff(INSERT,"Please run the checkstle plugin on your project¶Could not initialize checkstyle. Please make sure you have installed the plugin and run checkstyle on the project ¶¶Test execution time (ms):1¶A0MnemonicNames"), Diff(EQUAL," did not pass completely:"), Diff(DELETE,"Output  did not match:[.*ello.*?, .*oodbye.*?]"), Diff(INSERT,"No checkstyle output, check console error messages%0.0¶¶A0NoCheckstyleWarnings did not pass completely:Could not run checkstyle"), Diff(EQUAL,"%0.0¶"), Diff(DELETE,"¶"), Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"558"), Diff(INSERT,"1"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="16" _type="PauseCommand" date="Thu Jan 13 20:08:29 EST 2022" range="2s-5s" starttimestamp="1642122203241" timestamp="306018">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[4237]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="15" _type="ShellCommand" date="Thu Jan 13 20:08:29 EST 2022" starttimestamp="1642122203241" timestamp="306018" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="18" _type="PauseCommand" date="Thu Jan 13 20:08:30 EST 2022" range="1s-2s" starttimestamp="1642122203241" timestamp="307536">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1518]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="17" _type="ShellCommand" date="Thu Jan 13 20:08:30 EST 2022" starttimestamp="1642122203241" timestamp="307536" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="19" _type="ShellCommand" date="Thu Jan 13 20:08:30 EST 2022" starttimestamp="1642122203241" timestamp="307594" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="21" _type="PauseCommand" date="Thu Jan 13 20:08:33 EST 2022" range="2s-5s" starttimestamp="1642122203241" timestamp="310675">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3080]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="20" _type="ShellCommand" date="Thu Jan 13 20:08:33 EST 2022" starttimestamp="1642122203241" timestamp="310674" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="23" _type="PauseCommand" date="Thu Jan 13 20:10:58 EST 2022" range="2m-5m" starttimestamp="1642122203241" timestamp="454896">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[144222]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+</Events>

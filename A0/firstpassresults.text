@@ -1,0 +1,4 @@
+Starting audit...
+[INFO] C:\Users\mannu\COMP_533\A0\.\src\greeting\A0Tests.java:8:33: Final parameter args defined. Good! [FinalParameterDefined]
+[INFO] C:\Users\mannu\COMP_533\A0\.\src\greeting\Hello.java:4:33: Final parameter args defined. Good! [FinalParameterDefined]
+Audit done.

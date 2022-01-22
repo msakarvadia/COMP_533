@@ -1,0 +1,3 @@
+Id,Prediction,Date,File,StartTime,ElapsedTime,BusyTime,Commands,editOrInsertPercentage,debugPercentage,navigationPercentage,focusPercentage,removePercentage,editPercentage,COMMAND_RATE,NAVIGATION_RATE,DEBUG_RATE,FOCUS_RATE,EDIT_RATE,REMOVE_RATE,INSERT_RATE,webLinkTimes,Web Page Visits
+1,,Thu Jan 20 20:59:44 EST 2022,unc_checks_533_A0_checks.txt,1642730384733,53831,0,(F)5(I)7,0.5833333333333334,0.0,0.0,41.66666666666667,0.0,0.0,0.22641509433962265,0.0,0.0,0.09433962264150944,0.0,0.0,0.1320754716981132,0.0,[]
+,/modelData/A0UserStudy2010.arff,Thu Jan 20 20:59:44 EST 2022,unc_checks_533_A0_checks.txt, 1642730384733

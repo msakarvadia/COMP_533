@@ -1,0 +1,2 @@
+Id,Prediction,Date,File,StartTime,ElapsedTime,BusyTime,Commands,editOrInsertPercentage,debugPercentage,navigationPercentage,focusPercentage,removePercentage,editPercentage,COMMAND_RATE,NAVIGATION_RATE,DEBUG_RATE,FOCUS_RATE,EDIT_RATE,REMOVE_RATE,INSERT_RATE,webLinkTimes,Web Page Visits
+12,,Fri Jan 21 14:04:01 EST 2022,GreetingClassRegistry.java,1642791841820,18845,0,(I)17,1.0,0.0,0.0,0.0,0.0,0.0,0.9444444444444444,0.0,0.0,0.0,0.0,0.0,0.9444444444444444,0.0,[]

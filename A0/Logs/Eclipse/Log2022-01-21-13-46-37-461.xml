@@ -1,0 +1,531 @@
+<Events startTimestamp="1642790797461" logVersion="1.0.0.202111260825">
+  <Command __id="35" _type="MoveCaretCommand" caretOffset="141" date="Fri Jan 21 13:51:19 EST 2022" docOffset="141" starttimestamp="1642790797461" timestamp="281632" />
+  <Command __id="33" _type="DiffBasedFileOpenCommand" date="Fri Jan 21 13:51:18 EST 2022" docASTNodeCount="336" docActiveCodeLength="2599" docExpressionCount="171" docLength="3619" projectName="A1" starttimestamp="1642790797461" timestamp="281404">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\MapReduceConfiguration.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package comp533.mvc;¶¶public class MapReduceConfiguration implements gradingTools.comp533s21.assignment1.interfaces.MapReduceConfiguration {¶¶	@Override¶	public Object getBarrier(int arg0) {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getBarrierClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getClientTokenCounter() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getControllerClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Object getIntSummingMapper() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getIntSummingMapperClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Object getJoiner(int arg0) {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getJoinerClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getKeyValueClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getMapperFactory() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getModelClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Object getPartitioner() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getPartitionerClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getPartitionerFactory() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Object getReducer() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getReducerClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getReducerFactory() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getRemoteClientFacebookMapReduce() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getRemoteClientObjectClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getRemoteClientObjectInterface() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getRemoteModelInterface() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getServerFacebookMapReduce() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getServerIntegerSummer() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getServerTokenCounter() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getSlaveClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getStandAloneFacebookMapReduce() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getStandAloneIntegerSummer() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getStandAloneTokenCounter() {¶		¶		return StandAloneTokenCounter.class;¶	}¶¶	@Override¶	public Object getTokenCountingMapper() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getTokenCountingMapperClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getViewClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="37" _type="PauseCommand" date="Fri Jan 21 13:51:45 EST 2022" range="20s-30s" starttimestamp="1642790797461" timestamp="307761">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[26129]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="38" _type="SelectTextCommand" caretOffset="66" date="Fri Jan 21 13:51:45 EST 2022" end="66" start="56" starttimestamp="1642790797461" timestamp="308151" />
+  <Command __id="40" _type="PauseCommand" date="Fri Jan 21 13:51:51 EST 2022" range="5s-10s" starttimestamp="1642790797461" timestamp="314098">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[5947]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="39" _type="SelectTextCommand" caretOffset="133" date="Fri Jan 21 13:51:51 EST 2022" end="207" start="133" starttimestamp="1642790797461" timestamp="314098" />
+  <Command __id="42" _type="PauseCommand" date="Fri Jan 21 13:51:52 EST 2022" range="1s-2s" starttimestamp="1642790797461" timestamp="315137">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[1039]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[CopyCommand]]></next>
+  </Command>
+  <Command __id="57" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Fri Jan 21 13:52:54 EST 2022" starttimestamp="1642790797461" timestamp="377485" />
+  <Command __id="59" _type="EclipseCommand" commandID="" date="Fri Jan 21 13:52:55 EST 2022" starttimestamp="1642790797461" timestamp="377606" />
+  <Command __id="60" _type="EclipseCommand" commandID="" date="Fri Jan 21 13:52:55 EST 2022" starttimestamp="1642790797461" timestamp="377645" />
+  <Command __id="61" _type="MoveCaretCommand" caretOffset="3169" date="Fri Jan 21 13:52:56 EST 2022" docOffset="3169" starttimestamp="1642790797461" timestamp="378571" />
+  <Command __id="49" _type="DiffBasedFileOpenCommand" date="Fri Jan 21 13:52:14 EST 2022" docASTNodeCount="336" docActiveCodeLength="2599" docExpressionCount="171" docLength="3619" projectName="A1" starttimestamp="1642790797461" timestamp="337364">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\MapReduceConfiguration.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package comp533.mvc;¶¶public class MapReduceConfiguration implements gradingTools.comp533s21.assignment1.interfaces.MapReduceConfiguration {¶¶	@Override¶	public Object getBarrier(int arg0) {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getBarrierClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getClientTokenCounter() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getControllerClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Object getIntSummingMapper() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getIntSummingMapperClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Object getJoiner(int arg0) {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getJoinerClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getKeyValueClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getMapperFactory() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getModelClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Object getPartitioner() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getPartitionerClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getPartitionerFactory() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Object getReducer() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getReducerClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getReducerFactory() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getRemoteClientFacebookMapReduce() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getRemoteClientObjectClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getRemoteClientObjectInterface() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getRemoteModelInterface() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getServerFacebookMapReduce() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getServerIntegerSummer() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getServerTokenCounter() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getSlaveClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getStandAloneFacebookMapReduce() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getStandAloneIntegerSummer() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getStandAloneTokenCounter() {¶		¶		return StandAloneTokenCounter.class;¶	}¶¶	@Override¶	public Object getTokenCountingMapper() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getTokenCountingMapperClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getViewClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶}¶")]]]></diff>
+  </Command>
+  <DocumentChange __id="55" _type="Replace" date="Fri Jan 21 13:52:53 EST 2022" docASTNodeCount="336" docActiveCodeLength="2597" docExpressionCount="171" docLength="3617" endLine="169" insertionLength="6" int_docASTNodeCount="336" int_docActiveCodeLength="2591" int_docExpressionCount="171" int_docLength="3611" length="8" offset="3226" startLine="167" starttimestamp="1642790797461" timestamp="375629">
+    <deletedText><![CDATA[
+		
+		]]></deletedText>
+    <insertedText><![CDATA[
+
+		]]></insertedText>
+  </DocumentChange>
+  <Command __id="63" _type="PauseCommand" date="Fri Jan 21 13:53:02 EST 2022" range="5s-10s" starttimestamp="1642790797461" timestamp="385352">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[6781]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="117" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Fri Jan 21 13:56:21 EST 2022" starttimestamp="1642790797461" timestamp="584517" />
+  <Command __id="119" _type="EclipseCommand" commandID="" date="Fri Jan 21 13:56:22 EST 2022" starttimestamp="1642790797461" timestamp="584652" />
+  <Command __id="120" _type="EclipseCommand" commandID="" date="Fri Jan 21 13:56:22 EST 2022" starttimestamp="1642790797461" timestamp="584711" />
+  <Command __id="100" _type="DiffBasedFileOpenCommand" date="Fri Jan 21 13:54:22 EST 2022" docASTNodeCount="336" docActiveCodeLength="2597" docExpressionCount="171" docLength="3617" projectName="A1" starttimestamp="1642790797461" timestamp="465367">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\MapReduceConfiguration.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package comp533.mvc;¶¶public class MapReduceConfiguration implements gradingTools.comp533s21.assignment1.interfaces.MapReduceConfiguration {¶¶	@Override¶	public Object getBarrier(int arg0) {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getBarrierClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getClientTokenCounter() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getControllerClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Object getIntSummingMapper() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getIntSummingMapperClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Object getJoiner(int arg0) {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getJoinerClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getKeyValueClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getMapperFactory() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getModelClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Object getPartitioner() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getPartitionerClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getPartitionerFactory() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Object getReducer() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getReducerClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getReducerFactory() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getRemoteClientFacebookMapReduce() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getRemoteClientObjectClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getRemoteClientObjectInterface() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getRemoteModelInterface() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getServerFacebookMapReduce() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getServerIntegerSummer() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getServerTokenCounter() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getSlaveClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getStandAloneFacebookMapReduce() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getStandAloneIntegerSummer() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getStandAloneTokenCounter() {¶"), Diff(DELETE,"		"), Diff(EQUAL,"¶		return StandAloneTokenCounter.class;¶	}¶¶	@Override¶	public Object getTokenCountingMapper() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getTokenCountingMapperClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getViewClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶}¶")]]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+
+public class MapReduceConfiguration implements gradingTools.comp533s21.assignment1.interfaces.MapReduceConfiguration {
+
+	@Override
+	public Object getBarrier(int arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getBarrierClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getClientTokenCounter() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getControllerClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object getIntSummingMapper() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getIntSummingMapperClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object getJoiner(int arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getJoinerClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getKeyValueClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getMapperFactory() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getModelClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object getPartitioner() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getPartitionerClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getPartitionerFactory() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object getReducer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getReducerClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getReducerFactory() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getRemoteClientFacebookMapReduce() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getRemoteClientObjectClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getRemoteClientObjectInterface() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getRemoteModelInterface() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getServerFacebookMapReduce() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getServerIntegerSummer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getServerTokenCounter() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getSlaveClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getStandAloneFacebookMapReduce() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getStandAloneIntegerSummer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getStandAloneTokenCounter() {
+
+		return StandAloneTokenCounter.class;
+	}
+
+	@Override
+	public Object getTokenCountingMapper() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getTokenCountingMapperClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getViewClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <DocumentChange __id="115" _type="Delete" date="Fri Jan 21 13:56:20 EST 2022" docASTNodeCount="336" docActiveCodeLength="2595" docExpressionCount="171" docLength="3615" endLine="168" length="2" offset="3226" startLine="167" starttimestamp="1642790797461" timestamp="582559">
+    <text><![CDATA[
+]]></text>
+  </DocumentChange>
+  <Command __id="122" _type="PauseCommand" date="Fri Jan 21 13:56:54 EST 2022" range="30s-1m" starttimestamp="1642790797461" timestamp="617241">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[32530]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="123" _type="SelectTextCommand" caretOffset="133" date="Fri Jan 21 13:56:54 EST 2022" end="207" start="133" starttimestamp="1642790797461" timestamp="617432" />
+  <Command __id="125" _type="PauseCommand" date="Fri Jan 21 13:56:58 EST 2022" range="2s-5s" starttimestamp="1642790797461" timestamp="620546">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[3114]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="135" _type="ShellCommand" date="Fri Jan 21 14:01:28 EST 2022" starttimestamp="1642790797461" timestamp="890971" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="126" _type="DiffBasedFileOpenCommand" date="Fri Jan 21 13:57:05 EST 2022" docASTNodeCount="336" docActiveCodeLength="2595" docExpressionCount="171" docLength="3615" projectName="A1" starttimestamp="1642790797461" timestamp="628296">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\MapReduceConfiguration.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package comp533.mvc;¶¶public class MapReduceConfiguration implements gradingTools.comp533s21.assignment1.interfaces.MapReduceConfiguration {¶¶	@Override¶	public Object getBarrier(int arg0) {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getBarrierClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getClientTokenCounter() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getControllerClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Object getIntSummingMapper() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getIntSummingMapperClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Object getJoiner(int arg0) {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getJoinerClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getKeyValueClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getMapperFactory() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getModelClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Object getPartitioner() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getPartitionerClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getPartitionerFactory() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Object getReducer() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getReducerClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getReducerFactory() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getRemoteClientFacebookMapReduce() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getRemoteClientObjectClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getRemoteClientObjectInterface() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getRemoteModelInterface() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getServerFacebookMapReduce() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getServerIntegerSummer() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getServerTokenCounter() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getSlaveClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getStandAloneFacebookMapReduce() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getStandAloneIntegerSummer() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getStandAloneTokenCounter() {¶"), Diff(DELETE,"¶"), Diff(EQUAL,"		return StandAloneTokenCounter.class;¶	}¶¶	@Override¶	public Object getTokenCountingMapper() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getTokenCountingMapperClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public Class getViewClass() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶}¶")]]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+
+public class MapReduceConfiguration implements gradingTools.comp533s21.assignment1.interfaces.MapReduceConfiguration {
+
+	@Override
+	public Object getBarrier(int arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getBarrierClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getClientTokenCounter() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getControllerClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object getIntSummingMapper() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getIntSummingMapperClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object getJoiner(int arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getJoinerClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getKeyValueClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getMapperFactory() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getModelClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object getPartitioner() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getPartitionerClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getPartitionerFactory() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object getReducer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getReducerClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getReducerFactory() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getRemoteClientFacebookMapReduce() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getRemoteClientObjectClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getRemoteClientObjectInterface() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getRemoteModelInterface() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getServerFacebookMapReduce() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getServerIntegerSummer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getServerTokenCounter() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getSlaveClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getStandAloneFacebookMapReduce() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getStandAloneIntegerSummer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getStandAloneTokenCounter() {
+		return StandAloneTokenCounter.class;
+	}
+
+	@Override
+	public Object getTokenCountingMapper() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getTokenCountingMapperClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Class getViewClass() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="138" _type="PauseCommand" date="Fri Jan 21 14:01:31 EST 2022" range="2s-5s" starttimestamp="1642790797461" timestamp="893667">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2696]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="389" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Fri Jan 21 14:04:20 EST 2022" starttimestamp="1642790797461" timestamp="1063204" />
+  <Command __id="391" _type="EclipseCommand" commandID="" date="Fri Jan 21 14:04:20 EST 2022" starttimestamp="1642790797461" timestamp="1063293" />
+  <Command __id="392" _type="EclipseCommand" commandID="" date="Fri Jan 21 14:04:20 EST 2022" starttimestamp="1642790797461" timestamp="1063335" />
+  <DocumentChange __id="325" _type="Insert" date="Fri Jan 21 14:03:46 EST 2022" docASTNodeCount="368" docActiveCodeLength="2643" docExpressionCount="171" docLength="3663" length="3" offset="1595" repeat="2" starttimestamp="1642790797461" timestamp="1028710" timestamp2="1028949">
+    <text><![CDATA[<?>]]></text>
+  </DocumentChange>
+  <DocumentChange __id="332" _type="Insert" date="Fri Jan 21 14:03:49 EST 2022" docASTNodeCount="370" docActiveCodeLength="2646" docExpressionCount="171" docLength="3666" length="3" offset="1484" repeat="2" starttimestamp="1642790797461" timestamp="1032258" timestamp2="1032473">
+    <text><![CDATA[<?>]]></text>
+  </DocumentChange>
+  <DocumentChange __id="338" _type="Insert" date="Fri Jan 21 14:03:55 EST 2022" docASTNodeCount="372" docActiveCodeLength="2649" docExpressionCount="171" docLength="3669" length="3" offset="1272" repeat="2" starttimestamp="1642790797461" timestamp="1037657" timestamp2="1037848">
+    <text><![CDATA[<?>]]></text>
+  </DocumentChange>
+  <DocumentChange __id="344" _type="Insert" date="Fri Jan 21 14:03:57 EST 2022" docASTNodeCount="370" docActiveCodeLength="2652" docExpressionCount="170" docLength="3672" length="3" offset="1164" repeat="2" starttimestamp="1642790797461" timestamp="1040108" timestamp2="1040308">
+    <text><![CDATA[</>]]></text>
+  </DocumentChange>
+  <DocumentChange __id="348" _type="Delete" date="Fri Jan 21 14:03:58 EST 2022" docASTNodeCount="373" docActiveCodeLength="2651" docExpressionCount="171" docLength="3671" endLine="59" length="1" offset="1165" startLine="59" starttimestamp="1642790797461" timestamp="1040975">
+    <text><![CDATA[/]]></text>
+  </DocumentChange>
+  <DocumentChange __id="350" _type="Insert" date="Fri Jan 21 14:03:58 EST 2022" docASTNodeCount="374" docActiveCodeLength="2652" docExpressionCount="171" docLength="3672" length="1" offset="1165" starttimestamp="1642790797461" timestamp="1041314">
+    <text><![CDATA[?]]></text>
+  </DocumentChange>
+  <DocumentChange __id="355" _type="Insert" date="Fri Jan 21 14:04:02 EST 2022" docASTNodeCount="376" docActiveCodeLength="2655" docExpressionCount="171" docLength="3675" length="3" offset="1056" repeat="2" starttimestamp="1642790797461" timestamp="1044745" timestamp2="1044970">
+    <text><![CDATA[<?>]]></text>
+  </DocumentChange>
+  <DocumentChange __id="361" _type="Insert" date="Fri Jan 21 14:04:05 EST 2022" docASTNodeCount="378" docActiveCodeLength="2658" docExpressionCount="171" docLength="3678" length="3" offset="950" repeat="2" starttimestamp="1642790797461" timestamp="1047571" timestamp2="1047785">
+    <text><![CDATA[<?>]]></text>
+  </DocumentChange>
+  <DocumentChange __id="367" _type="Insert" date="Fri Jan 21 14:04:09 EST 2022" docASTNodeCount="380" docActiveCodeLength="2661" docExpressionCount="171" docLength="3681" length="3" offset="724" repeat="2" starttimestamp="1642790797461" timestamp="1052512" timestamp2="1052713">
+    <text><![CDATA[<?>]]></text>
+  </DocumentChange>
+  <DocumentChange __id="373" _type="Insert" date="Fri Jan 21 14:04:13 EST 2022" docASTNodeCount="382" docActiveCodeLength="2664" docExpressionCount="171" docLength="3684" length="3" offset="502" repeat="2" starttimestamp="1642790797461" timestamp="1055566" timestamp2="1055726">
+    <text><![CDATA[<?>]]></text>
+  </DocumentChange>
+  <DocumentChange __id="379" _type="Insert" date="Fri Jan 21 14:04:16 EST 2022" docASTNodeCount="384" docActiveCodeLength="2667" docExpressionCount="171" docLength="3687" length="3" offset="389" repeat="2" starttimestamp="1642790797461" timestamp="1059037" timestamp2="1059204">
+    <text><![CDATA[<?>]]></text>
+  </DocumentChange>
+  <DocumentChange __id="385" _type="Insert" date="Fri Jan 21 14:04:18 EST 2022" docASTNodeCount="386" docActiveCodeLength="2670" docExpressionCount="171" docLength="3690" length="3" offset="282" repeat="2" starttimestamp="1642790797461" timestamp="1061398" timestamp2="1061579">
+    <text><![CDATA[<?>]]></text>
+  </DocumentChange>
+  <Command __id="394" _type="PauseCommand" date="Fri Jan 21 14:04:32 EST 2022" range="10s-20s" starttimestamp="1642790797461" timestamp="1075336">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[12001]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="395" _type="MoveCaretCommand" caretOffset="209" date="Fri Jan 21 14:04:33 EST 2022" docOffset="209" starttimestamp="1642790797461" timestamp="1075584" />
+  <Command __id="393" _type="DiffBasedFileOpenCommand" date="Fri Jan 21 14:04:32 EST 2022" docASTNodeCount="30" docActiveCodeLength="214" docExpressionCount="17" docLength="214" projectName="A0" starttimestamp="1642790797461" timestamp="1075336">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A0\src\greeting\GreetingClassRegistry.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package greeting;¶¶public class GreetingClassRegistry implements gradingTools.shared.testcases.greeting.GreetingClassRegistry{¶¶	@Override¶	public Class<?> getGreetingMain() {¶		return Hello.class;¶	}¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="397" _type="PauseCommand" date="Fri Jan 21 14:04:36 EST 2022" range="2s-5s" starttimestamp="1642790797461" timestamp="1079347">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[3762]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>

@@ -1,0 +1,1156 @@
+0,Thu Jan 13 20:23:32 EST 2022,true,greeting\cls.java,nameNotInDictionary,greeting.cls,cls
+0,Thu Jan 13 20:23:32 EST 2022,true,greeting\cls.java,minimumVowelInNameCheck,greeting.cls,cls,1
+0,Thu Jan 13 20:23:32 EST 2022,true,greeting\cls.java,nameInDictionary,greeting.cls,greeting
+0,Thu Jan 13 20:23:32 EST 2022,true,greeting\cls.java,classDefined,@GreetingMain
+0,Thu Jan 13 20:23:32 EST 2022,true,greeting\cls.java,missingSignature,main:String[]->void,greeting.cls:[@GreetingMain]
+0,Thu Jan 13 20:23:32 EST 2022,true,greeting\cls.java,missingMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.cls:[@GreetingMain]
+1,Thu Jan 13 20:26:21 EST 2022,true,greeting\RunS22A0Tests.java,classDefined,No Expected Tag
+1,Thu Jan 13 20:26:21 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+1,Thu Jan 13 20:26:25 EST 2022,true,greeting\cls.java,variables,Variables:[]
+1,Thu Jan 13 20:26:25 EST 2022,true,greeting\cls.java,accessModifiersUsed,Access Modifiers Used: []
+1,Thu Jan 13 20:26:25 EST 2022,true,greeting\cls.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[]Setters:[]
+1,Thu Jan 13 20:26:25 EST 2022,true,greeting\cls.java,properties,Properties:[]
+1,Thu Jan 13 20:26:25 EST 2022,true,greeting\cls.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:0 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:NaN Protected Methods Fraction:NaN Package Access Methods Fraction:NaN Private  Methods Fraction:NaN Average Method Access:NaN Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+1,Thu Jan 13 20:26:25 EST 2022,true,greeting\cls.java,innerTypes,[]
+1,Thu Jan 13 20:26:25 EST 2022,true,greeting\cls.java,superTypes,None
+1,Thu Jan 13 20:26:25 EST 2022,true,greeting\cls.java,interfaces,[]
+1,Thu Jan 13 20:26:25 EST 2022,true,greeting\cls.java,tags,None
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\RunS22A0Tests.java,variables,Variables:[]
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\RunS22A0Tests.java,accessModifiersUsed,Access Modifiers Used: [(greeting.RunS22A0Tests, public, private, 3, greeting.RunS22A0Tests, null )]
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\RunS22A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\RunS22A0Tests.java,properties,Properties:[]
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\RunS22A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\RunS22A0Tests.java,innerTypes,[]
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\RunS22A0Tests.java,superTypes,None
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\RunS22A0Tests.java,interfaces,[]
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\RunS22A0Tests.java,tags,None
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\RunS22A0Tests.java,classDefined,No Expected Tag
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+1,Thu Jan 13 20:26:26 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+1,Thu Jan 13 20:26:34 EST 2022,true,greeting\cls.java,variables,Variables:[]
+1,Thu Jan 13 20:26:34 EST 2022,true,greeting\cls.java,accessModifiersUsed,Access Modifiers Used: []
+1,Thu Jan 13 20:26:34 EST 2022,true,greeting\cls.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[]Setters:[]
+1,Thu Jan 13 20:26:34 EST 2022,true,greeting\cls.java,properties,Properties:[]
+1,Thu Jan 13 20:26:34 EST 2022,true,greeting\cls.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:0 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:NaN Protected Methods Fraction:NaN Package Access Methods Fraction:NaN Private  Methods Fraction:NaN Average Method Access:NaN Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+1,Thu Jan 13 20:26:34 EST 2022,true,greeting\cls.java,innerTypes,[]
+1,Thu Jan 13 20:26:34 EST 2022,true,greeting\cls.java,superTypes,None
+1,Thu Jan 13 20:26:34 EST 2022,true,greeting\cls.java,interfaces,[]
+1,Thu Jan 13 20:26:34 EST 2022,true,greeting\cls.java,tags,None
+1,Thu Jan 13 20:26:34 EST 2022,true,greeting\cls.java,nameNotInDictionary,greeting.cls,cls
+1,Thu Jan 13 20:26:34 EST 2022,true,greeting\cls.java,minimumVowelInNameCheck,greeting.cls,cls,1
+1,Thu Jan 13 20:26:34 EST 2022,true,greeting\cls.java,nameInDictionary,greeting.cls,greeting
+1,Thu Jan 13 20:26:34 EST 2022,true,greeting\cls.java,classDefined,@GreetingMain
+1,Thu Jan 13 20:26:34 EST 2022,true,greeting\cls.java,missingSignature,main:String[]->void,greeting.cls:[@GreetingMain]
+1,Thu Jan 13 20:26:34 EST 2022,true,greeting\cls.java,missingMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.cls:[@GreetingMain]
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\cls.java,variables,Variables:[]
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\cls.java,accessModifiersUsed,Access Modifiers Used: []
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\cls.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[]Setters:[]
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\cls.java,properties,Properties:[]
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\cls.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:0 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:NaN Protected Methods Fraction:NaN Package Access Methods Fraction:NaN Private  Methods Fraction:NaN Average Method Access:NaN Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\cls.java,innerTypes,[]
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\cls.java,superTypes,None
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\cls.java,interfaces,[]
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\cls.java,tags,None
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\cls.java,nameInDictionary,greeting.cls,greeting
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\cls.java,classDefined,@GreetingMain
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\cls.java,nameNotInDictionary,greeting.cls,cls
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\cls.java,minimumVowelInNameCheck,greeting.cls,cls,1
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\cls.java,missingSignature,main:String[]->void,greeting.cls:[@GreetingMain]
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\cls.java,missingMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.cls:[@GreetingMain]
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,variables,Variables:[]
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,properties,Properties:[]
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,innerTypes,[]
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,superTypes,None
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,interfaces,[]
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,tags,None
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,greeting
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,run
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,a
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,tests
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,args,args
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,classDefined,No Expected Tag
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,nameNotInDictionary,greeting.RunS22A0Tests,s
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,minimumLettersInNameCheck,greeting.RunS22A0Tests,s,2
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,minimumVowelInNameCheck,greeting.RunS22A0Tests,s,1
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,600,EXPR 600
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+1,Thu Jan 13 20:27:03 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,5,EXPR 5
+1,Thu Jan 13 20:52:38 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+1,Thu Jan 13 20:52:38 EST 2022,true,greeting\Hello.java,classDefined,No Expected Tag
+1,Thu Jan 13 20:52:45 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+1,Thu Jan 13 20:52:45 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+1,Thu Jan 13 20:52:45 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[]Setters:[]
+1,Thu Jan 13 20:52:45 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+1,Thu Jan 13 20:52:45 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:0 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:NaN Protected Methods Fraction:NaN Package Access Methods Fraction:NaN Private  Methods Fraction:NaN Average Method Access:NaN Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+1,Thu Jan 13 20:52:45 EST 2022,true,greeting\Hello.java,innerTypes,[]
+1,Thu Jan 13 20:52:45 EST 2022,true,greeting\Hello.java,superTypes,None
+1,Thu Jan 13 20:52:45 EST 2022,true,greeting\Hello.java,interfaces,[]
+1,Thu Jan 13 20:52:45 EST 2022,true,greeting\Hello.java,tags,None
+1,Thu Jan 13 20:52:45 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,greeting
+1,Thu Jan 13 20:52:45 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,variables,Variables:[]
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,accessModifiersUsed,Access Modifiers Used: [(greeting.RunS22A0Tests, public, private, 3, greeting.RunS22A0Tests, null )]
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,properties,Properties:[]
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,innerTypes,[]
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,superTypes,None
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,interfaces,[]
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,tags,None
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,nameNotInDictionary,greeting.RunS22A0Tests,s
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,minimumLettersInNameCheck,greeting.RunS22A0Tests,s,2
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,minimumVowelInNameCheck,greeting.RunS22A0Tests,s,1
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,greeting
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,run
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,a
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,tests
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,classDefined,No Expected Tag
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,600,EXPR 600
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,5,EXPR 5
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+1,Thu Jan 13 20:54:25 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\Hello.java,innerTypes,[]
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\Hello.java,superTypes,None
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\Hello.java,interfaces,[]
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\Hello.java,tags,None
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,greeting
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\Hello.java,missingMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.Hello:[@GreetingMain]
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\RunS22A0Tests.java,variables,Variables:[]
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\RunS22A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\RunS22A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\RunS22A0Tests.java,properties,Properties:[]
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\RunS22A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\RunS22A0Tests.java,innerTypes,[]
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\RunS22A0Tests.java,superTypes,None
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\RunS22A0Tests.java,interfaces,[]
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\RunS22A0Tests.java,tags,None
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,greeting
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,run
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,a
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,tests
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,args,args
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\RunS22A0Tests.java,classDefined,No Expected Tag
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\RunS22A0Tests.java,nameNotInDictionary,greeting.RunS22A0Tests,s
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\RunS22A0Tests.java,minimumLettersInNameCheck,greeting.RunS22A0Tests,s,2
+1,Thu Jan 13 20:58:28 EST 2022,true,greeting\RunS22A0Tests.java,minimumVowelInNameCheck,greeting.RunS22A0Tests,s,1
+1,Thu Jan 13 20:58:29 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,600,EXPR 600
+1,Thu Jan 13 20:58:29 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+1,Thu Jan 13 20:58:29 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,5,EXPR 5
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting.RunS22A0Tests,minimumVowelInNameCheck,greeting.RunS22A0Tests,s,1
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting.RunS22A0Tests,nameInDictionary,greeting.RunS22A0Tests,a
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting.RunS22A0Tests,nameInDictionary,greeting.RunS22A0Tests,run
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting.RunS22A0Tests,nameInDictionary,greeting.RunS22A0Tests,greeting
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting.RunS22A0Tests,nameInDictionary,greeting.RunS22A0Tests,tests
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting.RunS22A0Tests,nameNotInDictionary,greeting.RunS22A0Tests,s
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting.RunS22A0Tests,minimumLettersInNameCheck,greeting.RunS22A0Tests,s,2
+6,Thu Jan 13 21:00:44 EST 2022,false,Access Modifiers Used: [],accessModifiersUsed,Access Modifiers Used: []
+6,Thu Jan 13 21:00:44 EST 2022,false,Properties:[],properties,Properties:[]
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting.cls,minimumVowelInNameCheck,greeting.cls,cls,1
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting.cls,nameInDictionary,greeting.cls,greeting
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting.cls,nameNotInDictionary,greeting.cls,cls
+6,Thu Jan 13 21:00:44 EST 2022,false,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[],methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting.GreetingClassRegistry,nameInDictionary,greeting.GreetingClassRegistry,class
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting.GreetingClassRegistry,nameInDictionary,greeting.GreetingClassRegistry,registry
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting.GreetingClassRegistry,nameInDictionary,greeting.GreetingClassRegistry,greeting
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\RunS22A0Tests.java,variables,Variables:[]
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\RunS22A0Tests.java,superTypes,None
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,a
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,run
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\RunS22A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\RunS22A0Tests.java,liberalMagicNumber,600,EXPR 600
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\RunS22A0Tests.java,innerTypes,[]
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\RunS22A0Tests.java,liberalMagicNumber,5,EXPR 5
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\RunS22A0Tests.java,nameNotInDictionary,greeting.RunS22A0Tests,s
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,tests
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\RunS22A0Tests.java,tags,None
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,greeting
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\RunS22A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\RunS22A0Tests.java,properties,Properties:[]
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\RunS22A0Tests.java,accessModifiersUsed,Access Modifiers Used: [(greeting.RunS22A0Tests, public, private, 3, greeting.RunS22A0Tests, null )]
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\RunS22A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\RunS22A0Tests.java,interfaces,[]
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\RunS22A0Tests.java,classDefined,No Expected Tag
+6,Thu Jan 13 21:00:44 EST 2022,false,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[]Setters:[],methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[]Setters:[]
+6,Thu Jan 13 21:00:44 EST 2022,false,@GreetingMain,classDefined,@GreetingMain
+6,Thu Jan 13 21:00:44 EST 2022,false,[],innerTypes,[]
+6,Thu Jan 13 21:00:44 EST 2022,false,[],interfaces,[]
+6,Thu Jan 13 21:00:44 EST 2022,false,[],publicMethodsOverride,[]
+6,Thu Jan 13 21:00:44 EST 2022,false, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+6,Thu Jan 13 21:00:44 EST 2022,false, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+6,Thu Jan 13 21:00:44 EST 2022,false,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public ,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+6,Thu Jan 13 21:00:44 EST 2022,false,2000,liberalMagicNumber,2000,EXPR 2000
+6,Thu Jan 13 21:00:44 EST 2022,false, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:0 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:NaN Protected Methods Fraction:NaN Package Access Methods Fraction:NaN Private  Methods Fraction:NaN Average Method Access:NaN Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:0 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:NaN Protected Methods Fraction:NaN Package Access Methods Fraction:NaN Private  Methods Fraction:NaN Average Method Access:NaN Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+6,Thu Jan 13 21:00:44 EST 2022,false,Access Modifiers Used: [(greeting.RunS22A0Tests,accessModifiersUsed,Access Modifiers Used: [(greeting.RunS22A0Tests, public, private, 3, greeting.RunS22A0Tests, null )]
+6,Thu Jan 13 21:00:44 EST 2022,false,args,nameInDictionary,args,args
+6,Thu Jan 13 21:00:44 EST 2022,false,1,minimumVowelInNameCheck,greeting.RunS22A0Tests,s,1
+6,Thu Jan 13 21:00:44 EST 2022,false,java.io.PrintStream!println:*->.*,missingMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.cls:[@GreetingMain]
+6,Thu Jan 13 21:00:44 EST 2022,false,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[],methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+6,Thu Jan 13 21:00:44 EST 2022,false,2,minimumLettersInNameCheck,greeting.RunS22A0Tests,s,2
+6,Thu Jan 13 21:00:44 EST 2022,false,5,liberalMagicNumber,5,EXPR 5
+6,Thu Jan 13 21:00:44 EST 2022,false,600,liberalMagicNumber,600,EXPR 600
+6,Thu Jan 13 21:00:44 EST 2022,false,Variables:[],variables,Variables:[]
+6,Thu Jan 13 21:00:44 EST 2022,false,main:String[]->void,missingSignature,main:String[]->void,greeting.cls:[@GreetingMain]
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\Hello.java,variables,Variables:[]
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\Hello.java,superTypes,None
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[]Setters:[]
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\Hello.java,innerTypes,[]
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\Hello.java,tags,None
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:0 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:NaN Protected Methods Fraction:NaN Package Access Methods Fraction:NaN Private  Methods Fraction:NaN Average Method Access:NaN Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\Hello.java,properties,Properties:[]
+6,Thu Jan 13 21:00:44 EST 2022,false,greeting\Hello.java,interfaces,[]
+6,Thu Jan 13 21:00:44 EST 2022,false,No Expected Tag,classDefined,No Expected Tag
+6,Thu Jan 13 21:00:44 EST 2022,false,None,superTypes,None
+6,Thu Jan 13 21:00:44 EST 2022,false,None,tags,None
+6,Thu Jan 13 21:00:44 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+6,Thu Jan 13 21:00:44 EST 2022,true,greeting\Cls.java,classDefined,No Expected Tag
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\RunS22A0Tests.java,nameNotInDictionary,greeting.RunS22A0Tests,s
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\RunS22A0Tests.java,minimumLettersInNameCheck,greeting.RunS22A0Tests,s,2
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\RunS22A0Tests.java,minimumVowelInNameCheck,greeting.RunS22A0Tests,s,1
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,greeting
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,run
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,a
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,tests
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,args,args
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\RunS22A0Tests.java,classDefined,No Expected Tag
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,600,EXPR 600
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,5,EXPR 5
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\Hello.java,innerTypes,[]
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\Hello.java,superTypes,None
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\Hello.java,interfaces,[]
+6,Thu Jan 13 21:01:18 EST 2022,true,greeting\Hello.java,tags,None
+7,Thu Jan 13 21:02:32 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: [(greeting.Hello, public, package, 2, greeting.RunS22A0Tests, null )]
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\Hello.java,innerTypes,[]
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\Hello.java,superTypes,None
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\Hello.java,interfaces,[]
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\Hello.java,tags,None
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,greeting
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\Hello.java,expectedMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.Hello:[@GreetingMain]
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,variables,Variables:[]
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,properties,Properties:[]
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,innerTypes,[]
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,superTypes,None
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,interfaces,[]
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,tags,None
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,classDefined,No Expected Tag
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,nameNotInDictionary,greeting.RunS22A0Tests,s
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,minimumLettersInNameCheck,greeting.RunS22A0Tests,s,2
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,minimumVowelInNameCheck,greeting.RunS22A0Tests,s,1
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,greeting
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,run
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,a
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,tests
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,args,args
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,600,EXPR 600
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+7,Thu Jan 13 21:04:08 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,5,EXPR 5
+7,Thu Jan 13 21:07:12 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+7,Thu Jan 13 21:07:12 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+7,Thu Jan 13 21:07:12 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+7,Thu Jan 13 21:07:12 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+7,Thu Jan 13 21:07:12 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+7,Thu Jan 13 21:07:12 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+7,Thu Jan 13 21:07:12 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+7,Thu Jan 13 21:07:12 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+7,Thu Jan 13 21:07:12 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\Hello.java,innerTypes,[]
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\Hello.java,superTypes,None
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\Hello.java,interfaces,[]
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\Hello.java,tags,None
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,greeting
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\Hello.java,expectedMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.Hello:[@GreetingMain]
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,variables,Variables:[]
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,properties,Properties:[]
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,innerTypes,[]
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,superTypes,None
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,interfaces,[]
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,tags,None
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,greeting
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,run
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,a
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,tests
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,args,args
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,classDefined,No Expected Tag
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,nameNotInDictionary,greeting.RunS22A0Tests,s
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,minimumLettersInNameCheck,greeting.RunS22A0Tests,s,2
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,minimumVowelInNameCheck,greeting.RunS22A0Tests,s,1
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,600,EXPR 600
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+7,Thu Jan 13 21:07:13 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,5,EXPR 5
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\Cls.java,classDefined,No Expected Tag
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,a
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,run
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\RunS22A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,greeting
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\RunS22A0Tests.java,liberalMagicNumber,600,EXPR 600
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\RunS22A0Tests.java,nameInDictionary,args,args
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\RunS22A0Tests.java,liberalMagicNumber,5,EXPR 5
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\RunS22A0Tests.java,nameNotInDictionary,greeting.RunS22A0Tests,s
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,tests
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\RunS22A0Tests.java,classDefined,No Expected Tag
+9,Thu Jan 13 21:12:26 EST 2022,false,1,minimumVowelInNameCheck,greeting.RunS22A0Tests,s,1
+9,Thu Jan 13 21:12:26 EST 2022,false,2,minimumLettersInNameCheck,greeting.RunS22A0Tests,s,2
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\Hello.java,variables,Variables:[]
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\Hello.java,superTypes,None
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\Hello.java,innerTypes,[]
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: [(greeting.Hello, public, package, 2, greeting.RunS22A0Tests, null )]
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\Hello.java,tags,None
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\Hello.java,properties,Properties:[]
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+9,Thu Jan 13 21:12:26 EST 2022,false,greeting\Hello.java,interfaces,[]
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\Hello.java,innerTypes,[]
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\Hello.java,superTypes,None
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\Hello.java,interfaces,[]
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\Hello.java,tags,None
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,greeting
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\Hello.java,expectedMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.Hello:[@GreetingMain]
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,variables,Variables:[]
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,properties,Properties:[]
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,innerTypes,[]
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,superTypes,None
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,interfaces,[]
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,tags,None
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,nameNotInDictionary,greeting.RunS22A0Tests,s
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,minimumLettersInNameCheck,greeting.RunS22A0Tests,s,2
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,minimumVowelInNameCheck,greeting.RunS22A0Tests,s,1
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,classDefined,No Expected Tag
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,greeting
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,run
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,a
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,tests
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,args,args
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,600,EXPR 600
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+9,Thu Jan 13 21:12:41 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,5,EXPR 5
+10,Thu Jan 13 21:15:35 EST 2022,false,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+10,Thu Jan 13 21:15:35 EST 2022,true,greeting\RunS22A0Tests.java,classDefined,No Expected Tag
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\Hello.java,innerTypes,[]
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\Hello.java,superTypes,None
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\Hello.java,interfaces,[]
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\Hello.java,tags,None
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,greeting
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\Hello.java,expectedMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.Hello:[@GreetingMain]
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,variables,Variables:[]
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,properties,Properties:[]
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,innerTypes,[]
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,superTypes,None
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,interfaces,[]
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,tags,None
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,nameNotInDictionary,greeting.RunS22A0Tests,s
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,minimumLettersInNameCheck,greeting.RunS22A0Tests,s,2
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,minimumVowelInNameCheck,greeting.RunS22A0Tests,s,1
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,greeting
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,run
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,a
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,tests
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,args,args
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,classDefined,No Expected Tag
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,600,EXPR 600
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+10,Thu Jan 13 21:15:57 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,5,EXPR 5
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\RunS22A0Tests.java,nameNotInDictionary,greeting.RunS22A0Tests,s
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\RunS22A0Tests.java,minimumLettersInNameCheck,greeting.RunS22A0Tests,s,2
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\RunS22A0Tests.java,minimumVowelInNameCheck,greeting.RunS22A0Tests,s,1
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,greeting
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,run
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,a
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,tests
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,args,args
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,600,EXPR 600
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,5,EXPR 5
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: [(greeting.Hello, public, package, 2, greeting.RunS22A0Tests, null )]
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\Hello.java,innerTypes,[]
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\Hello.java,superTypes,None
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\Hello.java,interfaces,[]
+10,Thu Jan 13 21:16:11 EST 2022,true,greeting\Hello.java,tags,None
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\Hello.java,innerTypes,[]
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\Hello.java,superTypes,None
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\Hello.java,interfaces,[]
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\Hello.java,tags,None
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,greeting
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\Hello.java,expectedMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.Hello:[@GreetingMain]
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,variables,Variables:[]
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,properties,Properties:[]
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,innerTypes,[]
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,superTypes,None
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,interfaces,[]
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,tags,None
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,classDefined,No Expected Tag
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,nameNotInDictionary,greeting.RunS22A0Tests,s
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,minimumLettersInNameCheck,greeting.RunS22A0Tests,s,2
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,minimumVowelInNameCheck,greeting.RunS22A0Tests,s,1
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,greeting
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,run
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,a
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,tests
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,args,args
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,600,EXPR 600
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+10,Thu Jan 13 21:24:20 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,5,EXPR 5
+10,Thu Jan 13 21:25:45 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+10,Thu Jan 13 21:25:45 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+10,Thu Jan 13 21:25:45 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+10,Thu Jan 13 21:25:45 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+10,Thu Jan 13 21:25:45 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+10,Thu Jan 13 21:25:45 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+10,Thu Jan 13 21:25:45 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+10,Thu Jan 13 21:25:45 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+10,Thu Jan 13 21:25:45 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+10,Thu Jan 13 21:25:45 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+10,Thu Jan 13 21:25:45 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+10,Thu Jan 13 21:25:45 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+10,Thu Jan 13 21:25:45 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\Hello.java,innerTypes,[]
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\Hello.java,superTypes,None
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\Hello.java,interfaces,[]
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\Hello.java,tags,None
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,greeting
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\Hello.java,expectedMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.Hello:[@GreetingMain]
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,variables,Variables:[]
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,properties,Properties:[]
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,innerTypes,[]
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,superTypes,None
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,interfaces,[]
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,tags,None
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,greeting
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,run
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,a
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,tests
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,args,args
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,classDefined,No Expected Tag
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,nameNotInDictionary,greeting.RunS22A0Tests,s
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,minimumLettersInNameCheck,greeting.RunS22A0Tests,s,2
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,minimumVowelInNameCheck,greeting.RunS22A0Tests,s,1
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,600,EXPR 600
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+10,Thu Jan 13 21:25:46 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,5,EXPR 5
+14,Thu Jan 13 21:28:55 EST 2022,false,greeting\Hello.java,variables,Variables:[]
+14,Thu Jan 13 21:28:55 EST 2022,false,greeting\Hello.java,superTypes,None
+14,Thu Jan 13 21:28:55 EST 2022,false,greeting\Hello.java,innerTypes,[]
+14,Thu Jan 13 21:28:55 EST 2022,false,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: [(greeting.Hello, public, package, 2, greeting.RunS22A0Tests, null )]
+14,Thu Jan 13 21:28:55 EST 2022,false,greeting\Hello.java,tags,None
+14,Thu Jan 13 21:28:55 EST 2022,false,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+14,Thu Jan 13 21:28:55 EST 2022,false,greeting\Hello.java,properties,Properties:[]
+14,Thu Jan 13 21:28:55 EST 2022,false,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+14,Thu Jan 13 21:28:55 EST 2022,false,greeting\Hello.java,interfaces,[]
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\Hello.java,innerTypes,[]
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\Hello.java,superTypes,None
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\Hello.java,interfaces,[]
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\Hello.java,tags,None
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,greeting
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\Hello.java,expectedMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.Hello:[@GreetingMain]
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,variables,Variables:[]
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,properties,Properties:[]
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,innerTypes,[]
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,superTypes,None
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,interfaces,[]
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,tags,None
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,nameNotInDictionary,greeting.RunS22A0Tests,s
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,minimumLettersInNameCheck,greeting.RunS22A0Tests,s,2
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,minimumVowelInNameCheck,greeting.RunS22A0Tests,s,1
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,greeting
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,run
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,a
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,tests
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,args,args
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,classDefined,No Expected Tag
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,600,EXPR 600
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+14,Thu Jan 13 21:29:29 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,5,EXPR 5
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\Hello.java,innerTypes,[]
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\Hello.java,superTypes,None
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\Hello.java,interfaces,[]
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\Hello.java,tags,None
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,greeting
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\Hello.java,expectedMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.Hello:[@GreetingMain]
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,variables,Variables:[]
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,properties,Properties:[]
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,innerTypes,[]
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,superTypes,None
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,interfaces,[]
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,tags,None
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,nameNotInDictionary,greeting.RunS22A0Tests,s
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,minimumLettersInNameCheck,greeting.RunS22A0Tests,s,2
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,minimumVowelInNameCheck,greeting.RunS22A0Tests,s,1
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,classDefined,No Expected Tag
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,greeting
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,run
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,a
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,tests
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,args,args
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,600,EXPR 600
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+14,Thu Jan 13 21:30:30 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,5,EXPR 5
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\Hello.java,innerTypes,[]
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\Hello.java,superTypes,None
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\Hello.java,interfaces,[]
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\Hello.java,tags,None
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,greeting
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\Hello.java,expectedMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.Hello:[@GreetingMain]
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,variables,Variables:[]
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,properties,Properties:[]
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,innerTypes,[]
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,superTypes,None
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,interfaces,[]
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,tags,None
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,greeting
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,run
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,a
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,greeting.RunS22A0Tests,tests
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,nameInDictionary,args,args
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,nameNotInDictionary,greeting.RunS22A0Tests,s
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,minimumLettersInNameCheck,greeting.RunS22A0Tests,s,2
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,minimumVowelInNameCheck,greeting.RunS22A0Tests,s,1
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,classDefined,No Expected Tag
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,600,EXPR 600
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+14,Thu Jan 13 21:33:38 EST 2022,true,greeting\RunS22A0Tests.java,liberalMagicNumber,5,EXPR 5
+17,Thu Jan 13 21:35:26 EST 2022,true,greeting\A0Tests.java,classDefined,No Expected Tag
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\A0Tests.java,variables,Variables:[]
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\A0Tests.java,properties,Properties:[]
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\A0Tests.java,innerTypes,[]
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\A0Tests.java,superTypes,None
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\A0Tests.java,interfaces,[]
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\A0Tests.java,tags,None
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\A0Tests.java,classDefined,No Expected Tag
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,greeting
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,a
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,tests
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\A0Tests.java,nameInDictionary,args,args
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\A0Tests.java,liberalMagicNumber,600,EXPR 600
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\A0Tests.java,liberalMagicNumber,5,EXPR 5
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\Hello.java,innerTypes,[]
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\Hello.java,superTypes,None
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\Hello.java,interfaces,[]
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\Hello.java,tags,None
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,greeting
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
+17,Thu Jan 13 21:35:43 EST 2022,true,greeting\Hello.java,expectedMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.Hello:[@GreetingMain]
+17,Thu Jan 13 21:39:22 EST 2022,true,greeting\A0Tests.java,variables,Variables:[]
+17,Thu Jan 13 21:39:22 EST 2022,true,greeting\A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+17,Thu Jan 13 21:39:22 EST 2022,true,greeting\A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+17,Thu Jan 13 21:39:22 EST 2022,true,greeting\A0Tests.java,properties,Properties:[]
+17,Thu Jan 13 21:39:22 EST 2022,true,greeting\A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+17,Thu Jan 13 21:39:22 EST 2022,true,greeting\A0Tests.java,innerTypes,[]
+17,Thu Jan 13 21:39:22 EST 2022,true,greeting\A0Tests.java,superTypes,None
+17,Thu Jan 13 21:39:22 EST 2022,true,greeting\A0Tests.java,interfaces,[]
+17,Thu Jan 13 21:39:22 EST 2022,true,greeting\A0Tests.java,tags,None
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,greeting
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,a
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,tests
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\A0Tests.java,nameInDictionary,args,args
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\A0Tests.java,classDefined,No Expected Tag
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\A0Tests.java,liberalMagicNumber,600,EXPR 600
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\A0Tests.java,liberalMagicNumber,5,EXPR 5
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\Hello.java,innerTypes,[]
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\Hello.java,superTypes,None
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\Hello.java,interfaces,[]
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\Hello.java,tags,None
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,greeting
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain
+17,Thu Jan 13 21:39:23 EST 2022,true,greeting\Hello.java,expectedMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.Hello:[@GreetingMain]
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\A0Tests.java,variables,Variables:[]
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\A0Tests.java,properties,Properties:[]
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\A0Tests.java,innerTypes,[]
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\A0Tests.java,superTypes,None
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\A0Tests.java,interfaces,[]
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\A0Tests.java,tags,None
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\A0Tests.java,classDefined,No Expected Tag
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,greeting
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,a
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,tests
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\A0Tests.java,nameInDictionary,args,args
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\A0Tests.java,liberalMagicNumber,600,EXPR 600
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\A0Tests.java,liberalMagicNumber,5,EXPR 5
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\Hello.java,innerTypes,[]
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\Hello.java,superTypes,None
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\Hello.java,interfaces,[]
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\Hello.java,tags,None
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,greeting
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
+17,Thu Jan 13 21:39:52 EST 2022,true,greeting\Hello.java,expectedMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.Hello:[@GreetingMain]
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\A0Tests.java,variables,Variables:[]
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\A0Tests.java,properties,Properties:[]
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\A0Tests.java,innerTypes,[]
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\A0Tests.java,superTypes,None
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\A0Tests.java,interfaces,[]
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\A0Tests.java,tags,None
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,greeting
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,a
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,tests
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\A0Tests.java,nameInDictionary,args,args
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\A0Tests.java,classDefined,No Expected Tag
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\A0Tests.java,liberalMagicNumber,600,EXPR 600
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\A0Tests.java,liberalMagicNumber,2000,EXPR 2000
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\A0Tests.java,liberalMagicNumber,5,EXPR 5
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\Hello.java,innerTypes,[]
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\Hello.java,superTypes,None
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\Hello.java,interfaces,[]
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\Hello.java,tags,None
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,greeting
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain
+17,Thu Jan 13 21:42:00 EST 2022,true,greeting\Hello.java,expectedMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.Hello:[@GreetingMain]
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\A0Tests.java,variables,Variables:[]
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\A0Tests.java,properties,Properties:[]
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\A0Tests.java,innerTypes,[]
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\A0Tests.java,superTypes,None
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\A0Tests.java,interfaces,[]
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\A0Tests.java,tags,None
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\A0Tests.java,classDefined,No Expected Tag
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,greeting
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,a
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,tests
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\A0Tests.java,nameInDictionary,args,args
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\Hello.java,innerTypes,[]
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\Hello.java,superTypes,None
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\Hello.java,interfaces,[]
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\Hello.java,tags,None
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,greeting
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
+17,Thu Jan 13 21:44:12 EST 2022,true,greeting\Hello.java,expectedMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.Hello:[@GreetingMain]
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\A0Tests.java,variables,Variables:[]
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\A0Tests.java,properties,Properties:[]
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\A0Tests.java,innerTypes,[]
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\A0Tests.java,superTypes,None
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\A0Tests.java,interfaces,[]
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\A0Tests.java,tags,None
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,greeting
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,a
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,tests
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\A0Tests.java,nameInDictionary,args,args
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\A0Tests.java,classDefined,No Expected Tag
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\Hello.java,innerTypes,[]
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\Hello.java,superTypes,None
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\Hello.java,interfaces,[]
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\Hello.java,tags,None
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,greeting
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain
+17,Thu Jan 13 21:44:45 EST 2022,true,greeting\Hello.java,expectedMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.Hello:[@GreetingMain]
+21,Thu Jan 13 21:48:34 EST 2022,true,greeting\A0Tests.java,variables,Variables:[]
+21,Thu Jan 13 21:48:34 EST 2022,true,greeting\A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+21,Thu Jan 13 21:48:34 EST 2022,true,greeting\A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+21,Thu Jan 13 21:48:34 EST 2022,true,greeting\A0Tests.java,properties,Properties:[]
+21,Thu Jan 13 21:48:34 EST 2022,true,greeting\A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+21,Thu Jan 13 21:48:34 EST 2022,true,greeting\A0Tests.java,innerTypes,[]
+21,Thu Jan 13 21:48:34 EST 2022,true,greeting\A0Tests.java,superTypes,None
+21,Thu Jan 13 21:48:34 EST 2022,true,greeting\A0Tests.java,interfaces,[]
+21,Thu Jan 13 21:48:34 EST 2022,true,greeting\A0Tests.java,tags,None
+21,Thu Jan 13 21:48:41 EST 2022,true,greeting\A0Tests.java,variables,Variables:[]
+21,Thu Jan 13 21:48:41 EST 2022,true,greeting\A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+21,Thu Jan 13 21:48:41 EST 2022,true,greeting\A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+21,Thu Jan 13 21:48:41 EST 2022,true,greeting\A0Tests.java,properties,Properties:[]
+21,Thu Jan 13 21:48:41 EST 2022,true,greeting\A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+21,Thu Jan 13 21:48:41 EST 2022,true,greeting\A0Tests.java,innerTypes,[]
+21,Thu Jan 13 21:48:41 EST 2022,true,greeting\A0Tests.java,superTypes,None
+21,Thu Jan 13 21:48:41 EST 2022,true,greeting\A0Tests.java,interfaces,[]
+21,Thu Jan 13 21:48:41 EST 2022,true,greeting\A0Tests.java,tags,None
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,greeting
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,a
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,tests
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\A0Tests.java,nameInDictionary,length,length
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\A0Tests.java,nameInDictionary,time,time
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\A0Tests.java,nameInDictionary,args,args
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\A0Tests.java,nameNotInDictionary,timeout,timeout
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\A0Tests.java,classDefined,No Expected Tag
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\Hello.java,innerTypes,[]
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\Hello.java,superTypes,None
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\Hello.java,interfaces,[]
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\Hello.java,tags,None
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,greeting
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain
+21,Thu Jan 13 21:48:42 EST 2022,true,greeting\Hello.java,expectedMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.Hello:[@GreetingMain]
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\A0Tests.java,variables,Variables:[]
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\A0Tests.java,accessModifiersUsed,Access Modifiers Used: []
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\A0Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\A0Tests.java,properties,Properties:[]
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\A0Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\A0Tests.java,innerTypes,[]
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\A0Tests.java,superTypes,None
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\A0Tests.java,interfaces,[]
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\A0Tests.java,tags,None
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\A0Tests.java,classDefined,No Expected Tag
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,greeting
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,a
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\A0Tests.java,nameInDictionary,greeting.A0Tests,tests
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\A0Tests.java,nameInDictionary,length,length
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\A0Tests.java,nameInDictionary,time,time
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\A0Tests.java,nameInDictionary,timer,timer
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\A0Tests.java,nameInDictionary,args,args
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\GreetingClassRegistry.java,variables,Variables:[]
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\GreetingClassRegistry.java,accessModifiersUsed,Access Modifiers Used: []
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\GreetingClassRegistry.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getGreetingMain:->Class]Setters:[]
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\GreetingClassRegistry.java,properties,Properties:[readonly  p-v:5 access:public GreetingMain:Class(public , null)]
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\GreetingClassRegistry.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:1 Number of Non Getter Functions:0 Number of Getters and Setters:1 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:1 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\GreetingClassRegistry.java,innerTypes,[]
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\GreetingClassRegistry.java,superTypes,None
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\GreetingClassRegistry.java,interfaces,[]
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\GreetingClassRegistry.java,tags,None
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,greeting
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,class
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\GreetingClassRegistry.java,nameInDictionary,greeting.GreetingClassRegistry,registry
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\GreetingClassRegistry.java,publicMethodsOverride,[]
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\Hello.java,variables,Variables:[]
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\Hello.java,accessModifiersUsed,Access Modifiers Used: []
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\Hello.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\Hello.java,properties,Properties:[]
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\Hello.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\Hello.java,innerTypes,[]
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\Hello.java,superTypes,None
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\Hello.java,interfaces,[]
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\Hello.java,tags,None
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,greeting
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
+21,Thu Jan 13 21:49:16 EST 2022,true,greeting\Hello.java,expectedMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.Hello:[@GreetingMain]
