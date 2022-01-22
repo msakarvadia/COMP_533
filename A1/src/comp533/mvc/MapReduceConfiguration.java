@@ -23,7 +23,7 @@ public class MapReduceConfiguration implements gradingTools.comp533s21.assignmen
 	@Override
 	public Class<?> getControllerClass() {
 		// TODO Auto-generated method stub
-		return null;
+		return Controller.class;
 	}
 
 	@Override
@@ -65,7 +65,7 @@ public class MapReduceConfiguration implements gradingTools.comp533s21.assignmen
 	@Override
 	public Class<?> getModelClass() {
 		// TODO Auto-generated method stub
-		return null;
+		return Model.class;
 	}
 
 	@Override
@@ -166,7 +166,8 @@ public class MapReduceConfiguration implements gradingTools.comp533s21.assignmen
 
 	@Override
 	public Class<?> getStandAloneTokenCounter() {
-		return StandAloneTokenCounter.class;
+		return mvc.class;
+		//return StandAloneTokenCounter.class;
 	}
 
 	@Override
@@ -184,7 +185,7 @@ public class MapReduceConfiguration implements gradingTools.comp533s21.assignmen
 	@Override
 	public Class<?> getViewClass() {
 		// TODO Auto-generated method stub
-		return null;
+		return View.class;
 	}
 
 }

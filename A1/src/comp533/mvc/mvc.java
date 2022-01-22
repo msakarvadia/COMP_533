@@ -4,14 +4,14 @@ public class mvc {
 	public static void main(String[] args) {
 		
 		
-		View view = new View();
+		final ViewInterface view = new View();
 		
-		Model model = new Model();
+		final ModelInterface model = new Model();
 		model.addPropertyChangeListener(view);
 		
-		Controller controller = new Controller();
-		controller.gatherInput(model);
-		
+		final ControllerInterface controller = new Controller();
+		controller.setModel(model);
+		controller.processInput();
 		
 		
 	}

@@ -7,8 +7,9 @@ import java.util.Map;
 import java.util.HashMap;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeEvent;
+import gradingTools.comp533s19.assignment0.AMapReduceTracer; 
 
-public class Model extends gradingTools.comp533s19.assignment0.AMapReduceTracer {
+public class Model extends AMapReduceTracer implements ModelInterface{
 	private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
 	private String inputString = null;
 	public Map<String, Integer> Result =new HashMap<String, Integer>();
@@ -17,7 +18,7 @@ public class Model extends gradingTools.comp533s19.assignment0.AMapReduceTracer 
 		propertyChangeSupport.addPropertyChangeListener(newListener);
 	}
 
-	public void setInput(String newVal) {
+	public void setInputString(String newVal) {
 		String oldInputString = inputString;
 		inputString = newVal;
 		PropertyChangeEvent inputEvent = new PropertyChangeEvent(this, "InputString", oldInputString, newVal);
@@ -32,15 +33,19 @@ public class Model extends gradingTools.comp533s19.assignment0.AMapReduceTracer 
 	}
 	
 	public void computeResult() {
-		Map<String, Integer> oldResult = Result;
-		String tokens = inputString;
+		String oldResult = Result.toString();
+		if (Result.isEmpty()) {
+			oldResult = null;
+		}
+		final String tokens = inputString;
+		Result.clear();
 		
-		String[] arrOfTok = tokens.split(" ");
+		final String[] arrayOfToken = tokens.split(" ");
 		// make an array that contains unique tokens
-		List<String> uniqueTokens = new ArrayList<>();
-		// make a second array that maitains the counts of said unique tokens
-		List<Integer> counts = new ArrayList<>();
-		for (String a : arrOfTok) {
+		final List<String> uniqueTokens = new ArrayList<>();
+		// make a second array that maintains the counts of said unique tokens
+		final List<Integer> counts = new ArrayList<>();
+		for (String a : arrayOfToken) {
 			if (!uniqueTokens.contains(a)) {
 				uniqueTokens.add(a);
 			}
@@ -53,15 +58,18 @@ public class Model extends gradingTools.comp533s19.assignment0.AMapReduceTracer 
 			}
 		}
 		
-		for (int tok_idx = 0; tok_idx < counts.size(); tok_idx++) {
-			Result.put(uniqueTokens.get(tok_idx), counts.get(tok_idx));	
+		for (int i = 0; i < counts.size(); i++) {
+			Result.put(uniqueTokens.get(i), counts.get(i));	
 		}
 		
-		PropertyChangeEvent resultComputed = new PropertyChangeEvent(this, "Result", oldResult, Result);
+		PropertyChangeEvent resultComputed = new PropertyChangeEvent(this, "Result", oldResult, Result.toString());
 		propertyChangeSupport.firePropertyChange(resultComputed);
-		System.out.println("Output:");
+		
 	}
 
+	public Map<String, Integer> getResult(){
+		return Result;
+	}
 	public String toString() {// overriding the toString() method
 		return MODEL;
 	}

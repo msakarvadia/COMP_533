@@ -19,12 +19,12 @@ public class StandAloneTokenCounter {
 				System.exit(0);
 				input.close();
 			}
-			String[] arrOfTok = tokens.split(" ");
+			String[] arrayOfToken = tokens.split(" ");
 			// make an array that contains unique tokens
 			List<String> uniqueTokens = new ArrayList<>();
 			// make a second array that maitains the counts of said unique tokens
 			List<Integer> counts = new ArrayList<>();
-			for (String a : arrOfTok) {
+			for (String a : arrayOfToken) {
 				if (!uniqueTokens.contains(a)) {
 					uniqueTokens.add(a);
 				}
@@ -38,11 +38,11 @@ public class StandAloneTokenCounter {
 			}
 			System.out.println("Output:");
 			String out = "";
-			for (int tok_idx = 0; tok_idx < counts.size(); tok_idx++) {
+			for (int i = 0; i < counts.size(); i++) {
 
-				String temp = uniqueTokens.get(tok_idx) + "=" + String.valueOf(counts.get(tok_idx));
+				String temp = uniqueTokens.get(i) + "=" + String.valueOf(counts.get(i));
 				out = out + temp;
-				if (tok_idx + 1 < counts.size()) {
+				if (i + 1 < counts.size()) {
 					out = out + ", ";
 				}
 			}

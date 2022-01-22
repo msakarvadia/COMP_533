@@ -1,20 +1,20 @@
 package comp533.mvc;
 
 import java.util.Scanner;
+import gradingTools.comp533s19.assignment0.AMapReduceTracer; 
 
-public class Controller extends gradingTools.comp533s19.assignment0.AMapReduceTracer {
-	public Model model;
+public class Controller extends AMapReduceTracer implements ControllerInterface{
+	private ModelInterface model;
 	
-	public void gatherInput(Model mdl) {
+	public void processInput() {
 
-		Scanner input = new Scanner(System.in);
+		final Scanner input = new Scanner(System.in);
 		while (true) {
-			setModel(mdl);
 			traceNumbersPrompt();
-			String tokens = input.nextLine();
-			model.setInput(tokens);
-			if (model.quit()) {
-				System.exit(0);
+			final String tokens = input.nextLine();
+			model.setInputString(tokens);
+			if (tokens.equals("quit")) {
+				traceQuit();
 				input.close();
 			}
 			else {
@@ -23,9 +23,8 @@ public class Controller extends gradingTools.comp533s19.assignment0.AMapReduceTr
 		}
 	}
 	
-	public void setModel(Model mdl) {
-		model = mdl;
-		
+	public void setModel(final ModelInterface newModel) {
+		model = newModel;
 	}
 
 	public String toString() {// overriding the toString() method
