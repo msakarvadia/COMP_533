@@ -1,0 +1,41 @@
+1/21/2022 13:46:51 PM	COMP 533 (5 unread)	https://piazza.com/class/kxx594eo8fl3y2
+1/21/2022 13:48:47 PM	COMP 533 (4 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=34
+1/21/2022 13:48:54 PM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm?rtpof=true&authuser=dewan%40cs.unc.edu&usp=drive_fs
+1/21/2022 13:48:55 PM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/u/0/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit?rtpof=true&usp=drive_fs
+1/21/2022 13:48:55 PM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit?rtpof=true
+1/21/2022 13:49:00 PM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit
+1/21/2022 13:49:04 PM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#heading=h.1fob9te
+1/21/2022 13:46:55 PM	COMP 533 (4 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=49
+1/21/2022 13:54:58 PM	java - Check Style Indentation violation - 'public' have incorrect indentation level 4, expected level should be 8 - Stack Overflow	https://stackoverflow.com/questions/31831321/check-style-indentation-violation-public-have-incorrect-indentation-level-4
+1/21/2022 13:57:56 PM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=36
+1/21/2022 13:58:06 PM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=37
+1/21/2022 13:58:11 PM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=39
+1/21/2022 13:59:05 PM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=49
+1/21/2022 13:59:03 PM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=48
+1/21/2022 13:58:42 PM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=45
+1/21/2022 14:01:14 PM	java - Why am I getting the warning :Class is a raw type. References to generic type Class<T> should be parameterized"? - Stack Overflow	https://stackoverflow.com/questions/20451096/why-am-i-getting-the-warning-class-is-a-raw-type-references-to-generic-type-cl/20451127
+1/21/2022 14:16:20 PM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#
+1/21/2022 14:18:14 PM	java appending to string - Google Search	https://www.google.com/search?q=java+appending+to+string&rlz=1C1CHBF_enUS939US939&oq=java+appending+to+string&aqs=chrome..69i57.4718j0j7&sourceid=chrome&ie=UTF-8
+1/21/2022 14:17:15 PM	String Concatenation in Java - javatpoint	https://www.javatpoint.com/string-concatenation-in-java
+1/21/2022 14:18:18 PM	How to append a string in Java	https://www.tutorialcup.com/java/how-to-append-a-string-in-java.htm
+1/21/2022 14:20:45 PM	java for loop - Google Search	https://www.google.com/search?q=java+for+loop&rlz=1C1CHBF_enUS939US939&oq=java+for+loop&aqs=chrome..69i57.2361j0j7&sourceid=chrome&ie=UTF-8
+1/21/2022 14:20:46 PM	Java For Loop	https://www.w3schools.com/java/java_for_loop.asp
+1/21/2022 14:24:33 PM	java integer to str - Google Search	https://www.google.com/search?q=java+integer+to+str&rlz=1C1CHBF_enUS939US939&oq=java+integer+to+str&aqs=chrome..69i57.6113j0j7&sourceid=chrome&ie=UTF-8
+1/21/2022 14:24:35 PM	Java Convert int to String - javatpoint	https://www.javatpoint.com/java-int-to-string
+1/22/2022 11:04:58 AM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#
+1/22/2022 11:17:11 AM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#
+1/22/2022 11:19:22 AM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#
+1/22/2022 11:31:41 AM	msakarvadia (Mansi Sakarvadia)	https://github.com/msakarvadia
+1/22/2022 11:31:37 AM	knowledge_distillation/distill.py at main · msakarvadia/knowledge_distillation	https://github.com/msakarvadia/knowledge_distillation/blob/main/distill.py
+1/22/2022 11:32:08 AM	Confirm access	https://github.com/settings/tokens
+1/22/2022 11:31:50 AM	Your Profile	https://github.com/settings/profile
+1/22/2022 11:32:05 AM	GitHub Apps	https://github.com/settings/apps
+1/22/2022 11:32:12 AM	New personal access token	https://github.com/settings/tokens/new
+1/22/2022 11:33:02 AM	msakarvadia (Mansi Sakarvadia)	https://github.com/msakarvadia
+1/22/2022 11:33:04 AM	Your Repositories	https://github.com/msakarvadia?tab=repositories
+1/22/2022 11:33:07 AM	Create a New Repository	https://github.com/new
+1/22/2022 11:32:57 AM	msakarvadia/knowledge_distillation	https://github.com/msakarvadia/knowledge_distillation
+1/22/2022 11:32:32 AM	Personal Access Tokens	https://github.com/settings/tokens
+1/22/2022 11:32:54 AM	GitHub	https://github.com/
+1/22/2022 11:34:02 AM	Git Guides - git init	https://github.com/git-guides/git-init#:~:text=git%20init%20Existing%20Folder&text=For%20an%20existing%20project%20to,turn%20into%20a%20Git%20repository.
+1/22/2022 11:35:00 AM	msakarvadia/COMP_533	https://github.com/msakarvadia/COMP_533

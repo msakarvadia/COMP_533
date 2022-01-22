@@ -1,0 +1,58 @@
+1/20/2022 23:22:49 PM	COMP 533 (5 unread)	https://piazza.com/class/kxx594eo8fl3y2
+1/20/2022 23:22:58 PM	COMP 533 (5 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=36
+1/20/2022 23:23:21 PM	subclassing java - Google Search	https://www.google.com/search?q=subclassing+java&rlz=1C1CHBF_enUS939US939&oq=subclassing+java&aqs=chrome..69i57.4911j0j7&sourceid=chrome&ie=UTF-8
+1/20/2022 23:23:23 PM	Java Inheritance (Subclass and Superclass)	https://www.w3schools.com/java/java_inheritance.asp
+1/20/2022 23:28:02 PM	java class that reads user input - Google Search	https://www.google.com/search?q=java+class+that+reads+user+input&rlz=1C1CHBF_enUS939US939&oq=java+class+that+reads+user+input&aqs=chrome..69i57.10866j0j4&sourceid=chrome&ie=UTF-8
+1/20/2022 23:28:04 PM	Java User Input and Scanner Class: A Step-By-Step Guide | Career Karma	https://careerkarma.com/blog/java-input/#:~:text=The%20Scanner%20class%20is%20used,reads%20text%20from%20standard%20input.
+1/20/2022 23:31:40 PM	java new line - Google Search	https://www.google.com/search?q=java+new+line&rlz=1C1CHBF_enUS939US939&oq=java+new+line&aqs=chrome..69i57.2092j0j4&sourceid=chrome&ie=UTF-8
+1/20/2022 23:31:42 PM	Adding a Newline Character to a String in Java | Baeldung	https://www.baeldung.com/java-string-newline
+1/20/2022 23:32:35 PM	java string.split - Google Search	https://www.google.com/search?q=java+string.split&rlz=1C1CHBF_enUS939US939&oq=java+string.split&aqs=chrome..69i57.3127j0j4&sourceid=chrome&ie=UTF-8
+1/20/2022 23:32:37 PM	Split() String method in Java with examples - GeeksforGeeks	https://www.geeksforgeeks.org/split-string-java-examples/
+1/20/2022 23:36:36 PM	java reading in a line of text - Google Search	https://www.google.com/search?q=java+reading+in+a+line+of+text&rlz=1C1CHBF_enUS939US939&oq=java+reading+in+a+line+of+text&aqs=chrome..69i57.3826j0j7&sourceid=chrome&ie=UTF-8
+1/20/2022 23:36:40 PM	How to read file line by line in Java - Javatpoint	https://www.javatpoint.com/how-to-read-file-line-by-line-in-java#:~:text=Scanner%20class-,Using%20BufferedReader%20Class,a%20file%20line%20by%20line.
+1/20/2022 23:36:51 PM	java read user input - Google Search	https://www.google.com/search?q=java+read+user+input&rlz=1C1CHBF_enUS939US939&oq=java+read+user+input&aqs=chrome..69i57j69i60.3749j0j4&sourceid=chrome&ie=UTF-8
+1/20/2022 23:36:53 PM	Java User Input (Scanner class)	https://www.w3schools.com/java/java_user_input.asp
+1/20/2022 23:38:21 PM	java if statment - Google Search	https://www.google.com/search?q=java+if+statment&rlz=1C1CHBF_enUS939US939&oq=java+if+statment&aqs=chrome..69i57.3294j0j7&sourceid=chrome&ie=UTF-8
+1/20/2022 23:38:22 PM	Java If ... Else	https://www.w3schools.com/java/java_conditions.asp
+1/20/2022 23:39:39 PM	java comparing strings - Google Search	https://www.google.com/search?q=java+comparing+strings&rlz=1C1CHBF_enUS939US939&oq=java+comparing+strings&aqs=chrome..69i57.2699j0j7&sourceid=chrome&ie=UTF-8
+1/20/2022 23:39:40 PM	Compare two Strings in Java - GeeksforGeeks	https://www.geeksforgeeks.org/compare-two-strings-in-java/
+1/20/2022 23:40:39 PM	how to exit java - Google Search	https://www.google.com/search?q=how+to+exit+java&rlz=1C1CHBF_enUS939US939&oq=how+to+exit+java+&aqs=chrome..69i57.5748j0j7&sourceid=chrome&ie=UTF-8
+1/20/2022 23:40:41 PM	Terminating a Java Program - Stack Overflow	https://stackoverflow.com/questions/22452930/terminating-a-java-program#:~:text=Calling%20System.,return%20to%20the%20operating%20system.
+1/20/2022 23:47:14 PM	java .nextline() close - Google Search	https://www.google.com/search?q=java+.nextline()+close&rlz=1C1CHBF_enUS939US939&oq=java+.nextline()+close&aqs=chrome..69i57.5776j0j7&sourceid=chrome&ie=UTF-8
+1/20/2022 23:47:16 PM	Scanner nextLine() method in Java with Examples - GeeksforGeeks	https://www.geeksforgeeks.org/scanner-nextline-method-in-java-with-examples/
+1/20/2022 23:47:51 PM	java while loop - Google Search	https://www.google.com/search?q=java+while+loop&rlz=1C1CHBF_enUS939US939&oq=java+while+loop&aqs=chrome..69i57.5866j0j4&sourceid=chrome&ie=UTF-8
+1/20/2022 23:47:52 PM	Java While Loop	https://www.w3schools.com/java/java_while_loop.asp
+1/20/2022 23:49:59 PM	java counting repeats in an array - Google Search	https://www.google.com/search?q=java+counting+repeats+in+an+array&rlz=1C1CHBF_enUS939US939&oq=java+counting+repeats+in+an+array&aqs=chrome..69i57.5283j0j4&sourceid=chrome&ie=UTF-8
+1/20/2022 23:49:22 PM	Java + Count duplicates from int array without using any Collection or another intermediate Array - Stack Overflow	https://stackoverflow.com/questions/31738717/java-count-duplicates-from-int-array-without-using-any-collection-or-another-i
+1/20/2022 23:50:12 PM	how to count elements in an array java - Google Search	https://www.google.com/search?q=how+to+count+elements+in+an+array+java&rlz=1C1CHBF_enUS939US939&ei=UDvqYdTLNvCkytMP7Oqv4A0&oq=java+counting+elements+&gs_lcp=Cgdnd3Mtd2l6EAEYAjIGCAAQFhAeMgYIABAWEB4yCAgAEIYDEIsDMggIABCGAxCLAzIICAAQhgMQiwMyCAgAEIYDEIsDOgcIABBHELADSgQIQRgASgQIRhgAUJgJWIcSYPc2aAFwAngAgAFniAGYBpIBAzguMZgBAKABAcgBCLgBA8ABAQ&sclient=gws-wiz
+1/20/2022 23:50:13 PM	How do you count the elements of an array in java - Stack Overflow	https://stackoverflow.com/questions/4441099/how-do-you-count-the-elements-of-an-array-in-java
+1/20/2022 23:58:18 PM	eclipse reindent code - Google Search	https://www.google.com/search?q=eclipse+reindent+code&rlz=1C1CHBF_enUS939US939&oq=eclipse+reindent+code&aqs=chrome..69i57.4145j0j7&sourceid=chrome&ie=UTF-8
+1/20/2022 23:58:19 PM	ide - How do I reindent all my codes in Eclipse? - Stack Overflow	https://stackoverflow.com/questions/1207264/how-do-i-reindent-all-my-codes-in-eclipse
+1/21/2022 00:00:35 AM	java calling methods in main - Google Search	https://www.google.com/search?q=java+calling+methods+in+main&rlz=1C1CHBF_enUS939US939&oq=java+calling+methods+in+main&aqs=chrome..69i57.4693j0j7&sourceid=chrome&ie=UTF-8
+1/21/2022 00:00:36 AM	Java Methods	https://www.w3schools.com/java/java_methods.asp
+1/21/2022 00:03:02 AM	java parse line and count number of each token - Google Search	https://www.google.com/search?q=java+parse+line+and+count+number+of+each+token&rlz=1C1CHBF_enUS939US939&oq=java+parse+line+and+count+number+of+each+token&aqs=chrome..69i57.6581j0j4&sourceid=chrome&ie=UTF-8
+1/21/2022 00:02:36 AM	Java: Count number of tokens using StringTokenizer - BenchResources.Net	https://www.benchresources.net/java-count-number-of-tokens-using-stringtokenizer/
+1/21/2022 00:03:07 AM	StringTokenizer countTokens() Method in Java with Examples - GeeksforGeeks	https://www.geeksforgeeks.org/stringtokenizer-counttokens-method-in-java-with-examples/
+1/21/2022 00:03:21 AM	sort array of string java - Google Search	https://www.google.com/search?q=sort+array+of+string+java&rlz=1C1CHBF_enUS939US939&oq=sort+array+of+string+java&aqs=chrome..69i57.6746j0j4&sourceid=chrome&ie=UTF-8
+1/21/2022 00:03:22 AM	How to sort an Array of Strings in Java - GeeksforGeeks	https://www.geeksforgeeks.org/how-to-sort-an-array-of-strings-in-java/
+1/21/2022 00:05:05 AM	java counting number of uninque elements in array - Google Search	https://www.google.com/search?q=java+counting+number+of+uninque+elements+in+array&rlz=1C1CHBF_enUS939US939&oq=java+counting+number+of+uninque+elements+in+array&aqs=chrome..69i57.7412j0j7&sourceid=chrome&ie=UTF-8
+1/21/2022 00:04:45 AM	Java program to count distinct elements in an array | PrepInsta	https://prepinsta.com/java-program/to-count-distinct-element-in-an-array/
+1/21/2022 00:09:27 AM	Implement a Java program that allows the user to input a string of tokens, and outputs the number of times each token appears. - Google Search	https://www.google.com/search?q=Implement+a+Java+program+that+allows+the+user+to+input+a+string+of+tokens%2C+and+outputs+the+number+of+times+each+token+appears.&rlz=1C1CHBF_enUS939US939&oq=Implement+a+Java+program+that+allows+the+user+to+input+a+string+of+tokens%2C+and+outputs+the+number+of+times+each+token+appears.&aqs=chrome..69i57.240j0j4&sourceid=chrome&ie=UTF-8
+1/21/2022 00:09:08 AM	StringTokenizer Methods in Java with Examples | Set 2 - GeeksforGeeks	https://www.geeksforgeeks.org/stringtokenizer-methods-java-examples-set-2/
+1/21/2022 00:10:18 AM	java creating array of undefined size - Google Search	https://www.google.com/search?q=java+creating+array+of+undefined+size&rlz=1C1CHBF_enUS939US939&oq=java+creating+array+of+undefined+size&aqs=chrome..69i57.6186j0j9&sourceid=chrome&ie=UTF-8
+1/21/2022 00:10:19 AM	java - Adding values to an array of undefined size - Stack Overflow	https://stackoverflow.com/questions/47595832/adding-values-to-an-array-of-undefined-size
+1/21/2022 00:11:18 AM	java list - Google Search	https://www.google.com/search?q=java+list&rlz=1C1CHBF_enUS939US939&oq=java+list&aqs=chrome..69i57.1149j0j7&sourceid=chrome&ie=UTF-8
+1/21/2022 00:11:15 AM	List (Java Platform SE 8 )	https://docs.oracle.com/javase/8/docs/api/java/util/List.html
+1/21/2022 00:11:38 AM	java arraylis - Google Search	https://www.google.com/search?q=java+arraylis&rlz=1C1CHBF_enUS939US939&oq=java+arraylis&aqs=chrome..69i57.2795j0j9&sourceid=chrome&ie=UTF-8
+1/21/2022 00:11:35 AM	ArrayList (Java Platform SE 8 )	https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
+1/21/2022 00:11:40 AM	Java ArrayList	https://www.w3schools.com/java/java_arraylist.asp
+1/21/2022 00:13:59 AM	java finding index of item in list - Google Search	https://www.google.com/search?q=java+finding+index+of+item+in+list&rlz=1C1CHBF_enUS939US939&oq=java+finding+index+of+item+in+list&aqs=chrome..69i57.7172j0j7&sourceid=chrome&ie=UTF-8
+1/21/2022 00:14:01 AM	How to find the index of given element of a Java List?	https://www.tutorialspoint.com/How-to-find-the-index-of-given-element-of-a-Java-List#:~:text=The%20indexOf(Object)%20method%20of,index%20of%20a%20given%20element.
+1/21/2022 00:17:08 AM	java indexing into Array - Google Search	https://www.google.com/search?q=java+indexing+into+Array&rlz=1C1CHBF_enUS939US939&oq=java+indexing+into+Array&aqs=chrome..69i57.3333j0j7&sourceid=chrome&ie=UTF-8
+1/21/2022 00:17:00 AM	Find the index of an array element in Java - GeeksforGeeks	https://www.geeksforgeeks.org/find-the-index-of-an-array-element-in-java/
+1/21/2022 00:17:11 AM	Arrays in Java - GeeksforGeeks	https://www.geeksforgeeks.org/arrays-in-java/
+1/21/2022 00:18:02 AM	how to index into list java - Google Search	https://www.google.com/search?q=how+to+index+into+list+java&rlz=1C1CHBF_enUS939US939&oq=how+to+index+into+list+java&aqs=chrome..69i57.4819j0j4&sourceid=chrome&ie=UTF-8
+1/21/2022 00:18:05 AM	ArrayList get(index) Method in Java with Examples - GeeksforGeeks	https://www.geeksforgeeks.org/arraylist-get-method-java-examples/
+1/21/2022 00:18:56 AM	Set in Java - GeeksforGeeks	https://www.geeksforgeeks.org/set-in-java/?ref=leftbar-rightbar
+1/21/2022 00:19:21 AM	java list.set - Google Search	https://www.google.com/search?q=java+list.set&rlz=1C1CHBF_enUS939US939&oq=java+list.set&aqs=chrome..69i57.2573j0j4&sourceid=chrome&ie=UTF-8
+1/21/2022 00:19:22 AM	Java ArrayList set() Method example	https://beginnersbook.com/2013/12/java-arraylist-set-method-example/
