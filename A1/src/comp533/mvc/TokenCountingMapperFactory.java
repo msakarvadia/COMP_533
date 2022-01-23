@@ -8,6 +8,7 @@ public class TokenCountingMapperFactory extends AMapReduceTracer{
 	public static TokenCountingMapperInterface<String, Integer> getMapper() {
 		if (Mapper == null) {
 			Mapper = new TokenCountingMapper();
+			traceSingletonChange(IntSummingMapperFactory.class, Mapper);
 		}
 		return Mapper;
 	}

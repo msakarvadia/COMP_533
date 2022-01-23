@@ -18,12 +18,14 @@ public class Reducer extends AMapReduceTracer implements ReducerInterface<String
 		Map<String, Integer> Result =new HashMap<String, Integer>();
 		for (KeyValueInterface<String, Integer> a : aList) {
 			if (!Result.containsKey(a.getKey())) {
-				Result.put(a.getKey(),1);
+				//Result.put(a.getKey(),1);
+				Result.put(a.getKey(),a.getValue());
 			}
 			else {
-				Result.put(a.getKey(), Result.get(a.getKey()) + 1);
+				Result.put(a.getKey(), Result.get(a.getKey()) + a.getValue());
 			}
 		}
+		traceReduce(aList, Result);
 		return Result;
 	}
 }

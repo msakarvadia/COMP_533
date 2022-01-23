@@ -1,41 +1,38 @@
 package comp533.mvc;
 
+//import gradingTools.comp533s21.assignment1.interfaces.MapReduceConfiguration;
+
 public class MapReduceConfiguration implements gradingTools.comp533s21.assignment1.interfaces.MapReduceConfiguration {
 
 	@Override
 	public Object getBarrier(final int arg0) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Class<?> getBarrierClass() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Class<?> getClientTokenCounter() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Class<?> getControllerClass() {
-		// TODO Auto-generated method stub
 		return Controller.class;
 	}
 
 	@Override
 	public Object getIntSummingMapper() {
-		// TODO Auto-generated method stub
-		return null;
+		return IntSummingMapperFactory.getMapper();
 	}
 
 	@Override
 	public Class<?> getIntSummingMapperClass() {
 		// TODO Auto-generated method stub
-		return null;
+		return IntSummingMapper.class;
 	}
 
 	@Override
@@ -161,7 +158,7 @@ public class MapReduceConfiguration implements gradingTools.comp533s21.assignmen
 	@Override
 	public Class<?> getStandAloneIntegerSummer() {
 		// TODO Auto-generated method stub
-		return null;
+		return StandAloneIntSumming.class;
 	}
 
 	@Override

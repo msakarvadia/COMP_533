@@ -17,7 +17,7 @@ public class Model extends AMapReduceTracer implements ModelInterface{
 	private Map<String, Integer> Result =new HashMap<String, Integer>();
 	ReducerInterface<String, Integer> Reducer = ReducerFactory.getReducer();
 	TokenCountingMapperInterface<String, Integer> Mapper = TokenCountingMapperFactory.getMapper();
-
+	
 	@Override
 	public void addPropertyChangeListener(PropertyChangeListener newListener) {
 		propertyChangeSupport.addPropertyChangeListener(newListener);

@@ -15,6 +15,7 @@ public class TokenCountingMapper extends AMapReduceTracer implements TokenCounti
 			KeyVal.setValue(1);
 			KeyValList.add(KeyVal);
 		}
+		traceMap(aStrings ,KeyValList);
 		return KeyValList;
 	}
 	

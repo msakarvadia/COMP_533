@@ -1,5 +1,7 @@
 comp533.mvc.Controller,ControllerClass
 comp533.mvc.ControllerInterface,ControllerClass
+comp533.mvc.IntSummingMapper,IntSummingMapperClass
+comp533.mvc.IntSummingMapperInterface,IntSummingMapperClass
 comp533.mvc.KeyValue,KeyValueClass
 comp533.mvc.KeyValueInterface,KeyValueClass
 comp533.mvc.TokenCountingMapperFactory,MapperFactory
@@ -8,6 +10,7 @@ comp533.mvc.ModelInterface,ModelClass
 comp533.mvc.Reducer,ReducerClass
 comp533.mvc.ReducerInterface,ReducerClass
 comp533.mvc.ReducerFactory,ReducerFactory
+comp533.mvc.StandAloneIntSumming,StandAloneIntegerSummer
 comp533.mvc.ModelViewController,StandAloneTokenCounter
 comp533.mvc.TokenCountingMapper,TokenCountingMapperClass
 comp533.mvc.TokenCountingMapperInterface,TokenCountingMapperClass

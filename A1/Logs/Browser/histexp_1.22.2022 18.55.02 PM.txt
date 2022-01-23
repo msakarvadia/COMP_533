@@ -69,3 +69,8 @@
 1/23/2022 10:57:20 AM	Hashmap methods in Java with Examples | Set 2 (keySet(), values(), containsKey()..) - GeeksforGeeks	https://www.geeksforgeeks.org/hashmap-methods-java-examples-set-2-keyset-values-containskey/
 1/23/2022 10:57:48 AM	java updating value of key value pair - Google Search	https://www.google.com/search?q=java+updating+value+of+key+value+pair&rlz=1C1CHBF_enUS939US939&oq=java+updating+value+of+key+value+pair&aqs=chrome..69i57.6500j0j4&sourceid=chrome&ie=UTF-8
 1/23/2022 10:57:52 AM	java - How to update a value, given a key in a hashmap? - Stack Overflow	https://stackoverflow.com/q/4157972
+1/23/2022 11:55:18 AM	java string to integer - Google Search	https://www.google.com/search?q=java+string+to+integer&rlz=1C1CHBF_enUS939US939&oq=java+string+to+integer&aqs=chrome..69i57.5791j0j7&sourceid=chrome&ie=UTF-8
+1/23/2022 11:55:23 AM	Java String to Int – How to Convert a String to an Integer	https://www.freecodecamp.org/news/java-string-to-int-how-to-convert-a-string-to-an-integer/
+1/23/2022 12:45:35 PM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#
+1/23/2022 13:47:28 PM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#heading=h.30j0zll
+1/23/2022 13:59:48 PM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#
