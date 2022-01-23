@@ -5,6 +5,9 @@ comp533.mvc.KeyValueInterface,KeyValueClass
 comp533.mvc.TokenCountingMapperFactory,MapperFactory
 comp533.mvc.Model,ModelClass
 comp533.mvc.ModelInterface,ModelClass
+comp533.mvc.Reducer,ReducerClass
+comp533.mvc.ReducerInterface,ReducerClass
+comp533.mvc.ReducerFactory,ReducerFactory
 comp533.mvc.ModelViewController,StandAloneTokenCounter
 comp533.mvc.TokenCountingMapper,TokenCountingMapperClass
 comp533.mvc.TokenCountingMapperInterface,TokenCountingMapperClass

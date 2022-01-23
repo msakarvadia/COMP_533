@@ -89,19 +89,19 @@ public class MapReduceConfiguration implements gradingTools.comp533s21.assignmen
 	@Override
 	public Object getReducer() {
 		// TODO Auto-generated method stub
-		return null;
+		return ReducerFactory.getReducer();
 	}
 
 	@Override
 	public Class<?> getReducerClass() {
 		// TODO Auto-generated method stub
-		return null;
+		return Reducer.class;
 	}
 
 	@Override
 	public Class<?> getReducerFactory() {
 		// TODO Auto-generated method stub
-		return null;
+		return ReducerFactory.class;
 	}
 
 	@Override

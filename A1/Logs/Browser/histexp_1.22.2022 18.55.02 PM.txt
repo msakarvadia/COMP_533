@@ -60,3 +60,12 @@
 1/23/2022 09:20:07 AM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#
 1/23/2022 10:32:41 AM	java returning map - Google Search	https://www.google.com/search?q=java+returning+map&rlz=1C1CHBF_enUS939US939&oq=java+returning+map&aqs=chrome..69i57.2425j0j7&sourceid=chrome&ie=UTF-8
 1/23/2022 10:32:44 AM	Is it possible to return a HashMap object in Java? - Stack Overflow	https://stackoverflow.com/questions/37971533/is-it-possible-to-return-a-hashmap-object-in-java/37971561
+1/23/2022 10:53:13 AM	java hasmap - Google Search	https://www.google.com/search?q=java+hasmap&rlz=1C1CHBF_enUS939US939&oq=java+hasmap&aqs=chrome..69i57.3077j0j4&sourceid=chrome&ie=UTF-8
+1/23/2022 10:53:26 AM	Java HashMap	https://www.w3schools.com/java/java_hashmap.asp
+1/23/2022 10:53:37 AM	java hashmap contains - Google Search	https://www.google.com/search?q=java+hashmap+contains&rlz=1C1CHBF_enUS939US939&oq=java+hashmap+contains&aqs=chrome..69i57.5257j0j4&sourceid=chrome&ie=UTF-8
+1/23/2022 10:53:39 AM	HashMap containsKey() Method in Java - GeeksforGeeks	https://www.geeksforgeeks.org/hashmap-containskey-method-in-java/#:~:text=HashMap.,is%20mapped%20in%20the%20map.
+1/23/2022 10:56:40 AM	HashMap get() Method in Java - GeeksforGeeks	https://www.geeksforgeeks.org/hashmap-get-method-in-java/
+1/23/2022 10:57:05 AM	hashmap .set java - Google Search	https://www.google.com/search?q=hashmap+.set+java&rlz=1C1CHBF_enUS939US939&oq=hashmap+.set+java&aqs=chrome..69i57.2491j0j7&sourceid=chrome&ie=UTF-8
+1/23/2022 10:57:20 AM	Hashmap methods in Java with Examples | Set 2 (keySet(), values(), containsKey()..) - GeeksforGeeks	https://www.geeksforgeeks.org/hashmap-methods-java-examples-set-2-keyset-values-containskey/
+1/23/2022 10:57:48 AM	java updating value of key value pair - Google Search	https://www.google.com/search?q=java+updating+value+of+key+value+pair&rlz=1C1CHBF_enUS939US939&oq=java+updating+value+of+key+value+pair&aqs=chrome..69i57.6500j0j4&sourceid=chrome&ie=UTF-8
+1/23/2022 10:57:52 AM	java - How to update a value, given a key in a hashmap? - Stack Overflow	https://stackoverflow.com/q/4157972

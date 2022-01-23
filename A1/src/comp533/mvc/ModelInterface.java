@@ -9,4 +9,5 @@ public interface ModelInterface {
 	public void setInputString(String newVal);
 	public void computeResult();
 	public String toString();
+	public void computeResultOld();
 }

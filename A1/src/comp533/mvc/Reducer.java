@@ -1,5 +1,6 @@
 package comp533.mvc;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -14,7 +15,15 @@ public class Reducer extends AMapReduceTracer implements ReducerInterface<String
 
 	@Override
 	public Map<String, Integer> reduce(List<KeyValueInterface<String, Integer>> aList) {
-		// TODO Auto-generated method stub
-		return null;
+		Map<String, Integer> Result =new HashMap<String, Integer>();
+		for (KeyValueInterface<String, Integer> a : aList) {
+			if (!Result.containsKey(a.getKey())) {
+				Result.put(a.getKey(),1);
+			}
+			else {
+				Result.put(a.getKey(), Result.get(a.getKey()) + 1);
+			}
+		}
+		return Result;
 	}
 }

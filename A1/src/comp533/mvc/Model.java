@@ -2,17 +2,21 @@ package comp533.mvc;
 
 import java.beans.PropertyChangeSupport;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeEvent;
-import gradingTools.comp533s19.assignment0.AMapReduceTracer; 
+import gradingTools.comp533s19.assignment0.AMapReduceTracer;
+import gradingTools.comp533s19.assignment0.testcases.factories.MapperFactory; 
 
 public class Model extends AMapReduceTracer implements ModelInterface{
 	private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
 	private String inputString = null;
 	private Map<String, Integer> Result =new HashMap<String, Integer>();
+	ReducerInterface<String, Integer> Reducer = ReducerFactory.getReducer();
+	TokenCountingMapperInterface<String, Integer> Mapper = TokenCountingMapperFactory.getMapper();
 
 	@Override
 	public void addPropertyChangeListener(PropertyChangeListener newListener) {
@@ -29,6 +33,24 @@ public class Model extends AMapReduceTracer implements ModelInterface{
 	
 	@Override
 	public void computeResult() {
+		String oldResult = Result.toString();
+		if (Result.isEmpty()) {
+			oldResult = null;
+		}
+		final String tokens = inputString;
+		Result.clear();
+		final List<String> ListOfToken = Arrays.asList(tokens.split(" "));
+		List<KeyValueInterface<String, Integer>> KeyValList = Mapper.map(ListOfToken);
+		//TODO PROPERTY CHANGE FOR KeyValList
+		Result = Reducer.reduce(KeyValList);
+		//TODO property change for Result
+		PropertyChangeEvent resultComputed = new PropertyChangeEvent(this, "Result", oldResult, Result.toString());
+		propertyChangeSupport.firePropertyChange(resultComputed);
+
+	}
+	
+	@Override
+	public void computeResultOld() {
 		String oldResult = Result.toString();
 		if (Result.isEmpty()) {
 			oldResult = null;
