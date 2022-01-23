@@ -1,6 +1,6 @@
 package comp533.mvc;
 
-public class mvc {
+public class ModelViewController {
 	public static void main(String[] args) {
 		
 		

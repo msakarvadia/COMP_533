@@ -4536,3 +4536,1054 @@
 0,Sat Jan 22 18:00:53 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,view
 0,Sat Jan 22 18:00:53 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,interface
 0,Sat Jan 22 18:00:53 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,evt,evt
+0,Sat Jan 22 18:56:19 EST 2022,true,comp533\mvc\A1Tests.java,expectedTypes,[@StandAloneTokenCounter, @ReducerClass, @ControllerClass, @KeyValueClass, @IntSummingMapperClass, @ModelClass, @StandAloneIntegerSummer, @MapperFactory, @ViewClass, @ReducerFactory, @TokenCountingMapperClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\A1Tests.java,expectedTypes,[@StandAloneTokenCounter, @ReducerClass, @ControllerClass, @KeyValueClass, @IntSummingMapperClass, @ModelClass, @StandAloneIntegerSummer, @MapperFactory, @ViewClass, @ReducerFactory, @TokenCountingMapperClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,comp533.mvc.A1Tests,comp
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,comp533.mvc.A1Tests,a
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,comp533.mvc.A1Tests,tests
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,length,length
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,time,time
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,timer,timer
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,args,args
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,tags,comp533.mvc.Controller,@ControllerClass
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,comp533.mvc.Controller,comp
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,comp533.mvc.Controller,controller
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,model,model
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,input,input
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,tokens,tokens
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,newModel,new
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,newModel,model
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,variableHasInterfaceType,ModelInterface,model
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,variableHasInterfaceType,ModelInterface,newModel
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,expectedSuperType,gradingTools.comp533s19.assignment0.AMapReduceTracer,@ControllerClass
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,expectedSignature,toString:->String,comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,expectedSignature,.*:->void,comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,publicMethodsDoNotOverride,[public  processInput:->void, public  setModel:comp533.mvc.ModelInterface->void, public  toString:->String]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,classHasAtLeastOneInterface,comp533.mvc.Controller,No Tag
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,java.util.Scanner!close:->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,@ModelClass!setInputString:String->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,java.util.Scanner!nextLine:->String,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,java.lang.String!equals.*:Object->boolean,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceQuit:->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceNumbersPrompt:->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ControllerInterface.java,tags,comp533.mvc.ControllerInterface,@ControllerClass
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,comp
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,controller
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,interface
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,newModel,new
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,newModel,model
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ControllerInterface.java,variableHasInterfaceType,ModelInterface,newModel
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,comp
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,map
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,reduce
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,configuration
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,arg0,arg
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,publicMethodsOverride,[]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,classDoesNotHaveAtLeastOneInterface,comp533.mvc.MapReduceConfiguration,No Tag
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,tags,comp533.mvc.Model,@ModelClass
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,comp533.mvc.Model,comp
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,comp533.mvc.Model,model
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,property
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,change
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,support
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputString,input
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputString,string
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,Result,result
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newListener,new
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newListener,listener
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,old
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,input
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,string
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputEvent,input
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputEvent,event
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newVal,new
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newVal,val
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldResult,old
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldResult,result
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,tokens,tokens
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,arrayOfToken,array
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,arrayOfToken,of
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,arrayOfToken,token
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,uniqueTokens,unique
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,uniqueTokens,tokens
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,counts,counts
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,a,a
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,index,index
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,i,i
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,resultComputed,result
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,resultComputed,computed
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,methodBlockLimit,Model,METHOD_DEF[35x1],2,1
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,expectedGetter,Result,java.util.Map,@ModelClass
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,@ReducerFactory!getReducer:->@ReducerClass,No method,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,.*!map:*->.*,No method,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,@ReducerClass!reduce:*->.*,No method,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,@MapperFactory!getMapper:->*,No method,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,expectedMethodCall,java.beans.PropertyChangeSupport!firePropertyChange:*->.*,Some method (setInputString:String->void),comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,expectedMethodCall,java.lang.String!split:String->String[],Some method (computeResult:->void),comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,expectedSignature,toString:->String,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,expectedSetter,InputString,String,@ModelClass
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,publicMethodsDoNotOverride,[public  addPropertyChangeListener:java.beans.PropertyChangeListener->void, public  setInputString:String->void, public  quit:->boolean, public  computeResult:->void, public  getResult:->java.util.Map, public  toString:->String]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\Model.java,classHasAtLeastOneInterface,comp533.mvc.Model,No Tag
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ModelInterface.java,tags,comp533.mvc.ModelInterface,@ModelClass
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,comp
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,model
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,interface
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newListener,new
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newListener,listener
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newVal,new
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newVal,val
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\mvc.java,tags,comp533.mvc.mvc,@StandAloneTokenCounter
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\mvc.java,nameInDictionary,comp533.mvc.mvc,comp
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\mvc.java,nameInDictionary,view,view
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\mvc.java,nameInDictionary,model,model
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\mvc.java,nameInDictionary,controller,controller
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\mvc.java,nameInDictionary,args,args
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\mvc.java,variableHasInterfaceType,ViewInterface,view
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\mvc.java,variableHasInterfaceType,ModelInterface,model
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\mvc.java,variableHasInterfaceType,ControllerInterface,controller
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\mvc.java,expectedMethodCall,@ControllerClass!.*:->void,Some method (main:String[]->void),comp533.mvc.mvc:[@StandAloneTokenCounter]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\mvc.java,expectedSignature,main:String[]->void,comp533.mvc.mvc:[@StandAloneTokenCounter]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\reducerFactory.java,nameInDictionary,comp533.mvc.reducerFactory,comp
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\reducerFactory.java,nameInDictionary,comp533.mvc.reducerFactory,reducer
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\reducerFactory.java,nameInDictionary,comp533.mvc.reducerFactory,factory
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\reducerFactory.java,nameInDictionary,args,args
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,tags,comp533.mvc.StandAloneTokenCounter,@StandAloneTokenCounter
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,comp
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,stand
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,alone
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,token
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,counter
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,args,args
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,input,input
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,tokens,tokens
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,arrayOfToken,array
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,arrayOfToken,of
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,arrayOfToken,token
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,uniqueTokens,unique
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,uniqueTokens,tokens
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,counts,counts
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,a,a
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,index,index
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,out,out
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,i,i
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,temp,temp
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,methodBlockLimit,StandAloneTokenCounter,METHOD_DEF[13x1],2,1
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nestedBlockDepth,2,1
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,methodBlockLimit,StandAloneTokenCounter,METHOD_DEF[13x1],3,1
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,expectedMethodCall,@ControllerClass!.*:->void,Some method (main:String[]->void),comp533.mvc.StandAloneTokenCounter:[@StandAloneTokenCounter]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,expectedSignature,main:String[]->void,comp533.mvc.StandAloneTokenCounter:[@StandAloneTokenCounter]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\View.java,tags,comp533.mvc.View,@ViewClass
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\View.java,nameInDictionary,comp533.mvc.View,comp
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\View.java,nameInDictionary,comp533.mvc.View,view
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\View.java,nameInDictionary,evt,evt
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\View.java,expectedSuperType,gradingTools.comp533s19.assignment0.AMapReduceTracer,@ViewClass
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\View.java,classHasExactlyOneInterface,comp533.mvc.View,No Tag
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\View.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!tracePropertyChange:java.beans.PropertyChangeEvent->void,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.mvc.View:[@ViewClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\View.java,expectedSignature,toString:->String,comp533.mvc.View:[@ViewClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\View.java,expectedSignature,propertyChange:java.beans.PropertyChangeEvent->void,comp533.mvc.View:[@ViewClass]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\View.java,expectedInterface,java.beans.PropertyChangeListener,@ViewClass
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\View.java,expectedInterface,java.util.EventListener,@ViewClass
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\View.java,publicMethodsDoNotOverride,[public  propertyChange:java.beans.PropertyChangeEvent->void, public  toString:->String]
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\View.java,classHasAtLeastOneInterface,comp533.mvc.View,No Tag
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ViewInterface.java,tags,comp533.mvc.ViewInterface,@ViewClass
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,comp
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,view
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,interface
+0,Sat Jan 22 18:56:20 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,evt,evt
+0,Sat Jan 22 19:00:50 EST 2022,true,comp533\mvc\A1Tests.java,expectedTypes,[@StandAloneTokenCounter, @ReducerClass, @ControllerClass, @KeyValueClass, @IntSummingMapperClass, @ModelClass, @StandAloneIntegerSummer, @MapperFactory, @ViewClass, @ReducerFactory, @TokenCountingMapperClass]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\A1Tests.java,expectedTypes,[@StandAloneTokenCounter, @ReducerClass, @ControllerClass, @KeyValueClass, @IntSummingMapperClass, @ModelClass, @StandAloneIntegerSummer, @MapperFactory, @ViewClass, @ReducerFactory, @TokenCountingMapperClass]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,comp533.mvc.A1Tests,comp
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,comp533.mvc.A1Tests,a
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,comp533.mvc.A1Tests,tests
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,length,length
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,time,time
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,timer,timer
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,args,args
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,tags,comp533.mvc.Controller,@ControllerClass
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,comp533.mvc.Controller,comp
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,comp533.mvc.Controller,controller
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,model,model
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,input,input
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,tokens,tokens
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,newModel,new
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,newModel,model
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,variableHasInterfaceType,ModelInterface,model
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,variableHasInterfaceType,ModelInterface,newModel
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,classHasAtLeastOneInterface,comp533.mvc.Controller,No Tag
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,expectedSignature,toString:->String,comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,expectedSignature,.*:->void,comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,publicMethodsDoNotOverride,[public  processInput:->void, public  setModel:comp533.mvc.ModelInterface->void, public  toString:->String]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,java.util.Scanner!close:->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,@ModelClass!setInputString:String->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,java.util.Scanner!nextLine:->String,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,java.lang.String!equals.*:Object->boolean,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceQuit:->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceNumbersPrompt:->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Controller.java,expectedSuperType,gradingTools.comp533s19.assignment0.AMapReduceTracer,@ControllerClass
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ControllerInterface.java,tags,comp533.mvc.ControllerInterface,@ControllerClass
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,comp
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,controller
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,interface
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,newModel,new
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,newModel,model
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ControllerInterface.java,variableHasInterfaceType,ModelInterface,newModel
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,comp
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,map
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,reduce
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,configuration
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,arg0,arg
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,classDoesNotHaveAtLeastOneInterface,comp533.mvc.MapReduceConfiguration,No Tag
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,publicMethodsOverride,[]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,tags,comp533.mvc.Model,@ModelClass
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,comp533.mvc.Model,comp
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,comp533.mvc.Model,model
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,property
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,change
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,support
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputString,input
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputString,string
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,Result,result
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newListener,new
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newListener,listener
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,old
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,input
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,string
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputEvent,input
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputEvent,event
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newVal,new
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newVal,val
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldResult,old
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldResult,result
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,tokens,tokens
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,arrayOfToken,array
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,arrayOfToken,of
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,arrayOfToken,token
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,uniqueTokens,unique
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,uniqueTokens,tokens
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,counts,counts
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,a,a
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,index,index
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,i,i
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,resultComputed,result
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,resultComputed,computed
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,methodBlockLimit,Model,METHOD_DEF[35x1],2,1
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,expectedMethodCall,java.beans.PropertyChangeSupport!firePropertyChange:*->.*,Some method (setInputString:String->void),comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,expectedMethodCall,java.lang.String!split:String->String[],Some method (computeResult:->void),comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,expectedSignature,toString:->String,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,classHasAtLeastOneInterface,comp533.mvc.Model,No Tag
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,publicMethodsDoNotOverride,[public  addPropertyChangeListener:java.beans.PropertyChangeListener->void, public  setInputString:String->void, public  quit:->boolean, public  computeResult:->void, public  getResult:->java.util.Map, public  toString:->String]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,@ReducerFactory!getReducer:->@ReducerClass,No method,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,.*!map:*->.*,No method,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,@ReducerClass!reduce:*->.*,No method,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,@MapperFactory!getMapper:->*,No method,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,expectedSetter,InputString,String,@ModelClass
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\Model.java,expectedGetter,Result,java.util.Map,@ModelClass
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ModelInterface.java,tags,comp533.mvc.ModelInterface,@ModelClass
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,comp
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,model
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,interface
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newListener,new
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newListener,listener
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newVal,new
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newVal,val
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,comp
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,model
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,view
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,controller
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,view,view
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,model,model
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,controller,controller
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,args,args
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ModelViewController.java,variableHasInterfaceType,ViewInterface,view
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ModelViewController.java,variableHasInterfaceType,ModelInterface,model
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\ModelViewController.java,variableHasInterfaceType,ControllerInterface,controller
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,tags,comp533.mvc.StandAloneTokenCounter,@StandAloneTokenCounter
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,comp
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,stand
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,alone
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,token
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,counter
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,args,args
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,input,input
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,tokens,tokens
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,arrayOfToken,array
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,arrayOfToken,of
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,arrayOfToken,token
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,uniqueTokens,unique
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,uniqueTokens,tokens
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,counts,counts
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,a,a
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,index,index
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,out,out
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,i,i
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,temp,temp
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nestedBlockDepth,2,1
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,methodBlockLimit,StandAloneTokenCounter,METHOD_DEF[13x1],2,1
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,methodBlockLimit,StandAloneTokenCounter,METHOD_DEF[13x1],3,1
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,expectedSignature,main:String[]->void,comp533.mvc.StandAloneTokenCounter:[@StandAloneTokenCounter]
+0,Sat Jan 22 19:00:51 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,expectedMethodCall,@ControllerClass!.*:->void,Some method (main:String[]->void),comp533.mvc.StandAloneTokenCounter:[@StandAloneTokenCounter]
+0,Sat Jan 22 19:00:52 EST 2022,true,comp533\mvc\View.java,tags,comp533.mvc.View,@ViewClass
+0,Sat Jan 22 19:00:52 EST 2022,true,comp533\mvc\View.java,nameInDictionary,comp533.mvc.View,comp
+0,Sat Jan 22 19:00:52 EST 2022,true,comp533\mvc\View.java,nameInDictionary,comp533.mvc.View,view
+0,Sat Jan 22 19:00:52 EST 2022,true,comp533\mvc\View.java,nameInDictionary,evt,evt
+0,Sat Jan 22 19:00:52 EST 2022,true,comp533\mvc\View.java,expectedSuperType,gradingTools.comp533s19.assignment0.AMapReduceTracer,@ViewClass
+0,Sat Jan 22 19:00:52 EST 2022,true,comp533\mvc\View.java,classHasExactlyOneInterface,comp533.mvc.View,No Tag
+0,Sat Jan 22 19:00:52 EST 2022,true,comp533\mvc\View.java,expectedSignature,toString:->String,comp533.mvc.View:[@ViewClass]
+0,Sat Jan 22 19:00:52 EST 2022,true,comp533\mvc\View.java,expectedSignature,propertyChange:java.beans.PropertyChangeEvent->void,comp533.mvc.View:[@ViewClass]
+0,Sat Jan 22 19:00:52 EST 2022,true,comp533\mvc\View.java,classHasAtLeastOneInterface,comp533.mvc.View,No Tag
+0,Sat Jan 22 19:00:52 EST 2022,true,comp533\mvc\View.java,expectedInterface,java.beans.PropertyChangeListener,@ViewClass
+0,Sat Jan 22 19:00:52 EST 2022,true,comp533\mvc\View.java,expectedInterface,java.util.EventListener,@ViewClass
+0,Sat Jan 22 19:00:52 EST 2022,true,comp533\mvc\View.java,publicMethodsDoNotOverride,[public  propertyChange:java.beans.PropertyChangeEvent->void, public  toString:->String]
+0,Sat Jan 22 19:00:52 EST 2022,true,comp533\mvc\View.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!tracePropertyChange:java.beans.PropertyChangeEvent->void,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.mvc.View:[@ViewClass]
+0,Sat Jan 22 19:00:52 EST 2022,true,comp533\mvc\ViewInterface.java,tags,comp533.mvc.ViewInterface,@ViewClass
+0,Sat Jan 22 19:00:52 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,comp
+0,Sat Jan 22 19:00:52 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,view
+0,Sat Jan 22 19:00:52 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,interface
+0,Sat Jan 22 19:00:52 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,evt,evt
+0,Sat Jan 22 19:05:11 EST 2022,true,comp533\mvc\A1Tests.java,expectedTypes,[@StandAloneTokenCounter, @ReducerClass, @ControllerClass, @KeyValueClass, @IntSummingMapperClass, @ModelClass, @StandAloneIntegerSummer, @MapperFactory, @ViewClass, @ReducerFactory, @TokenCountingMapperClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\A1Tests.java,expectedTypes,[@StandAloneTokenCounter, @ReducerClass, @ControllerClass, @KeyValueClass, @IntSummingMapperClass, @ModelClass, @StandAloneIntegerSummer, @MapperFactory, @ViewClass, @ReducerFactory, @TokenCountingMapperClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,comp533.mvc.A1Tests,comp
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,comp533.mvc.A1Tests,a
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,comp533.mvc.A1Tests,tests
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,length,length
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,time,time
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,timer,timer
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,args,args
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,tags,comp533.mvc.Controller,@ControllerClass
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,comp533.mvc.Controller,comp
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,comp533.mvc.Controller,controller
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,model,model
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,input,input
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,tokens,tokens
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,newModel,new
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,newModel,model
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,variableHasInterfaceType,ModelInterface,model
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,variableHasInterfaceType,ModelInterface,newModel
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,classHasAtLeastOneInterface,comp533.mvc.Controller,No Tag
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,expectedSuperType,gradingTools.comp533s19.assignment0.AMapReduceTracer,@ControllerClass
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,java.util.Scanner!close:->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,@ModelClass!setInputString:String->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,java.util.Scanner!nextLine:->String,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,java.lang.String!equals.*:Object->boolean,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceQuit:->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceNumbersPrompt:->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,publicMethodsOverride,[]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,expectedSignature,toString:->String,comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Controller.java,expectedSignature,.*:->void,comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ControllerInterface.java,tags,comp533.mvc.ControllerInterface,@ControllerClass
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,comp
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,controller
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,interface
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,newModel,new
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,newModel,model
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ControllerInterface.java,variableHasInterfaceType,ModelInterface,newModel
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,comp
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,map
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,reduce
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,configuration
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,arg0,arg
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,classDoesNotHaveAtLeastOneInterface,comp533.mvc.MapReduceConfiguration,No Tag
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,publicMethodsOverride,[]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,tags,comp533.mvc.Model,@ModelClass
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,comp533.mvc.Model,comp
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,comp533.mvc.Model,model
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,property
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,change
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,support
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputString,input
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputString,string
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,Result,result
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newListener,new
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newListener,listener
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,old
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,input
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,string
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputEvent,input
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputEvent,event
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newVal,new
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newVal,val
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldResult,old
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldResult,result
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,tokens,tokens
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,arrayOfToken,array
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,arrayOfToken,of
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,arrayOfToken,token
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,uniqueTokens,unique
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,uniqueTokens,tokens
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,counts,counts
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,a,a
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,index,index
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,i,i
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,resultComputed,result
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,resultComputed,computed
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,methodBlockLimit,Model,METHOD_DEF[30x1],2,1
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,classHasAtLeastOneInterface,comp533.mvc.Model,No Tag
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,@ReducerFactory!getReducer:->@ReducerClass,No method,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,.*!map:*->.*,No method,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,@ReducerClass!reduce:*->.*,No method,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,@MapperFactory!getMapper:->*,No method,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,expectedMethodCall,java.beans.PropertyChangeSupport!firePropertyChange:*->.*,Some method (setInputString:String->void),comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,expectedMethodCall,java.lang.String!split:String->String[],Some method (computeResult:->void),comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,expectedGetter,Result,java.util.Map,@ModelClass
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,expectedSetter,InputString,String,@ModelClass
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,publicMethodsOverride,[]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\Model.java,expectedSignature,toString:->String,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ModelInterface.java,tags,comp533.mvc.ModelInterface,@ModelClass
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,comp
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,model
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,interface
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newListener,new
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newListener,listener
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newVal,new
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newVal,val
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,comp
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,model
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,view
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,controller
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,view,view
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,model,model
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,controller,controller
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,args,args
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ModelViewController.java,variableHasInterfaceType,ViewInterface,view
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ModelViewController.java,variableHasInterfaceType,ModelInterface,model
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ModelViewController.java,variableHasInterfaceType,ControllerInterface,controller
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,tags,comp533.mvc.StandAloneTokenCounter,@StandAloneTokenCounter
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,comp
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,stand
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,alone
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,token
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,counter
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,args,args
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,input,input
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,tokens,tokens
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,arrayOfToken,array
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,arrayOfToken,of
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,arrayOfToken,token
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,uniqueTokens,unique
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,uniqueTokens,tokens
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,counts,counts
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,a,a
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,index,index
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,out,out
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,i,i
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,temp,temp
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nestedBlockDepth,2,1
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,methodBlockLimit,StandAloneTokenCounter,METHOD_DEF[13x1],2,1
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,methodBlockLimit,StandAloneTokenCounter,METHOD_DEF[13x1],3,1
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,expectedMethodCall,@ControllerClass!.*:->void,Some method (main:String[]->void),comp533.mvc.StandAloneTokenCounter:[@StandAloneTokenCounter]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,expectedSignature,main:String[]->void,comp533.mvc.StandAloneTokenCounter:[@StandAloneTokenCounter]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\View.java,tags,comp533.mvc.View,@ViewClass
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\View.java,nameInDictionary,comp533.mvc.View,comp
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\View.java,nameInDictionary,comp533.mvc.View,view
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\View.java,nameInDictionary,evt,evt
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\View.java,classHasAtLeastOneInterface,comp533.mvc.View,No Tag
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\View.java,classHasExactlyOneInterface,comp533.mvc.View,No Tag
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\View.java,expectedSuperType,gradingTools.comp533s19.assignment0.AMapReduceTracer,@ViewClass
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\View.java,publicMethodsOverride,[]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\View.java,expectedInterface,java.beans.PropertyChangeListener,@ViewClass
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\View.java,expectedInterface,java.util.EventListener,@ViewClass
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\View.java,expectedSignature,toString:->String,comp533.mvc.View:[@ViewClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\View.java,expectedSignature,propertyChange:java.beans.PropertyChangeEvent->void,comp533.mvc.View:[@ViewClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\View.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!tracePropertyChange:java.beans.PropertyChangeEvent->void,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.mvc.View:[@ViewClass]
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ViewInterface.java,tags,comp533.mvc.ViewInterface,@ViewClass
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,comp
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,view
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,interface
+0,Sat Jan 22 19:05:12 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,evt,evt
+0,Sat Jan 22 19:07:00 EST 2022,true,comp533\mvc\A1Tests.java,expectedTypes,[@StandAloneTokenCounter, @ReducerClass, @ControllerClass, @KeyValueClass, @IntSummingMapperClass, @ModelClass, @StandAloneIntegerSummer, @MapperFactory, @ViewClass, @ReducerFactory, @TokenCountingMapperClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\A1Tests.java,expectedTypes,[@StandAloneTokenCounter, @ReducerClass, @ControllerClass, @KeyValueClass, @IntSummingMapperClass, @ModelClass, @StandAloneIntegerSummer, @MapperFactory, @ViewClass, @ReducerFactory, @TokenCountingMapperClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,comp533.mvc.A1Tests,comp
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,comp533.mvc.A1Tests,a
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,comp533.mvc.A1Tests,tests
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,length,length
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,time,time
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,timer,timer
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,args,args
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,tags,comp533.mvc.Controller,@ControllerClass
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,comp533.mvc.Controller,comp
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,comp533.mvc.Controller,controller
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,model,model
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,input,input
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,tokens,tokens
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,newModel,new
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,newModel,model
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,variableHasInterfaceType,ModelInterface,model
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,variableHasInterfaceType,ModelInterface,newModel
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,expectedSignature,toString:->String,comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,expectedSignature,.*:->void,comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,classHasAtLeastOneInterface,comp533.mvc.Controller,No Tag
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,expectedSuperType,gradingTools.comp533s19.assignment0.AMapReduceTracer,@ControllerClass
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,java.util.Scanner!close:->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,@ModelClass!setInputString:String->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,java.util.Scanner!nextLine:->String,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,java.lang.String!equals.*:Object->boolean,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceQuit:->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceNumbersPrompt:->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Controller.java,publicMethodsOverride,[]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ControllerInterface.java,tags,comp533.mvc.ControllerInterface,@ControllerClass
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,comp
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,controller
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,interface
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,newModel,new
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,newModel,model
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ControllerInterface.java,variableHasInterfaceType,ModelInterface,newModel
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,comp
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,map
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,reduce
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,configuration
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,arg0,arg
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,classDoesNotHaveAtLeastOneInterface,comp533.mvc.MapReduceConfiguration,No Tag
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,publicMethodsOverride,[]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,tags,comp533.mvc.Model,@ModelClass
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,comp533.mvc.Model,comp
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,comp533.mvc.Model,model
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,property
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,change
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,support
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputString,input
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputString,string
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,Result,result
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newListener,new
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newListener,listener
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,old
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,input
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,string
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputEvent,input
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputEvent,event
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newVal,new
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newVal,val
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldResult,old
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldResult,result
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,tokens,tokens
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,arrayOfToken,array
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,arrayOfToken,of
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,arrayOfToken,token
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,uniqueTokens,unique
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,uniqueTokens,tokens
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,counts,counts
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,a,a
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,index,index
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,i,i
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,resultComputed,result
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,resultComputed,computed
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,methodBlockLimit,Model,METHOD_DEF[30x1],2,1
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,expectedMethodCall,java.beans.PropertyChangeSupport!firePropertyChange:*->.*,Some method (setInputString:String->void),comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,expectedMethodCall,java.lang.String!split:String->String[],Some method (computeResult:->void),comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,expectedGetter,Result,java.util.Map,@ModelClass
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,@ReducerFactory!getReducer:->@ReducerClass,No method,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,.*!map:*->.*,No method,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,@ReducerClass!reduce:*->.*,No method,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,@MapperFactory!getMapper:->*,No method,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,classHasAtLeastOneInterface,comp533.mvc.Model,No Tag
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,expectedSignature,toString:->String,comp533.mvc.Model:[@ModelClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,expectedSetter,InputString,String,@ModelClass
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\Model.java,publicMethodsOverride,[]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ModelInterface.java,tags,comp533.mvc.ModelInterface,@ModelClass
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,comp
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,model
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,interface
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newListener,new
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newListener,listener
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newVal,new
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newVal,val
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,comp
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,model
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,view
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,controller
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,view,view
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,model,model
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,controller,controller
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,args,args
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ModelViewController.java,variableHasInterfaceType,ViewInterface,view
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ModelViewController.java,variableHasInterfaceType,ModelInterface,model
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ModelViewController.java,variableHasInterfaceType,ControllerInterface,controller
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,tags,comp533.mvc.StandAloneTokenCounter,@StandAloneTokenCounter
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,comp
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,stand
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,alone
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,token
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,counter
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,args,args
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,input,input
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,tokens,tokens
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,arrayOfToken,array
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,arrayOfToken,of
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,arrayOfToken,token
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,uniqueTokens,unique
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,uniqueTokens,tokens
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,counts,counts
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,a,a
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,index,index
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,out,out
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,i,i
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,temp,temp
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nestedBlockDepth,2,1
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,methodBlockLimit,StandAloneTokenCounter,METHOD_DEF[13x1],2,1
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,methodBlockLimit,StandAloneTokenCounter,METHOD_DEF[13x1],3,1
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,expectedSignature,main:String[]->void,comp533.mvc.StandAloneTokenCounter:[@StandAloneTokenCounter]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,expectedMethodCall,@ControllerClass!.*:->void,Some method (main:String[]->void),comp533.mvc.StandAloneTokenCounter:[@StandAloneTokenCounter]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\View.java,tags,comp533.mvc.View,@ViewClass
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\View.java,nameInDictionary,comp533.mvc.View,comp
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\View.java,nameInDictionary,comp533.mvc.View,view
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\View.java,nameInDictionary,evt,evt
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\View.java,expectedSuperType,gradingTools.comp533s19.assignment0.AMapReduceTracer,@ViewClass
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\View.java,expectedSignature,toString:->String,comp533.mvc.View:[@ViewClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\View.java,expectedSignature,propertyChange:java.beans.PropertyChangeEvent->void,comp533.mvc.View:[@ViewClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\View.java,classHasAtLeastOneInterface,comp533.mvc.View,No Tag
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\View.java,publicMethodsOverride,[]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\View.java,expectedInterface,java.beans.PropertyChangeListener,@ViewClass
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\View.java,expectedInterface,java.util.EventListener,@ViewClass
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\View.java,classHasExactlyOneInterface,comp533.mvc.View,No Tag
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\View.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!tracePropertyChange:java.beans.PropertyChangeEvent->void,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.mvc.View:[@ViewClass]
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ViewInterface.java,tags,comp533.mvc.ViewInterface,@ViewClass
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,comp
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,view
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,interface
+0,Sat Jan 22 19:07:01 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,evt,evt
+0,Sun Jan 23 09:39:39 EST 2022,true,comp533\mvc\A1Tests.java,expectedTypes,[@StandAloneTokenCounter, @ReducerClass, @ControllerClass, @KeyValueClass, @IntSummingMapperClass, @ModelClass, @StandAloneIntegerSummer, @MapperFactory, @ViewClass, @ReducerFactory, @TokenCountingMapperClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\A1Tests.java,expectedTypes,[@StandAloneTokenCounter, @ReducerClass, @ControllerClass, @KeyValueClass, @IntSummingMapperClass, @ModelClass, @StandAloneIntegerSummer, @MapperFactory, @ViewClass, @ReducerFactory, @TokenCountingMapperClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,comp533.mvc.A1Tests,comp
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,comp533.mvc.A1Tests,a
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,comp533.mvc.A1Tests,tests
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,length,length
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,time,time
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,timer,timer
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,args,args
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,tags,comp533.mvc.Controller,@ControllerClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,comp533.mvc.Controller,comp
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,comp533.mvc.Controller,controller
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,model,model
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,input,input
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,tokens,tokens
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,newModel,new
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,newModel,model
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,variableHasInterfaceType,ModelInterface,model
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,variableHasInterfaceType,ModelInterface,newModel
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,publicMethodsOverride,[]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,java.util.Scanner!close:->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,@ModelClass!setInputString:String->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,java.util.Scanner!nextLine:->String,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,java.lang.String!equals.*:Object->boolean,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceQuit:->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceNumbersPrompt:->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,classHasAtLeastOneInterface,comp533.mvc.Controller,No Tag
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,expectedSignature,toString:->String,comp533.mvc.Controller:[@ControllerClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,expectedSignature,.*:->void,comp533.mvc.Controller:[@ControllerClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Controller.java,expectedSuperType,gradingTools.comp533s19.assignment0.AMapReduceTracer,@ControllerClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ControllerInterface.java,tags,comp533.mvc.ControllerInterface,@ControllerClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,comp
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,controller
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,interface
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,newModel,new
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,newModel,model
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ControllerInterface.java,variableHasInterfaceType,ModelInterface,newModel
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValue.java,tags,comp533.mvc.KeyValue,@KeyValueClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,comp533.mvc.KeyValue,comp
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,comp533.mvc.KeyValue,key
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,comp533.mvc.KeyValue,value
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,key,key
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,val,val
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,value,value
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValue.java,publicMethodsOverride,[]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValue.java,classHasAtLeastOneInterface,comp533.mvc.KeyValue,No Tag
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValue.java,expectedSignature,toString:->String,comp533.mvc.KeyValue:[@KeyValueClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValue.java,expectedGetter,Value,TypeParam1,@KeyValueClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValue.java,expectedGetter,Key,TypeParam0,@KeyValueClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValue.java,classIsGeneric,comp533.mvc.KeyValue,[@KeyValueClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValue.java,expectedSetter,Value,TypeParam1,@KeyValueClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValueInterface.java,tags,comp533.mvc.KeyValueInterface,@KeyValueClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,comp533.mvc.KeyValueInterface,comp
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,comp533.mvc.KeyValueInterface,key
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,comp533.mvc.KeyValueInterface,value
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,comp533.mvc.KeyValueInterface,interface
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,key,key
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,value,value
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,comp
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,map
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,reduce
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,configuration
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,arg0,arg
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,publicMethodsOverride,[]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,classDoesNotHaveAtLeastOneInterface,comp533.mvc.MapReduceConfiguration,No Tag
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,tags,comp533.mvc.Model,@ModelClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,comp533.mvc.Model,comp
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,comp533.mvc.Model,model
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,property
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,change
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,support
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputString,input
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputString,string
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,Result,result
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newListener,new
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newListener,listener
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,old
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,input
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,string
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputEvent,input
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputEvent,event
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newVal,new
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newVal,val
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldResult,old
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldResult,result
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,tokens,tokens
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,arrayOfToken,array
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,arrayOfToken,of
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,arrayOfToken,token
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,uniqueTokens,unique
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,uniqueTokens,tokens
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,counts,counts
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,a,a
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,index,index
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,i,i
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,resultComputed,result
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,resultComputed,computed
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,methodBlockLimit,Model,METHOD_DEF[30x1],2,1
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,expectedGetter,Result,java.util.Map,@ModelClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,publicMethodsOverride,[]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,expectedSetter,InputString,String,@ModelClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,classHasAtLeastOneInterface,comp533.mvc.Model,No Tag
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,expectedSignature,toString:->String,comp533.mvc.Model:[@ModelClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,@ReducerFactory!getReducer:->@ReducerClass,No method,comp533.mvc.Model:[@ModelClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,.*!map:*->.*,No method,comp533.mvc.Model:[@ModelClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,@ReducerClass!reduce:*->.*,No method,comp533.mvc.Model:[@ModelClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,@MapperFactory!getMapper:->*,No method,comp533.mvc.Model:[@ModelClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,expectedMethodCall,java.beans.PropertyChangeSupport!firePropertyChange:*->.*,Some method (setInputString:String->void),comp533.mvc.Model:[@ModelClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\Model.java,expectedMethodCall,java.lang.String!split:String->String[],Some method (computeResult:->void),comp533.mvc.Model:[@ModelClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelInterface.java,tags,comp533.mvc.ModelInterface,@ModelClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,comp
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,model
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,interface
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newListener,new
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newListener,listener
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newVal,new
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newVal,val
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelViewController.java,tags,comp533.mvc.ModelViewController,@StandAloneTokenCounter
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,comp
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,model
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,view
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,controller
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,view,view
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,model,model
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,controller,controller
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,args,args
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelViewController.java,variableHasInterfaceType,ViewInterface,view
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelViewController.java,variableHasInterfaceType,ModelInterface,model
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelViewController.java,variableHasInterfaceType,ControllerInterface,controller
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelViewController.java,expectedSignature,main:String[]->void,comp533.mvc.ModelViewController:[@StandAloneTokenCounter]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ModelViewController.java,expectedMethodCall,@ControllerClass!.*:->void,Some method (main:String[]->void),comp533.mvc.ModelViewController:[@StandAloneTokenCounter]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,tags,comp533.mvc.StandAloneTokenCounter,@StandAloneTokenCounter
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,comp
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,stand
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,alone
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,token
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,counter
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,args,args
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,input,input
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,tokens,tokens
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,arrayOfToken,array
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,arrayOfToken,of
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,arrayOfToken,token
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,uniqueTokens,unique
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,uniqueTokens,tokens
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,counts,counts
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,a,a
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,index,index
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,out,out
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,i,i
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,temp,temp
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,methodBlockLimit,StandAloneTokenCounter,METHOD_DEF[13x1],2,1
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nestedBlockDepth,2,1
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,methodBlockLimit,StandAloneTokenCounter,METHOD_DEF[13x1],3,1
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,expectedSignature,main:String[]->void,comp533.mvc.StandAloneTokenCounter:[@StandAloneTokenCounter]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,expectedMethodCall,@ControllerClass!.*:->void,Some method (main:String[]->void),comp533.mvc.StandAloneTokenCounter:[@StandAloneTokenCounter]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,tags,comp533.mvc.TokenCountingMapper,@TokenCountingMapperClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,comp533.mvc.TokenCountingMapper,comp
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,comp533.mvc.TokenCountingMapper,token
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,comp533.mvc.TokenCountingMapper,counting
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,comp533.mvc.TokenCountingMapper,mapper
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,KeyValList,key
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,KeyValList,val
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,KeyValList,list
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,a,a
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,KeyVal,key
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,KeyVal,val
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,aStrings,a
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,aStrings,strings
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,variableHasInterfaceType,KeyValueInterface,KeyVal
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,publicMethodsOverride,[]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,expectedSuperType,gradingTools.comp533s19.assignment0.AMapReduceTracer,@TokenCountingMapperClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,classHasAtLeastOneInterface,comp533.mvc.TokenCountingMapper,No Tag
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,expectedSignature,map:java.util.List->java.util.List,comp533.mvc.TokenCountingMapper:[@TokenCountingMapperClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,expectedMethodCall,java.util.List!add:Object->boolean,Some method (map:java.util.List->List),comp533.mvc.TokenCountingMapper:[@TokenCountingMapperClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapper.java,missingMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceMap:Object;Object->void,No method,comp533.mvc.TokenCountingMapper:[@TokenCountingMapperClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,tags,comp533.mvc.TokenCountingMapperFactory,@MapperFactory
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,comp533.mvc.TokenCountingMapperFactory,comp
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,comp533.mvc.TokenCountingMapperFactory,token
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,comp533.mvc.TokenCountingMapperFactory,counting
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,comp533.mvc.TokenCountingMapperFactory,mapper
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,comp533.mvc.TokenCountingMapperFactory,factory
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,Mapper,mapper
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,newMapper,new
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,newMapper,mapper
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,variableHasInterfaceType,TokenCountingMapperInterface,Mapper
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,variableHasInterfaceType,TokenCountingMapperInterface,getMapper
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,variableHasInterfaceType,TokenCountingMapperInterface,newMapper
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,expectedGetter,Mapper,.*,@MapperFactory
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,expectedSetter,Mapper,.*,@MapperFactory
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceSingletonChange:Class;Object->void,Some method (setMapper:comp533.mvc.TokenCountingMapperInterface->void),comp533.mvc.TokenCountingMapperFactory:[@MapperFactory]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,expectedSuperType,gradingTools.comp533s19.assignment0.AMapReduceTracer,@MapperFactory
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,tags,comp533.mvc.TokenCountingMapperInterface,@TokenCountingMapperClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,comp533.mvc.TokenCountingMapperInterface,comp
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,comp533.mvc.TokenCountingMapperInterface,token
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,comp533.mvc.TokenCountingMapperInterface,counting
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,comp533.mvc.TokenCountingMapperInterface,mapper
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,comp533.mvc.TokenCountingMapperInterface,interface
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,aStrings,a
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,aStrings,strings
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\View.java,tags,comp533.mvc.View,@ViewClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\View.java,nameInDictionary,comp533.mvc.View,comp
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\View.java,nameInDictionary,comp533.mvc.View,view
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\View.java,nameInDictionary,evt,evt
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\View.java,publicMethodsOverride,[]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\View.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!tracePropertyChange:java.beans.PropertyChangeEvent->void,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.mvc.View:[@ViewClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\View.java,classHasAtLeastOneInterface,comp533.mvc.View,No Tag
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\View.java,expectedSuperType,gradingTools.comp533s19.assignment0.AMapReduceTracer,@ViewClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\View.java,classHasExactlyOneInterface,comp533.mvc.View,No Tag
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\View.java,expectedSignature,toString:->String,comp533.mvc.View:[@ViewClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\View.java,expectedSignature,propertyChange:java.beans.PropertyChangeEvent->void,comp533.mvc.View:[@ViewClass]
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\View.java,expectedInterface,java.beans.PropertyChangeListener,@ViewClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\View.java,expectedInterface,java.util.EventListener,@ViewClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ViewInterface.java,tags,comp533.mvc.ViewInterface,@ViewClass
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,comp
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,view
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,interface
+0,Sun Jan 23 09:39:40 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,evt,evt
+0,Sun Jan 23 10:19:28 EST 2022,true,comp533\mvc\A1Tests.java,expectedTypes,[@StandAloneTokenCounter, @ReducerClass, @ControllerClass, @KeyValueClass, @IntSummingMapperClass, @ModelClass, @StandAloneIntegerSummer, @MapperFactory, @ViewClass, @ReducerFactory, @TokenCountingMapperClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\A1Tests.java,expectedTypes,[@StandAloneTokenCounter, @ReducerClass, @ControllerClass, @KeyValueClass, @IntSummingMapperClass, @ModelClass, @StandAloneIntegerSummer, @MapperFactory, @ViewClass, @ReducerFactory, @TokenCountingMapperClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,comp533.mvc.A1Tests,comp
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,comp533.mvc.A1Tests,a
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,comp533.mvc.A1Tests,tests
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,length,length
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,time,time
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,timer,timer
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\A1Tests.java,nameInDictionary,args,args
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,tags,comp533.mvc.Controller,@ControllerClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,comp533.mvc.Controller,comp
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,comp533.mvc.Controller,controller
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,model,model
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,input,input
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,tokens,tokens
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,newModel,new
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,newModel,model
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,variableHasInterfaceType,ModelInterface,model
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,variableHasInterfaceType,ModelInterface,newModel
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,classHasAtLeastOneInterface,comp533.mvc.Controller,No Tag
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,expectedSignature,toString:->String,comp533.mvc.Controller:[@ControllerClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,expectedSignature,.*:->void,comp533.mvc.Controller:[@ControllerClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,expectedSuperType,gradingTools.comp533s19.assignment0.AMapReduceTracer,@ControllerClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,publicMethodsOverride,[]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,java.util.Scanner!close:->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,@ModelClass!setInputString:String->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,java.util.Scanner!nextLine:->String,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,java.lang.String!equals.*:Object->boolean,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceQuit:->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Controller.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceNumbersPrompt:->void,Some method (processInput:->void),comp533.mvc.Controller:[@ControllerClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ControllerInterface.java,tags,comp533.mvc.ControllerInterface,@ControllerClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,comp
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,controller
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,interface
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,newModel,new
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,newModel,model
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ControllerInterface.java,variableHasInterfaceType,ModelInterface,newModel
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValue.java,tags,comp533.mvc.KeyValue,@KeyValueClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,comp533.mvc.KeyValue,comp
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,comp533.mvc.KeyValue,key
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,comp533.mvc.KeyValue,value
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,key,key
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,val,val
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,newKey,new
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,newKey,key
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,newValue,new
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,newValue,value
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValue.java,expectedGetter,Value,TypeParam1,@KeyValueClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValue.java,expectedGetter,Key,TypeParam0,@KeyValueClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValue.java,classHasAtLeastOneInterface,comp533.mvc.KeyValue,No Tag
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValue.java,expectedSetter,Value,TypeParam1,@KeyValueClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValue.java,publicMethodsOverride,[]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValue.java,classIsGeneric,comp533.mvc.KeyValue,[@KeyValueClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValue.java,expectedSignature,toString:->String,comp533.mvc.KeyValue:[@KeyValueClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValueInterface.java,tags,comp533.mvc.KeyValueInterface,@KeyValueClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,comp533.mvc.KeyValueInterface,comp
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,comp533.mvc.KeyValueInterface,key
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,comp533.mvc.KeyValueInterface,value
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,comp533.mvc.KeyValueInterface,interface
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,newKey,new
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,newKey,key
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,newValue,new
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,newValue,value
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,comp
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,map
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,reduce
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,configuration
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,arg0,arg
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,classDoesNotHaveAtLeastOneInterface,comp533.mvc.MapReduceConfiguration,No Tag
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,publicMethodsOverride,[]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,tags,comp533.mvc.Model,@ModelClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,comp533.mvc.Model,comp
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,comp533.mvc.Model,model
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,property
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,change
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,support
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputString,input
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputString,string
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,Result,result
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newListener,new
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newListener,listener
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,old
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,input
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,string
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputEvent,input
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputEvent,event
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newVal,new
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newVal,val
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldResult,old
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldResult,result
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,tokens,tokens
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,arrayOfToken,array
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,arrayOfToken,of
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,arrayOfToken,token
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,uniqueTokens,unique
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,uniqueTokens,tokens
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,counts,counts
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,a,a
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,index,index
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,i,i
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,resultComputed,result
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,resultComputed,computed
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,methodBlockLimit,Model,METHOD_DEF[30x1],2,1
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,expectedGetter,Result,java.util.Map,@ModelClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,classHasAtLeastOneInterface,comp533.mvc.Model,No Tag
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,expectedMethodCall,java.beans.PropertyChangeSupport!firePropertyChange:*->.*,Some method (setInputString:String->void),comp533.mvc.Model:[@ModelClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,expectedMethodCall,java.lang.String!split:String->String[],Some method (computeResult:->void),comp533.mvc.Model:[@ModelClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,publicMethodsOverride,[]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,expectedSetter,InputString,String,@ModelClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,@ReducerFactory!getReducer:->@ReducerClass,No method,comp533.mvc.Model:[@ModelClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,.*!map:*->.*,No method,comp533.mvc.Model:[@ModelClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,@ReducerClass!reduce:*->.*,No method,comp533.mvc.Model:[@ModelClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,missingMethodCall,@MapperFactory!getMapper:->*,No method,comp533.mvc.Model:[@ModelClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Model.java,expectedSignature,toString:->String,comp533.mvc.Model:[@ModelClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelInterface.java,tags,comp533.mvc.ModelInterface,@ModelClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,comp
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,model
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,interface
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newListener,new
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newListener,listener
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newVal,new
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newVal,val
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelViewController.java,tags,comp533.mvc.ModelViewController,@StandAloneTokenCounter
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,comp
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,model
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,view
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,controller
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,view,view
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,model,model
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,controller,controller
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,args,args
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelViewController.java,variableHasInterfaceType,ViewInterface,view
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelViewController.java,variableHasInterfaceType,ModelInterface,model
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelViewController.java,variableHasInterfaceType,ControllerInterface,controller
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelViewController.java,expectedMethodCall,@ControllerClass!.*:->void,Some method (main:String[]->void),comp533.mvc.ModelViewController:[@StandAloneTokenCounter]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ModelViewController.java,expectedSignature,main:String[]->void,comp533.mvc.ModelViewController:[@StandAloneTokenCounter]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,tags,comp533.mvc.StandAloneTokenCounter,@StandAloneTokenCounter
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,comp
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,stand
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,alone
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,token
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,comp533.mvc.StandAloneTokenCounter,counter
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,args,args
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,input,input
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,tokens,tokens
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,arrayOfToken,array
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,arrayOfToken,of
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,arrayOfToken,token
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,uniqueTokens,unique
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,uniqueTokens,tokens
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,counts,counts
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,a,a
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,index,index
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,out,out
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,i,i
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nameInDictionary,temp,temp
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,methodBlockLimit,StandAloneTokenCounter,METHOD_DEF[13x1],2,1
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,nestedBlockDepth,2,1
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,methodBlockLimit,StandAloneTokenCounter,METHOD_DEF[13x1],3,1
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,expectedMethodCall,@ControllerClass!.*:->void,Some method (main:String[]->void),comp533.mvc.StandAloneTokenCounter:[@StandAloneTokenCounter]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\StandAloneTokenCounter.java,expectedSignature,main:String[]->void,comp533.mvc.StandAloneTokenCounter:[@StandAloneTokenCounter]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Testing.java,nameInDictionary,comp533.mvc.Testing,comp
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Testing.java,nameInDictionary,comp533.mvc.Testing,testing
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Testing.java,nameInDictionary,KeyVal,key
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Testing.java,nameInDictionary,KeyVal,val
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Testing.java,nameInDictionary,args,args
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\Testing.java,variableHasInterfaceType,KeyValueInterface,KeyVal
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,tags,comp533.mvc.TokenCountingMapper,@TokenCountingMapperClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,comp533.mvc.TokenCountingMapper,comp
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,comp533.mvc.TokenCountingMapper,token
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,comp533.mvc.TokenCountingMapper,counting
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,comp533.mvc.TokenCountingMapper,mapper
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,KeyValList,key
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,KeyValList,val
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,KeyValList,list
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,a,a
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,KeyVal,key
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,KeyVal,val
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,aStrings,a
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,aStrings,strings
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,variableHasInterfaceType,KeyValueInterface,KeyVal
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,expectedSignature,map:java.util.List->java.util.List,comp533.mvc.TokenCountingMapper:[@TokenCountingMapperClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,missingMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceMap:Object;Object->void,No method,comp533.mvc.TokenCountingMapper:[@TokenCountingMapperClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,expectedMethodCall,java.util.List!add:Object->boolean,Some method (map:java.util.List->List),comp533.mvc.TokenCountingMapper:[@TokenCountingMapperClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,classHasAtLeastOneInterface,comp533.mvc.TokenCountingMapper,No Tag
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,publicMethodsOverride,[]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapper.java,expectedSuperType,gradingTools.comp533s19.assignment0.AMapReduceTracer,@TokenCountingMapperClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,tags,comp533.mvc.TokenCountingMapperFactory,@MapperFactory
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,comp533.mvc.TokenCountingMapperFactory,comp
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,comp533.mvc.TokenCountingMapperFactory,token
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,comp533.mvc.TokenCountingMapperFactory,counting
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,comp533.mvc.TokenCountingMapperFactory,mapper
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,comp533.mvc.TokenCountingMapperFactory,factory
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,Mapper,mapper
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,newMapper,new
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,newMapper,mapper
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,variableHasInterfaceType,TokenCountingMapperInterface,Mapper
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,variableHasInterfaceType,TokenCountingMapperInterface,getMapper
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,variableHasInterfaceType,TokenCountingMapperInterface,newMapper
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,expectedGetter,Mapper,.*,@MapperFactory
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceSingletonChange:Class;Object->void,Some method (setMapper:comp533.mvc.TokenCountingMapperInterface->void),comp533.mvc.TokenCountingMapperFactory:[@MapperFactory]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,expectedSuperType,gradingTools.comp533s19.assignment0.AMapReduceTracer,@MapperFactory
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,expectedSetter,Mapper,.*,@MapperFactory
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,tags,comp533.mvc.TokenCountingMapperInterface,@TokenCountingMapperClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,comp533.mvc.TokenCountingMapperInterface,comp
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,comp533.mvc.TokenCountingMapperInterface,token
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,comp533.mvc.TokenCountingMapperInterface,counting
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,comp533.mvc.TokenCountingMapperInterface,mapper
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,comp533.mvc.TokenCountingMapperInterface,interface
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,aStrings,a
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,aStrings,strings
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\View.java,tags,comp533.mvc.View,@ViewClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\View.java,nameInDictionary,comp533.mvc.View,comp
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\View.java,nameInDictionary,comp533.mvc.View,view
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\View.java,nameInDictionary,evt,evt
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\View.java,expectedSignature,toString:->String,comp533.mvc.View:[@ViewClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\View.java,expectedSignature,propertyChange:java.beans.PropertyChangeEvent->void,comp533.mvc.View:[@ViewClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\View.java,expectedInterface,java.beans.PropertyChangeListener,@ViewClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\View.java,expectedInterface,java.util.EventListener,@ViewClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\View.java,classHasExactlyOneInterface,comp533.mvc.View,No Tag
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\View.java,expectedSuperType,gradingTools.comp533s19.assignment0.AMapReduceTracer,@ViewClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\View.java,classHasAtLeastOneInterface,comp533.mvc.View,No Tag
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\View.java,publicMethodsOverride,[]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\View.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!tracePropertyChange:java.beans.PropertyChangeEvent->void,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.mvc.View:[@ViewClass]
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ViewInterface.java,tags,comp533.mvc.ViewInterface,@ViewClass
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,comp
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,view
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,interface
+0,Sun Jan 23 10:19:29 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,evt,evt

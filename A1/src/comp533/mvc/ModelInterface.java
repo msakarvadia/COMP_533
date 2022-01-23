@@ -7,7 +7,6 @@ public interface ModelInterface {
 	public Map<String, Integer> getResult();
 	public void addPropertyChangeListener(PropertyChangeListener newListener);
 	public void setInputString(String newVal);
-	public boolean quit();
 	public void computeResult();
 	public String toString();
 }

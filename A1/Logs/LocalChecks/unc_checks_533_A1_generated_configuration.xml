@@ -3,8 +3,11 @@
 		<property name="expectedTypes" value="
 			@StandAloneTokenCounter,
 			@ControllerClass,
+			@KeyValueClass,
 			@ModelClass,
+			@MapperFactory,
 			@ViewClass,
+			@TokenCountingMapperClass,
 		"/>
 	</module>
 	<module name="ExpectedInterfaces">
@@ -76,6 +79,62 @@
 	</module>
 	<module name="ExpectedSuperTypes">
 		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@MapperFactory"/>
+		<property name="expectedSuperTypes" value="
+			gradingTools.comp533s19.assignment0.AMapReduceTracer,
+		"/>
+	</module>
+	<module name="ExpectedSuperTypes">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@MapperFactory"/>
+		<property name="expectedSuperTypes" value="
+			gradingTools.comp533s19.assignment0.AMapReduceTracer,
+		"/>
+	</module>
+	<module name="ExpectedGetters">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@MapperFactory"/>
+		<property name="expectedProperties" value="
+			Mapper:@TokenCountingMapperClass,
+		"/>
+	</module>
+	<module name="ExpectedGetters">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@MapperFactory"/>
+		<property name="expectedProperties" value="
+			Mapper:@TokenCountingMapperClass,
+		"/>
+	</module>
+	<module name="ExpectedSetters">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@MapperFactory"/>
+		<property name="expectedProperties" value="
+			Mapper:@TokenCountingMapperClass,
+		"/>
+	</module>
+	<module name="ExpectedSetters">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@MapperFactory"/>
+		<property name="expectedProperties" value="
+			Mapper:@TokenCountingMapperClass,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@MapperFactory"/>
+		<property name="expectedCalls" value="
+			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceSingletonChange:Class;Object->void,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@MapperFactory"/>
+		<property name="expectedCalls" value="
+			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceSingletonChange:Class;Object->void,
+		"/>
+	</module>
+	<module name="ExpectedSuperTypes">
+		<property name="severity" value="warning"/>
 		<property name="includeTypeTags" value="@ControllerClass"/>
 		<property name="expectedSuperTypes" value="
 			gradingTools.comp533s19.assignment0.AMapReduceTracer,
@@ -134,8 +193,8 @@
 		<property name="expectedCalls" value="
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceQuit:->void,
 			java.util.Scanner!close:->void,
-			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceNumbersPrompt:->void,
 			@ModelClass!setInputString:String->void,
+			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceNumbersPrompt:->void,
 			java.util.Scanner!nextLine:->String,
 			@ModelClass!computeResult:->void,
 		"/>
@@ -146,8 +205,8 @@
 		<property name="expectedCalls" value="
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceQuit:->void,
 			java.util.Scanner!close:->void,
-			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceNumbersPrompt:->void,
 			@ModelClass!setInputString:String->void,
+			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceNumbersPrompt:->void,
 			java.util.Scanner!nextLine:->String,
 			@ModelClass!computeResult:->void,
 		"/>
@@ -177,8 +236,8 @@
 		<property name="severity" value="warning"/>
 		<property name="includeTypeTags" value="@StandAloneTokenCounter"/>
 		<property name="expectedCalls" value="
-			@ControllerClass!processInput:->void,
 			@ControllerClass!setModel:@ModelClass->void,
+			@ControllerClass!processInput:->void,
 			@ModelClass!addPropertyChangeListener:java.beans.PropertyChangeListener->void,
 		"/>
 	</module>
@@ -186,11 +245,127 @@
 		<property name="severity" value="info"/>
 		<property name="includeTypeTags" value="@StandAloneTokenCounter"/>
 		<property name="expectedCalls" value="
-			@ControllerClass!processInput:->void,
 			@ControllerClass!setModel:@ModelClass->void,
+			@ControllerClass!processInput:->void,
 			@ModelClass!addPropertyChangeListener:java.beans.PropertyChangeListener->void,
 		"/>
 	</module>
+	<module name="ClassIsGeneric">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@KeyValueClass"/>
+	</module>
+	<module name="ClassIsGeneric">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@KeyValueClass"/>
+	</module>
+	<module name="ExpectedGetters">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@KeyValueClass"/>
+		<property name="expectedProperties" value="
+			Value:TypeParam1,
+			Key:TypeParam0,
+		"/>
+	</module>
+	<module name="ExpectedGetters">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@KeyValueClass"/>
+		<property name="expectedProperties" value="
+			Value:TypeParam1,
+			Key:TypeParam0,
+		"/>
+	</module>
+	<module name="ExpectedSetters">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@KeyValueClass"/>
+		<property name="expectedProperties" value="
+			Value:TypeParam1,
+			Key:TypeParam0,
+		"/>
+	</module>
+	<module name="ExpectedSetters">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@KeyValueClass"/>
+		<property name="expectedProperties" value="
+			Value:TypeParam1,
+			Key:TypeParam0,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@KeyValueClass"/>
+		<property name="expectedSignatures" value="
+			toString:->String,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@KeyValueClass"/>
+		<property name="expectedSignatures" value="
+			toString:->String,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@KeyValueClass"/>
+		<property name="expectedCalls" value="
+			java.util.Scanner!toString:*->.*,
+			java.util.EventObject!toString:*->.*,
+			@KeyValueClass!toString:*->.*,
+			java.beans.PropertyChangeEvent!toString:*->.*,
+			java.lang.Object!toString:*->.*,
+			@ViewClass!toString:*->.*,
+			java.util.AbstractCollection!toString:*->.*,
+			@TokenCountingMapperClass!toString:*->.*,
+			@ControllerClass!toString:*->.*,
+			java.util.AbstractMap!toString:*->.*,
+			@ModelClass!toString:*->.*,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@KeyValueClass"/>
+		<property name="expectedCalls" value="
+			java.util.Scanner!toString:*->.*,
+			java.util.EventObject!toString:*->.*,
+			@KeyValueClass!toString:*->.*,
+			java.beans.PropertyChangeEvent!toString:*->.*,
+			java.lang.Object!toString:*->.*,
+			@ViewClass!toString:*->.*,
+			java.util.AbstractCollection!toString:*->.*,
+			@TokenCountingMapperClass!toString:*->.*,
+			@ControllerClass!toString:*->.*,
+			java.util.AbstractMap!toString:*->.*,
+			@ModelClass!toString:*->.*,
+		"/>
+	</module>
+	<module name="MethodAccessesGlobal">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@KeyValueClass"/>
+		<property name="expectedReferences" value="
+			toString:->String#.*MODEL.*,
+		"/>
+	</module>
+	<module name="MethodAccessesGlobal">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@KeyValueClass"/>
+		<property name="expectedReferences" value="
+			toString:->String#.*CONTROLLER.*,
+		"/>
+	</module>
+	<module name="MethodAccessesGlobal">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@KeyValueClass"/>
+		<property name="expectedReferences" value="
+			toString:->String#.*TOKEN_COUNTING_MAPPER.*,
+		"/>
+	</module>
+	<module name="MethodAccessesGlobal">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@KeyValueClass"/>
+		<property name="expectedReferences" value="
+			toString:->String#.*VIEW.*,
+		"/>
+	</module>
 	<module name="ExpectedSuperTypes">
 		<property name="severity" value="warning"/>
 		<property name="includeTypeTags" value="@ModelClass"/>
@@ -238,7 +413,6 @@
 		<property name="includeTypeTags" value="@ModelClass"/>
 		<property name="expectedSignatures" value="
 			toString:->String,
-			quit:->boolean,
 			computeResult:->void,
 			addPropertyChangeListener:java.beans.PropertyChangeListener->void,
 		"/>
@@ -248,7 +422,6 @@
 		<property name="includeTypeTags" value="@ModelClass"/>
 		<property name="expectedSignatures" value="
 			toString:->String,
-			quit:->boolean,
 			computeResult:->void,
 			addPropertyChangeListener:java.beans.PropertyChangeListener->void,
 		"/>
@@ -258,18 +431,20 @@
 		<property name="includeTypeTags" value="@ModelClass"/>
 		<property name="expectedCalls" value="
 			java.util.Map!put:Object;Object->Object,
-			java.util.List!indexOf:Object->int,
 			java.util.Scanner!toString:*->.*,
+			java.util.List!indexOf:Object->int,
 			java.lang.Object!toString:*->.*,
 			@ViewClass!toString:*->.*,
 			java.util.AbstractCollection!toString:*->.*,
+			@TokenCountingMapperClass!toString:*->.*,
 			java.util.List!contains:Object->boolean,
 			java.beans.PropertyChangeSupport!firePropertyChange:java.beans.PropertyChangeEvent->void,
-			java.util.List!add:Object->boolean,
 			java.util.List!set:int;Object->Object,
+			java.util.List!add:Object->boolean,
 			java.beans.PropertyChangeSupport!addPropertyChangeListener:java.beans.PropertyChangeListener->void,
 			java.util.EventObject!toString:*->.*,
 			java.util.Map!clear:->void,
+			@KeyValueClass!toString:*->.*,
 			java.beans.PropertyChangeEvent!toString:*->.*,
 			java.util.Map!isEmpty:->boolean,
 			java.util.List!size:->int,
@@ -284,18 +459,20 @@
 		<property name="includeTypeTags" value="@ModelClass"/>
 		<property name="expectedCalls" value="
 			java.util.Map!put:Object;Object->Object,
-			java.util.List!indexOf:Object->int,
 			java.util.Scanner!toString:*->.*,
+			java.util.List!indexOf:Object->int,
 			java.lang.Object!toString:*->.*,
 			@ViewClass!toString:*->.*,
 			java.util.AbstractCollection!toString:*->.*,
+			@TokenCountingMapperClass!toString:*->.*,
 			java.util.List!contains:Object->boolean,
 			java.beans.PropertyChangeSupport!firePropertyChange:java.beans.PropertyChangeEvent->void,
-			java.util.List!add:Object->boolean,
 			java.util.List!set:int;Object->Object,
+			java.util.List!add:Object->boolean,
 			java.beans.PropertyChangeSupport!addPropertyChangeListener:java.beans.PropertyChangeListener->void,
 			java.util.EventObject!toString:*->.*,
 			java.util.Map!clear:->void,
+			@KeyValueClass!toString:*->.*,
 			java.beans.PropertyChangeEvent!toString:*->.*,
 			java.util.Map!isEmpty:->boolean,
 			java.util.List!size:->int,
@@ -309,14 +486,7 @@
 		<property name="severity" value="warning"/>
 		<property name="includeTypeTags" value="@ModelClass"/>
 		<property name="expectedReferences" value="
-			quit:->boolean#.*QUIT.*,
-		"/>
-	</module>
-	<module name="MethodAccessesGlobal">
-		<property name="severity" value="warning"/>
-		<property name="includeTypeTags" value="@ModelClass"/>
-		<property name="expectedReferences" value="
-			computeResult:->void#.*VIEW.*,
+			computeResult:->void#.*MODEL.*,
 		"/>
 	</module>
 	<module name="MethodAccessesGlobal">
@@ -330,7 +500,14 @@
 		<property name="severity" value="warning"/>
 		<property name="includeTypeTags" value="@ModelClass"/>
 		<property name="expectedReferences" value="
-			computeResult:->void#.*MODEL.*,
+			computeResult:->void#.*TOKEN_COUNTING_MAPPER.*,
+		"/>
+	</module>
+	<module name="MethodAccessesGlobal">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@ModelClass"/>
+		<property name="expectedReferences" value="
+			computeResult:->void#.*VIEW.*,
 		"/>
 	</module>
 	<module name="MethodAccessesGlobal">
@@ -354,5 +531,60 @@
 		<property name="instantiations" value="
 			java.beans.PropertyChangeSupport,
 			java.util.HashMap,
+		"/>
+	</module>
+	<module name="ExpectedSuperTypes">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@TokenCountingMapperClass"/>
+		<property name="expectedSuperTypes" value="
+			gradingTools.comp533s19.assignment0.AMapReduceTracer,
+		"/>
+	</module>
+	<module name="ExpectedSuperTypes">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@TokenCountingMapperClass"/>
+		<property name="expectedSuperTypes" value="
+			gradingTools.comp533s19.assignment0.AMapReduceTracer,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@TokenCountingMapperClass"/>
+		<property name="expectedSignatures" value="
+			map:java.util.List->java.util.List,
+			toString:->String,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@TokenCountingMapperClass"/>
+		<property name="expectedSignatures" value="
+			map:java.util.List->java.util.List,
+			toString:->String,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@TokenCountingMapperClass"/>
+		<property name="expectedCalls" value="
+			java.util.List!add:Object->boolean,
+			@KeyValueClass!setKey:TypeParam0->void,
+			@KeyValueClass!setValue:TypeParam1->void,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@TokenCountingMapperClass"/>
+		<property name="expectedCalls" value="
+			java.util.List!add:Object->boolean,
+			@KeyValueClass!setKey:TypeParam0->void,
+			@KeyValueClass!setValue:TypeParam1->void,
+		"/>
+	</module>
+	<module name="MethodAccessesGlobal">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@TokenCountingMapperClass"/>
+		<property name="expectedReferences" value="
+			toString:->String#.*TOKEN_COUNTING_MAPPER.*,
 		"/>
 	</module>

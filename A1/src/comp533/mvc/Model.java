@@ -12,12 +12,14 @@ import gradingTools.comp533s19.assignment0.AMapReduceTracer;
 public class Model extends AMapReduceTracer implements ModelInterface{
 	private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
 	private String inputString = null;
-	public Map<String, Integer> Result =new HashMap<String, Integer>();
+	private Map<String, Integer> Result =new HashMap<String, Integer>();
 
+	@Override
 	public void addPropertyChangeListener(PropertyChangeListener newListener) {
 		propertyChangeSupport.addPropertyChangeListener(newListener);
 	}
 
+	@Override
 	public void setInputString(String newVal) {
 		String oldInputString = inputString;
 		inputString = newVal;
@@ -25,13 +27,7 @@ public class Model extends AMapReduceTracer implements ModelInterface{
 		propertyChangeSupport.firePropertyChange(inputEvent);
 	}
 	
-	public boolean quit() {
-		if (inputString.equals(QUIT)) {
-			return true;
-		}
-		return false;
-	}
-	
+	@Override
 	public void computeResult() {
 		String oldResult = Result.toString();
 		if (Result.isEmpty()) {
@@ -67,9 +63,12 @@ public class Model extends AMapReduceTracer implements ModelInterface{
 		
 	}
 
+	@Override
 	public Map<String, Integer> getResult(){
 		return Result;
 	}
+	
+	@Override
 	public String toString() {// overriding the toString() method
 		return MODEL;
 	}
