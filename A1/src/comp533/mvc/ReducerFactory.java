@@ -2,17 +2,17 @@ package comp533.mvc;
 import gradingTools.comp533s19.assignment0.AMapReduceTracer; 
 
 public class ReducerFactory extends AMapReduceTracer{
-	private static ReducerInterface<String, Integer> Reducer;
+	private static ReducerInterface<String, Integer> reducer;
 	
 	public static ReducerInterface<String, Integer> getReducer() {
-		if (Reducer == null) {
-			Reducer = new Reducer();
+		if (reducer == null) {
+			reducer = new Reducer();
 		}
-		return Reducer;
+		return reducer;
 	}
 	
 	public static void setReducer(final ReducerInterface<String, Integer> newReducer) {
-		Reducer = newReducer;
-		traceSingletonChange(ReducerFactory.class, Reducer);
+		reducer = newReducer;
+		traceSingletonChange(ReducerFactory.class, reducer);
 	}
 }

@@ -1,27 +1,27 @@
 package comp533.mvc;
 
-public class KeyValue<KeyType, ValueType> implements KeyValueInterface<KeyType, ValueType> {
-	private KeyType key;
-	private ValueType val;
+public class KeyValue<K, V> implements KeyValueInterface<K, V> {
+	private K key;
+	private V val;
 
 	@Override
-	public KeyType getKey() {
+	public K getKey() {
 		return key;
 	}
 
 	@Override
-	public void setKey(KeyType newKey) {
+	public void setKey(final K newKey) {
 		key = newKey;
 	}
 	
 	@Override
-	public void setValue(ValueType newValue) {
+	public void setValue(final V newValue) {
 		// TODO Auto-generated method stub
 		val = newValue;
 	}
 
 	@Override
-	public ValueType getValue() {
+	public V getValue() {
 		// TODO Auto-generated method stub
 		return val;
 	}

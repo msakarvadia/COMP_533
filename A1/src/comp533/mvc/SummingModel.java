@@ -10,57 +10,53 @@ import java.util.Map;
 
 import gradingTools.comp533s19.assignment0.AMapReduceTracer;
 
-public class SummingModel extends AMapReduceTracer implements ModelInterface{
+public class SummingModel extends AMapReduceTracer implements ModelInterface {
 	private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
 	private String inputString = null;
-	private Map<String, Integer> Result = new HashMap<String, Integer>();
-	ReducerInterface<String, Integer> Reducer = ReducerFactory.getReducer();
-	IntSummingMapperInterface<String, Integer> Mapper = IntSummingMapperFactory.getMapper();
-	
+	private Map<String, Integer> result = new HashMap<String, Integer>();
+	final ReducerInterface<String, Integer> reducer = ReducerFactory.getReducer();
+	final IntSummingMapperInterface<String, Integer> mapper = IntSummingMapperFactory.getMapper();
+
 	@Override
 	public Map<String, Integer> getResult() {
-		return Result;
+		return result;
 	}
 
 	@Override
-	public void addPropertyChangeListener(PropertyChangeListener newListener) {
+	public void addPropertyChangeListener(final PropertyChangeListener newListener) {
 		propertyChangeSupport.addPropertyChangeListener(newListener);
 	}
 
 	@Override
-	public void setInputString(String newVal) {
-		String oldInputString = inputString;
+	public void setInputString(final String newVal) {
+		final String oldInputString = inputString;
 		inputString = newVal;
-		PropertyChangeEvent inputEvent = new PropertyChangeEvent(this, "InputString", oldInputString, newVal);
+		final PropertyChangeEvent inputEvent = new PropertyChangeEvent(this, "InputString", oldInputString, newVal);
 		propertyChangeSupport.firePropertyChange(inputEvent);
 	}
 
 	@Override
 	public void computeResult() {
-		String oldResult = Result.toString();
-		if (Result.isEmpty()) {
+		String oldResult = result.toString();
+		if (result.isEmpty()) {
 			oldResult = null;
 		}
 		final String tokens = inputString;
-		Result.clear();
-		
-		List<KeyValueInterface<String, Integer>> KeyValList = Mapper.map(tokens);
-		//TODO PROPERTY CHANGE FOR KeyValList
-		Result = Reducer.reduce(KeyValList);
-		//TODO property change for Result
-		PropertyChangeEvent resultComputed = new PropertyChangeEvent(this, "Result", oldResult, Result.toString());
-		propertyChangeSupport.firePropertyChange(resultComputed);		
+		result.clear();
+
+		final List<String> ListOfToken = Arrays.asList(tokens.split(" "));
+		final List<KeyValueInterface<String, Integer>> keyValList = mapper.map(ListOfToken);
+		// TODO PROPERTY CHANGE FOR KeyValList
+		result = reducer.reduce(keyValList);
+		// TODO property change for Result
+		final PropertyChangeEvent resultComputed = new PropertyChangeEvent(this, "Result", oldResult,
+				result.toString());
+		propertyChangeSupport.firePropertyChange(resultComputed);
 	}
 
-	@Override
-	public void computeResultOld() {
-		// TODO Auto-generated method stub
-	}
-	
 	@Override
 	public String toString() {// overriding the toString() method
 		return MODEL;
 	}
-	
 
 }

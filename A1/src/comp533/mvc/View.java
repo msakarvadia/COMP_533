@@ -6,7 +6,7 @@ import gradingTools.comp533s19.assignment0.AMapReduceTracer;
 public class View extends AMapReduceTracer implements ViewInterface {
 
 	@Override
-	public void propertyChange(PropertyChangeEvent evt) {
+	public void propertyChange(final PropertyChangeEvent evt) {
 		tracePropertyChange(evt);
 	}
 	

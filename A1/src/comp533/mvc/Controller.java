@@ -14,9 +14,11 @@ public class Controller extends AMapReduceTracer implements ControllerInterface{
 			traceNumbersPrompt();
 			final String tokens = input.nextLine();
 			model.setInputString(tokens);
-			if ("quit".equals(tokens)) {
+			final String quit = "quit";
+			if (quit.equals(tokens)) {
 				traceQuit();
 				input.close();
+				break;
 			}
 			else {
 				model.computeResult();

@@ -1,7 +1,6 @@
 package comp533.mvc;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import gradingTools.comp533s19.assignment0.AMapReduceTracer; 
@@ -9,17 +8,17 @@ import gradingTools.comp533s19.assignment0.AMapReduceTracer;
 public class IntSummingMapper extends AMapReduceTracer implements IntSummingMapperInterface<String, Integer>{
 
 	@Override
-	public List<KeyValueInterface<String, Integer>> map(String aStrings) {
-		final List<String> ListOfToken = Arrays.asList(aStrings.split(" "));
-		List<KeyValueInterface<String, Integer>> KeyValList = new ArrayList<KeyValueInterface<String, Integer>> ();
-		for (String a : ListOfToken) {
-			KeyValueInterface<String, Integer> KeyVal = new KeyValue<String, Integer>();
-			KeyVal.setKey("ResultKey");
-			KeyVal.setValue(Integer.parseInt(a));
-			KeyValList.add(KeyVal);
+	public List<KeyValueInterface<String, Integer>> map(final List<String> listOfToken) {
+		//final List<String> ListOfToken = Arrays.asList(aStrings.split(" "));
+		final List<KeyValueInterface<String, Integer>> keyValList = new ArrayList<KeyValueInterface<String, Integer>> ();
+		for (String a : listOfToken) {
+			final KeyValueInterface<String, Integer> keyVal = new KeyValue<String, Integer>();
+			keyVal.setKey("ResultKey");
+			keyVal.setValue(Integer.parseInt(a));
+			keyValList.add(keyVal);
 		}
-		traceMap(aStrings ,KeyValList);
-		return KeyValList;
+		traceMap(listOfToken ,keyValList);
+		return keyValList;
 	}
 	
 	@Override

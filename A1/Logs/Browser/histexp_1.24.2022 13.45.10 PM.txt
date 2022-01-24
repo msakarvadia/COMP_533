@@ -1,0 +1,12 @@
+1/24/2022 15:25:34 PM	UNC-Chapel Hill Single Sign-On	https://sakai.unc.edu/Shibboleth.sso/Logout?return=https://sso.unc.edu/idp/logout.jsp
+1/24/2022 16:10:46 PM	Projects · knowledge_distillation	https://github.com/msakarvadia/knowledge_distillation/blob/main/distill.py
+1/24/2022 16:10:46 PM	Projects · knowledge_distillation	https://github.com/msakarvadia/knowledge_distillation/projects?type=beta
+1/24/2022 17:02:46 PM	returning two things from java method - Google Search	https://www.google.com/search?q=returning+two+things+from+java+method&rlz=1C1CHBF_enUS939US939&oq=returning+two+things+from+java+method&aqs=chrome..69i57.5766j0j7&sourceid=chrome&ie=UTF-8
+1/24/2022 17:04:24 PM	java .hasnext() - Google Search	https://www.google.com/search?q=java+.hasnext()&rlz=1C1CHBF_enUS939US939&oq=java+.hasnext()&aqs=chrome..69i57.5302j0j9&sourceid=chrome&ie=UTF-8
+1/24/2022 17:04:16 PM	Java Scanner hasNext() Method - Javatpoint	https://www.javatpoint.com/post/java-scanner-hasnext-method
+1/24/2022 17:06:09 PM	java list .hasnext() - Google Search	https://www.google.com/search?q=java+list+.hasnext%28%29&rlz=1C1CHBF_enUS939US939&ei=XyLvYa-hHeGL_QacuLOgBg&ved=0ahUKEwjvzPWxssv1AhXhRd8KHRzcDGQQ4dUDCA4&uact=5&oq=java+list+.hasnext%28%29&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEAcQHjIGCAAQCBAeMggIABCGAxCLAzIICAAQhgMQiwMyCAgAEIYDEIsDMggIABCGAxCLAzoHCAAQRxCwAzoKCAAQCBAHEAoQHjoICAAQCBAHEB5KBAhBGABKBAhGGABQ7wJYwwZguw5oAXACeACAAVKIAfICkgEBNZgBAKABAcgBCLgBA8ABAQ&sclient=gws-wiz
+1/24/2022 17:07:27 PM	Java ListIterator hasNext() Method with Examples - Javatpoint	https://www.javatpoint.com/java-listiterator-hasnext-method
+1/24/2022 17:06:18 PM	Iterate through ArrayList in Java	https://www.tutorialspoint.com/iterate-through-arraylist-in-java
+1/24/2022 17:06:36 PM	list.hasNext java - Google Search	https://www.google.com/search?q=list.hasNext+java&rlz=1C1CHBF_enUS939US939&oq=list.hasNext+java&aqs=chrome..69i57.4451j0j4&sourceid=chrome&ie=UTF-8
+1/24/2022 17:17:54 PM	java iterator -> - Google Search	https://www.google.com/search?q=java+iterator+-%3E&rlz=1C1CHBF_enUS939US939&oq=java+iterator+-%3E&aqs=chrome..69i57.5472j0j4&sourceid=chrome&ie=UTF-8
+1/24/2022 17:17:55 PM	Java Iterator	https://www.w3schools.com/java/java_iterator.asp

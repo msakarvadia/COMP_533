@@ -1,10 +1,10 @@
 package comp533.mvc;
 
-public interface KeyValueInterface<KeyType, ValueType> {
-	public KeyType getKey();
-	public void setKey(KeyType newKey);
-	public ValueType getValue();
-	public void setValue(ValueType newValue);
+public interface KeyValueInterface<K, V> {
+	public K getKey();
+	public void setKey(K newKey);
+	public V getValue();
+	public void setValue(V newValue);
 	public String toString();
 	
 }

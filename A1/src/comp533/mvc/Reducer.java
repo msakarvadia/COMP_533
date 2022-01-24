@@ -1,6 +1,7 @@
 package comp533.mvc;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -14,18 +15,29 @@ public class Reducer extends AMapReduceTracer implements ReducerInterface<String
 	}
 
 	@Override
-	public Map<String, Integer> reduce(List<KeyValueInterface<String, Integer>> aList) {
-		Map<String, Integer> Result =new HashMap<String, Integer>();
-		for (KeyValueInterface<String, Integer> a : aList) {
-			if (!Result.containsKey(a.getKey())) {
+	public Map<String, Integer> reduce(final List<KeyValueInterface<String, Integer>> aList) {
+		final Map<String, Integer> result =new HashMap<String, Integer>();
+		final Iterator<KeyValueInterface<String, Integer>> iterator = aList.listIterator();
+		while(iterator.hasNext()) {
+			final KeyValueInterface<String, Integer> val = iterator.next();
+			if (!result.containsKey(val.getKey())) {
 				//Result.put(a.getKey(),1);
-				Result.put(a.getKey(),a.getValue());
+				result.put(val.getKey(),val.getValue());
 			}
 			else {
-				Result.put(a.getKey(), Result.get(a.getKey()) + a.getValue());
+				result.put(val.getKey(), result.get(val.getKey()) + val.getValue());
 			}
 		}
-		traceReduce(aList, Result);
-		return Result;
+		//for (KeyValueInterface<String, Integer> a : aList) {
+		//	if (!result.containsKey(a.getKey())) {
+		//		//Result.put(a.getKey(),1);
+		//		result.put(a.getKey(),a.getValue());
+		//	}
+		//	else {
+		//		result.put(a.getKey(), result.get(a.getKey()) + a.getValue());
+		//	}
+		//}
+		traceReduce(aList, result);
+		return result;
 	}
 }
