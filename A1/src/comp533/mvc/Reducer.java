@@ -17,7 +17,7 @@ public class Reducer extends AMapReduceTracer implements ReducerInterface<String
 	@Override
 	public Map<String, Integer> reduce(final List<KeyValueInterface<String, Integer>> aList) {
 		final Map<String, Integer> result =new HashMap<String, Integer>();
-		final Iterator<KeyValueInterface<String, Integer>> iterator = aList.listIterator();
+		final Iterator<KeyValueInterface<String, Integer>> iterator = aList.iterator();
 		while(iterator.hasNext()) {
 			final KeyValueInterface<String, Integer> val = iterator.next();
 			if (!result.containsKey(val.getKey())) {
@@ -28,15 +28,6 @@ public class Reducer extends AMapReduceTracer implements ReducerInterface<String
 				result.put(val.getKey(), result.get(val.getKey()) + val.getValue());
 			}
 		}
-		//for (KeyValueInterface<String, Integer> a : aList) {
-		//	if (!result.containsKey(a.getKey())) {
-		//		//Result.put(a.getKey(),1);
-		//		result.put(a.getKey(),a.getValue());
-		//	}
-		//	else {
-		//		result.put(a.getKey(), result.get(a.getKey()) + a.getValue());
-		//	}
-		//}
 		traceReduce(aList, result);
 		return result;
 	}

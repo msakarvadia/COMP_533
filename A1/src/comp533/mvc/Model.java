@@ -13,8 +13,6 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 	private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
 	private String inputString = null;
 	private Map<String, Integer> result = new HashMap<String, Integer>();
-	//final ReducerInterface<String, Integer> reducer = ReducerFactory.getReducer();
-	//final TokenCountingMapperInterface<String, Integer> mapper = TokenCountingMapperFactory.getMapper();
 	final String space = " ";
 
 	@Override

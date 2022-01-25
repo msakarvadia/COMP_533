@@ -8,15 +8,17 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import gradingTools.comp533s19.assignment0.AMapReduceTracer;
+//import gradingTools.comp533s19.assignment0.AMapReduceTracer;
 
-public class SummingModel extends AMapReduceTracer implements ModelInterface {
+//public class SummingModel extends AMapReduceTracer implements ModelInterface
+public class SummingModel extends Model implements ModelInterface{
 	private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
 	private String inputString = null;
 	private Map<String, Integer> result = new HashMap<String, Integer>();
 	final ReducerInterface<String, Integer> reducer = ReducerFactory.getReducer();
 	final IntSummingMapperInterface<String, Integer> mapper = IntSummingMapperFactory.getMapper();
 
+	
 	@Override
 	public Map<String, Integer> getResult() {
 		return result;
@@ -29,9 +31,9 @@ public class SummingModel extends AMapReduceTracer implements ModelInterface {
 
 	@Override
 	public void setInputString(final String newVal) {
-		final String oldInputString = inputString;
+		final String oldString = inputString;
 		inputString = newVal;
-		final PropertyChangeEvent inputEvent = new PropertyChangeEvent(this, "InputString", oldInputString, newVal);
+		final PropertyChangeEvent inputEvent = new PropertyChangeEvent(this, "InputString", oldString, newVal);
 		propertyChangeSupport.firePropertyChange(inputEvent);
 	}
 
@@ -46,9 +48,7 @@ public class SummingModel extends AMapReduceTracer implements ModelInterface {
 
 		final List<String> ListOfToken = Arrays.asList(tokens.split(" "));
 		final List<KeyValueInterface<String, Integer>> keyValList = mapper.map(ListOfToken);
-		// TODO PROPERTY CHANGE FOR KeyValList
 		result = reducer.reduce(keyValList);
-		// TODO property change for Result
 		final PropertyChangeEvent resultComputed = new PropertyChangeEvent(this, "Result", oldResult,
 				result.toString());
 		propertyChangeSupport.firePropertyChange(resultComputed);

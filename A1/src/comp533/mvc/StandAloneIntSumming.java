@@ -8,6 +8,7 @@ public class StandAloneIntSumming {
 		
 		final ModelInterface model = new SummingModel();
 		model.addPropertyChangeListener(view);
+		IntSummingMapperFactory.setMapper(IntSummingMapperFactory.getMapper());
 		
 		final ControllerInterface controller = new Controller();
 		controller.setModel(model);

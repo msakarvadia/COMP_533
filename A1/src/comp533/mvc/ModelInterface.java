@@ -1,5 +1,6 @@
 package comp533.mvc;
 
+
 import java.beans.PropertyChangeListener;
 import java.util.Map;
 
@@ -9,4 +10,6 @@ public interface ModelInterface {
 	public void setInputString(String newVal);
 	public void computeResult();
 	public String toString();
-}
+	
+	
+} 

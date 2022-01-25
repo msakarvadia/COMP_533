@@ -2,7 +2,7 @@ package comp533.mvc;
 
 //import gradingTools.comp533s21.assignment1.interfaces.MapReduceConfiguration;
 
-public class MapReduceConfiguration implements gradingTools.comp533s21.assignment1.interfaces.MapReduceConfiguration {
+public class MapReduceConfiguration implements MapReduceConfigurationInterface {
 
 	@Override
 	public Object getBarrier(final int arg0) {
