@@ -1,6 +1,7 @@
 package comp533.mvc;
 
 import comp533.barrier.Barrier;
+import comp533.joiner.Joiner;
 import comp533.partitioner.Partitioner;
 import comp533.partitioner.PartitionerFactory;
 
@@ -43,13 +44,13 @@ public class MapReduceConfiguration implements MapReduceConfigurationInterface {
 	@Override
 	public Object getJoiner(final int arg0) {
 		// TODO Auto-generated method stub
-		return null;
+		return new Joiner(arg0);
 	}
 
 	@Override
 	public Class<?> getJoinerClass() {
 		// TODO Auto-generated method stub
-		return null;
+		return Joiner.class;
 	}
 
 	@Override

@@ -7,6 +7,9 @@ import java.util.List;
 import java.util.Map;
 
 import comp533.barrier.Barrier;
+import comp533.barrier.BarrierInterface;
+import comp533.joiner.Joiner;
+import comp533.joiner.JoinerInterface;
 import comp533.salve.Slave;
 
 import java.util.HashMap;
@@ -19,11 +22,14 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 	private String inputString = null;
 	private Map<String, Integer> result = new HashMap<String, Integer>();
 	final String space = " ";
-	Barrier barrier;
+	
 
 	//properties from A2
 	int NumThreads = 0;
 	List<Thread> threads = new ArrayList<Thread>();
+	BarrierInterface barrier;
+	JoinerInterface joiner;
+	
 	
 	@Override
 	public int getNumThreads() {
@@ -33,7 +39,9 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 	@Override
 	public void setNumThreads(final int numThreads) {
 		 barrier = new Barrier(numThreads);
+		 joiner = new Joiner(numThreads);
 		 traceBarrierCreated(barrier, numThreads);
+		 traceJoinerCreated(joiner, numThreads);
 		 
 		final String oldValue = Integer.toString(NumThreads);
 		String oldThreads = threads.toString();
@@ -114,5 +122,17 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 	@Override
 	public String toString() {// overriding the toString() method
 		return MODEL;
+	}
+
+	@Override
+	public BarrierInterface getBarrier() {
+		// TODO Auto-generated method stub
+		return barrier;
+	}
+
+	@Override
+	public JoinerInterface getJoiner() {
+		// TODO Auto-generated method stub
+		return joiner;
 	}
 }

@@ -6,7 +6,7 @@ public class Barrier extends AMapReduceTracer implements BarrierInterface {
 	final int count;
 	int numCalls = 0;
 
-	public Barrier(int numThreads) {
+	public Barrier(final int numThreads) {
 		count = numThreads;
 	}
 
@@ -16,13 +16,13 @@ public class Barrier extends AMapReduceTracer implements BarrierInterface {
 	}
 
 	@Override
-	public void barrier() {
+	public synchronized void barrier() {
 		numCalls++;
 		while (numCalls < count) {
 			try {
 				traceBarrierWaitStart(this, count, numCalls);
 				wait();
-				traceBarrierWaitStart(this, count, numCalls);
+				traceBarrierWaitEnd(this, count, numCalls);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
