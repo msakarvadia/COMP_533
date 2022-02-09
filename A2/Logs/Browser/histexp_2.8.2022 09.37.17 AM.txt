@@ -1,0 +1,51 @@
+2/8/2022 09:37:37 AM	0_HelloWorld.docx - Google Docs	https://docs.google.com/document/d/14fO-jQrdgb3BKCJAKOVdKK25ryXK2aUD/edit?rtpof=true
+2/8/2022 09:37:49 AM	0_HelloWorld.docx - Google Docs	https://docs.google.com/document/d/14fO-jQrdgb3BKCJAKOVdKK25ryXK2aUD/edit
+2/8/2022 09:37:28 AM	Assignments - Google Drive	https://drive.google.com/open?id=14bJKIkxmF-1OjeBLhW7bPJKULjSxNv9j&authuser=dewan%40cs.unc.edu&usp=drive_fs
+2/8/2022 09:37:29 AM	Assignments - Google Drive	https://drive.google.com/drive/folders/14bJKIkxmF-1OjeBLhW7bPJKULjSxNv9j?usp=drive_fs
+2/8/2022 09:37:31 AM	Assignments - Google Drive	https://drive.google.com/drive/folders/14bJKIkxmF-1OjeBLhW7bPJKULjSxNv9j
+2/8/2022 09:37:37 AM	0_HelloWorld.docx - Google Docs	https://docs.google.com/document/d/14fO-jQrdgb3BKCJAKOVdKK25ryXK2aUD/edit?usp=drive_web&ouid=115705987000692215284&rtpof=true
+2/8/2022 09:42:56 AM	Slide 1	http://www.cs.unc.edu/~dewan/comp401/current/Lectures/Eclipse.pdf
+2/8/2022 09:42:43 AM	Redirecting	https://www.google.com/url?q=http://www.cs.unc.edu/~dewan/comp401/current/Lectures/Eclipse.pptx&sa=D&source=docs&ust=1644334962154896&usg=AOvVaw3r68zmj3IJ4ZohnVDnz7zA
+2/8/2022 09:42:56 AM	Slide 1	https://www.google.com/url?q=http://www.cs.unc.edu/~dewan/comp401/current/Lectures/Eclipse.pdf&sa=D&source=docs&ust=1644334974561494&usg=AOvVaw3usmTzLsOeFfdtq7_bOlBG
+2/8/2022 09:48:16 AM	2_ConcurrentMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/11lJlYtS8vs4EcIoaE7zFq1B2eUB4DIN1/edit?rtpof=true
+2/8/2022 09:48:28 AM	2_ConcurrentMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/11lJlYtS8vs4EcIoaE7zFq1B2eUB4DIN1/edit
+2/8/2022 09:48:16 AM	2_ConcurrentMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/11lJlYtS8vs4EcIoaE7zFq1B2eUB4DIN1/edit?usp=drive_web&ouid=115705987000692215284&rtpof=true
+2/8/2022 09:55:15 AM	Lectures - Google Drive	https://drive.google.com/drive/folders/14bIoaPQLNDP9Oxv1-LtgKhevNiICuqPr
+2/8/2022 09:53:55 AM	extending java run class - Google Search	https://www.google.com/search?q=extending+java+run+class&rlz=1C1CHBF_enUS939US939&oq=extending+java+run+class&aqs=chrome..69i57.5641j0j7&sourceid=chrome&ie=UTF-8
+2/8/2022 09:53:50 AM	inheritance - Java: Extending Class At Runtime - Stack Overflow	https://stackoverflow.com/questions/10046056/java-extending-class-at-runtime
+2/8/2022 09:54:09 AM	extending runnable java - Google Search	https://www.google.com/search?q=extending+runnable+java&rlz=1C1CHBF_enUS939US939&ei=_IMCYt6MJKq0ytMPmvOD0AI&oq=extending+java+Runnable&gs_lcp=Cgdnd3Mtd2l6EAMYADIGCAAQFhAeOgcIABBHELADSgQIQRgASgQIRhgAUM8BWKcLYOkVaAFwAngAgAFtiAG5BZIBAzcuMZgBAKABAcgBCMABAQ&sclient=gws-wiz
+2/8/2022 09:54:11 AM	Implement Runnable vs Extend Thread in Java - GeeksforGeeks	https://www.geeksforgeeks.org/implement-runnable-vs-extend-thread-in-java/
+2/8/2022 09:55:04 AM	combinedLectures - Google Drive	https://drive.google.com/drive/folders/1zn-CfGBGrehI2qkUbviTfyVndtq2gQB8
+2/8/2022 09:59:02 AM	notify in java - Google Search	https://www.google.com/search?q=notify+in+java&rlz=1C1CHBF_enUS939US939&oq=notify+in+java&aqs=chrome..69i57.2312j0j4&sourceid=chrome&ie=UTF-8
+2/8/2022 09:59:04 AM	wait and notify() Methods in Java | Baeldung	https://www.baeldung.com/java-wait-notify
+2/8/2022 10:01:45 AM	java - Why synchronized method is not included in interface - Stack Overflow	https://stackoverflow.com/questions/14520814/why-synchronized-method-is-not-included-in-interface
+2/8/2022 10:06:53 AM	java notify on object - Google Search	https://www.google.com/search?q=java+notify+on+object&rlz=1C1CHBF_enUS939US939&ei=AocCYuS9JqnAytMPyL-s6Ag&ved=0ahUKEwjkxt-EsfD1AhUpoHIEHcgfC40Q4dUDCA4&uact=5&oq=java+notify+on+object&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEAcQHjoHCAAQRxCwAzoGCAAQCBAeSgQIQRgASgQIRhgAUMAQWMEbYNIiaAFwAXgAgAFTiAGJBZIBAjEwmAEAoAEByAEEwAEB&sclient=gws-wiz
+2/8/2022 10:06:55 AM	Java.lang.Object.notify() Method	https://www.tutorialspoint.com/java/lang/object_notify.htm#:~:text=notify()%20wakes%20up%20a,one%20of%20the%20wait%20methods.
+2/8/2022 10:23:03 AM	super in java - Google Search	https://www.google.com/search?q=super+in+java&rlz=1C1CHBF_enUS939US939&ei=04oCYv65LPeuytMP2paKyA4
+2/8/2022 10:23:56 AM	notify on runnable object java - Google Search	https://www.google.com/search?q=notify+on+runnable+object+java&rlz=1C1CHBF_enUS939US939&oq=notify+on+runnable+object+java&aqs=chrome..69i57.3869j0j9&sourceid=chrome&ie=UTF-8
+2/8/2022 10:23:58 AM	java - Notify() from runnable - Stack Overflow	https://stackoverflow.com/questions/17986301/notify-from-runnable
+2/8/2022 10:25:07 AM	Hanna Tischer	https://hannalt.github.io/
+2/8/2022 10:25:10 AM	Hanna Tischer	https://hannalt.github.io/#published
+2/8/2022 10:26:03 AM	hannalt (Hanna L Tischer)	https://www.github.com/hannalt
+2/8/2022 10:26:20 AM	hannalt (Hanna L Tischer)	https://github.com/hannalt
+2/8/2022 10:26:08 AM	hannalt (Hanna L Tischer) / Repositories	https://github.com/hannalt?tab=repositories
+2/8/2022 10:26:52 AM	0ThreadsBoundedBufferMapReduce - Google Docs	https://docs.google.com/document/d/1ax97x60AmUPUGBR8u6ev7FiA_QaP5EMJtAiS1xDbSpE/edit
+2/8/2022 10:30:17 AM	COMP 533 (3 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7
+2/8/2022 10:39:36 AM	2_ConcurrentMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/11lJlYtS8vs4EcIoaE7zFq1B2eUB4DIN1/edit?rtpof=true
+2/8/2022 10:39:47 AM	2_ConcurrentMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/11lJlYtS8vs4EcIoaE7zFq1B2eUB4DIN1/edit
+2/8/2022 10:39:36 AM	2_ConcurrentMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/11lJlYtS8vs4EcIoaE7zFq1B2eUB4DIN1/edit?usp=drive_web&ouid=115705987000692215284&rtpof=true
+2/8/2022 10:46:54 AM	Java For Loop	https://www.w3schools.com/java/java_for_loop.asp
+2/8/2022 10:46:53 AM	java for loop - Google Search	https://www.google.com/search?q=java+for+loop&rlz=1C1CHBF_enUS939US939&oq=java+for+lo&aqs=chrome.1.69i57j69i59.3292j0j4&sourceid=chrome&ie=UTF-8
+2/8/2022 10:47:33 AM	java arrays list - Google Search	https://www.google.com/search?q=java+arrays+list&rlz=1C1CHBF_enUS939US939&oq=java+arrays+list&aqs=chrome..69i57.7033j0j7&sourceid=chrome&ie=UTF-8
+2/8/2022 10:47:37 AM	ArrayList in Java - GeeksforGeeks	https://www.geeksforgeeks.org/arraylist-in-java/
+2/8/2022 10:48:40 AM	Java.util.ArrayList.add() Method	https://www.tutorialspoint.com/java/util/arraylist_add_index.htm
+2/8/2022 10:52:08 AM	java Thread - Google Search	https://www.google.com/search?q=java+Thread&rlz=1C1CHBF_enUS939US939&oq=java+Thread&aqs=chrome..69i57j69i60.5252j0j7&sourceid=chrome&ie=UTF-8
+2/8/2022 10:52:22 AM	java implement Thread - Google Search	https://www.google.com/search?q=java+implement+Thread&rlz=1C1CHBF_enUS939US939&ei=p5ECYou_D4PDytMPlpWy0A0&ved=0ahUKEwjLrvmXu_D1AhWDoXIEHZaKDNoQ4dUDCA4&uact=5&oq=java+implement+Thread&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB46BAgAEEM6DgguEIAEELEDEMcBEKMCOgsILhCABBDHARCjAjoLCAAQgAQQsQMQgwE6CAgAEIAEELEDOg4ILhCxAxCDARDHARCjAjoFCAAQkQI6BAguEEM6CgguELEDEIMBEEM6BwgAELEDEEM6CwgAELEDEIMBEJECOgsILhCABBCxAxCDAUoECEEYAEoECEYYAFAAWJUmYP0oaANwAngAgAF0iAHHDpIBBDIxLjOYAQCgAQGwAQDAAQE&sclient=gws-wiz
+2/8/2022 10:52:23 AM	Creating and Starting Java Threads	http://tutorials.jenkov.com/java-concurrency/creating-and-starting-threads.html
+2/8/2022 11:03:47 AM	Java Convert int to String - javatpoint	https://www.javatpoint.com/java-int-to-string
+2/8/2022 11:03:42 AM	java into to char - Google Search	https://www.google.com/search?q=java+into+to+char&rlz=1C1CHBF_enUS939US939&oq=java+into+to+char&aqs=chrome..69i57.2446j0j7&sourceid=chrome&ie=UTF-8
+2/8/2022 11:03:21 AM	Java Convert int to char - javatpoint	https://www.javatpoint.com/java-int-to-char
+2/8/2022 11:03:46 AM	java int to string - Google Search	https://www.google.com/search?q=java+int+to+string&rlz=1C1CHBF_enUS939US939&ei=RpQCYqGRLe7LytMPmq-5uAk&oq=java+into+to+st&gs_lcp=Cgdnd3Mtd2l6EAMYADIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjIECAAQCjoHCAAQRxCwA0oECEEYAEoECEYYAFDKAVjvBWDRDmgBcAF4AIABT4gBmgGSAQEymAEAoAEByAEIwAEB&sclient=gws-wiz
+2/8/2022 11:05:37 AM	java dynamically changing name of variables - Google Search	https://www.google.com/search?q=java+dynamically+changing+name+of+variables&rlz=1C1CHBF_enUS939US939&oq=java+dynamically+changing+name+of+variables&aqs=chrome..69i57.6632j0j4&sourceid=chrome&ie=UTF-8
+2/8/2022 11:05:40 AM	Assigning variables with dynamic names in Java - Stack Overflow	https://stackoverflow.com/questions/6729605/assigning-variables-with-dynamic-names-in-java#:~:text=There%20are%20no%20dynamic%20variables,List%20or%20a%20Map%20%3B%20e.g.&text=It%20is%20possible%20to%20use,declared%20in%20the%20source%20code.
+2/8/2022 11:08:01 AM	Naming a thread in Java- javatpoint	https://www.javatpoint.com/naming-a-thread-in-java#:~:text=Naming%20Thread,-The%20Thread%20class&text=By%20we%20can%20change%20the,the%20name%20of%20a%20thread.

@@ -1,0 +1,104 @@
+1/21/2022 13:46:51 PM	COMP 533 (5 unread)	https://piazza.com/class/kxx594eo8fl3y2
+1/21/2022 13:48:47 PM	COMP 533 (4 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=34
+1/21/2022 13:48:54 PM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm?rtpof=true&authuser=dewan%40cs.unc.edu&usp=drive_fs
+1/21/2022 13:48:55 PM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/u/0/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit?rtpof=true&usp=drive_fs
+1/21/2022 13:48:55 PM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit?rtpof=true
+1/21/2022 13:49:00 PM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit
+1/21/2022 13:49:04 PM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#heading=h.1fob9te
+1/21/2022 13:46:55 PM	COMP 533 (4 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=49
+1/21/2022 13:54:58 PM	java - Check Style Indentation violation - 'public' have incorrect indentation level 4, expected level should be 8 - Stack Overflow	https://stackoverflow.com/questions/31831321/check-style-indentation-violation-public-have-incorrect-indentation-level-4
+1/21/2022 13:57:56 PM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=36
+1/21/2022 13:58:06 PM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=37
+1/21/2022 13:58:11 PM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=39
+1/21/2022 13:59:05 PM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=49
+1/21/2022 13:59:03 PM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=48
+1/21/2022 13:58:42 PM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=45
+1/21/2022 14:01:14 PM	java - Why am I getting the warning :Class is a raw type. References to generic type Class<T> should be parameterized"? - Stack Overflow	https://stackoverflow.com/questions/20451096/why-am-i-getting-the-warning-class-is-a-raw-type-references-to-generic-type-cl/20451127
+1/21/2022 14:16:20 PM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#
+1/21/2022 14:18:14 PM	java appending to string - Google Search	https://www.google.com/search?q=java+appending+to+string&rlz=1C1CHBF_enUS939US939&oq=java+appending+to+string&aqs=chrome..69i57.4718j0j7&sourceid=chrome&ie=UTF-8
+1/21/2022 14:17:15 PM	String Concatenation in Java - javatpoint	https://www.javatpoint.com/string-concatenation-in-java
+1/21/2022 14:18:18 PM	How to append a string in Java	https://www.tutorialcup.com/java/how-to-append-a-string-in-java.htm
+1/21/2022 14:20:45 PM	java for loop - Google Search	https://www.google.com/search?q=java+for+loop&rlz=1C1CHBF_enUS939US939&oq=java+for+loop&aqs=chrome..69i57.2361j0j7&sourceid=chrome&ie=UTF-8
+1/21/2022 14:20:46 PM	Java For Loop	https://www.w3schools.com/java/java_for_loop.asp
+1/21/2022 14:24:33 PM	java integer to str - Google Search	https://www.google.com/search?q=java+integer+to+str&rlz=1C1CHBF_enUS939US939&oq=java+integer+to+str&aqs=chrome..69i57.6113j0j7&sourceid=chrome&ie=UTF-8
+1/21/2022 14:24:35 PM	Java Convert int to String - javatpoint	https://www.javatpoint.com/java-int-to-string
+1/22/2022 11:04:58 AM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#
+1/22/2022 11:17:11 AM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#
+1/22/2022 11:19:22 AM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#
+1/22/2022 11:31:41 AM	msakarvadia (Mansi Sakarvadia)	https://github.com/msakarvadia
+1/22/2022 11:31:37 AM	knowledge_distillation/distill.py at main · msakarvadia/knowledge_distillation	https://github.com/msakarvadia/knowledge_distillation/blob/main/distill.py
+1/22/2022 11:32:08 AM	Confirm access	https://github.com/settings/tokens
+1/22/2022 11:31:50 AM	Your Profile	https://github.com/settings/profile
+1/22/2022 11:32:05 AM	GitHub Apps	https://github.com/settings/apps
+1/22/2022 11:32:12 AM	New personal access token	https://github.com/settings/tokens/new
+1/22/2022 11:33:02 AM	msakarvadia (Mansi Sakarvadia)	https://github.com/msakarvadia
+1/22/2022 11:33:04 AM	Your Repositories	https://github.com/msakarvadia?tab=repositories
+1/22/2022 11:33:07 AM	Create a New Repository	https://github.com/new
+1/22/2022 11:32:57 AM	msakarvadia/knowledge_distillation	https://github.com/msakarvadia/knowledge_distillation
+1/22/2022 11:32:32 AM	Personal Access Tokens	https://github.com/settings/tokens
+1/22/2022 11:32:54 AM	GitHub	https://github.com/
+1/22/2022 11:34:02 AM	Git Guides - git init	https://github.com/git-guides/git-init#:~:text=git%20init%20Existing%20Folder&text=For%20an%20existing%20project%20to,turn%20into%20a%20Git%20repository.
+1/22/2022 11:35:00 AM	msakarvadia/COMP_533	https://github.com/msakarvadia/COMP_533
+1/22/2022 11:38:34 AM	git: rename local branch failed - Stack Overflow	https://stackoverflow.com/questions/18382986/git-rename-local-branch-failed
+1/22/2022 11:39:03 AM	error: src refspec main does not match any error: failed to push some refs to 'https://github.com/msakarvadia/COMP_533.git' - Google Search	https://www.google.com/search?q=error%3A+src+refspec+main+does+not+match+any+error%3A+failed+to+push+some+refs+to+%27https%3A%2F%2Fgithub.com%2Fmsakarvadia%2FCOMP_533.git%27&rlz=1C1CHBF_enUS939US939&oq=error%3A+src+refspec+main+does+not+match+any+error%3A+failed+to+push+some+refs+to+%27https%3A%2F%2Fgithub.com%2Fmsakarvadia%2FCOMP_533.git%27&aqs=chrome..69i57j69i58.204j0j4&sourceid=chrome&ie=UTF-8
+1/22/2022 11:39:03 AM	github - git push error: src refspec main does not match any on linux - Stack Overflow	https://stackoverflow.com/questions/65173291/git-push-error-src-refspec-main-does-not-match-any-on-linux
+1/22/2022 11:44:49 AM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=53
+1/22/2022 11:51:00 AM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+1/22/2022 11:50:59 AM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1
+1/22/2022 11:51:08 AM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Overview	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049
+1/22/2022 11:50:41 AM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=6
+1/22/2022 11:50:46 AM	Lectures - Google Drive	https://drive.google.com/open?id=14bIoaPQLNDP9Oxv1-LtgKhevNiICuqPr&authuser=dewan%40cs.unc.edu&usp=drive_fs
+1/22/2022 11:50:47 AM	Lectures - Google Drive	https://drive.google.com/drive/folders/14bIoaPQLNDP9Oxv1-LtgKhevNiICuqPr?usp=drive_fs
+1/22/2022 11:50:48 AM	Lectures - Google Drive	https://drive.google.com/drive/folders/14bIoaPQLNDP9Oxv1-LtgKhevNiICuqPr
+1/22/2022 11:51:09 AM		https://sakai.unc.edu/portal/tool/dade49b9-d1b7-4801-97e0-e2e750d0c69b/synMainLite?time=1
+1/22/2022 11:51:50 AM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Overview	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e
+1/22/2022 11:51:51 AM		https://sakai.unc.edu/portal/tool/03d1a84e-4038-4d16-bc52-7670745b07af/synMainLite?time=1
+1/22/2022 11:51:52 AM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/tool/6c79219c-9d31-4623-990a-7a77dfc713dc
+1/22/2022 11:51:58 AM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/tool/6c79219c-9d31-4623-990a-7a77dfc713dc?panel=Main
+1/22/2022 11:51:12 AM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625
+1/22/2022 11:51:16 AM	Sakai @ UNC-Chapel Hill : COMP533.001.SP22 : Overview	https://sakai.unc.edu/portal/site/85a5fe43-6f9a-4650-b9b0-ad54401fbda1
+1/22/2022 11:51:17 AM	Sakai @ UNC-Chapel Hill : COMP533.001.SP22 : Tests & Quizzes	https://sakai.unc.edu/portal/site/85a5fe43-6f9a-4650-b9b0-ad54401fbda1/tool/bccd2ab9-dce1-42ad-8c74-b96c5250f0b2
+1/22/2022 11:51:22 AM	Sakai @ UNC-Chapel Hill : COMP533.001.SP22 : Tests & Quizzes	https://sakai.unc.edu/portal/site/85a5fe43-6f9a-4650-b9b0-ad54401fbda1/tool/bccd2ab9-dce1-42ad-8c74-b96c5250f0b2/jsf/index/mainIndex
+1/22/2022 11:50:58 AM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=fZJbT4MwGIb%2FCun9ViiyQzNIcLtwyXRkoBfemALfpBFa7Fc8%2FHvZmMtMzK77Hvo%2B%2BRYomrrlcWcrtYP3DtA6X02tkB8fQtIZxbVAiVyJBpDbgqfx%2FYazsctbo60udE2cGBGMlVottcKuAZOC%2BZAFPO42IamsbZFTiuJNyHGnijGUHU0rmee6BluNETU9hDKabNOMOKv%2BF1KJQ96FG%2FXZK8uW9uV7WcPJuINSGigsTdMtcdarkLyUwc0U%2FFnO5sBcb%2B%2Fn08JjzPfzSTH3%2FGDWyxA7WCu0QtmQMJexkeuNGMu8CQ9cHkyfiZOcNt5KVUr1eh1IPoiQ32VZMhrGPIHB45BeQKLFASs%2FFpsL0NdjxS9dEv3PEs8sF%2FSiYGhr%2BUOfuF4lupbFtxPXtf5cGhAWQuIRGg2WvzcQ%2FQA%3D&RelayState=ss%3Amem%3A8021daa05a5d8501d4b2243d5d156d179e32273c6bf7980700c23c2eec16d48b&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=NdTfu2osSIkaex0Ubch5bKftNTRfjt3urtJ7HhsSXjkTOanAdzEyPLUmqqqDBy3OVss%2Fk2z%2BssnSi%2FmfAgFeWCespR9p%2B8F6uB6bIRQDxcqk6RE5NxIHo5T75DkZWAGvkdTOsvH2tVoEXiAf5RUusNj6wLq%2BNBY2e1Ovy5e5rXR%2BaJuHUmz15p5h%2FXjjzA5Uwtg2Z29uD9mopClMy0%2BhHU1zBFx7mx109BWnTBtG%2FcbxyuxYfDbGjAyZoFRZAVCVzG%2FCYCfN5wQ7KA0%2FWP97%2FQcmX5wmdJksaMw9bZU2lXEyzBYOdh7xhf0ilu4KMaGO0xYI00NWmZOM1eW7AVT%2Fqw%3D%3D
+1/22/2022 11:51:03 AM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/portal/role-switch/~92ad0979-6fdf-4fd4-ba42-4775fa1b5064/access/?panel=Main
+1/22/2022 11:51:06 AM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/portal/site/~92ad0979-6fdf-4fd4-ba42-4775fa1b5064/?panel=Main
+1/22/2022 11:51:58 AM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/tool/6c79219c-9d31-4623-990a-7a77dfc713dc?assignmentReference=/assignment/a/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/c89d5f04-b9e1-40b2-9783-094eccab6166&sakai_action=doView_submission
+1/22/2022 11:52:00 AM	523hw2.pdf	https://sakai.unc.edu/access/content/attachment/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/Assignments/2b019e2d-9090-4395-9e6c-4398955fff52/523hw2.pdf
+1/22/2022 12:01:36 PM	Java beans - Google Search	https://www.google.com/search?q=Java+beans&rlz=1C1CHBF_enUS939US939&oq=Java+beans&aqs=chrome..69i57.1702j0j7&sourceid=chrome&ie=UTF-8
+1/22/2022 12:01:39 PM	java - What is a JavaBean exactly? - Stack Overflow	https://stackoverflow.com/questions/3295496/what-is-a-javabean-exactly
+1/22/2022 12:06:47 PM	java factory - Google Search	https://www.google.com/search?q=java+factory&rlz=1C1CHBF_enUS939US939&oq=java+factory&aqs=chrome..69i57.2015j0j4&sourceid=chrome&ie=UTF-8
+1/22/2022 12:06:49 PM	Design Pattern - Factory Pattern	https://www.tutorialspoint.com/design_pattern/factory_pattern.htm
+1/22/2022 12:25:52 PM	extending an abstract class java - Google Search	https://www.google.com/search?q=extending+an+abstract+class+java&rlz=1C1CHBF_enUS939US939&ei=yz3sYZGiJqOp_Qaw7ZugBw&ved=0ahUKEwjRs7GP8MX1AhWjVN8KHbD2BnQQ4dUDCA4&uact=5&oq=extending+an+abstract+class+java&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yCAgAEIYDEIsDMggIABCGAxCLAzoECAAQRzoICCEQFhAdEB46BAgAEA1KBAhBGABKBAhGGABQaliHEGCsEmgEcAN4AIABmQGIAfsGkgEDNC41mAEAoAEByAEIuAEDwAEB&sclient=gws-wiz
+1/22/2022 12:24:33 PM	Java: Abstract classes and abstract methods | I'd Rather Be Writing Blog	https://idratherbewriting.com/java-abstract-methods/
+1/22/2022 12:26:34 PM	Abstract Methods and Classes (The Java™ Tutorials > Learning the Java Language > Interfaces and Inheritance)	https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html
+1/22/2022 12:27:40 PM	Can we declare an abstract method, private, protected, public or default in java?	https://www.tutorialspoint.com/can-we-declare-an-abstract-method-private-protected-public-or-default-in-java#:~:text=Declaring%20an%20abstract%20method%20protected,the%20subclass%20and%20invoke%20it.)
+1/22/2022 12:40:19 PM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#
+1/22/2022 12:44:55 PM	instantiating a class in java - Google Search	https://www.google.com/search?q=instantiating+a+class+in+java&rlz=1C1CHBF_enUS939US939&oq=instantiating+a+class+in+java&aqs=chrome..69i57.4752j0j4&sourceid=chrome&ie=UTF-8
+1/22/2022 12:44:57 PM	Creating Objects (The Java™ Tutorials > Learning the Java Language > Classes and Objects)	https://docs.oracle.com/javase/tutorial/java/javaOO/objectcreation.html
+1/22/2022 12:53:01 PM	UNC-Chapel Hill Single Sign-On	https://sakai.unc.edu/Shibboleth.sso/Logout?return=https://sso.unc.edu/idp/logout.jsp
+1/22/2022 14:00:54 PM	toString() method java - Google Search	https://www.google.com/search?q=toString()+method+java&rlz=1C1CHBF_enUS939US939&oq=toString()+method+java&aqs=chrome..69i57.4011j0j7&sourceid=chrome&ie=UTF-8
+1/22/2022 14:00:56 PM	Understanding toString() method - javatpoint	https://www.javatpoint.com/understanding-toString()-method
+1/22/2022 14:17:58 PM	Java.bean.propertychangesupport - Google Search	https://www.google.com/search?q=Java.bean.propertychangesupport&rlz=1C1CHBF_enUS939US939&oq=Java.bean.propertychangesupport&aqs=chrome..69i57.6001j0j7&sourceid=chrome&ie=UTF-8
+1/22/2022 14:17:59 PM	PropertyChangeSupport (Java Platform SE 7 )	https://docs.oracle.com/javase/7/docs/api/java/beans/PropertyChangeSupport.html
+1/22/2022 14:47:25 PM	propertychangelistener javabeans class - Google Search	https://www.google.com/search?q=propertychangelistener+javabeans+class&rlz=1C1CHBF_enUS939US939&oq=propertychangelistener+javabeans+class&aqs=chrome..69i57.6371j0j4&sourceid=chrome&ie=UTF-8
+1/22/2022 14:47:27 PM	PropertyChangeListener (Java Platform SE 7 )	https://docs.oracle.com/javase/7/docs/api/java/beans/PropertyChangeListener.html
+1/22/2022 15:07:02 PM	java class to implement interface and extrend class - Google Search	https://www.google.com/search?q=java+class+to+implement+interface+and+extrend+class&rlz=1C1CHBF_enUS939US939&oq=java+class+to+implement+interface+and+extrend+class&aqs=chrome..69i57.6954j0j9&sourceid=chrome&ie=UTF-8
+1/22/2022 15:08:30 PM	oop - extends class and implements interface in java - Stack Overflow	https://stackoverflow.com/questions/14021827/extends-class-and-implements-interface-in-java
+1/22/2022 15:11:40 PM	java map - Google Search	https://www.google.com/search?q=java+map&rlz=1C1CHBF_enUS939US939&oq=java+map&aqs=chrome..69i57.1230j0j7&sourceid=chrome&ie=UTF-8
+1/22/2022 15:13:34 PM	java map example - Google Search	https://www.google.com/search?q=java+map+example&rlz=1C1CHBF_enUS939US939&ei=-2TsYc_hOKSd_QaAjpOYCw&ved=0ahUKEwiPy5S_lcb1AhWkTt8KHQDHBLMQ4dUDCA4&uact=5&oq=java+map+example&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeOgcIABBHELADOgcIABCwAxBDOgQIABBDSgQIQRgASgQIRhgAULMDWMcMYLANaAFwAngAgAFKiAGXBJIBATiYAQCgAQHIAQrAAQE&sclient=gws-wiz
+1/22/2022 15:11:51 PM	Java Map Example - Examples Java Code Geeks - 2022	https://examples.javacodegeeks.com/java-map-example/
+1/22/2022 15:13:36 PM	Map Interface in Java - GeeksforGeeks	https://www.geeksforgeeks.org/map-interface-java-examples/
+1/22/2022 16:00:26 PM	java clearing a hashmap - Google Search	https://www.google.com/search?q=java+clearing+a+hashmap&rlz=1C1CHBF_enUS939US939&oq=java+clearing+a+hashmap&aqs=chrome..69i57.4206j0j4&sourceid=chrome&ie=UTF-8
+1/22/2022 16:00:28 PM	HashMap clear() Method in Java - GeeksforGeeks	https://www.geeksforgeeks.org/hashmap-clear-method-in-java/#:~:text=clear()%20method%20in%20Java%20is%20used%20to%20clear%20and,mappings%20from%20a%20specified%20HashMap.&text=Parameters%3A%20The%20method%20does%20not,does%20not%20return%20any%20value.
+1/22/2022 16:05:24 PM	Map to String Conversion in Java | Baeldung	https://www.baeldung.com/java-map-to-string-conversion
+1/22/2022 16:06:34 PM	Convert HashMap.toString() back to HashMap in Java - Stack Overflow	https://stackoverflow.com/questions/3957094/convert-hashmap-tostring-back-to-hashmap-in-java
+1/22/2022 16:17:16 PM	java beans property change event passing in map - Google Search	https://www.google.com/search?q=java+beans+property+change+event+passing+in+map&rlz=1C1CHBF_enUS939US939&oq=java+beans+property+change+event+passing+in+map&aqs=chrome..69i57.12790j0j4&sourceid=chrome&ie=UTF-8
+1/22/2022 16:17:12 PM	How to Write a Property Change Listener (The Java™ Tutorials > Creating a GUI With Swing > Writing Event Listeners)	https://docs.oracle.com/javase/tutorial/uiswing/events/propertychangelistener.html
+1/22/2022 16:27:12 PM	java check if map is empty - Google Search	https://www.google.com/search?q=java+check+if+map+is+empty&rlz=1C1CHBF_enUS939US939&oq=java+check+if+map+is+empty&aqs=chrome..69i57.7978j0j9&sourceid=chrome&ie=UTF-8
+1/22/2022 17:40:12 PM	java instantiate interface rather than class - Google Search	https://www.google.com/search?q=java+instantiate+interface+rather+than+class&rlz=1C1CHBF_enUS939US939&oq=java+instantiate+interface+rather+than+class&aqs=chrome..69i57.7383j0j9&sourceid=chrome&ie=UTF-8
+1/22/2022 17:40:54 PM	class - Can you instantiate an Interface in Java - Stack Overflow	https://stackoverflow.com/questions/15997567/can-you-instantiate-an-interface-in-java#:~:text=You%20can%20never%20instantiate%20an,the%20type%20of%20the%20interface.
+1/22/2022 17:48:30 PM	java defining variables via interfaces - Google Search	https://www.google.com/search?q=java+defining+variables+via+interfaces&rlz=1C1CHBF_enUS939US939&oq=java+defining+variables+via+interfaces&aqs=chrome..69i57.6244j0j4&sourceid=chrome&ie=UTF-8
+1/22/2022 17:48:14 PM	java - Why are interface variables static and final by default? - Stack Overflow	https://stackoverflow.com/questions/2430756/why-are-interface-variables-static-and-final-by-default#:~:text=In%20Java%20%2C%20interface%20doesn't,different%20from%20an%20instance%20variable.
+1/22/2022 17:49:07 PM	Java Interfaces	http://tutorials.jenkov.com/java/interfaces.html
+1/22/2022 17:56:12 PM	public methods do not override: java - Google Search	https://www.google.com/search?q=public+methods+do+not+override%3A+java&rlz=1C1CHBF_enUS939US939&oq=public+methods+do+not+override%3A+java&aqs=chrome..69i57.1177j0j7&sourceid=chrome&ie=UTF-8
+1/22/2022 17:56:13 PM	Overriding and Hiding Methods (The Java™ Tutorials > Learning the Java Language > Interfaces and Inheritance)	https://docs.oracle.com/javase/tutorial/java/IandI/override.html

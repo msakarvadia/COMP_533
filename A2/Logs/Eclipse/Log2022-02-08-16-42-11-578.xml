@@ -1,0 +1,344 @@
+<Events startTimestamp="1644356531578" logVersion="1.0.0.202111260825">
+  <Command __id="8" _type="RunCommand" className="/A2/src/comp533/mvc/A2Tests.java" date="Tue Feb 08 16:42:23 EST 2022" kind="HitBreakPoint" projectName="A2" starttimestamp="1644356531578" timestamp="12173" type="Run" />
+  <Command __id="10" _type="PauseCommand" date="Tue Feb 08 16:42:27 EST 2022" range="2s-5s" starttimestamp="1644356531578" timestamp="15767">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[3594]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="9" _type="ShellCommand" date="Tue Feb 08 16:42:27 EST 2022" starttimestamp="1644356531578" timestamp="15767" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="12" _type="PauseCommand" date="Tue Feb 08 16:42:31 EST 2022" range="2s-5s" starttimestamp="1644356531578" timestamp="19794">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[4026]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="11" _type="ConsoleOutput" date="Tue Feb 08 16:42:31 EST 2022" overflow="false" starttimestamp="1644356531578" timestamp="19793" type="ConsoleOutput">
+    <outputString><![CDATA[Please run the checkstle plugin on your project
+Could not initialize checkstyle. Please make sure you have installed the plugin and run checkstyle on the project 
+A2ExpectedCalls did not pass completely:No checkstyle output, check console error messages%0.0
+
+Test execution time (ms):49
+A2ExpectedGetters did not pass completely:No checkstyle output, check console error messages%0.0
+
+Test execution time (ms):1
+A2ExpectedSetters did not pass completely:No checkstyle output, check console error messages%0.0
+
+Test execution time (ms):1
+A2ExpectedSignatures did not pass completely:No checkstyle output, check console error messages%0.0
+
+Test execution time (ms):1
+]]></outputString>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="14" _type="PauseCommand" date="Tue Feb 08 16:42:33 EST 2022" range="2s-5s" starttimestamp="1644356531578" timestamp="22000">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2207]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="13" _type="ConsoleOutput" date="Tue Feb 08 16:42:33 EST 2022" overflow="false" starttimestamp="1644356531578" timestamp="22000" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s21.assignment2.style.A2ExpectedCalls@36a03ff5 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Please run the checkstle plugin on your project¶Could not initialize checkstyle. Please make sure you have installed the plugin and run checkstyle on the project ¶A2ExpectedCalls did not pass completely:No checkstyle output, check console error messages%0.0¶¶Test execution time (ms):49¶A2ExpectedGetters did not pass completely:No checkstyle output, check console error messages%0.0¶¶Test execution time (ms):1¶A2ExpectedSetters did not pass completely:No checkstyle output, check console error messages%0.0¶¶Test execution time (ms):1¶A2ExpectedSignatures did not pass completely:No checkstyle output, check console error messages%0.0¶¶Test execution time (ms):1"), Diff(INSERT,"Re-running test gradingTools.comp533s21.assignment2.style.A2ExpectedCalls@36a03ff5 . Results may change."), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="16" _type="PauseCommand" date="Tue Feb 08 16:42:38 EST 2022" range="2s-5s" starttimestamp="1644356531578" timestamp="26642">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[4642]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="18" _type="ProgramExecutionEvent" className="/A2/src/comp533/mvc/A2Tests.java" date="Tue Feb 08 16:42:38 EST 2022" kind="HitBreakPoint" projectName="A2" starttimestamp="1644356531578" timestamp="27291" type="Run" />
+  <Command __id="20" _type="PauseCommand" date="Tue Feb 08 16:43:17 EST 2022" range="30s-1m" starttimestamp="1644356531578" timestamp="66262">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[38971]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="19" _type="ShellCommand" date="Tue Feb 08 16:43:17 EST 2022" starttimestamp="1644356531578" timestamp="66262" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="22" _type="PauseCommand" date="Tue Feb 08 16:44:03 EST 2022" range="30s-1m" starttimestamp="1644356531578" timestamp="111784">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[45522]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="25" _type="RunCommand" className="/A2/src/comp533/mvc/A2Tests.java" date="Tue Feb 08 16:44:15 EST 2022" kind="HitBreakPoint" projectName="A2" starttimestamp="1644356531578" timestamp="124091" type="Run" />
+  <Command __id="27" _type="PauseCommand" date="Tue Feb 08 16:44:19 EST 2022" range="2s-5s" starttimestamp="1644356531578" timestamp="127937">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[3845]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="26" _type="ShellCommand" date="Tue Feb 08 16:44:19 EST 2022" starttimestamp="1644356531578" timestamp="127936" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="29" _type="PauseCommand" date="Tue Feb 08 16:44:23 EST 2022" range="2s-5s" starttimestamp="1644356531578" timestamp="131567">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3631]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="28" _type="ConsoleOutput" date="Tue Feb 08 16:44:23 EST 2022" overflow="false" starttimestamp="1644356531578" timestamp="131567" type="ConsoleOutput">
+    <outputString><![CDATA[Building symbol table and running first pass checks:Tue Feb 08 16:44:23 EST 2022
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Re-running test gradingTools.comp533s21.assignment2.style.A2ExpectedCalls@36a03ff5 . Results may change."), Diff(INSERT,"Building symbol table and running first pass checks:Tue Feb 08 16:44:23 EST 2022"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="31" _type="PauseCommand" date="Tue Feb 08 16:44:25 EST 2022" range="2s-5s" starttimestamp="1644356531578" timestamp="133813">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2245]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="30" _type="ConsoleOutput" date="Tue Feb 08 16:44:25 EST 2022" overflow="false" starttimestamp="1644356531578" timestamp="133812" type="ConsoleOutput">
+    <outputString><![CDATA[Symbol table size:49
+Running second pass checks Tue Feb 08 16:44:25 EST 2022
+Start O(n2) inter- and intra class method calls:Tue Feb 08 16:44:25 EST 2022
+End O(n2) inter- and intra class method calls:Tue Feb 08 16:44:25 EST 2022
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Building s"), Diff(INSERT,"S"), Diff(EQUAL,"ymbol table "), Diff(DELETE,"and running first pass check"), Diff(INSERT,"size:49¶Running second pass checks Tue Feb 08 16:44:25 EST 2022¶Start O(n2) inter- and intra class method calls:Tue Feb 08 16:44:25 EST 2022¶End O(n2) inter- and intra class method call"), Diff(EQUAL,"s:Tue Feb 08 16:44:2"), Diff(DELETE,"3"), Diff(INSERT,"5"), Diff(EQUAL," EST 2022¶")]]]></diff>
+  </Command>
+  <Command __id="32" _type="ConsoleOutput" date="Tue Feb 08 16:44:26 EST 2022" overflow="false" starttimestamp="1644356531578" timestamp="134755" type="ConsoleOutput">
+    <outputString><![CDATA[Finished second pass checks:Tue Feb 08 16:44:26 EST 2022
+Generating checks:Tue Feb 08 16:44:26 EST 2022
+Finished Generating checks:Tue Feb 08 16:44:26 EST 2022
+Generating externals:Tue Feb 08 16:44:26 EST 2022
+Finished Generating externals:Tue Feb 08 16:44:26 EST 2022
+A2NoCheckstyleWarnings did not pass completely:Warnings found in checkstyle text, see traced console output%0.0
+
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Symbol table size:49¶Running"), Diff(INSERT,"Finished"), Diff(EQUAL," second pass checks"), Diff(DELETE," "), Diff(INSERT,":"), Diff(EQUAL,"Tue Feb 08 16:44:2"), Diff(DELETE,"5"), Diff(INSERT,"6"), Diff(EQUAL," EST 2022¶"), Diff(DELETE,"Start O(n2) inter- and intra class method cal"), Diff(INSERT,"Generating checks:Tue Feb 08 16:44:26 EST 2022¶Finished Generating checks:Tue Feb 08 16:44:26 EST 2022¶Generating externa"), Diff(EQUAL,"ls:Tue Feb 08 16:44:2"), Diff(DELETE,"5"), Diff(INSERT,"6"), Diff(EQUAL," EST 2022¶"), Diff(DELETE,"End O(n2) inter- and intra class method cal"), Diff(INSERT,"Finished Generating externa"), Diff(EQUAL,"ls:Tue Feb 08 16:44:2"), Diff(DELETE,"5"), Diff(INSERT,"6"), Diff(EQUAL," EST 2022¶"), Diff(INSERT,"A2NoCheckstyleWarnings did not pass completely:Warnings found in checkstyle text, see traced console output%0.0¶¶")]]]></diff>
+  </Command>
+  <Command __id="33" _type="ConsoleOutput" date="Tue Feb 08 16:44:26 EST 2022" overflow="false" starttimestamp="1644356531578" timestamp="134878" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):3245
+A2NamedConstants did not pass completely:See console trace about lines failing  this check%0.0
+
+Test execution time (ms):80
+Test execution time (ms):14
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Finished second pass checks:Tue Feb 08 16:44:26 EST 2022¶Generating checks:Tue Feb 08 16:44:26 EST 2022¶Finished Generating checks:Tue Feb 08 16:44:26 EST 2022¶Generating externals:Tue Feb 08 16:44:26 EST 2022¶Finished Generating externals:Tue Feb 08 16:44:26 EST 2022¶A2NoCheckstyleWarnings did not pass completely:Warnings found in checkstyle text, see traced console output%0.0¶"), Diff(INSERT,"Test execution time (ms):3245¶A2NamedConstants did not pass completely:See console trace about lines failing  this check%0.0¶¶Test execution time (ms):80¶Test execution time (ms):14"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="34" _type="ConsoleOutput" date="Tue Feb 08 16:44:26 EST 2022" overflow="false" starttimestamp="1644356531578" timestamp="134937" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):9
+A2MnemonicNames did not pass completely:See console trace about lines failing  this check%0.993006993006993
+
+Test execution time (ms):9
+A2AccessModifiersMatched did not pass completely:See console trace about lines failing  this check%0.0
+
+Test execution time (ms):9
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"3245¶A2NamedConstant"), Diff(INSERT,"9¶A2MnemonicName"), Diff(EQUAL,"s did not pass completely:See console trace about lines failing  this check%0."), Diff(DELETE,"0"), Diff(INSERT,"993006993006993"), Diff(EQUAL,"¶¶Test execution time (ms):"), Diff(DELETE,"80"), Diff(INSERT,"9¶A2AccessModifiersMatched did not pass completely:See console trace about lines failing  this check%0.0¶"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"14"), Diff(INSERT,"9"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="36" _type="PauseCommand" date="Tue Feb 08 16:44:40 EST 2022" range="10s-20s" starttimestamp="1644356531578" timestamp="148645">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[13708]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="35" _type="ShellCommand" date="Tue Feb 08 16:44:40 EST 2022" starttimestamp="1644356531578" timestamp="148645" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="38" _type="PauseCommand" date="Tue Feb 08 16:44:49 EST 2022" range="5s-10s" starttimestamp="1644356531578" timestamp="157885">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[9240]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="37" _type="ShellCommand" date="Tue Feb 08 16:44:49 EST 2022" starttimestamp="1644356531578" timestamp="157885" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="40" _type="PauseCommand" date="Tue Feb 08 16:44:56 EST 2022" range="5s-10s" starttimestamp="1644356531578" timestamp="165418">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[7533]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="39" _type="ConsoleOutput" date="Tue Feb 08 16:44:56 EST 2022" overflow="false" starttimestamp="1644356531578" timestamp="165418" type="ConsoleOutput">
+    <outputString><![CDATA[A2ExpectedCalls did not pass completely:See console trace about lines failing  this check%0.5833333333333334
+
+Test execution time (ms):43
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):9¶A2MnemonicNames did not pass completely:See console trace about lines failing  this check%0.993006993006993¶¶Test execution time (ms):9¶A2AccessModifiersMatched"), Diff(INSERT,"A2ExpectedCalls"), Diff(EQUAL," did not pass completely:See console trace about lines failing  this check%0."), Diff(DELETE,"0"), Diff(INSERT,"5833333333333334"), Diff(EQUAL,"¶¶Test execution time (ms):"), Diff(DELETE,"9"), Diff(INSERT,"43"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="41" _type="ConsoleOutput" date="Tue Feb 08 16:44:57 EST 2022" overflow="false" starttimestamp="1644356531578" timestamp="165488" type="ConsoleOutput">
+    <outputString><![CDATA[A2ExpectedGetters did not pass completely:See console trace about lines failing  this check%0.3333333333333333
+
+Test execution time (ms):45
+Test execution time (ms):8
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"A2Expected"), Diff(DELETE,"Call"), Diff(INSERT,"Getter"), Diff(EQUAL,"s did not pass completely:See console trace about lines failing  this check%0."), Diff(DELETE,"58"), Diff(INSERT,"333"), Diff(EQUAL,"3333333333333"), Diff(DELETE,"4"), Diff(EQUAL,"¶¶Test execution time (ms):4"), Diff(DELETE,"3"), Diff(INSERT,"5¶Test execution time (ms):8"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="42" _type="ConsoleOutput" date="Tue Feb 08 16:44:57 EST 2022" overflow="false" starttimestamp="1644356531578" timestamp="165554" type="ConsoleOutput">
+    <outputString><![CDATA[
+Test execution time (ms):12
+A2ExpectedSignatures did not pass completely:See console trace about lines failing  this check%0.0
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,"¶Test execution time (ms):12¶"), Diff(EQUAL,"A2Expected"), Diff(DELETE,"Getter"), Diff(INSERT,"Signature"), Diff(EQUAL,"s did not pass completely:See console trace about lines failing  this check%0."), Diff(DELETE,"3333333333333333¶¶Test execution time (ms):45¶Test execution time (ms):8"), Diff(INSERT,"0"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="44" _type="PauseCommand" date="Tue Feb 08 16:45:01 EST 2022" range="2s-5s" starttimestamp="1644356531578" timestamp="169580">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[4026]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="43" _type="ConsoleOutput" date="Tue Feb 08 16:45:01 EST 2022" overflow="false" starttimestamp="1644356531578" timestamp="169580" type="ConsoleOutput">
+    <outputString><![CDATA[Thread[AWT-EventQueue-0,6,main]:class comp533.mvc.IntSummingMapperFactory:new mapper:Int Summing Mapper
+Thread[AWT-EventQueue-0,6,main]:class comp533.mvc.TokenCountingMapperFactory:new mapper:Token Counting Mapper
+A2ConfigurationProvided did not pass completely:To get style credit provide (possibly stub) missing classes for properties:[slaveClass, barrierClass, joinerClass]%0.0
+
+Test execution time (ms):25
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"¶Test execution time (ms):12¶A2ExpectedSignatures did not pass completely:See console trace about lines failing  this check%0.0"), Diff(INSERT,"Thread[AWT-EventQueue-0,6,main]:class comp533.mvc.IntSummingMapperFactory:new mapper:Int Summing Mapper¶Thread[AWT-EventQueue-0,6,main]:class comp533.mvc.TokenCountingMapperFactory:new mapper:Token Counting Mapper¶A2ConfigurationProvided did not pass completely:To get style credit provide (possibly stub) missing classes for properties:[slaveClass, barrierClass, joinerClass]%0.0¶¶Test execution time (ms):25"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="46" _type="PauseCommand" date="Tue Feb 08 16:45:07 EST 2022" range="5s-10s" starttimestamp="1644356531578" timestamp="176185">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[6605]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="45" _type="ConsoleOutput" date="Tue Feb 08 16:45:07 EST 2022" overflow="false" starttimestamp="1644356531578" timestamp="176185" type="ConsoleOutput">
+    <outputString><![CDATA[
+
+
+
+
+
+
+
+ for pattern [.*Hogwarts.*5.*?]
+Test execution time (ms):6606
+
+
+
+
+
+
+
+
+
+
+
+
+TokenCountBarrier did not pass completely:main Output Did not match:.*Slave.*Barrier Wait Start:.*%0.0
+
+Test execution time (ms):6617
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Thread[AWT-EventQueue-0,6,main]:class comp533.mvc.IntSummingMapperFactory:new mapper:Int Summing Mapper¶Thread[AWT-EventQueue-0,6,main]:class comp533.mvc.TokenCountingMapperFactory:new mapper:"), Diff(INSERT,"¶¶¶¶¶¶¶¶ for pattern [.*Hogwarts.*5.*?]¶Test execution time (ms):6606¶¶¶¶¶¶¶¶¶¶¶¶¶"), Diff(EQUAL,"Token"), Diff(DELETE," "), Diff(EQUAL,"Count"), Diff(DELETE,"ing Mapper¶A2ConfigurationProvided"), Diff(INSERT,"Barrier"), Diff(EQUAL," did not pass completely:"), Diff(DELETE,"To get style credit provide (possibly stub) missing classes for properties:[slaveClass, barrierClass, joinerClass]"), Diff(INSERT,"main Output Did not match:.*Slave.*Barrier Wait Start:.*"), Diff(EQUAL,"%0.0¶¶Test execution time (ms):"), Diff(DELETE,"25"), Diff(INSERT,"6617"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="48" _type="PauseCommand" date="Tue Feb 08 16:45:16 EST 2022" range="5s-10s" starttimestamp="1644356531578" timestamp="184742">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[8557]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="47" _type="ConsoleOutput" date="Tue Feb 08 16:45:16 EST 2022" overflow="false" starttimestamp="1644356531578" timestamp="184742" type="ConsoleOutput">
+    <outputString><![CDATA[
+
+
+
+
+
+
+
+
+
+
+
+ for pattern [.*=45.*, .*=5500.*]
+ for pattern [.*=45.*, .*=5500.*]
+Test execution time (ms):8549
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Test execution time (ms):8550
+SumBarrier did not pass completely:main Output Did not match:.*Slave.*Barrier Wait Start:.*%0.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+Test execution time (ms):0
+TokenCountJoiner did not pass completely:main Output Did not match:.*main.*enqueue:.*null.*null.*%0.0
+
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"¶¶¶¶¶¶¶¶"), Diff(INSERT,"¶¶¶¶"), Diff(EQUAL," for pattern [.*"), Diff(DELETE,"Hogwarts.*5.*?"), Diff(INSERT,"=45.*, .*=5500.*]¶ for pattern [.*=45.*, .*=5500.*"), Diff(EQUAL,"]¶Test execution time (ms):"), Diff(DELETE,"6606"), Diff(INSERT,"8549¶¶¶¶¶"), Diff(EQUAL,"¶¶¶¶¶¶¶¶¶¶¶¶¶T"), Diff(DELETE,"okenCount"), Diff(INSERT,"est execution time (ms):8550¶Sum"), Diff(EQUAL,"Barrier did not pass completely:main Output Did not match:.*Slave.*Barrier Wait Start:.*%0.0¶¶"), Diff(INSERT,"¶¶¶¶¶¶¶¶¶¶¶¶"), Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"6617"), Diff(INSERT,"0¶TokenCountJoiner did not pass completely:main Output Did not match:.*main.*enqueue:.*null.*null.*%0.0¶"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="50" _type="PauseCommand" date="Tue Feb 08 16:45:19 EST 2022" range="2s-5s" starttimestamp="1644356531578" timestamp="188072">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[3330]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="52" _type="PauseCommand" date="Tue Feb 08 16:45:21 EST 2022" range="1s-2s" starttimestamp="1644356531578" timestamp="190056">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1984]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="79" _type="ShellCommand" date="Tue Feb 08 16:46:07 EST 2022" starttimestamp="1644356531578" timestamp="236378" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="81" _type="ProgramExecutionEvent" className="/A2/src/comp533/mvc/A2Tests.java" date="Tue Feb 08 16:46:08 EST 2022" kind="HitBreakPoint" projectName="A2" starttimestamp="1644356531578" timestamp="237049" type="Run" />
+  <Command __id="82" _type="ProgramExecutionEvent" className="/A2/src/comp533/mvc/A2Tests.java" date="Tue Feb 08 16:46:08 EST 2022" kind="HitBreakPoint" projectName="A2" starttimestamp="1644356531578" timestamp="237049" type="Run" />
+  <Command __id="84" _type="PauseCommand" date="Tue Feb 08 16:46:15 EST 2022" range="5s-10s" starttimestamp="1644356531578" timestamp="244418">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[7369]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="83" _type="ShellCommand" date="Tue Feb 08 16:46:15 EST 2022" starttimestamp="1644356531578" timestamp="244418" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="86" _type="PauseCommand" date="Tue Feb 08 20:58:34 EST 2022" range=">1h" starttimestamp="1644356531578" timestamp="15383225">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[15138807]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="85" _type="ShellCommand" date="Tue Feb 08 20:58:34 EST 2022" starttimestamp="1644356531578" timestamp="15383225" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="88" _type="PauseCommand" date="Tue Feb 08 20:58:44 EST 2022" range="5s-10s" starttimestamp="1644356531578" timestamp="15392557">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[9332]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="87" _type="ShellCommand" date="Tue Feb 08 20:58:44 EST 2022" starttimestamp="1644356531578" timestamp="15392557" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="90" _type="PauseCommand" date="Tue Feb 08 20:58:45 EST 2022" range="1s-2s" starttimestamp="1644356531578" timestamp="15393964">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1407]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+</Events>

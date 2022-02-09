@@ -1,0 +1,55 @@
+2/8/2022 12:26:21 PM	2_ConcurrentMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/11lJlYtS8vs4EcIoaE7zFq1B2eUB4DIN1/edit
+2/8/2022 12:36:49 PM	Generic Types (The Java™ Tutorials > Learning the Java Language > Generics (Updated))	https://docs.oracle.com/javase/tutorial/java/generics/types.html
+2/8/2022 13:02:43 PM	COMP 533 (3 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=6
+2/8/2022 13:01:46 PM	java if something isn't aletter - Google Search	https://www.google.com/search?q=java+if+something+isn%27t+aletter&rlz=1C1CHBF_enUS939US939&oq=java+if+something+isn%27t+aletter&aqs=chrome..69i57.4301j0j4&sourceid=chrome&ie=UTF-8
+2/8/2022 13:01:50 PM	Check if the String contains only unicode letters in Java	https://www.tutorialspoint.com/check-if-the-string-contains-only-unicode-letters-in-java
+2/8/2022 13:03:52 PM	java import charecter - Google Search	https://www.google.com/search?q=java+import+charecter&rlz=1C1CHBF_enUS939US939&oq=java+import+charecter&aqs=chrome..69i57.3990j0j7&sourceid=chrome&ie=UTF-8
+2/8/2022 13:03:55 PM	Java.lang.Character Class in Java - GeeksforGeeks	https://www.geeksforgeeks.org/character-class-java/
+2/8/2022 13:05:13 PM	java getting first letter of string - Google Search	https://www.google.com/search?q=java+getting+first+letter+of+string&rlz=1C1CHBF_enUS939US939&oq=java+getting+first+letter+of+string&aqs=chrome..69i57.8055j0j4&sourceid=chrome&ie=UTF-8
+2/8/2022 13:05:18 PM	How to find the first and last character of a string in Java - GeeksforGeeks	https://www.geeksforgeeks.org/how-to-find-the-first-and-last-character-of-a-string-in-java/#:~:text=The%20idea%20is%20to%20use,index%20length%20of%20string%2D1%20.
+2/8/2022 13:06:34 PM	java getting first letter of string - Google Search	https://www.google.com/search?q=java+getting+first+letter+of+string&rlz=1C1CHBF_enUS939US939&oq=java+getting+first+letter+of+string&aqs=chrome..69i57.8055j0j4&sourceid=chrome&ie=UTF-8
+2/8/2022 13:06:41 PM	Java String charAt() Method example	https://beginnersbook.com/2013/12/java-string-charat-method-example/
+2/8/2022 13:08:16 PM	java - Implementing interface with generic type - Stack Overflow	https://stackoverflow.com/questions/3884519/implementing-interface-with-generic-type
+2/8/2022 13:09:43 PM	Java Language Tutorial => Binding generic parameter to more than 1...	https://riptutorial.com/java/example/9862/binding-generic-parameter-to-more-than-1-type
+2/8/2022 13:10:01 PM	How to make one generic type closely dependent on another in TypeScript? - Stack Overflow	https://stackoverflow.com/questions/61639400/how-to-make-one-generic-type-closely-dependent-on-another-in-typescript
+2/8/2022 13:14:12 PM	java implement interface with one bounded parameter and one generic parameter - Google Search	https://www.google.com/search?q=java+implement+interface+with+one+bounded+parameter+and+one+generic+parameter&rlz=1C1CHBF_enUS939US939&oq=java+implement+interface+with+one+bounded+parameter+and+one+generic+parameter&aqs=chrome..69i57.12292j0j9&sourceid=chrome&ie=UTF-8
+2/8/2022 13:14:14 PM	Bounded Type Parameters (The Java™ Tutorials > Learning the Java Language > Generics (Updated))	https://docs.oracle.com/javase/tutorial/java/generics/bounded.html
+2/8/2022 13:19:37 PM	java ceiling - Google Search	https://www.google.com/search?q=java+ceiling&rlz=1C1CHBF_enUS939US939&oq=java+ceiling&aqs=chrome..69i57.4071j0j4&sourceid=chrome&ie=UTF-8
+2/8/2022 13:19:56 PM	Java ceil() method with Examples - GeeksforGeeks	https://www.geeksforgeeks.org/java-ceil-method-examples/
+2/8/2022 13:27:25 PM	java lowercase - Google Search	https://www.google.com/search?q=java+lowercase&rlz=1C1CHBF_enUS939US939&oq=java+lowercase&aqs=chrome..69i57.2790j0j4&sourceid=chrome&ie=UTF-8
+2/8/2022 13:27:48 PM	Java String toLowerCase() Method	https://www.w3schools.com/java/ref_string_tolowercase.asp
+2/8/2022 13:28:08 PM	charecter lowercase java - Google Search	https://www.google.com/search?q=charecter+lowercase+java&rlz=1C1CHBF_enUS939US939&oq=charecter+lowercase+java&aqs=chrome..69i57.3203j0j4&sourceid=chrome&ie=UTF-8
+2/8/2022 13:29:55 PM	char lowercase java - Google Search	https://www.google.com/search?q=char+lowercase+java&rlz=1C1CHBF_enUS939US939&ei=N7YCYo_pBvOFytMPpvqNKA&ved=0ahUKEwjP4ImH3vD1AhXzgnIEHSZ9AwUQ4dUDCA4&uact=5&oq=char+lowercase+java&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIICAAQCBAHEB4yCAgAEAcQBRAeMggIABAHEAUQHjIICAAQBxAFEB4yCAgAEAcQBRAeMggIABAHEAUQHjoHCAAQRxCwA0oECEEYAEoECEYYAFDgAVjgAWCGBGgBcAF4AIABRYgBRZIBATGYAQCgAQHIAQjAAQE&sclient=gws-wiz
+2/8/2022 13:28:55 PM	Char to Uppercase/Lowercase in Java | Delft Stack	https://www.delftstack.com/howto/java/char-to-uppercase-lowercase-java/
+2/8/2022 13:29:59 PM	Java.lang.Character.toLowerCase() Method	https://www.tutorialspoint.com/java/lang/character_tolowercase.htm
+2/8/2022 13:52:53 PM	0_HelloWorld.docx - Google Docs	https://docs.google.com/document/d/14fO-jQrdgb3BKCJAKOVdKK25ryXK2aUD/edit?rtpof=true
+2/8/2022 13:53:05 PM	0_HelloWorld.docx - Google Docs	https://docs.google.com/document/d/14fO-jQrdgb3BKCJAKOVdKK25ryXK2aUD/edit
+2/8/2022 13:51:48 PM	COMP 533 (3 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7
+2/8/2022 13:52:53 PM	0_HelloWorld.docx - Google Docs	https://docs.google.com/document/d/14fO-jQrdgb3BKCJAKOVdKK25ryXK2aUD/edit?usp=drive_web&ouid=115705987000692215284&rtpof=true
+2/8/2022 14:18:48 PM	COMP 533 (4 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7
+2/8/2022 14:19:00 PM	COMP 533 (3 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=72
+2/8/2022 14:51:37 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+2/8/2022 14:51:37 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1
+2/8/2022 14:51:42 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Overview	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049
+2/8/2022 14:52:02 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Resources	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/6bf90033-4f8a-4790-8abe-66175494add4
+2/8/2022 14:51:44 PM		https://sakai.unc.edu/portal/tool/dade49b9-d1b7-4801-97e0-e2e750d0c69b/synMainLite?time=1
+2/8/2022 14:52:00 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625
+2/8/2022 14:51:57 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625?panel=Main
+2/8/2022 14:52:00 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool-reset/fa572230-b29f-4781-bb97-8e292ad9f625
+2/8/2022 14:51:35 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=fZJbT4MwGIb%2FCum9lMOOzSDB7cIl05GBXnhjCnyTxtJiv%2BLh38vGXGZilvSu76Hvky6QN7JlSWdrtYP3DtA6X41UyI4XEemMYpqjQKZ4A8hsybLkfsMC12Ot0VaXWhInQQRjhVZLrbBrwGRgPkQJj7tNRGprW2SUIn%2Fjwu1U6ULV0awWRaEl2NpF1PQQGtB0m%2BXEWfWvEIof8i7cqM9eUbW0L98LCSfjDiphoLQ0y7bEWa8i8rIPvdADHsLEnxa82EMwnc8m%2Fnjmz3k5GgW9DLGDtULLlY1I4AXBjdefWe7P2dhn4fiZOOlp461QlVCv14EUgwjZXZ6nN8OYJzB4HNILSLw4YGXHYnMB%2Bnos%2F6VL4v9Z4pnlgl4UDG0te%2BgT16tUS1F%2BO4mU%2BnNpgFuIiE9oPFj%2B%2FoH4Bw%3D%3D&RelayState=ss%3Amem%3A87680467d2a507c1b197c92d6df37d912a49bbfc6079beba76898fac8b8b9485&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=QJmr8Z5epOJuUCs5wvoZxJrGh5edcNao9niL0VjRx8RL6hshbcrF7QWpyMOit4DJw2mx0q7aU4IuZPYFgL2WA3U7acuurahGEt8sTKkRxnREE3u7939o%2F026yA4WwDZum9BKoMmQ58aQa9fxsCSK62DQ7zS2yTKEpYBO%2FM8QWDJ5Iy8aMRb4xcAEAqXVRRDmx5c%2FdtJQ7SzkiGaQxBrBW%2BxP79bnzQ1ppTN4vlPu8XVK%2BrAAcpDnrkx4JQcETre2OHmH%2BKgeEAU89UP29s9B6NsVx6tyjbDyQ%2FZidfHHnPzn3N7cwKv5YiSAVslpQwewSqV1Uv75jlsQzRQ86RJwdA%3D%3D
+2/8/2022 14:51:57 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625?assignmentReference=/assignment/a/9a8c1503-90ae-4047-9576-bb2caf0f2049/5c4773ed-d7ce-44fb-b226-12b653a8d4cd&sakai_action=doView_submission
+2/8/2022 14:56:46 PM	COMP 533 (3 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7
+2/8/2022 15:24:29 PM	COMP 533 (3 unread)	https://piazza.com/class/kxx594eo8fl3y2
+2/8/2022 15:25:10 PM	COMP 533 (3 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7
+2/8/2022 15:27:00 PM	2_ConcurrentMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/11lJlYtS8vs4EcIoaE7zFq1B2eUB4DIN1?rtpof=true&authuser=dewan%40cs.unc.edu&usp=drive_fs
+2/8/2022 15:27:01 PM	2_ConcurrentMapReduce_s22.docx - Google Docs	https://docs.google.com/document/u/0/d/11lJlYtS8vs4EcIoaE7zFq1B2eUB4DIN1/edit?rtpof=true&usp=drive_fs
+2/8/2022 15:27:01 PM	2_ConcurrentMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/11lJlYtS8vs4EcIoaE7zFq1B2eUB4DIN1/edit?rtpof=true
+2/8/2022 15:27:16 PM	2_ConcurrentMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/11lJlYtS8vs4EcIoaE7zFq1B2eUB4DIN1/edit
+2/8/2022 15:26:57 PM	COMP 533 (3 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=61
+2/8/2022 15:42:01 PM	COMP 533 (3 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7
+2/8/2022 15:48:28 PM	2_ConcurrentMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/11lJlYtS8vs4EcIoaE7zFq1B2eUB4DIN1/edit
+2/8/2022 16:21:19 PM	COMP 533 (3 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=10
+2/8/2022 16:21:22 PM	0_HelloWorld.docx - Google Docs	https://docs.google.com/document/d/14fO-jQrdgb3BKCJAKOVdKK25ryXK2aUD?rtpof=true&authuser=dewan%40cs.unc.edu&usp=drive_fs
+2/8/2022 16:21:23 PM	0_HelloWorld.docx - Google Docs	https://docs.google.com/document/u/0/d/14fO-jQrdgb3BKCJAKOVdKK25ryXK2aUD/edit?rtpof=true&usp=drive_fs
+2/8/2022 16:21:23 PM	0_HelloWorld.docx - Google Docs	https://docs.google.com/document/d/14fO-jQrdgb3BKCJAKOVdKK25ryXK2aUD/edit?rtpof=true
+2/8/2022 16:21:34 PM	0_HelloWorld.docx - Google Docs	https://docs.google.com/document/d/14fO-jQrdgb3BKCJAKOVdKK25ryXK2aUD/edit

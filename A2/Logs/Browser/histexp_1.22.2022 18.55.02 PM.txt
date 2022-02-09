@@ -1,0 +1,76 @@
+1/22/2022 19:01:22 PM	java how to override public methods - Google Search	https://www.google.com/search?q=java+how+to+override+public+methods&rlz=1C1CHBF_enUS939US939&oq=java+how+to+override+public+methods&aqs=chrome..69i57.4638j0j4&sourceid=chrome&ie=UTF-8
+1/22/2022 19:01:32 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 19:11:05 PM	COMP 533 (3 unread)	https://piazza.com/class/kxx594eo8fl3y2
+1/22/2022 19:11:49 PM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=53
+1/22/2022 19:11:37 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 19:11:46 PM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=54
+1/22/2022 19:16:38 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 19:21:46 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 19:26:47 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 19:25:25 PM	java property in interface - Google Search	https://www.google.com/search?q=java+property+in+interface&rlz=1C1CHBF_enUS939US939&oq=java+property+in+interface&aqs=chrome..69i57.5017j0j7&sourceid=chrome&ie=UTF-8
+1/22/2022 19:25:26 PM	java - Attributes / member variables in interfaces? - Stack Overflow	https://stackoverflow.com/questions/7311274/attributes-member-variables-in-interfaces
+1/22/2022 19:31:47 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 19:34:19 PM	java generic types - Google Search	https://www.google.com/search?q=java+generic+types&rlz=1C1CHBF_enUS939US939&oq=java+generic+types&aqs=chrome..69i57.3884j0j4&sourceid=chrome&ie=UTF-8
+1/22/2022 19:34:22 PM	Generics in Java - GeeksforGeeks	https://www.geeksforgeeks.org/generics-in-java/
+1/22/2022 19:44:46 PM	The List Interface (The Java™ Tutorials > Collections > Interfaces)	https://docs.oracle.com/javase/tutorial/collections/interfaces/list.html
+1/22/2022 19:46:57 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 19:46:13 PM	java making a list of type interface - Google Search	https://www.google.com/search?q=java+making+a+list+of+type+interface&rlz=1C1CHBF_enUS939US939&oq=java+making+a+list+of+type+interface&aqs=chrome..69i57.7424j0j4&sourceid=chrome&ie=UTF-8
+1/22/2022 19:46:23 PM	Java : A List of type interface - Stack Overflow	https://stackoverflow.com/questions/7664986/java-a-list-of-type-interface
+1/22/2022 19:51:58 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 19:56:59 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 20:02:00 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 20:07:13 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 20:12:14 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 20:17:14 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 20:22:15 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 20:27:28 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 20:32:29 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 20:37:30 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 20:42:38 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 20:47:39 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 20:52:40 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 20:57:41 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 21:02:45 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 21:07:46 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 21:12:46 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 21:17:47 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 21:22:59 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 21:28:00 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 21:33:01 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 21:38:02 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 21:43:05 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 21:48:06 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 21:53:07 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 21:58:08 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/22/2022 22:03:16 PM	Java Method Overriding Examples and Concepts: Overriding Rules • Crunchify	https://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/
+1/23/2022 08:46:35 AM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2
+1/23/2022 08:47:08 AM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=34
+1/23/2022 08:47:13 AM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm?rtpof=true&authuser=dewan%40cs.unc.edu&usp=drive_fs
+1/23/2022 08:47:13 AM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/u/0/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit?rtpof=true&usp=drive_fs
+1/23/2022 08:47:13 AM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit?rtpof=true
+1/23/2022 08:47:19 AM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit
+1/23/2022 08:47:29 AM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#heading=h.1fob9te
+1/23/2022 08:46:38 AM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=54
+1/23/2022 08:49:12 AM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#
+1/23/2022 08:49:20 AM	Arrays asList() method in Java with Examples - GeeksforGeeks	https://www.geeksforgeeks.org/arrays-aslist-method-in-java-with-examples/
+1/23/2022 09:01:21 AM	java new list - Google Search	https://www.google.com/search?q=java+new+list&rlz=1C1CHBF_enUS939US939&oq=java+new+list&aqs=chrome..69i57.1680j0j7&sourceid=chrome&ie=UTF-8
+1/23/2022 09:01:22 AM	Initializing a List in Java - GeeksforGeeks	https://www.geeksforgeeks.org/initializing-a-list-in-java/
+1/23/2022 09:09:36 AM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#
+1/23/2022 09:08:40 AM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#heading=h.3znysh7
+1/23/2022 09:20:07 AM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#
+1/23/2022 10:32:41 AM	java returning map - Google Search	https://www.google.com/search?q=java+returning+map&rlz=1C1CHBF_enUS939US939&oq=java+returning+map&aqs=chrome..69i57.2425j0j7&sourceid=chrome&ie=UTF-8
+1/23/2022 10:32:44 AM	Is it possible to return a HashMap object in Java? - Stack Overflow	https://stackoverflow.com/questions/37971533/is-it-possible-to-return-a-hashmap-object-in-java/37971561
+1/23/2022 10:53:13 AM	java hasmap - Google Search	https://www.google.com/search?q=java+hasmap&rlz=1C1CHBF_enUS939US939&oq=java+hasmap&aqs=chrome..69i57.3077j0j4&sourceid=chrome&ie=UTF-8
+1/23/2022 10:53:26 AM	Java HashMap	https://www.w3schools.com/java/java_hashmap.asp
+1/23/2022 10:53:37 AM	java hashmap contains - Google Search	https://www.google.com/search?q=java+hashmap+contains&rlz=1C1CHBF_enUS939US939&oq=java+hashmap+contains&aqs=chrome..69i57.5257j0j4&sourceid=chrome&ie=UTF-8
+1/23/2022 10:53:39 AM	HashMap containsKey() Method in Java - GeeksforGeeks	https://www.geeksforgeeks.org/hashmap-containskey-method-in-java/#:~:text=HashMap.,is%20mapped%20in%20the%20map.
+1/23/2022 10:56:40 AM	HashMap get() Method in Java - GeeksforGeeks	https://www.geeksforgeeks.org/hashmap-get-method-in-java/
+1/23/2022 10:57:05 AM	hashmap .set java - Google Search	https://www.google.com/search?q=hashmap+.set+java&rlz=1C1CHBF_enUS939US939&oq=hashmap+.set+java&aqs=chrome..69i57.2491j0j7&sourceid=chrome&ie=UTF-8
+1/23/2022 10:57:20 AM	Hashmap methods in Java with Examples | Set 2 (keySet(), values(), containsKey()..) - GeeksforGeeks	https://www.geeksforgeeks.org/hashmap-methods-java-examples-set-2-keyset-values-containskey/
+1/23/2022 10:57:48 AM	java updating value of key value pair - Google Search	https://www.google.com/search?q=java+updating+value+of+key+value+pair&rlz=1C1CHBF_enUS939US939&oq=java+updating+value+of+key+value+pair&aqs=chrome..69i57.6500j0j4&sourceid=chrome&ie=UTF-8
+1/23/2022 10:57:52 AM	java - How to update a value, given a key in a hashmap? - Stack Overflow	https://stackoverflow.com/q/4157972
+1/23/2022 11:55:18 AM	java string to integer - Google Search	https://www.google.com/search?q=java+string+to+integer&rlz=1C1CHBF_enUS939US939&oq=java+string+to+integer&aqs=chrome..69i57.5791j0j7&sourceid=chrome&ie=UTF-8
+1/23/2022 11:55:23 AM	Java String to Int – How to Convert a String to an Integer	https://www.freecodecamp.org/news/java-string-to-int-how-to-convert-a-string-to-an-integer/
+1/23/2022 12:45:35 PM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#
+1/23/2022 13:47:28 PM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#heading=h.30j0zll
+1/23/2022 13:59:48 PM	1_SingleThreadedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/14wForEWNH0-VNELRCVzdAIgL_pK0i-bm/edit#
