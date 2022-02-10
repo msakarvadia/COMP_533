@@ -39,8 +39,4 @@ public class Partitioner<K extends String, V> extends AMapReduceTracer implement
 		return PARTITIONER;
 	}
 
-
-
-
-
 }

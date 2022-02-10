@@ -60,7 +60,7 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 		for (int i = 0; i < numThreads; i++) {
 			final String name = "slave" + Integer.toString(i);
 
-			SlaveInterface newSlave = new Slave(i, this);
+			SlaveInterface newSlave = new Slave(i, this, numThreads);
 			slaves.add(newSlave);
 
 			Thread slaveThread = new Thread(newSlave);
@@ -161,7 +161,7 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 
 		// 6
 		joiner.join();
-
+		//System.out.println("ALL THREADS WERE NOTIFIED AND JOIN HAPPENED");
 		for (int i = 0; i < aReductionQueueList.size(); i++) {
 			LinkedList<KeyValueInterface<String, Integer>> linkedList = aReductionQueueList.get(i);
 			for (int j = 0; j < linkedList.size(); j++) {

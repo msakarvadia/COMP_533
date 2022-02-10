@@ -18,15 +18,17 @@ import gradingTools.comp533s19.assignment0.AMapReduceTracer;
 
 public class Slave extends AMapReduceTracer implements SlaveInterface {
 	final int number;
+	final int numThreads;
 	final ModelInterface slaveModel;
 	LinkedList<KeyValueInterface<String, Integer>> localList = new LinkedList<KeyValueInterface<String, Integer>>();
 	LinkedList<KeyValueInterface<String, Integer>> reductionLinkedList;
 	private Map<String, Integer> result = new HashMap<String, Integer>();
 	private Map<String, Integer> keyToPartition = new HashMap<String, Integer>();
 
-	public Slave(final int identifier, final ModelInterface model) {
+	public Slave(final int identifier, final ModelInterface model, final int totalThreads) {
 		number = identifier;
 		slaveModel = model;
+		numThreads = totalThreads;
 	}
 
 	@Override
@@ -65,16 +67,18 @@ public class Slave extends AMapReduceTracer implements SlaveInterface {
 		// this gets the correct partitions for each key
 		final PartitionerInterface<String, Integer> partitioner = PartitionerFactory.getPartitioner();
 		for (Map.Entry<String, Integer> keyVal : result.entrySet()) {
-			final int partition = partitioner.getPartitioner(keyVal.getKey(), keyVal.getValue(), number);
+			final int partition = partitioner.getPartitioner(keyVal.getKey(), keyVal.getValue(), numThreads);
 			keyToPartition.put(keyVal.getKey(), partition);
 		}
+		//System.out.println("key to partition "+keyToPartition.toString());
 
-		// wait for the other slaves to complete their splitting
-		slaveModel.getBarrier().barrier();
-
+		
+		
+		
 		// add partitally reduced keyValues to the ReducitonQueueList
 		
 		List<LinkedList<KeyValueInterface<String, Integer>>> aReductionQueueList = slaveModel.getReductionQueueList();
+		
 		for (Map.Entry<String, Integer> keyVal : keyToPartition.entrySet()) {
 			final String key = keyVal.getKey();
 			final Integer partition = keyVal.getValue();
@@ -85,16 +89,23 @@ public class Slave extends AMapReduceTracer implements SlaveInterface {
 			partialKeyVal.setValue(val);
 			LinkedList<KeyValueInterface<String, Integer>> localLinkedList = aReductionQueueList.get(partition);
 			localLinkedList.add(partialKeyVal);
-			aReductionQueueList.set(partition, localLinkedList);
+			//aReductionQueueList.set(partition, localLinkedList);
 			synchronized(aReductionQueueList) {aReductionQueueList.set(partition, localLinkedList);}
-			System.out.println("key "+key+ "partition: "+ partition );
 			
+			//System.out.println("Key "+key+ " Partition: "+ partition+" linkedList "+localLinkedList );
+			
+		
+		//System.out.println(aReductionQueueList.toString());
+		//System.out.println("NUMBER:"+ number);
 		}
-		System.out.println(aReductionQueueList.toString());
+		slaveModel.getBarrier().barrier();
+		traceSplitAfterBarrier(number, aReductionQueueList);
+		// wait for the other slaves to complete their splitting
 		
 		
 		
 		// Need to do final reduction of this threads linkedList
+		synchronized(aReductionQueueList) {
 		LinkedList<KeyValueInterface<String, Integer>> updatedLocalLinkedList = aReductionQueueList.get(number);
 		result = reducer.reduce(updatedLocalLinkedList);
 		LinkedList<KeyValueInterface<String, Integer>> finalLocalLinkedList = new LinkedList<KeyValueInterface<String, Integer>>();
@@ -105,9 +116,10 @@ public class Slave extends AMapReduceTracer implements SlaveInterface {
 			finalLocalLinkedList.add(finalKeyVal);
 		}
 		//aReductionQueueList.set(number, finalLocalLinkedList);
-		synchronized(aReductionQueueList) {aReductionQueueList.set(number, finalLocalLinkedList);}
-		
-		System.out.println(aReductionQueueList.toString());
+		aReductionQueueList.set(number, finalLocalLinkedList);
+		}
+		slaveModel.getJoiner().finished();
+		//System.out.println(aReductionQueueList.toString());
 
 		synchronized (this) {
 			try {

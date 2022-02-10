@@ -1,0 +1,8 @@
+2/10/2022 00:57:34 AM	ArrayList get(index) Method in Java with Examples - GeeksforGeeks	https://www.geeksforgeeks.org/arraylist-get-method-java-examples/
+2/10/2022 01:13:30 AM	main funtion java - Google Search	https://www.google.com/search?q=main+funtion+java&rlz=1C1CHBF_enUS939US939&oq=main+funtion+java&aqs=chrome..69i57.3155j0j7&sourceid=chrome&ie=UTF-8
+2/10/2022 01:40:12 AM	Using Barrier Synchronization (Multithreaded Programming Guide)	https://docs.oracle.com/cd/E19120-01/open.solaris/816-5137/gfwek/index.html
+2/10/2022 01:47:40 AM	2_ConcurrentMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/11lJlYtS8vs4EcIoaE7zFq1B2eUB4DIN1/edit#
+2/10/2022 02:21:16 AM	Applicant Status Portal	https://apply-psd.uchicago.edu/apply/status
+2/10/2022 02:21:14 AM	Login	https://apply-psd.uchicago.edu/status
+2/10/2022 02:21:20 AM		https://apply-psd.uchicago.edu/apply/update
+2/10/2022 02:21:20 AM	The University of Chicago	https://apply-psd.uchicago.edu/apply/update?id=32d52ba5-c912-497d-abce-7208c63b67d2

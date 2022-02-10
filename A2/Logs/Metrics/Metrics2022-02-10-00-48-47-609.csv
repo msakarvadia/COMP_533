@@ -1,0 +1,5 @@
+Id,Prediction,Date,File,StartTime,ElapsedTime,BusyTime,Commands,editOrInsertPercentage,debugPercentage,navigationPercentage,focusPercentage,removePercentage,editPercentage,COMMAND_RATE,NAVIGATION_RATE,DEBUG_RATE,FOCUS_RATE,EDIT_RATE,REMOVE_RATE,INSERT_RATE,webLinkTimes,Web Page Visits
+1,,Thu Feb 10 00:49:29 EST 2022,Slave.java,1644472169397,120046,0,(I)1(F)2(I)1(F)2(I)8,0.7142857142857143,0.0,0.0,28.57142857142857,0.0,0.0,0.11666666666666667,0.0,0.0,0.03333333333333333,0.0,0.0,0.08333333333333333,2.0,[1644472264998 2 ArrayList get(index) Method in Java with Examples - GeeksforGeeks https://www.geeksforgeeks.org/arraylist-get-method-java-examples/]
+,/modelData/A0UserStudy2010.arff,Thu Feb 10 00:49:29 EST 2022,Slave.java, 1644472169397
+2,,Thu Feb 10 00:51:29 EST 2022,Slave.java,1644472289574,10206,0,(I)4(R)1(I)13,0.9444444444444444,0.0,0.0,0.0,0.0,0.0,1.8,0.0,0.0,0.0,0.0,0.1,1.7,0.0,[]
+3,,Thu Feb 10 00:51:39 EST 2022,Slave.java,1644472299991,9307,9307,(I)4(D)1,0.8,20.0,0.0,0.0,0.0,0.0,0.5555555555555556,0.0,0.1111111111111111,0.0,0.0,0.0,0.4444444444444444,0.0,[]
