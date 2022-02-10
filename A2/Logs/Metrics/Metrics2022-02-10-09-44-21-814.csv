@@ -1,0 +1,4 @@
+Id,Prediction,Date,File,StartTime,ElapsedTime,BusyTime,Commands,editOrInsertPercentage,debugPercentage,navigationPercentage,focusPercentage,removePercentage,editPercentage,COMMAND_RATE,NAVIGATION_RATE,DEBUG_RATE,FOCUS_RATE,EDIT_RATE,REMOVE_RATE,INSERT_RATE,webLinkTimes,Web Page Visits
+1,,Thu Feb 10 09:54:00 EST 2022,Slave.java,1644504840597,85747,0,(I)5(R)6(I)1(R)2,0.42857142857142855,0.0,0.0,0.0,0.0,0.0,0.16470588235294117,0.0,0.0,0.0,0.0,0.09411764705882353,0.07058823529411765,0.0,[]
+,/modelData/A0UserStudy2010.arff,Thu Feb 10 09:54:00 EST 2022,Slave.java, 1644504840597
+2,,Thu Feb 10 09:55:30 EST 2022,Slave.java,1644504930346,7791,7791,(D)1,0.0,100.0,0.0,0.0,0.0,0.0,0.14285714285714285,0.0,0.14285714285714285,0.0,0.0,0.0,0.0,0.0,[]

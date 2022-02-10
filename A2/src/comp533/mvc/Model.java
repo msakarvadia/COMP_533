@@ -26,6 +26,7 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 	private String inputString = null;
 	private Map<String, Integer> result = new HashMap<String, Integer>();
 	final String space = " ";
+	boolean slavesStarted = false;
 
 	// properties from A2
 	int NumThreads = 0;
@@ -44,8 +45,8 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 
 	@Override
 	public void setNumThreads(final int numThreads) {
-		barrier = new Barrier(numThreads);
-		joiner = new Joiner(numThreads);
+		//barrier = new Barrier(numThreads);
+		//joiner = new Joiner(numThreads);
 		traceBarrierCreated(barrier, numThreads);
 		traceJoinerCreated(joiner, numThreads);
 
@@ -100,6 +101,8 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 
 	@Override
 	public void setInputString(final String newVal) {
+		barrier = new Barrier(NumThreads);
+		joiner = new Joiner(NumThreads);
 		String oldResult = result.toString();
 		final String oldInputString = inputString;
 		inputString = newVal;
@@ -111,12 +114,18 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 		// 1
 		aKeyValueQueue = new ArrayBlockingQueue<KeyValueInterface<String, Integer>>(BUFFER_SIZE);
 		aReductionQueueList = new ArrayList<LinkedList<KeyValueInterface<String, Integer>>>();
+		aKeyValueQueue.clear();
+		aReductionQueueList.clear();
 		result.clear();
 
-		for (int i = 0; i < threads.size(); i++) {
-			threads.get(i).start();
-
+		if (!slavesStarted) {
+			for (int i = 0; i < threads.size(); i++) {
+				// TODO this cannot happen multiple times:
+				threads.get(i).start();
+			}
+			slavesStarted = true;
 		}
+		
 		// 2
 		for (int i = 0; i < threads.size(); i++) {
 			slaves.get(i).notifySlave();
@@ -129,7 +138,8 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 		final TokenCountingMapperInterface<String, Integer> mapper = TokenCountingMapperFactory.getMapper();
 
 		for (int i = 0; i < listOfToken.size(); i++) {
-
+			final int slaveNum = i % threads.size();
+			slaves.get(slaveNum).notifySlave();
 			KeyValueInterface<String, Integer> keyVal = mapper.map(listOfToken.get(i));
 
 			try {
@@ -140,7 +150,7 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			final int slaveNum = i % threads.size();
+			
 			slaves.get(slaveNum).notifySlave();
 		}
 
@@ -161,16 +171,17 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 
 		// 6
 		joiner.join();
-		//System.out.println("ALL THREADS WERE NOTIFIED AND JOIN HAPPENED");
+
 		for (int i = 0; i < aReductionQueueList.size(); i++) {
 			LinkedList<KeyValueInterface<String, Integer>> linkedList = aReductionQueueList.get(i);
 			for (int j = 0; j < linkedList.size(); j++) {
 				result.put(linkedList.get(j).getKey(), linkedList.get(j).getValue());
 			}
 		}
-		
+
 		final String resultLabel = "Result";
-		final PropertyChangeEvent resultComputed = new PropertyChangeEvent(this, resultLabel, oldResult, result.toString());
+		final PropertyChangeEvent resultComputed = new PropertyChangeEvent(this, resultLabel, oldResult,
+				result.toString());
 		propertyChangeSupport.firePropertyChange(resultComputed);
 
 	}

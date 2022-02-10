@@ -27,8 +27,9 @@ public class Barrier extends AMapReduceTracer implements BarrierInterface {
 				e.printStackTrace();
 			}
 		}
+		
 		notifyAll();
 		traceBarrierReleaseAll(this, count, numCalls);
-		
+		//numCalls = 0;
 	}
 }

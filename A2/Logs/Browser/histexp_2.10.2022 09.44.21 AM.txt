@@ -1,0 +1,19 @@
+2/10/2022 09:46:46 AM	Applicant Status Portal	https://apply-psd.uchicago.edu/apply/status
+2/10/2022 09:51:18 AM	2_ConcurrentMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/11lJlYtS8vs4EcIoaE7zFq1B2eUB4DIN1/edit
+2/10/2022 09:44:23 AM	Login	https://apply-psd.uchicago.edu/status
+2/10/2022 09:46:48 AM		https://apply-psd.uchicago.edu/apply/update
+2/10/2022 09:47:19 AM	The University of Chicago	https://apply-psd.uchicago.edu/apply/update?id=32d52ba5-c912-497d-abce-7208c63b67d2
+2/10/2022 09:47:23 AM	The University of Chicago	https://apply-psd.uchicago.edu/apply/update?id=4c5a15ee-3934-4ee5-b216-a2cfb8f0274b
+2/10/2022 09:46:49 AM	The University of Chicago	https://apply-psd.uchicago.edu/apply/download.pdf?s=32d52ba5-c912-497d-abce-7208c63b67d2&output=letter.pdf
+2/10/2022 09:47:25 AM	The University of Chicago	https://apply-psd.uchicago.edu/apply/download.pdf?s=4c5a15ee-3934-4ee5-b216-a2cfb8f0274b&output=letter.pdf
+2/10/2022 09:49:42 AM	Prizes & Fellowships - The University of Chicago Library	https://www.lib.uchicago.edu/about/thelibrary/prizes-fellowships/
+2/10/2022 09:49:26 AM	John Crerar Foundation Data Services Fellow - The University of Chicago Library	https://www.lib.uchicago.edu/about/thelibrary/prizes-fellowships/john-crerar-foundation-data-services-fellow/
+2/10/2022 09:49:57 AM	Liuzixuan Lin	https://lzixuan.github.io/
+2/10/2022 10:01:51 AM	how to get a thread to stop from a java runnable - Google Search	https://www.google.com/search?q=how+to+get+a+thread+to+stop+from+a+java+runnable&rlz=1C1CHBF_enUS939US939&oq=how+to+get+a+thread+to+stop+from+a+java+runnable&aqs=chrome..69i57.10517j0j7&sourceid=chrome&ie=UTF-8
+2/10/2022 10:01:59 AM	java - How to stop a thread created by implementing runnable interface? - Stack Overflow	https://stackoverflow.com/questions/10630737/how-to-stop-a-thread-created-by-implementing-runnable-interface
+2/10/2022 12:31:30 PM	2_ConcurrentMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/11lJlYtS8vs4EcIoaE7zFq1B2eUB4DIN1/edit
+2/10/2022 12:55:07 PM	java.lang.IllegalThreadStateException - Google Search	https://www.google.com/search?q=java.lang.IllegalThreadStateException&rlz=1C1CHBF_enUS939US939&oq=java.lang.IllegalThreadStateException&aqs=chrome..69i57.112j0j7&sourceid=chrome&ie=UTF-8
+2/10/2022 12:55:08 PM	multithreading - java.lang.IllegalThreadStateException - Stack Overflow	https://stackoverflow.com/questions/7315941/java-lang-illegalthreadstateexception
+2/10/2022 13:08:43 PM	java how to see if a thread is running - Google Search	https://www.google.com/search?q=java+how+to+see+if+a+thread+is+running&rlz=1C1CHBF_enUS939US939&oq=java+how+to+see+if+a+thread+is+running&aqs=chrome..69i57.6088j0j7&sourceid=chrome&ie=UTF-8
+2/10/2022 13:08:50 PM	multithreading - In Java, how do you determine if a thread is running? - Stack Overflow	https://stackoverflow.com/questions/861346/in-java-how-do-you-determine-if-a-thread-is-running/861403#:~:text=Use%20Thread.,()%20method%20or%20use%20Thread.
+2/10/2022 13:18:52 PM	java .clearing queue - Google Search	https://www.google.com/search?q=java+.clearing+queue&rlz=1C1CHBF_enUS939US939&oq=java+.clearing+queue&aqs=chrome..69i57.4768j0j4&sourceid=chrome&ie=UTF-8

@@ -16648,3 +16648,22 @@ Number of delete: 266
     <nextType><![CDATA[Lost Focus]]></nextType>
     <next><![CDATA[ShellCommand]]></next>
   </Command>
+  <Command __id="3691" _type="ShellCommand" date="Thu Feb 10 02:51:07 EST 2022" starttimestamp="1644472127609" timestamp="7340091" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="3694" _type="PauseCommand" date="Thu Feb 10 02:51:25 EST 2022" range="10s-20s" starttimestamp="1644472127609" timestamp="7357932">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[17841]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="3706" _type="ProgramExecutionEvent" className="/A2/src/comp533/mvc/A2Tests.java" date="Thu Feb 10 02:51:32 EST 2022" kind="HitBreakPoint" projectName="A2" starttimestamp="1644472127609" timestamp="7364452" type="Run" />
+  <Command __id="3708" _type="ProgramExecutionEvent" className="/A2/src/comp533/mvc/A2Tests.java" date="Thu Feb 10 02:51:32 EST 2022" kind="HitBreakPoint" projectName="A2" starttimestamp="1644472127609" timestamp="7364452" type="Run" />
+  <Command __id="3709" _type="ProgramExecutionEvent" className="/A2/src/comp533/mvc/A2Tests.java" date="Thu Feb 10 02:51:32 EST 2022" kind="HitBreakPoint" projectName="A2" starttimestamp="1644472127609" timestamp="7365099" type="Run" />
+  <Command __id="3710" _type="ProgramExecutionEvent" className="/A2/src/comp533/mvc/A2Tests.java" date="Thu Feb 10 02:51:32 EST 2022" kind="HitBreakPoint" projectName="A2" starttimestamp="1644472127609" timestamp="7365099" type="Run" />
+  <Command __id="3712" _type="PauseCommand" date="Thu Feb 10 02:52:02 EST 2022" range="20s-30s" starttimestamp="1644472127609" timestamp="7394874">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[29775]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>

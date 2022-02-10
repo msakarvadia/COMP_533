@@ -10,15 +10,20 @@ public class Joiner extends AMapReduceTracer implements JoinerInterface {
 		count = numThreads;
 	}
 	
+	public int getTotalFinished() {
+		return totalFinish;
+	}
+	
 	@Override
 	public String toString() {
 		return JOINER;
 	}
 	
 	@Override
-	public void finished() {
-		traceJoinerFinishedTask(this, count, totalFinish);
+	public synchronized void finished() {
 		totalFinish++;
+		traceJoinerFinishedTask(this, count, totalFinish);
+		
 		
 	}
 
@@ -34,10 +39,11 @@ public class Joiner extends AMapReduceTracer implements JoinerInterface {
 				e.printStackTrace();
 			}
 		}
+		//totalFinish = 0;
 		traceNotify();
 		notify();
 		traceJoinerRelease(this, count, totalFinish);
-		totalFinish = 0;
+		
 		
 	}
 

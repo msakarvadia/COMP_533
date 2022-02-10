@@ -33,103 +33,111 @@ public class Slave extends AMapReduceTracer implements SlaveInterface {
 
 	@Override
 	public void run() {
-		boolean loop = true;
-		while (loop) {
-			BlockingQueue<KeyValueInterface<String, Integer>> aKeyValueQueue = slaveModel.getKeyValueQueue();
+		System.out.println("RUN METHOD");
+		while (true) {
+			boolean loop = true;
+			while (loop) {
+				BlockingQueue<KeyValueInterface<String, Integer>> aKeyValueQueue = slaveModel.getKeyValueQueue();
 
-			KeyValueInterface<String, Integer> keyVal = null;
+				KeyValueInterface<String, Integer> keyVal = null;
 
-			try {
-				traceDequeueRequest(aKeyValueQueue);
-				keyVal = aKeyValueQueue.take();
-				traceDequeue(keyVal);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-				// continue;
+				try {
+					traceDequeueRequest(aKeyValueQueue);
+					keyVal = aKeyValueQueue.take();
+					traceDequeue(keyVal);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+					// continue;
+				}
+
+				// if keyVal is null, null need to stop consuming
+				if (keyVal.getKey() == null) {
+					loop = false;
+					continue;
+				}
+
+				localList.add(keyVal);
+
 			}
 
-			// if keyVal is null, null need to stop consuming
-			if (keyVal.getKey() == null) {
-				loop = false;
-				continue;
+			// partially reduce list
+
+			final ReducerInterface<String, Integer> reducer = ReducerFactory.getReducer();
+			result = reducer.reduce(localList);
+
+			// this gets the correct partitions for each key
+			final PartitionerInterface<String, Integer> partitioner = PartitionerFactory.getPartitioner();
+			for (Map.Entry<String, Integer> keyVal : result.entrySet()) {
+				final int partition = partitioner.getPartitioner(keyVal.getKey(), keyVal.getValue(), numThreads);
+				keyToPartition.put(keyVal.getKey(), partition);
+			}
+			// System.out.println("key to partition "+keyToPartition.toString());
+
+			// add partitally reduced keyValues to the ReducitonQueueList
+
+			List<LinkedList<KeyValueInterface<String, Integer>>> aReductionQueueList = slaveModel
+					.getReductionQueueList();
+
+			for (Map.Entry<String, Integer> keyVal : keyToPartition.entrySet()) {
+				final String key = keyVal.getKey();
+				final Integer partition = keyVal.getValue();
+				final Integer val = result.get(key);
+
+				KeyValueInterface<String, Integer> partialKeyVal = new KeyValue<String, Integer>();
+				partialKeyVal.setKey(key);
+				partialKeyVal.setValue(val);
+				LinkedList<KeyValueInterface<String, Integer>> localLinkedList = aReductionQueueList.get(partition);
+				localLinkedList.add(partialKeyVal);
+				// aReductionQueueList.set(partition, localLinkedList);
+				synchronized (aReductionQueueList) {
+					aReductionQueueList.set(partition, localLinkedList);
+				}
+
 			}
 
-			localList.add(keyVal);
+			// wait for the other slaves to complete their splitting
+			slaveModel.getBarrier().barrier();
+			traceSplitAfterBarrier(number, aReductionQueueList);
 
-		}
-
-		// partially reduce list
-
-		final ReducerInterface<String, Integer> reducer = ReducerFactory.getReducer();
-		result = reducer.reduce(localList);
-
-		// this gets the correct partitions for each key
-		final PartitionerInterface<String, Integer> partitioner = PartitionerFactory.getPartitioner();
-		for (Map.Entry<String, Integer> keyVal : result.entrySet()) {
-			final int partition = partitioner.getPartitioner(keyVal.getKey(), keyVal.getValue(), numThreads);
-			keyToPartition.put(keyVal.getKey(), partition);
-		}
-		//System.out.println("key to partition "+keyToPartition.toString());
-
-		
-		
-		
-		// add partitally reduced keyValues to the ReducitonQueueList
-		
-		List<LinkedList<KeyValueInterface<String, Integer>>> aReductionQueueList = slaveModel.getReductionQueueList();
-		
-		for (Map.Entry<String, Integer> keyVal : keyToPartition.entrySet()) {
-			final String key = keyVal.getKey();
-			final Integer partition = keyVal.getValue();
-			final Integer val = result.get(key);
-
-			KeyValueInterface<String, Integer> partialKeyVal = new KeyValue<String, Integer>();
-			partialKeyVal.setKey(key);
-			partialKeyVal.setValue(val);
-			LinkedList<KeyValueInterface<String, Integer>> localLinkedList = aReductionQueueList.get(partition);
-			localLinkedList.add(partialKeyVal);
-			//aReductionQueueList.set(partition, localLinkedList);
-			synchronized(aReductionQueueList) {aReductionQueueList.set(partition, localLinkedList);}
-			
-			//System.out.println("Key "+key+ " Partition: "+ partition+" linkedList "+localLinkedList );
-			
-		
-		//System.out.println(aReductionQueueList.toString());
-		//System.out.println("NUMBER:"+ number);
-		}
-		slaveModel.getBarrier().barrier();
-		traceSplitAfterBarrier(number, aReductionQueueList);
-		// wait for the other slaves to complete their splitting
-		
-		
-		
-		// Need to do final reduction of this threads linkedList
-		synchronized(aReductionQueueList) {
-		LinkedList<KeyValueInterface<String, Integer>> updatedLocalLinkedList = aReductionQueueList.get(number);
-		result = reducer.reduce(updatedLocalLinkedList);
-		LinkedList<KeyValueInterface<String, Integer>> finalLocalLinkedList = new LinkedList<KeyValueInterface<String, Integer>>();
-		for (Map.Entry<String, Integer> keyVal : result.entrySet()) {
-			KeyValueInterface<String, Integer> finalKeyVal = new KeyValue<String, Integer>();
-			finalKeyVal.setKey(keyVal.getKey());
-			finalKeyVal.setValue(keyVal.getValue());
-			finalLocalLinkedList.add(finalKeyVal);
-		}
-		//aReductionQueueList.set(number, finalLocalLinkedList);
-		aReductionQueueList.set(number, finalLocalLinkedList);
-		}
-		slaveModel.getJoiner().finished();
-		//System.out.println(aReductionQueueList.toString());
-
-		synchronized (this) {
-			try {
-				wait();
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+			// Need to do final reduction of this threads linkedList
+			synchronized (aReductionQueueList) {
+				LinkedList<KeyValueInterface<String, Integer>> updatedLocalLinkedList = aReductionQueueList.get(number);
+				result = reducer.reduce(updatedLocalLinkedList);
+				LinkedList<KeyValueInterface<String, Integer>> finalLocalLinkedList = new LinkedList<KeyValueInterface<String, Integer>>();
+				for (Map.Entry<String, Integer> keyVal : result.entrySet()) {
+					KeyValueInterface<String, Integer> finalKeyVal = new KeyValue<String, Integer>();
+					finalKeyVal.setKey(keyVal.getKey());
+					finalKeyVal.setValue(keyVal.getValue());
+					finalLocalLinkedList.add(finalKeyVal);
+				}
+				// aReductionQueueList.set(number, finalLocalLinkedList);
+				aReductionQueueList.set(number, finalLocalLinkedList);
 			}
+
+			loop = true;
+			slaveModel.getJoiner().finished();
+			// System.out.println(aReductionQueueList.toString());
+
+			// System.out.println(slaveModel.getJoiner().getTotalFinished());
+			if (slaveModel.getJoiner().getTotalFinished() == numThreads) {
+				slaveModel.getJoiner().join();
+
+			}
+
+			synchronized (this) {
+				try {
+					traceWait();
+					wait();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			continue;
 		}
-		return;
+
+		//return;
 	}
 
 	@Override
