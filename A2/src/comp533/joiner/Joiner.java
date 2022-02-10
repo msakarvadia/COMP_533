@@ -34,6 +34,7 @@ public class Joiner extends AMapReduceTracer implements JoinerInterface {
 				e.printStackTrace();
 			}
 		}
+		traceNotify();
 		notify();
 		traceJoinerRelease(this, count, totalFinish);
 		totalFinish = 0;

@@ -4,6 +4,7 @@ import comp533.barrier.Barrier;
 import comp533.joiner.Joiner;
 import comp533.partitioner.Partitioner;
 import comp533.partitioner.PartitionerFactory;
+import comp533.salve.Slave;
 
 //import gradingTools.comp533s21.assignment1.interfaces.MapReduceConfiguration;
 
@@ -152,7 +153,7 @@ public class MapReduceConfiguration implements MapReduceConfigurationInterface {
 	@Override
 	public Class<?> getSlaveClass() {
 		// TODO Auto-generated method stub
-		return null;
+		return Slave.class;
 	}
 
 	@Override

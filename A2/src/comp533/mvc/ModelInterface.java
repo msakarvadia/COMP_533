@@ -2,9 +2,10 @@ package comp533.mvc;
 
 
 import java.beans.PropertyChangeListener;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-
+import java.util.concurrent.BlockingQueue;
 
 import comp533.barrier.BarrierInterface;
 import comp533.joiner.JoinerInterface;
@@ -25,6 +26,8 @@ public interface ModelInterface {
 	public int getNumThreads();
 	public void setNumThreads(final int numThreads);
 	public List<Thread> getThreads();
+	public BlockingQueue getKeyValueQueue();
+	public List<LinkedList<KeyValueInterface<String, Integer>>> getReductionQueueList(); 
 	
 	
 } 

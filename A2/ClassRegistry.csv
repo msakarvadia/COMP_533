@@ -17,6 +17,8 @@ comp533.partitioner.PartitionerFactory,PartitionerFactory
 comp533.mvc.Reducer,ReducerClass
 comp533.mvc.ReducerInterface,ReducerClass
 comp533.mvc.ReducerFactory,ReducerFactory
+comp533.salve.Slave,SlaveClass
+comp533.salve.SlaveInterface,SlaveClass
 comp533.mvc.StandAloneIntSumming,StandAloneIntegerSummer
 comp533.mvc.ModelViewController,StandAloneTokenCounter
 comp533.mvc.TokenCountingMapper,TokenCountingMapperClass
