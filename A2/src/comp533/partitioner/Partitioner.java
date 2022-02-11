@@ -23,6 +23,7 @@ public class Partitioner<K extends String, V> extends AMapReduceTracer implement
 		
 	
 		if (!Character.isLetter(firstChar)){
+			aPartitionNum=0;
 			tracePartitionAssigned(key, value, aPartitionNum, numPartitions);
 			return aPartitionNum;
 		}

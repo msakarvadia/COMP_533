@@ -17,3 +17,21 @@
 2/10/2022 13:08:43 PM	java how to see if a thread is running - Google Search	https://www.google.com/search?q=java+how+to+see+if+a+thread+is+running&rlz=1C1CHBF_enUS939US939&oq=java+how+to+see+if+a+thread+is+running&aqs=chrome..69i57.6088j0j7&sourceid=chrome&ie=UTF-8
 2/10/2022 13:08:50 PM	multithreading - In Java, how do you determine if a thread is running? - Stack Overflow	https://stackoverflow.com/questions/861346/in-java-how-do-you-determine-if-a-thread-is-running/861403#:~:text=Use%20Thread.,()%20method%20or%20use%20Thread.
 2/10/2022 13:18:52 PM	java .clearing queue - Google Search	https://www.google.com/search?q=java+.clearing+queue&rlz=1C1CHBF_enUS939US939&oq=java+.clearing+queue&aqs=chrome..69i57.4768j0j4&sourceid=chrome&ie=UTF-8
+2/10/2022 13:52:02 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+2/10/2022 13:52:00 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1
+2/10/2022 13:52:12 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Overview	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049
+2/10/2022 13:52:15 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Resources	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/6bf90033-4f8a-4790-8abe-66175494add4
+2/10/2022 13:51:13 PM	COMP 533 (5 unread)	https://piazza.com/class/kxx594eo8fl3y2
+2/10/2022 13:52:14 PM		https://sakai.unc.edu/portal/tool/dade49b9-d1b7-4801-97e0-e2e750d0c69b/synMainLite?time=1
+2/10/2022 13:51:40 PM	COMP 533 (4 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=14
+2/10/2022 13:53:08 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625
+2/10/2022 13:51:17 PM	COMP 533 (4 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=73
+2/10/2022 13:51:57 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=fZJdb4IwFIb%2FCum9FiroaISE6cVM3CTCdrGbpcJxNIOW9ZR9%2FPuhOOOSxeu%2BH32fnDmKpm550tlKbeG9A7TOV1Mr5MeHiHRGcS1QIleiAeS24Flyv%2BZs7PLWaKsLXRMnQQRjpVYLrbBrwGRgPmQBj9t1RCprW%2BSUongTctypYgxlR7NK7na6BluNETU9hDKabrKcOMv%2BF1KJQ96FG%2FXZK8uW9uV7WcPJuIVSGigszbINcVbLiLzsAy%2F0%2FdkknPqhO%2FXLYDZhImRBEHgTFs7cXobYwUqhFcpGhLmMjVw28tzcu%2BGBx4PpM3HS08ZbqUqpXq8D2Q0i5Hd5no6GMU9g8DikF5B4fsDKj8XmAvT1WPFLl8T%2Fs8Qzyzm9KBjaWv7QJ66Wqa5l8e0kda0%2FFwaEhYh4hMaD5e8NxD8%3D&RelayState=ss%3Amem%3A2219e8214b6e0aaea021fe667e3e61daaa91d0f0f288231e4745cb3426437cc7&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=NhCNLtmRauYBlPyfKZ53qO2Q9AIQ285m02fqjzzIBawL05auJrZ%2F4FMIi7BFvkEXlFC%2FHSio4zdlJlQdHZ9rnl6Ydq6CN2%2FRKVXFOuLoHKvKuQHXSPmBirPiFWXaXmquNi6LIFQXXsXkSyWpUS9QIEz0zxEuBbwizq86pNjwmUkuS5eNiNdmSZ6Hy%2FBYMVwUl4ITO9z762zEhlqBL65FyQg5t0k%2BZlA2elHoSj0Fz0yyPyw2x2exgJ%2F9WaJV57UCPe1lj%2FqQVUvSL5aRM%2Fw71L1AwYFULJLZa4pjJHvpuaBjWOmwCYjPf1BQAaos9Lve2C01RkNnS70YxJtPESSGlg%3D%3D
+2/10/2022 14:53:57 PM	UNC-Chapel Hill Single Sign-On	https://sakai.unc.edu/Shibboleth.sso/Logout?return=https://sso.unc.edu/idp/logout.jsp
+2/10/2022 16:38:02 PM	Top of Lenoir - Carolina Dining Services	https://dining.unc.edu/locations/top-of-lenoir/
+2/10/2022 19:00:01 PM	Applicant Status Portal	https://apply-psd.uchicago.edu/apply/frm?b8efad39-13ff-4fd4-aabc-6ca4ccfdd6b7
+2/10/2022 19:00:43 PM		https://apply-psd.uchicago.edu/apply/update
+2/10/2022 19:00:43 PM	The University of Chicago	https://apply-psd.uchicago.edu/apply/update?id=32d52ba5-c912-497d-abce-7208c63b67d2
+2/10/2022 18:59:53 PM	The University of Chicago	https://apply-psd.uchicago.edu/apply/update?id=4c5a15ee-3934-4ee5-b216-a2cfb8f0274b
+2/10/2022 18:59:36 PM	2022-23 Terms and Conditions	https://apply-psd.uchicago.edu/register/?id=728cc7d8-8073-454d-8538-f3295b1e84eb
+2/10/2022 18:59:51 PM	Login	https://apply-psd.uchicago.edu/account/login?r=https%3a%2f%2fapply-psd.uchicago.edu%2fapply%2fupdate%3fid%3d4c5a15ee-3934-4ee5-b216-a2cfb8f0274b

@@ -59,7 +59,7 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 
 		threads = new ArrayList<Thread>();
 		for (int i = 0; i < numThreads; i++) {
-			final String name = "slave" + Integer.toString(i);
+			final String name = "Slave" + Integer.toString(i);
 
 			SlaveInterface newSlave = new Slave(i, this, numThreads);
 			slaves.add(newSlave);
@@ -177,6 +177,7 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 			for (int j = 0; j < linkedList.size(); j++) {
 				result.put(linkedList.get(j).getKey(), linkedList.get(j).getValue());
 			}
+			traceAddedToMap(result, linkedList);
 		}
 
 		final String resultLabel = "Result";
@@ -185,6 +186,7 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 		propertyChangeSupport.firePropertyChange(resultComputed);
 
 	}
+	
 
 	// @Override
 	// public void computeResult() {

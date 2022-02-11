@@ -65,7 +65,7 @@ public class Slave extends AMapReduceTracer implements SlaveInterface {
 
 			final ReducerInterface<String, Integer> reducer = ReducerFactory.getReducer();
 			result = reducer.reduce(localList);
-
+			localList.clear();
 			// this gets the correct partitions for each key
 			final PartitionerInterface<String, Integer> partitioner = PartitionerFactory.getPartitioner();
 			for (Map.Entry<String, Integer> keyVal : result.entrySet()) {
@@ -76,8 +76,7 @@ public class Slave extends AMapReduceTracer implements SlaveInterface {
 
 			// add partitally reduced keyValues to the ReducitonQueueList
 
-			List<LinkedList<KeyValueInterface<String, Integer>>> aReductionQueueList = slaveModel
-					.getReductionQueueList();
+			List<LinkedList<KeyValueInterface<String, Integer>>> aReductionQueueList = slaveModel.getReductionQueueList();
 
 			for (Map.Entry<String, Integer> keyVal : keyToPartition.entrySet()) {
 				final String key = keyVal.getKey();
@@ -95,6 +94,7 @@ public class Slave extends AMapReduceTracer implements SlaveInterface {
 				}
 
 			}
+			keyToPartition.clear();
 
 			// wait for the other slaves to complete their splitting
 			slaveModel.getBarrier().barrier();
