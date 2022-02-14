@@ -5,10 +5,12 @@ import gradingTools.comp533s19.assignment0.AMapReduceTracer;
 public class PartitionerFactory extends AMapReduceTracer{
 	private static PartitionerInterface<String, Integer> partitioner ;
 	
+	static {
+		partitioner = new Partitioner<String, Integer>();
+	}
+	
 	public static PartitionerInterface<String, Integer> getPartitioner() {
-		if (partitioner == null) {
-			partitioner= new Partitioner<String, Integer>();
-		}
+		
 		return partitioner;
 	}
 	

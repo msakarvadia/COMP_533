@@ -18,7 +18,7 @@ import comp533.salve.SlaveInterface;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeEvent;
+//import java.beans.PropertyChangeEvent;
 import gradingTools.comp533s19.assignment0.AMapReduceTracer;
 
 public class Model extends AMapReduceTracer implements ModelInterface {
@@ -29,7 +29,7 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 	boolean slavesStarted = false;
 
 	// properties from A2
-	int NumThreads = 0;
+	int aNumThreads = 0;
 	List<Thread> threads = new ArrayList<Thread>();
 	List<SlaveInterface> slaves = new ArrayList<SlaveInterface>();
 	BarrierInterface barrier;
@@ -40,31 +40,33 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 
 	@Override
 	public int getNumThreads() {
-		return NumThreads;
+		return aNumThreads;
 	}
 
 	@Override
 	public void setNumThreads(final int numThreads) {
-		//barrier = new Barrier(numThreads);
-		//joiner = new Joiner(numThreads);
-		traceBarrierCreated(barrier, numThreads);
-		traceJoinerCreated(joiner, numThreads);
+		// barrier = new Barrier(numThreads);
+		// joiner = new Joiner(numThreads);
+		/*
+		 * traceBarrierCreated(barrier, numThreads); traceJoinerCreated(joiner,
+		 * numThreads);
+		 */
 
-		final String oldValue = Integer.toString(NumThreads);
+		final String oldValue = Integer.toString(aNumThreads);
 		String oldThreads = threads.toString();
 		if (threads.isEmpty()) {
 			oldThreads = null;
-			NumThreads = numThreads;
+			aNumThreads = numThreads;
 		}
 
 		threads = new ArrayList<Thread>();
 		for (int i = 0; i < numThreads; i++) {
 			final String name = "Slave" + Integer.toString(i);
 
-			SlaveInterface newSlave = new Slave(i, this, numThreads);
+			final SlaveInterface newSlave = new Slave(i, this);
 			slaves.add(newSlave);
 
-			Thread slaveThread = new Thread(newSlave);
+			final Thread slaveThread = new Thread(newSlave);
 			slaveThread.setName(name);
 			threads.add(slaveThread);
 
@@ -72,16 +74,13 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 			aReductionQueueList.add(new LinkedList<KeyValueInterface<String, Integer>>());
 		}
 		final String label = "NumThreads";
-		final String newValue = Integer.toString(NumThreads);
+		final String newValue = Integer.toString(aNumThreads);
 
 		final String labelThread = "Threads";
 		final String newThreads = threads.toString();
 
-		final PropertyChangeEvent inputEvent = new PropertyChangeEvent(this, label, oldValue, newValue);
-		propertyChangeSupport.firePropertyChange(inputEvent);
-
-		final PropertyChangeEvent inputEvent1 = new PropertyChangeEvent(this, labelThread, oldThreads, newThreads);
-		propertyChangeSupport.firePropertyChange(inputEvent1);
+		propertyChangeSupport.firePropertyChange(label, oldValue, newValue);
+		propertyChangeSupport.firePropertyChange(labelThread, oldThreads, newThreads);
 	}
 
 	@Override
@@ -101,14 +100,17 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 
 	@Override
 	public void setInputString(final String newVal) {
-		barrier = new Barrier(NumThreads);
-		joiner = new Joiner(NumThreads);
-		String oldResult = result.toString();
+		barrier = new Barrier(aNumThreads);
+		joiner = new Joiner(aNumThreads);
+		traceBarrierCreated(barrier, aNumThreads);
+		traceJoinerCreated(joiner, aNumThreads);
+
+		final String oldResult = result.toString();
 		final String oldInputString = inputString;
 		inputString = newVal;
 		final String label = "InputString";
-		final PropertyChangeEvent inputEvent = new PropertyChangeEvent(this, label, oldInputString, newVal);
-		propertyChangeSupport.firePropertyChange(inputEvent);
+
+		propertyChangeSupport.firePropertyChange(label, oldInputString, newVal);
 
 		// A2 tasks
 		// 1
@@ -125,7 +127,7 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 			}
 			slavesStarted = true;
 		}
-		
+
 		// 2
 		for (int i = 0; i < threads.size(); i++) {
 			slaves.get(i).notifySlave();
@@ -140,7 +142,7 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 		for (int i = 0; i < listOfToken.size(); i++) {
 			final int slaveNum = i % threads.size();
 			slaves.get(slaveNum).notifySlave();
-			KeyValueInterface<String, Integer> keyVal = mapper.map(listOfToken.get(i));
+			final KeyValueInterface<String, Integer> keyVal = mapper.map(listOfToken.get(i));
 
 			try {
 				traceEnqueueRequest(keyVal);
@@ -150,7 +152,7 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			
+
 			slaves.get(slaveNum).notifySlave();
 		}
 
@@ -171,47 +173,22 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 
 		// 6
 		joiner.join();
-
-		for (int i = 0; i < aReductionQueueList.size(); i++) {
-			LinkedList<KeyValueInterface<String, Integer>> linkedList = aReductionQueueList.get(i);
-			for (int j = 0; j < linkedList.size(); j++) {
-				result.put(linkedList.get(j).getKey(), linkedList.get(j).getValue());
-			}
-			traceAddedToMap(result, linkedList);
-		}
+		result = combineReductionQueueList(aReductionQueueList, result);
+		/*
+		 * for (int i = 0; i < aReductionQueueList.size(); i++) { final
+		 * LinkedList<KeyValueInterface<String, Integer>> linkedList =
+		 * aReductionQueueList.get(i); for (int listIndex = 0; listIndex <
+		 * linkedList.size(); listIndex++) {
+		 * result.put(linkedList.get(listIndex).getKey(),
+		 * linkedList.get(listIndex).getValue()); } traceAddedToMap(result, linkedList);
+		 * }
+		 */
 
 		final String resultLabel = "Result";
-		final PropertyChangeEvent resultComputed = new PropertyChangeEvent(this, resultLabel, oldResult,
-				result.toString());
-		propertyChangeSupport.firePropertyChange(resultComputed);
+
+		propertyChangeSupport.firePropertyChange(resultLabel, oldResult, result.toString());
 
 	}
-	
-
-	// @Override
-	// public void computeResult() {
-	// final ReducerInterface<String, Integer> reducer =
-	// ReducerFactory.getReducer();
-	// final TokenCountingMapperInterface<String, Integer> mapper =
-	// TokenCountingMapperFactory.getMapper();
-	// String oldResult = result.toString();
-	// if (result.isEmpty()) {
-	// oldResult = null;
-	// }
-	// final String tokens = inputString;
-	// result.clear();
-	// final List<String> listOfToken = Arrays.asList(tokens.split(space));
-	// final List<KeyValueInterface<String, Integer>> keyValList =
-	// mapper.map(listOfToken);
-	// TODO PROPERTY CHANGE FOR KeyValList
-	// result = reducer.reduce(keyValList);
-	// TODO property change for Result
-	// final String label = "Result";
-	// final PropertyChangeEvent resultComputed = new PropertyChangeEvent(this,
-	// label, oldResult, result.toString());
-	// propertyChangeSupport.firePropertyChange(resultComputed);
-
-	// }
 
 	@Override
 	public String toString() {// overriding the toString() method
@@ -241,6 +218,45 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 	@Override
 	public void computeResult() {
 		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void terminate() {
+		// TODO Auto-generated method stub
+		for (int i = 0; i < threads.size(); i++) {
+			threads.get(i).interrupt();
+
+		}
+	}
+
+	@Override
+	public Map<String, Integer> combineReductionQueueList(
+			final List<LinkedList<KeyValueInterface<String, Integer>>> reductionQueueList,
+			final Map<String, Integer> aResult) {
+		Map<String, Integer> results = aResult;
+		for (int i = 0; i < reductionQueueList.size(); i++) {
+			final LinkedList<KeyValueInterface<String, Integer>> linkedList = reductionQueueList.get(i);
+			/*
+			 * for (int listIndex = 0; listIndex < linkedList.size(); listIndex++) {
+			 * aResult.put(linkedList.get(listIndex).getKey(),
+			 * linkedList.get(listIndex).getValue()); }
+			 */
+			results = getResults(reductionQueueList, aResult, i);
+			traceAddedToMap(results, linkedList);
+		}
+		return results;
+	}
+
+	public Map<String, Integer> getResults(
+			final List<LinkedList<KeyValueInterface<String, Integer>>> reductionQueueList,
+			final Map<String, Integer> resultMap, final int index) {
+		final LinkedList<KeyValueInterface<String, Integer>> linkedList = reductionQueueList.get(index);
+		final Map<String, Integer> results = resultMap;
+		for (int listIndex = 0; listIndex < linkedList.size(); listIndex++) {
+			results.put(linkedList.get(listIndex).getKey(), linkedList.get(listIndex).getValue());
+		}
+		return results;
 
 	}
 }

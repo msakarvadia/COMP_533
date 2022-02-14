@@ -5,11 +5,14 @@ import gradingTools.comp533s19.assignment0.AMapReduceTracer;
 public class TokenCountingMapperFactory extends AMapReduceTracer{
 	private static TokenCountingMapperInterface<String, Integer> mapper;
 	
+	static {
+		
+		mapper = new TokenCountingMapper();
+	}
+	
 	public static TokenCountingMapperInterface<String, Integer> getMapper() {
-		if (mapper == null) {
-			mapper = new TokenCountingMapper();
-			traceSingletonChange(TokenCountingMapperFactory.class, mapper);
-		}
+		//traceSingletonChange(TokenCountingMapperFactory.class, mapper);
+		
 		return mapper;
 	}
 	

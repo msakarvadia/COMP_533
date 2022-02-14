@@ -4,10 +4,11 @@ import gradingTools.comp533s19.assignment0.AMapReduceTracer;
 public class ReducerFactory extends AMapReduceTracer{
 	private static ReducerInterface<String, Integer> reducer;
 	
+	static {
+		reducer = new Reducer();
+	}
+	
 	public static ReducerInterface<String, Integer> getReducer() {
-		if (reducer == null) {
-			reducer = new Reducer();
-		}
 		return reducer;
 	}
 	

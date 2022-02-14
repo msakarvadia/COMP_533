@@ -6,10 +6,14 @@ import java.beans.PropertyChangeSupport;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ArrayBlockingQueue;
 
-import comp533.salve.Slave;
+import comp533.barrier.Barrier;
+import comp533.joiner.Joiner;
+
 
 //import gradingTools.comp533s19.assignment0.AMapReduceTracer;
 
@@ -29,29 +33,95 @@ public class SummingModel extends Model implements ModelInterface{
 
 	@Override
 	public void setInputString(final String newVal) {
-		final String oldString = inputString;
+		barrier = new Barrier(aNumThreads);
+		joiner = new Joiner(aNumThreads);
+		final String oldResult = result.toString();
+		final String oldInputString = inputString;
 		inputString = newVal;
 		final String label = "InputString";
-		final PropertyChangeEvent inputEvent = new PropertyChangeEvent(this, label, oldString, newVal);
+		final PropertyChangeEvent inputEvent = new PropertyChangeEvent(this, label, oldInputString, newVal);
 		propertyChangeSupport.firePropertyChange(inputEvent);
+
+		// A2 tasks
+		// 1
+		aKeyValueQueue = new ArrayBlockingQueue<KeyValueInterface<String, Integer>>(BUFFER_SIZE);
+		aReductionQueueList = new ArrayList<LinkedList<KeyValueInterface<String, Integer>>>();
+		aKeyValueQueue.clear();
+		aReductionQueueList.clear();
+		result.clear();
+
+		if (!slavesStarted) {
+			for (int i = 0; i < threads.size(); i++) {
+				// TODO this cannot happen multiple times:
+				threads.get(i).start();
+			}
+			slavesStarted = true;
+		}
+		
+		// 2
+		for (int i = 0; i < threads.size(); i++) {
+			slaves.get(i).notifySlave();
+			aReductionQueueList.add(i, new LinkedList<KeyValueInterface<String, Integer>>());
+		}
+
+		// 3
+		final String tokens = inputString;
+		final List<String> listOfToken = Arrays.asList(tokens.split(space));
+		final IntSummingMapperInterface<String, Integer> aMapper = IntSummingMapperFactory.getMapper();
+
+		for (int i = 0; i < listOfToken.size(); i++) {
+			final int slaveNum = i % threads.size();
+			slaves.get(slaveNum).notifySlave();
+			final KeyValueInterface<String, Integer> keyVal = aMapper.map(listOfToken.get(i));
+
+			try {
+				traceEnqueueRequest(keyVal);
+				aKeyValueQueue.put(keyVal);
+				traceEnqueue(aKeyValueQueue);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			slaves.get(slaveNum).notifySlave();
+		}
+
+		// 5
+		for (int i = 0; i < threads.size(); i++) {
+			final KeyValueInterface<String, Integer> keyVal = new KeyValue<String, Integer>();
+			keyVal.setKey(null);
+			keyVal.setValue(null);
+			try {
+				traceEnqueueRequest(keyVal);
+				aKeyValueQueue.put(keyVal);
+				traceEnqueue(aKeyValueQueue);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			slaves.get(i).notifySlave();
+		}
+
+		// 6
+		joiner.join();
+
+		for (int i = 0; i < aReductionQueueList.size(); i++) {
+			final LinkedList<KeyValueInterface<String, Integer>> linkedList = aReductionQueueList.get(i);
+			for (int listIndex = 0; listIndex < linkedList.size(); listIndex++) {
+				result.put(linkedList.get(listIndex).getKey(), linkedList.get(listIndex).getValue());
+			}
+			traceAddedToMap(result, linkedList);
+		}
+
+		final String resultLabel = "Result";
+		final PropertyChangeEvent resultComputed = new PropertyChangeEvent(this, resultLabel, oldResult,
+				result.toString());
+		propertyChangeSupport.firePropertyChange(resultComputed);
+
 	}
 
 	@Override
 	public void computeResult() {
-		String oldResult = result.toString();
-		if (result.isEmpty()) {
-			oldResult = null;
-		}
-		final String tokens = inputString;
-		result.clear();
-
-		final String space = " ";
-		final List<String> ListOfToken = Arrays.asList(tokens.split(space));
-		final List<KeyValueInterface<String, Integer>> keyValList = mapper.map(ListOfToken);
-		result = reducer.reduce(keyValList);
-		final String label = "Result";
-		final PropertyChangeEvent resultComputed = new PropertyChangeEvent(this, label, oldResult,result.toString());
-		propertyChangeSupport.firePropertyChange(resultComputed);
+		return;
 	}
 
 	@Override

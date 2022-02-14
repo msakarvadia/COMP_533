@@ -10,6 +10,7 @@ public class Joiner extends AMapReduceTracer implements JoinerInterface {
 		count = numThreads;
 	}
 	
+	@Override
 	public int getTotalFinished() {
 		return totalFinish;
 	}
@@ -46,5 +47,6 @@ public class Joiner extends AMapReduceTracer implements JoinerInterface {
 		
 		
 	}
+	
 
 }

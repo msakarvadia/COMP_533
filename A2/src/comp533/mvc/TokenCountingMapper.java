@@ -1,7 +1,5 @@
 package comp533.mvc;
 
-import java.util.List;
-import java.util.ArrayList;
 import gradingTools.comp533s19.assignment0.AMapReduceTracer; 
 
 public class TokenCountingMapper extends AMapReduceTracer implements TokenCountingMapperInterface<String, Integer>{

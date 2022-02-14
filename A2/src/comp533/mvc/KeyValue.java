@@ -29,11 +29,12 @@ public class KeyValue<K, V> implements KeyValueInterface<K, V> {
 	@Override
 	public String toString() {
 		final String keyName;
+		final String aNull= "null";
 		if (key != null) {
 			keyName = key.toString();
 		}
 		else {
-			keyName = "null";
+			keyName = aNull;
 		}
 		
 		final String valName;
@@ -41,7 +42,7 @@ public class KeyValue<K, V> implements KeyValueInterface<K, V> {
 			valName = val.toString();
 		}
 		else {
-			valName = "null";
+			valName = aNull;
 		}
 			
 		final String string = "("+keyName+","+valName+")";

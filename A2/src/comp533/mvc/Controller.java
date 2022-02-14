@@ -6,6 +6,7 @@ import gradingTools.comp533s19.assignment0.AMapReduceTracer;
 public class Controller extends AMapReduceTracer implements ControllerInterface{
 	private ModelInterface model;
 	final String quit = "quit";
+	final String empty = "";
 	
 	@Override
 	public void processInput() {
@@ -17,8 +18,11 @@ public class Controller extends AMapReduceTracer implements ControllerInterface{
 		while (true) {
 			traceNumbersPrompt();
 			final String tokens = input.nextLine();
+			final String original_line = tokens;
 			model.setInputString(tokens);
+			
 			if (quit.equals(tokens)) {
+				model.terminate();
 				traceQuit();
 				input.close();
 				break;
