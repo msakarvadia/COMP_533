@@ -128,61 +128,25 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 			slavesStarted = true;
 		}
 
-		// 2
-		for (int i = 0; i < threads.size(); i++) {
-			slaves.get(i).notifySlave();
-			aReductionQueueList.add(i, new LinkedList<KeyValueInterface<String, Integer>>());
-		}
+	
+
+		aReductionQueueList = notifySlaves(slaves, aReductionQueueList);
 
 		// 3
 		final String tokens = inputString;
 		final List<String> listOfToken = Arrays.asList(tokens.split(space));
-		final TokenCountingMapperInterface<String, Integer> mapper = TokenCountingMapperFactory.getMapper();
+		
 
-		for (int i = 0; i < listOfToken.size(); i++) {
-			final int slaveNum = i % threads.size();
-			slaves.get(slaveNum).notifySlave();
-			final KeyValueInterface<String, Integer> keyVal = mapper.map(listOfToken.get(i));
+		aKeyValueQueue = mapping(aKeyValueQueue, listOfToken, slaves);
 
-			try {
-				traceEnqueueRequest(keyVal);
-				aKeyValueQueue.put(keyVal);
-				traceEnqueue(aKeyValueQueue);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-
-			slaves.get(slaveNum).notifySlave();
-		}
-
+	
 		// 5
-		for (int i = 0; i < threads.size(); i++) {
-			final KeyValueInterface<String, Integer> keyVal = new KeyValue<String, Integer>();
-			keyVal.setKey(null);
-			keyVal.setValue(null);
-			try {
-				traceEnqueueRequest(keyVal);
-				aKeyValueQueue.put(keyVal);
-				traceEnqueue(aKeyValueQueue);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-			slaves.get(i).notifySlave();
-		}
+		aKeyValueQueue = enqueuer(threads, slaves, aKeyValueQueue);
+
 
 		// 6
 		joiner.join();
 		result = combineReductionQueueList(aReductionQueueList, result);
-		/*
-		 * for (int i = 0; i < aReductionQueueList.size(); i++) { final
-		 * LinkedList<KeyValueInterface<String, Integer>> linkedList =
-		 * aReductionQueueList.get(i); for (int listIndex = 0; listIndex <
-		 * linkedList.size(); listIndex++) {
-		 * result.put(linkedList.get(listIndex).getKey(),
-		 * linkedList.get(listIndex).getValue()); } traceAddedToMap(result, linkedList);
-		 * }
-		 */
 
 		final String resultLabel = "Result";
 
@@ -237,17 +201,14 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 		Map<String, Integer> results = aResult;
 		for (int i = 0; i < reductionQueueList.size(); i++) {
 			final LinkedList<KeyValueInterface<String, Integer>> linkedList = reductionQueueList.get(i);
-			/*
-			 * for (int listIndex = 0; listIndex < linkedList.size(); listIndex++) {
-			 * aResult.put(linkedList.get(listIndex).getKey(),
-			 * linkedList.get(listIndex).getValue()); }
-			 */
+
 			results = getResults(reductionQueueList, aResult, i);
 			traceAddedToMap(results, linkedList);
 		}
 		return results;
 	}
 
+	@Override
 	public Map<String, Integer> getResults(
 			final List<LinkedList<KeyValueInterface<String, Integer>>> reductionQueueList,
 			final Map<String, Integer> resultMap, final int index) {
@@ -258,5 +219,64 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 		}
 		return results;
 
+	}
+
+	@Override
+	public BlockingQueue<KeyValueInterface<String, Integer>> enqueuer(final List<Thread> aThreads,
+			final List<SlaveInterface> aSlaves, final BlockingQueue<KeyValueInterface<String, Integer>> keyValueQueue) {
+
+		final BlockingQueue<KeyValueInterface<String, Integer>> keyValQueue = keyValueQueue;
+		for (int i = 0; i < aThreads.size(); i++) {
+			final KeyValueInterface<String, Integer> keyVal = new KeyValue<String, Integer>();
+			keyVal.setKey(null);
+			keyVal.setValue(null);
+			try {
+				traceEnqueueRequest(keyVal);
+				keyValQueue.put(keyVal);
+				traceEnqueue(keyValQueue);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			aSlaves.get(i).notifySlave();
+		}
+		return keyValQueue;
+
+	}
+
+	@Override
+	public List<LinkedList<KeyValueInterface<String, Integer>>> notifySlaves(final List<SlaveInterface> aSlaves,
+			final List<LinkedList<KeyValueInterface<String, Integer>>> redQueue) {
+		final List<LinkedList<KeyValueInterface<String, Integer>>> reductionQueue = redQueue;
+		for (int i = 0; i < aSlaves.size(); i++) {
+			aSlaves.get(i).notifySlave();
+			reductionQueue.add(i, new LinkedList<KeyValueInterface<String, Integer>>());
+		}
+		return reductionQueue;
+	}
+
+	@Override
+	public BlockingQueue<KeyValueInterface<String, Integer>> mapping(
+			final BlockingQueue<KeyValueInterface<String, Integer>> keyValueQueue, final List<String> listOfToken,
+			final List<SlaveInterface> salves) {
+		
+		final TokenCountingMapperInterface<String, Integer> mapper = TokenCountingMapperFactory.getMapper();
+		
+		for (int i = 0; i < listOfToken.size(); i++) {
+			final int slaveNum = i % slaves.size();
+			slaves.get(slaveNum).notifySlave();
+			final KeyValueInterface<String, Integer> keyVal = mapper.map(listOfToken.get(i));
+
+			try {
+				traceEnqueueRequest(keyVal);
+				aKeyValueQueue.put(keyVal);
+				traceEnqueue(keyValueQueue);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+			slaves.get(slaveNum).notifySlave();
+		}
+		return aKeyValueQueue;
 	}
 }
