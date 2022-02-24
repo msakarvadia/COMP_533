@@ -1,0 +1,12 @@
+2/7/2022 15:33:01 PM	2_ConcurrentMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/11lJlYtS8vs4EcIoaE7zFq1B2eUB4DIN1/edit
+2/7/2022 15:43:18 PM	COMP 533 (4 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=64
+2/7/2022 15:43:47 PM	COMP 533 (3 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=69
+2/7/2022 15:43:28 PM	COMP 533 (3 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=68
+2/7/2022 15:47:50 PM	tf.boolean_mask  |  TensorFlow Core v2.8.0	https://www.tensorflow.org/api_docs/python/tf/boolean_mask
+2/7/2022 16:30:45 PM	Python valueerror: too many values to unpack (expected 2) | Career Karma	https://careerkarma.com/blog/python-valueerror-too-many-values-to-unpack-expected-2/
+2/7/2022 16:34:01 PM	How to iterate over two lists at the same time in Python	https://www.kite.com/python/answers/how-to-iterate-over-two-lists-at-the-same-time-in-python#:~:text=Use%20zip()%20and%20a,length%20of%20the%20shorter%20list.
+2/7/2022 16:35:41 PM	Progress bar with tqdm while iterating over the items in a python dictionary - Stack Overflow	https://stackoverflow.com/questions/49782598/progress-bar-with-tqdm-while-iterating-over-the-items-in-a-python-dictionary
+2/7/2022 16:35:59 PM	python - How to iterate over two dictionaries at once and get a result using values and keys from both - Stack Overflow	https://stackoverflow.com/questions/20736709/how-to-iterate-over-two-dictionaries-at-once-and-get-a-result-using-values-and-k/46367305
+2/7/2022 16:44:26 PM	Chase - Carolina Dining Services	https://dining.unc.edu/locations/chase/
+2/7/2022 16:45:44 PM	Locations - Carolina Dining Services	https://dining.unc.edu/locations
+2/7/2022 16:45:58 PM	Top of Lenoir - Carolina Dining Services	https://dining.unc.edu/locations/top-of-lenoir/

@@ -101,3 +101,16 @@
 1/25/2022 15:24:00 PM	drop-in check-in	https://virtualdropins.oasis.unc.edu/dropin/j_spring_cas_security_check?ticket=ST-3200-gDSGk7tygWrgtYG5sPNpPhigLhs-ed7d18d18d80
 1/25/2022 15:32:02 PM	drop-in check-in	https://virtualdropins.oasis.unc.edu/dropin/
 1/25/2022 15:37:05 PM	drop-in check-in	https://virtualdropins.oasis.unc.edu/dropin/
+1/25/2022 15:48:33 PM		https://piazza.com/class
+1/25/2022 15:48:33 PM	COMP 533 (3 unread)	https://piazza.com/class/kxx594eo8fl3y2
+1/25/2022 15:48:28 PM	Piazza • Ask. Answer. Explore. Whenever.	https://piazza.com/
+1/25/2022 15:48:35 PM	COMP 533 (3 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=53
+1/25/2022 15:48:28 PM	Piazza • Ask. Answer. Explore. Whenever.	https://piazza.com/class/kxx594eo8fl3y2?cid=7
+1/25/2022 16:04:38 PM	COMP 533 (3 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=6
+1/25/2022 16:04:41 PM	A Guide to Checkstyle.docx - Google Docs	https://docs.google.com/document/d/17SQfQ_bVNvBPIfv9GiOdNHttH3h18JuG/edit?usp=sharing&ouid=102909801833172864857&rtpof=true&sd=true
+1/25/2022 16:04:41 PM	A Guide to Checkstyle.docx - Google Docs	https://docs.google.com/document/d/17SQfQ_bVNvBPIfv9GiOdNHttH3h18JuG/edit?rtpof=true&sd=true
+1/25/2022 16:04:47 PM	A Guide to Checkstyle.docx - Google Docs	https://docs.google.com/document/d/17SQfQ_bVNvBPIfv9GiOdNHttH3h18JuG/edit
+1/25/2022 17:40:52 PM	https://piazza.com/class	https://piazza.com/class
+1/25/2022 17:59:09 PM	COMP 533 (2 unread)	https://piazza.com/class/kxx594eo8fl3y2
+1/25/2022 16:24:11 PM	Appointments	https://hubappts.oasis.unc.edu/
+1/25/2022 16:47:12 PM	COMP 533 (3 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=57

@@ -1,0 +1,219 @@
+<Events startTimestamp="1643304316133" logVersion="1.0.0.202111260825">
+  <Command __id="2" _type="EclipseCommand" commandID="" date="Thu Jan 27 12:25:19 EST 2022" starttimestamp="1643304316133" timestamp="3161" />
+  <Command __id="4" _type="EclipseCommand" commandID="" date="Thu Jan 27 12:25:19 EST 2022" starttimestamp="1643304316133" timestamp="3312" />
+  <Command __id="0" _type="DiffBasedFileOpenCommand" date="Thu Jan 27 12:25:16 EST 2022" docASTNodeCount="155" docActiveCodeLength="861" docExpressionCount="84" docLength="861" projectName="A1" starttimestamp="1643304316133" timestamp="492">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\TokenCountingMapper.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+
+import java.util.List;
+import java.util.ArrayList;
+import gradingTools.comp533s19.assignment0.AMapReduceTracer; 
+
+public class TokenCountingMapper extends AMapReduceTracer implements TokenCountingMapperInterface<String, Integer>{
+	final static int ONE = 1;
+	
+	@Override
+	public List<KeyValueInterface<String, Integer>> map(final List<java.lang.String> aStrings) {
+		final List<KeyValueInterface<String, Integer>> keyValList = new ArrayList<KeyValueInterface<String, Integer>> ();
+		for (String a : aStrings) {
+			final KeyValueInterface<String, Integer> keyVal = new KeyValue<String, Integer>();
+			keyVal.setKey(a);
+			keyVal.setValue(ONE);
+			keyValList.add(keyVal);
+		}
+		traceMap(aStrings ,keyValList);
+		return keyValList;
+	}
+	
+	@Override
+	public String toString() {
+		return TOKEN_COUNTING_MAPPER; 
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="6" _type="PauseCommand" date="Thu Jan 27 12:25:33 EST 2022" range="10s-20s" starttimestamp="1643304316133" timestamp="17312">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[13999]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="7" _type="MoveCaretCommand" caretOffset="737" date="Thu Jan 27 12:25:33 EST 2022" docOffset="922" starttimestamp="1643304316133" timestamp="17646" />
+  <Command __id="5" _type="DiffBasedFileOpenCommand" date="Thu Jan 27 12:25:33 EST 2022" docASTNodeCount="318" docActiveCodeLength="1992" docExpressionCount="183" docLength="2167" projectName="A1" starttimestamp="1643304316133" timestamp="17311">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\SummingModel.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+//import gradingTools.comp533s19.assignment0.AMapReduceTracer;
+
+//public class SummingModel extends AMapReduceTracer implements ModelInterface
+public class SummingModel extends Model implements ModelInterface{
+	private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
+	private String inputString = null;
+	private Map<String, Integer> result = new HashMap<String, Integer>();
+	final ReducerInterface<String, Integer> reducer = ReducerFactory.getReducer();
+	final IntSummingMapperInterface<String, Integer> mapper = IntSummingMapperFactory.getMapper();
+
+	
+	@Override
+	public Map<String, Integer> getResult() {
+		return result;
+	}
+
+	@Override
+	public void addPropertyChangeListener(final PropertyChangeListener newListener) {
+		propertyChangeSupport.addPropertyChangeListener(newListener);
+	}
+
+	@Override
+	public void setInputString(final String newVal) {
+		final String oldString = inputString;
+		inputString = newVal;
+		final String label = "InputString";
+		final PropertyChangeEvent inputEvent = new PropertyChangeEvent(this, label, oldString, newVal);
+		propertyChangeSupport.firePropertyChange(inputEvent);
+	}
+
+	@Override
+	public void computeResult() {
+		String oldResult = result.toString();
+		if (result.isEmpty()) {
+			oldResult = null;
+		}
+		final String tokens = inputString;
+		result.clear();
+
+		final String space = " ";
+		final List<String> ListOfToken = Arrays.asList(tokens.split(space));
+		final List<KeyValueInterface<String, Integer>> keyValList = mapper.map(ListOfToken);
+		result = reducer.reduce(keyValList);
+		final String label = "Result";
+		final PropertyChangeEvent resultComputed = new PropertyChangeEvent(this, label, oldResult,result.toString());
+		propertyChangeSupport.firePropertyChange(resultComputed);
+	}
+
+	@Override
+	public String toString() {// overriding the toString() method
+		return MODEL;
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="9" _type="PauseCommand" date="Thu Jan 27 12:25:57 EST 2022" range="20s-30s" starttimestamp="1643304316133" timestamp="41026">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[23380]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="10" _type="MoveCaretCommand" caretOffset="0" date="Thu Jan 27 12:25:57 EST 2022" docOffset="0" starttimestamp="1643304316133" timestamp="41271" />
+  <Command __id="8" _type="DiffBasedFileOpenCommand" date="Thu Jan 27 12:25:57 EST 2022" docASTNodeCount="68" docActiveCodeLength="475" docExpressionCount="36" docLength="475" projectName="A1" starttimestamp="1643304316133" timestamp="41026">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\StandAloneIntSumming.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+
+public class StandAloneIntSumming {
+	public static void main(final String[] args) {
+		
+		
+		final ViewInterface view = new View();
+		
+		final ModelInterface model = new SummingModel();
+		model.addPropertyChangeListener(view);
+		IntSummingMapperFactory.setMapper(IntSummingMapperFactory.getMapper());
+		
+		final ControllerInterface controller = new Controller();
+		controller.setModel(model);
+		controller.processInput();
+		
+		
+	}
+}
+
+]]></snapshot>
+  </Command>
+  <Command __id="12" _type="PauseCommand" date="Thu Jan 27 12:26:15 EST 2022" range="10s-20s" starttimestamp="1643304316133" timestamp="59287">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[18016]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="11" _type="DiffBasedFileOpenCommand" date="Thu Jan 27 12:26:15 EST 2022" docASTNodeCount="82" docActiveCodeLength="530" docExpressionCount="41" docLength="530" projectName="A1" starttimestamp="1643304316133" timestamp="59287">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\ReducerFactory.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+import gradingTools.comp533s19.assignment0.AMapReduceTracer; 
+
+public class ReducerFactory extends AMapReduceTracer{
+	private static ReducerInterface<String, Integer> reducer;
+	
+	public static ReducerInterface<String, Integer> getReducer() {
+		if (reducer == null) {
+			reducer = new Reducer();
+		}
+		return reducer;
+	}
+	
+	public static void setReducer(final ReducerInterface<String, Integer> newReducer) {
+		reducer = newReducer;
+		traceSingletonChange(ReducerFactory.class, reducer);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="13" _type="MoveCaretCommand" caretOffset="0" date="Thu Jan 27 12:26:15 EST 2022" docOffset="0" starttimestamp="1643304316133" timestamp="59434" />
+  <Command __id="15" _type="MoveCaretCommand" caretOffset="0" date="Thu Jan 27 12:26:16 EST 2022" docOffset="0" starttimestamp="1643304316133" timestamp="59914" />
+  <Command __id="14" _type="DiffBasedFileOpenCommand" date="Thu Jan 27 12:26:15 EST 2022" docASTNodeCount="68" docActiveCodeLength="475" docExpressionCount="36" docLength="475" projectName="A1" starttimestamp="1643304316133" timestamp="59680">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\StandAloneIntSumming.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package comp533.mvc;¶¶public class StandAloneIntSumming {¶	public static void main(final String[] args) {¶		¶		¶		final ViewInterface view = new View();¶		¶		final ModelInterface model = new SummingModel();¶		model.addPropertyChangeListener(view);¶		IntSummingMapperFactory.setMapper(IntSummingMapperFactory.getMapper());¶		¶		final ControllerInterface controller = new Controller();¶		controller.setModel(model);¶		controller.processInput();¶		¶		¶	}¶}¶¶")]]]></diff>
+  </Command>
+  <Command __id="17" _type="PauseCommand" date="Thu Jan 27 12:26:20 EST 2022" range="2s-5s" starttimestamp="1643304316133" timestamp="63946">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[4032]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="18" _type="SelectTextCommand" caretOffset="237" date="Thu Jan 27 12:26:20 EST 2022" end="237" start="225" starttimestamp="1643304316133" timestamp="64077" />
+  <Command __id="19" _type="MoveCaretCommand" caretOffset="713" date="Thu Jan 27 12:26:21 EST 2022" docOffset="898" starttimestamp="1643304316133" timestamp="65048" />
+  <Command __id="16" _type="DiffBasedFileOpenCommand" date="Thu Jan 27 12:26:20 EST 2022" docASTNodeCount="318" docActiveCodeLength="1992" docExpressionCount="183" docLength="2167" projectName="A1" starttimestamp="1643304316133" timestamp="63946">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\SummingModel.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package comp533.mvc;¶¶import java.beans.PropertyChangeEvent;¶import java.beans.PropertyChangeListener;¶import java.beans.PropertyChangeSupport;¶import java.util.Arrays;¶import java.util.HashMap;¶import java.util.List;¶import java.util.Map;¶¶//import gradingTools.comp533s19.assignment0.AMapReduceTracer;¶¶//public class SummingModel extends AMapReduceTracer implements ModelInterface¶public class SummingModel extends Model implements ModelInterface{¶	private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);¶	private String inputString = null;¶	private Map<String, Integer> result = new HashMap<String, Integer>();¶	final ReducerInterface<String, Integer> reducer = ReducerFactory.getReducer();¶	final IntSummingMapperInterface<String, Integer> mapper = IntSummingMapperFactory.getMapper();¶¶	¶	@Override¶	public Map<String, Integer> getResult() {¶		return result;¶	}¶¶	@Override¶	public void addPropertyChangeListener(final PropertyChangeListener newListener) {¶		propertyChangeSupport.addPropertyChangeListener(newListener);¶	}¶¶	@Override¶	public void setInputString(final String newVal) {¶		final String oldString = inputString;¶		inputString = newVal;¶		final String label = "InputString";¶		final PropertyChangeEvent inputEvent = new PropertyChangeEvent(this, label, oldString, newVal);¶		propertyChangeSupport.firePropertyChange(inputEvent);¶	}¶¶	@Override¶	public void computeResult() {¶		String oldResult = result.toString();¶		if (result.isEmpty()) {¶			oldResult = null;¶		}¶		final String tokens = inputString;¶		result.clear();¶¶		final String space = " ";¶		final List<String> ListOfToken = Arrays.asList(tokens.split(space));¶		final List<KeyValueInterface<String, Integer>> keyValList = mapper.map(ListOfToken);¶		result = reducer.reduce(keyValList);¶		final String label = "Result";¶		final PropertyChangeEvent resultComputed = new PropertyChangeEvent(this, label, oldResult,result.toString());¶		propertyChangeSupport.firePropertyChange(resultComputed);¶	}¶¶	@Override¶	public String toString() {// overriding the toString() method¶		return MODEL;¶	}¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="21" _type="PauseCommand" date="Thu Jan 27 12:26:45 EST 2022" range="20s-30s" starttimestamp="1643304316133" timestamp="88936">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[23888]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="22" _type="MoveCaretCommand" caretOffset="0" date="Thu Jan 27 12:26:45 EST 2022" docOffset="0" starttimestamp="1643304316133" timestamp="89056" />
+  <Command __id="24" _type="PauseCommand" date="Thu Jan 27 12:27:19 EST 2022" range="30s-1m" starttimestamp="1643304316133" timestamp="123832">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[34775]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="23" _type="ShellCommand" date="Thu Jan 27 12:27:19 EST 2022" starttimestamp="1643304316133" timestamp="123831" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="26" _type="PauseCommand" date="Thu Jan 27 12:27:21 EST 2022" range="1s-2s" starttimestamp="1643304316133" timestamp="125199">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1367]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+</Events>

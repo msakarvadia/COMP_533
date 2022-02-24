@@ -1,0 +1,2 @@
+Id,Prediction,Date,File,StartTime,ElapsedTime,BusyTime,Commands,editOrInsertPercentage,debugPercentage,navigationPercentage,focusPercentage,removePercentage,editPercentage,COMMAND_RATE,NAVIGATION_RATE,DEBUG_RATE,FOCUS_RATE,EDIT_RATE,REMOVE_RATE,INSERT_RATE,webLinkTimes,Web Page Visits
+3,,Wed Feb 23 10:10:58 EST 2022,A2Tests.java,1645629058573,30547,0,(I)1(R)1(I)1(R)1(I)1(R)1(I)1(R)1(I)1(R)1(I)3,0.6153846153846154,0.0,0.0,0.0,0.0,0.0,0.43333333333333335,0.0,0.0,0.0,0.0,0.16666666666666666,0.26666666666666666,0.0,[]

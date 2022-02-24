@@ -1,0 +1,627 @@
+<Events startTimestamp="1644341143271" logVersion="1.0.0.202111260825">
+  <Command __id="18" _type="EclipseCommand" commandID="" date="Tue Feb 08 12:28:07 EST 2022" starttimestamp="1644341143271" timestamp="144073" />
+  <Command __id="20" _type="EclipseCommand" commandID="" date="Tue Feb 08 12:28:07 EST 2022" starttimestamp="1644341143271" timestamp="144116" />
+  <Command __id="21" _type="ShellCommand" date="Tue Feb 08 12:28:07 EST 2022" starttimestamp="1644341143271" timestamp="144166" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="23" _type="MoveCaretCommand" caretOffset="0" date="Tue Feb 08 12:28:08 EST 2022" docOffset="0" starttimestamp="1644341143271" timestamp="145090" />
+  <Command __id="0" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:25:44 EST 2022" docASTNodeCount="30" docActiveCodeLength="166" docExpressionCount="12" docLength="166" projectName="A2" starttimestamp="1644341143271" timestamp="1073">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\partitioner\PartitionerInterface.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package partitioner;
+
+public interface PartitionerInterface<K, V> {
+	public int getPartitioner(K key, V value, int numPartitions);
+	public String toString();
+}
+]]></snapshot>
+  </Command>
+  <Command __id="14" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:27:53 EST 2022" docASTNodeCount="6" docActiveCodeLength="57" docExpressionCount="2" docLength="57" projectName="A2" starttimestamp="1644341143271" timestamp="130042">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\partitioner\Partitioner.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package partitioner;
+
+public class Partitioner {
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="22" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:28:07 EST 2022" docASTNodeCount="6" docActiveCodeLength="64" docExpressionCount="2" docLength="64" projectName="A2" starttimestamp="1644341143271" timestamp="144716">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\partitioner\PartitionerFactory.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package partitioner;
+
+public class PartitionerFactory {
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="25" _type="PauseCommand" date="Tue Feb 08 12:28:20 EST 2022" range="10s-20s" starttimestamp="1644341143271" timestamp="157591">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[12501]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="26" _type="MoveCaretCommand" caretOffset="0" date="Tue Feb 08 12:28:21 EST 2022" docOffset="0" starttimestamp="1644341143271" timestamp="158085" />
+  <Command __id="28" _type="PauseCommand" date="Tue Feb 08 12:28:25 EST 2022" range="2s-5s" starttimestamp="1644341143271" timestamp="161811">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[3726]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="27" _type="SelectTextCommand" caretOffset="142" date="Tue Feb 08 12:28:25 EST 2022" end="525" start="142" starttimestamp="1644341143271" timestamp="161811" />
+  <Command __id="30" _type="PauseCommand" date="Tue Feb 08 12:28:27 EST 2022" range="2s-5s" starttimestamp="1644341143271" timestamp="164072">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[2261]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[CopyCommand]]></next>
+  </Command>
+  <Command __id="34" _type="MoveCaretCommand" caretOffset="59" date="Tue Feb 08 12:28:35 EST 2022" docOffset="59" starttimestamp="1644341143271" timestamp="172019" />
+  <Command __id="45" _type="PasteCommand" date="Tue Feb 08 12:28:36 EST 2022" starttimestamp="1644341143271" timestamp="173199" />
+  <Command __id="31" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:28:33 EST 2022" docASTNodeCount="6" docActiveCodeLength="64" docExpressionCount="2" docLength="64" projectName="A2" starttimestamp="1644341143271" timestamp="170277">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\partitioner\PartitionerFactory.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package partitioner;¶¶public class PartitionerFactory {¶¶}¶")]]]></diff>
+  </Command>
+  <DocumentChange __id="36" _type="Insert" date="Tue Feb 08 12:28:36 EST 2022" docASTNodeCount="70" docActiveCodeLength="447" docExpressionCount="31" docLength="447" length="383" offset="59" starttimestamp="1644341143271" timestamp="172735">
+    <text><![CDATA[	private static ReducerInterface<String, Integer> reducer;
+	
+	public static ReducerInterface<String, Integer> getReducer() {
+		if (reducer == null) {
+			reducer = new Reducer();
+		}
+		return reducer;
+	}
+	
+	public static void setReducer(final ReducerInterface<String, Integer> newReducer) {
+		reducer = newReducer;
+		traceSingletonChange(ReducerFactory.class, reducer);
+	}]]></text>
+  </DocumentChange>
+  <DocumentChange __id="37" _type="Delete" date="Tue Feb 08 12:28:36 EST 2022" docASTNodeCount="70" docActiveCodeLength="443" docExpressionCount="31" docLength="443" endLine="2" length="4" offset="20" startLine="0" starttimestamp="1644341143271" timestamp="173021">
+    <text><![CDATA[
+
+]]></text>
+  </DocumentChange>
+  <DocumentChange __id="38" _type="Insert" date="Tue Feb 08 12:28:36 EST 2022" docASTNodeCount="88" docActiveCodeLength="552" docExpressionCount="46" docLength="552" length="109" offset="20" repeat="7" starttimestamp="1644341143271" timestamp="173026" timestamp2="173052">
+    <text><![CDATA[
+
+import comp533.mvc.Reducer;
+import comp533.mvc.ReducerFactory;
+import comp533.mvc.ReducerInterface;
+
+]]></text>
+  </DocumentChange>
+  <Command __id="47" _type="PauseCommand" date="Tue Feb 08 12:28:38 EST 2022" range="1s-2s" starttimestamp="1644341143271" timestamp="175010">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[PasteCommand]]></prev>
+    <pause><![CDATA[1811]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="48" _type="SelectTextCommand" caretOffset="142" date="Tue Feb 08 12:28:38 EST 2022" end="525" start="142" starttimestamp="1644341143271" timestamp="175471" />
+  <Command __id="50" _type="PauseCommand" date="Tue Feb 08 12:28:40 EST 2022" range="1s-2s" starttimestamp="1644341143271" timestamp="177442">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[1971]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="61" _type="SelectTextCommand" caretOffset="91" date="Tue Feb 08 12:28:45 EST 2022" end="192" start="91" starttimestamp="1644341143271" timestamp="182417" />
+  <Command __id="64" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Tue Feb 08 12:28:46 EST 2022" starttimestamp="1644341143271" timestamp="182834" />
+  <Command __id="66" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Tue Feb 08 12:28:46 EST 2022" starttimestamp="1644341143271" timestamp="183236" />
+  <Command __id="46" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:28:38 EST 2022" docASTNodeCount="82" docActiveCodeLength="530" docExpressionCount="41" docLength="530" projectName="A1" starttimestamp="1644341143271" timestamp="175010">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\ReducerFactory.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package comp533.mvc;¶import gradingTools.comp533s19.assignment0.AMapReduceTracer; ¶¶public class ReducerFactory extends AMapReduceTracer{¶	private static ReducerInterface<String, Integer> reducer;¶	¶	public static ReducerInterface<String, Integer> getReducer() {¶		if (reducer == null) {¶			reducer = new Reducer();¶		}¶		return reducer;¶	}¶	¶	public static void setReducer(final ReducerInterface<String, Integer> newReducer) {¶		reducer = newReducer;¶		traceSingletonChange(ReducerFactory.class, reducer);¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="52" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:28:41 EST 2022" docASTNodeCount="88" docActiveCodeLength="552" docExpressionCount="46" docLength="552" projectName="A2" starttimestamp="1644341143271" timestamp="178636">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\partitioner\PartitionerFactory.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package partitioner;¶¶"), Diff(DELETE,"public class PartitionerFactory {¶"), Diff(INSERT,"import comp533.mvc.Reducer;¶import comp533.mvc.ReducerFactory;¶import comp533.mvc.ReducerInterface;¶¶public class PartitionerFactory {¶	private static ReducerInterface<String, Integer> reducer;¶	¶	public static ReducerInterface<String, Integer> getReducer() {¶		if (reducer == null) {¶			reducer = new Reducer();¶		}¶		return reducer;¶	}¶	¶	public static void setReducer(final ReducerInterface<String, Integer> newReducer) {¶		reducer = newReducer;¶		traceSingletonChange(ReducerFactory.class, reducer);¶	}"), Diff(EQUAL,"¶}¶")]]]></diff>
+    <snapshot><![CDATA[package partitioner;
+
+import comp533.mvc.Reducer;
+import comp533.mvc.ReducerFactory;
+import comp533.mvc.ReducerInterface;
+
+public class PartitionerFactory {
+	private static ReducerInterface<String, Integer> reducer;
+	
+	public static ReducerInterface<String, Integer> getReducer() {
+		if (reducer == null) {
+			reducer = new Reducer();
+		}
+		return reducer;
+	}
+	
+	public static void setReducer(final ReducerInterface<String, Integer> newReducer) {
+		reducer = newReducer;
+		traceSingletonChange(ReducerFactory.class, reducer);
+	}
+}
+]]></snapshot>
+  </Command>
+  <DocumentChange __id="55" _type="Insert" date="Tue Feb 08 12:28:43 EST 2022" docASTNodeCount="96" docActiveCodeLength="619" docExpressionCount="53" docLength="619" length="67" offset="20" repeat="3" starttimestamp="1644341143271" timestamp="180172" timestamp2="180600">
+    <text><![CDATA[
+
+import gradingTools.comp533s19.assignment0.AMapReduceTracer; 
+]]></text>
+  </DocumentChange>
+  <DocumentChange __id="63" _type="Delete" date="Tue Feb 08 12:28:46 EST 2022" docASTNodeCount="78" docActiveCodeLength="516" docExpressionCount="38" docLength="516" endLine="7" length="103" offset="89" repeat="2" startLine="4" starttimestamp="1644341143271" timestamp="182827" timestamp2="183231">
+    <text><![CDATA[
+import comp533.mvc.Reducer;
+import comp533.mvc.ReducerFactory;
+import comp533.mvc.ReducerInterface;]]></text>
+  </DocumentChange>
+  <Command __id="68" _type="PauseCommand" date="Tue Feb 08 12:28:47 EST 2022" range="1s-2s" starttimestamp="1644341143271" timestamp="184656">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1420]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="69" _type="SelectTextCommand" caretOffset="22" date="Tue Feb 08 12:28:48 EST 2022" end="85" start="22" starttimestamp="1644341143271" timestamp="184855" />
+  <Command __id="71" _type="PauseCommand" date="Tue Feb 08 12:28:51 EST 2022" range="2s-5s" starttimestamp="1644341143271" timestamp="187913">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[3058]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="145" _type="SelectTextCommand" caretOffset="335" date="Tue Feb 08 12:29:23 EST 2022" end="342" start="335" starttimestamp="1644341143271" timestamp="220214" />
+  <Command __id="148" _type="PasteCommand" date="Tue Feb 08 12:29:23 EST 2022" starttimestamp="1644341143271" timestamp="220423" />
+  <DocumentChange __id="115" _type="Insert" date="Tue Feb 08 12:29:11 EST 2022" docASTNodeCount="80" docActiveCodeLength="547" docExpressionCount="39" docLength="547" length="9" offset="235" repeat="9" starttimestamp="1644341143271" timestamp="208689" timestamp2="209133">
+    <text><![CDATA[aritioner]]></text>
+  </DocumentChange>
+  <DocumentChange __id="139" _type="Replace" date="Tue Feb 08 12:29:18 EST 2022" docASTNodeCount="80" docActiveCodeLength="550" docExpressionCount="39" docLength="550" endLine="10" insertionLength="10" int_docASTNodeCount="78" int_docActiveCodeLength="540" int_docExpressionCount="37" int_docLength="540" length="7" offset="293" startLine="10" starttimestamp="1644341143271" timestamp="215644">
+    <deletedText><![CDATA[reducer]]></deletedText>
+    <insertedText><![CDATA[Paritioner]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="143" _type="Replace" date="Tue Feb 08 12:29:21 EST 2022" docASTNodeCount="80" docActiveCodeLength="552" docExpressionCount="39" docLength="552" endLine="11" insertionLength="13" int_docASTNodeCount="78" int_docActiveCodeLength="539" int_docExpressionCount="37" int_docLength="539" length="11" offset="316" startLine="11" starttimestamp="1644341143271" timestamp="218045">
+    <deletedText><![CDATA[			reducer ]]></deletedText>
+    <insertedText><![CDATA[			Paritioner]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="147" _type="Replace" date="Tue Feb 08 12:29:23 EST 2022" docASTNodeCount="80" docActiveCodeLength="555" docExpressionCount="39" docLength="555" endLine="11" insertionLength="10" int_docASTNodeCount="67" int_docActiveCodeLength="545" int_docExpressionCount="31" int_docLength="545" length="7" offset="335" startLine="11" starttimestamp="1644341143271" timestamp="220406">
+    <deletedText><![CDATA[Reducer]]></deletedText>
+    <insertedText><![CDATA[Paritioner]]></insertedText>
+  </DocumentChange>
+  <Command __id="150" _type="PauseCommand" date="Tue Feb 08 12:29:28 EST 2022" range="5s-10s" starttimestamp="1644341143271" timestamp="225676">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[PasteCommand]]></prev>
+    <pause><![CDATA[5253]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="151" _type="SelectTextCommand" caretOffset="115" date="Tue Feb 08 12:29:29 EST 2022" end="139" start="115" starttimestamp="1644341143271" timestamp="225924" />
+  <Command __id="153" _type="PauseCommand" date="Tue Feb 08 12:29:34 EST 2022" range="5s-10s" starttimestamp="1644341143271" timestamp="231374">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[5450]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="342" _type="MoveCaretCommand" caretOffset="0" date="Tue Feb 08 12:31:20 EST 2022" docOffset="0" starttimestamp="1644341143271" timestamp="336990" />
+  <Command __id="340" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:31:20 EST 2022" docASTNodeCount="6" docActiveCodeLength="57" docExpressionCount="2" docLength="57" projectName="A2" starttimestamp="1644341143271" timestamp="336759">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\partitioner\Partitioner.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package partitioner;¶¶public class Partitioner {¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="344" _type="PauseCommand" date="Tue Feb 08 12:31:26 EST 2022" range="5s-10s" starttimestamp="1644341143271" timestamp="342802">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[5812]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="345" _type="MoveCaretCommand" caretOffset="0" date="Tue Feb 08 12:31:26 EST 2022" docOffset="0" starttimestamp="1644341143271" timestamp="343199" />
+  <Command __id="347" _type="PauseCommand" date="Tue Feb 08 12:31:32 EST 2022" range="5s-10s" starttimestamp="1644341143271" timestamp="349701">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[6502]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="429" _type="MoveCaretCommand" caretOffset="339" date="Tue Feb 08 12:32:04 EST 2022" docOffset="339" starttimestamp="1644341143271" timestamp="380810" />
+  <Command __id="427" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:32:03 EST 2022" docASTNodeCount="80" docActiveCodeLength="584" docExpressionCount="39" docLength="584" projectName="A2" starttimestamp="1644341143271" timestamp="380211">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\partitioner\PartitionerFactory.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package partitioner;¶¶import gradingTools.comp533s19.assignment0.AMapReduceTracer; ¶¶¶¶public class PartitionerFactory extends AMapReduceTracer{¶	private static PartitionerInterface<String, Integer> "), Diff(DELETE,"reduc"), Diff(INSERT,"Parition"), Diff(EQUAL,"er;¶	¶	public static Par"), Diff(INSERT,"t"), Diff(EQUAL,"itionerInterface<String, Integer> getReducer() {¶		if (Paritioner == null) {¶			Paritioner= new Paritioner();¶		}¶		return "), Diff(DELETE,"reduc"), Diff(INSERT,"Parition"), Diff(EQUAL,"er;¶	}¶	¶	public static void setReducer(final "), Diff(DELETE,"Reduc"), Diff(INSERT,"Partition"), Diff(EQUAL,"erInterface<String, Integer> new"), Diff(DELETE,"Reducer) {¶		reducer = newReduc"), Diff(INSERT,"Partitioner) {¶		partitioner = newPartition"), Diff(EQUAL,"er;¶		traceSingletonChange("), Diff(DELETE,"Reduc"), Diff(INSERT,"Parition"), Diff(EQUAL,"erFactory.class, "), Diff(DELETE,"reduc"), Diff(INSERT,"parition"), Diff(EQUAL,"er);¶	}¶}¶")]]]></diff>
+    <snapshot><![CDATA[package partitioner;
+
+import gradingTools.comp533s19.assignment0.AMapReduceTracer; 
+
+
+
+public class PartitionerFactory extends AMapReduceTracer{
+	private static PartitionerInterface<String, Integer> Paritioner;
+	
+	public static PartitionerInterface<String, Integer> getReducer() {
+		if (Paritioner == null) {
+			Paritioner= new Paritioner();
+		}
+		return Paritioner;
+	}
+	
+	public static void setReducer(final PartitionerInterface<String, Integer> newPartitioner) {
+		partitioner = newPartitioner;
+		traceSingletonChange(ParitionerFactory.class, paritioner);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="431" _type="PauseCommand" date="Tue Feb 08 12:32:33 EST 2022" range="20s-30s" starttimestamp="1644341143271" timestamp="410169">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[29358]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="436" _type="MoveCaretCommand" caretOffset="89" date="Tue Feb 08 12:32:43 EST 2022" docOffset="89" starttimestamp="1644341143271" timestamp="420199" />
+  <Command __id="439" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Tue Feb 08 12:32:44 EST 2022" starttimestamp="1644341143271" timestamp="420776" />
+  <Command __id="441" _type="EclipseCommand" commandID="org.eclipse.ui.edit.delete" date="Tue Feb 08 12:32:44 EST 2022" starttimestamp="1644341143271" timestamp="421152" />
+  <Command __id="433" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:32:41 EST 2022" docASTNodeCount="80" docActiveCodeLength="584" docExpressionCount="39" docLength="584" projectName="A2" starttimestamp="1644341143271" timestamp="418526">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\partitioner\PartitionerFactory.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package partitioner;¶¶import gradingTools.comp533s19.assignment0.AMapReduceTracer; ¶¶¶¶public class PartitionerFactory extends AMapReduceTracer{¶	private static PartitionerInterface<String, Integer> Paritioner;¶	¶	public static PartitionerInterface<String, Integer> getReducer() {¶		if (Paritioner == null) {¶			Paritioner= new Paritioner();¶		}¶		return Paritioner;¶	}¶	¶	public static void setReducer(final PartitionerInterface<String, Integer> newPartitioner) {¶		partitioner = newPartitioner;¶		traceSingletonChange(ParitionerFactory.class, paritioner);¶	}¶}¶")]]]></diff>
+  </Command>
+  <DocumentChange __id="438" _type="Delete" date="Tue Feb 08 12:32:44 EST 2022" docASTNodeCount="80" docActiveCodeLength="580" docExpressionCount="39" docLength="580" endLine="5" length="4" offset="87" repeat="2" startLine="3" starttimestamp="1644341143271" timestamp="420750" timestamp2="421149">
+    <text><![CDATA[
+
+]]></text>
+  </DocumentChange>
+  <Command __id="443" _type="PauseCommand" date="Tue Feb 08 12:33:03 EST 2022" range="10s-20s" starttimestamp="1644341143271" timestamp="440563">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[19411]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="447" _type="MoveCaretCommand" caretOffset="87" date="Tue Feb 08 12:33:09 EST 2022" docOffset="87" starttimestamp="1644341143271" timestamp="446241" />
+  <Command __id="445" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:33:09 EST 2022" docASTNodeCount="80" docActiveCodeLength="580" docExpressionCount="39" docLength="580" projectName="A2" starttimestamp="1644341143271" timestamp="445951">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\partitioner\PartitionerFactory.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package partitioner;¶¶import gradingTools.comp533s19.assignment0.AMapReduceTracer; ¶¶"), Diff(DELETE,"¶¶"), Diff(EQUAL,"public class PartitionerFactory extends AMapReduceTracer{¶	private static PartitionerInterface<String, Integer> Paritioner;¶	¶	public static PartitionerInterface<String, Integer> getReducer() {¶		if (Paritioner == null) {¶			Paritioner= new Paritioner();¶		}¶		return Paritioner;¶	}¶	¶	public static void setReducer(final PartitionerInterface<String, Integer> newPartitioner) {¶		partitioner = newPartitioner;¶		traceSingletonChange(ParitionerFactory.class, paritioner);¶	}¶}¶")]]]></diff>
+    <snapshot><![CDATA[package partitioner;
+
+import gradingTools.comp533s19.assignment0.AMapReduceTracer; 
+
+public class PartitionerFactory extends AMapReduceTracer{
+	private static PartitionerInterface<String, Integer> Paritioner;
+	
+	public static PartitionerInterface<String, Integer> getReducer() {
+		if (Paritioner == null) {
+			Paritioner= new Paritioner();
+		}
+		return Paritioner;
+	}
+	
+	public static void setReducer(final PartitionerInterface<String, Integer> newPartitioner) {
+		partitioner = newPartitioner;
+		traceSingletonChange(ParitionerFactory.class, paritioner);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="449" _type="PauseCommand" date="Tue Feb 08 12:33:15 EST 2022" range="5s-10s" starttimestamp="1644341143271" timestamp="451930">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[5689]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="464" _type="MoveCaretCommand" caretOffset="336" date="Tue Feb 08 12:34:46 EST 2022" docOffset="336" starttimestamp="1644341143271" timestamp="543601" />
+  <Command __id="462" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:34:46 EST 2022" docASTNodeCount="43" docActiveCodeLength="307" docExpressionCount="22" docLength="341" projectName="A2" starttimestamp="1644341143271" timestamp="543322">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\partitioner\Partitioner.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package partitioner;¶¶¶import gradingTools.comp533s19.assignment0.AMapReduceTracer;¶¶public class Partitioner extends AMapReduceTracer implements PartitionerInterface<String,Integer> {¶¶	@Override¶	public int getPartitioner(String key, Integer value, int numPartitions) {¶		// TODO Auto-generated method stub¶		return 0;¶	}¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="466" _type="PauseCommand" date="Tue Feb 08 12:34:48 EST 2022" range="1s-2s" starttimestamp="1644341143271" timestamp="544828">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1226]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="525" _type="ShellCommand" date="Tue Feb 08 12:36:32 EST 2022" starttimestamp="1644341143271" timestamp="649130" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="528" _type="EclipseCommand" commandID="" date="Tue Feb 08 12:36:32 EST 2022" starttimestamp="1644341143271" timestamp="649382" />
+  <Command __id="529" _type="EclipseCommand" commandID="" date="Tue Feb 08 12:36:32 EST 2022" starttimestamp="1644341143271" timestamp="649419" />
+  <Command __id="530" _type="SelectTextCommand" caretOffset="180" date="Tue Feb 08 12:36:32 EST 2022" end="180" start="178" starttimestamp="1644341143271" timestamp="649685" />
+  <Command __id="520" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:36:26 EST 2022" docASTNodeCount="80" docActiveCodeLength="580" docExpressionCount="39" docLength="580" projectName="A2" starttimestamp="1644341143271" timestamp="642903">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\partitioner\PartitionerFactory.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package partitioner;¶¶import gradingTools.comp533s19.assignment0.AMapReduceTracer; ¶¶public class PartitionerFactory extends AMapReduceTracer{¶	private static PartitionerInterface<String, Integer> Paritioner;¶	¶	public static PartitionerInterface<String, Integer> getReducer() {¶		if (Paritioner == null) {¶			Paritioner= new Paritioner();¶		}¶		return Paritioner;¶	}¶	¶	public static void setReducer(final PartitionerInterface<String, Integer> newPartitioner) {¶		partitioner = newPartitioner;¶		traceSingletonChange(ParitionerFactory.class, paritioner);¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="527" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:36:32 EST 2022" docASTNodeCount="63" docActiveCodeLength="406" docExpressionCount="31" docLength="474" projectName="A2" starttimestamp="1644341143271" timestamp="649358">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\partitioner\Partitioner.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package partitioner;¶¶¶import gradingTools.comp533s19.assignment0.AMapReduceTracer;¶¶public class Partitioner extends AMapReduceTracer implements PartitionerInterface<String,K> {¶¶	@Override¶	public int getPartitioner(String key, Integer value, int numPartitions) {¶		// TODO Auto-generated method stub¶		return 0;¶	}¶¶"), Diff(INSERT,"	@Override¶	public int getPartitioner(String key, K value, int numPartitions) {¶		// TODO Auto-generated method stub¶		return 0;¶	}¶¶"), Diff(EQUAL,"}¶")]]]></diff>
+    <snapshot><![CDATA[package partitioner;
+
+
+import gradingTools.comp533s19.assignment0.AMapReduceTracer;
+
+public class Partitioner extends AMapReduceTracer implements PartitionerInterface<String,K> {
+
+	@Override
+	public int getPartitioner(String key, Integer value, int numPartitions) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getPartitioner(String key, K value, int numPartitions) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="532" _type="PauseCommand" date="Tue Feb 08 12:36:34 EST 2022" range="1s-2s" starttimestamp="1644341143271" timestamp="650791">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[1106]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="533" _type="SelectTextCommand" caretOffset="143" date="Tue Feb 08 12:36:34 EST 2022" end="200" start="143" starttimestamp="1644341143271" timestamp="651005" />
+  <Command __id="535" _type="PauseCommand" date="Tue Feb 08 12:36:44 EST 2022" range="5s-10s" starttimestamp="1644341143271" timestamp="660838">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[9833]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="534" _type="ShellCommand" date="Tue Feb 08 12:36:44 EST 2022" starttimestamp="1644341143271" timestamp="660838" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="537" _type="PauseCommand" date="Tue Feb 08 12:37:09 EST 2022" range="20s-30s" starttimestamp="1644341143271" timestamp="686335">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[25497]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="536" _type="ShellCommand" date="Tue Feb 08 12:37:09 EST 2022" starttimestamp="1644341143271" timestamp="686335" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="539" _type="MoveCaretCommand" caretOffset="206" date="Tue Feb 08 12:37:10 EST 2022" docOffset="346" starttimestamp="1644341143271" timestamp="686856" />
+  <Command __id="531" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:36:34 EST 2022" docASTNodeCount="82" docActiveCodeLength="530" docExpressionCount="41" docLength="530" projectName="A1" starttimestamp="1644341143271" timestamp="650791">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\ReducerFactory.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package comp533.mvc;¶import gradingTools.comp533s19.assignment0.AMapReduceTracer; ¶¶public class ReducerFactory extends AMapReduceTracer{¶	private static ReducerInterface<String, Integer> reducer;¶	¶	public static ReducerInterface<String, Integer> getReducer() {¶		if (reducer == null) {¶			reducer = new Reducer();¶		}¶		return reducer;¶	}¶	¶	public static void setReducer(final ReducerInterface<String, Integer> newReducer) {¶		reducer = newReducer;¶		traceSingletonChange(ReducerFactory.class, reducer);¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="538" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:37:09 EST 2022" docASTNodeCount="184" docActiveCodeLength="960" docExpressionCount="114" docLength="960" projectName="A1" starttimestamp="1644341143271" timestamp="686581">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\Reducer.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package comp533.mvc;¶¶import java.util.HashMap;¶import java.util.Iterator;¶import java.util.List;¶import java.util.Map;¶¶import gradingTools.comp533s19.assignment0.AMapReduceTracer; ¶¶public class Reducer extends AMapReduceTracer implements ReducerInterface<String,Integer> {¶¶	@Override¶	public String toString() {¶		return REDUCER;¶	}¶¶	@Override¶	public Map<String, Integer> reduce(final List<KeyValueInterface<String, Integer>> aList) {¶		final Map<String, Integer> result =new HashMap<String, Integer>();¶		final Iterator<KeyValueInterface<String, Integer>> iterator = aList.iterator();¶		while(iterator.hasNext()) {¶			final KeyValueInterface<String, Integer> val = iterator.next();¶			if (!result.containsKey(val.getKey())) {¶				result.put(val.getKey(),val.getValue());¶			}¶			else {¶				result.put(val.getKey(), result.get(val.getKey()) + val.getValue());¶			}¶		}¶		traceReduce(aList, result);¶		return result;¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="541" _type="PauseCommand" date="Tue Feb 08 12:37:15 EST 2022" range="2s-5s" starttimestamp="1644341143271" timestamp="691784">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[4928]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="540" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:37:15 EST 2022" docASTNodeCount="82" docActiveCodeLength="530" docExpressionCount="41" docLength="530" projectName="A1" starttimestamp="1644341143271" timestamp="691784">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\ReducerFactory.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package comp533.mvc;¶import gradingTools.comp533s19.assignment0.AMapReduceTracer; ¶¶public class ReducerFactory extends AMapReduceTracer{¶	private static ReducerInterface<String, Integer> reducer;¶	¶	public static ReducerInterface<String, Integer> getReducer() {¶		if (reducer == null) {¶			reducer = new Reducer();¶		}¶		return reducer;¶	}¶	¶	public static void setReducer(final ReducerInterface<String, Integer> newReducer) {¶		reducer = newReducer;¶		traceSingletonChange(ReducerFactory.class, reducer);¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="542" _type="SelectTextCommand" caretOffset="143" date="Tue Feb 08 12:37:15 EST 2022" end="200" start="143" starttimestamp="1644341143271" timestamp="692138" />
+  <Command __id="544" _type="MoveCaretCommand" caretOffset="206" date="Tue Feb 08 12:37:16 EST 2022" docOffset="346" starttimestamp="1644341143271" timestamp="693398" />
+  <Command __id="543" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:37:16 EST 2022" docASTNodeCount="184" docActiveCodeLength="960" docExpressionCount="114" docLength="960" projectName="A1" starttimestamp="1644341143271" timestamp="692770">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\Reducer.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package comp533.mvc;¶¶import java.util.HashMap;¶import java.util.Iterator;¶import java.util.List;¶import java.util.Map;¶¶import gradingTools.comp533s19.assignment0.AMapReduceTracer; ¶¶public class Reducer extends AMapReduceTracer implements ReducerInterface<String,Integer> {¶¶	@Override¶	public String toString() {¶		return REDUCER;¶	}¶¶	@Override¶	public Map<String, Integer> reduce(final List<KeyValueInterface<String, Integer>> aList) {¶		final Map<String, Integer> result =new HashMap<String, Integer>();¶		final Iterator<KeyValueInterface<String, Integer>> iterator = aList.iterator();¶		while(iterator.hasNext()) {¶			final KeyValueInterface<String, Integer> val = iterator.next();¶			if (!result.containsKey(val.getKey())) {¶				result.put(val.getKey(),val.getValue());¶			}¶			else {¶				result.put(val.getKey(), result.get(val.getKey()) + val.getValue());¶			}¶		}¶		traceReduce(aList, result);¶		return result;¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="546" _type="PauseCommand" date="Tue Feb 08 12:37:19 EST 2022" range="2s-5s" starttimestamp="1644341143271" timestamp="696719">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[3321]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="677" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Tue Feb 08 12:39:18 EST 2022" starttimestamp="1644341143271" timestamp="815514" />
+  <Command __id="679" _type="EclipseCommand" commandID="" date="Tue Feb 08 12:39:18 EST 2022" starttimestamp="1644341143271" timestamp="815577" />
+  <Command __id="680" _type="EclipseCommand" commandID="" date="Tue Feb 08 12:39:18 EST 2022" starttimestamp="1644341143271" timestamp="815618" />
+  <DocumentChange __id="614" _type="Insert" date="Tue Feb 08 12:38:51 EST 2022" docASTNodeCount="67" docActiveCodeLength="412" docExpressionCount="33" docLength="480" length="9" offset="115" repeat="9" starttimestamp="1644341143271" timestamp="788358" timestamp2="790584">
+    <text><![CDATA[String, V]]></text>
+  </DocumentChange>
+  <DocumentChange __id="646" _type="Replace" date="Tue Feb 08 12:38:59 EST 2022" docASTNodeCount="67" docActiveCodeLength="407" docExpressionCount="33" docLength="475" endLine="5" insertionLength="1" int_docASTNodeCount="60" int_docActiveCodeLength="406" int_docExpressionCount="30" int_docLength="474" length="6" offset="183" startLine="5" starttimestamp="1644341143271" timestamp="796141">
+    <deletedText><![CDATA[String]]></deletedText>
+    <insertedText><![CDATA[K]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="656" _type="Delete" date="Tue Feb 08 12:39:16 EST 2022" docASTNodeCount="60" docActiveCodeLength="406" docExpressionCount="30" docLength="474" endLine="5" length="1" offset="183" startLine="5" starttimestamp="1644341143271" timestamp="812889">
+    <text><![CDATA[K]]></text>
+  </DocumentChange>
+  <DocumentChange __id="659" _type="Insert" date="Tue Feb 08 12:39:16 EST 2022" docASTNodeCount="67" docActiveCodeLength="412" docExpressionCount="33" docLength="480" length="6" offset="183" repeat="6" starttimestamp="1644341143271" timestamp="813560" timestamp2="814311">
+    <text><![CDATA[String]]></text>
+  </DocumentChange>
+  <Command __id="682" _type="PauseCommand" date="Tue Feb 08 12:39:22 EST 2022" range="2s-5s" starttimestamp="1644341143271" timestamp="819288">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[3670]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="890" _type="ShellCommand" date="Tue Feb 08 12:42:29 EST 2022" starttimestamp="1644341143271" timestamp="1005854" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="893" _type="MoveCaretCommand" caretOffset="206" date="Tue Feb 08 12:42:29 EST 2022" docOffset="346" starttimestamp="1644341143271" timestamp="1006157" />
+  <Command __id="895" _type="PauseCommand" date="Tue Feb 08 12:42:32 EST 2022" range="2s-5s" starttimestamp="1644341143271" timestamp="1009111">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[2954]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="1052" _type="ShellCommand" date="Tue Feb 08 12:43:23 EST 2022" starttimestamp="1644341143271" timestamp="1060199" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="1054" _type="ShellCommand" date="Tue Feb 08 12:43:23 EST 2022" starttimestamp="1644341143271" timestamp="1060364" type="ECLIPSE_GAINED_FOCUS" />
+  <DocumentChange __id="1001" _type="Insert" date="Tue Feb 08 12:43:10 EST 2022" docASTNodeCount="57" docActiveCodeLength="374" docExpressionCount="29" docLength="408" length="21" offset="376" repeat="14" starttimestamp="1644341143271" timestamp="1047575" timestamp2="1050416">
+    <text><![CDATA[ {
+		return "hi"
+	}]]></text>
+  </DocumentChange>
+  <DocumentChange __id="1049" _type="Insert" date="Tue Feb 08 12:43:15 EST 2022" docASTNodeCount="57" docActiveCodeLength="375" docExpressionCount="29" docLength="409" length="1" offset="393" starttimestamp="1644341143271" timestamp="1052695">
+    <text><![CDATA[;]]></text>
+  </DocumentChange>
+  <DocumentChange __id="1055" _type="Delete" date="Tue Feb 08 12:43:23 EST 2022" docASTNodeCount="56" docActiveCodeLength="371" docExpressionCount="28" docLength="405" endLine="15" length="4" offset="389" startLine="15" starttimestamp="1644341143271" timestamp="1060397">
+    <text><![CDATA["hi"]]></text>
+  </DocumentChange>
+  <DocumentChange __id="1056" _type="Insert" date="Tue Feb 08 12:43:23 EST 2022" docASTNodeCount="60" docActiveCodeLength="384" docExpressionCount="31" docLength="418" length="13" offset="389" repeat="2" starttimestamp="1644341143271" timestamp="1060398" timestamp2="1060399">
+    <text><![CDATA[(String) "hi"]]></text>
+  </DocumentChange>
+  <Command __id="1059" _type="PauseCommand" date="Tue Feb 08 12:43:30 EST 2022" range="5s-10s" starttimestamp="1644341143271" timestamp="1066946">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[Insert]]></prev>
+    <pause><![CDATA[6548]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="1181" _type="MoveCaretCommand" caretOffset="579" date="Tue Feb 08 12:44:57 EST 2022" docOffset="579" starttimestamp="1644341143271" timestamp="1154413" />
+  <Command __id="1179" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:44:57 EST 2022" docASTNodeCount="85" docActiveCodeLength="599" docExpressionCount="41" docLength="599" projectName="A2" starttimestamp="1644341143271" timestamp="1154169">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\partitioner\PartitionerFactory.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package partitioner;¶¶import gradingTools.comp533s19.assignment0.AMapReduceTracer; ¶¶public class PartitionerFactory extends AMapReduceTracer{¶	private static PartitionerInterface<String, Integer> "), Diff(DELETE,"P"), Diff(INSERT,"p"), Diff(EQUAL,"aritioner ;¶	¶	public static PartitionerInterface<String, Integer> getReducer() {¶		if ("), Diff(DELETE,"P"), Diff(INSERT,"p"), Diff(EQUAL,"aritioner == null) {¶			"), Diff(DELETE,"P"), Diff(INSERT,"p"), Diff(EQUAL,"aritioner= new Partitioner<String, Integer>();¶		}¶		return "), Diff(DELETE,"P"), Diff(INSERT,"p"), Diff(EQUAL,"aritioner;¶	}¶	¶	public static void setReducer(final PartitionerInterface<String, Integer> newPartitioner) {¶		"), Diff(DELETE,"P"), Diff(INSERT,"p"), Diff(EQUAL,"ar"), Diff(DELETE,"t"), Diff(EQUAL,"itioner = newPartitioner;¶		traceSingletonChange(Par"), Diff(INSERT,"t"), Diff(EQUAL,"itionerFactory.class, paritioner);¶	}¶}¶")]]]></diff>
+    <snapshot><![CDATA[package partitioner;
+
+import gradingTools.comp533s19.assignment0.AMapReduceTracer; 
+
+public class PartitionerFactory extends AMapReduceTracer{
+	private static PartitionerInterface<String, Integer> paritioner ;
+	
+	public static PartitionerInterface<String, Integer> getReducer() {
+		if (paritioner == null) {
+			paritioner= new Partitioner<String, Integer>();
+		}
+		return paritioner;
+	}
+	
+	public static void setReducer(final PartitionerInterface<String, Integer> newPartitioner) {
+		paritioner = newPartitioner;
+		traceSingletonChange(PartitionerFactory.class, paritioner);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="1183" _type="PauseCommand" date="Tue Feb 08 12:45:03 EST 2022" range="5s-10s" starttimestamp="1644341143271" timestamp="1159902">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[5489]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="1184" _type="SelectTextCommand" caretOffset="148" date="Tue Feb 08 12:45:03 EST 2022" end="210" start="148" starttimestamp="1644341143271" timestamp="1160164" />
+  <Command __id="1182" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:45:03 EST 2022" docASTNodeCount="184" docActiveCodeLength="960" docExpressionCount="114" docLength="960" projectName="A1" starttimestamp="1644341143271" timestamp="1159902">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\Reducer.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package comp533.mvc;¶¶import java.util.HashMap;¶import java.util.Iterator;¶import java.util.List;¶import java.util.Map;¶¶import gradingTools.comp533s19.assignment0.AMapReduceTracer; ¶¶public class Reducer extends AMapReduceTracer implements ReducerInterface<String,Integer> {¶¶	@Override¶	public String toString() {¶		return REDUCER;¶	}¶¶	@Override¶	public Map<String, Integer> reduce(final List<KeyValueInterface<String, Integer>> aList) {¶		final Map<String, Integer> result =new HashMap<String, Integer>();¶		final Iterator<KeyValueInterface<String, Integer>> iterator = aList.iterator();¶		while(iterator.hasNext()) {¶			final KeyValueInterface<String, Integer> val = iterator.next();¶			if (!result.containsKey(val.getKey())) {¶				result.put(val.getKey(),val.getValue());¶			}¶			else {¶				result.put(val.getKey(), result.get(val.getKey()) + val.getValue());¶			}¶		}¶		traceReduce(aList, result);¶		return result;¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="1186" _type="PauseCommand" date="Tue Feb 08 12:45:06 EST 2022" range="2s-5s" starttimestamp="1644341143271" timestamp="1163692">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[3528]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="1190" _type="SelectTextCommand" caretOffset="136" date="Tue Feb 08 12:45:13 EST 2022" end="161" start="136" starttimestamp="1644341143271" timestamp="1170364" />
+  <Command __id="1188" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:45:13 EST 2022" docASTNodeCount="30" docActiveCodeLength="166" docExpressionCount="12" docLength="166" projectName="A2" starttimestamp="1644341143271" timestamp="1170212">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\partitioner\PartitionerInterface.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package partitioner;¶¶public interface PartitionerInterface<K, V> {¶	public int getPartitioner(K key, V value, int numPartitions);¶	public String toString();¶}¶")]]]></diff>
+  </Command>
+  <Command __id="1192" _type="PauseCommand" date="Tue Feb 08 12:45:23 EST 2022" range="10s-20s" starttimestamp="1644341143271" timestamp="1180406">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[10042]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="1193" _type="SelectTextCommand" caretOffset="148" date="Tue Feb 08 12:45:23 EST 2022" end="210" start="148" starttimestamp="1644341143271" timestamp="1180648" />
+  <Command __id="1195" _type="PauseCommand" date="Tue Feb 08 12:45:27 EST 2022" range="2s-5s" starttimestamp="1644341143271" timestamp="1184637">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[3989]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="1200" _type="SelectTextCommand" caretOffset="198" date="Tue Feb 08 12:45:29 EST 2022" end="198" start="173" starttimestamp="1644341143271" timestamp="1186699" />
+  <Command __id="1198" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 12:45:29 EST 2022" docASTNodeCount="43" docActiveCodeLength="207" docExpressionCount="21" docLength="207" projectName="A2" starttimestamp="1644341143271" timestamp="1186455">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\comp533\mvc\TokenCountingMapperInterface.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+
+import java.util.List;
+
+public interface TokenCountingMapperInterface<K, V> {
+	public List<KeyValueInterface<K, V>> map(List<String> aStrings);
+	public String toString();
+
+}
+
+]]></snapshot>
+  </Command>
+  <Command __id="1202" _type="PauseCommand" date="Tue Feb 08 12:45:34 EST 2022" range="2s-5s" starttimestamp="1644341143271" timestamp="1191222">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[4523]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="5680" _type="MoveCaretCommand" caretOffset="441" date="Tue Feb 08 13:36:25 EST 2022" docOffset="441" starttimestamp="1644341143271" timestamp="4241876" />
+  <Command __id="5678" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 13:36:24 EST 2022" docASTNodeCount="85" docActiveCodeLength="607" docExpressionCount="41" docLength="607" projectName="A2" starttimestamp="1644341143271" timestamp="4241496">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\partitioner\PartitionerFactory.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package partitioner;¶¶import gradingTools.comp533s19.assignment0.AMapReduceTracer; ¶¶public class PartitionerFactory extends AMapReduceTracer{¶	private static PartitionerInterface<String, Integer> paritioner ;¶	¶	public static PartitionerInterface<String, Integer> get"), Diff(DELETE,"Reduc"), Diff(INSERT,"Partition"), Diff(EQUAL,"er() {¶		if (paritioner == null) {¶			paritioner= new Partitioner<String, Integer>();¶		}¶		return paritioner;¶	}¶	¶	public static void set"), Diff(DELETE,"Reduc"), Diff(INSERT,"Partition"), Diff(EQUAL,"er(final PartitionerInterface<String, Integer> newPartitioner) {¶		paritioner = newPartitioner;¶		traceSingletonChange(PartitionerFactory.class, paritioner);¶	}¶}¶")]]]></diff>
+    <snapshot><![CDATA[package partitioner;
+
+import gradingTools.comp533s19.assignment0.AMapReduceTracer; 
+
+public class PartitionerFactory extends AMapReduceTracer{
+	private static PartitionerInterface<String, Integer> paritioner ;
+	
+	public static PartitionerInterface<String, Integer> getPartitioner() {
+		if (paritioner == null) {
+			paritioner= new Partitioner<String, Integer>();
+		}
+		return paritioner;
+	}
+	
+	public static void setPartitioner(final PartitionerInterface<String, Integer> newPartitioner) {
+		paritioner = newPartitioner;
+		traceSingletonChange(PartitionerFactory.class, paritioner);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="5682" _type="PauseCommand" date="Tue Feb 08 13:36:33 EST 2022" range="5s-10s" starttimestamp="1644341143271" timestamp="4250245">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[8369]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="5689" _type="MoveCaretCommand" caretOffset="441" date="Tue Feb 08 13:36:45 EST 2022" docOffset="441" starttimestamp="1644341143271" timestamp="4262652" />
+  <Command __id="5687" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 13:36:45 EST 2022" docASTNodeCount="85" docActiveCodeLength="607" docExpressionCount="41" docLength="607" projectName="A2" starttimestamp="1644341143271" timestamp="4262342">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\partitioner\PartitionerFactory.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package partitioner;¶¶import gradingTools.comp533s19.assignment0.AMapReduceTracer; ¶¶public class PartitionerFactory extends AMapReduceTracer{¶	private static PartitionerInterface<String, Integer> paritioner ;¶	¶	public static PartitionerInterface<String, Integer> getPartitioner() {¶		if (paritioner == null) {¶			paritioner= new Partitioner<String, Integer>();¶		}¶		return paritioner;¶	}¶	¶	public static void setPartitioner(final PartitionerInterface<String, Integer> newPartitioner) {¶		paritioner = newPartitioner;¶		traceSingletonChange(PartitionerFactory.class, paritioner);¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="5691" _type="PauseCommand" date="Tue Feb 08 13:36:49 EST 2022" range="2s-5s" starttimestamp="1644341143271" timestamp="4266124">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[3472]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="6132" _type="MoveCaretCommand" caretOffset="0" date="Tue Feb 08 13:56:39 EST 2022" docOffset="0" starttimestamp="1644341143271" timestamp="5456297" />
+  <Command __id="6130" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 13:56:39 EST 2022" docASTNodeCount="119" docActiveCodeLength="883" docExpressionCount="77" docLength="1274" projectName="A2" starttimestamp="1644341143271" timestamp="5455873">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\comp533\mvc\A2Tests.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package comp533.mvc;¶¶import grader.basics.execution.BasicProjectExecution;¶import gradingTools.comp533s22.assignment2.S22Assignment2Suite;¶import trace.grader.basics.GraderBasicsTraceUtility;¶import util.trace.Tracer;¶¶public class A2Tests {¶	public static void main(final String[] args) {¶		Tracer.showInfo(true);¶		GraderBasicsTraceUtility.setBufferTracedMessages(false);¶		final int traces = 8000;¶		Tracer.setMaxTraces(traces);¶		¶		// if you set this to false, grader steps will not be traced¶		GraderBasicsTraceUtility.setTracerShowInfo(true);	¶		// if you set this to false, all grader steps will be traced,¶		// not just the ones that failed		¶		¶		GraderBasicsTraceUtility.setBufferTracedMessages(false);¶		// Change this number if a test trace gets longer than 600 and is clipped¶		¶		final int length = 600;¶		GraderBasicsTraceUtility.setMaxPrintedTraces(length);¶		// Change this number if all traces together are longer than 600¶		¶		final int time = 4000;¶		GraderBasicsTraceUtility.setMaxTraces(time);¶		// Change this number if your process times out prematurely¶		¶		final int timer = 5;¶		BasicProjectExecution.setProcessTimeOut(timer);¶		// You need to always call such a method¶		S22Assignment2Suite.main(args);¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="6134" _type="PauseCommand" date="Tue Feb 08 13:57:21 EST 2022" range="30s-1m" starttimestamp="1644341143271" timestamp="5498503">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[42206]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="6138" _type="MoveCaretCommand" caretOffset="0" date="Tue Feb 08 13:57:27 EST 2022" docOffset="0" starttimestamp="1644341143271" timestamp="5504035" />
+  <Command __id="6136" _type="DiffBasedFileOpenCommand" date="Tue Feb 08 13:57:27 EST 2022" docASTNodeCount="119" docActiveCodeLength="883" docExpressionCount="77" docLength="1274" projectName="A2" starttimestamp="1644341143271" timestamp="5503753">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\comp533\mvc\A2Tests.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package comp533.mvc;¶¶import grader.basics.execution.BasicProjectExecution;¶import gradingTools.comp533s22.assignment2.S22Assignment2Suite;¶import trace.grader.basics.GraderBasicsTraceUtility;¶import util.trace.Tracer;¶¶public class A2Tests {¶	public static void main(final String[] args) {¶		Tracer.showInfo(true);¶		GraderBasicsTraceUtility.setBufferTracedMessages(false);¶		final int traces = 8000;¶		Tracer.setMaxTraces(traces);¶		¶		// if you set this to false, grader steps will not be traced¶		GraderBasicsTraceUtility.setTracerShowInfo(true);	¶		// if you set this to false, all grader steps will be traced,¶		// not just the ones that failed		¶		¶		GraderBasicsTraceUtility.setBufferTracedMessages(false);¶		// Change this number if a test trace gets longer than 600 and is clipped¶		¶		final int length = 600;¶		GraderBasicsTraceUtility.setMaxPrintedTraces(length);¶		// Change this number if all traces together are longer than 600¶		¶		final int time = 4000;¶		GraderBasicsTraceUtility.setMaxTraces(time);¶		// Change this number if your process times out prematurely¶		¶		final int timer = 5;¶		BasicProjectExecution.setProcessTimeOut(timer);¶		// You need to always call such a method¶		S22Assignment2Suite.main(args);¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="6140" _type="PauseCommand" date="Tue Feb 08 13:57:30 EST 2022" range="2s-5s" starttimestamp="1644341143271" timestamp="5506931">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[2896]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="6141" _type="MoveCaretCommand" caretOffset="0" date="Tue Feb 08 13:57:30 EST 2022" docOffset="0" starttimestamp="1644341143271" timestamp="5507182" />
+  <Command __id="6143" _type="PauseCommand" date="Tue Feb 08 13:57:38 EST 2022" range="5s-10s" starttimestamp="1644341143271" timestamp="5515364">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[8182]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+</Events>

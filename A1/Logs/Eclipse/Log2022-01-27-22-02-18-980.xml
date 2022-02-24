@@ -1,0 +1,555 @@
+<Events startTimestamp="1643338938980" logVersion="1.0.0.202111260825">
+  <Command __id="1" _type="MoveCaretCommand" caretOffset="0" date="Thu Jan 27 22:02:20 EST 2022" docOffset="0" starttimestamp="1643338938980" timestamp="1590" />
+  <Command __id="3" _type="PauseCommand" date="Thu Jan 27 22:03:22 EST 2022" range="1m-2m" starttimestamp="1643338938980" timestamp="63332">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[61733]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="2" _type="ShellCommand" date="Thu Jan 27 22:03:22 EST 2022" starttimestamp="1643338938980" timestamp="63323" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="0" _type="DiffBasedFileOpenCommand" date="Thu Jan 27 22:02:20 EST 2022" docASTNodeCount="68" docActiveCodeLength="475" docExpressionCount="36" docLength="475" projectName="A1" starttimestamp="1643338938980" timestamp="1195">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\StandAloneIntSumming.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+
+public class StandAloneIntSumming {
+	public static void main(final String[] args) {
+		
+		
+		final ViewInterface view = new View();
+		
+		final ModelInterface model = new SummingModel();
+		model.addPropertyChangeListener(view);
+		IntSummingMapperFactory.setMapper(IntSummingMapperFactory.getMapper());
+		
+		final ControllerInterface controller = new Controller();
+		controller.setModel(model);
+		controller.processInput();
+		
+		
+	}
+}
+
+]]></snapshot>
+  </Command>
+  <Command __id="5" _type="PauseCommand" date="Thu Jan 27 22:03:31 EST 2022" range="5s-10s" starttimestamp="1643338938980" timestamp="72405">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[9082]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="4" _type="DiffBasedFileOpenCommand" date="Thu Jan 27 22:03:31 EST 2022" docASTNodeCount="318" docActiveCodeLength="1992" docExpressionCount="183" docLength="2167" projectName="A1" starttimestamp="1643338938980" timestamp="72405">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\SummingModel.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+//import gradingTools.comp533s19.assignment0.AMapReduceTracer;
+
+//public class SummingModel extends AMapReduceTracer implements ModelInterface
+public class SummingModel extends Model implements ModelInterface{
+	private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
+	private String inputString = null;
+	private Map<String, Integer> result = new HashMap<String, Integer>();
+	final ReducerInterface<String, Integer> reducer = ReducerFactory.getReducer();
+	final IntSummingMapperInterface<String, Integer> mapper = IntSummingMapperFactory.getMapper();
+
+	
+	@Override
+	public Map<String, Integer> getResult() {
+		return result;
+	}
+
+	@Override
+	public void addPropertyChangeListener(final PropertyChangeListener newListener) {
+		propertyChangeSupport.addPropertyChangeListener(newListener);
+	}
+
+	@Override
+	public void setInputString(final String newVal) {
+		final String oldString = inputString;
+		inputString = newVal;
+		final String label = "InputString";
+		final PropertyChangeEvent inputEvent = new PropertyChangeEvent(this, label, oldString, newVal);
+		propertyChangeSupport.firePropertyChange(inputEvent);
+	}
+
+	@Override
+	public void computeResult() {
+		String oldResult = result.toString();
+		if (result.isEmpty()) {
+			oldResult = null;
+		}
+		final String tokens = inputString;
+		result.clear();
+
+		final String space = " ";
+		final List<String> ListOfToken = Arrays.asList(tokens.split(space));
+		final List<KeyValueInterface<String, Integer>> keyValList = mapper.map(ListOfToken);
+		result = reducer.reduce(keyValList);
+		final String label = "Result";
+		final PropertyChangeEvent resultComputed = new PropertyChangeEvent(this, label, oldResult,result.toString());
+		propertyChangeSupport.firePropertyChange(resultComputed);
+	}
+
+	@Override
+	public String toString() {// overriding the toString() method
+		return MODEL;
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="6" _type="MoveCaretCommand" caretOffset="713" date="Thu Jan 27 22:03:31 EST 2022" docOffset="898" starttimestamp="1643338938980" timestamp="72854" />
+  <Command __id="8" _type="MoveCaretCommand" caretOffset="0" date="Thu Jan 27 22:03:32 EST 2022" docOffset="0" starttimestamp="1643338938980" timestamp="73605" />
+  <Command __id="7" _type="DiffBasedFileOpenCommand" date="Thu Jan 27 22:03:32 EST 2022" docASTNodeCount="89" docActiveCodeLength="662" docExpressionCount="46" docLength="662" projectName="A1" starttimestamp="1643338938980" timestamp="73384">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\TokenCountingMapperFactory.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+
+import gradingTools.comp533s19.assignment0.AMapReduceTracer; 
+
+public class TokenCountingMapperFactory extends AMapReduceTracer{
+	private static TokenCountingMapperInterface<String, Integer> mapper;
+	
+	public static TokenCountingMapperInterface<String, Integer> getMapper() {
+		if (mapper == null) {
+			mapper = new TokenCountingMapper();
+			traceSingletonChange(TokenCountingMapperFactory.class, mapper);
+		}
+		return mapper;
+	}
+	
+	public static void setMapper(final TokenCountingMapperInterface<String, Integer> newMapper) {
+		mapper = newMapper;
+		traceSingletonChange(TokenCountingMapperFactory.class, mapper);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="10" _type="PauseCommand" date="Thu Jan 27 22:03:34 EST 2022" range="2s-5s" starttimestamp="1643338938980" timestamp="75804">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[2199]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="9" _type="DiffBasedFileOpenCommand" date="Thu Jan 27 22:03:34 EST 2022" docASTNodeCount="43" docActiveCodeLength="207" docExpressionCount="21" docLength="207" projectName="A1" starttimestamp="1643338938980" timestamp="75804">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\TokenCountingMapperInterface.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+
+import java.util.List;
+
+public interface TokenCountingMapperInterface<K, V> {
+	public List<KeyValueInterface<K, V>> map(List<String> aStrings);
+	public String toString();
+
+}
+
+]]></snapshot>
+  </Command>
+  <Command __id="11" _type="MoveCaretCommand" caretOffset="103" date="Thu Jan 27 22:03:35 EST 2022" docOffset="103" starttimestamp="1643338938980" timestamp="76053" />
+  <Command __id="13" _type="MoveCaretCommand" caretOffset="0" date="Thu Jan 27 22:03:36 EST 2022" docOffset="0" starttimestamp="1643338938980" timestamp="77123" />
+  <Command __id="12" _type="DiffBasedFileOpenCommand" date="Thu Jan 27 22:03:35 EST 2022" docASTNodeCount="52" docActiveCodeLength="381" docExpressionCount="31" docLength="417" projectName="A1" starttimestamp="1643338938980" timestamp="76870">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\View.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+
+import java.beans.PropertyChangeEvent;
+import gradingTools.comp533s19.assignment0.AMapReduceTracer; 
+
+public class View extends AMapReduceTracer implements ViewInterface {
+
+	@Override
+	public void propertyChange(final PropertyChangeEvent evt) {
+		tracePropertyChange(evt);
+	}
+	
+	@Override
+	public String toString(){//overriding the toString() method  
+		  return VIEW;  
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="15" _type="PauseCommand" date="Thu Jan 27 22:03:38 EST 2022" range="2s-5s" starttimestamp="1643338938980" timestamp="79911">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[2788]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="37" _type="ShellCommand" date="Thu Jan 27 22:05:28 EST 2022" starttimestamp="1643338938980" timestamp="189349" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="40" _type="PauseCommand" date="Thu Jan 27 22:06:09 EST 2022" range="30s-1m" starttimestamp="1643338938980" timestamp="230301">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[40952]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="39" _type="ShellCommand" date="Thu Jan 27 22:06:09 EST 2022" starttimestamp="1643338938980" timestamp="230301" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="14" _type="DiffBasedFileOpenCommand" date="Thu Jan 27 22:03:38 EST 2022" docASTNodeCount="155" docActiveCodeLength="861" docExpressionCount="84" docLength="861" projectName="A1" starttimestamp="1643338938980" timestamp="79911">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\TokenCountingMapper.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+
+import java.util.List;
+import java.util.ArrayList;
+import gradingTools.comp533s19.assignment0.AMapReduceTracer; 
+
+public class TokenCountingMapper extends AMapReduceTracer implements TokenCountingMapperInterface<String, Integer>{
+	final static int ONE = 1;
+	
+	@Override
+	public List<KeyValueInterface<String, Integer>> map(final List<java.lang.String> aStrings) {
+		final List<KeyValueInterface<String, Integer>> keyValList = new ArrayList<KeyValueInterface<String, Integer>> ();
+		for (String a : aStrings) {
+			final KeyValueInterface<String, Integer> keyVal = new KeyValue<String, Integer>();
+			keyVal.setKey(a);
+			keyVal.setValue(ONE);
+			keyValList.add(keyVal);
+		}
+		traceMap(aStrings ,keyValList);
+		return keyValList;
+	}
+	
+	@Override
+	public String toString() {
+		return TOKEN_COUNTING_MAPPER; 
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="42" _type="PauseCommand" date="Thu Jan 27 22:06:10 EST 2022" range="1s-2s" starttimestamp="1643338938980" timestamp="231306">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1005]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="44" _type="ProgramExecutionEvent" className="/A1/src/comp533/mvc/StandAloneIntSumming.java" date="Thu Jan 27 22:06:12 EST 2022" kind="HitBreakPoint" projectName="A1" starttimestamp="1643338938980" timestamp="233439" type="Run" />
+  <Command __id="46" _type="RunCommand" className="/A1/src/comp533/mvc/StandAloneIntSumming.java" date="Thu Jan 27 22:06:12 EST 2022" kind="HitBreakPoint" projectName="A1" starttimestamp="1643338938980" timestamp="233440" type="Run" />
+  <Command __id="47" _type="ConsoleOutput" date="Thu Jan 27 22:06:13 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="234135" type="ConsoleOutput">
+    <outputString><![CDATA[Thread[main,5,main]:class comp533.mvc.IntSummingMapperFactory:new mapper:Int Summing Mapper
+Thread[main,5,main]:class comp533.mvc.IntSummingMapperFactory:new mapper:Int Summing Mapper
+Thread[main,5,main]:Controller:Please enter quit or a line of tokens to be processed separated by spaces
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Thread[main,5,main]:"), Diff(DELETE,"Controller:Quitting"), Diff(INSERT,"class comp533.mvc.IntSummingMapperFactory:new mapper:Int Summing Mapper¶Thread[main,5,main]:class comp533.mvc.IntSummingMapperFactory:new mapper:Int Summing Mapper¶Thread[main,5,main]:Controller:Please enter quit or a line of tokens to be processed separated by spaces"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="49" _type="PauseCommand" date="Thu Jan 27 22:06:14 EST 2022" range="1s-2s" starttimestamp="1643338938980" timestamp="235845">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1710]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="48" _type="ShellCommand" date="Thu Jan 27 22:06:14 EST 2022" starttimestamp="1643338938980" timestamp="235845" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="51" _type="PauseCommand" date="Thu Jan 27 22:06:22 EST 2022" range="5s-10s" starttimestamp="1643338938980" timestamp="243890">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[8044]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="50" _type="ShellCommand" date="Thu Jan 27 22:06:22 EST 2022" starttimestamp="1643338938980" timestamp="243889" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="53" _type="PauseCommand" date="Thu Jan 27 22:06:26 EST 2022" range="2s-5s" starttimestamp="1643338938980" timestamp="247309">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3420]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="52" _type="ConsoleInput" date="Thu Jan 27 22:06:26 EST 2022" starttimestamp="1643338938980" timestamp="247309" type="Exception">
+    <outputString><![CDATA[1 2 3 4
+]]></outputString>
+  </Command>
+  <Command __id="54" _type="ConsoleOutput" date="Thu Jan 27 22:06:26 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="247420" type="ConsoleOutput">
+    <outputString><![CDATA[Thread[main,5,main]:View:java.beans.PropertyChangeEvent[propertyName=InputString; oldValue=null; newValue=1 2 3 4; propagationId=null; source=Model]
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Thread[main,5,main]:"), Diff(DELETE,"class comp533.mvc.IntSummingMapperFactory:new mapper:Int Summing Mapper¶Thread[main,5,main]:class comp533.mvc.IntSummingMapperFactory:new mapper:Int Summing Mapper¶Thread[main,5,main]:Controller:Please enter quit or a line of tokens to be processed se"), Diff(INSERT,"View:java.beans.PropertyChangeEvent[propertyName=InputString; oldValue=null; newValue=1 2 3 4; pro"), Diff(EQUAL,"pa"), Diff(DELETE,"r"), Diff(INSERT,"g"), Diff(EQUAL,"at"), Diff(DELETE,"ed by spaces"), Diff(INSERT,"ionId=null; source=Model]"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="55" _type="ConsoleOutput" date="Thu Jan 27 22:06:26 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="247533" type="ConsoleOutput">
+    <outputString><![CDATA[Thread[main,5,main]:Int Summing Mapper:Map:[1, 2, 3, 4]:[(ResultKey,1), (ResultKey,2), (ResultKey,3), (ResultKey,4)]
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Thread[main,5,main]:"), Diff(DELETE,"View:java.beans.PropertyChangeEvent[propertyName=InputString; oldValue=null; newValue=1"), Diff(INSERT,"Int Summing Mapper:Map:[1,"), Diff(EQUAL," 2"), Diff(INSERT,","), Diff(EQUAL," 3"), Diff(INSERT,","), Diff(EQUAL," 4"), Diff(DELETE,"; propagationId=null; source=Model"), Diff(INSERT,"]:[(ResultKey,1), (ResultKey,2), (ResultKey,3), (ResultKey,4)"), Diff(EQUAL,"]¶")]]]></diff>
+  </Command>
+  <Command __id="56" _type="ConsoleOutput" date="Thu Jan 27 22:06:26 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="247643" type="ConsoleOutput">
+    <outputString><![CDATA[Thread[main,5,main]:Reducer:reduce:[(ResultKey,1), (ResultKey,2), (ResultKey,3), (ResultKey,4)]:{ResultKey=10}
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Thread[main,5,main]:"), Diff(DELETE,"Int Summing Mapper:Map:[1, 2, 3, 4]"), Diff(INSERT,"Reducer:reduce"), Diff(EQUAL,":[(ResultKey,1), (ResultKey,2), (ResultKey,3), (ResultKey,4)]"), Diff(INSERT,":{ResultKey=10}"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="57" _type="ConsoleOutput" date="Thu Jan 27 22:06:26 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="247701" type="ConsoleOutput">
+    <outputString><![CDATA[Thread[main,5,main]:View:java.beans.PropertyChangeEvent[propertyName=Result; oldValue=null; newValue={ResultKey=10}; propagationId=null; source=Model]
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Thread[main,5,main]:"), Diff(DELETE,"Reducer:reduce:[(ResultKey,1), (ResultKey,2), (ResultKey,3), (ResultKey,4)]:{ResultKey=10}"), Diff(INSERT,"View:java.beans.PropertyChangeEvent[propertyName=Result; oldValue=null; newValue={ResultKey=10}; propagationId=null; source=Model]"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="58" _type="ConsoleOutput" date="Thu Jan 27 22:06:26 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="247815" type="ConsoleOutput">
+    <outputString><![CDATA[Thread[main,5,main]:Controller:Please enter quit or a line of tokens to be processed separated by spaces
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Thread[main,5,main]:"), Diff(DELETE,"View:java.beans.PropertyChangeEvent[propertyName=Result; oldValue=null; newValue={ResultKey=10}; pro"), Diff(INSERT,"Controller:Please enter quit or a line of tokens to be processed se"), Diff(EQUAL,"pa"), Diff(DELETE,"g"), Diff(INSERT,"r"), Diff(EQUAL,"at"), Diff(DELETE,"ionId=null; source=Model]"), Diff(INSERT,"ed by spaces"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="60" _type="PauseCommand" date="Thu Jan 27 22:06:29 EST 2022" range="2s-5s" starttimestamp="1643338938980" timestamp="250532">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2717]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="59" _type="ConsoleInput" date="Thu Jan 27 22:06:29 EST 2022" starttimestamp="1643338938980" timestamp="250532" type="Exception">
+    <outputString><![CDATA[quit
+]]></outputString>
+  </Command>
+  <Command __id="61" _type="ConsoleOutput" date="Thu Jan 27 22:06:29 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="250588" type="ConsoleOutput">
+    <outputString><![CDATA[Thread[main,5,main]:View:java.beans.PropertyChangeEvent[propertyName=InputString; oldValue=1 2 3 4; newValue=quit; propagationId=null; source=Model]
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Thread[main,5,main]:"), Diff(DELETE,"Controller:Please enter quit or a line of tokens to be processed se"), Diff(INSERT,"View:java.beans.PropertyChangeEvent[propertyName=InputString; oldValue=1 2 3 4; newValue=quit; pro"), Diff(EQUAL,"pa"), Diff(DELETE,"r"), Diff(INSERT,"g"), Diff(EQUAL,"at"), Diff(DELETE,"ed by spaces"), Diff(INSERT,"ionId=null; source=Model]"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="62" _type="ConsoleOutput" date="Thu Jan 27 22:06:29 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="250741" type="ConsoleOutput">
+    <outputString><![CDATA[Thread[main,5,main]:Controller:Quitting
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Thread[main,5,main]:"), Diff(DELETE,"View:java.beans.PropertyChangeEvent[propertyName=InputString; oldValue=1 2 3 4; newValue=quit; propagationId=null; source=Model]"), Diff(INSERT,"Controller:Quitting"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="63" _type="ProgramExecutionEvent" className="/A1/src/comp533/mvc/StandAloneIntSumming.java" date="Thu Jan 27 22:06:29 EST 2022" kind="HitBreakPoint" projectName="A1" starttimestamp="1643338938980" timestamp="250779" type="Run" />
+  <Command __id="64" _type="ProgramExecutionEvent" className="/A1/src/comp533/mvc/StandAloneIntSumming.java" date="Thu Jan 27 22:06:29 EST 2022" kind="HitBreakPoint" projectName="A1" starttimestamp="1643338938980" timestamp="250779" type="Run" />
+  <Command __id="66" _type="PauseCommand" date="Thu Jan 27 22:06:32 EST 2022" range="2s-5s" starttimestamp="1643338938980" timestamp="253274">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[2495]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="65" _type="ShellCommand" date="Thu Jan 27 22:06:32 EST 2022" starttimestamp="1643338938980" timestamp="253274" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="68" _type="PauseCommand" date="Thu Jan 27 22:06:53 EST 2022" range="20s-30s" starttimestamp="1643338938980" timestamp="274954">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[21680]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="69" _type="ProgramExecutionEvent" className="/A1/src/comp533/mvc/A1Tests.java" date="Thu Jan 27 22:06:55 EST 2022" kind="HitBreakPoint" projectName="A1" starttimestamp="1643338938980" timestamp="276423" type="Run" />
+  <Command __id="71" _type="RunCommand" className="/A1/src/comp533/mvc/A1Tests.java" date="Thu Jan 27 22:06:55 EST 2022" kind="HitBreakPoint" projectName="A1" starttimestamp="1643338938980" timestamp="276424" type="Run" />
+  <Command __id="73" _type="PauseCommand" date="Thu Jan 27 22:06:58 EST 2022" range="2s-5s" starttimestamp="1643338938980" timestamp="279567">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[3143]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="72" _type="ShellCommand" date="Thu Jan 27 22:06:58 EST 2022" starttimestamp="1643338938980" timestamp="279567" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="75" _type="PauseCommand" date="Thu Jan 27 22:07:01 EST 2022" range="2s-5s" starttimestamp="1643338938980" timestamp="282256">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2688]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="74" _type="ConsoleOutput" date="Thu Jan 27 22:07:01 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="282255" type="ConsoleOutput">
+    <outputString><![CDATA[Thread[AWT-EventQueue-0,6,main]:class comp533.mvc.IntSummingMapperFactory:new mapper:Int Summing Mapper
+Thread[AWT-EventQueue-0,6,main]:class comp533.mvc.TokenCountingMapperFactory:new mapper:Token Counting Mapper
+Test execution time (ms):19
+Test execution time (ms):30
+Thread[pool-1-thread-1,5,main]:Token Counting Mapper:Map:[Abbott, Abbott, Abbott, Abbott, Longbottom, Longbottom, Zabini, Zabini, Zabini]:[(Abbott,1), (Abbott,1), (Abbott,1), (Abbott,1), (Longbottom,1), (Longbottom,1), (Zabini,1), (Zabini,1), (Zabini,1)]
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Thread["), Diff(DELETE,"main,5,main]:"), Diff(INSERT,"AWT-EventQueue-0,6,main]:class comp533.mvc.IntSummingMapperFactory:new mapper:Int Summing Mapper¶Thread[AWT-EventQueue-0,6,main]:class comp533.mvc.Token"), Diff(EQUAL,"Co"), Diff(INSERT,"u"), Diff(EQUAL,"nt"), Diff(DELETE,"roller:Quitting"), Diff(INSERT,"ingMapperFactory:new mapper:Token Counting Mapper¶Test execution time (ms):19¶Test execution time (ms):30¶Thread[pool-1-thread-1,5,main]:Token Counting Mapper:Map:[Abbott, Abbott, Abbott, Abbott, Longbottom, Longbottom, Zabini, Zabini, Zabini]:[(Abbott,1), (Abbott,1), (Abbott,1), (Abbott,1), (Longbottom,1), (Longbottom,1), (Zabini,1), (Zabini,1), (Zabini,1)]"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="76" _type="ConsoleOutput" date="Thu Jan 27 22:07:01 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="282457" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):120
+Test execution time (ms):3
+Thread[pool-1-thread-1,5,main]:Token Counting Mapper:Map:[Abbott, Abbott, Abbott, Abbott, Longbottom, Longbottom, Zabini, Zabini, Zabini]:[(Abbott,1), (Abbott,1), (Abbott,1), (Abbott,1), (Longbottom,1), (Longbottom,1), (Zabini,1), (Zabini,1), (Zabini,1)]
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Thread[AWT-EventQueue-0,6,main]:class comp533.mvc.IntSummingMapperFactory:new mapper:Int Summing Mapper¶Thread[AWT-EventQueue-0,6,main]:class comp533.mvc.TokenCountingMapperFactory:new mapper:Token Counting Mapper¶"), Diff(EQUAL,"Test execution time (ms):1"), Diff(DELETE,"9"), Diff(INSERT,"20"), Diff(EQUAL,"¶Test execution time (ms):3"), Diff(DELETE,"0"), Diff(EQUAL,"¶Thread[pool-1-thread-1,5,main]:Token Counting Mapper:Map:[Abbott, Abbott, Abbott, Abbott, Longbottom, Longbottom, Zabini, Zabini, Zabini]:[(Abbott,1), (Abbott,1), (Abbott,1), (Abbott,1), (Longbottom,1), (Longbottom,1), (Zabini,1), (Zabini,1), (Zabini,1)]¶")]]]></diff>
+  </Command>
+  <Command __id="77" _type="ConsoleOutput" date="Thu Jan 27 22:07:01 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="282581" type="ConsoleOutput">
+    <outputString><![CDATA[Thread[pool-1-thread-1,5,main]:Reducer:reduce:[(Abbott,1), (Abbott,1), (Abbott,1), (Abbott,1), (Longbottom,1), (Longbottom,1), (Zabini,1), (Zabini,1), (Zabini,1)]:{Abbott=4, Zabini=3, Longbottom=2}
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"T"), Diff(DELETE,"est execution time (ms):120¶Test execution time (ms):3¶Thread[pool-1-thread-1,5,main]:Token Counting Mapper:Map:[Abbott, Abbott, Abbott, Abbott, Longbottom, Longbottom, Zabini, Zabini, Zabini]"), Diff(INSERT,"hread[pool-1-thread-1,5,main]:Reducer:reduce"), Diff(EQUAL,":[(Abbott,1), (Abbott,1), (Abbott,1), (Abbott,1), (Longbottom,1), (Longbottom,1), (Zabini,1), (Zabini,1), (Zabini,1)]"), Diff(INSERT,":{Abbott=4, Zabini=3, Longbottom=2}"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="78" _type="ConsoleOutput" date="Thu Jan 27 22:07:01 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="282703" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):219
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"T"), Diff(DELETE,"hread[pool-1-thread-1,5,main]:Reducer:reduce:[(Abbott,1), (Abbott,1), (Abbott,1), (Abbott,1), (Longbottom,1), (Longbottom,1), (Zabini,1), (Zabini,1), (Zabini,1)]:{Abbott=4, Zabini=3, Longbottom=2}"), Diff(INSERT,"est execution time (ms):219"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="80" _type="PauseCommand" date="Thu Jan 27 22:07:05 EST 2022" range="2s-5s" starttimestamp="1643338938980" timestamp="286134">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[3431]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="79" _type="ConsoleOutput" date="Thu Jan 27 22:07:05 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="286134" type="ConsoleOutput">
+    <outputString><![CDATA[Thread[pool-1-thread-1,5,main]:Int Summing Mapper:Map:[0021, 0021]:[(ResultKey,21), (ResultKey,21)]
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"T"), Diff(DELETE,"est execution time (ms):219"), Diff(INSERT,"hread[pool-1-thread-1,5,main]:Int Summing Mapper:Map:[0021, 0021]:[(ResultKey,21), (ResultKey,21)]"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="81" _type="ConsoleOutput" date="Thu Jan 27 22:07:05 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="286322" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):105
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"T"), Diff(DELETE,"hread[pool-1-thread-1,5,main]:Int Summing Mapper:Map:[0021, 0021]:[(ResultKey,21), (ResultKey,21)]"), Diff(INSERT,"est execution time (ms):105"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="83" _type="PauseCommand" date="Thu Jan 27 22:07:07 EST 2022" range="1s-2s" starttimestamp="1643338938980" timestamp="288225">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1903]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="82" _type="ConsoleOutput" date="Thu Jan 27 22:07:07 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="288225" type="ConsoleOutput">
+    <outputString><![CDATA[
+
+
+
+
+
+
+
+
+
+
+ for pattern [.*=45.*, .*=5500.*]
+ for pattern [.*=45.*, .*=5500.*]
+Test execution time (ms):2007
+
+
+
+
+
+
+
+ for pattern [.*Controller.*Please.*?, .*View.*propertyName=InputString.*?, .*View.*propertyName=Result.*=45.*]
+ for pattern [.*Controller.*Please.*?, .*View.*propertyName=InputString.*?, .*View.*propertyName=Result.*=45.*]
+ for pattern [.*Controller.*Please.*?, .*View.*propertyName=InputString.*?, .*View.*propertyName=Result.*=45.*]
+Test execution time (ms):8
+
+
+
+
+
+
+
+
+
+
+
+ for pattern [.*Map:.*100, 200, 300, 400, 500, 600, 700, 800, 900, 1000.*(\(ResultKey, ?[0-9]+\).*){10}.*, .*reduce:.*(\(ResultKey, ?[0-9]+\).*){10}.*5500.*]
+ for pattern [.*Map:.*100, 200, 300, 400, 500, 600, 700, 800, 900, 1000.*(\(ResultKey, ?[0-9]+\).*){10}.*, .*reduce:.*(\(ResultKey, ?[0-9]+\).*){10}.*5500.*]
+Test execution time (ms):13
+
+ for pattern [.*new mapper:.*?]
+Test execution time (ms):2
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):105"), Diff(INSERT,"¶¶¶¶¶¶¶¶¶¶¶ for pattern [.*=45.*, .*=5500.*]¶ for pattern [.*=45.*, .*=5500.*]¶Test execution time (ms):2007¶¶¶¶¶¶¶¶ for pattern [.*Controller.*Please.*?, .*View.*propertyName=InputString.*?, .*View.*propertyName=Result.*=45.*]¶ for pattern [.*Controller.*Please.*?, .*View.*propertyName=InputString.*?, .*View.*propertyName=Result.*=45.*]¶ for pattern [.*Controller.*Please.*?, .*View.*propertyName=InputString.*?, .*View.*propertyName=Result.*=45.*]¶Test execution time (ms):8¶¶¶¶¶¶¶¶¶¶¶¶ for pattern [.*Map:.*100, 200, 300, 400, 500, 600, 700, 800, 900, 1000.*(\(ResultKey, ?[0-9]+\).*){10}.*, .*reduce:.*(\(ResultKey, ?[0-9]+\).*){10}.*5500.*]¶ for pattern [.*Map:.*100, 200, 300, 400, 500, 600, 700, 800, 900, 1000.*(\(ResultKey, ?[0-9]+\).*){10}.*, .*reduce:.*(\(ResultKey, ?[0-9]+\).*){10}.*5500.*]¶Test execution time (ms):13¶¶ for pattern [.*new mapper:.*?]¶Test execution time (ms):2"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="84" _type="ConsoleOutput" date="Thu Jan 27 22:07:07 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="288398" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):2
+Test execution time (ms):1
+Test execution time (ms):1
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"¶¶¶¶¶¶¶¶¶¶¶ for pattern [.*=45.*, .*=5500.*]¶ for pattern [.*=45.*, .*=5500.*]¶Test execution time (ms):2007¶¶¶¶¶¶¶¶ for pattern [.*Controller.*Please.*?, .*View.*propertyName=InputString.*?, .*View.*propertyName=Result.*=45.*]¶ for pattern [.*Controller.*Please.*?, .*View.*propertyName=InputString.*?, .*View.*propertyName=Result.*=45.*]¶ for pattern [.*Controller.*Please.*?, .*View.*propertyName=InputString.*?, .*View.*propertyName=Result.*=45.*]¶Test execution time (ms):8¶¶¶¶¶¶¶¶¶¶¶¶ for pattern [.*Map:.*100, 200, 300, 400, 500, 600, 700, 800, 900, 1000.*(\(ResultKey, ?[0-9]+\).*){10}.*, .*reduce:.*(\(ResultKey, ?[0-9]+\).*){10}.*5500.*]¶ for pattern [.*Map:.*100, 200, 300, 400, 500, 600, 700, 800, 900, 1000.*(\(ResultKey, ?[0-9]+\).*){10}.*, .*reduce:.*(\(ResultKey, ?[0-9]+\).*){10}.*5500.*]¶Test execution time (ms):13¶¶ for pattern [.*new mapper:.*?]¶Test execution time (ms):2"), Diff(INSERT,"Test execution time (ms):2¶Test execution time (ms):1¶Test execution time (ms):1"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="86" _type="PauseCommand" date="Thu Jan 27 22:07:09 EST 2022" range="1s-2s" starttimestamp="1643338938980" timestamp="290076">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1678]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="85" _type="ConsoleOutput" date="Thu Jan 27 22:07:09 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="290076" type="ConsoleOutput">
+    <outputString><![CDATA[Thread[pool-1-thread-1,5,main]:Token Counting Mapper:Map:[Abbott, Abbott, Abbott, Abbott, Longbottom, Longbottom, Zabini, Zabini, Zabini]:[(Abbott,1), (Abbott,1), (Abbott,1), (Abbott,1), (Longbottom,1), (Longbottom,1), (Zabini,1), (Zabini,1), (Zabini,1)]
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"T"), Diff(DELETE,"est execution time (ms):2¶Test execution time (ms):1¶Test execution time (ms):1"), Diff(INSERT,"hread[pool-1-thread-1,5,main]:Token Counting Mapper:Map:[Abbott, Abbott, Abbott, Abbott, Longbottom, Longbottom, Zabini, Zabini, Zabini]:[(Abbott,1), (Abbott,1), (Abbott,1), (Abbott,1), (Longbottom,1), (Longbottom,1), (Zabini,1), (Zabini,1), (Zabini,1)]"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="87" _type="ConsoleOutput" date="Thu Jan 27 22:07:09 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="290211" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):105
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"T"), Diff(DELETE,"hread[pool-1-thread-1,5,main]:Token Counting Mapper:Map:[Abbott, Abbott, Abbott, Abbott, Longbottom, Longbottom, Zabini, Zabini, Zabini]:[(Abbott,1), (Abbott,1), (Abbott,1), (Abbott,1), (Longbottom,1), (Longbottom,1), (Zabini,1), (Zabini,1), (Zabini,1)]"), Diff(INSERT,"est execution time (ms):105"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="89" _type="PauseCommand" date="Thu Jan 27 22:07:10 EST 2022" range="1s-2s" starttimestamp="1643338938980" timestamp="291538">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1327]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="88" _type="ConsoleOutput" date="Thu Jan 27 22:07:10 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="291538" type="ConsoleOutput">
+    <outputString><![CDATA[
+
+
+
+
+ for pattern [.*Hogwarts.*5.*?]
+Test execution time (ms):1350
+
+
+
+
+
+
+ for pattern [.*Controller.*Please.*?, .*View.*propertyName=InputString.*?, .*View.*propertyName=Result.*Hogwarts=5.*]
+ for pattern [.*Controller.*Please.*?, .*View.*propertyName=InputString.*?, .*View.*propertyName=Result.*Hogwarts=5.*]
+ for pattern [.*Controller.*Please.*?, .*View.*propertyName=InputString.*?, .*View.*propertyName=Result.*Hogwarts=5.*]
+Test execution time (ms):7
+
+
+
+
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):105"), Diff(INSERT,"¶¶¶¶¶ for pattern [.*Hogwarts.*5.*?]¶Test execution time (ms):1350¶¶¶¶¶¶¶ for pattern [.*Controller.*Please.*?, .*View.*propertyName=InputString.*?, .*View.*propertyName=Result.*Hogwarts=5.*]¶ for pattern [.*Controller.*Please.*?, .*View.*propertyName=InputString.*?, .*View.*propertyName=Result.*Hogwarts=5.*]¶ for pattern [.*Controller.*Please.*?, .*View.*propertyName=InputString.*?, .*View.*propertyName=Result.*Hogwarts=5.*]¶Test execution time (ms):7¶¶¶¶"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="90" _type="ConsoleOutput" date="Thu Jan 27 22:07:10 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="291561" type="ConsoleOutput">
+    <outputString><![CDATA[ for pattern [.*Map:.*Hogwarts.*muggles.*wizards.*(\([Hmw].*, ?1\).*){10}.*, .*reduce:.*(\([Hmw].*, ?1\).*){10}.*Hogwarts=5.*]
+ for pattern [.*Map:.*Hogwarts.*muggles.*wizards.*(\([Hmw].*, ?1\).*){10}.*, .*reduce:.*(\([Hmw].*, ?1\).*){10}.*Hogwarts=5.*]
+Test execution time (ms):48
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"¶¶¶¶¶"), Diff(EQUAL," for pattern [.*"), Diff(INSERT,"Map:.*"), Diff(EQUAL,"Hogwarts.*"), Diff(DELETE,"5.*?]¶Test execution time (ms):1350¶¶¶¶¶¶¶ for pattern [.*Controller.*Please"), Diff(INSERT,"muggles.*wizards.*(\([Hmw].*, ?1\).*){10}"), Diff(EQUAL,".*"), Diff(DELETE,"?"), Diff(EQUAL,", .*"), Diff(DELETE,"View.*propertyName=InputString"), Diff(INSERT,"reduce:.*(\([Hmw]"), Diff(EQUAL,".*"), Diff(DELETE,"?"), Diff(EQUAL,", "), Diff(DELETE,".*View.*propertyName=Result"), Diff(INSERT,"?1\).*){10}"), Diff(EQUAL,".*Hogwarts=5.*]¶ for pattern [.*"), Diff(DELETE,"Controller.*Please.*?, .*View.*propertyName=InputString.*?, .*View.*propertyName=Result.*Hogwarts=5.*]¶ for pattern [.*Controller.*Please"), Diff(INSERT,"Map:.*Hogwarts.*muggles.*wizards.*(\([Hmw].*, ?1\).*){10}"), Diff(EQUAL,".*"), Diff(DELETE,"?"), Diff(EQUAL,", .*"), Diff(DELETE,"View.*propertyName=InputString"), Diff(INSERT,"reduce:.*(\([Hmw]"), Diff(EQUAL,".*"), Diff(DELETE,"?"), Diff(EQUAL,", "), Diff(DELETE,".*View.*propertyName=Result"), Diff(INSERT,"?1\).*){10}"), Diff(EQUAL,".*Hogwarts=5.*]¶Test execution time (ms):"), Diff(DELETE,"7¶¶¶¶"), Diff(INSERT,"48"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="91" _type="ConsoleOutput" date="Thu Jan 27 22:07:10 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="291778" type="ConsoleOutput">
+    <outputString><![CDATA[Building symbol table and running first pass checks:Thu Jan 27 22:07:10 EST 2022
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE," for pattern [.*Map:.*Hogwarts.*muggles.*wizards.*(\([Hmw].*, ?1\).*){10}.*, .*reduce:.*(\([Hmw].*, ?1\).*){10}.*Hogwarts=5.*]¶ for pattern [.*Map:.*Hogwarts.*muggles.*wizards.*(\([Hmw].*, ?1\).*){10}.*, .*reduce:.*(\([Hmw].*, ?1\).*){10}.*Hogwarts=5.*]¶Test execution time (ms):48"), Diff(INSERT,"Building symbol table and running first pass checks:Thu Jan 27 22:07:10 EST 2022"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="93" _type="PauseCommand" date="Thu Jan 27 22:07:13 EST 2022" range="2s-5s" starttimestamp="1643338938980" timestamp="294193">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2415]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="92" _type="ConsoleOutput" date="Thu Jan 27 22:07:13 EST 2022" overflow="false" starttimestamp="1643338938980" timestamp="294193" type="ConsoleOutput">
+    <outputString><![CDATA[Symbol table size:43
+Running second pass checks Thu Jan 27 22:07:13 EST 2022
+Start O(n2) inter- and intra class method calls:Thu Jan 27 22:07:13 EST 2022
+End O(n2) inter- and intra class method calls:Thu Jan 27 22:07:13 EST 2022
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Building s"), Diff(INSERT,"S"), Diff(EQUAL,"ymbol table "), Diff(DELETE,"and running first pass check"), Diff(INSERT,"size:43¶Running second pass checks Thu Jan 27 22:07:13 EST 2022¶Start O(n2) inter- and intra class method calls:Thu Jan 27 22:07:13 EST 2022¶End O(n2) inter- and intra class method call"), Diff(EQUAL,"s:Thu Jan 27 22:07:1"), Diff(DELETE,"0"), Diff(INSERT,"3"), Diff(EQUAL," EST 2022¶")]]]></diff>
+  </Command>
+  <Command __id="95" _type="PauseCommand" date="Thu Jan 27 22:07:14 EST 2022" range="1s-2s" starttimestamp="1643338938980" timestamp="295413">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1220]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="98" _type="ProgramExecutionEvent" className="/A1/src/comp533/mvc/A1Tests.java" date="Thu Jan 27 22:13:53 EST 2022" kind="HitBreakPoint" projectName="A1" starttimestamp="1643338938980" timestamp="694730" type="Run" />
+  <Command __id="100" _type="ProgramExecutionEvent" className="/A1/src/comp533/mvc/A1Tests.java" date="Thu Jan 27 22:13:53 EST 2022" kind="HitBreakPoint" projectName="A1" starttimestamp="1643338938980" timestamp="694731" type="Run" />
+  <Command __id="101" _type="ShellCommand" date="Thu Jan 27 22:13:54 EST 2022" starttimestamp="1643338938980" timestamp="695557" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="102" _type="ShellCommand" date="Thu Jan 27 22:13:55 EST 2022" starttimestamp="1643338938980" timestamp="696517" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="104" _type="PauseCommand" date="Thu Jan 27 22:13:56 EST 2022" range="1s-2s" starttimestamp="1643338938980" timestamp="697988">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1471]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+</Events>

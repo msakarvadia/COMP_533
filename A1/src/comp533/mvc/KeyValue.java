@@ -28,7 +28,8 @@ public class KeyValue<K, V> implements KeyValueInterface<K, V> {
 	
 	@Override
 	public String toString() {
-		return "("+key.toString()+","+val.toString()+")";
+		final String string = "("+key.toString()+","+val.toString()+")";
+		return string;
 	}
 	
 }

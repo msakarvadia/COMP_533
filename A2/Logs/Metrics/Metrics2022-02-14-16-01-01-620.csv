@@ -1,0 +1,5 @@
+Id,Prediction,Date,File,StartTime,ElapsedTime,BusyTime,Commands,editOrInsertPercentage,debugPercentage,navigationPercentage,focusPercentage,removePercentage,editPercentage,COMMAND_RATE,NAVIGATION_RATE,DEBUG_RATE,FOCUS_RATE,EDIT_RATE,REMOVE_RATE,INSERT_RATE,webLinkTimes,Web Page Visits
+1,,Mon Feb 14 16:10:45 EST 2022,SummingModel.java,1644873045459,54919,0,(D)1,0.0,100.0,0.0,0.0,0.0,0.0,0.018518518518518517,0.0,0.018518518518518517,0.0,0.0,0.0,0.0,0.0,[]
+,/modelData/A0UserStudy2010.arff,Mon Feb 14 16:10:45 EST 2022,SummingModel.java, 1644873045459
+2,,Mon Feb 14 16:11:40 EST 2022,SummingModel.java,1644873100797,75989,0,(D)3,0.0,100.0,0.0,0.0,0.0,0.0,0.04,0.0,0.04,0.0,0.0,0.0,0.0,0.0,[]
+3,,Mon Feb 14 16:12:56 EST 2022,SummingModel.java,1644873176786,467099,0,(F)1(D)1,0.0,50.0,0.0,50.0,0.0,0.0,0.004282655246252677,0.0,0.0021413276231263384,0.0021413276231263384,0.0,0.0,0.0,0.0,[]

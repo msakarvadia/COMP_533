@@ -1,0 +1,194 @@
+<Events startTimestamp="1643654373880" logVersion="1.0.0.202111260825">
+  <Command __id="4" _type="EclipseCommand" commandID="" date="Mon Jan 31 13:39:39 EST 2022" starttimestamp="1643654373880" timestamp="5968" />
+  <Command __id="6" _type="PauseCommand" date="Mon Jan 31 13:39:44 EST 2022" range="2s-5s" starttimestamp="1643654373880" timestamp="10358">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[4390]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="7" _type="MoveCaretCommand" caretOffset="0" date="Mon Jan 31 13:39:44 EST 2022" docOffset="0" starttimestamp="1643654373880" timestamp="10713" />
+  <Command __id="5" _type="DiffBasedFileOpenCommand" date="Mon Jan 31 13:39:44 EST 2022" docASTNodeCount="318" docActiveCodeLength="1992" docExpressionCount="183" docLength="2167" projectName="A1" starttimestamp="1643654373880" timestamp="10358">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\SummingModel.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+//import gradingTools.comp533s19.assignment0.AMapReduceTracer;
+
+//public class SummingModel extends AMapReduceTracer implements ModelInterface
+public class SummingModel extends Model implements ModelInterface{
+	private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
+	private String inputString = null;
+	private Map<String, Integer> result = new HashMap<String, Integer>();
+	final ReducerInterface<String, Integer> reducer = ReducerFactory.getReducer();
+	final IntSummingMapperInterface<String, Integer> mapper = IntSummingMapperFactory.getMapper();
+
+	
+	@Override
+	public Map<String, Integer> getResult() {
+		return result;
+	}
+
+	@Override
+	public void addPropertyChangeListener(final PropertyChangeListener newListener) {
+		propertyChangeSupport.addPropertyChangeListener(newListener);
+	}
+
+	@Override
+	public void setInputString(final String newVal) {
+		final String oldString = inputString;
+		inputString = newVal;
+		final String label = "InputString";
+		final PropertyChangeEvent inputEvent = new PropertyChangeEvent(this, label, oldString, newVal);
+		propertyChangeSupport.firePropertyChange(inputEvent);
+	}
+
+	@Override
+	public void computeResult() {
+		String oldResult = result.toString();
+		if (result.isEmpty()) {
+			oldResult = null;
+		}
+		final String tokens = inputString;
+		result.clear();
+
+		final String space = " ";
+		final List<String> ListOfToken = Arrays.asList(tokens.split(space));
+		final List<KeyValueInterface<String, Integer>> keyValList = mapper.map(ListOfToken);
+		result = reducer.reduce(keyValList);
+		final String label = "Result";
+		final PropertyChangeEvent resultComputed = new PropertyChangeEvent(this, label, oldResult,result.toString());
+		propertyChangeSupport.firePropertyChange(resultComputed);
+	}
+
+	@Override
+	public String toString() {// overriding the toString() method
+		return MODEL;
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="9" _type="PauseCommand" date="Mon Jan 31 13:39:45 EST 2022" range="1s-2s" starttimestamp="1643654373880" timestamp="11899">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1185]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="10" _type="MoveCaretCommand" caretOffset="0" date="Mon Jan 31 13:39:46 EST 2022" docOffset="0" starttimestamp="1643654373880" timestamp="12232" />
+  <Command __id="8" _type="DiffBasedFileOpenCommand" date="Mon Jan 31 13:39:45 EST 2022" docASTNodeCount="68" docActiveCodeLength="475" docExpressionCount="36" docLength="475" projectName="A1" starttimestamp="1643654373880" timestamp="11898">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\StandAloneIntSumming.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+
+public class StandAloneIntSumming {
+	public static void main(final String[] args) {
+		
+		
+		final ViewInterface view = new View();
+		
+		final ModelInterface model = new SummingModel();
+		model.addPropertyChangeListener(view);
+		IntSummingMapperFactory.setMapper(IntSummingMapperFactory.getMapper());
+		
+		final ControllerInterface controller = new Controller();
+		controller.setModel(model);
+		controller.processInput();
+		
+		
+	}
+}
+
+]]></snapshot>
+  </Command>
+  <Command __id="12" _type="PauseCommand" date="Mon Jan 31 13:39:54 EST 2022" range="5s-10s" starttimestamp="1643654373880" timestamp="20409">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[8177]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="13" _type="MoveCaretCommand" caretOffset="0" date="Mon Jan 31 13:39:54 EST 2022" docOffset="0" starttimestamp="1643654373880" timestamp="20581" />
+  <Command __id="15" _type="PauseCommand" date="Mon Jan 31 13:40:28 EST 2022" range="30s-1m" starttimestamp="1643654373880" timestamp="54811">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[34230]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="14" _type="ShellCommand" date="Mon Jan 31 13:40:28 EST 2022" starttimestamp="1643654373880" timestamp="54811" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="17" _type="PauseCommand" date="Mon Jan 31 13:45:26 EST 2022" range="2m-5m" starttimestamp="1643654373880" timestamp="352270">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[297458]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="16" _type="ShellCommand" date="Mon Jan 31 13:45:26 EST 2022" starttimestamp="1643654373880" timestamp="352269" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="19" _type="PauseCommand" date="Mon Jan 31 13:45:27 EST 2022" range="1s-2s" starttimestamp="1643654373880" timestamp="353447">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1178]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="18" _type="ShellCommand" date="Mon Jan 31 13:45:27 EST 2022" starttimestamp="1643654373880" timestamp="353447" type="ECLIPSE_MINIMIZED" />
+  <Command __id="20" _type="ShellCommand" date="Mon Jan 31 13:45:27 EST 2022" starttimestamp="1643654373880" timestamp="353470" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="22" _type="PauseCommand" date="Mon Jan 31 15:26:14 EST 2022" range=">1h" starttimestamp="1643654373880" timestamp="6400503">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[6047033]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[BalloonCommand]]></next>
+  </Command>
+  <Command __id="21" _type="BalloonCommand" date="Mon Jan 31 15:26:14 EST 2022" message="*******************************************
+Worked 0 minutes(fixed)/5 minutes(context based) from
+Mon Jan 31 13:39:37 EST 2022 to Mon Jan 31 13:45:27 EST 2022
+Edited 0 Projects: 
+Edited 0 Files: 
+Number of insert: 0
+Number of delete: 0
+" starttimestamp="1643654373880" timestamp="6400503">
+    <fineGrainedWorkTime><![CDATA[5]]></fineGrainedWorkTime>
+    <insert><![CDATA[0]]></insert>
+    <startTime><![CDATA[1643654377684]]></startTime>
+    <endTime><![CDATA[1643654727350]]></endTime>
+    <workTime><![CDATA[0]]></workTime>
+    <delete><![CDATA[0]]></delete>
+  </Command>
+  <Command __id="24" _type="PauseCommand" date="Mon Jan 31 16:22:26 EST 2022" range="30m-1h" starttimestamp="1643654373880" timestamp="9773030">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[BalloonCommand]]></prev>
+    <pause><![CDATA[3372526]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="23" _type="ShellCommand" date="Mon Jan 31 16:22:26 EST 2022" starttimestamp="1643654373880" timestamp="9773029" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="26" _type="PauseCommand" date="Mon Jan 31 22:23:09 EST 2022" range=">1h" starttimestamp="1643654373880" timestamp="31415133">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[21642104]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="25" _type="ShellCommand" date="Mon Jan 31 22:23:09 EST 2022" starttimestamp="1643654373880" timestamp="31415133" type="ECLIPSE_MAXIMIZED" />
+  <Command __id="27" _type="ShellCommand" date="Mon Jan 31 22:23:09 EST 2022" starttimestamp="1643654373880" timestamp="31415661" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="28" _type="ShellCommand" date="Mon Jan 31 22:23:09 EST 2022" starttimestamp="1643654373880" timestamp="31415786" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="29" _type="ShellCommand" date="Mon Jan 31 22:23:10 EST 2022" starttimestamp="1643654373880" timestamp="31416317" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="31" _type="PauseCommand" date="Tue Feb 01 10:39:49 EST 2022" range=">1h" starttimestamp="1643654373880" timestamp="75615246">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[44198929]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+</Events>

@@ -24,7 +24,8 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 	public void setInputString(final String newVal) {
 		final String oldInputString = inputString;
 		inputString = newVal;
-		final PropertyChangeEvent inputEvent = new PropertyChangeEvent(this, "InputString", oldInputString, newVal);
+		final String label = "InputString";
+		final PropertyChangeEvent inputEvent = new PropertyChangeEvent(this, label, oldInputString, newVal);
 		propertyChangeSupport.firePropertyChange(inputEvent);
 	}
 
@@ -43,7 +44,8 @@ public class Model extends AMapReduceTracer implements ModelInterface {
 		// TODO PROPERTY CHANGE FOR KeyValList
 		result = reducer.reduce(keyValList);
 		// TODO property change for Result
-		final PropertyChangeEvent resultComputed = new PropertyChangeEvent(this, "Result", oldResult, result.toString());
+		final String label = "Result";
+		final PropertyChangeEvent resultComputed = new PropertyChangeEvent(this, label, oldResult, result.toString());
 		propertyChangeSupport.firePropertyChange(resultComputed);
 
 	}

@@ -151,8 +151,8 @@
 			@ModelClass!terminate:->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceQuit:->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceNumbersPrompt:->void,
-			java.util.Scanner!close:->void,
 			@ModelClass!setInputString:String->void,
+			java.util.Scanner!close:->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceThreadPrompt:->void,
 			@ModelClass!setNumThreads:int->void,
 			java.util.Scanner!nextLine:->String,
@@ -167,8 +167,8 @@
 			@ModelClass!terminate:->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceQuit:->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceNumbersPrompt:->void,
-			java.util.Scanner!close:->void,
 			@ModelClass!setInputString:String->void,
+			java.util.Scanner!close:->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceThreadPrompt:->void,
 			@ModelClass!setNumThreads:int->void,
 			java.util.Scanner!nextLine:->String,
@@ -200,8 +200,8 @@
 		<property name="severity" value="warning"/>
 		<property name="includeTypeTags" value="@StandAloneTokenCounter"/>
 		<property name="expectedCalls" value="
-			@ControllerClass!setModel:@ModelClass->void,
 			@ControllerClass!processInput:->void,
+			@ControllerClass!setModel:@ModelClass->void,
 			@ModelClass!addPropertyChangeListener:java.beans.PropertyChangeListener->void,
 		"/>
 	</module>
@@ -209,8 +209,8 @@
 		<property name="severity" value="info"/>
 		<property name="includeTypeTags" value="@StandAloneTokenCounter"/>
 		<property name="expectedCalls" value="
-			@ControllerClass!setModel:@ModelClass->void,
 			@ControllerClass!processInput:->void,
+			@ControllerClass!setModel:@ModelClass->void,
 			@ModelClass!addPropertyChangeListener:java.beans.PropertyChangeListener->void,
 		"/>
 	</module>
@@ -362,16 +362,16 @@
 		<property name="includeTypeTags" value="@SlaveClass"/>
 		<property name="expectedCalls" value="
 			@ReducerFactory!getReducer:->@ReducerClass,
-			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceBarrierWaitEnd:Object;int;int->void,
 			@KeyValueClass!getValue:*->.*,
+			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceBarrierWaitEnd:Object;int;int->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceQuit:->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceBarrierReleaseAll:Object;int;int->void,
 			@KeyValueClass!getKey:*->.*,
-			java.lang.Object!wait:->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceNotify:->void,
+			java.lang.Object!wait:->void,
 			java.util.LinkedList!add:Object->boolean,
-			@BarrierClass!barrier:*->.*,
 			java.util.List!set:int;Object->Object,
+			@BarrierClass!barrier:*->.*,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceJoinerWaitEnd:Object;int;int->void,
 			java.lang.Object!notifyAll:->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceBarrierWaitStart:Object;int;int->void,
@@ -383,8 +383,8 @@
 			java.util.List!get:int->Object,
 			java.util.Map!put:Object;Object->Object,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceDequeueRequest:Object->void,
-			@JoinerClass!getTotalFinished:*->.*,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceJoinerRelease:Object;int;int->void,
+			@JoinerClass!getTotalFinished:*->.*,
 			java.util.Map!clear:*->.*,
 			@JoinerClass!finished:*->.*,
 			@ModelClass!getBarrier:->@BarrierClass,
@@ -398,8 +398,8 @@
 			@KeyValueClass!setKey:TypeParam0->void,
 			java.util.Map!entrySet:->.*,
 			java.lang.Object!notify:->void,
-			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceWait:->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceJoinerWaitStart:Object;int;int->void,
+			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceWait:->void,
 			@ReducerClass!reduce:java.util.List->java.util.Map,
 			java.util.concurrent.BlockingQueue!take:->Object,
 			@PartitionerFactory!getPartitioner:->@PartitionerClass,
@@ -410,16 +410,16 @@
 		<property name="includeTypeTags" value="@SlaveClass"/>
 		<property name="expectedCalls" value="
 			@ReducerFactory!getReducer:->@ReducerClass,
-			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceBarrierWaitEnd:Object;int;int->void,
 			@KeyValueClass!getValue:*->.*,
+			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceBarrierWaitEnd:Object;int;int->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceQuit:->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceBarrierReleaseAll:Object;int;int->void,
 			@KeyValueClass!getKey:*->.*,
-			java.lang.Object!wait:->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceNotify:->void,
+			java.lang.Object!wait:->void,
 			java.util.LinkedList!add:Object->boolean,
-			@BarrierClass!barrier:*->.*,
 			java.util.List!set:int;Object->Object,
+			@BarrierClass!barrier:*->.*,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceJoinerWaitEnd:Object;int;int->void,
 			java.lang.Object!notifyAll:->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceBarrierWaitStart:Object;int;int->void,
@@ -431,8 +431,8 @@
 			java.util.List!get:int->Object,
 			java.util.Map!put:Object;Object->Object,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceDequeueRequest:Object->void,
-			@JoinerClass!getTotalFinished:*->.*,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceJoinerRelease:Object;int;int->void,
+			@JoinerClass!getTotalFinished:*->.*,
 			java.util.Map!clear:*->.*,
 			@JoinerClass!finished:*->.*,
 			@ModelClass!getBarrier:->@BarrierClass,
@@ -446,8 +446,8 @@
 			@KeyValueClass!setKey:TypeParam0->void,
 			java.util.Map!entrySet:->.*,
 			java.lang.Object!notify:->void,
-			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceWait:->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceJoinerWaitStart:Object;int;int->void,
+			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceWait:->void,
 			@ReducerClass!reduce:java.util.List->java.util.Map,
 			java.util.concurrent.BlockingQueue!take:->Object,
 			@PartitionerFactory!getPartitioner:->@PartitionerClass,
@@ -701,8 +701,8 @@
 		<property name="severity" value="warning"/>
 		<property name="includeTypeTags" value="@StandAloneIntegerSummer"/>
 		<property name="expectedCalls" value="
-			@ControllerClass!setModel:@ModelClass->void,
 			@ControllerClass!processInput:->void,
+			@ControllerClass!setModel:@ModelClass->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceSingletonChange:Class;Object->void,
 			@ModelClass!addPropertyChangeListener:java.beans.PropertyChangeListener->void,
 		"/>
@@ -711,8 +711,8 @@
 		<property name="severity" value="info"/>
 		<property name="includeTypeTags" value="@StandAloneIntegerSummer"/>
 		<property name="expectedCalls" value="
-			@ControllerClass!setModel:@ModelClass->void,
 			@ControllerClass!processInput:->void,
+			@ControllerClass!setModel:@ModelClass->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceSingletonChange:Class;Object->void,
 			@ModelClass!addPropertyChangeListener:java.beans.PropertyChangeListener->void,
 		"/>
@@ -752,8 +752,8 @@
 		<property name="includeTypeTags" value="@BarrierClass"/>
 		<property name="expectedCalls" value="
 			java.lang.Object!notifyAll:->void,
-			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceBarrierWaitStart:Object;int;int->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceBarrierWaitEnd:Object;int;int->void,
+			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceBarrierWaitStart:Object;int;int->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceBarrierReleaseAll:Object;int;int->void,
 			java.lang.Object!wait:->void,
 		"/>
@@ -763,8 +763,8 @@
 		<property name="includeTypeTags" value="@BarrierClass"/>
 		<property name="expectedCalls" value="
 			java.lang.Object!notifyAll:->void,
-			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceBarrierWaitStart:Object;int;int->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceBarrierWaitEnd:Object;int;int->void,
+			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceBarrierWaitStart:Object;int;int->void,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceBarrierReleaseAll:Object;int;int->void,
 			java.lang.Object!wait:->void,
 		"/>
@@ -877,13 +877,13 @@
 		<property name="severity" value="warning"/>
 		<property name="includeTypeTags" value="@ReducerClass"/>
 		<property name="expectedCalls" value="
-			java.util.List!iterator:->Iterator,
 			java.util.Map!put:Object;Object->Object,
+			java.util.List!iterator:->Iterator,
 			@KeyValueClass!getValue:*->.*,
 			java.util.Map!containsKey:Object->boolean,
 			java.util.Iterator!next:->Object,
-			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceReduce:Object;Object->void,
 			@KeyValueClass!getKey:*->.*,
+			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceReduce:Object;Object->void,
 			java.util.Map!get:Object->Object,
 			java.util.Iterator!hasNext:->boolean,
 		"/>
@@ -892,13 +892,13 @@
 		<property name="severity" value="info"/>
 		<property name="includeTypeTags" value="@ReducerClass"/>
 		<property name="expectedCalls" value="
-			java.util.List!iterator:->Iterator,
 			java.util.Map!put:Object;Object->Object,
+			java.util.List!iterator:->Iterator,
 			@KeyValueClass!getValue:*->.*,
 			java.util.Map!containsKey:Object->boolean,
 			java.util.Iterator!next:->Object,
-			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceReduce:Object;Object->void,
 			@KeyValueClass!getKey:*->.*,
+			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceReduce:Object;Object->void,
 			java.util.Map!get:Object->Object,
 			java.util.Iterator!hasNext:->boolean,
 		"/>
@@ -978,16 +978,16 @@
 			java.util.concurrent.ArrayBlockingQueue!toString:*->.*,
 			@IntSummingMapperClass!toString:*->.*,
 			java.util.EventObject!toString:*->.*,
-			@ReducerClass!toString:*->.*,
-			@KeyValueClass!toString:*->.*,
 			@PartitionerClass!toString:*->.*,
+			@ReducerClass!toString:*->.*,
 			@BarrierClass!toString:*->.*,
+			@KeyValueClass!toString:*->.*,
 			java.beans.PropertyChangeEvent!toString:*->.*,
 			java.lang.Thread!toString:*->.*,
 			@SlaveClass!toString:*->.*,
 			@ControllerClass!toString:*->.*,
-			java.util.AbstractMap!toString:*->.*,
 			java.lang.Integer!toString:*->.*,
+			java.util.AbstractMap!toString:*->.*,
 			@ModelClass!toString:*->.*,
 		"/>
 	</module>
@@ -1005,45 +1005,17 @@
 			java.util.concurrent.ArrayBlockingQueue!toString:*->.*,
 			@IntSummingMapperClass!toString:*->.*,
 			java.util.EventObject!toString:*->.*,
-			@ReducerClass!toString:*->.*,
-			@KeyValueClass!toString:*->.*,
 			@PartitionerClass!toString:*->.*,
+			@ReducerClass!toString:*->.*,
 			@BarrierClass!toString:*->.*,
+			@KeyValueClass!toString:*->.*,
 			java.beans.PropertyChangeEvent!toString:*->.*,
 			java.lang.Thread!toString:*->.*,
 			@SlaveClass!toString:*->.*,
 			@ControllerClass!toString:*->.*,
-			java.util.AbstractMap!toString:*->.*,
 			java.lang.Integer!toString:*->.*,
+			java.util.AbstractMap!toString:*->.*,
 			@ModelClass!toString:*->.*,
-		"/>
-	</module>
-	<module name="MethodAccessesGlobal">
-		<property name="severity" value="warning"/>
-		<property name="includeTypeTags" value="@KeyValueClass"/>
-		<property name="expectedReferences" value="
-			toString:->String#.*VIEW.*,
-		"/>
-	</module>
-	<module name="MethodAccessesGlobal">
-		<property name="severity" value="warning"/>
-		<property name="includeTypeTags" value="@KeyValueClass"/>
-		<property name="expectedReferences" value="
-			toString:->String#.*MODEL.*,
-		"/>
-	</module>
-	<module name="MethodAccessesGlobal">
-		<property name="severity" value="warning"/>
-		<property name="includeTypeTags" value="@KeyValueClass"/>
-		<property name="expectedReferences" value="
-			toString:->String#.*TOKEN_COUNTING_MAPPER.*,
-		"/>
-	</module>
-	<module name="MethodAccessesGlobal">
-		<property name="severity" value="warning"/>
-		<property name="includeTypeTags" value="@KeyValueClass"/>
-		<property name="expectedReferences" value="
-			toString:->String#.*REDUCER.*,
 		"/>
 	</module>
 	<module name="MethodAccessesGlobal">
@@ -1057,6 +1029,27 @@
 		<property name="severity" value="warning"/>
 		<property name="includeTypeTags" value="@KeyValueClass"/>
 		<property name="expectedReferences" value="
+			toString:->String#.*REDUCER.*,
+		"/>
+	</module>
+	<module name="MethodAccessesGlobal">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@KeyValueClass"/>
+		<property name="expectedReferences" value="
+			toString:->String#.*VIEW.*,
+		"/>
+	</module>
+	<module name="MethodAccessesGlobal">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@KeyValueClass"/>
+		<property name="expectedReferences" value="
+			toString:->String#.*INT_SUMMING_MAPPER.*,
+		"/>
+	</module>
+	<module name="MethodAccessesGlobal">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@KeyValueClass"/>
+		<property name="expectedReferences" value="
 			toString:->String#.*BARRIER.*,
 		"/>
 	</module>
@@ -1064,7 +1057,7 @@
 		<property name="severity" value="warning"/>
 		<property name="includeTypeTags" value="@KeyValueClass"/>
 		<property name="expectedReferences" value="
-			toString:->String#.*CONTROLLER.*,
+			toString:->String#.*TOKEN_COUNTING_MAPPER.*,
 		"/>
 	</module>
 	<module name="MethodAccessesGlobal">
@@ -1085,7 +1078,14 @@
 		<property name="severity" value="warning"/>
 		<property name="includeTypeTags" value="@KeyValueClass"/>
 		<property name="expectedReferences" value="
-			toString:->String#.*INT_SUMMING_MAPPER.*,
+			toString:->String#.*CONTROLLER.*,
+		"/>
+	</module>
+	<module name="MethodAccessesGlobal">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@KeyValueClass"/>
+		<property name="expectedReferences" value="
+			toString:->String#.*MODEL.*,
 		"/>
 	</module>
 	<module name="MethodAccessesGlobal">
@@ -1193,8 +1193,8 @@
 			@TokenCountingMapperClass!toString:*->.*,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceEnqueue:Object->void,
 			java.util.LinkedList!get:int->Object,
-			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceEnqueueRequest:Object->void,
 			java.util.List!add:int;Object->void,
+			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceEnqueueRequest:Object->void,
 			java.util.EventObject!toString:*->.*,
 			@PartitionerClass!toString:*->.*,
 			java.lang.Thread!toString:*->.*,
@@ -1209,8 +1209,8 @@
 			@ViewClass!toString:*->.*,
 			java.util.concurrent.ArrayBlockingQueue!clear:*->.*,
 			java.util.AbstractCollection!toString:*->.*,
-			java.util.LinkedList!size:->int,
 			java.util.AbstractMap!clear:*->.*,
+			java.util.LinkedList!size:->int,
 			java.util.concurrent.ArrayBlockingQueue!toString:*->.*,
 			java.util.HashMap!clear:*->.*,
 			java.lang.Thread!interrupt:->void,
@@ -1232,8 +1232,8 @@
 			@SlaveClass!toString:*->.*,
 			java.util.List!isEmpty:->boolean,
 			java.util.List!clear:*->.*,
-			java.util.AbstractMap!toString:*->.*,
 			java.lang.Integer!toString:*->.*,
+			java.util.AbstractMap!toString:*->.*,
 			java.util.Map!put:Object;Object->Object,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceAddedToMap:Object;Object->void,
 			java.util.ArrayList!clear:*->.*,
@@ -1262,8 +1262,8 @@
 			@TokenCountingMapperClass!toString:*->.*,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceEnqueue:Object->void,
 			java.util.LinkedList!get:int->Object,
-			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceEnqueueRequest:Object->void,
 			java.util.List!add:int;Object->void,
+			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceEnqueueRequest:Object->void,
 			java.util.EventObject!toString:*->.*,
 			@PartitionerClass!toString:*->.*,
 			java.lang.Thread!toString:*->.*,
@@ -1278,8 +1278,8 @@
 			@ViewClass!toString:*->.*,
 			java.util.concurrent.ArrayBlockingQueue!clear:*->.*,
 			java.util.AbstractCollection!toString:*->.*,
-			java.util.LinkedList!size:->int,
 			java.util.AbstractMap!clear:*->.*,
+			java.util.LinkedList!size:->int,
 			java.util.concurrent.ArrayBlockingQueue!toString:*->.*,
 			java.util.HashMap!clear:*->.*,
 			java.lang.Thread!interrupt:->void,
@@ -1301,8 +1301,8 @@
 			@SlaveClass!toString:*->.*,
 			java.util.List!isEmpty:->boolean,
 			java.util.List!clear:*->.*,
-			java.util.AbstractMap!toString:*->.*,
 			java.lang.Integer!toString:*->.*,
+			java.util.AbstractMap!toString:*->.*,
 			java.util.Map!put:Object;Object->Object,
 			gradingTools.comp533s19.assignment0.AMapReduceTracer!traceAddedToMap:Object;Object->void,
 			java.util.ArrayList!clear:*->.*,
@@ -1323,21 +1323,7 @@
 		<property name="severity" value="warning"/>
 		<property name="includeTypeTags" value="@ModelClass"/>
 		<property name="expectedReferences" value="
-			setNumThreads:int->void#.*VIEW.*,
-		"/>
-	</module>
-	<module name="MethodAccessesGlobal">
-		<property name="severity" value="warning"/>
-		<property name="includeTypeTags" value="@ModelClass"/>
-		<property name="expectedReferences" value="
-			setNumThreads:int->void#.*MODEL.*,
-		"/>
-	</module>
-	<module name="MethodAccessesGlobal">
-		<property name="severity" value="warning"/>
-		<property name="includeTypeTags" value="@ModelClass"/>
-		<property name="expectedReferences" value="
-			setNumThreads:int->void#.*TOKEN_COUNTING_MAPPER.*,
+			setNumThreads:int->void#.*JOINER.*,
 		"/>
 	</module>
 	<module name="MethodAccessesGlobal">
@@ -1351,7 +1337,14 @@
 		<property name="severity" value="warning"/>
 		<property name="includeTypeTags" value="@ModelClass"/>
 		<property name="expectedReferences" value="
-			setNumThreads:int->void#.*JOINER.*,
+			setNumThreads:int->void#.*VIEW.*,
+		"/>
+	</module>
+	<module name="MethodAccessesGlobal">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@ModelClass"/>
+		<property name="expectedReferences" value="
+			setNumThreads:int->void#.*INT_SUMMING_MAPPER.*,
 		"/>
 	</module>
 	<module name="MethodAccessesGlobal">
@@ -1365,7 +1358,7 @@
 		<property name="severity" value="warning"/>
 		<property name="includeTypeTags" value="@ModelClass"/>
 		<property name="expectedReferences" value="
-			setNumThreads:int->void#.*CONTROLLER.*,
+			setNumThreads:int->void#.*TOKEN_COUNTING_MAPPER.*,
 		"/>
 	</module>
 	<module name="MethodAccessesGlobal">
@@ -1386,7 +1379,14 @@
 		<property name="severity" value="warning"/>
 		<property name="includeTypeTags" value="@ModelClass"/>
 		<property name="expectedReferences" value="
-			setNumThreads:int->void#.*INT_SUMMING_MAPPER.*,
+			setNumThreads:int->void#.*CONTROLLER.*,
+		"/>
+	</module>
+	<module name="MethodAccessesGlobal">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@ModelClass"/>
+		<property name="expectedReferences" value="
+			setNumThreads:int->void#.*MODEL.*,
 		"/>
 	</module>
 	<module name="MethodAccessesGlobal">
@@ -1407,42 +1407,7 @@
 		<property name="severity" value="warning"/>
 		<property name="includeTypeTags" value="@ModelClass"/>
 		<property name="expectedReferences" value="
-			setInputString:String->void#.*VIEW.*,
-		"/>
-	</module>
-	<module name="MethodAccessesGlobal">
-		<property name="severity" value="warning"/>
-		<property name="includeTypeTags" value="@ModelClass"/>
-		<property name="expectedReferences" value="
 			setInputString:String->void#.*JOINER.*,
-		"/>
-	</module>
-	<module name="MethodAccessesGlobal">
-		<property name="severity" value="warning"/>
-		<property name="includeTypeTags" value="@ModelClass"/>
-		<property name="expectedReferences" value="
-			setInputString:String->void#.*INT_SUMMING_MAPPER.*,
-		"/>
-	</module>
-	<module name="MethodAccessesGlobal">
-		<property name="severity" value="warning"/>
-		<property name="includeTypeTags" value="@ModelClass"/>
-		<property name="expectedReferences" value="
-			setInputString:String->void#.*PARTITIONER.*,
-		"/>
-	</module>
-	<module name="MethodAccessesGlobal">
-		<property name="severity" value="warning"/>
-		<property name="includeTypeTags" value="@ModelClass"/>
-		<property name="expectedReferences" value="
-			setInputString:String->void#.*MODEL.*,
-		"/>
-	</module>
-	<module name="MethodAccessesGlobal">
-		<property name="severity" value="warning"/>
-		<property name="includeTypeTags" value="@ModelClass"/>
-		<property name="expectedReferences" value="
-			setInputString:String->void#.*TOKEN_COUNTING_MAPPER.*,
 		"/>
 	</module>
 	<module name="MethodAccessesGlobal">
@@ -1456,14 +1421,7 @@
 		<property name="severity" value="warning"/>
 		<property name="includeTypeTags" value="@ModelClass"/>
 		<property name="expectedReferences" value="
-			setInputString:String->void#.*BARRIER.*,
-		"/>
-	</module>
-	<module name="MethodAccessesGlobal">
-		<property name="severity" value="warning"/>
-		<property name="includeTypeTags" value="@ModelClass"/>
-		<property name="expectedReferences" value="
-			setInputString:String->void#.*CONTROLLER.*,
+			setInputString:String->void#.*MODEL.*,
 		"/>
 	</module>
 	<module name="MethodAccessesGlobal">
@@ -1477,7 +1435,49 @@
 		<property name="severity" value="warning"/>
 		<property name="includeTypeTags" value="@ModelClass"/>
 		<property name="expectedReferences" value="
+			setInputString:String->void#.*VIEW.*,
+		"/>
+	</module>
+	<module name="MethodAccessesGlobal">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@ModelClass"/>
+		<property name="expectedReferences" value="
+			setInputString:String->void#.*INT_SUMMING_MAPPER.*,
+		"/>
+	</module>
+	<module name="MethodAccessesGlobal">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@ModelClass"/>
+		<property name="expectedReferences" value="
+			setInputString:String->void#.*BARRIER.*,
+		"/>
+	</module>
+	<module name="MethodAccessesGlobal">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@ModelClass"/>
+		<property name="expectedReferences" value="
+			setInputString:String->void#.*TOKEN_COUNTING_MAPPER.*,
+		"/>
+	</module>
+	<module name="MethodAccessesGlobal">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@ModelClass"/>
+		<property name="expectedReferences" value="
 			setInputString:String->void#.*SLAVE.*,
+		"/>
+	</module>
+	<module name="MethodAccessesGlobal">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@ModelClass"/>
+		<property name="expectedReferences" value="
+			setInputString:String->void#.*CONTROLLER.*,
+		"/>
+	</module>
+	<module name="MethodAccessesGlobal">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@ModelClass"/>
+		<property name="expectedReferences" value="
+			setInputString:String->void#.*PARTITIONER.*,
 		"/>
 	</module>
 	<module name="MethodAccessesGlobal">

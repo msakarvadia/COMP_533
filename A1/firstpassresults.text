@@ -1,8 +1,8 @@
 Starting audit...
 [INFO] C:\Users\mannu\COMP_533\A1\.\src\comp533\mvc\A1Tests.java:0: Expected type names/tags: [@StandAloneTokenCounter, @ReducerClass, @ControllerClass, @KeyValueClass, @IntSummingMapperClass, @ModelClass, @StandAloneIntegerSummer, @MapperFactory, @ViewClass, @ReducerFactory, @TokenCountingMapperClass] [STBuilder]
-[INFO] C:\Users\mannu\COMP_533\A1\.\src\comp533\mvc\A1Tests.java:8:33: Final parameter args defined. Good! [FinalParameterDefined]
+[INFO] C:\Users\mannu\COMP_533\A1\.\src\comp533\mvc\A1Tests.java:9:33: Final parameter args defined. Good! [FinalParameterDefined]
 [INFO] C:\Users\mannu\COMP_533\A1\.\src\comp533\mvc\Controller.java:30:30: Final parameter newModel defined. Good! [FinalParameterDefined]
-[INFO] C:\Users\mannu\COMP_533\A1\.\src\comp533\mvc\IntSummingMapper.java:11:61: Final parameter listOfToken defined. Good! [FinalParameterDefined]
+[INFO] C:\Users\mannu\COMP_533\A1\.\src\comp533\mvc\IntSummingMapper.java:12:61: Final parameter listOfToken defined. Good! [FinalParameterDefined]
 [INFO] C:\Users\mannu\COMP_533\A1\.\src\comp533\mvc\IntSummingMapperFactory.java:16:38: Final parameter newMapper defined. Good! [FinalParameterDefined]
 [INFO] C:\Users\mannu\COMP_533\A1\.\src\comp533\mvc\KeyValue.java:13:28: Final parameter newKey defined. Good! [FinalParameterDefined]
 [INFO] C:\Users\mannu\COMP_533\A1\.\src\comp533\mvc\KeyValue.java:18:30: Final parameter newValue defined. Good! [FinalParameterDefined]
@@ -16,7 +16,8 @@ Starting audit...
 [INFO] C:\Users\mannu\COMP_533\A1\.\src\comp533\mvc\StandAloneIntSumming.java:4:33: Final parameter args defined. Good! [FinalParameterDefined]
 [INFO] C:\Users\mannu\COMP_533\A1\.\src\comp533\mvc\SummingModel.java:28:47: Final parameter newListener defined. Good! [FinalParameterDefined]
 [INFO] C:\Users\mannu\COMP_533\A1\.\src\comp533\mvc\SummingModel.java:33:36: Final parameter newVal defined. Good! [FinalParameterDefined]
-[INFO] C:\Users\mannu\COMP_533\A1\.\src\comp533\mvc\TokenCountingMapper.java:10:61: Final parameter aStrings defined. Good! [FinalParameterDefined]
+[INFO] C:\Users\mannu\COMP_533\A1\.\src\comp533\mvc\TokenCountingMapper.java:8:26: Named Constant ONE defined. Good! [ConstantDefined]
+[INFO] C:\Users\mannu\COMP_533\A1\.\src\comp533\mvc\TokenCountingMapper.java:11:61: Final parameter aStrings defined. Good! [FinalParameterDefined]
 [INFO] C:\Users\mannu\COMP_533\A1\.\src\comp533\mvc\TokenCountingMapperFactory.java:16:38: Final parameter newMapper defined. Good! [FinalParameterDefined]
 [INFO] C:\Users\mannu\COMP_533\A1\.\src\comp533\mvc\View.java:9:36: Final parameter evt defined. Good! [FinalParameterDefined]
 Audit done.

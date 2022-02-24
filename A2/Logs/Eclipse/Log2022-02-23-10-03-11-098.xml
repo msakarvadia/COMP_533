@@ -1,0 +1,125 @@
+<Events startTimestamp="1645628591098" logVersion="1.0.0.202111260825">
+  <Command __id="115" _type="EclipseCommand" commandID="" date="Wed Feb 23 10:11:01 EST 2022" starttimestamp="1645628591098" timestamp="470541" />
+  <Command __id="117" _type="EclipseCommand" commandID="" date="Wed Feb 23 10:11:01 EST 2022" starttimestamp="1645628591098" timestamp="470554" />
+  <Command __id="72" _type="DiffBasedFileOpenCommand" date="Wed Feb 23 10:10:17 EST 2022" docASTNodeCount="119" docActiveCodeLength="884" docExpressionCount="77" docLength="1275" projectName="A3" starttimestamp="1645628591098" timestamp="426501">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A3\src\comp533\mvc\A3Tests.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+
+import grader.basics.execution.BasicProjectExecution;
+import gradingTools.comp533s22.assignment2.S22Assignment2Suite;
+import trace.grader.basics.GraderBasicsTraceUtility;
+import util.trace.Tracer;
+
+public class A3Tests {
+	public static void main(final String[] args) {
+		Tracer.showInfo(true);
+		GraderBasicsTraceUtility.setBufferTracedMessages(false);
+		final int traces = 8000;
+		Tracer.setMaxTraces(traces);
+		
+		// if you set this to false, grader steps will not be traced
+		GraderBasicsTraceUtility.setTracerShowInfo(true);	
+		// if you set this to false, all grader steps will be traced,
+		// not just the ones that failed		
+		
+		GraderBasicsTraceUtility.setBufferTracedMessages(false);
+		// Change this number if a test trace gets longer than 600 and is clipped
+		
+		final int length = 600;
+		GraderBasicsTraceUtility.setMaxPrintedTraces(length);
+		// Change this number if all traces together are longer than 600
+		
+		final int time = 4000;
+		GraderBasicsTraceUtility.setMaxTraces(time);
+		// Change this number if your process times out prematurely
+		
+		final int timer = 50;
+		BasicProjectExecution.setProcessTimeOut(timer);
+		// You need to always call such a method
+		S22Assignment2Suite.main(args);
+	}
+}
+]]></snapshot>
+  </Command>
+  <DocumentChange __id="78" _type="Delete" date="Wed Feb 23 10:10:26 EST 2022" docASTNodeCount="119" docActiveCodeLength="883" docExpressionCount="77" docLength="1274" endLine="33" length="1" offset="1248" startLine="33" starttimestamp="1645628591098" timestamp="435163">
+    <text><![CDATA[2]]></text>
+  </DocumentChange>
+  <DocumentChange __id="80" _type="Insert" date="Wed Feb 23 10:10:26 EST 2022" docASTNodeCount="119" docActiveCodeLength="884" docExpressionCount="77" docLength="1275" length="1" offset="1248" starttimestamp="1645628591098" timestamp="435836">
+    <text><![CDATA[3]]></text>
+  </DocumentChange>
+  <DocumentChange __id="91" _type="Delete" date="Wed Feb 23 10:10:36 EST 2022" docASTNodeCount="119" docActiveCodeLength="883" docExpressionCount="77" docLength="1274" endLine="3" length="1" offset="120" startLine="3" starttimestamp="1645628591098" timestamp="445016">
+    <text><![CDATA[2]]></text>
+  </DocumentChange>
+  <DocumentChange __id="93" _type="Insert" date="Wed Feb 23 10:10:36 EST 2022" docASTNodeCount="119" docActiveCodeLength="884" docExpressionCount="77" docLength="1275" length="1" offset="120" starttimestamp="1645628591098" timestamp="445888">
+    <text><![CDATA[2]]></text>
+  </DocumentChange>
+  <DocumentChange __id="95" _type="Delete" date="Wed Feb 23 10:10:37 EST 2022" docASTNodeCount="119" docActiveCodeLength="883" docExpressionCount="77" docLength="1274" endLine="3" length="1" offset="120" startLine="3" starttimestamp="1645628591098" timestamp="446617">
+    <text><![CDATA[2]]></text>
+  </DocumentChange>
+  <DocumentChange __id="97" _type="Insert" date="Wed Feb 23 10:10:38 EST 2022" docASTNodeCount="119" docActiveCodeLength="884" docExpressionCount="77" docLength="1275" length="1" offset="120" starttimestamp="1645628591098" timestamp="447152">
+    <text><![CDATA[3]]></text>
+  </DocumentChange>
+  <DocumentChange __id="108" _type="Delete" date="Wed Feb 23 10:10:59 EST 2022" docASTNodeCount="119" docActiveCodeLength="883" docExpressionCount="77" docLength="1274" endLine="3" length="1" offset="135" startLine="3" starttimestamp="1645628591098" timestamp="468059">
+    <text><![CDATA[2]]></text>
+  </DocumentChange>
+  <DocumentChange __id="110" _type="Insert" date="Wed Feb 23 10:10:59 EST 2022" docASTNodeCount="119" docActiveCodeLength="884" docExpressionCount="77" docLength="1275" length="1" offset="135" starttimestamp="1645628591098" timestamp="468439">
+    <text><![CDATA[3]]></text>
+  </DocumentChange>
+  <Command __id="119" _type="PauseCommand" date="Wed Feb 23 10:11:19 EST 2022" range="10s-20s" starttimestamp="1645628591098" timestamp="487940">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[17386]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="124" _type="EclipseCommand" commandID="" date="Wed Feb 23 10:11:29 EST 2022" starttimestamp="1645628591098" timestamp="498022" />
+  <Command __id="126" _type="EclipseCommand" commandID="" date="Wed Feb 23 10:11:29 EST 2022" starttimestamp="1645628591098" timestamp="498028" />
+  <Command __id="121" _type="DiffBasedFileOpenCommand" date="Wed Feb 23 10:11:27 EST 2022" docASTNodeCount="119" docActiveCodeLength="884" docExpressionCount="77" docLength="1275" projectName="A3" starttimestamp="1645628591098" timestamp="496037">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A3\src\comp533\mvc\A3Tests.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package comp533.mvc;¶¶import grader.basics.execution.BasicProjectExecution;¶import gradingTools.comp533s22.assignment"), Diff(DELETE,"2"), Diff(INSERT,"3"), Diff(EQUAL,".S22Assignment"), Diff(DELETE,"2"), Diff(INSERT,"3"), Diff(EQUAL,"Suite;¶import trace.grader.basics.GraderBasicsTraceUtility;¶import util.trace.Tracer;¶¶public class A3Tests {¶	public static void main(final String[] args) {¶		Tracer.showInfo(true);¶		GraderBasicsTraceUtility.setBufferTracedMessages(false);¶		final int traces = 8000;¶		Tracer.setMaxTraces(traces);¶		¶		// if you set this to false, grader steps will not be traced¶		GraderBasicsTraceUtility.setTracerShowInfo(true);	¶		// if you set this to false, all grader steps will be traced,¶		// not just the ones that failed		¶		¶		GraderBasicsTraceUtility.setBufferTracedMessages(false);¶		// Change this number if a test trace gets longer than 600 and is clipped¶		¶		final int length = 600;¶		GraderBasicsTraceUtility.setMaxPrintedTraces(length);¶		// Change this number if all traces together are longer than 600¶		¶		final int time = 4000;¶		GraderBasicsTraceUtility.setMaxTraces(time);¶		// Change this number if your process times out prematurely¶		¶		final int timer = 50;¶		BasicProjectExecution.setProcessTimeOut(timer);¶		// You need to always call such a method¶		S22Assignment"), Diff(DELETE,"2"), Diff(INSERT,"3"), Diff(EQUAL,"Suite.main(args);¶	}¶}¶")]]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+
+import grader.basics.execution.BasicProjectExecution;
+import gradingTools.comp533s22.assignment3.S22Assignment3Suite;
+import trace.grader.basics.GraderBasicsTraceUtility;
+import util.trace.Tracer;
+
+public class A3Tests {
+	public static void main(final String[] args) {
+		Tracer.showInfo(true);
+		GraderBasicsTraceUtility.setBufferTracedMessages(false);
+		final int traces = 8000;
+		Tracer.setMaxTraces(traces);
+		
+		// if you set this to false, grader steps will not be traced
+		GraderBasicsTraceUtility.setTracerShowInfo(true);	
+		// if you set this to false, all grader steps will be traced,
+		// not just the ones that failed		
+		
+		GraderBasicsTraceUtility.setBufferTracedMessages(false);
+		// Change this number if a test trace gets longer than 600 and is clipped
+		
+		final int length = 600;
+		GraderBasicsTraceUtility.setMaxPrintedTraces(length);
+		// Change this number if all traces together are longer than 600
+		
+		final int time = 4000;
+		GraderBasicsTraceUtility.setMaxTraces(time);
+		// Change this number if your process times out prematurely
+		
+		final int timer = 50;
+		BasicProjectExecution.setProcessTimeOut(timer);
+		// You need to always call such a method
+		S22Assignment3Suite.main(args);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="128" _type="PauseCommand" date="Wed Feb 23 10:11:43 EST 2022" range="10s-20s" starttimestamp="1645628591098" timestamp="511970">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[13942]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>

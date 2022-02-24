@@ -529,3 +529,28 @@ public class MapReduceConfiguration implements gradingTools.comp533s21.assignmen
     <nextType><![CDATA[Open File]]></nextType>
     <next><![CDATA[DiffBasedFileOpenCommand]]></next>
   </Command>
+  <Command __id="3704" _type="UndoCommand" date="Sat Jan 22 12:44:02 EST 2022" starttimestamp="1642790797461" timestamp="82644798" />
+  <Command __id="3705" _type="MoveCaretCommand" caretOffset="105" date="Sat Jan 22 12:44:03 EST 2022" docOffset="105" starttimestamp="1642790797461" timestamp="82645745" />
+  <DocumentChange __id="3702" _type="Insert" date="Sat Jan 22 12:44:02 EST 2022" docASTNodeCount="23" docActiveCodeLength="123" docExpressionCount="10" docLength="123" length="7" offset="52" starttimestamp="1642790797461" timestamp="82644776">
+    <text><![CDATA[static ]]></text>
+  </DocumentChange>
+  <Command __id="3707" _type="PauseCommand" date="Sat Jan 22 12:44:07 EST 2022" range="2s-5s" starttimestamp="1642790797461" timestamp="82650496">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[4751]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="3708" _type="MoveCaretCommand" caretOffset="0" date="Sat Jan 22 12:44:08 EST 2022" docOffset="0" starttimestamp="1642790797461" timestamp="82651029" />
+  <Command __id="3706" _type="DiffBasedFileOpenCommand" date="Sat Jan 22 12:44:07 EST 2022" docASTNodeCount="30" docActiveCodeLength="214" docExpressionCount="17" docLength="214" projectName="A0" starttimestamp="1642790797461" timestamp="82650496">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A0\src\greeting\GreetingClassRegistry.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package greeting;¶¶public class GreetingClassRegistry implements gradingTools.shared.testcases.greeting.GreetingClassRegistry{¶¶	@Override¶	public Class<?> getGreetingMain() {¶		return Hello.class;¶	}¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="3710" _type="PauseCommand" date="Sat Jan 22 12:44:17 EST 2022" range="5s-10s" starttimestamp="1642790797461" timestamp="82659823">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[8794]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+</Events>

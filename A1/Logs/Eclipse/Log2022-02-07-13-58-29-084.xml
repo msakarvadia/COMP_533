@@ -1,0 +1,68 @@
+<Events startTimestamp="1644260309084" logVersion="1.0.0.202111260825">
+  <Command __id="1" _type="MoveCaretCommand" caretOffset="0" date="Mon Feb 07 13:58:30 EST 2022" docOffset="0" starttimestamp="1644260309084" timestamp="1700" />
+  <Command __id="3" _type="PauseCommand" date="Mon Feb 07 13:59:32 EST 2022" range="1m-2m" starttimestamp="1644260309084" timestamp="63605">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[61882]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="2" _type="ShellCommand" date="Mon Feb 07 13:59:32 EST 2022" starttimestamp="1644260309084" timestamp="63582" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="5" _type="PauseCommand" date="Mon Feb 07 13:59:44 EST 2022" range="10s-20s" starttimestamp="1644260309084" timestamp="75614">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[12032]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="4" _type="ShellCommand" date="Mon Feb 07 13:59:44 EST 2022" starttimestamp="1644260309084" timestamp="75614" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="6" _type="ShellCommand" date="Mon Feb 07 13:59:45 EST 2022" starttimestamp="1644260309084" timestamp="76397" type="ECLIPSE_MINIMIZED" />
+  <Command __id="7" _type="ShellCommand" date="Mon Feb 07 13:59:45 EST 2022" starttimestamp="1644260309084" timestamp="76420" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="9" _type="PauseCommand" date="Mon Feb 07 15:34:39 EST 2022" range=">1h" starttimestamp="1644260309084" timestamp="5770035">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[5693607]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[BalloonCommand]]></next>
+  </Command>
+  <Command __id="8" _type="BalloonCommand" date="Mon Feb 07 15:34:39 EST 2022" message="*******************************************
+Worked 0 minutes(fixed)/1 minutes(context based) from
+Mon Feb 07 13:58:30 EST 2022 to Mon Feb 07 13:59:45 EST 2022
+Edited 0 Projects: 
+Edited 0 Files: 
+Number of insert: 0
+Number of delete: 0
+" starttimestamp="1644260309084" timestamp="5770027">
+    <fineGrainedWorkTime><![CDATA[1]]></fineGrainedWorkTime>
+    <insert><![CDATA[0]]></insert>
+    <startTime><![CDATA[1644260310304]]></startTime>
+    <endTime><![CDATA[1644260385504]]></endTime>
+    <workTime><![CDATA[0]]></workTime>
+    <delete><![CDATA[0]]></delete>
+  </Command>
+  <Command __id="11" _type="PauseCommand" date="Mon Feb 07 16:43:18 EST 2022" range=">1h" starttimestamp="1644260309084" timestamp="9889575">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[BalloonCommand]]></prev>
+    <pause><![CDATA[4119546]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="10" _type="ShellCommand" date="Mon Feb 07 16:43:18 EST 2022" starttimestamp="1644260309084" timestamp="9889573" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="13" _type="PauseCommand" date="Mon Feb 07 18:59:02 EST 2022" range=">1h" starttimestamp="1644260309084" timestamp="18033796">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[8144222]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="12" _type="ShellCommand" date="Mon Feb 07 18:59:02 EST 2022" starttimestamp="1644260309084" timestamp="18033795" type="ECLIPSE_MAXIMIZED" />
+  <Command __id="14" _type="ShellCommand" date="Mon Feb 07 18:59:03 EST 2022" starttimestamp="1644260309084" timestamp="18034021" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="15" _type="ShellCommand" date="Mon Feb 07 18:59:04 EST 2022" starttimestamp="1644260309084" timestamp="18034974" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="17" _type="PauseCommand" date="Mon Feb 07 18:59:05 EST 2022" range="1s-2s" starttimestamp="1644260309084" timestamp="18036328">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1354]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+</Events>

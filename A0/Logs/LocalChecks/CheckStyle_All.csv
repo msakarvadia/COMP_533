@@ -1154,3 +1154,9 @@
 21,Thu Jan 13 21:49:16 EST 2022,true,greeting\Hello.java,nameInDictionary,greeting.Hello,hello
 21,Thu Jan 13 21:49:16 EST 2022,true,greeting\Hello.java,nameInDictionary,args,args
 21,Thu Jan 13 21:49:16 EST 2022,true,greeting\Hello.java,expectedMethodCall,java.io.PrintStream!println:*->.*,Method:main:String[]->void,greeting.Hello:[@GreetingMain]
+22,Mon Jan 31 13:39:39 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+22,Mon Jan 31 13:39:39 EST 2022,true,greeting\A0Tests.java,classDefined,No Expected Tag
+22,Mon Jan 31 13:39:39 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain
+23,Tue Feb 08 09:39:29 EST 2022,true,greeting\GreetingClassRegistry.java,classDefined,No Expected Tag
+23,Tue Feb 08 09:39:29 EST 2022,true,greeting\A0Tests.java,classDefined,No Expected Tag
+23,Tue Feb 08 09:39:29 EST 2022,true,greeting\Hello.java,classDefined,@GreetingMain

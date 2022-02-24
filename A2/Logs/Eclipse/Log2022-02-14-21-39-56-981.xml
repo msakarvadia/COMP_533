@@ -1,0 +1,647 @@
+<Events startTimestamp="1644892796981" logVersion="1.0.0.202111260825">
+  <Command __id="1" _type="MoveCaretCommand" caretOffset="0" date="Mon Feb 14 21:39:57 EST 2022" docOffset="0" starttimestamp="1644892796981" timestamp="870" />
+  <Command __id="0" _type="DiffBasedFileOpenCommand" date="Mon Feb 14 21:39:57 EST 2022" docASTNodeCount="933" docActiveCodeLength="5965" docExpressionCount="525" docLength="8043" projectName="A2" starttimestamp="1644892796981" timestamp="650">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\comp533\salve\Slave.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.salve;
+
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.BlockingQueue;
+
+import comp533.mvc.KeyValue;
+import comp533.mvc.KeyValueInterface;
+import comp533.mvc.ModelInterface;
+import comp533.mvc.ReducerFactory;
+import comp533.mvc.ReducerInterface;
+import comp533.partitioner.PartitionerFactory;
+import comp533.partitioner.PartitionerInterface;
+import gradingTools.comp533s19.assignment0.AMapReduceTracer;
+
+public class Slave extends AMapReduceTracer implements SlaveInterface {
+	final int number;
+	final int numThreads;
+	final ModelInterface slaveModel;
+	
+	LinkedList<KeyValueInterface<String, Integer>> reductionLinkedList;
+	private Map<String, Integer> result = new HashMap<String, Integer>();
+	private Map<String, Integer> keyToPartition = new HashMap<String, Integer>();
+
+
+	
+	public Slave(final int identifier, final ModelInterface model) {
+		number = identifier;
+		slaveModel = model;
+		numThreads = model.getNumThreads();
+	}
+
+	@Override
+	final public void run() {
+		System.out.println("RUN METHOD");
+
+		while (true) {
+			boolean loop = true;
+			
+			//TODO make wait a separate method
+			synchronized (this) {
+				try {
+					traceWait();
+					wait();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					traceQuit();
+					e.printStackTrace();
+					break; // this breaks out of run loop then thread terminates
+				}
+			}
+			
+			LinkedList<KeyValueInterface<String, Integer>> localList = new LinkedList<KeyValueInterface<String, Integer>>();
+			localList = block(slaveModel, localList, loop);
+			/*while (loop) {
+				final BlockingQueue<KeyValueInterface<String, Integer>> aKeyValueQueue = slaveModel.getKeyValueQueue();
+
+				KeyValueInterface<String, Integer> keyVal = null;
+
+				try {
+					traceDequeueRequest(aKeyValueQueue);
+					keyVal = aKeyValueQueue.take();
+					traceDequeue(keyVal);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					traceQuit();
+					e.printStackTrace();
+					// continue;
+				}
+
+				// if keyVal is null, null need to stop consuming
+				if (keyVal.getKey() == null) {
+					loop = false;
+					continue;
+				}
+
+				localList.add(keyVal);
+
+			}*/
+			loop = false;
+
+			// partially reduce list
+
+			final ReducerInterface<String, Integer> reducer = ReducerFactory.getReducer();
+			result = reducer.reduce(localList);
+			localList.clear();
+			// this gets the correct partitions for each key
+		/*	final PartitionerInterface<String, Integer> partitioner = PartitionerFactory.getPartitioner();
+			for (Map.Entry<String, Integer> keyVal : result.entrySet()) {
+				final int partition = partitioner.getPartition(keyVal.getKey(), keyVal.getValue(), numThreads);
+				keyToPartition.put(keyVal.getKey(), partition);
+			}*/
+			keyToPartition.clear();
+			keyToPartition = partitionKeys(keyToPartition, result); 
+			// System.out.println("key to partition "+keyToPartition.toString());
+
+			// add partitally reduced keyValues to the ReducitonQueueList
+
+			List<LinkedList<KeyValueInterface<String, Integer>>> aReductionQueueList = slaveModel
+					.getReductionQueueList();
+			
+			aReductionQueueList = updateReductionQueueListWithPartitions(aReductionQueueList, keyToPartition);
+
+			keyToPartition.clear();
+
+			// wait for the other slaves to complete their splitting
+			slaveModel.getBarrier().barrier();
+			traceSplitAfterBarrier(number, aReductionQueueList);
+
+			// Need to do final reduction of this threads linkedList
+			synchronized (aReductionQueueList) {
+				final LinkedList<KeyValueInterface<String, Integer>> updatedLocalLinkedList = aReductionQueueList
+						.get(number);
+				result = reducer.reduce(updatedLocalLinkedList);
+				final LinkedList<KeyValueInterface<String, Integer>> finalLocalLinkedList = addKeyValToLocalLinkedList();
+
+				// for (Map.Entry<String, Integer> keyVal : result.entrySet()) {
+				// final KeyValueInterface<String, Integer> finalKeyVal = new KeyValue<String,
+				// Integer>();
+				// finalKeyVal.setKey(keyVal.getKey());
+				// finalKeyVal.setValue(keyVal.getValue());
+				// finalLocalLinkedList.add(finalKeyVal);
+				// }
+				// aReductionQueueList.set(number, finalLocalLinkedList);
+				aReductionQueueList.set(number, finalLocalLinkedList);
+			}
+
+			loop = true;
+			slaveModel.getJoiner().finished();
+			// System.out.println(aReductionQueueList.toString());
+
+			// System.out.println(slaveModel.getJoiner().getTotalFinished());
+			if (slaveModel.getJoiner().getTotalFinished() == numThreads) {
+				slaveModel.getJoiner().join();
+
+			}
+
+			synchronized (this) {
+				try {
+					traceWait();
+					wait();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					traceQuit();
+					e.printStackTrace();
+				}
+			}
+			continue;
+		}
+
+	}
+
+	@Override
+	public synchronized void notifySlave() {
+		// TODO This should be when a line is read
+
+		traceNotify();
+		this.notify();
+	}
+
+	@Override
+	public String toString() {
+		return SLAVE;
+	}
+
+	@Override
+	public LinkedList<KeyValueInterface<String, Integer>> addKeyValToLocalLinkedList() {
+		final LinkedList<KeyValueInterface<String, Integer>> finalLocalLinkedList = new LinkedList<KeyValueInterface<String, Integer>>();
+
+		for (Map.Entry<String, Integer> keyVal : result.entrySet()) {
+			final KeyValueInterface<String, Integer> finalKeyVal = new KeyValue<String, Integer>();
+			finalKeyVal.setKey(keyVal.getKey());
+			finalKeyVal.setValue(keyVal.getValue());
+			finalLocalLinkedList.add(finalKeyVal);
+		}
+		return finalLocalLinkedList;
+	}
+	
+	@Override
+	public List<LinkedList<KeyValueInterface<String, Integer>>> updateReductionQueueListWithPartitions(final List<LinkedList<KeyValueInterface<String, Integer>>> reductionQueueList, final Map<String, Integer> aKeyToPartition){
+		for (Map.Entry<String, Integer> keyVal : aKeyToPartition.entrySet()) {
+			final String key = keyVal.getKey();
+			final Integer partition = keyVal.getValue();
+			final Integer val = result.get(key);
+
+			final KeyValueInterface<String, Integer> partialKeyVal = new KeyValue<String, Integer>();
+			partialKeyVal.setKey(key);
+			partialKeyVal.setValue(val);
+			final LinkedList<KeyValueInterface<String, Integer>> localLinkedList = reductionQueueList
+					.get(partition);
+			localLinkedList.add(partialKeyVal);
+			// aReductionQueueList.set(partition, localLinkedList);
+			synchronized (reductionQueueList) {
+				reductionQueueList.set(partition, localLinkedList);
+			}
+
+		}
+		
+		return reductionQueueList;
+	}
+
+	@Override
+	public Map<String, Integer> partitionKeys(final Map<String, Integer> aKeyToPartition, final Map<String, Integer> aResult) {
+		final PartitionerInterface<String, Integer> partitioner = PartitionerFactory.getPartitioner();
+		for (Map.Entry<String, Integer> keyVal : aResult.entrySet()) {
+			final int partition = partitioner.getPartition(keyVal.getKey(), keyVal.getValue(), numThreads);
+			aKeyToPartition.put(keyVal.getKey(), partition);
+		}
+		return aKeyToPartition;
+	}
+
+	@Override
+	public LinkedList<KeyValueInterface<String, Integer>> block(final ModelInterface aSlaveModel, final LinkedList<KeyValueInterface<String, Integer>> aLocalList, final boolean aLoop) {
+		boolean loopy = aLoop;
+		while (loopy) {
+			final BlockingQueue<KeyValueInterface<String, Integer>> aKeyValueQueue = aSlaveModel.getKeyValueQueue();
+
+			KeyValueInterface<String, Integer> keyVal = null;
+
+			try {
+				traceDequeueRequest(aKeyValueQueue);
+				keyVal = aKeyValueQueue.take();
+				traceDequeue(keyVal);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				traceQuit();
+				e.printStackTrace();
+				// continue;
+			}
+
+			// if keyVal is null, null need to stop consuming
+			if (keyVal.getKey() == null) {
+				loopy = false;
+				continue;
+			}
+
+			aLocalList.add(keyVal);
+
+		}
+		return aLocalList;
+		
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="3" _type="PauseCommand" date="Mon Feb 14 21:40:11 EST 2022" range="10s-20s" starttimestamp="1644892796981" timestamp="14712">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[13838]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="4" _type="SelectTextCommand" caretOffset="8016" date="Mon Feb 14 21:40:11 EST 2022" end="8016" start="7158" starttimestamp="1644892796981" timestamp="14863" />
+  <Command __id="5" _type="MoveCaretCommand" caretOffset="7842" date="Mon Feb 14 21:40:12 EST 2022" docOffset="8458" starttimestamp="1644892796981" timestamp="15689" />
+  <Command __id="7" _type="PauseCommand" date="Mon Feb 14 21:42:16 EST 2022" range="2m-5m" starttimestamp="1644892796981" timestamp="139692">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[124003]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="6" _type="MoveCaretCommand" caretOffset="7842" date="Mon Feb 14 21:42:16 EST 2022" docOffset="8458" starttimestamp="1644892796981" timestamp="139692" />
+  <Command __id="9" _type="PauseCommand" date="Mon Feb 14 21:42:18 EST 2022" range="1s-2s" starttimestamp="1644892796981" timestamp="141507">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1815]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="8" _type="MoveCaretCommand" caretOffset="3301" date="Mon Feb 14 21:42:18 EST 2022" docOffset="3917" starttimestamp="1644892796981" timestamp="141507" />
+  <Command __id="11" _type="ShellCommand" date="Mon Feb 14 21:42:18 EST 2022" starttimestamp="1644892796981" timestamp="141923" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="13" _type="PauseCommand" date="Mon Feb 14 21:42:20 EST 2022" range="1s-2s" starttimestamp="1644892796981" timestamp="143693">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1769]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[FindCommand]]></next>
+  </Command>
+  <Command __id="12" _type="FindCommand" caseSensitive="false" date="Mon Feb 14 21:42:20 EST 2022" forward="true" matchWord="false" offset="3917" regexp="false" replaceAll="false" selection="Find" selectionScope="false" starttimestamp="1644892796981" timestamp="143692" wrapSearch="true">
+    <searchString><![CDATA[block]]></searchString>
+    <replaceString><![CDATA[]]></replaceString>
+  </Command>
+  <Command __id="14" _type="ShellCommand" date="Mon Feb 14 21:42:21 EST 2022" starttimestamp="1644892796981" timestamp="144550" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="15" _type="MoveCaretCommand" caretOffset="4530" date="Mon Feb 14 21:42:21 EST 2022" docOffset="5146" starttimestamp="1644892796981" timestamp="144619" />
+  <Command __id="17" _type="PauseCommand" date="Mon Feb 14 21:42:22 EST 2022" range="1s-2s" starttimestamp="1644892796981" timestamp="145720">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1101]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="16" _type="ShellCommand" date="Mon Feb 14 21:42:22 EST 2022" starttimestamp="1644892796981" timestamp="145720" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="18" _type="ShellCommand" date="Mon Feb 14 21:42:22 EST 2022" starttimestamp="1644892796981" timestamp="145832" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="2" _type="DiffBasedFileOpenCommand" date="Mon Feb 14 21:40:11 EST 2022" docASTNodeCount="1386" docActiveCodeLength="8118" docExpressionCount="794" docLength="8637" projectName="A2" starttimestamp="1644892796981" timestamp="14708">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A2\src\comp533\mvc\Model.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+
+import java.beans.PropertyChangeSupport;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+
+import comp533.barrier.Barrier;
+import comp533.barrier.BarrierInterface;
+import comp533.joiner.Joiner;
+import comp533.joiner.JoinerInterface;
+import comp533.salve.Slave;
+import comp533.salve.SlaveInterface;
+
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.beans.PropertyChangeListener;
+//import java.beans.PropertyChangeEvent;
+import gradingTools.comp533s19.assignment0.AMapReduceTracer;
+
+public class Model extends AMapReduceTracer implements ModelInterface {
+	private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
+	private String inputString = null;
+	private Map<String, Integer> result = new HashMap<String, Integer>();
+	final String space = " ";
+	boolean slavesStarted = false;
+
+	// properties from A2
+	int aNumThreads = 0;
+	List<Thread> threads = new ArrayList<Thread>();
+	List<SlaveInterface> slaves = new ArrayList<SlaveInterface>();
+	BarrierInterface barrier;
+	JoinerInterface joiner;
+	BlockingQueue<KeyValueInterface<String, Integer>> aKeyValueQueue = new ArrayBlockingQueue<KeyValueInterface<String, Integer>>(
+			BUFFER_SIZE);
+	List<LinkedList<KeyValueInterface<String, Integer>>> aReductionQueueList = new ArrayList<LinkedList<KeyValueInterface<String, Integer>>>();
+
+	@Override
+	public int getNumThreads() {
+		return aNumThreads;
+	}
+
+	@Override
+	public void setNumThreads(final int numThreads) {
+		// barrier = new Barrier(numThreads);
+		// joiner = new Joiner(numThreads);
+		/*
+		 * traceBarrierCreated(barrier, numThreads); traceJoinerCreated(joiner,
+		 * numThreads);
+		 */
+
+		final String oldValue = Integer.toString(aNumThreads);
+		String oldThreads = threads.toString();
+		if (threads.isEmpty()) {
+			oldThreads = null;
+			aNumThreads = numThreads;
+		}
+
+		threads = new ArrayList<Thread>();
+		for (int i = 0; i < numThreads; i++) {
+			final String name = "Slave" + Integer.toString(i);
+
+			final SlaveInterface newSlave = new Slave(i, this);
+			slaves.add(newSlave);
+
+			final Thread slaveThread = new Thread(newSlave);
+			slaveThread.setName(name);
+			threads.add(slaveThread);
+
+			// Add separate reduction queue to Reduction queue list for each slave thread
+			aReductionQueueList.add(new LinkedList<KeyValueInterface<String, Integer>>());
+		}
+		final String label = "NumThreads";
+		final String newValue = Integer.toString(aNumThreads);
+
+		final String labelThread = "Threads";
+		final String newThreads = threads.toString();
+
+		propertyChangeSupport.firePropertyChange(label, oldValue, newValue);
+		propertyChangeSupport.firePropertyChange(labelThread, oldThreads, newThreads);
+	}
+
+	@Override
+	public List<Thread> getThreads() {
+		return threads;
+	}
+
+	@Override
+	public Map<String, Integer> getResult() {
+		return result;
+	}
+
+	@Override
+	public void addPropertyChangeListener(final PropertyChangeListener newListener) {
+		propertyChangeSupport.addPropertyChangeListener(newListener);
+	}
+
+	@Override
+	public void setInputString(final String newVal) {
+		barrier = new Barrier(aNumThreads);
+		joiner = new Joiner(aNumThreads);
+		traceBarrierCreated(barrier, aNumThreads);
+		traceJoinerCreated(joiner, aNumThreads);
+
+		final String oldResult = result.toString();
+		final String oldInputString = inputString;
+		inputString = newVal;
+		final String label = "InputString";
+
+		propertyChangeSupport.firePropertyChange(label, oldInputString, newVal);
+
+		// A2 tasks
+		// 1
+		aKeyValueQueue = new ArrayBlockingQueue<KeyValueInterface<String, Integer>>(BUFFER_SIZE);
+		aReductionQueueList = new ArrayList<LinkedList<KeyValueInterface<String, Integer>>>();
+		aKeyValueQueue.clear();
+		aReductionQueueList.clear();
+		result.clear();
+
+		if (!slavesStarted) {
+			for (int i = 0; i < threads.size(); i++) {
+				// TODO this cannot happen multiple times:
+				threads.get(i).start();
+			}
+			slavesStarted = true;
+		}
+
+	
+
+		aReductionQueueList = notifySlaves(slaves, aReductionQueueList);
+
+		// 3
+		final String tokens = inputString;
+		final List<String> listOfToken = Arrays.asList(tokens.split(space));
+		
+
+		aKeyValueQueue = mapping(aKeyValueQueue, listOfToken, slaves);
+
+	
+		// 5
+		aKeyValueQueue = enqueuer(threads, slaves, aKeyValueQueue);
+
+
+		// 6
+		joiner.join();
+		result = combineReductionQueueList(aReductionQueueList, result);
+
+		final String resultLabel = "Result";
+
+		propertyChangeSupport.firePropertyChange(resultLabel, oldResult, result.toString());
+
+	}
+
+	@Override
+	public String toString() {// overriding the toString() method
+		return MODEL;
+	}
+
+	@Override
+	public BarrierInterface getBarrier() {
+		return barrier;
+	}
+
+	@Override
+	public JoinerInterface getJoiner() {
+		return joiner;
+	}
+
+	@Override
+	public BlockingQueue getKeyValueQueue() {
+		return aKeyValueQueue;
+	}
+
+	@Override
+	public List<LinkedList<KeyValueInterface<String, Integer>>> getReductionQueueList() {
+		return aReductionQueueList;
+	}
+
+	@Override
+	public void computeResult() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void terminate() {
+		// TODO Auto-generated method stub
+		for (int i = 0; i < threads.size(); i++) {
+			threads.get(i).interrupt();
+
+		}
+	}
+
+	@Override
+	public Map<String, Integer> combineReductionQueueList(
+			final List<LinkedList<KeyValueInterface<String, Integer>>> reductionQueueList,
+			final Map<String, Integer> aResult) {
+		Map<String, Integer> results = aResult;
+		for (int i = 0; i < reductionQueueList.size(); i++) {
+			final LinkedList<KeyValueInterface<String, Integer>> linkedList = reductionQueueList.get(i);
+
+			results = getResults(reductionQueueList, aResult, i);
+			traceAddedToMap(results, linkedList);
+		}
+		return results;
+	}
+
+	@Override
+	public Map<String, Integer> getResults(
+			final List<LinkedList<KeyValueInterface<String, Integer>>> reductionQueueList,
+			final Map<String, Integer> resultMap, final int index) {
+		final LinkedList<KeyValueInterface<String, Integer>> linkedList = reductionQueueList.get(index);
+		final Map<String, Integer> results = resultMap;
+		for (int listIndex = 0; listIndex < linkedList.size(); listIndex++) {
+			results.put(linkedList.get(listIndex).getKey(), linkedList.get(listIndex).getValue());
+		}
+		return results;
+
+	}
+
+	@Override
+	public BlockingQueue<KeyValueInterface<String, Integer>> enqueuer(final List<Thread> aThreads,
+			final List<SlaveInterface> aSlaves, final BlockingQueue<KeyValueInterface<String, Integer>> keyValueQueue) {
+
+		final BlockingQueue<KeyValueInterface<String, Integer>> keyValQueue = keyValueQueue;
+		for (int i = 0; i < aThreads.size(); i++) {
+			final KeyValueInterface<String, Integer> keyVal = new KeyValue<String, Integer>();
+			keyVal.setKey(null);
+			keyVal.setValue(null);
+			try {
+				traceEnqueueRequest(keyVal);
+				keyValQueue.put(keyVal);
+				traceEnqueue(keyValQueue);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			aSlaves.get(i).notifySlave();
+		}
+		return keyValQueue;
+
+	}
+
+	@Override
+	public List<LinkedList<KeyValueInterface<String, Integer>>> notifySlaves(final List<SlaveInterface> aSlaves,
+			final List<LinkedList<KeyValueInterface<String, Integer>>> redQueue) {
+		final List<LinkedList<KeyValueInterface<String, Integer>>> reductionQueue = redQueue;
+		for (int i = 0; i < aSlaves.size(); i++) {
+			aSlaves.get(i).notifySlave();
+			reductionQueue.add(i, new LinkedList<KeyValueInterface<String, Integer>>());
+		}
+		return reductionQueue;
+	}
+
+	@Override
+	public BlockingQueue<KeyValueInterface<String, Integer>> mapping(
+			final BlockingQueue<KeyValueInterface<String, Integer>> keyValueQueue, final List<String> listOfToken,
+			final List<SlaveInterface> salves) {
+		
+		final TokenCountingMapperInterface<String, Integer> mapper = TokenCountingMapperFactory.getMapper();
+		
+		for (int i = 0; i < listOfToken.size(); i++) {
+			final int slaveNum = i % slaves.size();
+			slaves.get(slaveNum).notifySlave();
+			final KeyValueInterface<String, Integer> keyVal = mapper.map(listOfToken.get(i));
+
+			try {
+				traceEnqueueRequest(keyVal);
+				aKeyValueQueue.put(keyVal);
+				traceEnqueue(keyValueQueue);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+			slaves.get(slaveNum).notifySlave();
+		}
+		return aKeyValueQueue;
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="20" _type="PauseCommand" date="Mon Feb 14 21:42:24 EST 2022" range="1s-2s" starttimestamp="1644892796981" timestamp="147603">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1771]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Insert]]></next>
+  </Command>
+  <Command __id="21" _type="InsertStringCommand" date="Mon Feb 14 21:42:24 EST 2022" starttimestamp="1644892796981" timestamp="147621" timestamp2="147621">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="24" _type="PauseCommand" date="Mon Feb 14 21:42:26 EST 2022" range="1s-2s" starttimestamp="1644892796981" timestamp="149237">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[InsertStringCommand]]></prev>
+    <pause><![CDATA[1616]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[InsertStringCommand]]></next>
+  </Command>
+  <Command __id="23" _type="InsertStringCommand" date="Mon Feb 14 21:42:26 EST 2022" starttimestamp="1644892796981" timestamp="149237" timestamp2="149237">
+    <data><![CDATA[z]]></data>
+  </Command>
+  <DocumentChange __id="19" _type="Insert" date="Mon Feb 14 21:42:24 EST 2022" docASTNodeCount="1378" docActiveCodeLength="8122" docExpressionCount="791" docLength="8641" length="4" offset="5146" repeat="2" starttimestamp="1644892796981" timestamp="147603" timestamp2="149226">
+    <text><![CDATA[
+	z]]></text>
+  </DocumentChange>
+  <Command __id="26" _type="PauseCommand" date="Mon Feb 14 21:42:27 EST 2022" range="1s-2s" starttimestamp="1644892796981" timestamp="150399">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[InsertStringCommand]]></prev>
+    <pause><![CDATA[1162]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Delete]]></next>
+  </Command>
+  <Command __id="27" _type="UndoCommand" date="Mon Feb 14 21:42:27 EST 2022" starttimestamp="1644892796981" timestamp="150426" />
+  <DocumentChange __id="25" _type="Delete" date="Mon Feb 14 21:42:27 EST 2022" docASTNodeCount="1386" docActiveCodeLength="8118" docExpressionCount="794" docLength="8637" endLine="178" length="4" offset="5146" startLine="177" starttimestamp="1644892796981" timestamp="150399">
+    <text><![CDATA[
+	z]]></text>
+  </DocumentChange>
+  <Command __id="29" _type="PauseCommand" date="Mon Feb 14 21:44:24 EST 2022" range="1m-2m" starttimestamp="1644892796981" timestamp="267750">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[UndoCommand]]></prev>
+    <pause><![CDATA[117324]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="30" _type="MoveCaretCommand" caretOffset="0" date="Mon Feb 14 21:44:24 EST 2022" docOffset="0" starttimestamp="1644892796981" timestamp="267843" />
+  <Command __id="32" _type="PauseCommand" date="Mon Feb 14 21:52:30 EST 2022" range="5m-10m" starttimestamp="1644892796981" timestamp="753363">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[485520]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="31" _type="ShellCommand" date="Mon Feb 14 21:52:30 EST 2022" starttimestamp="1644892796981" timestamp="753363" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="34" _type="PauseCommand" date="Mon Feb 14 22:22:20 EST 2022" range="20m-30m" starttimestamp="1644892796981" timestamp="2543020">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1789657]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>

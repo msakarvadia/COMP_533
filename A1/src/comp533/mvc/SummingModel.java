@@ -33,7 +33,8 @@ public class SummingModel extends Model implements ModelInterface{
 	public void setInputString(final String newVal) {
 		final String oldString = inputString;
 		inputString = newVal;
-		final PropertyChangeEvent inputEvent = new PropertyChangeEvent(this, "InputString", oldString, newVal);
+		final String label = "InputString";
+		final PropertyChangeEvent inputEvent = new PropertyChangeEvent(this, label, oldString, newVal);
 		propertyChangeSupport.firePropertyChange(inputEvent);
 	}
 
@@ -46,11 +47,12 @@ public class SummingModel extends Model implements ModelInterface{
 		final String tokens = inputString;
 		result.clear();
 
-		final List<String> ListOfToken = Arrays.asList(tokens.split(" "));
+		final String space = " ";
+		final List<String> ListOfToken = Arrays.asList(tokens.split(space));
 		final List<KeyValueInterface<String, Integer>> keyValList = mapper.map(ListOfToken);
 		result = reducer.reduce(keyValList);
-		final PropertyChangeEvent resultComputed = new PropertyChangeEvent(this, "Result", oldResult,
-				result.toString());
+		final String label = "Result";
+		final PropertyChangeEvent resultComputed = new PropertyChangeEvent(this, label, oldResult,result.toString());
 		propertyChangeSupport.firePropertyChange(resultComputed);
 	}
 
