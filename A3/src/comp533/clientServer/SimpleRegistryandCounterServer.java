@@ -1,4 +1,4 @@
-package comp533.client;
+package comp533.clientServer;
 
 public interface SimpleRegistryandCounterServer {
 	static int SERVER_PORT = 4999;

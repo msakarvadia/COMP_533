@@ -6,13 +6,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.Stack;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
 import comp533.barrier.Barrier;
 import comp533.barrier.BarrierInterface;
-import comp533.client.RemoteClientInterface;
-import comp533.client.RemoteClientObject;
+import comp533.clientServer.RemoteClientInterface;
+import comp533.clientServer.RemoteClientObject;
 import comp533.joiner.Joiner;
 import comp533.joiner.JoinerInterface;
 import comp533.salve.Slave;
@@ -41,6 +42,12 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 			BUFFER_SIZE);
 	List<LinkedList<KeyValueInterface<String, Integer>>> aReductionQueueList = new ArrayList<LinkedList<KeyValueInterface<String, Integer>>>();
 
+	// A3
+	Stack<SlaveInterface> unassigned_slaves = new Stack<SlaveInterface>();
+	Stack<Thread> unassigned_threads = new Stack<Thread>();
+	Stack<RemoteClientInterface> unassigned_clients = new Stack<RemoteClientInterface>();
+	Map<Integer, RemoteClientInterface> slaveClientMap = new HashMap<Integer, RemoteClientInterface>();
+
 	@Override
 	public int getNumThreads() {
 		return aNumThreads;
@@ -48,12 +55,6 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 
 	@Override
 	public void setNumThreads(final int numThreads) {
-		// barrier = new Barrier(numThreads);
-		// joiner = new Joiner(numThreads);
-		/*
-		 * traceBarrierCreated(barrier, numThreads); traceJoinerCreated(joiner,
-		 * numThreads);
-		 */
 
 		final String oldValue = Integer.toString(aNumThreads);
 		String oldThreads = threads.toString();
@@ -68,14 +69,21 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 
 			final SlaveInterface newSlave = new Slave(i, this);
 			slaves.add(newSlave);
+			unassigned_slaves.push(newSlave);
+			
 
 			final Thread slaveThread = new Thread(newSlave);
 			slaveThread.setName(name);
 			threads.add(slaveThread);
+			
+			unassigned_threads.push(slaveThread);
 
 			// Add separate reduction queue to Reduction queue list for each slave thread
 			aReductionQueueList.add(new LinkedList<KeyValueInterface<String, Integer>>());
 		}
+
+	
+
 		final String label = "NumThreads";
 		final String newValue = Integer.toString(aNumThreads);
 
@@ -131,21 +139,19 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 			slavesStarted = true;
 		}
 
-	
-
+		// Match function - Check placement of match function
+		match(unassigned_slaves, unassigned_clients);
+				
 		aReductionQueueList = notifySlaves(slaves, aReductionQueueList);
 
 		// 3
 		final String tokens = inputString;
 		final List<String> listOfToken = Arrays.asList(tokens.split(space));
-		
 
 		aKeyValueQueue = mapping(aKeyValueQueue, listOfToken, slaves);
 
-	
 		// 5
 		aKeyValueQueue = enqueuer(threads, slaves, aKeyValueQueue);
-
 
 		// 6
 		joiner.join();
@@ -160,6 +166,11 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 	@Override
 	public String toString() {// overriding the toString() method
 		return MODEL;
+	}
+	
+	@Override
+	public Map<Integer, RemoteClientInterface> getSlaveClientMap() {
+		return slaveClientMap;
 	}
 
 	@Override
@@ -261,9 +272,9 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 	public BlockingQueue<KeyValueInterface<String, Integer>> mapping(
 			final BlockingQueue<KeyValueInterface<String, Integer>> keyValueQueue, final List<String> listOfToken,
 			final List<SlaveInterface> salves) {
-		
+
 		final TokenCountingMapperInterface<String, Integer> mapper = TokenCountingMapperFactory.getMapper();
-		
+
 		for (int i = 0; i < listOfToken.size(); i++) {
 			final int slaveNum = i % slaves.size();
 			slaves.get(slaveNum).notifySlave();
@@ -284,8 +295,55 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 	}
 
 	@Override
-	public void register(RemoteClientInterface client){
+	public void register(RemoteClientInterface client) {
+		traceRegister(client);
 		// TODO Auto-generated method stub
+		unassigned_clients.push(client);
+		
+		match(unassigned_slaves, unassigned_clients);
+		
 		
 	}
+
+	
+	@Override
+	public void match(Stack<SlaveInterface> unassigned_slave, Stack<RemoteClientInterface> client) {
+		//Stack<RemoteClientInterface> clients = client;
+		//Stack<SlaveInterface> slaves = unassigned_slave;
+
+		while(!unassigned_clients.empty()){
+			if(!unassigned_slaves.empty()) {
+				RemoteClientInterface free_client = unassigned_clients.pop();
+				SlaveInterface free_slave = unassigned_slaves.pop();
+				Thread free_thread = unassigned_threads.pop();
+				
+				String name = free_thread.getName();
+				Integer key = Character.getNumericValue(name.charAt(name.length() - 1));
+				slaveClientMap.put(key, free_client);
+				
+				free_slave.setClient(free_client);
+				
+				
+			}
+		}
+//		for (RemoteClientInterface free_client : clients) {
+//			if (slaves.size() > 0) {
+//				
+//				// Need to match clients and slaves
+//				//slaves.peek().setClient(free_client);
+//				String name = unassigned_threads.peek().getName();
+//				Integer key = Character.getNumericValue(name.charAt(name.length() - 1));
+//				slaveClientMap.put(key, free_client);
+//
+//				// pop from slave
+//				slaves.pop();
+//
+//				// pop from client
+//				clients.pop();
+//				
+//			}
+//		}
+	}
+	
+	
 }

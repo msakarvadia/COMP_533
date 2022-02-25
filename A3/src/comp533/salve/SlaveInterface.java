@@ -4,11 +4,13 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import comp533.client.RemoteClientInterface;
+import comp533.clientServer.RemoteClientInterface;
 import comp533.mvc.KeyValueInterface;
 import comp533.mvc.ModelInterface;
 
 public interface SlaveInterface extends Runnable{
+	
+	
 	public void run();
 	public void notifySlave();
 	public String toString();

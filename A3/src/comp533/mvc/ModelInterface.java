@@ -4,13 +4,15 @@ import java.beans.PropertyChangeListener;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Stack;
 import java.util.concurrent.BlockingQueue;
 
 import comp533.barrier.BarrierInterface;
+import comp533.clientServer.RemoteClientInterface;
 import comp533.joiner.JoinerInterface;
 import comp533.salve.SlaveInterface;
 
-public interface ModelInterface {
+public interface ModelInterface{
 	public Map<String, Integer> getResult();
 
 	public void addPropertyChangeListener(PropertyChangeListener newListener);
@@ -53,5 +55,9 @@ public interface ModelInterface {
 	public BlockingQueue<KeyValueInterface<String, Integer>> mapping(
 			BlockingQueue<KeyValueInterface<String, Integer>> aKeyValueQueue, List<String> listOfToken,
 			 List<SlaveInterface> salves);
+	
+	//A3 methods
+	public void match(Stack<SlaveInterface> slave, Stack<RemoteClientInterface> client);
+	public Map<Integer, RemoteClientInterface> getSlaveClientMap();
 
 }

@@ -1,8 +1,10 @@
 package comp533.mvc;
 
 import comp533.barrier.Barrier;
-import comp533.client.RemoteClientInterface;
-import comp533.client.RemoteClientObject;
+import comp533.clientServer.RemoteClientInterface;
+import comp533.clientServer.RemoteClientObject;
+import comp533.clientServer.RemoteClientProcess;
+import comp533.clientServer.ServerTokenCounter;
 import comp533.joiner.Joiner;
 import comp533.partitioner.Partitioner;
 import comp533.partitioner.PartitionerFactory;
@@ -24,7 +26,7 @@ public class MapReduceConfiguration implements MapReduceConfigurationInterface {
 
 	@Override
 	public Class<?> getClientTokenCounter() {
-		return null;
+		return RemoteClientProcess.class;
 	}
 
 	@Override
@@ -75,7 +77,6 @@ public class MapReduceConfiguration implements MapReduceConfigurationInterface {
 
 	@Override
 	public Class<?> getPartitionerClass() {
-		// TODO Auto-generated method stub
 		return Partitioner.class;
 	}
 
@@ -107,19 +108,19 @@ public class MapReduceConfiguration implements MapReduceConfigurationInterface {
 
 	@Override
 	public Class<?> getRemoteClientObjectClass() {
-		// TODO Auto-generated method stub
+		
 		return RemoteClientObject.class;
 	}
 
 	@Override
 	public Class<?> getRemoteClientObjectInterface() {
-		// TODO Auto-generated method stub
+		
 		return RemoteClientInterface.class;
 	}
 
 	@Override
 	public Class<?> getRemoteModelInterface() {
-		// TODO Auto-generated method stub
+		
 		return RemoteModelInterface.class;
 	}
 
@@ -138,7 +139,7 @@ public class MapReduceConfiguration implements MapReduceConfigurationInterface {
 	@Override
 	public Class<?> getServerTokenCounter() {
 		// TODO Auto-generated method stub
-		return null;
+		return ServerTokenCounter.class;
 	}
 
 	@Override

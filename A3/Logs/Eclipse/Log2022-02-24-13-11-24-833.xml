@@ -1,0 +1,580 @@
+<Events startTimestamp="1645726284833" logVersion="1.0.0.202111260825">
+  <Command __id="4" _type="EclipseCommand" commandID="" date="Thu Feb 24 13:12:59 EST 2022" starttimestamp="1645726284833" timestamp="94903" />
+  <Command __id="6" _type="PauseCommand" date="Thu Feb 24 13:13:11 EST 2022" range="10s-20s" starttimestamp="1645726284833" timestamp="106450">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[11545]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="8" _type="ProgramExecutionEvent" className="/A3/src/comp533/mvc/A3Tests.java" date="Thu Feb 24 13:13:19 EST 2022" kind="HitBreakPoint" projectName="A3" starttimestamp="1645726284833" timestamp="114999" type="Run" />
+  <Command __id="10" _type="RunCommand" className="/A3/src/comp533/mvc/A3Tests.java" date="Thu Feb 24 13:13:19 EST 2022" kind="HitBreakPoint" projectName="A3" starttimestamp="1645726284833" timestamp="114999" type="Run" />
+  <Command __id="12" _type="PauseCommand" date="Thu Feb 24 13:13:23 EST 2022" range="2s-5s" starttimestamp="1645726284833" timestamp="118853">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[3853]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="11" _type="ShellCommand" date="Thu Feb 24 13:13:23 EST 2022" starttimestamp="1645726284833" timestamp="118852" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="14" _type="PauseCommand" date="Thu Feb 24 13:13:26 EST 2022" range="2s-5s" starttimestamp="1645726284833" timestamp="121908">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3056]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="13" _type="ConsoleOutput" date="Thu Feb 24 13:13:26 EST 2022" overflow="false" starttimestamp="1645726284833" timestamp="121908" type="ConsoleOutput">
+    <outputString><![CDATA[
+A3ConfigurationProvided did not pass completely:To get style credit provide (possibly stub) missing classes for properties:[standAloneFacebookMapReduce, remoteClientFacebookMapReduce, serverIntegerSummer, serverFacebookMapReduce]%0.0
+Test execution time (ms):22
+]]></outputString>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="16" _type="PauseCommand" date="Thu Feb 24 13:13:30 EST 2022" range="2s-5s" starttimestamp="1645726284833" timestamp="125371">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[3462]]></pause>
+    <nextType><![CDATA[Exception]]></nextType>
+    <next><![CDATA[ExceptionCommand]]></next>
+  </Command>
+  <Command __id="15" _type="ExceptionCommand" date="Thu Feb 24 13:13:30 EST 2022" starttimestamp="1645726284833" timestamp="125370" type="Exception">
+    <exceptionString><![CDATA[(MapReduce Client 1)java.lang.ClassCastException: class com.sun.proxy.$Proxy0 cannot be cast to class comp533.mvc.Model (com.sun.proxy.$Proxy0 and comp533.mvc.Model are in unnamed module of loader 'app')
+(MapReduce Client 1)	at comp533.clientServer.RemoteClientProcess.main(RemoteClientProcess.java:14)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="18" _type="PauseCommand" date="Thu Feb 24 13:13:37 EST 2022" range="5s-10s" starttimestamp="1645726284833" timestamp="132189">
+    <prevType><![CDATA[Exception]]></prevType>
+    <prev><![CDATA[ExceptionCommand]]></prev>
+    <pause><![CDATA[6819]]></pause>
+    <nextType><![CDATA[Exception]]></nextType>
+    <next><![CDATA[ExceptionCommand]]></next>
+  </Command>
+  <Command __id="17" _type="ExceptionCommand" date="Thu Feb 24 13:13:37 EST 2022" starttimestamp="1645726284833" timestamp="132189" type="Exception">
+    <exceptionString><![CDATA[(MapReduce Client 2)java.lang.ClassCastException: class com.sun.proxy.$Proxy0 cannot be cast to class comp533.mvc.Model (com.sun.proxy.$Proxy0 and comp533.mvc.Model are in unnamed module of loader 'app')
+(MapReduce Client 2)	at comp533.clientServer.RemoteClientProcess.main(RemoteClientProcess.java:14)
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="20" _type="PauseCommand" date="Thu Feb 24 13:14:01 EST 2022" range="20s-30s" starttimestamp="1645726284833" timestamp="156840">
+    <prevType><![CDATA[Exception]]></prevType>
+    <prev><![CDATA[ExceptionCommand]]></prev>
+    <pause><![CDATA[24651]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="19" _type="ShellCommand" date="Thu Feb 24 13:14:01 EST 2022" starttimestamp="1645726284833" timestamp="156840" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="22" _type="PauseCommand" date="Thu Feb 24 13:14:02 EST 2022" range="1s-2s" starttimestamp="1645726284833" timestamp="158142">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1302]]></pause>
+    <nextType><![CDATA[Exception]]></nextType>
+    <next><![CDATA[ExceptionCommand]]></next>
+  </Command>
+  <Command __id="21" _type="ExceptionCommand" date="Thu Feb 24 13:14:02 EST 2022" starttimestamp="1645726284833" timestamp="158142" type="Exception">
+    <exceptionString><![CDATA[
+java.lang.AssertionError: MapReduce Server Output Did not match:.*Hogwarts.*5.*?%0.0
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at grader.basics.testcase.PassFailJUnitTestCase.assertTrue(PassFailJUnitTestCase.java:288)
+	at gradingTools.shared.testcases.MethodExecutionTest.checkWithChecker(MethodExecutionTest.java:930)
+	at gradingTools.comp533s19.assignment0.testcases.counts.standalone.SingleThreadTokenCountResult.isValidOutput(SingleThreadTokenCountResult.java:93)
+	at gradingTools.shared.testcases.MethodExecutionTest.computeOutputErrorStatus(MethodExecutionTest.java:262)
+	at gradingTools.shared.testcases.MethodExecutionTest.setOutputErrorStatus(MethodExecutionTest.java:241)
+	at gradingTools.shared.testcases.MainMethodForkerTest.test(MainMethodForkerTest.java:105)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at gradingTools.comp533s19.assignment0.testcases.counts.distributed.DistributedTokenCountResult.defaultTest(DistributedTokenCountResult.java:121)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)
+	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)
+]]></exceptionString>
+    <language><![CDATA[SML]]></language>
+  </Command>
+  <Command __id="23" _type="ConsoleOutput" date="Thu Feb 24 13:14:03 EST 2022" overflow="false" starttimestamp="1645726284833" timestamp="158302" type="ConsoleOutput">
+    <outputString><![CDATA[
+java.lang.AssertionError: MapReduce Server Output Did not match:.*Hogwarts.*5.*?%0.0
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at grader.basics.testcase.PassFailJUnitTestCase.assertTrue(PassFailJUnitTestCase.java:288)
+	at gradingTools.shared.testcases.MethodExecutionTest.checkWithChecker(MethodExecutionTest.java:930)
+	at gradingTools.comp533s19.assignment0.testcases.counts.standalone.SingleThreadTokenCountResult.isValidOutput(SingleThreadTokenCountResult.java:93)
+	at gradingTools.shared.testcases.MethodExecutionTest.computeOutputErrorStatus(MethodExecutionTest.java:262)
+	at gradingTools.shared.testcases.MethodExecutionTest.setOutputErrorStatus(MethodExecutionTest.java:241)
+	at gradingTools.shared.testcases.MainMethodForkerTest.test(MainMethodForkerTest.java:105)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at gradingTools.comp533s19.assignment0.testcases.counts.distributed.DistributedTokenCountResult.defaultTest(DistributedTokenCountResult.java:121)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)
+	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"¶"), Diff(DELETE,"A3ConfigurationProvided did not pass completely:To get style credit provide (possibly stub) missing classes for properties:[standAloneFacebookMapReduce, remoteClientFacebookMapReduce, serverIntegerSummer, serverFacebookMapReduce]%0.0¶Test execution time (ms):22"), Diff(INSERT,"java.lang.AssertionError: MapReduce Server Output Did not match:.*Hogwarts.*5.*?%0.0¶	at org.junit.Assert.fail(Assert.java:88)¶	at org.junit.Assert.assertTrue(Assert.java:41)¶	at grader.basics.testcase.PassFailJUnitTestCase.assertTrue(PassFailJUnitTestCase.java:288)¶	at gradingTools.shared.testcases.MethodExecutionTest.checkWithChecker(MethodExecutionTest.java:930)¶	at gradingTools.comp533s19.assignment0.testcases.counts.standalone.SingleThreadTokenCountResult.isValidOutput(SingleThreadTokenCountResult.java:93)¶	at gradingTools.shared.testcases.MethodExecutionTest.computeOutputErrorStatus(MethodExecutionTest.java:262)¶	at gradingTools.shared.testcases.MethodExecutionTest.setOutputErrorStatus(MethodExecutionTest.java:241)¶	at gradingTools.shared.testcases.MainMethodForkerTest.test(MainMethodForkerTest.java:105)¶	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)¶	at gradingTools.comp533s19.assignment0.testcases.counts.distributed.DistributedTokenCountResult.defaultTest(DistributedTokenCountResult.java:121)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)¶	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)¶	at java.base/java.lang.reflect.Method.invoke(Method.java:566)¶	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)¶	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)¶	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)¶	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)¶	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)¶	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)¶	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)¶	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)¶	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)¶	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)¶	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)¶	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)¶	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)¶	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)¶	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)¶	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)¶	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)¶	at java.base/java.lang.reflect.Method.invoke(Method.java:566)¶	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)¶	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)¶	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)¶	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)¶	at bus.uigen.editors.TreeAdapter.mouseClicked(TreeAdapter.java:469)¶	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:278)"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="5" _type="DiffBasedFileOpenCommand" date="Thu Feb 24 13:13:11 EST 2022" docASTNodeCount="63" docActiveCodeLength="360" docExpressionCount="40" docLength="360" projectName="A3" starttimestamp="1645726284833" timestamp="106448">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A3\src\comp533\clientServer\RemoteClientInterface.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.clientServer;
+
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+import java.util.List;
+import java.util.Map;
+
+import comp533.mvc.KeyValueInterface;
+
+public interface RemoteClientInterface extends Remote {
+	
+	public Map<String, Integer> reduce (List<KeyValueInterface<String, Integer>> aList) throws RemoteException;
+	
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="25" _type="PauseCommand" date="Thu Feb 24 13:14:44 EST 2022" range="30s-1m" starttimestamp="1645726284833" timestamp="199893">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[41591]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="26" _type="MoveCaretCommand" caretOffset="165" date="Thu Feb 24 13:14:45 EST 2022" docOffset="365" starttimestamp="1645726284833" timestamp="200194" />
+  <Command __id="24" _type="DiffBasedFileOpenCommand" date="Thu Feb 24 13:14:44 EST 2022" docASTNodeCount="113" docActiveCodeLength="680" docExpressionCount="71" docLength="680" projectName="A3" starttimestamp="1645726284833" timestamp="199893">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A3\src\comp533\clientServer\RemoteClientObject.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.clientServer;
+
+
+import java.util.List;
+import java.util.Map;
+
+import comp533.mvc.KeyValueInterface;
+import comp533.mvc.ReducerFactory;
+import comp533.mvc.ReducerInterface;
+import gradingTools.comp533s19.assignment0.AMapReduceTracer;
+
+public class RemoteClientObject extends AMapReduceTracer implements RemoteClientInterface{
+
+	@Override
+	public Map<String, Integer> reduce(List<KeyValueInterface<String, Integer>> aList) {
+		final ReducerInterface<String, Integer> reducer = ReducerFactory.getReducer();
+		traceRemoteList(aList);
+		Map<String, Integer> result = reducer.reduce(aList);
+		traceRemoteResult(result);
+		return result;
+	}
+
+
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="28" _type="PauseCommand" date="Thu Feb 24 13:14:48 EST 2022" range="2s-5s" starttimestamp="1645726284833" timestamp="204016">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[3822]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="29" _type="MoveCaretCommand" caretOffset="0" date="Thu Feb 24 13:14:49 EST 2022" docOffset="0" starttimestamp="1645726284833" timestamp="204447" />
+  <Command __id="31" _type="PauseCommand" date="Thu Feb 24 13:16:15 EST 2022" range="1m-2m" starttimestamp="1645726284833" timestamp="291006">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[86557]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="30" _type="ShellCommand" date="Thu Feb 24 13:16:15 EST 2022" starttimestamp="1645726284833" timestamp="291004" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="33" _type="PauseCommand" date="Thu Feb 24 13:16:52 EST 2022" range="30s-1m" starttimestamp="1645726284833" timestamp="327563">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[36559]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="32" _type="ShellCommand" date="Thu Feb 24 13:16:52 EST 2022" starttimestamp="1645726284833" timestamp="327563" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="34" _type="MoveCaretCommand" caretOffset="233" date="Thu Feb 24 13:16:52 EST 2022" docOffset="355" starttimestamp="1645726284833" timestamp="327663" />
+  <Command __id="27" _type="DiffBasedFileOpenCommand" date="Thu Feb 24 13:14:48 EST 2022" docASTNodeCount="63" docActiveCodeLength="360" docExpressionCount="40" docLength="360" projectName="A3" starttimestamp="1645726284833" timestamp="204016">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A3\src\comp533\clientServer\RemoteClientInterface.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package comp533.clientServer;¶¶import java.rmi.Remote;¶import java.rmi.RemoteException;¶import java.util.List;¶import java.util.Map;¶¶import comp533.mvc.KeyValueInterface;¶¶public interface RemoteClientInterface extends Remote {¶	¶	public Map<String, Integer> reduce (List<KeyValueInterface<String, Integer>> aList) throws RemoteException;¶	¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="36" _type="PauseCommand" date="Thu Feb 24 13:17:02 EST 2022" range="10s-20s" starttimestamp="1645726284833" timestamp="337954">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[10291]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="37" _type="MoveCaretCommand" caretOffset="203" date="Thu Feb 24 13:17:03 EST 2022" docOffset="489" starttimestamp="1645726284833" timestamp="338186" />
+  <Command __id="35" _type="DiffBasedFileOpenCommand" date="Thu Feb 24 13:17:02 EST 2022" docASTNodeCount="154" docActiveCodeLength="969" docExpressionCount="103" docLength="999" projectName="A3" starttimestamp="1645726284833" timestamp="337954">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A3\src\comp533\clientServer\ServerTokenCounter.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.clientServer;
+
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+
+import comp533.mvc.Controller;
+import comp533.mvc.ControllerInterface;
+import comp533.mvc.Model;
+import comp533.mvc.View;
+import comp533.mvc.ViewInterface;
+
+public class ServerTokenCounter implements SimpleRegistryandCounterServer{
+ public static void main (String[] args) {
+	 try {
+		Registry rmiRegistry = LocateRegistry.createRegistry(SERVER_PORT);
+		Model model = new Model();
+		UnicastRemoteObject.exportObject(model, 0);
+		rmiRegistry.rebind(MODEL_NAME, model);
+		
+		//Same code from original main
+		final ViewInterface view = new View();
+		
+		model.addPropertyChangeListener(view);
+		
+		final ControllerInterface controller = new Controller();
+		controller.setModel(model);
+		controller.processInput();
+		
+	} catch (RemoteException e) {
+		e.printStackTrace();
+	}
+	 
+ }
+}
+]]></snapshot>
+  </Command>
+  <Command __id="39" _type="PauseCommand" date="Thu Feb 24 13:17:11 EST 2022" range="5s-10s" starttimestamp="1645726284833" timestamp="347054">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[8868]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="40" _type="MoveCaretCommand" caretOffset="560" date="Thu Feb 24 13:17:12 EST 2022" docOffset="668" starttimestamp="1645726284833" timestamp="347244" />
+  <Command __id="42" _type="PauseCommand" date="Thu Feb 24 13:17:13 EST 2022" range="1s-2s" starttimestamp="1645726284833" timestamp="349111">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1867]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="41" _type="MoveCaretCommand" caretOffset="339" date="Thu Feb 24 13:17:13 EST 2022" docOffset="447" starttimestamp="1645726284833" timestamp="349111" />
+  <Command __id="38" _type="DiffBasedFileOpenCommand" date="Thu Feb 24 13:17:11 EST 2022" docASTNodeCount="104" docActiveCodeLength="707" docExpressionCount="67" docLength="812" projectName="A3" starttimestamp="1645726284833" timestamp="347054">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A3\src\comp533\clientServer\RemoteClientProcess.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.clientServer;
+
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+import comp533.mvc.Model;
+
+public class RemoteClientProcess implements SimpleRegistryandCounterServer{
+
+	public static void main (String[] args) {
+		try {
+			Registry rmiRegistry = LocateRegistry.getRegistry(SERVER_HOST_NAME, SERVER_PORT);
+			//Get model here
+			Model model = (Model) rmiRegistry.lookup(MODEL_NAME);
+			
+			//create client object
+			RemoteClientInterface client = new RemoteClientObject();
+			
+			//export client to create proxy
+			UnicastRemoteObject.exportObject(client, 0);
+			
+			//have the model register the client
+			model.register(client);
+		} catch(Exception e){
+			e.printStackTrace();
+		}
+		
+	
+
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="44" _type="PauseCommand" date="Thu Feb 24 13:17:15 EST 2022" range="1s-2s" starttimestamp="1645726284833" timestamp="350216">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1105]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Delete]]></next>
+  </Command>
+  <DocumentChange __id="43" _type="Delete" date="Thu Feb 24 13:17:15 EST 2022" docASTNodeCount="103" docActiveCodeLength="702" docExpressionCount="66" docLength="807" endLine="13" length="5" offset="442" repeat="5" startLine="13" starttimestamp="1645726284833" timestamp="350216" timestamp2="350823">
+    <text><![CDATA[Model]]></text>
+  </DocumentChange>
+  <Command __id="45" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Thu Feb 24 13:17:15 EST 2022" starttimestamp="1645726284833" timestamp="350236" />
+  <Command __id="47" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Thu Feb 24 13:17:15 EST 2022" starttimestamp="1645726284833" timestamp="350359" />
+  <Command __id="49" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Thu Feb 24 13:17:15 EST 2022" starttimestamp="1645726284833" timestamp="350521" />
+  <Command __id="51" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Thu Feb 24 13:17:15 EST 2022" starttimestamp="1645726284833" timestamp="350659" />
+  <Command __id="53" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Thu Feb 24 13:17:15 EST 2022" starttimestamp="1645726284833" timestamp="350840" />
+  <DocumentChange __id="54" _type="Insert" date="Thu Feb 24 13:17:15 EST 2022" docASTNodeCount="104" docActiveCodeLength="719" docExpressionCount="67" docLength="824" length="17" offset="442" repeat="17" starttimestamp="1645726284833" timestamp="351102" timestamp2="354110">
+    <text><![CDATA[RemoteModelIntera]]></text>
+  </DocumentChange>
+  <Command __id="55" _type="InsertStringCommand" date="Thu Feb 24 13:17:15 EST 2022" starttimestamp="1645726284833" timestamp="351123" timestamp2="351123">
+    <data><![CDATA[R]]></data>
+  </Command>
+  <Command __id="57" _type="InsertStringCommand" date="Thu Feb 24 13:17:16 EST 2022" starttimestamp="1645726284833" timestamp="351339" timestamp2="351339">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="59" _type="InsertStringCommand" date="Thu Feb 24 13:17:16 EST 2022" starttimestamp="1645726284833" timestamp="351589" timestamp2="351589">
+    <data><![CDATA[m]]></data>
+  </Command>
+  <Command __id="61" _type="InsertStringCommand" date="Thu Feb 24 13:17:16 EST 2022" starttimestamp="1645726284833" timestamp="351664" timestamp2="351664">
+    <data><![CDATA[o]]></data>
+  </Command>
+  <Command __id="63" _type="InsertStringCommand" date="Thu Feb 24 13:17:16 EST 2022" starttimestamp="1645726284833" timestamp="351771" timestamp2="351771">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="65" _type="InsertStringCommand" date="Thu Feb 24 13:17:16 EST 2022" starttimestamp="1645726284833" timestamp="352080" timestamp2="352080">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="67" _type="InsertStringCommand" date="Thu Feb 24 13:17:17 EST 2022" starttimestamp="1645726284833" timestamp="352491" timestamp2="352491">
+    <data><![CDATA[M]]></data>
+  </Command>
+  <Command __id="69" _type="InsertStringCommand" date="Thu Feb 24 13:17:17 EST 2022" starttimestamp="1645726284833" timestamp="352713" timestamp2="352713">
+    <data><![CDATA[o]]></data>
+  </Command>
+  <Command __id="71" _type="InsertStringCommand" date="Thu Feb 24 13:17:17 EST 2022" starttimestamp="1645726284833" timestamp="352825" timestamp2="352825">
+    <data><![CDATA[d]]></data>
+  </Command>
+  <Command __id="73" _type="InsertStringCommand" date="Thu Feb 24 13:17:17 EST 2022" starttimestamp="1645726284833" timestamp="353005" timestamp2="353005">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="75" _type="InsertStringCommand" date="Thu Feb 24 13:17:17 EST 2022" starttimestamp="1645726284833" timestamp="353078" timestamp2="353078">
+    <data><![CDATA[l]]></data>
+  </Command>
+  <Command __id="77" _type="InsertStringCommand" date="Thu Feb 24 13:17:18 EST 2022" starttimestamp="1645726284833" timestamp="353295" timestamp2="353295">
+    <data><![CDATA[I]]></data>
+  </Command>
+  <Command __id="79" _type="InsertStringCommand" date="Thu Feb 24 13:17:18 EST 2022" starttimestamp="1645726284833" timestamp="353476" timestamp2="353476">
+    <data><![CDATA[n]]></data>
+  </Command>
+  <Command __id="81" _type="InsertStringCommand" date="Thu Feb 24 13:17:18 EST 2022" starttimestamp="1645726284833" timestamp="353553" timestamp2="353553">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="83" _type="InsertStringCommand" date="Thu Feb 24 13:17:18 EST 2022" starttimestamp="1645726284833" timestamp="353746" timestamp2="353746">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="85" _type="InsertStringCommand" date="Thu Feb 24 13:17:18 EST 2022" starttimestamp="1645726284833" timestamp="353824" timestamp2="353824">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="87" _type="InsertStringCommand" date="Thu Feb 24 13:17:18 EST 2022" starttimestamp="1645726284833" timestamp="354125" timestamp2="354125">
+    <data><![CDATA[a]]></data>
+  </Command>
+  <DocumentChange __id="88" _type="Delete" date="Thu Feb 24 13:17:19 EST 2022" docASTNodeCount="104" docActiveCodeLength="718" docExpressionCount="67" docLength="823" endLine="13" length="1" offset="458" startLine="13" starttimestamp="1645726284833" timestamp="354517">
+    <text><![CDATA[a]]></text>
+  </DocumentChange>
+  <Command __id="89" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Thu Feb 24 13:17:19 EST 2022" starttimestamp="1645726284833" timestamp="354526" />
+  <Command __id="91" _type="InsertStringCommand" date="Thu Feb 24 13:17:19 EST 2022" starttimestamp="1645726284833" timestamp="354579" timestamp2="354579">
+    <data><![CDATA[f]]></data>
+  </Command>
+  <Command __id="93" _type="InsertStringCommand" date="Thu Feb 24 13:17:19 EST 2022" starttimestamp="1645726284833" timestamp="354670" timestamp2="354670">
+    <data><![CDATA[a]]></data>
+  </Command>
+  <Command __id="95" _type="InsertStringCommand" date="Thu Feb 24 13:17:19 EST 2022" starttimestamp="1645726284833" timestamp="354889" timestamp2="354889">
+    <data><![CDATA[c]]></data>
+  </Command>
+  <Command __id="97" _type="InsertStringCommand" date="Thu Feb 24 13:17:19 EST 2022" starttimestamp="1645726284833" timestamp="355089" timestamp2="355089">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="99" _type="PauseCommand" date="Thu Feb 24 13:17:25 EST 2022" range="5s-10s" starttimestamp="1645726284833" timestamp="360207">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[InsertStringCommand]]></prev>
+    <pause><![CDATA[5118]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="98" _type="ShellCommand" date="Thu Feb 24 13:17:25 EST 2022" starttimestamp="1645726284833" timestamp="360207" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="100" _type="ShellCommand" date="Thu Feb 24 13:17:25 EST 2022" starttimestamp="1645726284833" timestamp="360315" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="104" _type="PauseCommand" date="Thu Feb 24 13:17:26 EST 2022" range="1s-2s" starttimestamp="1645726284833" timestamp="361827">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[Insert]]></prev>
+    <pause><![CDATA[1451]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="103" _type="MoveCaretCommand" caretOffset="324" date="Thu Feb 24 13:17:26 EST 2022" docOffset="474" starttimestamp="1645726284833" timestamp="361827" />
+  <DocumentChange __id="90" _type="Insert" date="Thu Feb 24 13:17:19 EST 2022" docASTNodeCount="104" docActiveCodeLength="722" docExpressionCount="67" docLength="827" length="4" offset="458" repeat="4" starttimestamp="1645726284833" timestamp="354569" timestamp2="355071">
+    <text><![CDATA[face]]></text>
+  </DocumentChange>
+  <DocumentChange __id="101" _type="Insert" date="Thu Feb 24 13:17:25 EST 2022" docASTNodeCount="110" docActiveCodeLength="764" docExpressionCount="72" docLength="869" length="42" offset="181" repeat="2" starttimestamp="1645726284833" timestamp="360376" timestamp2="360378">
+    <text><![CDATA[
+import comp533.mvc.RemoteModelInterface;]]></text>
+  </DocumentChange>
+  <Command __id="106" _type="PauseCommand" date="Thu Feb 24 13:17:28 EST 2022" range="1s-2s" starttimestamp="1645726284833" timestamp="363192">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1365]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Delete]]></next>
+  </Command>
+  <DocumentChange __id="105" _type="Delete" date="Thu Feb 24 13:17:28 EST 2022" docASTNodeCount="108" docActiveCodeLength="759" docExpressionCount="72" docLength="864" endLine="14" length="5" offset="469" repeat="5" startLine="14" starttimestamp="1645726284833" timestamp="363192" timestamp2="364012">
+    <text><![CDATA[Model]]></text>
+  </DocumentChange>
+  <Command __id="107" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Thu Feb 24 13:17:28 EST 2022" starttimestamp="1645726284833" timestamp="363198" />
+  <Command __id="109" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Thu Feb 24 13:17:28 EST 2022" starttimestamp="1645726284833" timestamp="363375" />
+  <Command __id="111" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Thu Feb 24 13:17:28 EST 2022" starttimestamp="1645726284833" timestamp="363515" />
+  <Command __id="113" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Thu Feb 24 13:17:28 EST 2022" starttimestamp="1645726284833" timestamp="363667" />
+  <Command __id="115" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Thu Feb 24 13:17:28 EST 2022" starttimestamp="1645726284833" timestamp="364024" />
+  <Command __id="117" _type="InsertStringCommand" date="Thu Feb 24 13:17:29 EST 2022" starttimestamp="1645726284833" timestamp="364233" timestamp2="364233">
+    <data><![CDATA[R]]></data>
+  </Command>
+  <Command __id="119" _type="InsertStringCommand" date="Thu Feb 24 13:17:29 EST 2022" starttimestamp="1645726284833" timestamp="364518" timestamp2="364518">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="121" _type="InsertStringCommand" date="Thu Feb 24 13:17:29 EST 2022" starttimestamp="1645726284833" timestamp="364734" timestamp2="364734">
+    <data><![CDATA[m]]></data>
+  </Command>
+  <Command __id="123" _type="InsertStringCommand" date="Thu Feb 24 13:17:29 EST 2022" starttimestamp="1645726284833" timestamp="364843" timestamp2="364843">
+    <data><![CDATA[o]]></data>
+  </Command>
+  <Command __id="125" _type="InsertStringCommand" date="Thu Feb 24 13:17:29 EST 2022" starttimestamp="1645726284833" timestamp="364929" timestamp2="364929">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="127" _type="InsertStringCommand" date="Thu Feb 24 13:17:29 EST 2022" starttimestamp="1645726284833" timestamp="365118" timestamp2="365118">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="129" _type="InsertStringCommand" date="Thu Feb 24 13:17:30 EST 2022" starttimestamp="1645726284833" timestamp="365583" timestamp2="365583">
+    <data><![CDATA[M]]></data>
+  </Command>
+  <Command __id="131" _type="InsertStringCommand" date="Thu Feb 24 13:17:30 EST 2022" starttimestamp="1645726284833" timestamp="365801" timestamp2="365801">
+    <data><![CDATA[o]]></data>
+  </Command>
+  <Command __id="133" _type="InsertStringCommand" date="Thu Feb 24 13:17:30 EST 2022" starttimestamp="1645726284833" timestamp="365946" timestamp2="365946">
+    <data><![CDATA[d]]></data>
+  </Command>
+  <Command __id="135" _type="InsertStringCommand" date="Thu Feb 24 13:17:30 EST 2022" starttimestamp="1645726284833" timestamp="366122" timestamp2="366122">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="137" _type="InsertStringCommand" date="Thu Feb 24 13:17:31 EST 2022" starttimestamp="1645726284833" timestamp="366194" timestamp2="366194">
+    <data><![CDATA[l]]></data>
+  </Command>
+  <Command __id="139" _type="InsertStringCommand" date="Thu Feb 24 13:17:31 EST 2022" starttimestamp="1645726284833" timestamp="366504" timestamp2="366504">
+    <data><![CDATA[I]]></data>
+  </Command>
+  <Command __id="141" _type="InsertStringCommand" date="Thu Feb 24 13:17:31 EST 2022" starttimestamp="1645726284833" timestamp="366751" timestamp2="366751">
+    <data><![CDATA[n]]></data>
+  </Command>
+  <Command __id="143" _type="InsertStringCommand" date="Thu Feb 24 13:17:31 EST 2022" starttimestamp="1645726284833" timestamp="366850" timestamp2="366850">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="145" _type="InsertStringCommand" date="Thu Feb 24 13:17:31 EST 2022" starttimestamp="1645726284833" timestamp="367050" timestamp2="367050">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="147" _type="InsertStringCommand" date="Thu Feb 24 13:17:31 EST 2022" starttimestamp="1645726284833" timestamp="367141" timestamp2="367141">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="149" _type="InsertStringCommand" date="Thu Feb 24 13:17:32 EST 2022" starttimestamp="1645726284833" timestamp="367405" timestamp2="367405">
+    <data><![CDATA[f]]></data>
+  </Command>
+  <Command __id="151" _type="InsertStringCommand" date="Thu Feb 24 13:17:32 EST 2022" starttimestamp="1645726284833" timestamp="367533" timestamp2="367533">
+    <data><![CDATA[a]]></data>
+  </Command>
+  <Command __id="153" _type="InsertStringCommand" date="Thu Feb 24 13:17:32 EST 2022" starttimestamp="1645726284833" timestamp="367841" timestamp2="367841">
+    <data><![CDATA[c]]></data>
+  </Command>
+  <Command __id="155" _type="InsertStringCommand" date="Thu Feb 24 13:17:32 EST 2022" starttimestamp="1645726284833" timestamp="368083" timestamp2="368083">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="157" _type="PauseCommand" date="Thu Feb 24 13:17:34 EST 2022" range="1s-2s" starttimestamp="1645726284833" timestamp="369871">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[InsertStringCommand]]></prev>
+    <pause><![CDATA[1788]]></pause>
+    <nextType><![CDATA[Save]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="160" _type="EclipseCommand" commandID="" date="Thu Feb 24 13:17:35 EST 2022" starttimestamp="1645726284833" timestamp="371079" />
+  <Command __id="162" _type="EclipseCommand" commandID="" date="Thu Feb 24 13:17:35 EST 2022" starttimestamp="1645726284833" timestamp="371093" />
+  <Command __id="164" _type="PauseCommand" date="Thu Feb 24 13:17:53 EST 2022" range="10s-20s" starttimestamp="1645726284833" timestamp="388900">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[17807]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="163" _type="ShellCommand" date="Thu Feb 24 13:17:53 EST 2022" starttimestamp="1645726284833" timestamp="388900" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="166" _type="PauseCommand" date="Thu Feb 24 13:17:57 EST 2022" range="2s-5s" starttimestamp="1645726284833" timestamp="392603">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3703]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+</Events>

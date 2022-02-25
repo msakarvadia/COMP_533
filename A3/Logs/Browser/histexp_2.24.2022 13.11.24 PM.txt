@@ -1,0 +1,1 @@
+2/24/2022 13:12:09 PM	java - Cannot be cast to class because they are in unnamed module of loader 'app' - Stack Overflow	https://stackoverflow.com/questions/54536895/cannot-be-cast-to-class-because-they-are-in-unnamed-module-of-loader-app

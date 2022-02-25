@@ -13367,3 +13367,13 @@ public class Slave extends AMapReduceTracer implements SlaveInterface {
     <nextType><![CDATA[Gained Focus]]></nextType>
     <next><![CDATA[ShellCommand]]></next>
   </Command>
+  <Command __id="4935" _type="ShellCommand" date="Thu Feb 24 00:55:37 EST 2022" starttimestamp="1645628591098" timestamp="53546280" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="4937" _type="ShellCommand" date="Thu Feb 24 00:55:37 EST 2022" starttimestamp="1645628591098" timestamp="53546318" type="ECLIPSE_MINIMIZED" />
+  <Command __id="4938" _type="ShellCommand" date="Thu Feb 24 00:55:37 EST 2022" starttimestamp="1645628591098" timestamp="53546345" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="4940" _type="PauseCommand" date="Thu Feb 24 00:57:54 EST 2022" range="2m-5m" starttimestamp="1645628591098" timestamp="53682952">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[136607]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>

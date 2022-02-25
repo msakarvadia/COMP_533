@@ -1,0 +1,291 @@
+<Events startTimestamp="1645726698301" logVersion="1.0.0.202111260825">
+  <Command __id="2" _type="ProgramExecutionEvent" className="/A3/src/comp533/mvc/A3Tests.java" date="Thu Feb 24 13:18:28 EST 2022" kind="HitBreakPoint" projectName="A3" starttimestamp="1645726698301" timestamp="10558" type="Run" />
+  <Command __id="4" _type="RunCommand" className="/A3/src/comp533/mvc/A3Tests.java" date="Thu Feb 24 13:18:28 EST 2022" kind="HitBreakPoint" projectName="A3" starttimestamp="1645726698301" timestamp="10567" type="Run" />
+  <Command __id="6" _type="PauseCommand" date="Thu Feb 24 13:18:32 EST 2022" range="2s-5s" starttimestamp="1645726698301" timestamp="14077">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[3507]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="5" _type="ShellCommand" date="Thu Feb 24 13:18:32 EST 2022" starttimestamp="1645726698301" timestamp="14074" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="8" _type="PauseCommand" date="Thu Feb 24 13:18:37 EST 2022" range="2s-5s" starttimestamp="1645726698301" timestamp="18736">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[4662]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="7" _type="ConsoleOutput" date="Thu Feb 24 13:18:37 EST 2022" overflow="false" starttimestamp="1645726698301" timestamp="18736" type="ConsoleOutput">
+    <outputString><![CDATA[
+A3ConfigurationProvided did not pass completely:To get style credit provide (possibly stub) missing classes for properties:[standAloneFacebookMapReduce, remoteClientFacebookMapReduce, serverIntegerSummer, serverFacebookMapReduce]%0.0
+Test execution time (ms):24
+]]></outputString>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="10" _type="PauseCommand" date="Thu Feb 24 13:19:58 EST 2022" range="1m-2m" starttimestamp="1645726698301" timestamp="99846">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[81110]]></pause>
+    <nextType><![CDATA[Exception]]></nextType>
+    <next><![CDATA[ExceptionCommand]]></next>
+  </Command>
+  <Command __id="9" _type="ExceptionCommand" date="Thu Feb 24 13:19:58 EST 2022" starttimestamp="1645726698301" timestamp="99846" type="Exception">
+    <exceptionString><![CDATA[
+
+
+java.lang.AssertionError: MapReduce Server Output Did not match:.*Hogwarts.*5.*?%0.0
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at grader.basics.testcase.PassFailJUnitTestCase.assertTrue(PassFailJUnitTestCase.java:288)
+	at gradingTools.shared.testcases.MethodExecutionTest.checkWithChecker(MethodExecutionTest.java:930)
+	at gradingTools.comp533s19.assignment0.testcases.counts.standalone.SingleThreadTokenCountResult.isValidOutput(SingleThreadTokenCountResult.java:93)
+	at gradingTools.shared.testcases.MethodExecutionTest.computeOutputErrorStatus(MethodExecutionTest.java:262)
+	at gradingTools.shared.testcases.MethodExecutionTest.setOutputErrorStatus(MethodExecutionTest.java:241)
+	at gradingTools.shared.testcases.MainMethodForkerTest.test(MainMethodForkerTest.java:105)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at gradingTools.comp533s19.assignment0.testcases.counts.distributed.DistributedTokenCountResult.defaultTest(DistributedTokenCountResult.java:121)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)
+]]></exceptionString>
+    <language><![CDATA[SML]]></language>
+  </Command>
+  <Command __id="11" _type="ConsoleOutput" date="Thu Feb 24 13:19:58 EST 2022" overflow="false" starttimestamp="1645726698301" timestamp="100096" type="ConsoleOutput">
+    <outputString><![CDATA[
+
+
+java.lang.AssertionError: MapReduce Server Output Did not match:.*Hogwarts.*5.*?%0.0
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at grader.basics.testcase.PassFailJUnitTestCase.assertTrue(PassFailJUnitTestCase.java:288)
+	at gradingTools.shared.testcases.MethodExecutionTest.checkWithChecker(MethodExecutionTest.java:930)
+	at gradingTools.comp533s19.assignment0.testcases.counts.standalone.SingleThreadTokenCountResult.isValidOutput(SingleThreadTokenCountResult.java:93)
+	at gradingTools.shared.testcases.MethodExecutionTest.computeOutputErrorStatus(MethodExecutionTest.java:262)
+	at gradingTools.shared.testcases.MethodExecutionTest.setOutputErrorStatus(MethodExecutionTest.java:241)
+	at gradingTools.shared.testcases.MainMethodForkerTest.test(MainMethodForkerTest.java:105)
+	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)
+	at gradingTools.comp533s19.assignment0.testcases.counts.distributed.DistributedTokenCountResult.defaultTest(DistributedTokenCountResult.java:121)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)
+	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)
+	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)
+	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)
+	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)
+	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)
+	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)
+	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"¶"), Diff(DELETE,"A3ConfigurationProvided did not pass completely:To get style credit provide (possibly stub) missing classes for properties:[standAloneFacebookMapReduce, remoteClientFacebookMapReduce, serverIntegerSummer, serverFacebookMapReduce]%0.0¶Test execution time (ms):24"), Diff(INSERT,"¶¶java.lang.AssertionError: MapReduce Server Output Did not match:.*Hogwarts.*5.*?%0.0¶	at org.junit.Assert.fail(Assert.java:88)¶	at org.junit.Assert.assertTrue(Assert.java:41)¶	at grader.basics.testcase.PassFailJUnitTestCase.assertTrue(PassFailJUnitTestCase.java:288)¶	at gradingTools.shared.testcases.MethodExecutionTest.checkWithChecker(MethodExecutionTest.java:930)¶	at gradingTools.comp533s19.assignment0.testcases.counts.standalone.SingleThreadTokenCountResult.isValidOutput(SingleThreadTokenCountResult.java:93)¶	at gradingTools.shared.testcases.MethodExecutionTest.computeOutputErrorStatus(MethodExecutionTest.java:262)¶	at gradingTools.shared.testcases.MethodExecutionTest.setOutputErrorStatus(MethodExecutionTest.java:241)¶	at gradingTools.shared.testcases.MainMethodForkerTest.test(MainMethodForkerTest.java:105)¶	at grader.basics.testcase.PassFailJUnitTestCase.passfailDefaultTest(PassFailJUnitTestCase.java:226)¶	at gradingTools.comp533s19.assignment0.testcases.counts.distributed.DistributedTokenCountResult.defaultTest(DistributedTokenCountResult.java:121)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)¶	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)¶	at java.base/java.lang.reflect.Method.invoke(Method.java:566)¶	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)¶	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)¶	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)¶	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)¶	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)¶	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)¶	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)¶	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)¶	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)¶	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)¶	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)¶	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)¶	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)¶	at grader.basics.junit.AGradableJUnitTest.test(AGradableJUnitTest.java:301)¶	at grader.basics.junit.AGradableJUnitSuite.test(AGradableJUnitSuite.java:325)¶	at grader.basics.junit.AGradableJUnitSuite.open(AGradableJUnitSuite.java:187)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)¶	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)¶	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)¶	at java.base/java.lang.reflect.Method.invoke(Method.java:566)¶	at bus.uigen.reflect.local.AVirtualMethod.methodInvoke(AVirtualMethod.java:270)¶	at bus.uigen.reflect.UnifiedMethod.invoke(UnifiedMethod.java:219)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1444)¶	at bus.uigen.undo.BasicCommand.execute(BasicCommand.java:69)¶	at bus.uigen.undo.AHistoryUndoer.execute(AHistoryUndoer.java:99)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1906)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1701)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethods(MethodInvocationManager.java:1585)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1538)¶	at bus.uigen.controller.MethodInvocationManager.invokeMethod(MethodInvocationManager.java:1531)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1406)¶	at bus.uigen.controller.MethodInvocationManager.invokeDoubleClickMethod(MethodInvocationManager.java:1357)"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="13" _type="PauseCommand" date="Thu Feb 24 13:20:18 EST 2022" range="20s-30s" starttimestamp="1645726698301" timestamp="120257">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[20161]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="12" _type="ShellCommand" date="Thu Feb 24 13:20:18 EST 2022" starttimestamp="1645726698301" timestamp="120257" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="15" _type="PauseCommand" date="Thu Feb 24 13:20:37 EST 2022" range="10s-20s" starttimestamp="1645726698301" timestamp="139153">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[18896]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="14" _type="ShellCommand" date="Thu Feb 24 13:20:37 EST 2022" starttimestamp="1645726698301" timestamp="139153" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="17" _type="PauseCommand" date="Thu Feb 24 13:21:30 EST 2022" range="30s-1m" starttimestamp="1645726698301" timestamp="192276">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[53123]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="16" _type="ShellCommand" date="Thu Feb 24 13:21:30 EST 2022" starttimestamp="1645726698301" timestamp="192276" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="19" _type="PauseCommand" date="Thu Feb 24 13:21:32 EST 2022" range="2s-5s" starttimestamp="1645726698301" timestamp="194381">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2105]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="18" _type="ShellCommand" date="Thu Feb 24 13:21:32 EST 2022" starttimestamp="1645726698301" timestamp="194381" type="ECLIPSE_MINIMIZED" />
+  <Command __id="20" _type="ShellCommand" date="Thu Feb 24 13:21:32 EST 2022" starttimestamp="1645726698301" timestamp="194422" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="22" _type="PauseCommand" date="Thu Feb 24 13:24:07 EST 2022" range="2m-5m" starttimestamp="1645726698301" timestamp="348911">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[154489]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="21" _type="ShellCommand" date="Thu Feb 24 13:24:07 EST 2022" starttimestamp="1645726698301" timestamp="348911" type="ECLIPSE_MAXIMIZED" />
+  <Command __id="23" _type="ShellCommand" date="Thu Feb 24 13:24:07 EST 2022" starttimestamp="1645726698301" timestamp="349006" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="25" _type="PauseCommand" date="Thu Feb 24 13:24:11 EST 2022" range="2s-5s" starttimestamp="1645726698301" timestamp="353109">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[4102]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="24" _type="ShellCommand" date="Thu Feb 24 13:24:11 EST 2022" starttimestamp="1645726698301" timestamp="353108" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="27" _type="PauseCommand" date="Thu Feb 24 13:24:42 EST 2022" range="30s-1m" starttimestamp="1645726698301" timestamp="384011">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[30903]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="26" _type="ShellCommand" date="Thu Feb 24 13:24:42 EST 2022" starttimestamp="1645726698301" timestamp="384011" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="29" _type="PauseCommand" date="Thu Feb 24 13:25:16 EST 2022" range="30s-1m" starttimestamp="1645726698301" timestamp="418108">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[34097]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="28" _type="ShellCommand" date="Thu Feb 24 13:25:16 EST 2022" starttimestamp="1645726698301" timestamp="418108" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="31" _type="PauseCommand" date="Thu Feb 24 13:26:50 EST 2022" range="1m-2m" starttimestamp="1645726698301" timestamp="512039">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[93931]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="30" _type="ShellCommand" date="Thu Feb 24 13:26:50 EST 2022" starttimestamp="1645726698301" timestamp="512039" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="33" _type="PauseCommand" date="Thu Feb 24 13:26:53 EST 2022" range="2s-5s" starttimestamp="1645726698301" timestamp="515368">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3329]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="32" _type="ShellCommand" date="Thu Feb 24 13:26:53 EST 2022" starttimestamp="1645726698301" timestamp="515368" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="35" _type="PauseCommand" date="Thu Feb 24 13:27:58 EST 2022" range="1m-2m" starttimestamp="1645726698301" timestamp="579911">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[64543]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="42" _type="ProgramExecutionEvent" className="/A3/src/comp533/clientServer/RemoteClientProcess.java" date="Thu Feb 24 13:28:29 EST 2022" kind="HitBreakPoint" projectName="A3" starttimestamp="1645726698301" timestamp="611014" type="Run" />
+  <Command __id="44" _type="RunCommand" className="/A3/src/comp533/clientServer/RemoteClientProcess.java" date="Thu Feb 24 13:28:29 EST 2022" kind="HitBreakPoint" projectName="A3" starttimestamp="1645726698301" timestamp="611015" type="Run" />
+  <Command __id="46" _type="PauseCommand" date="Thu Feb 24 13:28:32 EST 2022" range="2s-5s" starttimestamp="1645726698301" timestamp="614019">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[3004]]></pause>
+    <nextType><![CDATA[Exception]]></nextType>
+    <next><![CDATA[ExceptionCommand]]></next>
+  </Command>
+  <Command __id="45" _type="ExceptionCommand" date="Thu Feb 24 13:28:32 EST 2022" starttimestamp="1645726698301" timestamp="614019" type="Exception">
+    <exceptionString><![CDATA[java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:623)
+	at java.rmi/sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:209)
+	at java.rmi/sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:196)
+	at java.rmi/sun.rmi.server.UnicastRef.newCall(UnicastRef.java:343)
+	at java.rmi/sun.rmi.registry.RegistryImpl_Stub.lookup(RegistryImpl_Stub.java:116)
+	at comp533.clientServer.RemoteClientProcess.main(RemoteClientProcess.java:15)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at java.base/java.net.Socket.connect(Socket.java:557)
+	at java.base/java.net.Socket.<init>(Socket.java:453)
+	at java.base/java.net.Socket.<init>(Socket.java:230)
+	at java.rmi/sun.rmi.transport.tcp.TCPDirectSocketFactory.createSocket(TCPDirectSocketFactory.java:40)
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:617)
+	... 5 more
+]]></exceptionString>
+    <language><![CDATA[java]]></language>
+  </Command>
+  <Command __id="47" _type="ProgramExecutionEvent" className="/A3/src/comp533/clientServer/RemoteClientProcess.java" date="Thu Feb 24 13:28:32 EST 2022" kind="HitBreakPoint" projectName="A3" starttimestamp="1645726698301" timestamp="614066" type="Run" />
+  <Command __id="48" _type="ProgramExecutionEvent" className="/A3/src/comp533/clientServer/RemoteClientProcess.java" date="Thu Feb 24 13:28:32 EST 2022" kind="HitBreakPoint" projectName="A3" starttimestamp="1645726698301" timestamp="614066" type="Run" />
+  <Command __id="50" _type="PauseCommand" date="Thu Feb 24 13:28:49 EST 2022" range="10s-20s" starttimestamp="1645726698301" timestamp="630960">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[16894]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="49" _type="ShellCommand" date="Thu Feb 24 13:28:49 EST 2022" starttimestamp="1645726698301" timestamp="630960" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="52" _type="PauseCommand" date="Thu Feb 24 13:29:24 EST 2022" range="30s-1m" starttimestamp="1645726698301" timestamp="666565">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[35605]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="51" _type="ShellCommand" date="Thu Feb 24 13:29:24 EST 2022" starttimestamp="1645726698301" timestamp="666565" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="53" _type="ShellCommand" date="Thu Feb 24 13:29:25 EST 2022" starttimestamp="1645726698301" timestamp="666726" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="55" _type="PauseCommand" date="Thu Feb 24 13:29:27 EST 2022" range="2s-5s" starttimestamp="1645726698301" timestamp="669409">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2683]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+</Events>

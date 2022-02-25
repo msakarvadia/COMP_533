@@ -1,0 +1,4 @@
+Id,Prediction,Date,File,StartTime,ElapsedTime,BusyTime,Commands,editOrInsertPercentage,debugPercentage,navigationPercentage,focusPercentage,removePercentage,editPercentage,COMMAND_RATE,NAVIGATION_RATE,DEBUG_RATE,FOCUS_RATE,EDIT_RATE,REMOVE_RATE,INSERT_RATE,webLinkTimes,Web Page Visits
+1,,Thu Feb 24 13:17:15 EST 2022,RemoteClientProcess.java,1645726635935,9105,9105,(I)18(R)2(I)4,0.9166666666666666,0.0,0.0,0.0,0.0,0.0,2.6666666666666665,0.0,0.0,0.0,0.0,0.2222222222222222,2.4444444444444446,0.0,[]
+,/modelData/A0UserStudy2010.arff,Thu Feb 24 13:17:15 EST 2022,RemoteClientProcess.java, 1645726635935
+2,,Thu Feb 24 13:17:25 EST 2022,RemoteClientProcess.java,1645726645040,6297,6297,(F)2(I)3(R)6(I)12,0.6521739130434783,0.0,0.0,8.695652173913043,0.0,0.0,3.8333333333333335,0.0,0.0,0.3333333333333333,0.0,1.0,2.5,0.0,[]

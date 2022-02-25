@@ -1,4 +1,4 @@
-package comp533.client;
+package comp533.clientServer;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

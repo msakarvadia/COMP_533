@@ -1,6 +1,8 @@
 package comp533.mvc;
 
-public interface KeyValueInterface<K, V> {
+import java.io.Serializable;
+
+public interface KeyValueInterface<K, V> extends Serializable{
 	public K getKey();
 	public void setKey(K newKey);
 	public V getValue();

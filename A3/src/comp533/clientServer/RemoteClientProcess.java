@@ -1,15 +1,9 @@
-package comp533.client;
+package comp533.clientServer;
 
-import java.rmi.NotBoundException;
-import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
-import java.util.List;
-import java.util.Map;
-
-import comp533.mvc.KeyValueInterface;
-import comp533.mvc.Model;
+import comp533.mvc.RemoteModelInterface;
 
 public class RemoteClientProcess implements SimpleRegistryandCounterServer{
 
@@ -17,7 +11,7 @@ public class RemoteClientProcess implements SimpleRegistryandCounterServer{
 		try {
 			Registry rmiRegistry = LocateRegistry.getRegistry(SERVER_HOST_NAME, SERVER_PORT);
 			//Get model here
-			Model model = (Model) rmiRegistry.lookup(MODEL_NAME);
+			RemoteModelInterface model = (RemoteModelInterface) rmiRegistry.lookup(MODEL_NAME);
 			
 			//create client object
 			RemoteClientInterface client = new RemoteClientObject();

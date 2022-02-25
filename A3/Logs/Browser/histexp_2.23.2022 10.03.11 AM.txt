@@ -45,3 +45,10 @@
 2/23/2022 23:53:56 PM	java passing remote object as argument - Google Search	https://www.google.com/search?q=java+passing+remote+object+as+argument&rlz=1C1CHBF_enUS939US939&oq=java+passing+remote+object+as+argument&aqs=chrome..69i57.9591j0j7&sourceid=chrome&ie=UTF-8
 2/23/2022 23:53:43 PM	Java Remote Method Invocation: 2 - Distributed Object Model	https://docs.oracle.com/javase/8/docs/platform/rmi/spec/rmi-objmodel7.html#:~:text=When%20passing%20an%20exported%20remote,can%20only%20implement%20remote%20interfaces.
 2/23/2022 23:54:03 PM	Java Remote Method Invocation: 2 - Distributed Object Model	https://docs.oracle.com/javase/9/docs/specs/rmi/objmodel.html
+2/24/2022 00:53:59 AM	msakarvadia/deephyper_pytorch_layers: Use DeepHyper to find the max FLOPS for various PyTorch Layers.	https://github.com/msakarvadia/deephyper_pytorch_layers
+2/24/2022 00:55:33 AM	Personal Access Tokens	https://github.com/settings/tokens
+2/24/2022 00:54:03 AM	Your Profile	https://github.com/settings/profile
+2/24/2022 00:54:20 AM	SSH and GPG keys	https://github.com/settings/keys
+2/24/2022 00:54:13 AM	Account security	https://github.com/settings/security
+2/24/2022 00:55:20 AM	Regenerate personal access token	https://github.com/settings/tokens/784982015/regenerate
+2/24/2022 00:55:25 AM	Edit personal access token	https://github.com/settings/tokens/784982015
