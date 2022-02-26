@@ -10,7 +10,6 @@ import comp533.mvc.ModelInterface;
 
 public interface SlaveInterface extends Runnable{
 	
-	
 	public void run();
 	public void notifySlave();
 	public String toString();
@@ -19,4 +18,5 @@ public interface SlaveInterface extends Runnable{
 	public Map<String, Integer> partitionKeys(Map<String, Integer> aKeyToPartition, Map<String, Integer> aResult);
 	public LinkedList<KeyValueInterface<String, Integer>> block(ModelInterface aSlaveModel, LinkedList<KeyValueInterface<String, Integer>> aLocalList, boolean aLoop);
 	public void setClient(RemoteClientInterface aClient);
+	public void slaveQuit();
 }

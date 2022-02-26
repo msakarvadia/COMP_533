@@ -1,7 +1,7 @@
 comp533.barrier.Barrier,BarrierClass
 comp533.barrier.BarrierInterface,BarrierClass
 comp533.clientServer.RemoteClientProcess,ClientTokenCounter
-comp533.clientServer.SimpleRegistryandCounterServer,ClientTokenCounter
+comp533.clientServer.SimpleRegistryAndCounterServer,ClientTokenCounter
 comp533.mvc.Controller,ControllerClass
 comp533.mvc.ControllerInterface,ControllerClass
 comp533.mvc.IntSummingMapper,IntSummingMapperClass
@@ -25,7 +25,7 @@ comp533.clientServer.RemoteClientInterface,RemoteClientObjectClass
 comp533.clientServer.RemoteClientInterface,RemoteClientObjectInterface
 comp533.mvc.RemoteModelInterface,RemoteModelInterface
 comp533.clientServer.ServerTokenCounter,ServerTokenCounter
-comp533.clientServer.SimpleRegistryandCounterServer,ServerTokenCounter
+comp533.clientServer.SimpleRegistryAndCounterServer,ServerTokenCounter
 comp533.salve.Slave,SlaveClass
 comp533.salve.SlaveInterface,SlaveClass
 comp533.mvc.StandAloneIntSumming,StandAloneIntegerSummer

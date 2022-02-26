@@ -20,3 +20,35 @@
 2/24/2022 18:50:07 PM	java stack.remove - Google Search	https://www.google.com/search?q=java+stack.remove&rlz=1C1CHBF_enUS939US939&oq=java+stack.remove&aqs=chrome..69i57.3834j0j7&sourceid=chrome&ie=UTF-8
 2/24/2022 18:50:08 PM	Stack remove(int) method in Java with Example - GeeksforGeeks	https://www.geeksforgeeks.org/stack-removeint-method-in-java-with-example/
 2/24/2022 18:55:26 PM	multiline comment eclipse - Google Search	https://www.google.com/search?q=multiline+comment+eclipse&rlz=1C1CHBF_enUS939US939&oq=multiline+comment+eclipse&aqs=chrome..69i57.4242j0j4&sourceid=chrome&ie=UTF-8
+2/24/2022 19:37:50 PM	3_DistributedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/1ipk3I2KnfPu-aD6ZsjJllq32qT6JSJO7/edit
+2/24/2022 19:41:01 PM	3_DistributedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/1ipk3I2KnfPu-aD6ZsjJllq32qT6JSJO7/edit
+2/24/2022 19:57:02 PM	3_DistributedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/1ipk3I2KnfPu-aD6ZsjJllq32qT6JSJO7/edit
+2/24/2022 19:59:48 PM	3_DistributedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/1ipk3I2KnfPu-aD6ZsjJllq32qT6JSJO7/edit
+2/24/2022 20:07:07 PM	3_DistributedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/1ipk3I2KnfPu-aD6ZsjJllq32qT6JSJO7/edit
+2/24/2022 20:57:23 PM	3_DistributedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/1ipk3I2KnfPu-aD6ZsjJllq32qT6JSJO7/edit
+2/24/2022 21:58:47 PM	COMP 533 (9 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7
+2/24/2022 23:47:35 PM	3_DistributedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/1ipk3I2KnfPu-aD6ZsjJllq32qT6JSJO7/edit
+2/25/2022 00:10:41 AM	3_DistributedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/1ipk3I2KnfPu-aD6ZsjJllq32qT6JSJO7/edit
+2/25/2022 10:38:04 AM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+2/25/2022 10:38:03 AM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1
+2/25/2022 10:38:08 AM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Overview	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049
+2/25/2022 10:38:10 AM		https://sakai.unc.edu/portal/tool/dade49b9-d1b7-4801-97e0-e2e750d0c69b/synMainLite?time=1
+2/25/2022 10:41:34 AM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Overview	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e
+2/25/2022 10:41:36 AM		https://sakai.unc.edu/portal/tool/03d1a84e-4038-4d16-bc52-7670745b07af/synMainLite?time=1
+2/25/2022 10:41:47 AM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/tool/6c79219c-9d31-4623-990a-7a77dfc713dc
+2/25/2022 10:41:50 AM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/tool/6c79219c-9d31-4623-990a-7a77dfc713dc?panel=Main
+2/25/2022 10:41:18 AM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625
+2/25/2022 10:41:16 AM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625?panel=Main
+2/25/2022 10:41:18 AM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool-reset/fa572230-b29f-4781-bb97-8e292ad9f625
+2/25/2022 10:41:10 AM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625?panel=Main#attachmentspanel
+2/25/2022 10:41:47 AM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/tool-reset/6c79219c-9d31-4623-990a-7a77dfc713dc
+2/25/2022 10:38:02 AM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=fZJdT8IwFIb%2FytJ71nWTCA1bMuFCEhTCphfemNIeXePWzp7Oj3%2FvYEgwMVz3%2Fej75MxQNHXL885XZgvvHaAPvpraID88pKRzhluBGrkRDSD3khf53YrHYcRbZ72VtiZBjgjOa2vm1mDXgCvAfWgJD9tVSirvW%2BSUongTOuyMDEF1tKj0bmdr8FWIaOk%2BNKabdVGSYNH%2FQhuxzztzoz15tWppX%2F6iazgat6C0A%2BlpUaxJsFyk5PkqipIJqGQMksnptZBKxSyZMqWiiWJT1ssQO1ga9ML4lMRRHI%2BieBSPSzbmyYRH7IkEm%2BPGG22UNq%2BXgewGEfLbstyMhjGP4PAwpBeQbLbHyg%2FF7gz05VjxS5dk%2F7PEE8sZPSsY2lp%2B3ycuFxtba%2Fkd5HVtP%2BcOhIeUMEKzwfL3BrIf&RelayState=ss%3Amem%3Aacbea07274ace6b3d61b3514f8a82d3e4370d8700d41756bbaa51b40b8bd18c5&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=FQnoyWcp8e7L7fzVJ5ZJSxM92yvB11ecJVEYz2D88RRQEsPyzjc6%2BpOKZc%2FL%2BdyHgBb9tfbCZkD9NiMVucj0plVMja7ZUaeoq5IhMUFMxogXByn9QTXQRvSNpHzWTFlxTf%2FwqDXyg6323PoLnf1cX3DO8tNBuTNSmiFrNQbOxszRHh9RwnF7FunTeMliULkheDKo13l9KR2klVIUheCCL1omfUgTfA7tTiDwrkokZBprEt2P1jqx79cRs%2BHeFr6zG7QenD%2BreOWvrJJ8Cfuj6tA4rQQ%2F%2B5XwlQcPxJFCYwihDQ4vIR%2FdR5zb8V8i5Ie5A3LPlQltFp46Xi68QFPYlw%3D%3D
+2/25/2022 10:40:57 AM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625?assignmentReference=/assignment/a/9a8c1503-90ae-4047-9576-bb2caf0f2049/3706236c-a0ec-4ff2-8bd8-eb3797e2ba76&sakai_action=doView_submission
+2/25/2022 10:41:43 AM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/tool/6c79219c-9d31-4623-990a-7a77dfc713dc?submissionId=/assignment/s/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/f7bbf165-ab49-415d-b397-e911ec81d64f/ef9698db-c2f8-42a2-8c67-559354eed5db&sakai_action=doView_grade
+2/25/2022 10:41:50 AM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/tool/6c79219c-9d31-4623-990a-7a77dfc713dc?assignmentReference=/assignment/a/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/95df8920-f2dc-44cd-9f70-fd326eb2186e&sakai_action=doView_submission
+2/25/2022 10:41:53 AM	523hw7.pdf	https://sakai.unc.edu/access/content/attachment/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/Assignments/d4b86219-c1a7-44cf-b80a-9ceed0e2a370/523hw7.pdf
+2/25/2022 12:18:49 PM	3_DistributedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/1ipk3I2KnfPu-aD6ZsjJllq32qT6JSJO7/edit
+2/25/2022 12:38:43 PM	3_DistributedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/1ipk3I2KnfPu-aD6ZsjJllq32qT6JSJO7/edit
+2/25/2022 13:11:33 PM	COMP 533 (9 unread)	https://piazza.com/class/kxx594eo8fl3y2
+2/25/2022 13:11:35 PM	COMP 533 (9 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=6
+2/25/2022 13:11:38 PM	COMP 533 (9 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7

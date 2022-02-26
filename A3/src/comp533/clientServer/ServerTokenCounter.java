@@ -11,11 +11,11 @@ import comp533.mvc.Model;
 import comp533.mvc.View;
 import comp533.mvc.ViewInterface;
 
-public class ServerTokenCounter implements SimpleRegistryandCounterServer{
- public static void main (String[] args) {
+public class ServerTokenCounter implements SimpleRegistryAndCounterServer{
+ public static void main (final String[] args) {
 	 try {
-		Registry rmiRegistry = LocateRegistry.createRegistry(SERVER_PORT);
-		Model model = new Model();
+		final Registry rmiRegistry = LocateRegistry.createRegistry(SERVER_PORT);
+		final Model model = new Model();
 		UnicastRemoteObject.exportObject(model, 0);
 		rmiRegistry.rebind(MODEL_NAME, model);
 		

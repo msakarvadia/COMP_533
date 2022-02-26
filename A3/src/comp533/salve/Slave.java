@@ -40,17 +40,24 @@ public class Slave extends AMapReduceTracer implements SlaveInterface {
 	public void setClient(RemoteClientInterface aClient) {
 		System.out.println("setClient");
 		client = aClient;
-		traceClientAssignment(aClient);
-		synchronized (this) {
-			try {
-				traceWait();
-				wait();
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				traceQuit();
-				e.printStackTrace();
-			}
-		}
+//		try {
+//			client.clientWait();
+//		} catch (RemoteException e1) {
+//			// TODO Auto-generated catch block
+//			e1.printStackTrace();
+//		}
+		
+//		//traceClientAssignment(aClient);
+//		synchronized (this) {
+//			try {
+//				traceWait();
+//				wait();
+//			} catch (InterruptedException e) {
+//				// TODO Auto-generated catch block
+//				traceQuit();
+//				e.printStackTrace();
+//			}
+//		}
 
 	}
 
@@ -86,6 +93,7 @@ public class Slave extends AMapReduceTracer implements SlaveInterface {
 		//			client = slaveClientMap.get(number);
 					traceRemoteList (localList);
 					result = client.reduce(localList);
+					traceRemoteResult (result);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -124,6 +132,7 @@ public class Slave extends AMapReduceTracer implements SlaveInterface {
 						//client = slaveClientMap.get(number);
 						traceRemoteList (localList);
 						result = client.reduce(localList);
+						traceRemoteResult (result);
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
@@ -152,6 +161,12 @@ public class Slave extends AMapReduceTracer implements SlaveInterface {
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					traceQuit();
+//					try {
+//						client.clientQuit();
+//					} catch (RemoteException e1) {
+//						// TODO Auto-generated catch block
+//						e1.printStackTrace();
+//					}
 					e.printStackTrace();
 				}
 			}
@@ -219,6 +234,18 @@ public class Slave extends AMapReduceTracer implements SlaveInterface {
 			aKeyToPartition.put(keyVal.getKey(), partition);
 		}
 		return aKeyToPartition;
+	}
+	
+	@Override
+	public void slaveQuit() {
+		if (client!=null) {
+			try {
+				client.clientQuit();
+			} catch (RemoteException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 	}
 
 	@Override

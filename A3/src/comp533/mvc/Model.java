@@ -13,13 +13,13 @@ import java.util.concurrent.BlockingQueue;
 import comp533.barrier.Barrier;
 import comp533.barrier.BarrierInterface;
 import comp533.clientServer.RemoteClientInterface;
-import comp533.clientServer.RemoteClientObject;
 import comp533.joiner.Joiner;
 import comp533.joiner.JoinerInterface;
 import comp533.salve.Slave;
 import comp533.salve.SlaveInterface;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.beans.PropertyChangeListener;
 //import java.beans.PropertyChangeEvent;
@@ -43,9 +43,9 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 	List<LinkedList<KeyValueInterface<String, Integer>>> aReductionQueueList = new ArrayList<LinkedList<KeyValueInterface<String, Integer>>>();
 
 	// A3
-	Stack<SlaveInterface> unassigned_slaves = new Stack<SlaveInterface>();
-	Stack<Thread> unassigned_threads = new Stack<Thread>();
-	Stack<RemoteClientInterface> unassigned_clients = new Stack<RemoteClientInterface>();
+	Stack<SlaveInterface> unassignedSlaves = new Stack<SlaveInterface>();
+	Stack<Thread> unassignedThreads = new Stack<Thread>();
+	Stack<RemoteClientInterface> unassignedClients = new Stack<RemoteClientInterface>();
 	Map<Integer, RemoteClientInterface> slaveClientMap = new HashMap<Integer, RemoteClientInterface>();
 
 	@Override
@@ -69,18 +69,21 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 
 			final SlaveInterface newSlave = new Slave(i, this);
 			slaves.add(newSlave);
-			unassigned_slaves.push(newSlave);
+			unassignedSlaves.push(newSlave);
 			
 
 			final Thread slaveThread = new Thread(newSlave);
 			slaveThread.setName(name);
 			threads.add(slaveThread);
 			
-			unassigned_threads.push(slaveThread);
+			unassignedThreads.push(slaveThread);
 
 			// Add separate reduction queue to Reduction queue list for each slave thread
 			aReductionQueueList.add(new LinkedList<KeyValueInterface<String, Integer>>());
 		}
+		
+		// Match function - Check placement of match function
+		match(unassignedSlaves, unassignedClients);
 
 	
 
@@ -131,6 +134,8 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 		aReductionQueueList.clear();
 		result.clear();
 
+		
+		
 		if (!slavesStarted) {
 			for (int i = 0; i < threads.size(); i++) {
 				// TODO this cannot happen multiple times:
@@ -140,7 +145,7 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 		}
 
 		// Match function - Check placement of match function
-		match(unassigned_slaves, unassigned_clients);
+		//		match(unassignedSlaves, unassignedClients);
 				
 		aReductionQueueList = notifySlaves(slaves, aReductionQueueList);
 
@@ -203,6 +208,7 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 	public void terminate() {
 		// TODO Auto-generated method stub
 		for (int i = 0; i < threads.size(); i++) {
+			slaves.get(i).slaveQuit();
 			threads.get(i).interrupt();
 
 		}
@@ -296,12 +302,23 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 
 	@Override
 	public void register(RemoteClientInterface client) {
+		
 		traceRegister(client);
+		
+		
+		unassignedClients.push(client);
+		
+		match(unassignedSlaves, unassignedClients);
+//		try {
+//			client.clientWait();
+//		} catch (RemoteException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		System.out.println("MATCHED SLAVE AND CLIENT");
+		
+		
 		// TODO Auto-generated method stub
-		unassigned_clients.push(client);
-		
-		match(unassigned_slaves, unassigned_clients);
-		
 		
 	}
 
@@ -310,39 +327,49 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 	public void match(Stack<SlaveInterface> unassigned_slave, Stack<RemoteClientInterface> client) {
 		//Stack<RemoteClientInterface> clients = client;
 		//Stack<SlaveInterface> slaves = unassigned_slave;
-
-		while(!unassigned_clients.empty()){
-			if(!unassigned_slaves.empty()) {
-				RemoteClientInterface free_client = unassigned_clients.pop();
-				SlaveInterface free_slave = unassigned_slaves.pop();
-				Thread free_thread = unassigned_threads.pop();
+		
+		System.out.println("Num unassigned slaves: "+ unassignedSlaves.size());
+		System.out.println("Num unassigned clients: "+ unassignedClients.size());
+		Object extra = unassignedClients.clone();
+		while(!((Stack<SlaveInterface>) extra).empty()){
+			final RemoteClientInterface waiterClient = ((Stack<RemoteClientInterface>) extra).pop();
+			//final RemoteClientInterface currentClient = unassignedClients.pop();
+			if(!unassignedSlaves.empty()) {
+				final RemoteClientInterface freeClient = unassignedClients.pop();
+				final SlaveInterface freeSlave = unassignedSlaves.pop();
+				//Thread free_thread = unassigned_threads.pop();
 				
-				String name = free_thread.getName();
-				Integer key = Character.getNumericValue(name.charAt(name.length() - 1));
-				slaveClientMap.put(key, free_client);
-				
-				free_slave.setClient(free_client);
+				//String name = free_thread.getName();
+				//Integer key = Character.getNumericValue(name.charAt(name.length() - 1));
+				//slaveClientMap.put(key, free_client);
+//				try {
+//					freeClient.clientWait();
+//				} catch (RemoteException e) {
+//					// TODO Auto-generated catch block
+//					e.printStackTrace();
+//				}
+				traceClientAssignment(freeClient);
+				freeSlave.setClient(freeClient);
 				
 				
 			}
+//			try {
+//				waiterClient.clientWait();
+//			} catch (RemoteException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
 		}
-//		for (RemoteClientInterface free_client : clients) {
-//			if (slaves.size() > 0) {
-//				
-//				// Need to match clients and slaves
-//				//slaves.peek().setClient(free_client);
-//				String name = unassigned_threads.peek().getName();
-//				Integer key = Character.getNumericValue(name.charAt(name.length() - 1));
-//				slaveClientMap.put(key, free_client);
-//
-//				// pop from slave
-//				slaves.pop();
-//
-//				// pop from client
-//				clients.pop();
-//				
+//		Iterator<RemoteClientInterface> clientIter = unassignedClients.iterator();
+//		while(clientIter.hasNext()) {
+//			try {
+//				clientIter.next().clientWait();
+//			} catch (RemoteException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
 //			}
 //		}
+
 	}
 	
 	
