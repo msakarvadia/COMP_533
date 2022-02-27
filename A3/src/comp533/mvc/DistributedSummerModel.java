@@ -19,17 +19,16 @@ import comp533.salve.Slave;
 import comp533.salve.SlaveInterface;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.beans.PropertyChangeListener;
 //import java.beans.PropertyChangeEvent;
 import gradingTools.comp533s19.assignment0.AMapReduceTracer;
 
-public class Model extends AMapReduceTracer implements ModelInterface, RemoteModelInterface {
+public class DistributedSummerModel extends AMapReduceTracer implements ModelInterface, RemoteModelInterface {
 	private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
 	private String inputString = null;
 	private Map<String, Integer> result = new HashMap<String, Integer>();
-	final String space = " ";
+	//final String space = " ";
 	boolean slavesStarted = false;
 
 	// properties from A2
@@ -44,7 +43,7 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 
 	// A3
 	Stack<SlaveInterface> unassignedSlaves = new Stack<SlaveInterface>();
-	Stack<Thread> unassignedThreads = new Stack<Thread>();
+	//Stack<Thread> unassignedThreads = new Stack<Thread>();
 	Stack<RemoteClientInterface> unassignedClients = new Stack<RemoteClientInterface>();
 	Map<Integer, RemoteClientInterface> slaveClientMap = new HashMap<Integer, RemoteClientInterface>();
 
@@ -75,14 +74,14 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 			slaveThread.setName(name);
 			threads.add(slaveThread);
 
-			unassignedThreads.push(slaveThread);
+			//unassignedThreads.push(slaveThread);
 
 			// Add separate reduction queue to Reduction queue list for each slave thread
 			aReductionQueueList.add(new LinkedList<KeyValueInterface<String, Integer>>());
 		}
 
 		// Match function - Check placement of match function
-		match(unassignedSlaves, unassignedClients);
+		match();
 
 		final String label = "NumThreads";
 		final String newValue = Integer.toString(aNumThreads);
@@ -107,6 +106,7 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 	@Override
 	public void addPropertyChangeListener(final PropertyChangeListener newListener) {
 		propertyChangeSupport.addPropertyChangeListener(newListener);
+		//support.addPropertyChangeListener(newListener);
 	}
 
 	@Override
@@ -139,14 +139,11 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 			slavesStarted = true;
 		}
 
-		// Match function - Check placement of match function
-		// match(unassignedSlaves, unassignedClients);
-
 		aReductionQueueList = notifySlaves(slaves, aReductionQueueList);
 
 		// 3
 		final String tokens = inputString;
-		final List<String> listOfToken = Arrays.asList(tokens.split(space));
+		final List<String> listOfToken = Arrays.asList(tokens.split(" "));
 
 		aKeyValueQueue = mapping(aKeyValueQueue, listOfToken, slaves);
 
@@ -195,7 +192,6 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 
 	@Override
 	public void computeResult() {
-		// TODO Auto-generated method stub
 
 	}
 
@@ -205,10 +201,18 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 		for (int i = 0; i < threads.size(); i++) {
 			slaves.get(i).slaveQuit();
 			threads.get(i).interrupt();
+			
+			//terminate all leftover clients in remaining stack
 
 		}
-
-		while (!unassignedClients.empty()) {
+		
+		terminateClients();
+		
+	}
+	
+	@Override
+	public void terminateClients() {
+		while( (!unassignedClients.empty())) {
 			try {
 				unassignedClients.pop().quit();
 			} catch (RemoteException e) {
@@ -216,7 +220,6 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 				e.printStackTrace();
 			}
 		}
-
 	}
 
 	@Override
@@ -284,7 +287,8 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 			final BlockingQueue<KeyValueInterface<String, Integer>> keyValueQueue, final List<String> listOfToken,
 			final List<SlaveInterface> salves) {
 
-		final TokenCountingMapperInterface<String, Integer> mapper = TokenCountingMapperFactory.getMapper();
+		//final TokenCountingMapperInterface<String, Integer> mapper = TokenCountingMapperFactory.getMapper();
+		final IntSummingMapperInterface<String, Integer> mapper = IntSummingMapperFactory.getMapper();
 
 		for (int i = 0; i < listOfToken.size(); i++) {
 			final int slaveNum = i % slaves.size();
@@ -296,7 +300,7 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 				aKeyValueQueue.put(keyVal);
 				traceEnqueue(keyValueQueue);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
+
 				e.printStackTrace();
 			}
 
@@ -306,37 +310,31 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 	}
 
 	@Override
-	public void register(RemoteClientInterface client) {
+	public void register(final RemoteClientInterface client) {
 
 		traceRegister(client);
 
 		unassignedClients.push(client);
 
-		match(unassignedSlaves, unassignedClients);
-//		try {
-//			client.clientWait();
-//		} catch (RemoteException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-		System.out.println("MATCHED SLAVE AND CLIENT");
+		match();
 
-		// TODO Auto-generated method stub
+		System.out.println("MATCHED SLAVE AND CLIENT");
 
 	}
 
 	@Override
-	public void match(Stack<SlaveInterface> unassigned_slave, Stack<RemoteClientInterface> client) {
+	public void match() {
 
 		System.out.println("Num unassigned slaves: " + unassignedSlaves.size());
 		System.out.println("Num unassigned clients: " + unassignedClients.size());
-		Object extra = unassignedClients.clone();
+		final Object extra = unassignedClients.clone();
 		while (!((Stack<SlaveInterface>) extra).empty()) {
 			final RemoteClientInterface waiterClient = ((Stack<RemoteClientInterface>) extra).pop();
-			// final RemoteClientInterface currentClient = unassignedClients.pop();
+
 			if (!unassignedSlaves.empty()) {
 				final RemoteClientInterface freeClient = unassignedClients.pop();
 				final SlaveInterface freeSlave = unassignedSlaves.pop();
+
 				traceClientAssignment(freeClient);
 				freeSlave.setClient(freeClient);
 
@@ -345,4 +343,5 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 		}
 
 	}
+
 }

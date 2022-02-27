@@ -240,7 +240,7 @@ public class Slave extends AMapReduceTracer implements SlaveInterface {
 	public void slaveQuit() {
 		if (client!=null) {
 			try {
-				client.clientQuit();
+				client.quit();
 			} catch (RemoteException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

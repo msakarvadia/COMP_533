@@ -28,6 +28,8 @@ public class ServerTokenCounter implements SimpleRegistryAndCounterServer{
 		controller.setModel(model);
 		controller.processInput();
 		
+		System.exit(0);
+		
 	} catch (RemoteException e) {
 		e.printStackTrace();
 	}

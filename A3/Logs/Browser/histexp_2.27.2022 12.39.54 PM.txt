@@ -1,0 +1,35 @@
+2/27/2022 12:44:09 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1
+2/27/2022 12:44:10 PM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/tool/6c79219c-9d31-4623-990a-7a77dfc713dc
+2/27/2022 12:44:07 PM	UNC-Chapel Hill Single Sign-On	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/tool-reset/6c79219c-9d31-4623-990a-7a77dfc713dc
+2/27/2022 12:44:10 PM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Assignments	https://sakai.unc.edu/sakai-login-tool/container
+2/27/2022 12:44:07 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=fZJdT4MwFIb%2FCun9KCDKaAYJbhcumY4M9MIbU%2BAgjdBiT%2FHj38vGXGZidt33o%2B%2BTs0DetT1LBtPIHbwPgMb66lqJ7PAQkUFLpjgKZJJ3gMyULEvuN8yzHdZrZVSpWmIliKCNUHKpJA4d6Az0hyjhcbeJSGNMj4xS5G9c2IMsbagGmjWiKFQLprERFd2HejTdZjmxVuMvhOT7vDM3qpNXVD0dy2vRwtG4g0poKA3Nsi2x1quIvNThVVGWYTH3b%2FzreeCEjhOEUNRFVbtu5fJRhjjAWqLh0kTEczxv5ngzL8jdgPk%2Bc%2BbPxEqPG2%2BFrIR8vQykmETI7vI8nU1jnkDjYcgoIPFij5UdivUZ6Mux%2FJcuif9niSeWC3pWMLX17GFMXK9S1Yry20raVn0uNXADEXEJjSfL3xuIfwA%3D&RelayState=ss%3Amem%3A19153fb1bc780f9e9affa929ea45285ac8788d05132fcd1b788af6153f538d3d&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=I0yj5U80oAK%2FfFXqSx5WJoHkk5ggks48Th5dRMV5luTHAHhLCyc54nTqzmBZ74HRzH4r%2FIc0g404%2B%2BHM%2FFuiwHQmy0Y7gtx6urwrMroMTr6s7NFBTuiOzazpEa35pca9s4fJOjJ%2Bg1xkdXXj1ilaAqMojlY0XfRZAPO2qexqdHVXOP2M7WQyGDuhn79obCnLXiSiIxH%2B7su0HkQg8Y5W3QEQRX9z5XNMwREP%2B9GEkDHsgAY3sOJMDC0Tc%2FV44PvjwzenI0mdCBMjJBfGotjixMV64QMsPsuuziOH2kCRLc%2BY6sLM4pn0WdHfouQL1GMf5W%2BQZ%2BEUJtZdk%2FZW0ohHnA%3D%3D
+2/27/2022 13:32:47 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1
+2/27/2022 13:32:48 PM	Campus Health Appointments	https://campushealthappointments.unc.edu/
+2/27/2022 13:33:04 PM	New Appointment	https://campushealthappointments.unc.edu/newAppointment
+2/27/2022 13:30:42 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=pVJNT8JAEP0rzd5hy4KiG0qCcJAEhVD04MUs7dRust2tO1PFf2%2BBgiQqMfE682bex8wAVWFKOaoot0t4rQAp2BTGotw1IlZ5K51CjdKqAlBSIuPR3UyKdihL78glzrBghAietLNjZ7EqwMfg33QCD8tZxHKiEiXniSrKCnNQhnJVlk5bKsAStiubtCGteJzr9doZoLyN6PiWR%2FDFPF6xYFIL01ZtKb4W1qDjrE5LXuvJtIFmcAmp9pAQj%2BM5C6aTiD2Hl0L1Op3wOlW9NBX9ftjLLlS2VpkSWfcaahhiBVOLpCxFTIRCtELREv1V50p2Q9kTTyxYNLZvtE21fTmf0XoPQnm7Wi1aezOP4HFnpAaw4WCbtNwR%2B5Psz69Vh8DZ8M%2Fx4jHeAT%2Fh3Aso5X1NMp0snNHJRzAyxr2PPSiCiHUYP4CaH4F09zH1tQk21Fg4LY1NrXAJ2X8MHXQfzlpkqhH%2BE9Nw3%2FtVIv%2F%2B6cNP&RelayState=ss%3Amem%3Ae4370db32f21bf7b36a44a30a880076ba11d3274703924ce353205388e6b6a75&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=hfv4PdC2X2QeI%2F%2FtRcSjj1jwcVzWW2LwkKzvu7wYWC3nOxyySZad4Q5RGJPzjbMeBKy0X4%2F%2FBSTM5DBrswjCUUR9AY55HlRXLIEo2RM9YAp%2FYqg6uiamkcBzLkgmY6ZysU5g4yETykpnxNlipQYQfmlTG9ihctbCiIem92I4UnB2EZS%2FqkYdqdhQzbyCm1yeyU0pozBYmy%2BSABpm6OfqfuO4g3jEwDJNTK2Am2ieOlcZj8rujaaf39Pv6DWfqNhdC7Y6X7kNR4HRKdEsDxdmV4whOCwSMDRAHEWbnbO0ylpRDNxgXYqKVoawhRFDkeNYG8wlu8IfGrPrO5evqBvSPTT62mxeKHHG6HGbBMeJ9nY15Xxlj4W%2F0lILl3etYv3B5OzHdLLp9Zd6BqMY%2F7ntYFMVU5dpAO0ewjmqcZSMmSCbPGPYvqy0XNLf%2F%2FS4znLcMLu%2ByPp1sNCjTmuTFRZqvAhZsFbkBzWHFB29bv6bHHNyVCap52ZlhH%2FLd0MMvd6n
+2/27/2022 13:33:24 PM	Schedule Appointments	https://campushealthappointments.unc.edu/newAppointment/schedule?facility=10&visitType=476&pcpId=9144
+2/27/2022 13:39:05 PM	ConnectCarolina	https://connectcarolina.unc.edu/
+2/27/2022 13:39:09 PM		https://pa.cc.unc.edu/psp/paprd/EMPLOYEE/EMPL/h/?tab=NC_REDIRECT&TargetPage=PortalHome
+2/27/2022 13:39:14 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/POST/SSO
+2/27/2022 13:39:09 PM		https://pa.cc.unc.edu/psp/paprd/EMPLOYEE/EMPL/h/?tab=NC_REDIRECT&TargetPage=PortalHome&
+2/27/2022 13:39:09 PM		https://cs.cc.unc.edu/Shibboleth.sso/Login
+2/27/2022 13:39:10 PM		https://cs.cc.unc.edu/
+2/27/2022 13:39:10 PM		https://fs.cc.unc.edu/Shibboleth.sso/Login
+2/27/2022 13:39:11 PM		https://fs.cc.unc.edu/
+2/27/2022 13:39:11 PM		https://hc.cc.unc.edu/Shibboleth.sso/Login
+2/27/2022 13:39:11 PM		https://hc.cc.unc.edu/
+2/27/2022 13:39:12 PM		https://csrpt.cc.unc.edu/Shibboleth.sso/Login
+2/27/2022 13:39:12 PM		https://csrpt.cc.unc.edu/
+2/27/2022 13:39:12 PM		https://fsrpt.cc.unc.edu/Shibboleth.sso/Login
+2/27/2022 13:39:13 PM		https://fsrpt.cc.unc.edu/
+2/27/2022 13:39:13 PM		https://hcrpt.cc.unc.edu/Shibboleth.sso/Login
+2/27/2022 13:39:14 PM	Student	https://hcrpt.cc.unc.edu/
+2/27/2022 13:39:17 PM	Student	https://pa.cc.unc.edu/psp/paprd/EMPLOYEE/EMPL/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?InfoShibsession=true
+2/27/2022 13:37:21 PM	Campus Health Appointments	https://campushealthappointments.unc.edu/
+2/27/2022 13:37:16 PM	Schedule Confirm	https://campushealthappointments.unc.edu/newAppointment/scheduleConfirm
+2/27/2022 13:39:02 PM	401 Unauthorized	http://pandora.ia.unc.edu/uploads/upload.php
+2/27/2022 13:41:27 PM	Martin Styner Upload	http://pandora.ia.unc.edu/uploads/upload.php
+2/27/2022 13:41:26 PM	401 Unauthorized	http://pandora.ia.unc.edu/uploads/UDenver/upload.php
+2/27/2022 13:49:16 PM	Martin Styner Upload	http://pandora.ia.unc.edu/uploads/upload.php
+2/27/2022 13:49:16 PM	Martin Styner Upload	http://pandora.ia.unc.edu/uploads/upload.php?message=martin_styner_eval_brains.pdf%20uploaded%20successfully.
+2/27/2022 17:20:55 PM	git checkout - How do I revert a Git repository to a previous commit? - Stack Overflow	https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit

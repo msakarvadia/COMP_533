@@ -36,7 +36,7 @@ public class RemoteClientObject extends AMapReduceTracer implements RemoteClient
 	//Quit method
 	
 	@Override
-	public void clientQuit() {
+	public void quit() {
 		//TODO quit
 		
 		this.traceQuit();
