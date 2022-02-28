@@ -22,6 +22,7 @@ public class RemoteClientObject extends AMapReduceTracer implements RemoteClient
 	}
 	
 	//Have a wait method
+	@Override
 	public void clientWait() {
 		try {
 			synchronizedWait();

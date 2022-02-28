@@ -1,0 +1,4 @@
+Id,Prediction,Date,File,StartTime,ElapsedTime,BusyTime,Commands,editOrInsertPercentage,debugPercentage,navigationPercentage,focusPercentage,removePercentage,editPercentage,COMMAND_RATE,NAVIGATION_RATE,DEBUG_RATE,FOCUS_RATE,EDIT_RATE,REMOVE_RATE,INSERT_RATE,webLinkTimes,Web Page Visits
+1,,Mon Feb 28 09:58:20 EST 2022,ServerTokenCounter.java,1646060300237,59473,0,(D)1(I)2(R)1(I)1(R)1(I)2(D)1,0.5555555555555556,22.22222222222222,0.0,0.0,0.0,0.0,0.15254237288135594,0.0,0.03389830508474576,0.0,0.0,0.03389830508474576,0.0847457627118644,0.0,[]
+,/modelData/A0UserStudy2010.arff,Mon Feb 28 09:58:20 EST 2022,ServerTokenCounter.java, 1646060300237
+2,,Mon Feb 28 09:59:20 EST 2022,ServerTokenCounter.java,1646060360520,23648,0,(D)1,0.0,100.0,0.0,0.0,0.0,0.0,0.043478260869565216,0.0,0.043478260869565216,0.0,0.0,0.0,0.0,0.0,[]

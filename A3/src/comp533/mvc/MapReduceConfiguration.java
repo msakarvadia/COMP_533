@@ -6,6 +6,9 @@ import comp533.clientServer.RemoteClientObject;
 import comp533.clientServer.RemoteClientProcess;
 import comp533.clientServer.ServerIntegerSummer;
 import comp533.clientServer.ServerTokenCounter;
+import comp533.faceBook.Client;
+import comp533.faceBook.Server;
+import comp533.faceBook.StandAlone;
 import comp533.joiner.Joiner;
 import comp533.partitioner.Partitioner;
 import comp533.partitioner.PartitionerFactory;
@@ -104,7 +107,7 @@ public class MapReduceConfiguration implements MapReduceConfigurationInterface {
 	@Override
 	public Class<?> getRemoteClientFacebookMapReduce() {
 		// TODO Auto-generated method stub
-		return null;
+		return Client.class;
 	}
 
 	@Override
@@ -128,7 +131,7 @@ public class MapReduceConfiguration implements MapReduceConfigurationInterface {
 	@Override
 	public Class<?> getServerFacebookMapReduce() {
 		// TODO Auto-generated method stub
-		return null;
+		return Server.class;
 	}
 
 	@Override
@@ -150,8 +153,7 @@ public class MapReduceConfiguration implements MapReduceConfigurationInterface {
 
 	@Override
 	public Class<?> getStandAloneFacebookMapReduce() {
-		// TODO Auto-generated method stub
-		return null;
+		return StandAlone.class;
 	}
 
 	@Override
@@ -162,7 +164,6 @@ public class MapReduceConfiguration implements MapReduceConfigurationInterface {
 	@Override
 	public Class<?> getStandAloneTokenCounter() {
 		return ModelViewController.class;
-		//return StandAloneTokenCounter.class;
 	}
 
 	@Override
