@@ -33,3 +33,28 @@
 2/27/2022 13:49:16 PM	Martin Styner Upload	http://pandora.ia.unc.edu/uploads/upload.php
 2/27/2022 13:49:16 PM	Martin Styner Upload	http://pandora.ia.unc.edu/uploads/upload.php?message=martin_styner_eval_brains.pdf%20uploaded%20successfully.
 2/27/2022 17:20:55 PM	git checkout - How do I revert a Git repository to a previous commit? - Stack Overflow	https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit
+2/27/2022 19:57:42 PM	UChicago Computer Science 2020	https://people.cs.uchicago.edu/~ravenben/visitday/meetings.html
+2/27/2022 19:55:09 PM	UChicago Computer Science 2020	https://people.cs.uchicago.edu/~ravenben/visitday/openhouse.html
+2/27/2022 19:55:31 PM	UChicago Computer Science 2022	https://people.cs.uchicago.edu/~ravenben/visitday/
+2/27/2022 19:58:35 PM	UChicago Computer Science 2020	https://people.cs.uchicago.edu/~ravenben/visitday/meetings.html
+2/27/2022 20:02:35 PM	Professor Yanjing Li, Department of Computer Science, University of Chicago	http://people.cs.uchicago.edu/~yanjingl/
+2/27/2022 20:03:22 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+2/27/2022 20:03:21 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1
+2/27/2022 20:03:19 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=fZJbb4IwGIb%2FCum9FjsP2AgJ04uZuEmE7WI3S4HP0ay0rF%2FZ4d8PxRmXLF70qu%2Bh75MuUNSq4XHrKr2D9xbQeV%2B10siPFyFpreZGoESuRQ3IXcHT%2BH7D2dDnjTXOFEYRL0YE66TRS6OxrcGmYD9kAY%2B7TUgq5xrklKJ4E3LY6mIIZUvTSua5UeCqIaKhh1BGk22aEW%2FVvUJqcci7cKM5e2XZ0K58LxWcjDsopYXC0TTdEm%2B9CsnLiOU33ZnPpv48GE%2FG5QTEbFLms2mwL4Jy3skQW1hrdEK7kDCfsYHPBizI%2FBH3bzjzn4mXnDbeSl1K%2FXodSN6LkN9lWTLoxzyBxeOQTkCixQErPxbbC9DXY8UvXRL9zxLPLBf0oqBva%2FhDl7heJUbJ4tuLlTKfSwvCQUhGhEa95e8fiH4A&RelayState=ss%3Amem%3Af03a4e9877affc112b9e3b8a09b50abf585be3cf6f7b295036609e824df00d0f&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=H5ET6cHN9tXiNjaCiOczfgNZt%2BWZxI1inwj8j7zlbr%2FFX8SL6XkyP2C7r0fmaK9m2i%2BulUpJmAKkLdTPAy02Rm8z3RC%2BdaXDsYlF21n3XxROuiuYy%2FVoneNX37K9l%2BEsXvaeKj5fnEZ67Flznp4ohAOTQMMjFOWu7QxLYSxZrOGzuEQVhscHcbxHqEtQz5w63q1Hoa4T32bbxUJm9CCBVT5TeufGvO2u%2BcXgVkoGHIMMFuERV4pEKDHTjzkwflZf0JdyTt8ymXSKA0irgcKQ2yBJFNFAUhEjSDSIkbhv%2BArNHlhHQWDsz6KGZ2W7emi5wkCjygxj5eMUW2C97PI0fw%3D%3D
+2/27/2022 20:05:31 PM	Nick Feamster	https://people.cs.uchicago.edu/~feamster/
+2/27/2022 20:07:30 PM	Fred Chong	http://people.cs.uchicago.edu/~ftchong/
+2/27/2022 20:12:19 PM	UChicago Computer Science 2020	https://people.cs.uchicago.edu/~ravenben/visitday/meetings.html
+2/27/2022 20:09:02 PM	Ian Foster	http://people.cs.uchicago.edu/~foster
+2/27/2022 20:12:05 PM	Prof. Diana Franklin	https://people.cs.uchicago.edu/~dmfranklin/
+2/27/2022 21:37:29 PM	3_DistributedMapReduce_s22.docx - Google Docs	https://docs.google.com/document/d/1ipk3I2KnfPu-aD6ZsjJllq32qT6JSJO7/edit
+2/27/2022 20:13:13 PM	Robert Rand	http://rand.cs.uchicago.edu/
+2/27/2022 21:39:15 PM	Publications | Robert Rand	http://rand.cs.uchicago.edu/publication
+2/27/2022 21:40:34 PM	Robert Rand	http://rand.cs.uchicago.edu/#about
+2/27/2022 21:44:32 PM	UChicago Computer Science 2020	https://people.cs.uchicago.edu/~ravenben/visitday/meetings.html
+2/27/2022 21:45:09 PM	Professor Yanjing Li, Department of Computer Science, University of Chicago	http://people.cs.uchicago.edu/~yanjingl/
+2/27/2022 21:45:11 PM	Professor Yanjing Li, Department of Computer Science, University of Chicago	http://people.cs.uchicago.edu/~yanjingl/publications.html
+2/27/2022 21:47:10 PM	UChicago Computer Science 2020	https://people.cs.uchicago.edu/~ravenben/visitday/meetings.html
+2/27/2022 21:46:26 PM	Professor Yanjing Li, Department of Computer Science, University of Chicago	http://people.cs.uchicago.edu/~yanjingl/
+2/27/2022 21:52:00 PM	UChicago Computer Science 2022	https://people.cs.uchicago.edu/~ravenben/visitday/
+2/27/2022 21:59:09 PM	UChicago Computer Science 2020	https://people.cs.uchicago.edu/~ravenben/visitday/meetings.html
+2/27/2022 21:58:47 PM	UChicago Computer Science 2020	https://people.cs.uchicago.edu/~ravenben/visitday/openhouse.html

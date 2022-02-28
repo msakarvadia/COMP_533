@@ -28,7 +28,7 @@ public class DistributedSummerModel extends AMapReduceTracer implements ModelInt
 	private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
 	private String inputString = null;
 	private Map<String, Integer> result = new HashMap<String, Integer>();
-	//final String space = " ";
+	final String space = " ";
 	boolean slavesStarted = false;
 
 	// properties from A2
@@ -43,7 +43,7 @@ public class DistributedSummerModel extends AMapReduceTracer implements ModelInt
 
 	// A3
 	Stack<SlaveInterface> unassignedSlaves = new Stack<SlaveInterface>();
-	//Stack<Thread> unassignedThreads = new Stack<Thread>();
+	Stack<Thread> unassignedThreads = new Stack<Thread>();
 	Stack<RemoteClientInterface> unassignedClients = new Stack<RemoteClientInterface>();
 	Map<Integer, RemoteClientInterface> slaveClientMap = new HashMap<Integer, RemoteClientInterface>();
 
@@ -74,14 +74,14 @@ public class DistributedSummerModel extends AMapReduceTracer implements ModelInt
 			slaveThread.setName(name);
 			threads.add(slaveThread);
 
-			//unassignedThreads.push(slaveThread);
+			unassignedThreads.push(slaveThread);
 
 			// Add separate reduction queue to Reduction queue list for each slave thread
 			aReductionQueueList.add(new LinkedList<KeyValueInterface<String, Integer>>());
 		}
 
 		// Match function - Check placement of match function
-		match();
+		match(unassignedSlaves, unassignedClients);
 
 		final String label = "NumThreads";
 		final String newValue = Integer.toString(aNumThreads);
@@ -106,7 +106,6 @@ public class DistributedSummerModel extends AMapReduceTracer implements ModelInt
 	@Override
 	public void addPropertyChangeListener(final PropertyChangeListener newListener) {
 		propertyChangeSupport.addPropertyChangeListener(newListener);
-		//support.addPropertyChangeListener(newListener);
 	}
 
 	@Override
@@ -120,6 +119,14 @@ public class DistributedSummerModel extends AMapReduceTracer implements ModelInt
 		final String oldInputString = inputString;
 		inputString = newVal;
 		final String label = "InputString";
+		
+		final String quit = "quit";
+		if (quit.equals(inputString)) {
+			
+			traceQuit();
+			terminate();
+			return;
+		}
 
 		propertyChangeSupport.firePropertyChange(label, oldInputString, newVal);
 
@@ -139,11 +146,14 @@ public class DistributedSummerModel extends AMapReduceTracer implements ModelInt
 			slavesStarted = true;
 		}
 
+		// Match function - Check placement of match function
+		// match(unassignedSlaves, unassignedClients);
+
 		aReductionQueueList = notifySlaves(slaves, aReductionQueueList);
 
 		// 3
 		final String tokens = inputString;
-		final List<String> listOfToken = Arrays.asList(tokens.split(" "));
+		final List<String> listOfToken = Arrays.asList(tokens.split(space));
 
 		aKeyValueQueue = mapping(aKeyValueQueue, listOfToken, slaves);
 
@@ -192,6 +202,7 @@ public class DistributedSummerModel extends AMapReduceTracer implements ModelInt
 
 	@Override
 	public void computeResult() {
+		// TODO Auto-generated method stub
 
 	}
 
@@ -201,18 +212,10 @@ public class DistributedSummerModel extends AMapReduceTracer implements ModelInt
 		for (int i = 0; i < threads.size(); i++) {
 			slaves.get(i).slaveQuit();
 			threads.get(i).interrupt();
-			
-			//terminate all leftover clients in remaining stack
 
 		}
-		
-		terminateClients();
-		
-	}
-	
-	@Override
-	public void terminateClients() {
-		while( (!unassignedClients.empty())) {
+
+		while (!unassignedClients.empty()) {
 			try {
 				unassignedClients.pop().quit();
 			} catch (RemoteException e) {
@@ -220,6 +223,7 @@ public class DistributedSummerModel extends AMapReduceTracer implements ModelInt
 				e.printStackTrace();
 			}
 		}
+
 	}
 
 	@Override
@@ -287,8 +291,8 @@ public class DistributedSummerModel extends AMapReduceTracer implements ModelInt
 			final BlockingQueue<KeyValueInterface<String, Integer>> keyValueQueue, final List<String> listOfToken,
 			final List<SlaveInterface> salves) {
 
-		//final TokenCountingMapperInterface<String, Integer> mapper = TokenCountingMapperFactory.getMapper();
 		final IntSummingMapperInterface<String, Integer> mapper = IntSummingMapperFactory.getMapper();
+		//IntSummingMapperFactory.setMapper(IntSummingMapperFactory.getMapper());
 
 		for (int i = 0; i < listOfToken.size(); i++) {
 			final int slaveNum = i % slaves.size();
@@ -300,7 +304,7 @@ public class DistributedSummerModel extends AMapReduceTracer implements ModelInt
 				aKeyValueQueue.put(keyVal);
 				traceEnqueue(keyValueQueue);
 			} catch (InterruptedException e) {
-
+				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 
@@ -310,31 +314,26 @@ public class DistributedSummerModel extends AMapReduceTracer implements ModelInt
 	}
 
 	@Override
-	public void register(final RemoteClientInterface client) {
+	public void register(RemoteClientInterface client) {
 
 		traceRegister(client);
 
 		unassignedClients.push(client);
 
-		match();
-
-		System.out.println("MATCHED SLAVE AND CLIENT");
+		match(unassignedSlaves, unassignedClients);
 
 	}
 
 	@Override
-	public void match() {
+	public void match(Stack<SlaveInterface> unassigned_slave, Stack<RemoteClientInterface> client) {
 
-		System.out.println("Num unassigned slaves: " + unassignedSlaves.size());
-		System.out.println("Num unassigned clients: " + unassignedClients.size());
-		final Object extra = unassignedClients.clone();
+		Object extra = unassignedClients.clone();
 		while (!((Stack<SlaveInterface>) extra).empty()) {
 			final RemoteClientInterface waiterClient = ((Stack<RemoteClientInterface>) extra).pop();
-
+			
 			if (!unassignedSlaves.empty()) {
 				final RemoteClientInterface freeClient = unassignedClients.pop();
 				final SlaveInterface freeSlave = unassignedSlaves.pop();
-
 				traceClientAssignment(freeClient);
 				freeSlave.setClient(freeClient);
 
@@ -343,5 +342,4 @@ public class DistributedSummerModel extends AMapReduceTracer implements ModelInt
 		}
 
 	}
-
 }

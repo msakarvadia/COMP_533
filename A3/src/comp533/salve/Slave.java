@@ -130,8 +130,8 @@ public class Slave extends AMapReduceTracer implements SlaveInterface {
 				if(client!=null) {
 					try {
 						//client = slaveClientMap.get(number);
-						traceRemoteList (localList);
-						result = client.reduce(localList);
+						traceRemoteList (updatedLocalLinkedList);
+						result = client.reduce(updatedLocalLinkedList);
 						traceRemoteResult (result);
 					} catch (Exception e) {
 						e.printStackTrace();
@@ -161,12 +161,6 @@ public class Slave extends AMapReduceTracer implements SlaveInterface {
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					traceQuit();
-//					try {
-//						client.clientQuit();
-//					} catch (RemoteException e1) {
-//						// TODO Auto-generated catch block
-//						e1.printStackTrace();
-//					}
 					e.printStackTrace();
 				}
 			}

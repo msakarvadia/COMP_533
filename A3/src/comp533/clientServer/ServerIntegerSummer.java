@@ -8,6 +8,7 @@ import java.rmi.server.UnicastRemoteObject;
 import comp533.mvc.Controller;
 import comp533.mvc.ControllerInterface;
 import comp533.mvc.DistributedSummerModel;
+import comp533.mvc.IntSummingMapperFactory;
 import comp533.mvc.Model;
 import comp533.mvc.View;
 import comp533.mvc.ViewInterface;
@@ -16,6 +17,8 @@ public class ServerIntegerSummer implements SimpleRegistryAndCounterServer{
 	public static void main (final String[] args) {
 		 try {
 			final Registry rmiRegistry = LocateRegistry.createRegistry(SERVER_PORT);
+			IntSummingMapperFactory.setMapper(IntSummingMapperFactory.getMapper());
+			
 			final DistributedSummerModel model = new DistributedSummerModel();
 			UnicastRemoteObject.exportObject(model, 0);
 			rmiRegistry.rebind(MODEL_NAME, model);

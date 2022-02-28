@@ -19,7 +19,6 @@ import comp533.salve.Slave;
 import comp533.salve.SlaveInterface;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.beans.PropertyChangeListener;
 //import java.beans.PropertyChangeEvent;
@@ -313,27 +312,16 @@ public class Model extends AMapReduceTracer implements ModelInterface, RemoteMod
 		unassignedClients.push(client);
 
 		match(unassignedSlaves, unassignedClients);
-//		try {
-//			client.clientWait();
-//		} catch (RemoteException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-		System.out.println("MATCHED SLAVE AND CLIENT");
-
-		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void match(Stack<SlaveInterface> unassigned_slave, Stack<RemoteClientInterface> client) {
 
-		System.out.println("Num unassigned slaves: " + unassignedSlaves.size());
-		System.out.println("Num unassigned clients: " + unassignedClients.size());
 		Object extra = unassignedClients.clone();
 		while (!((Stack<SlaveInterface>) extra).empty()) {
 			final RemoteClientInterface waiterClient = ((Stack<RemoteClientInterface>) extra).pop();
-			// final RemoteClientInterface currentClient = unassignedClients.pop();
+			
 			if (!unassignedSlaves.empty()) {
 				final RemoteClientInterface freeClient = unassignedClients.pop();
 				final SlaveInterface freeSlave = unassignedSlaves.pop();

@@ -4,6 +4,7 @@ import comp533.barrier.Barrier;
 import comp533.clientServer.RemoteClientInterface;
 import comp533.clientServer.RemoteClientObject;
 import comp533.clientServer.RemoteClientProcess;
+import comp533.clientServer.ServerIntegerSummer;
 import comp533.clientServer.ServerTokenCounter;
 import comp533.joiner.Joiner;
 import comp533.partitioner.Partitioner;
@@ -133,7 +134,7 @@ public class MapReduceConfiguration implements MapReduceConfigurationInterface {
 	@Override
 	public Class<?> getServerIntegerSummer() {
 		// TODO Auto-generated method stub
-		return null;
+		return ServerIntegerSummer.class;
 	}
 
 	@Override

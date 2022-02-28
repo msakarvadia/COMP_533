@@ -7387,3 +7387,947 @@
 0,Sun Feb 27 17:29:58 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aClient,client
 0,Sun Feb 27 17:29:58 EST 2022,true,comp533\salve\SlaveInterface.java,variableHasInterfaceType,ModelInterface,aSlaveModel
 0,Sun Feb 27 17:29:58 EST 2022,true,comp533\salve\SlaveInterface.java,variableHasInterfaceType,RemoteClientInterface,aClient
+0,Mon Feb 28 00:18:17 EST 2022,true,comp533\barrier\Barrier.java,expectedTypes,[@ReducerClass, @ServerIntegerSummer, @ModelClass, @SlaveClass, @MapperFactory, @ViewClass, @ReducerFactory, @TokenCountingMapperClass, @StandAloneTokenCounter, @RemoteClientObjectInterface, @PartitionerFactory, @JoinerClass, @ControllerClass, @KeyValueClass, @RemoteModelInterface, @IntSummingMapperClass, @ServerTokenCounter, @ClientTokenCounter, @StandAloneIntegerSummer, @BarrierClass, @PartitionerClass]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\barrier\Barrier.java,expectedTypes,[@ReducerClass, @ServerIntegerSummer, @ModelClass, @SlaveClass, @MapperFactory, @ViewClass, @ReducerFactory, @TokenCountingMapperClass, @StandAloneTokenCounter, @RemoteClientObjectInterface, @PartitionerFactory, @JoinerClass, @ControllerClass, @KeyValueClass, @RemoteModelInterface, @IntSummingMapperClass, @ServerTokenCounter, @ClientTokenCounter, @StandAloneIntegerSummer, @BarrierClass, @PartitionerClass]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\barrier\Barrier.java,tags,comp533.barrier.Barrier,@BarrierClass
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\barrier\Barrier.java,nameInDictionary,comp533.barrier.Barrier,comp
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\barrier\Barrier.java,nameInDictionary,comp533.barrier.Barrier,barrier
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\barrier\Barrier.java,nameInDictionary,count,count
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\barrier\Barrier.java,nameInDictionary,numCalls,num
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\barrier\Barrier.java,nameInDictionary,numCalls,calls
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\barrier\Barrier.java,classHasAtLeastOneInterface,comp533.barrier.Barrier,No Tag
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\barrier\Barrier.java,publicMethodsOverride,[]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\barrier\BarrierInterface.java,tags,comp533.barrier.BarrierInterface,@BarrierClass
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\barrier\BarrierInterface.java,nameInDictionary,comp533.barrier.BarrierInterface,comp
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\barrier\BarrierInterface.java,nameInDictionary,comp533.barrier.BarrierInterface,barrier
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\barrier\BarrierInterface.java,nameInDictionary,comp533.barrier.BarrierInterface,interface
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientInterface.java,tags,comp533.clientServer.RemoteClientInterface,@RemoteClientObjectInterface
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientInterface.java,nameInDictionary,comp533.clientServer.RemoteClientInterface,comp
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientInterface.java,nameInDictionary,comp533.clientServer.RemoteClientInterface,client
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientInterface.java,nameInDictionary,comp533.clientServer.RemoteClientInterface,server
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientInterface.java,nameInDictionary,comp533.clientServer.RemoteClientInterface,remote
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientInterface.java,nameInDictionary,comp533.clientServer.RemoteClientInterface,interface
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientInterface.java,nameInDictionary,aList,a
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientInterface.java,nameInDictionary,aList,list
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,nameInDictionary,comp533.clientServer.RemoteClientObject,comp
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,nameInDictionary,comp533.clientServer.RemoteClientObject,client
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,nameInDictionary,comp533.clientServer.RemoteClientObject,server
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,nameInDictionary,comp533.clientServer.RemoteClientObject,remote
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,nameInDictionary,comp533.clientServer.RemoteClientObject,object
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,nameInDictionary,reducer,reducer
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,nameInDictionary,result,result
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,nameInDictionary,aList,a
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,nameInDictionary,aList,list
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,variableHasInterfaceType,ReducerInterface,reducer
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,expectedSignature,quit:->void,comp533.clientServer.RemoteClientObject:[@RemoteClientObjectClass]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,expectedSignature,reduce:java.util.List->java.util.Map,comp533.clientServer.RemoteClientObject:[@RemoteClientObjectClass]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,expectedSignature,.*:->void,comp533.clientServer.RemoteClientObject:[@RemoteClientObjectClass]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,classHasAtLeastOneInterface,comp533.clientServer.RemoteClientObject,No Tag
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,classHasExactlyOneInterface,comp533.clientServer.RemoteClientObject,No Tag
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,publicMethodsDoNotOverride,[public  clientWait:->void]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceRemoteResult:Object->void,Some method (reduce:java.util.List->Map),comp533.clientServer.RemoteClientObject:[@RemoteClientObjectClass]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!synchronizedNotify:->void,Some method (quit:->void),comp533.clientServer.RemoteClientObject:[@RemoteClientObjectClass]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!synchronizedWait:->void,Some method (clientWait:->void),comp533.clientServer.RemoteClientObject:[@RemoteClientObjectClass]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceRemoteList:Object->void,Some method (reduce:java.util.List->Map),comp533.clientServer.RemoteClientObject:[@RemoteClientObjectClass]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,expectedMethodCall,@ReducerFactory!getReducer:->@ReducerClass,Some method (reduce:java.util.List->Map),comp533.clientServer.RemoteClientObject:[@RemoteClientObjectClass]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceQuit:->void,Some method (quit:->void),comp533.clientServer.RemoteClientObject:[@RemoteClientObjectClass]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,expectedMethodCall,java.lang.Throwable!printStackTrace:->void,Some method (clientWait:->void),comp533.clientServer.RemoteClientObject:[@RemoteClientObjectClass]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,expectedMethodCall,@ReducerClass!reduce:*->.*,Some method (reduce:java.util.List->Map),comp533.clientServer.RemoteClientObject:[@RemoteClientObjectClass]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,expectedSuperType,gradingTools.comp533s19.assignment0.AMapReduceTracer,comp533.clientServer.RemoteClientObject
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientObject.java,expectedInterface,java.rmi.Remote,comp533.clientServer.RemoteClientObject
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,tags,comp533.clientServer.RemoteClientProcess,@ClientTokenCounter
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,nameInDictionary,comp533.clientServer.RemoteClientProcess,comp
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,nameInDictionary,comp533.clientServer.RemoteClientProcess,client
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,nameInDictionary,comp533.clientServer.RemoteClientProcess,server
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,nameInDictionary,comp533.clientServer.RemoteClientProcess,remote
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,nameInDictionary,comp533.clientServer.RemoteClientProcess,process
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,nameInDictionary,rmiRegistry,rmi
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,nameInDictionary,rmiRegistry,registry
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,nameInDictionary,model,model
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,nameInDictionary,client,client
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,nameInDictionary,args,args
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,variableHasInterfaceType,RemoteModelInterface,model
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,variableHasInterfaceType,RemoteClientInterface,client
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,expectedSuperType,gradingTools.comp533s19.assignment0.AMapReduceTracer,@ClientTokenCounter
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,expectedSignature,main:String[]->void,comp533.clientServer.RemoteClientProcess:[@ClientTokenCounter]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,noSpuriousMethodCall,java.rmi.registry.Registry!rebind:String;java.rmi.Remote->void,No method,comp533.clientServer.RemoteClientProcess:[@ClientTokenCounter]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,noSpuriousMethodCall,java.rmi.registry.Registry!list:->String[],No method,comp533.clientServer.RemoteClientProcess:[@ClientTokenCounter]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,expectedMethodCall,@RemoteModelInterface!.*:@RemoteClientObjectInterface->void,Some method (main:String[]->void),comp533.clientServer.RemoteClientProcess:[@ClientTokenCounter]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,expectedMethodCall,java.rmi.registry.LocateRegistry!getRegistry:*->Registry,Some method (main:String[]->void),comp533.clientServer.RemoteClientProcess:[@ClientTokenCounter]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,expectedMethodCall,java.lang.System!exit:*->void,Some method (main:String[]->void),comp533.clientServer.RemoteClientProcess:[@ClientTokenCounter]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,expectedMethodCall,java.rmi.server.UnicastRemoteObject!exportObject:*->.*,Some method (main:String[]->void),comp533.clientServer.RemoteClientProcess:[@ClientTokenCounter]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,expectedMethodCall,java.rmi.registry.Registry!lookup:String->Remote,Some method (main:String[]->void),comp533.clientServer.RemoteClientProcess:[@ClientTokenCounter]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceExit:Class->void,Some method (main:String[]->void),comp533.clientServer.RemoteClientProcess:[@ClientTokenCounter]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\RemoteClientProcess.java,expectedMethodCall,@RemoteClientObjectClass!.*:->void,Some method (main:String[]->void),comp533.clientServer.RemoteClientProcess:[@ClientTokenCounter]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerIntegerSummer.java,tags,comp533.clientServer.ServerIntegerSummer,@ServerIntegerSummer
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerIntegerSummer.java,nameInDictionary,comp533.clientServer.ServerIntegerSummer,comp
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerIntegerSummer.java,nameInDictionary,comp533.clientServer.ServerIntegerSummer,client
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerIntegerSummer.java,nameInDictionary,comp533.clientServer.ServerIntegerSummer,server
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerIntegerSummer.java,nameInDictionary,comp533.clientServer.ServerIntegerSummer,integer
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerIntegerSummer.java,nameInDictionary,comp533.clientServer.ServerIntegerSummer,summer
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerIntegerSummer.java,nameInDictionary,rmiRegistry,rmi
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerIntegerSummer.java,nameInDictionary,rmiRegistry,registry
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerIntegerSummer.java,nameInDictionary,model,model
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerIntegerSummer.java,nameInDictionary,view,view
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerIntegerSummer.java,nameInDictionary,controller,controller
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerIntegerSummer.java,nameInDictionary,args,args
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerIntegerSummer.java,variableHasClassType,DistributedSummerModel,model
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerIntegerSummer.java,variableHasInterfaceType,ViewInterface,view
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerIntegerSummer.java,variableHasInterfaceType,ControllerInterface,controller
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerIntegerSummer.java,expectedSignature,main:String[]->void,comp533.clientServer.ServerIntegerSummer:[@ServerIntegerSummer]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerIntegerSummer.java,noSpuriousMethodCall,java.rmi.registry.LocateRegistry!getRegistry:*->Registry,No method,comp533.clientServer.ServerIntegerSummer:[@ServerIntegerSummer]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerIntegerSummer.java,expectedMethodCall,@MapperFactory!setMapper:.*->void,Some method (main:String[]->void),comp533.clientServer.ServerIntegerSummer:[@ServerIntegerSummer]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,tags,comp533.clientServer.ServerTokenCounter,@ServerTokenCounter
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,nameInDictionary,comp533.clientServer.ServerTokenCounter,comp
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,nameInDictionary,comp533.clientServer.ServerTokenCounter,client
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,nameInDictionary,comp533.clientServer.ServerTokenCounter,server
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,nameInDictionary,comp533.clientServer.ServerTokenCounter,token
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,nameInDictionary,comp533.clientServer.ServerTokenCounter,counter
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,nameInDictionary,rmiRegistry,rmi
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,nameInDictionary,rmiRegistry,registry
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,nameInDictionary,model,model
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,nameInDictionary,view,view
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,nameInDictionary,controller,controller
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,nameInDictionary,args,args
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,variableHasClassType,Model,model
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,variableHasInterfaceType,ViewInterface,view
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,variableHasInterfaceType,ControllerInterface,controller
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,expectedSignature,main:String[]->void,comp533.clientServer.ServerTokenCounter:[@ServerTokenCounter]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,noSpuriousMethodCall,java.rmi.registry.LocateRegistry!getRegistry:*->Registry,No method,comp533.clientServer.ServerTokenCounter:[@ServerTokenCounter]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,expectedMethodCall,@ControllerClass!.*:->void,Some method (main:String[]->void),comp533.clientServer.ServerTokenCounter:[@ServerTokenCounter]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,expectedMethodCall,java.rmi.registry.LocateRegistry!createRegistry:int->Registry,Some method (main:String[]->void),comp533.clientServer.ServerTokenCounter:[@ServerTokenCounter]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,expectedMethodCall,java.rmi.registry.Registry!rebind:String;java.rmi.Remote->void,Some method (main:String[]->void),comp533.clientServer.ServerTokenCounter:[@ServerTokenCounter]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,expectedMethodCall,java.lang.System!exit:int->void,Some method (main:String[]->void),comp533.clientServer.ServerTokenCounter:[@ServerTokenCounter]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\ServerTokenCounter.java,expectedMethodCall,java.rmi.server.UnicastRemoteObject!exportObject:*->.*,Some method (main:String[]->void),comp533.clientServer.ServerTokenCounter:[@ServerTokenCounter]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\SimpleRegistryAndCounterServer.java,tags,comp533.clientServer.SimpleRegistryAndCounterServer,@ServerIntegerSummer + @ServerTokenCounter + @ClientTokenCounter
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\SimpleRegistryAndCounterServer.java,nameInDictionary,comp533.clientServer.SimpleRegistryAndCounterServer,comp
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\SimpleRegistryAndCounterServer.java,nameInDictionary,comp533.clientServer.SimpleRegistryAndCounterServer,client
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\SimpleRegistryAndCounterServer.java,nameInDictionary,comp533.clientServer.SimpleRegistryAndCounterServer,server
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\SimpleRegistryAndCounterServer.java,nameInDictionary,comp533.clientServer.SimpleRegistryAndCounterServer,simple
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\SimpleRegistryAndCounterServer.java,nameInDictionary,comp533.clientServer.SimpleRegistryAndCounterServer,registry
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\SimpleRegistryAndCounterServer.java,nameInDictionary,comp533.clientServer.SimpleRegistryAndCounterServer,and
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\SimpleRegistryAndCounterServer.java,nameInDictionary,comp533.clientServer.SimpleRegistryAndCounterServer,counter
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\SimpleRegistryAndCounterServer.java,nameInDictionary,SERVER_PORT,server
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\SimpleRegistryAndCounterServer.java,nameInDictionary,SERVER_PORT,port
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\SimpleRegistryAndCounterServer.java,nameInDictionary,MODEL_NAME,model
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\SimpleRegistryAndCounterServer.java,nameInDictionary,MODEL_NAME,name
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\SimpleRegistryAndCounterServer.java,nameInDictionary,SERVER_HOST_NAME,server
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\SimpleRegistryAndCounterServer.java,nameInDictionary,SERVER_HOST_NAME,host
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\clientServer\SimpleRegistryAndCounterServer.java,nameInDictionary,SERVER_HOST_NAME,name
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\joiner\Joiner.java,tags,comp533.joiner.Joiner,@JoinerClass
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\joiner\Joiner.java,nameInDictionary,comp533.joiner.Joiner,comp
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\joiner\Joiner.java,nameInDictionary,comp533.joiner.Joiner,joiner
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\joiner\Joiner.java,nameInDictionary,count,count
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\joiner\Joiner.java,nameInDictionary,totalFinish,total
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\joiner\Joiner.java,nameInDictionary,totalFinish,finish
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\joiner\Joiner.java,classHasAtLeastOneInterface,comp533.joiner.Joiner,No Tag
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\joiner\Joiner.java,publicMethodsOverride,[]
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\joiner\JoinerInterface.java,tags,comp533.joiner.JoinerInterface,@JoinerClass
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\joiner\JoinerInterface.java,nameInDictionary,comp533.joiner.JoinerInterface,comp
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\joiner\JoinerInterface.java,nameInDictionary,comp533.joiner.JoinerInterface,joiner
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\joiner\JoinerInterface.java,nameInDictionary,comp533.joiner.JoinerInterface,interface
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\mvc\A3Tests.java,nameInDictionary,comp533.mvc.A3Tests,comp
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\mvc\A3Tests.java,nameInDictionary,comp533.mvc.A3Tests,a
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\mvc\A3Tests.java,nameInDictionary,comp533.mvc.A3Tests,tests
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\mvc\A3Tests.java,nameInDictionary,traces,traces
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\mvc\A3Tests.java,nameInDictionary,length,length
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\mvc\A3Tests.java,nameInDictionary,time,time
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\mvc\A3Tests.java,nameInDictionary,timer,timer
+0,Mon Feb 28 00:18:18 EST 2022,true,comp533\mvc\A3Tests.java,nameInDictionary,args,args
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Controller.java,tags,comp533.mvc.Controller,@ControllerClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,comp533.mvc.Controller,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,comp533.mvc.Controller,controller
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,model,model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,quit,quit
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,empty,empty
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,input,input
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,numThreads,num
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,numThreads,threads
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,tokens,tokens
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,original_line,original
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,original_line,line
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,newModel,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Controller.java,nameInDictionary,newModel,model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Controller.java,variableHasInterfaceType,ModelInterface,model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Controller.java,variableHasInterfaceType,ModelInterface,newModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Controller.java,classHasAtLeastOneInterface,comp533.mvc.Controller,No Tag
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Controller.java,publicMethodsOverride,[]
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ControllerInterface.java,tags,comp533.mvc.ControllerInterface,@ControllerClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,controller
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,comp533.mvc.ControllerInterface,interface
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,newModel,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ControllerInterface.java,nameInDictionary,newModel,model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ControllerInterface.java,variableHasInterfaceType,ModelInterface,newModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,comp533.mvc.DistributedSummerModel,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,comp533.mvc.DistributedSummerModel,distributed
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,comp533.mvc.DistributedSummerModel,summer
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,comp533.mvc.DistributedSummerModel,model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,propertyChangeSupport,property
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,propertyChangeSupport,change
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,propertyChangeSupport,support
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,inputString,input
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,inputString,string
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,result,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,space,space
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,slavesStarted,slaves
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,slavesStarted,started
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,aNumThreads,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,aNumThreads,num
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,aNumThreads,threads
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,threads,threads
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,slaves,slaves
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,barrier,barrier
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,joiner,joiner
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,aKeyValueQueue,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,aKeyValueQueue,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,aKeyValueQueue,value
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,aKeyValueQueue,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,aReductionQueueList,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,aReductionQueueList,reduction
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,aReductionQueueList,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,aReductionQueueList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,unassignedSlaves,unassigned
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,unassignedSlaves,slaves
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,unassignedThreads,unassigned
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,unassignedThreads,threads
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,unassignedClients,unassigned
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,unassignedClients,clients
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,slaveClientMap,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,slaveClientMap,client
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,slaveClientMap,map
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,oldValue,old
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,oldValue,value
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,oldThreads,old
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,oldThreads,threads
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,i,i
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,name,name
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,newSlave,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,newSlave,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,slaveThread,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,slaveThread,thread
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,label,label
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,newValue,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,newValue,value
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,labelThread,label
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,labelThread,thread
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,newThreads,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,newThreads,threads
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,numThreads,num
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,numThreads,threads
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,newListener,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,newListener,listener
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,oldResult,old
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,oldResult,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,oldInputString,old
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,oldInputString,input
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,oldInputString,string
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,quit,quit
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,tokens,tokens
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,listOfToken,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,listOfToken,of
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,listOfToken,token
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,resultLabel,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,resultLabel,label
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,newVal,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,newVal,val
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,results,results
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,linkedList,linked
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,linkedList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,reductionQueueList,reduction
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,reductionQueueList,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,reductionQueueList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,aResult,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,aResult,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,listIndex,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,listIndex,index
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,resultMap,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,resultMap,map
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,index,index
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,keyValQueue,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,keyValQueue,val
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,keyValQueue,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,keyVal,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,keyVal,val
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,aThreads,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,aThreads,threads
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,aSlaves,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,aSlaves,slaves
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,keyValueQueue,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,keyValueQueue,value
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,keyValueQueue,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,reductionQueue,reduction
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,reductionQueue,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,redQueue,red
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,redQueue,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,mapper,mapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,slaveNum,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,slaveNum,num
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,salves,salves
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,client,client
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,extra,extra
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,waiterClient,waiter
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,waiterClient,client
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,freeClient,free
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,freeClient,client
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,freeSlave,free
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,freeSlave,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,unassigned_slave,unassigned
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,nameInDictionary,unassigned_slave,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,variableHasInterfaceType,BarrierInterface,barrier
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,variableHasInterfaceType,JoinerInterface,joiner
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,variableHasInterfaceType,SlaveInterface,newSlave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,variableHasInterfaceType,BarrierInterface,getBarrier
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,variableHasInterfaceType,JoinerInterface,getJoiner
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,methodBlockLimit,DistributedSummerModel,METHOD_DEF[209x1],2,1
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,variableHasInterfaceType,KeyValueInterface,keyVal
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,variableHasInterfaceType,IntSummingMapperInterface,mapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,variableHasInterfaceType,RemoteClientInterface,client
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,variableHasInterfaceType,RemoteClientInterface,waiterClient
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,variableHasInterfaceType,RemoteClientInterface,freeClient
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,variableHasInterfaceType,SlaveInterface,freeSlave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,classHasAtLeastOneInterface,comp533.mvc.DistributedSummerModel,No Tag
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,publicMethodsOverride,[]
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,classDoesNotHaveExactlyOneInterface,comp533.mvc.DistributedSummerModel,No Tag
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public Threads:java.util.List(public , null),DistributedSummerModel,comp533.mvc.SummingModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:2 access:public NumThreads:int(public ,public ),DistributedSummerModel,comp533.mvc.SummingModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public Joiner:comp533.joiner.JoinerInterface(public , null),DistributedSummerModel,comp533.mvc.SummingModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public KeyValueQueue:java.util.concurrent.BlockingQueue(public , null),DistributedSummerModel,comp533.mvc.SummingModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public ReductionQueueList:java.util.List(public , null),DistributedSummerModel,comp533.mvc.SummingModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,writeonly  p-v:3 access:public InputString:String( null,public ),DistributedSummerModel,comp533.mvc.SummingModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public Barrier:comp533.barrier.BarrierInterface(public , null),DistributedSummerModel,comp533.mvc.SummingModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public SlaveClientMap:java.util.Map(public , null),DistributedSummerModel,comp533.mvc.SummingModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:3 access:public Result:java.util.Map(public , null),DistributedSummerModel,comp533.mvc.SummingModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public Threads:java.util.List(public , null),DistributedSummerModel,comp533.mvc.Model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:2 access:public NumThreads:int(public ,public ),DistributedSummerModel,comp533.mvc.Model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public Joiner:comp533.joiner.JoinerInterface(public , null),DistributedSummerModel,comp533.mvc.Model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public KeyValueQueue:java.util.concurrent.BlockingQueue(public , null),DistributedSummerModel,comp533.mvc.Model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public ReductionQueueList:java.util.List(public , null),DistributedSummerModel,comp533.mvc.Model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,writeonly  p-v:3 access:public InputString:String( null,public ),DistributedSummerModel,comp533.mvc.Model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public Barrier:comp533.barrier.BarrierInterface(public , null),DistributedSummerModel,comp533.mvc.Model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public SlaveClientMap:java.util.Map(public , null),DistributedSummerModel,comp533.mvc.Model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:3 access:public Result:java.util.Map(public , null),DistributedSummerModel,comp533.mvc.Model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public Threads:java.util.List(public , null),DistributedSummerModel,comp533.mvc.RemoteModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:2 access:public NumThreads:int(public ,public ),DistributedSummerModel,comp533.mvc.RemoteModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public Joiner:comp533.joiner.JoinerInterface(public , null),DistributedSummerModel,comp533.mvc.RemoteModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public KeyValueQueue:java.util.concurrent.BlockingQueue(public , null),DistributedSummerModel,comp533.mvc.RemoteModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public ReductionQueueList:java.util.List(public , null),DistributedSummerModel,comp533.mvc.RemoteModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,writeonly  p-v:3 access:public InputString:String( null,public ),DistributedSummerModel,comp533.mvc.RemoteModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public Barrier:comp533.barrier.BarrierInterface(public , null),DistributedSummerModel,comp533.mvc.RemoteModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public SlaveClientMap:java.util.Map(public , null),DistributedSummerModel,comp533.mvc.RemoteModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\DistributedSummerModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:3 access:public Result:java.util.Map(public , null),DistributedSummerModel,comp533.mvc.RemoteModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapper.java,tags,comp533.mvc.IntSummingMapper,@IntSummingMapperClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapper.java,nameInDictionary,comp533.mvc.IntSummingMapper,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapper.java,nameInDictionary,comp533.mvc.IntSummingMapper,int
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapper.java,nameInDictionary,comp533.mvc.IntSummingMapper,summing
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapper.java,nameInDictionary,comp533.mvc.IntSummingMapper,mapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapper.java,nameInDictionary,resultKey,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapper.java,nameInDictionary,resultKey,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapper.java,nameInDictionary,keyVal,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapper.java,nameInDictionary,keyVal,val
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapper.java,nameInDictionary,token,token
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapper.java,variableHasInterfaceType,KeyValueInterface,map
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapper.java,variableHasInterfaceType,KeyValueInterface,keyVal
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapper.java,classHasAtLeastOneInterface,comp533.mvc.IntSummingMapper,No Tag
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapper.java,publicMethodsOverride,[]
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapperFactory.java,nameInDictionary,comp533.mvc.IntSummingMapperFactory,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapperFactory.java,nameInDictionary,comp533.mvc.IntSummingMapperFactory,int
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapperFactory.java,nameInDictionary,comp533.mvc.IntSummingMapperFactory,summing
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapperFactory.java,nameInDictionary,comp533.mvc.IntSummingMapperFactory,mapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapperFactory.java,nameInDictionary,comp533.mvc.IntSummingMapperFactory,factory
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapperFactory.java,nameInDictionary,mapper,mapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapperFactory.java,nameInDictionary,newMapper,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapperFactory.java,nameInDictionary,newMapper,mapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapperFactory.java,variableHasInterfaceType,IntSummingMapperInterface,mapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapperFactory.java,variableHasInterfaceType,IntSummingMapperInterface,getMapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapperFactory.java,variableHasInterfaceType,IntSummingMapperInterface,newMapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapperInterface.java,tags,comp533.mvc.IntSummingMapperInterface,@IntSummingMapperClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapperInterface.java,nameInDictionary,comp533.mvc.IntSummingMapperInterface,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapperInterface.java,nameInDictionary,comp533.mvc.IntSummingMapperInterface,int
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapperInterface.java,nameInDictionary,comp533.mvc.IntSummingMapperInterface,summing
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapperInterface.java,nameInDictionary,comp533.mvc.IntSummingMapperInterface,mapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapperInterface.java,nameInDictionary,comp533.mvc.IntSummingMapperInterface,interface
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapperInterface.java,nameInDictionary,string,string
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\IntSummingMapperInterface.java,variableHasInterfaceType,KeyValueInterface,map
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,tags,comp533.mvc.KeyValue,@KeyValueClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,comp533.mvc.KeyValue,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,comp533.mvc.KeyValue,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,comp533.mvc.KeyValue,value
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,key,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,val,val
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,newKey,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,newKey,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,newValue,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,newValue,value
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,keyName,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,keyName,name
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,aNull,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,aNull,null
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,valName,val
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,valName,name
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,nameInDictionary,string,string
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,classHasAtLeastOneInterface,comp533.mvc.KeyValue,No Tag
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,publicMethodsOverride,[]
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,classHasExactlyOneInterface,comp533.mvc.KeyValue,No Tag
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValue.java,expectedInterface,java.io.Serializable,@KeyValueClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValueInterface.java,tags,comp533.mvc.KeyValueInterface,@KeyValueClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,comp533.mvc.KeyValueInterface,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,comp533.mvc.KeyValueInterface,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,comp533.mvc.KeyValueInterface,value
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,comp533.mvc.KeyValueInterface,interface
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,newKey,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,newKey,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,newValue,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\KeyValueInterface.java,nameInDictionary,newValue,value
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,map
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,reduce
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,comp533.mvc.MapReduceConfiguration,configuration
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,nameInDictionary,arg0,arg
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,classHasAtLeastOneInterface,comp533.mvc.MapReduceConfiguration,No Tag
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\MapReduceConfiguration.java,publicMethodsOverride,[]
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\MapReduceConfigurationInterface.java,nameInDictionary,comp533.mvc.MapReduceConfigurationInterface,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\MapReduceConfigurationInterface.java,nameInDictionary,comp533.mvc.MapReduceConfigurationInterface,map
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\MapReduceConfigurationInterface.java,nameInDictionary,comp533.mvc.MapReduceConfigurationInterface,reduce
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\MapReduceConfigurationInterface.java,nameInDictionary,comp533.mvc.MapReduceConfigurationInterface,configuration
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\MapReduceConfigurationInterface.java,nameInDictionary,comp533.mvc.MapReduceConfigurationInterface,interface
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,tags,comp533.mvc.Model,@ModelClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,comp533.mvc.Model,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,comp533.mvc.Model,model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,property
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,change
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,propertyChangeSupport,support
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputString,input
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,inputString,string
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,result,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,space,space
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,slavesStarted,slaves
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,slavesStarted,started
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,aNumThreads,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,aNumThreads,num
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,aNumThreads,threads
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,threads,threads
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,slaves,slaves
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,barrier,barrier
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,joiner,joiner
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,aKeyValueQueue,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,aKeyValueQueue,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,aKeyValueQueue,value
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,aKeyValueQueue,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,aReductionQueueList,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,aReductionQueueList,reduction
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,aReductionQueueList,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,aReductionQueueList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,unassignedSlaves,unassigned
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,unassignedSlaves,slaves
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,unassignedThreads,unassigned
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,unassignedThreads,threads
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,unassignedClients,unassigned
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,unassignedClients,clients
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,slaveClientMap,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,slaveClientMap,client
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,slaveClientMap,map
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldValue,old
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldValue,value
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldThreads,old
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldThreads,threads
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,i,i
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,name,name
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newSlave,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newSlave,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,slaveThread,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,slaveThread,thread
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,label,label
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newValue,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newValue,value
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,labelThread,label
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,labelThread,thread
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newThreads,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newThreads,threads
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,numThreads,num
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,numThreads,threads
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newListener,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newListener,listener
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldResult,old
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldResult,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,old
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,input
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,oldInputString,string
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,tokens,tokens
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,listOfToken,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,listOfToken,of
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,listOfToken,token
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,resultLabel,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,resultLabel,label
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newVal,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,newVal,val
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,results,results
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,linkedList,linked
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,linkedList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,reductionQueueList,reduction
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,reductionQueueList,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,reductionQueueList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,aResult,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,aResult,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,listIndex,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,listIndex,index
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,resultMap,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,resultMap,map
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,index,index
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,keyValQueue,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,keyValQueue,val
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,keyValQueue,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,keyVal,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,keyVal,val
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,aThreads,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,aThreads,threads
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,aSlaves,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,aSlaves,slaves
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,keyValueQueue,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,keyValueQueue,value
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,keyValueQueue,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,reductionQueue,reduction
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,reductionQueue,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,redQueue,red
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,redQueue,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,mapper,mapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,slaveNum,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,slaveNum,num
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,salves,salves
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,client,client
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,extra,extra
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,waiterClient,waiter
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,waiterClient,client
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,freeClient,free
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,freeClient,client
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,freeSlave,free
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,freeSlave,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,unassigned_slave,unassigned
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,nameInDictionary,unassigned_slave,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,variableHasInterfaceType,BarrierInterface,barrier
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,variableHasInterfaceType,JoinerInterface,joiner
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,variableHasInterfaceType,SlaveInterface,newSlave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,variableHasInterfaceType,BarrierInterface,getBarrier
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,variableHasInterfaceType,JoinerInterface,getJoiner
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,methodBlockLimit,Model,METHOD_DEF[201x1],2,1
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,variableHasInterfaceType,KeyValueInterface,keyVal
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,variableHasInterfaceType,TokenCountingMapperInterface,mapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,variableHasInterfaceType,RemoteClientInterface,client
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,variableHasInterfaceType,RemoteClientInterface,waiterClient
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,variableHasInterfaceType,RemoteClientInterface,freeClient
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,variableHasInterfaceType,SlaveInterface,freeSlave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,classHasAtLeastOneInterface,comp533.mvc.Model,No Tag
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,publicMethodsOverride,[]
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,classDoesNotHaveExactlyOneInterface,comp533.mvc.Model,No Tag
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,expectedInterface,java.rmi.Remote,@ModelClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public Threads:java.util.List(public , null),Model,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:2 access:public NumThreads:int(public ,public ),Model,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public Joiner:comp533.joiner.JoinerInterface(public , null),Model,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public KeyValueQueue:java.util.concurrent.BlockingQueue(public , null),Model,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public ReductionQueueList:java.util.List(public , null),Model,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,peerDoesNotHaveCommonProperties,writeonly  p-v:3 access:public InputString:String( null,public ),Model,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public Barrier:comp533.barrier.BarrierInterface(public , null),Model,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public SlaveClientMap:java.util.Map(public , null),Model,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,peerDoesNotHaveCommonProperties,readonly  p-v:3 access:public Result:java.util.Map(public , null),Model,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,noSpuriousMethodCall,java.rmi.registry.Registry!lookup:String->Remote,No method,comp533.mvc.Model:[@ModelClass]
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,expectedMethodCall,@RemoteClientObjectInterface!quit:->void,Some method (terminate:->void),comp533.mvc.Model:[@ModelClass]
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,expectedMethodCall,java.util.Stack!pop:->Object,Some method (terminate:->void),comp533.mvc.Model:[@ModelClass]
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,expectedMethodCall,java.util.Stack!push:Object->Object,Some method (setNumThreads:int->void),comp533.mvc.Model:[@ModelClass]
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceRegister:Object->void,Some method (register:comp533.clientServer.RemoteClientInterface->void),comp533.mvc.Model:[@ModelClass]
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Model.java,expectedMethodCall,gradingTools.comp533s19.assignment0.AMapReduceTracer!traceClientAssignment:Object->void,Some method (match:java.util.Stack;java.util.Stack->void),comp533.mvc.Model:[@ModelClass]
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,tags,comp533.mvc.ModelInterface,@ModelClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,comp533.mvc.ModelInterface,interface
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newListener,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newListener,listener
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newVal,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,newVal,val
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,aReductionQueueList,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,aReductionQueueList,reduction
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,aReductionQueueList,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,aReductionQueueList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,aResult,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,aResult,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,reductionQueueList,reduction
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,reductionQueueList,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,reductionQueueList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,resultMap,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,resultMap,map
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,index,index
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,aThreads,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,aThreads,threads
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,aSlaves,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,aSlaves,slaves
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,keyValueQueue,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,keyValueQueue,value
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,keyValueQueue,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,numThreads,num
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,numThreads,threads
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,redQueue,red
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,redQueue,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,aKeyValueQueue,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,aKeyValueQueue,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,aKeyValueQueue,value
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,aKeyValueQueue,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,listOfToken,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,listOfToken,of
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,listOfToken,token
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,salves,salves
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,slave,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,nameInDictionary,client,client
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,variableHasInterfaceType,BarrierInterface,getBarrier
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelInterface.java,variableHasInterfaceType,JoinerInterface,getJoiner
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelViewController.java,tags,comp533.mvc.ModelViewController,@StandAloneTokenCounter
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,view
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,comp533.mvc.ModelViewController,controller
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,view,view
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,model,model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,controller,controller
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelViewController.java,nameInDictionary,args,args
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelViewController.java,variableHasInterfaceType,ViewInterface,view
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelViewController.java,variableHasInterfaceType,ModelInterface,model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ModelViewController.java,variableHasInterfaceType,ControllerInterface,controller
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Reducer.java,tags,comp533.mvc.Reducer,@ReducerClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Reducer.java,nameInDictionary,comp533.mvc.Reducer,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Reducer.java,nameInDictionary,comp533.mvc.Reducer,reducer
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Reducer.java,nameInDictionary,result,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Reducer.java,nameInDictionary,iterator,iterator
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Reducer.java,nameInDictionary,val,val
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Reducer.java,nameInDictionary,aList,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Reducer.java,nameInDictionary,aList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Reducer.java,variableHasInterfaceType,KeyValueInterface,val
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Reducer.java,classHasAtLeastOneInterface,comp533.mvc.Reducer,No Tag
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\Reducer.java,publicMethodsOverride,[]
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ReducerFactory.java,tags,comp533.mvc.ReducerFactory,@ReducerFactory
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ReducerFactory.java,nameInDictionary,comp533.mvc.ReducerFactory,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ReducerFactory.java,nameInDictionary,comp533.mvc.ReducerFactory,reducer
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ReducerFactory.java,nameInDictionary,comp533.mvc.ReducerFactory,factory
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ReducerFactory.java,nameInDictionary,reducer,reducer
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ReducerFactory.java,nameInDictionary,newReducer,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ReducerFactory.java,nameInDictionary,newReducer,reducer
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ReducerFactory.java,variableHasInterfaceType,ReducerInterface,reducer
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ReducerFactory.java,variableHasInterfaceType,ReducerInterface,getReducer
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ReducerFactory.java,variableHasInterfaceType,ReducerInterface,newReducer
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ReducerInterface.java,tags,comp533.mvc.ReducerInterface,@ReducerClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ReducerInterface.java,nameInDictionary,comp533.mvc.ReducerInterface,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ReducerInterface.java,nameInDictionary,comp533.mvc.ReducerInterface,reducer
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ReducerInterface.java,nameInDictionary,comp533.mvc.ReducerInterface,interface
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ReducerInterface.java,nameInDictionary,aList,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ReducerInterface.java,nameInDictionary,aList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,nameInDictionary,comp533.mvc.RemoteModel,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,nameInDictionary,comp533.mvc.RemoteModel,remote
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,nameInDictionary,comp533.mvc.RemoteModel,model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,classHasExactlyOneInterface,comp533.mvc.RemoteModel,No Tag
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,peerHasCommonProperties,readonly  p-v:2 access:public Threads:java.util.List(public , null),RemoteModel,comp533.mvc.SummingModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,peerHasCommonProperties,editable, g-s:0 p-v:2 access:public NumThreads:int(public ,public ),RemoteModel,comp533.mvc.SummingModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,peerHasCommonProperties,readonly  p-v:2 access:public Joiner:comp533.joiner.JoinerInterface(public , null),RemoteModel,comp533.mvc.SummingModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,peerHasCommonProperties,readonly  p-v:2 access:public KeyValueQueue:java.util.concurrent.BlockingQueue(public , null),RemoteModel,comp533.mvc.SummingModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,peerHasCommonProperties,readonly  p-v:2 access:public ReductionQueueList:java.util.List(public , null),RemoteModel,comp533.mvc.SummingModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,peerHasCommonProperties,writeonly  p-v:3 access:public InputString:String( null,public ),RemoteModel,comp533.mvc.SummingModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,peerHasCommonProperties,readonly  p-v:2 access:public Barrier:comp533.barrier.BarrierInterface(public , null),RemoteModel,comp533.mvc.SummingModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,peerHasCommonProperties,readonly  p-v:2 access:public SlaveClientMap:java.util.Map(public , null),RemoteModel,comp533.mvc.SummingModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,peerHasCommonProperties,readonly  p-v:3 access:public Result:java.util.Map(public , null),RemoteModel,comp533.mvc.SummingModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public Threads:java.util.List(public , null),RemoteModel,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:2 access:public NumThreads:int(public ,public ),RemoteModel,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public Joiner:comp533.joiner.JoinerInterface(public , null),RemoteModel,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public KeyValueQueue:java.util.concurrent.BlockingQueue(public , null),RemoteModel,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public ReductionQueueList:java.util.List(public , null),RemoteModel,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,peerDoesNotHaveCommonProperties,writeonly  p-v:3 access:public InputString:String( null,public ),RemoteModel,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public Barrier:comp533.barrier.BarrierInterface(public , null),RemoteModel,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public SlaveClientMap:java.util.Map(public , null),RemoteModel,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:3 access:public Result:java.util.Map(public , null),RemoteModel,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModelInterface.java,tags,comp533.mvc.RemoteModelInterface,@ModelClass + @RemoteModelInterface
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModelInterface.java,nameInDictionary,comp533.mvc.RemoteModelInterface,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModelInterface.java,nameInDictionary,comp533.mvc.RemoteModelInterface,remote
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModelInterface.java,nameInDictionary,comp533.mvc.RemoteModelInterface,model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModelInterface.java,nameInDictionary,comp533.mvc.RemoteModelInterface,interface
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModelInterface.java,nameInDictionary,client,client
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\RemoteModelInterface.java,variableHasInterfaceType,RemoteClientInterface,client
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\StandAloneIntSumming.java,tags,comp533.mvc.StandAloneIntSumming,@StandAloneIntegerSummer
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\StandAloneIntSumming.java,nameInDictionary,comp533.mvc.StandAloneIntSumming,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\StandAloneIntSumming.java,nameInDictionary,comp533.mvc.StandAloneIntSumming,stand
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\StandAloneIntSumming.java,nameInDictionary,comp533.mvc.StandAloneIntSumming,alone
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\StandAloneIntSumming.java,nameInDictionary,comp533.mvc.StandAloneIntSumming,int
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\StandAloneIntSumming.java,nameInDictionary,comp533.mvc.StandAloneIntSumming,summing
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\StandAloneIntSumming.java,nameInDictionary,view,view
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\StandAloneIntSumming.java,nameInDictionary,model,model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\StandAloneIntSumming.java,nameInDictionary,controller,controller
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\StandAloneIntSumming.java,nameInDictionary,args,args
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\StandAloneIntSumming.java,variableHasInterfaceType,ViewInterface,view
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\StandAloneIntSumming.java,variableHasInterfaceType,ModelInterface,model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\StandAloneIntSumming.java,variableHasInterfaceType,ControllerInterface,controller
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,comp533.mvc.SummingModel,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,comp533.mvc.SummingModel,summing
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,comp533.mvc.SummingModel,model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,propertyChangeSupport,property
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,propertyChangeSupport,change
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,propertyChangeSupport,support
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,inputString,input
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,inputString,string
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,result,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,reducer,reducer
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,mapper,mapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,oldResult,old
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,oldResult,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,oldInputString,old
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,oldInputString,input
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,oldInputString,string
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,label,label
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,i,i
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,tokens,tokens
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,listOfToken,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,listOfToken,of
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,listOfToken,token
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,resultLabel,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,resultLabel,label
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,newVal,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,newVal,val
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,aMapper,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,aMapper,mapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,slaveNum,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,slaveNum,num
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,keyVal,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,keyVal,val
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,keyValueQueue,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,keyValueQueue,value
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,keyValueQueue,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,nameInDictionary,salves,salves
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,variableHasInterfaceType,ReducerInterface,reducer
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,variableHasInterfaceType,IntSummingMapperInterface,mapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,variableHasInterfaceType,IntSummingMapperInterface,aMapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,variableHasInterfaceType,KeyValueInterface,keyVal
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,classHasAtLeastOneInterface,comp533.mvc.SummingModel,No Tag
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,publicMethodsOverride,[]
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,peerHasCommonProperties,readonly  p-v:2 access:public Threads:java.util.List(public , null),SummingModel,comp533.mvc.RemoteModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,peerHasCommonProperties,editable, g-s:0 p-v:2 access:public NumThreads:int(public ,public ),SummingModel,comp533.mvc.RemoteModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,peerHasCommonProperties,readonly  p-v:2 access:public Joiner:comp533.joiner.JoinerInterface(public , null),SummingModel,comp533.mvc.RemoteModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,peerHasCommonProperties,readonly  p-v:2 access:public KeyValueQueue:java.util.concurrent.BlockingQueue(public , null),SummingModel,comp533.mvc.RemoteModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,peerHasCommonProperties,readonly  p-v:2 access:public ReductionQueueList:java.util.List(public , null),SummingModel,comp533.mvc.RemoteModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,peerHasCommonProperties,writeonly  p-v:3 access:public InputString:String( null,public ),SummingModel,comp533.mvc.RemoteModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,peerHasCommonProperties,readonly  p-v:2 access:public Barrier:comp533.barrier.BarrierInterface(public , null),SummingModel,comp533.mvc.RemoteModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,peerHasCommonProperties,readonly  p-v:2 access:public SlaveClientMap:java.util.Map(public , null),SummingModel,comp533.mvc.RemoteModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,peerHasCommonProperties,readonly  p-v:3 access:public Result:java.util.Map(public , null),SummingModel,comp533.mvc.RemoteModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public Threads:java.util.List(public , null),SummingModel,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:2 access:public NumThreads:int(public ,public ),SummingModel,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public Joiner:comp533.joiner.JoinerInterface(public , null),SummingModel,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public KeyValueQueue:java.util.concurrent.BlockingQueue(public , null),SummingModel,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public ReductionQueueList:java.util.List(public , null),SummingModel,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,peerDoesNotHaveCommonProperties,writeonly  p-v:3 access:public InputString:String( null,public ),SummingModel,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public Barrier:comp533.barrier.BarrierInterface(public , null),SummingModel,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:2 access:public SlaveClientMap:java.util.Map(public , null),SummingModel,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\SummingModel.java,peerDoesNotHaveCommonProperties,readonly  p-v:3 access:public Result:java.util.Map(public , null),SummingModel,comp533.mvc.DistributedSummerModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapper.java,tags,comp533.mvc.TokenCountingMapper,@TokenCountingMapperClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,comp533.mvc.TokenCountingMapper,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,comp533.mvc.TokenCountingMapper,token
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,comp533.mvc.TokenCountingMapper,counting
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,comp533.mvc.TokenCountingMapper,mapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,ONE,one
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,keyVal,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,keyVal,val
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,aString,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapper.java,nameInDictionary,aString,string
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapper.java,variableHasInterfaceType,KeyValueInterface,map
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapper.java,variableHasInterfaceType,KeyValueInterface,keyVal
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapper.java,classHasAtLeastOneInterface,comp533.mvc.TokenCountingMapper,No Tag
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapper.java,publicMethodsOverride,[]
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,tags,comp533.mvc.TokenCountingMapperFactory,@MapperFactory
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,comp533.mvc.TokenCountingMapperFactory,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,comp533.mvc.TokenCountingMapperFactory,token
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,comp533.mvc.TokenCountingMapperFactory,counting
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,comp533.mvc.TokenCountingMapperFactory,mapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,comp533.mvc.TokenCountingMapperFactory,factory
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,mapper,mapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,newMapper,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,nameInDictionary,newMapper,mapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,variableHasInterfaceType,TokenCountingMapperInterface,mapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,variableHasInterfaceType,TokenCountingMapperInterface,getMapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperFactory.java,variableHasInterfaceType,TokenCountingMapperInterface,newMapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,tags,comp533.mvc.TokenCountingMapperInterface,@TokenCountingMapperClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,comp533.mvc.TokenCountingMapperInterface,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,comp533.mvc.TokenCountingMapperInterface,token
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,comp533.mvc.TokenCountingMapperInterface,counting
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,comp533.mvc.TokenCountingMapperInterface,mapper
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,comp533.mvc.TokenCountingMapperInterface,interface
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,aStrings,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,nameInDictionary,aStrings,strings
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\TokenCountingMapperInterface.java,variableHasInterfaceType,KeyValueInterface,map
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\View.java,tags,comp533.mvc.View,@ViewClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\View.java,nameInDictionary,comp533.mvc.View,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\View.java,nameInDictionary,comp533.mvc.View,view
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\View.java,nameInDictionary,evt,evt
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\View.java,classHasAtLeastOneInterface,comp533.mvc.View,No Tag
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\View.java,publicMethodsOverride,[]
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\View.java,classHasExactlyOneInterface,comp533.mvc.View,No Tag
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ViewInterface.java,tags,comp533.mvc.ViewInterface,@ViewClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,view
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,comp533.mvc.ViewInterface,interface
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\mvc\ViewInterface.java,nameInDictionary,evt,evt
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,tags,comp533.partitioner.Partitioner,@PartitionerClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,comp533.partitioner.Partitioner,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,comp533.partitioner.Partitioner,partitioner
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,one,one
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,firstLetter,first
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,firstLetter,letter
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,lastLetter,last
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,lastLetter,letter
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,firstCharIndex,first
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,firstCharIndex,char
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,firstCharIndex,index
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,aPartitionNum,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,aPartitionNum,partition
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,aPartitionNum,num
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,firstChar,first
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,firstChar,char
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,firstCharLower,first
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,firstCharLower,char
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,firstCharLower,lower
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,maxPartitionSize,max
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,maxPartitionSize,partition
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,maxPartitionSize,size
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,key,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,value,value
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,numPartitions,num
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,nameInDictionary,numPartitions,partitions
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,classHasAtLeastOneInterface,comp533.partitioner.Partitioner,No Tag
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,publicMethodsOverride,[]
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\Partitioner.java,expectedSuperType,gradingTools.comp533s19.assignment0.AMapReduceTracer,@PartitionerClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\PartitionerFactory.java,tags,comp533.partitioner.PartitionerFactory,@PartitionerFactory
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\PartitionerFactory.java,nameInDictionary,comp533.partitioner.PartitionerFactory,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\PartitionerFactory.java,nameInDictionary,comp533.partitioner.PartitionerFactory,partitioner
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\PartitionerFactory.java,nameInDictionary,comp533.partitioner.PartitionerFactory,factory
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\PartitionerFactory.java,nameInDictionary,partitioner,partitioner
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\PartitionerFactory.java,nameInDictionary,newPartitioner,new
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\PartitionerFactory.java,nameInDictionary,newPartitioner,partitioner
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\PartitionerFactory.java,variableHasInterfaceType,PartitionerInterface,partitioner
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\PartitionerFactory.java,variableHasInterfaceType,PartitionerInterface,getPartitioner
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\PartitionerFactory.java,variableHasInterfaceType,PartitionerInterface,newPartitioner
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\PartitionerInterface.java,tags,comp533.partitioner.PartitionerInterface,@PartitionerClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\PartitionerInterface.java,nameInDictionary,comp533.partitioner.PartitionerInterface,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\PartitionerInterface.java,nameInDictionary,comp533.partitioner.PartitionerInterface,partitioner
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\PartitionerInterface.java,nameInDictionary,comp533.partitioner.PartitionerInterface,interface
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\PartitionerInterface.java,nameInDictionary,key,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\PartitionerInterface.java,nameInDictionary,value,value
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\PartitionerInterface.java,nameInDictionary,numPartitions,num
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\partitioner\PartitionerInterface.java,nameInDictionary,numPartitions,partitions
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,tags,comp533.salve.Slave,@SlaveClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,comp533.salve.Slave,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,comp533.salve.Slave,salve
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,comp533.salve.Slave,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,number,number
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,numThreads,num
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,numThreads,threads
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,slaveModel,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,slaveModel,model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,reductionLinkedList,reduction
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,reductionLinkedList,linked
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,reductionLinkedList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,result,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,keyToPartition,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,keyToPartition,to
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,keyToPartition,partition
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,client,client
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aClient,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aClient,client
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,loop,loop
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,localList,local
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,localList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,slaveClientMap,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,slaveClientMap,client
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,slaveClientMap,map
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,reducer,reducer
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aReductionQueueList,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aReductionQueueList,reduction
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aReductionQueueList,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aReductionQueueList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,updatedLocalLinkedList,updated
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,updatedLocalLinkedList,local
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,updatedLocalLinkedList,linked
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,updatedLocalLinkedList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,finalLocalLinkedList,final
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,finalLocalLinkedList,local
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,finalLocalLinkedList,linked
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,finalLocalLinkedList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,keyVal,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,keyVal,val
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,finalKeyVal,final
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,finalKeyVal,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,finalKeyVal,val
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,key,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,partition,partition
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,val,val
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,partialKeyVal,partial
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,partialKeyVal,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,partialKeyVal,val
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,localLinkedList,local
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,localLinkedList,linked
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,localLinkedList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,reductionQueueList,reduction
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,reductionQueueList,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,reductionQueueList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aKeyToPartition,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aKeyToPartition,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aKeyToPartition,to
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aKeyToPartition,partition
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,partitioner,partitioner
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aResult,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aResult,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,loopy,loopy
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aKeyValueQueue,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aKeyValueQueue,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aKeyValueQueue,value
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aKeyValueQueue,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aSlaveModel,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aSlaveModel,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aSlaveModel,model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aLocalList,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aLocalList,local
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aLocalList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aLoop,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,nameInDictionary,aLoop,loop
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,variableHasInterfaceType,ModelInterface,slaveModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,variableHasInterfaceType,RemoteClientInterface,client
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,variableHasInterfaceType,ModelInterface,model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,variableHasInterfaceType,RemoteClientInterface,aClient
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,variableHasInterfaceType,ReducerInterface,reducer
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,variableHasInterfaceType,KeyValueInterface,finalKeyVal
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,variableHasInterfaceType,KeyValueInterface,partialKeyVal
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,variableHasInterfaceType,PartitionerInterface,partitioner
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,variableHasInterfaceType,ModelInterface,aSlaveModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,variableHasInterfaceType,KeyValueInterface,keyVal
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,classHasAtLeastOneInterface,comp533.salve.Slave,No Tag
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,publicMethodsOverride,[]
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\Slave.java,classHasExactlyOneInterface,comp533.salve.Slave,No Tag
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,tags,comp533.salve.SlaveInterface,@SlaveClass
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,comp533.salve.SlaveInterface,comp
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,comp533.salve.SlaveInterface,salve
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,comp533.salve.SlaveInterface,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,comp533.salve.SlaveInterface,interface
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aReductionQueueList,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aReductionQueueList,reduction
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aReductionQueueList,queue
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aReductionQueueList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,keyToPartition,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,keyToPartition,to
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,keyToPartition,partition
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aKeyToPartition,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aKeyToPartition,key
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aKeyToPartition,to
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aKeyToPartition,partition
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aResult,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aResult,result
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aSlaveModel,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aSlaveModel,slave
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aSlaveModel,model
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aLocalList,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aLocalList,local
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aLocalList,list
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aLoop,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aLoop,loop
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aClient,a
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,nameInDictionary,aClient,client
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,variableHasInterfaceType,ModelInterface,aSlaveModel
+0,Mon Feb 28 00:18:19 EST 2022,true,comp533\salve\SlaveInterface.java,variableHasInterfaceType,RemoteClientInterface,aClient
