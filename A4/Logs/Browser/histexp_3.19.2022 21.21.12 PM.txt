@@ -1,0 +1,3 @@
+3/19/2022 23:42:29 PM	Lectures - Google Drive	https://drive.google.com/drive/folders/14bIoaPQLNDP9Oxv1-LtgKhevNiICuqPr
+3/19/2022 23:42:16 PM	T10-RemoteAssignment-3-Sockets.pptx - Google Slides	https://docs.google.com/presentation/d/1k2g1anzymWD8qjl0TQzVx_oXGHQHzqDA/edit?usp=drive_web&ouid=115705987000692215284&rtpof=true
+3/19/2022 23:42:16 PM	T10-RemoteAssignment-3-Sockets.pptx - Google Slides	https://docs.google.com/presentation/d/1k2g1anzymWD8qjl0TQzVx_oXGHQHzqDA/edit?rtpof=true

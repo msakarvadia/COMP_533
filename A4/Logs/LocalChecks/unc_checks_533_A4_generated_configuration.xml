@@ -1,0 +1,14 @@
+	<module name="ClassDefined">
+		<property name="severity" value="info"/>
+		<property name="expectedTypes" value="
+			@DistributedTags.CLIENT+@DistributedTags.RMI,
+			@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI,
+			@DistributedTags.REGISTRY+@DistributedTags.RMI,
+			@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI,
+			@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI,
+			@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI,
+			@DistributedTags.SERVER+@DistributedTags.RMI,
+			@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI,
+			@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI,
+		"/>
+	</module>

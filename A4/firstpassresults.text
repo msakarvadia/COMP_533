@@ -1,0 +1,5 @@
+Starting audit...
+[INFO] C:\Users\mannu\COMP_533\A4\.\src\comp533\checks\Checks.java:0: Expected type names/tags: [@DistributedTags.CLIENT+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.REGISTRY+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI, @DistributedTags.SERVER+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI] [STBuilder]
+[INFO] C:\Users\mannu\COMP_533\A4\.\src\comp533\checks\Checks.java:9:33: Final parameter args defined. Good! [FinalParameterDefined]
+[WARN] C:\Users\mannu\COMP_533\A4\.\src\comp533\nondistributedTrickOrTreat\Main.java:6:33: Parameter args should be final. [FinalParameters]
+Audit done.
