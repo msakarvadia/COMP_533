@@ -1,14 +1,434 @@
 	<module name="ClassDefined">
 		<property name="severity" value="info"/>
 		<property name="expectedTypes" value="
-			@DistributedTags.CLIENT+@DistributedTags.RMI,
-			@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI,
-			@DistributedTags.REGISTRY+@DistributedTags.RMI,
-			@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI,
-			@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI,
-			@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI,
-			@DistributedTags.SERVER+@DistributedTags.RMI,
-			@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI,
-			@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI,
+			@@DistributedTags.CLIENT+@DistributedTags.RMI+@DistributedTags.CLIENT+@DistributedTags.RMI,
+			@@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI,
+			@@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI+@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI,
+			@@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI,
+			@@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI+@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI,
+			@@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI,
+			@@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI,
+			@@DistributedTags.REGISTRY+@DistributedTags.RMI+@DistributedTags.REGISTRY+@DistributedTags.RMI,
+			@@DistributedTags.SERVER+@DistributedTags.RMI+@DistributedTags.SERVER+@DistributedTags.RMI,
+		"/>
+	</module>
+	<module name="ExpectedInterfaces">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI+@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI"/>
+		<property name="expectedInterfaces" value="
+			java.beans.PropertyChangeListener,
+			java.util.EventListener,
+		"/>
+	</module>
+	<module name="ExpectedInterfaces">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI+@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI"/>
+		<property name="expectedInterfaces" value="
+			java.beans.PropertyChangeListener,
+			java.util.EventListener,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI+@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI"/>
+		<property name="expectedSignatures" value="
+			propertyChange:java.beans.PropertyChangeEvent->.*,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI+@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI"/>
+		<property name="expectedSignatures" value="
+			propertyChange:java.beans.PropertyChangeEvent->.*,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI+@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI"/>
+		<property name="expectedCalls" value="
+			@@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI!broadcast:String;@@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI->void,
+			java.beans.PropertyChangeEvent!getPropertyName:->String,
+			java.io.PrintStream!println:*->.*,
+			java.beans.PropertyChangeEvent!getNewValue:->Object,
+			util.trace.trickOrTreat.LocalCommandObserved!newCase:Object;String->LocalCommandObserved,
+			java.util.List!equals:*->.*,
+			java.rmi.server.RemoteObject!equals:*->.*,
+			java.util.ArrayList!equals:*->.*,
+			java.lang.Object!equals:*->.*,
+			java.util.AbstractList!equals:*->.*,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI+@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI"/>
+		<property name="expectedCalls" value="
+			@@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI!broadcast:String;@@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI->void,
+			java.beans.PropertyChangeEvent!getPropertyName:->String,
+			java.io.PrintStream!println:*->.*,
+			java.beans.PropertyChangeEvent!getNewValue:->Object,
+			util.trace.trickOrTreat.LocalCommandObserved!newCase:Object;String->LocalCommandObserved,
+			java.util.List!equals:*->.*,
+			java.rmi.server.RemoteObject!equals:*->.*,
+			java.util.ArrayList!equals:*->.*,
+			java.lang.Object!equals:*->.*,
+			java.util.AbstractList!equals:*->.*,
+		"/>
+	</module>
+	<module name="ExpectedInterfaces">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI"/>
+		<property name="expectedInterfaces" value="
+			java.rmi.Remote,
+		"/>
+	</module>
+	<module name="ExpectedInterfaces">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI"/>
+		<property name="expectedInterfaces" value="
+			java.rmi.Remote,
+		"/>
+	</module>
+	<module name="ExpectedSuperTypes">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI"/>
+		<property name="expectedSuperTypes" value="
+			coupledsims.AStandAloneTwoCoupledHalloweenSimulations,
+			assignments.util.inputParameters.AnAbstractSimulationParametersBean,
+		"/>
+	</module>
+	<module name="ExpectedSuperTypes">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI"/>
+		<property name="expectedSuperTypes" value="
+			coupledsims.AStandAloneTwoCoupledHalloweenSimulations,
+			assignments.util.inputParameters.AnAbstractSimulationParametersBean,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI"/>
+		<property name="expectedSignatures" value="
+			inCoupler:String->void,
+			simulationCommand:String->void,
+			processArgs:String[]->void,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI"/>
+		<property name="expectedSignatures" value="
+			inCoupler:String->void,
+			simulationCommand:String->void,
+			processArgs:String[]->void,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI"/>
+		<property name="expectedCalls" value="
+			assignments.util.mainArgs.ClientArgsProcessor!getServerHost:String[]->String,
+			coupledsims.AStandAloneTwoCoupledHalloweenSimulations!setTracing:->void,
+			assignments.util.mainArgs.ClientArgsProcessor!getClientName:String[]->String,
+			@@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI!registerClient:@@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI->void,
+			main.BeauAndersonFinalProject!createSimulation:String;int;int;int;int;int;int->HalloweenCommandProcessor,
+			stringProcessors.HalloweenCommandProcessor!processCommand:String->void,
+			util.trace.port.consensus.ProposedStateSet!newCase:Object;String;float;Object->ProposedStateSet,
+			java.rmi.registry.Registry!lookup:String->Remote,
+			stringProcessors.HalloweenCommandProcessor!setInputString:String->void,
+			java.lang.System!setProperty:String;String->String,
+			assignments.util.mainArgs.ClientArgsProcessor!getHeadless:String[]->String,
+			assignments.util.mainArgs.ClientArgsProcessor!getRegistryPort:String[]->int,
+			assignments.util.mainArgs.ClientArgsProcessor!getRegistryHost:String[]->String,
+			stringProcessors.HalloweenCommandProcessor!addPropertyChangeListener:java.beans.PropertyChangeListener->void,
+			java.io.PrintStream!println:*->.*,
+			util.trace.port.consensus.ProposalLearnedNotificationReceived!newCase:Object;String;.*;Object->ProposalLearnedNotificationReceived,
+			java.rmi.registry.LocateRegistry!getRegistry:String;int->Registry,
+			java.rmi.server.UnicastRemoteObject!exportObject:*->.*,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI"/>
+		<property name="expectedCalls" value="
+			assignments.util.mainArgs.ClientArgsProcessor!getServerHost:String[]->String,
+			coupledsims.AStandAloneTwoCoupledHalloweenSimulations!setTracing:->void,
+			assignments.util.mainArgs.ClientArgsProcessor!getClientName:String[]->String,
+			@@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI!registerClient:@@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI->void,
+			main.BeauAndersonFinalProject!createSimulation:String;int;int;int;int;int;int->HalloweenCommandProcessor,
+			stringProcessors.HalloweenCommandProcessor!processCommand:String->void,
+			util.trace.port.consensus.ProposedStateSet!newCase:Object;String;float;Object->ProposedStateSet,
+			java.rmi.registry.Registry!lookup:String->Remote,
+			stringProcessors.HalloweenCommandProcessor!setInputString:String->void,
+			java.lang.System!setProperty:String;String->String,
+			assignments.util.mainArgs.ClientArgsProcessor!getHeadless:String[]->String,
+			assignments.util.mainArgs.ClientArgsProcessor!getRegistryPort:String[]->int,
+			assignments.util.mainArgs.ClientArgsProcessor!getRegistryHost:String[]->String,
+			stringProcessors.HalloweenCommandProcessor!addPropertyChangeListener:java.beans.PropertyChangeListener->void,
+			java.io.PrintStream!println:*->.*,
+			util.trace.port.consensus.ProposalLearnedNotificationReceived!newCase:Object;String;.*;Object->ProposalLearnedNotificationReceived,
+			java.rmi.registry.LocateRegistry!getRegistry:String;int->Registry,
+			java.rmi.server.UnicastRemoteObject!exportObject:*->.*,
+		"/>
+	</module>
+	<module name="ExpectedInterfaces">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI"/>
+		<property name="expectedInterfaces" value="
+			java.rmi.Remote,
+		"/>
+	</module>
+	<module name="ExpectedInterfaces">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI"/>
+		<property name="expectedInterfaces" value="
+			java.rmi.Remote,
+		"/>
+	</module>
+	<module name="ExpectedSuperTypes">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI"/>
+		<property name="expectedSuperTypes" value="
+			coupledsims.AStandAloneTwoCoupledHalloweenSimulations,
+			assignments.util.inputParameters.AnAbstractSimulationParametersBean,
+		"/>
+	</module>
+	<module name="ExpectedSuperTypes">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI"/>
+		<property name="expectedSuperTypes" value="
+			coupledsims.AStandAloneTwoCoupledHalloweenSimulations,
+			assignments.util.inputParameters.AnAbstractSimulationParametersBean,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI"/>
+		<property name="expectedSignatures" value="
+			broadcast:String;@@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI->void,
+			start:String[]->void,
+			processArgs:String[]->void,
+			registerClient:@@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI->void,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI"/>
+		<property name="expectedSignatures" value="
+			broadcast:String;@@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI->void,
+			start:String[]->void,
+			processArgs:String[]->void,
+			registerClient:@@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI->void,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI"/>
+		<property name="expectedCalls" value="
+			assignments.util.mainArgs.ClientArgsProcessor!getServerHost:String[]->String,
+			assignments.util.mainArgs.ServerArgsProcessor!getRegistryPort:String[]->int,
+			java.util.List!equals:*->.*,
+			coupledsims.AStandAloneTwoCoupledHalloweenSimulations!setTracing:->void,
+			assignments.util.mainArgs.ClientArgsProcessor!getClientName:String[]->String,
+			assignments.util.mainArgs.ServerArgsProcessor!getRegistryHost:String[]->String,
+			java.rmi.server.RemoteObject!equals:*->.*,
+			java.util.ArrayList!equals:*->.*,
+			@@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI!inCoupler:String->void,
+			java.rmi.registry.Registry!rebind:String;java.rmi.Remote->void,
+			java.lang.System!setProperty:String;String->String,
+			assignments.util.mainArgs.ClientArgsProcessor!getHeadless:String[]->String,
+			assignments.util.mainArgs.ClientArgsProcessor!getRegistryPort:String[]->int,
+			java.util.List!add:Object->boolean,
+			assignments.util.mainArgs.ClientArgsProcessor!getRegistryHost:String[]->String,
+			java.io.PrintStream!println:*->.*,
+			java.rmi.registry.LocateRegistry!getRegistry:String;int->Registry,
+			java.lang.Object!equals:*->.*,
+			java.util.AbstractList!equals:*->.*,
+			java.rmi.server.UnicastRemoteObject!exportObject:*->.*,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI"/>
+		<property name="expectedCalls" value="
+			assignments.util.mainArgs.ClientArgsProcessor!getServerHost:String[]->String,
+			assignments.util.mainArgs.ServerArgsProcessor!getRegistryPort:String[]->int,
+			java.util.List!equals:*->.*,
+			coupledsims.AStandAloneTwoCoupledHalloweenSimulations!setTracing:->void,
+			assignments.util.mainArgs.ClientArgsProcessor!getClientName:String[]->String,
+			assignments.util.mainArgs.ServerArgsProcessor!getRegistryHost:String[]->String,
+			java.rmi.server.RemoteObject!equals:*->.*,
+			java.util.ArrayList!equals:*->.*,
+			@@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI!inCoupler:String->void,
+			java.rmi.registry.Registry!rebind:String;java.rmi.Remote->void,
+			java.lang.System!setProperty:String;String->String,
+			assignments.util.mainArgs.ClientArgsProcessor!getHeadless:String[]->String,
+			assignments.util.mainArgs.ClientArgsProcessor!getRegistryPort:String[]->int,
+			java.util.List!add:Object->boolean,
+			assignments.util.mainArgs.ClientArgsProcessor!getRegistryHost:String[]->String,
+			java.io.PrintStream!println:*->.*,
+			java.rmi.registry.LocateRegistry!getRegistry:String;int->Registry,
+			java.lang.Object!equals:*->.*,
+			java.util.AbstractList!equals:*->.*,
+			java.rmi.server.UnicastRemoteObject!exportObject:*->.*,
+		"/>
+	</module>
+	<module name="ExpectedClassInstantiations">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI"/>
+		<property name="instantiations" value="
+			java.util.ArrayList,
+		"/>
+	</module>
+	<module name="ExpectedClassInstantiations">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI"/>
+		<property name="instantiations" value="
+			java.util.ArrayList,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@@DistributedTags.CLIENT+@DistributedTags.RMI+@DistributedTags.CLIENT+@DistributedTags.RMI"/>
+		<property name="expectedSignatures" value="
+			main:String[]->void,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@@DistributedTags.CLIENT+@DistributedTags.RMI+@DistributedTags.CLIENT+@DistributedTags.RMI"/>
+		<property name="expectedSignatures" value="
+			main:String[]->void,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@@DistributedTags.CLIENT+@DistributedTags.RMI+@DistributedTags.CLIENT+@DistributedTags.RMI"/>
+		<property name="expectedCalls" value="
+			assignments.util.mainArgs.ClientArgsProcessor!getServerHost:String[]->String,
+			assignments.util.mainArgs.ServerArgsProcessor!getRegistryPort:String[]->int,
+			coupledsims.AStandAloneTwoCoupledHalloweenSimulations!setTracing:->void,
+			assignments.util.mainArgs.ClientArgsProcessor!getClientName:String[]->String,
+			@@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI!start:*->.*,
+			assignments.util.mainArgs.ServerArgsProcessor!getRegistryHost:String[]->String,
+			java.rmi.registry.Registry!rebind:String;java.rmi.Remote->void,
+			java.lang.System!setProperty:String;String->String,
+			assignments.util.mainArgs.ClientArgsProcessor!getHeadless:String[]->String,
+			assignments.util.mainArgs.ClientArgsProcessor!getRegistryPort:String[]->int,
+			assignments.util.mainArgs.ClientArgsProcessor!getRegistryHost:String[]->String,
+			java.io.PrintStream!println:*->.*,
+			coupledsims.AStandAloneTwoCoupledHalloweenSimulations!start:*->.*,
+			java.rmi.registry.LocateRegistry!getRegistry:String;int->Registry,
+			java.rmi.server.UnicastRemoteObject!exportObject:*->.*,
+			@@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI!processArgs:String[]->void,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@@DistributedTags.CLIENT+@DistributedTags.RMI+@DistributedTags.CLIENT+@DistributedTags.RMI"/>
+		<property name="expectedCalls" value="
+			assignments.util.mainArgs.ClientArgsProcessor!getServerHost:String[]->String,
+			assignments.util.mainArgs.ServerArgsProcessor!getRegistryPort:String[]->int,
+			coupledsims.AStandAloneTwoCoupledHalloweenSimulations!setTracing:->void,
+			assignments.util.mainArgs.ClientArgsProcessor!getClientName:String[]->String,
+			@@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI!start:*->.*,
+			assignments.util.mainArgs.ServerArgsProcessor!getRegistryHost:String[]->String,
+			java.rmi.registry.Registry!rebind:String;java.rmi.Remote->void,
+			java.lang.System!setProperty:String;String->String,
+			assignments.util.mainArgs.ClientArgsProcessor!getHeadless:String[]->String,
+			assignments.util.mainArgs.ClientArgsProcessor!getRegistryPort:String[]->int,
+			assignments.util.mainArgs.ClientArgsProcessor!getRegistryHost:String[]->String,
+			java.io.PrintStream!println:*->.*,
+			coupledsims.AStandAloneTwoCoupledHalloweenSimulations!start:*->.*,
+			java.rmi.registry.LocateRegistry!getRegistry:String;int->Registry,
+			java.rmi.server.UnicastRemoteObject!exportObject:*->.*,
+			@@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI!processArgs:String[]->void,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@@DistributedTags.SERVER+@DistributedTags.RMI+@DistributedTags.SERVER+@DistributedTags.RMI"/>
+		<property name="expectedSignatures" value="
+			main:String[]->void,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@@DistributedTags.SERVER+@DistributedTags.RMI+@DistributedTags.SERVER+@DistributedTags.RMI"/>
+		<property name="expectedSignatures" value="
+			main:String[]->void,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@@DistributedTags.SERVER+@DistributedTags.RMI+@DistributedTags.SERVER+@DistributedTags.RMI"/>
+		<property name="expectedCalls" value="
+			assignments.util.mainArgs.ClientArgsProcessor!getServerHost:String[]->String,
+			assignments.util.mainArgs.ServerArgsProcessor!getRegistryPort:String[]->int,
+			coupledsims.AStandAloneTwoCoupledHalloweenSimulations!setTracing:->void,
+			assignments.util.mainArgs.ClientArgsProcessor!getClientName:String[]->String,
+			@@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI!start:*->.*,
+			assignments.util.mainArgs.ServerArgsProcessor!getRegistryHost:String[]->String,
+			java.rmi.registry.Registry!rebind:String;java.rmi.Remote->void,
+			java.lang.System!setProperty:String;String->String,
+			assignments.util.mainArgs.ClientArgsProcessor!getHeadless:String[]->String,
+			assignments.util.mainArgs.ClientArgsProcessor!getRegistryPort:String[]->int,
+			assignments.util.mainArgs.ClientArgsProcessor!getRegistryHost:String[]->String,
+			java.io.PrintStream!println:*->.*,
+			java.rmi.registry.LocateRegistry!getRegistry:String;int->Registry,
+			java.rmi.server.UnicastRemoteObject!exportObject:*->.*,
+			@@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI!processArgs:String[]->void,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@@DistributedTags.SERVER+@DistributedTags.RMI+@DistributedTags.SERVER+@DistributedTags.RMI"/>
+		<property name="expectedCalls" value="
+			assignments.util.mainArgs.ClientArgsProcessor!getServerHost:String[]->String,
+			assignments.util.mainArgs.ServerArgsProcessor!getRegistryPort:String[]->int,
+			coupledsims.AStandAloneTwoCoupledHalloweenSimulations!setTracing:->void,
+			assignments.util.mainArgs.ClientArgsProcessor!getClientName:String[]->String,
+			@@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI!start:*->.*,
+			assignments.util.mainArgs.ServerArgsProcessor!getRegistryHost:String[]->String,
+			java.rmi.registry.Registry!rebind:String;java.rmi.Remote->void,
+			java.lang.System!setProperty:String;String->String,
+			assignments.util.mainArgs.ClientArgsProcessor!getHeadless:String[]->String,
+			assignments.util.mainArgs.ClientArgsProcessor!getRegistryPort:String[]->int,
+			assignments.util.mainArgs.ClientArgsProcessor!getRegistryHost:String[]->String,
+			java.io.PrintStream!println:*->.*,
+			java.rmi.registry.LocateRegistry!getRegistry:String;int->Registry,
+			java.rmi.server.UnicastRemoteObject!exportObject:*->.*,
+			@@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI!processArgs:String[]->void,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@@DistributedTags.REGISTRY+@DistributedTags.RMI+@DistributedTags.REGISTRY+@DistributedTags.RMI"/>
+		<property name="expectedSignatures" value="
+			main:String[]->void,
+		"/>
+	</module>
+	<module name="ExpectedSignatures">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@@DistributedTags.REGISTRY+@DistributedTags.RMI+@DistributedTags.REGISTRY+@DistributedTags.RMI"/>
+		<property name="expectedSignatures" value="
+			main:String[]->void,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="warning"/>
+		<property name="includeTypeTags" value="@@DistributedTags.REGISTRY+@DistributedTags.RMI+@DistributedTags.REGISTRY+@DistributedTags.RMI"/>
+		<property name="expectedCalls" value="
+			assignments.util.mainArgs.RegistryArgsProcessor!getRegistryPort:String[]->int,
+			java.rmi.registry.LocateRegistry!createRegistry:int->Registry,
+			java.util.Scanner!nextLine:->String,
+		"/>
+	</module>
+	<module name="MissingMethodCall">
+		<property name="severity" value="info"/>
+		<property name="includeTypeTags" value="@@DistributedTags.REGISTRY+@DistributedTags.RMI+@DistributedTags.REGISTRY+@DistributedTags.RMI"/>
+		<property name="expectedCalls" value="
+			assignments.util.mainArgs.RegistryArgsProcessor!getRegistryPort:String[]->int,
+			java.rmi.registry.LocateRegistry!createRegistry:int->Registry,
+			java.util.Scanner!nextLine:->String,
 		"/>
 	</module>

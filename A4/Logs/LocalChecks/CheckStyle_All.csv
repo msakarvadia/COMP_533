@@ -119,3 +119,1120 @@
 1,Sat Mar 19 23:45:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,missingInterface,java.rmi.Remote,@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI
 1,Sat Mar 19 23:45:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,missingSignature,.*:String;String->void,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
 1,Sat Mar 19 23:45:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,missingSignature,.*:String;@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI->void,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:03 EDT 2022,true,comp533\checks\Checks.java,expectedTypes,[@DistributedTags.CLIENT+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.REGISTRY+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI, @DistributedTags.SERVER+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\checks\Checks.java,expectedTypes,[@DistributedTags.CLIENT+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.REGISTRY+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI, @DistributedTags.SERVER+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,comp533.checks.Checks,comp
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,comp533.checks.Checks,checks
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,traces,traces
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,length,length
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,time,time
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,timer,timer
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,args,args
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\Client.java,tags,comp533.client.Client,@DistributedTags.CLIENT+@DistributedTags.RMI
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\Client.java,nameInDictionary,comp533.client.Client,comp
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\Client.java,nameInDictionary,comp533.client.Client,client
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\Client.java,nameInDictionary,client,client
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\Client.java,nameInDictionary,args,args
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\Client.java,variableHasClassType,ClientRemoteObject,client
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\Client.java,expectedMethodCall,@DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI!.*:String[]->void,Some method (main:String[]->void),comp533.client.Client:[@DistributedTags.CLIENT+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\Client.java,expectedSignature,main:String[]->void,comp533.client.Client:[@DistributedTags.CLIENT+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientConfigurer.java,nameInDictionary,comp533.client.ClientConfigurer,comp
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientConfigurer.java,nameInDictionary,comp533.client.ClientConfigurer,client
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientConfigurer.java,nameNotInDictionary,comp533.client.ClientConfigurer,configurer
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,tags,comp533.client.ClientOutCoupler,@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,comp
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,client
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,out
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,coupler
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,ObservingServer,observing
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,ObservingServer,server
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,originalClient,original
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,originalClient,client
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,newCommand,new
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,newCommand,command
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,anEvent,an
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,anEvent,event
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasInterfaceType,ServerRemoteInterface,ObservingServer
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasInterfaceType,ClientRemoteInterface,originalClient
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasInterfaceType,ServerRemoteInterface,anObservingServer
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasClassType,ClientRemoteObject,aClient
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,publicMethodsOverride,[]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedMethodCall,java.beans.PropertyChangeEvent!getPropertyName:->String,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedMethodCall,java.beans.PropertyChangeEvent!getNewValue:->Object,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedMethodCall,@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI!.*:*->.*,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,missingMethodCall,util.trace.port.consensus.RemoteProposeRequestSent!newCase:Object;String;float;Object->RemoteProposeRequestSent,No method,comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,missingMethodCall,util.misc.ThreadSupport!sleep:long->void,No method,comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,missingMethodCall,assignments.util.inputParameters.AnAbstractSimulationParametersBean!getDelay:->int,No method,comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedInterface,java.beans.PropertyChangeListener,@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,classHasAtLeastOneInterface,comp533.client.ClientOutCoupler,No Tag
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteInterface.java,tags,comp533.client.ClientRemoteInterface,@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,comp
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,client
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,remote
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,interface
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,tags,comp533.client.ClientRemoteObject,@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,comp
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,client
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,remote
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,object
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,commandProcessor,command
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,commandProcessor,processor
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,NUM_EXPERIMENT_COMMANDS,num
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,NUM_EXPERIMENT_COMMANDS,experiment
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,NUM_EXPERIMENT_COMMANDS,commands
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_1,experiment
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_1,command
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_2,experiment
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_2,command
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,simulationCoupler,simulation
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,simulationCoupler,coupler
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,rmi
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,server
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,host
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,name
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,rmi
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,server
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,port
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,SERVER_NAME,server
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,SERVER_NAME,name
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aPrefix,a
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aPrefix,prefix
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,args,args
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,rmiRegistry,rmi
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,rmiRegistry,registry
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,server,server
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,clientOutCoupler,client
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,clientOutCoupler,out
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,clientOutCoupler,coupler
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,variableHasInterfaceType,ServerRemoteInterface,server
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,variableHasClassType,ClientOutCoupler,clientOutCoupler
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,expectedSignature,.*:String->void,comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,publicMethodsDoNotOverride,[public  processArgs:String[]->void]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,methodAccessModifierUnmatched,createSimulation:String->HalloweenCommandProcessor,protected,private,2,[comp533.client.ClientRemoteObject],[private]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,methodAccessModifierUnmatched,init:String[]->void,protected,None,3,No Referencing Method,No Access Modifiers
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,expectedInterface,java.rmi.Remote,@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,classHasAtLeastOneInterface,comp533.client.ClientRemoteObject,No Tag
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,expectedMethodCall,stringProcessors.HalloweenCommandProcessor!processCommand:String->void,Some method (inCoupler:String->void),comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,missingMethodCall,util.trace.port.consensus.ProposedStateSet!newCase:Object;String;float;Object->ProposedStateSet,No method,comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,missingMethodCall,util.trace.port.consensus.ProposalLearnedNotificationReceived!newCase:Object;String;float;Object->ProposalLearnedNotificationReceived,No method,comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,classHasExactlyOneInterface,comp533.client.ClientRemoteObject,No Tag
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,comp
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,trick
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,or
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,treat
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,main
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,args,args
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameNotInDictionary,comp533.nondistributedTrickOrTreat.Main,nondistributed
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,tags,comp533.registry.TrickOrTreatRegistry,@DistributedTags.REGISTRY+@DistributedTags.RMI
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,comp
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,registry
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,trick
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,or
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,treat
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,SERVER_PORT,server
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,SERVER_PORT,port
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,rmiRegistry,rmi
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,rmiRegistry,registry
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,scanner,scanner
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,args,args
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,missingMethodCall,assignments.util.mainArgs.RegistryArgsProcessor!getRegistryPort:String[]->int,No method,comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,missingMethodCall,util.trace.port.rpc.rmi.RMIRegistryCreated!newCase:Object;int->RMIRegistryCreated,No method,comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedMethodCall,java.lang.Throwable!printStackTrace:->void,Some method (main:String[]->void),comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedMethodCall,java.rmi.registry.LocateRegistry!createRegistry:int->Registry,Some method (main:String[]->void),comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedMethodCall,java.util.Scanner!nextLine:->String,Some method (main:String[]->void),comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedSignature,main:String[]->void,comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\Server.java,tags,comp533.server.Server,@DistributedTags.SERVER+@DistributedTags.RMI
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\Server.java,nameInDictionary,comp533.server.Server,comp
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\Server.java,nameInDictionary,comp533.server.Server,server
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\Server.java,nameInDictionary,server,server
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\Server.java,nameInDictionary,args,args
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\Server.java,variableHasClassType,ServerRemoteObject,server
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\Server.java,expectedSignature,main:String[]->void,comp533.server.Server:[@DistributedTags.SERVER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\Server.java,expectedMethodCall,@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI!.*:String[]->void,Some method (main:String[]->void),comp533.server.Server:[@DistributedTags.SERVER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,tags,comp533.server.ServerConfigurer,@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,nameInDictionary,comp533.server.ServerConfigurer,comp
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,nameInDictionary,comp533.server.ServerConfigurer,server
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,nameNotInDictionary,comp533.server.ServerConfigurer,configurer
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingSuperType,assignments.util.inputParameters.AnAbstractSimulationParametersBean,@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingSignature,.*:String[]->void,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingSignature,quit:int->void,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.interactiveMethodInvocation.SimulationParametersControllerFactory!addSimulationParameterListener:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,assignments.util.mainArgs.ServerArgsProcessor!getRegistryPort:String[]->int,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.rpc.rmi.RMIRegistryLocated!newCase:Object;String;int;java.rmi.registry.Registry->RMIRegistryLocated,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,assignments.util.inputParameters.AnAbstractSimulationParametersBean!trace:boolean->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.lang.Throwable!printStackTrace:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,assignments.util.mainArgs.ServerArgsProcessor!getRegistryHost:String[]->String,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.factories.FactoryTraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.interactiveMethodInvocation.SimulationParametersControllerFactory!getSingleton:->SimulationParametersController,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.rpc.rmi.RMIObjectRegistered!newCase:Object;String;Object;java.rmi.registry.Registry->RMIObjectRegistered,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.rmi.registry.Registry!.*bind:String;java.rmi.Remote->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.misc.ThreadDelayed!enablePrint:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.PortTraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.io.PrintStream!println:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.rmi.registry.LocateRegistry!getRegistry:String;int->Registry,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.lang.System!exit:int->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.rmi.server.UnicastRemoteObject!exportObject:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.interactiveMethodInvocation.SimulationParametersControllerFactory!processCommands:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.rpc.rmi.RMITraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.consensus.ConsensusTraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,tags,comp533.server.ServerRemoteInterface,@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,comp
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,server
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,remote
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,interface
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aClient,a
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aClient,client
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,originalClient,original
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,originalClient,client
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,variableHasInterfaceType,ClientRemoteInterface,aClient
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,variableHasInterfaceType,ClientRemoteInterface,originalClient
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,tags,comp533.server.ServerRemoteObject,@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,comp
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,server
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,remote
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,object
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,clientList,client
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,clientList,list
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,rmi
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,server
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,host
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,name
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,rmi
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,server
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,port
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,SERVER_NAME,server
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,SERVER_NAME,name
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,args,args
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aClient,a
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aClient,client
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,client,client
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,originalClient,original
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,originalClient,client
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,rmiRegistry,rmi
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,rmiRegistry,registry
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,server,server
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ClientRemoteInterface,aClient
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ClientRemoteInterface,originalClient
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ClientRemoteInterface,client
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ServerRemoteInterface,server
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,publicMethodsDoNotOverride,[public  processArgs:String[]->void]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,classDecomposition,[[protected  init:String[]->void, public  processArgs:String[]->void], [public  registerClient:comp533.client.ClientRemoteInterface->void, public  broadcast:String;comp533.client.ClientRemoteInterface->void]]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,missingMethodCall,util.trace.port.consensus.ProposalLearnedNotificationSent!newCase:Object;String;float;Object->ProposalLearnedNotificationSent,No method,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,missingMethodCall,util.trace.port.consensus.RemoteProposeRequestReceived!newCase:Object;String;float;Object->RemoteProposeRequestReceived,No method,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,missingSignature,.*:String;String->void,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,noSpuriousMethodCall,java.rmi.registry.Registry!lookup:String->Remote,No method,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedInterface,java.rmi.Remote,@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,methodAccessModifierMatched,init:String[]->void,protected,[comp533.server.ServerRemoteObject],[protected]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedSignature,.*:String;@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI->void,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedMethodCall,@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI!.*:*->.*,Some method (processArgs:String[]->void),comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedMethodCall,@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI!.*:*->.*,Some method (processArgs:String[]->void),comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,classHasAtLeastOneInterface,comp533.server.ServerRemoteObject,No Tag
+1,Sun Mar 20 17:45:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,classHasExactlyOneInterface,comp533.server.ServerRemoteObject,No Tag
+1,Sun Mar 20 17:46:08 EDT 2022,true,comp533\checks\Checks.java,expectedTypes,[@DistributedTags.CLIENT+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.REGISTRY+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI, @DistributedTags.SERVER+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\checks\Checks.java,expectedTypes,[@DistributedTags.CLIENT+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.REGISTRY+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI, @DistributedTags.SERVER+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,comp533.checks.Checks,comp
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,comp533.checks.Checks,checks
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,traces,traces
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,length,length
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,time,time
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,timer,timer
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,args,args
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\Client.java,tags,comp533.client.Client,@DistributedTags.CLIENT+@DistributedTags.RMI
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\Client.java,nameInDictionary,comp533.client.Client,comp
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\Client.java,nameInDictionary,comp533.client.Client,client
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\Client.java,nameInDictionary,client,client
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\Client.java,nameInDictionary,args,args
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\Client.java,variableHasClassType,ClientRemoteObject,client
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\Client.java,expectedMethodCall,@DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI!.*:String[]->void,Some method (main:String[]->void),comp533.client.Client:[@DistributedTags.CLIENT+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\Client.java,expectedSignature,main:String[]->void,comp533.client.Client:[@DistributedTags.CLIENT+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientConfigurer.java,nameNotInDictionary,comp533.client.ClientConfigurer,configurer
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientConfigurer.java,nameInDictionary,comp533.client.ClientConfigurer,comp
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientConfigurer.java,nameInDictionary,comp533.client.ClientConfigurer,client
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,tags,comp533.client.ClientOutCoupler,@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,comp
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,client
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,out
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,coupler
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,ObservingServer,observing
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,ObservingServer,server
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,originalClient,original
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,originalClient,client
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,newCommand,new
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,newCommand,command
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,anEvent,an
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,anEvent,event
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasInterfaceType,ServerRemoteInterface,ObservingServer
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasInterfaceType,ClientRemoteInterface,originalClient
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasInterfaceType,ServerRemoteInterface,anObservingServer
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasClassType,ClientRemoteObject,aClient
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedInterface,java.beans.PropertyChangeListener,@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedMethodCall,java.beans.PropertyChangeEvent!getPropertyName:->String,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedMethodCall,java.beans.PropertyChangeEvent!getNewValue:->Object,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedMethodCall,@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI!.*:*->.*,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,classHasAtLeastOneInterface,comp533.client.ClientOutCoupler,No Tag
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,publicMethodsOverride,[]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,missingMethodCall,util.trace.port.consensus.RemoteProposeRequestSent!newCase:Object;String;float;Object->RemoteProposeRequestSent,No method,comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,missingMethodCall,util.misc.ThreadSupport!sleep:long->void,No method,comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientOutCoupler.java,missingMethodCall,assignments.util.inputParameters.AnAbstractSimulationParametersBean!getDelay:->int,No method,comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteInterface.java,tags,comp533.client.ClientRemoteInterface,@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,comp
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,client
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,remote
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,interface
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,tags,comp533.client.ClientRemoteObject,@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,comp
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,client
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,remote
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,object
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,commandProcessor,command
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,commandProcessor,processor
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,NUM_EXPERIMENT_COMMANDS,num
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,NUM_EXPERIMENT_COMMANDS,experiment
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,NUM_EXPERIMENT_COMMANDS,commands
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_1,experiment
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_1,command
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_2,experiment
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_2,command
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,simulationCoupler,simulation
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,simulationCoupler,coupler
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,rmi
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,server
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,host
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,name
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,rmi
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,server
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,port
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,SERVER_NAME,server
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,SERVER_NAME,name
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aPrefix,a
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aPrefix,prefix
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,args,args
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,rmiRegistry,rmi
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,rmiRegistry,registry
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,server,server
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,clientOutCoupler,client
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,clientOutCoupler,out
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,clientOutCoupler,coupler
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,variableHasInterfaceType,ServerRemoteInterface,server
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,variableHasClassType,ClientOutCoupler,clientOutCoupler
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,expectedMethodCall,stringProcessors.HalloweenCommandProcessor!processCommand:String->void,Some method (inCoupler:String->void),comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,classHasExactlyOneInterface,comp533.client.ClientRemoteObject,No Tag
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,expectedSignature,.*:String->void,comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,classHasAtLeastOneInterface,comp533.client.ClientRemoteObject,No Tag
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,publicMethodsDoNotOverride,[public  processArgs:String[]->void]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,methodAccessModifierUnmatched,createSimulation:String->HalloweenCommandProcessor,protected,private,2,[comp533.client.ClientRemoteObject],[private]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,methodAccessModifierUnmatched,init:String[]->void,protected,None,3,No Referencing Method,No Access Modifiers
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,expectedInterface,java.rmi.Remote,@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,missingMethodCall,util.trace.port.consensus.ProposedStateSet!newCase:Object;String;float;Object->ProposedStateSet,No method,comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\client\ClientRemoteObject.java,missingMethodCall,util.trace.port.consensus.ProposalLearnedNotificationReceived!newCase:Object;String;float;Object->ProposalLearnedNotificationReceived,No method,comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameNotInDictionary,comp533.nondistributedTrickOrTreat.Main,nondistributed
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,comp
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,trick
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,or
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,treat
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,main
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,args,args
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,tags,comp533.registry.TrickOrTreatRegistry,@DistributedTags.REGISTRY+@DistributedTags.RMI
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,comp
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,registry
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,trick
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,or
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,treat
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,SERVER_PORT,server
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,SERVER_PORT,port
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,rmiRegistry,rmi
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,rmiRegistry,registry
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,scanner,scanner
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,args,args
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,missingMethodCall,assignments.util.mainArgs.RegistryArgsProcessor!getRegistryPort:String[]->int,No method,comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,missingMethodCall,util.trace.port.rpc.rmi.RMIRegistryCreated!newCase:Object;int->RMIRegistryCreated,No method,comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedSignature,main:String[]->void,comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedMethodCall,java.lang.Throwable!printStackTrace:->void,Some method (main:String[]->void),comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedMethodCall,java.rmi.registry.LocateRegistry!createRegistry:int->Registry,Some method (main:String[]->void),comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedMethodCall,java.util.Scanner!nextLine:->String,Some method (main:String[]->void),comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\Server.java,tags,comp533.server.Server,@DistributedTags.SERVER+@DistributedTags.RMI
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\Server.java,nameInDictionary,comp533.server.Server,comp
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\Server.java,nameInDictionary,comp533.server.Server,server
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\Server.java,nameInDictionary,server,server
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\Server.java,nameInDictionary,args,args
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\Server.java,variableHasClassType,ServerRemoteObject,server
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\Server.java,expectedMethodCall,@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI!.*:String[]->void,Some method (main:String[]->void),comp533.server.Server:[@DistributedTags.SERVER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\Server.java,expectedSignature,main:String[]->void,comp533.server.Server:[@DistributedTags.SERVER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,tags,comp533.server.ServerConfigurer,@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,nameNotInDictionary,comp533.server.ServerConfigurer,configurer
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,nameInDictionary,comp533.server.ServerConfigurer,comp
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,nameInDictionary,comp533.server.ServerConfigurer,server
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.interactiveMethodInvocation.SimulationParametersControllerFactory!addSimulationParameterListener:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,assignments.util.mainArgs.ServerArgsProcessor!getRegistryPort:String[]->int,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.rpc.rmi.RMIRegistryLocated!newCase:Object;String;int;java.rmi.registry.Registry->RMIRegistryLocated,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,assignments.util.inputParameters.AnAbstractSimulationParametersBean!trace:boolean->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.lang.Throwable!printStackTrace:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,assignments.util.mainArgs.ServerArgsProcessor!getRegistryHost:String[]->String,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.factories.FactoryTraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.interactiveMethodInvocation.SimulationParametersControllerFactory!getSingleton:->SimulationParametersController,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.rpc.rmi.RMIObjectRegistered!newCase:Object;String;Object;java.rmi.registry.Registry->RMIObjectRegistered,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.rmi.registry.Registry!.*bind:String;java.rmi.Remote->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.misc.ThreadDelayed!enablePrint:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.PortTraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.io.PrintStream!println:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.rmi.registry.LocateRegistry!getRegistry:String;int->Registry,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.lang.System!exit:int->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.rmi.server.UnicastRemoteObject!exportObject:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.interactiveMethodInvocation.SimulationParametersControllerFactory!processCommands:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.rpc.rmi.RMITraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.consensus.ConsensusTraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingSuperType,assignments.util.inputParameters.AnAbstractSimulationParametersBean,@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingSignature,.*:String[]->void,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerConfigurer.java,missingSignature,quit:int->void,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteInterface.java,tags,comp533.server.ServerRemoteInterface,@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,comp
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,server
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,remote
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,interface
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aClient,a
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aClient,client
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,originalClient,original
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,originalClient,client
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteInterface.java,variableHasInterfaceType,ClientRemoteInterface,aClient
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteInterface.java,variableHasInterfaceType,ClientRemoteInterface,originalClient
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,tags,comp533.server.ServerRemoteObject,@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,comp
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,server
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,remote
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,object
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,clientList,client
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,clientList,list
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,rmi
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,server
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,host
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,name
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,rmi
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,server
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,port
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,SERVER_NAME,server
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,SERVER_NAME,name
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,args,args
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aClient,a
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aClient,client
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,client,client
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,originalClient,original
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,originalClient,client
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,rmiRegistry,rmi
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,rmiRegistry,registry
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,server,server
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ClientRemoteInterface,aClient
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ClientRemoteInterface,originalClient
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ClientRemoteInterface,client
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ServerRemoteInterface,server
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,missingMethodCall,util.trace.port.consensus.ProposalLearnedNotificationSent!newCase:Object;String;float;Object->ProposalLearnedNotificationSent,No method,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,missingMethodCall,util.trace.port.consensus.RemoteProposeRequestReceived!newCase:Object;String;float;Object->RemoteProposeRequestReceived,No method,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,methodAccessModifierMatched,init:String[]->void,protected,[comp533.server.ServerRemoteObject],[protected]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,classHasExactlyOneInterface,comp533.server.ServerRemoteObject,No Tag
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,missingSignature,.*:String;String->void,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,classHasAtLeastOneInterface,comp533.server.ServerRemoteObject,No Tag
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,publicMethodsDoNotOverride,[public  processArgs:String[]->void]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,noSpuriousMethodCall,java.rmi.registry.Registry!lookup:String->Remote,No method,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedSignature,.*:String;@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI->void,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,classDecomposition,[[protected  init:String[]->void, public  processArgs:String[]->void], [public  broadcast:String;comp533.client.ClientRemoteInterface->void, public  registerClient:comp533.client.ClientRemoteInterface->void]]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedInterface,java.rmi.Remote,@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedMethodCall,@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI!.*:*->.*,Some method (processArgs:String[]->void),comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 17:46:09 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedMethodCall,@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI!.*:*->.*,Some method (processArgs:String[]->void),comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:50 EDT 2022,true,comp533\checks\Checks.java,expectedTypes,[@DistributedTags.CLIENT+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.REGISTRY+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI, @DistributedTags.SERVER+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\checks\Checks.java,expectedTypes,[@DistributedTags.CLIENT+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.REGISTRY+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI, @DistributedTags.SERVER+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,comp533.checks.Checks,comp
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,comp533.checks.Checks,checks
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,traces,traces
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,length,length
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,time,time
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,timer,timer
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,args,args
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\Client.java,tags,comp533.client.Client,@DistributedTags.CLIENT+@DistributedTags.RMI
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\Client.java,nameInDictionary,comp533.client.Client,comp
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\Client.java,nameInDictionary,comp533.client.Client,client
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\Client.java,nameInDictionary,client,client
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\Client.java,nameInDictionary,args,args
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\Client.java,variableHasClassType,ClientRemoteObject,client
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\Client.java,expectedMethodCall,@DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI!.*:String[]->void,Some method (main:String[]->void),comp533.client.Client:[@DistributedTags.CLIENT+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\Client.java,expectedSignature,main:String[]->void,comp533.client.Client:[@DistributedTags.CLIENT+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientConfigurer.java,nameNotInDictionary,comp533.client.ClientConfigurer,configurer
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientConfigurer.java,nameInDictionary,comp533.client.ClientConfigurer,comp
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientConfigurer.java,nameInDictionary,comp533.client.ClientConfigurer,client
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,tags,comp533.client.ClientOutCoupler,@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,comp
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,client
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,out
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,coupler
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,ObservingServer,observing
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,ObservingServer,server
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,originalClient,original
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,originalClient,client
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,newCommand,new
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,newCommand,command
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,anEvent,an
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,anEvent,event
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasInterfaceType,ServerRemoteInterface,ObservingServer
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasInterfaceType,ClientRemoteInterface,originalClient
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasInterfaceType,ServerRemoteInterface,anObservingServer
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasClassType,ClientRemoteObject,aClient
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedInterface,java.beans.PropertyChangeListener,@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,classHasAtLeastOneInterface,comp533.client.ClientOutCoupler,No Tag
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,missingMethodCall,util.trace.port.consensus.RemoteProposeRequestSent!newCase:Object;String;float;Object->RemoteProposeRequestSent,No method,comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,missingMethodCall,util.misc.ThreadSupport!sleep:long->void,No method,comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,missingMethodCall,assignments.util.inputParameters.AnAbstractSimulationParametersBean!getDelay:->int,No method,comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedMethodCall,java.beans.PropertyChangeEvent!getPropertyName:->String,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedMethodCall,java.beans.PropertyChangeEvent!getNewValue:->Object,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedMethodCall,@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI!.*:*->.*,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientOutCoupler.java,publicMethodsOverride,[]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteInterface.java,tags,comp533.client.ClientRemoteInterface,@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,comp
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,client
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,remote
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,interface
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,tags,comp533.client.ClientRemoteObject,@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,comp
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,client
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,remote
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,object
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,commandProcessor,command
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,commandProcessor,processor
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,NUM_EXPERIMENT_COMMANDS,num
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,NUM_EXPERIMENT_COMMANDS,experiment
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,NUM_EXPERIMENT_COMMANDS,commands
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_1,experiment
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_1,command
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_2,experiment
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_2,command
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,simulationCoupler,simulation
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,simulationCoupler,coupler
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,rmi
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,server
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,host
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,name
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,rmi
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,server
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,port
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,SERVER_NAME,server
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,SERVER_NAME,name
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aPrefix,a
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aPrefix,prefix
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,args,args
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,rmiRegistry,rmi
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,rmiRegistry,registry
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,server,server
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,clientOutCoupler,client
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,clientOutCoupler,out
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,clientOutCoupler,coupler
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,variableHasInterfaceType,ServerRemoteInterface,server
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,variableHasClassType,ClientOutCoupler,clientOutCoupler
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,missingMethodCall,util.trace.port.consensus.ProposedStateSet!newCase:Object;String;float;Object->ProposedStateSet,No method,comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,missingMethodCall,util.trace.port.consensus.ProposalLearnedNotificationReceived!newCase:Object;String;float;Object->ProposalLearnedNotificationReceived,No method,comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,expectedSignature,.*:String->void,comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,publicMethodsDoNotOverride,[public  processArgs:String[]->void]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,classHasAtLeastOneInterface,comp533.client.ClientRemoteObject,No Tag
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,methodAccessModifierUnmatched,createSimulation:String->HalloweenCommandProcessor,protected,private,2,[comp533.client.ClientRemoteObject],[private]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,methodAccessModifierUnmatched,init:String[]->void,protected,None,3,No Referencing Method,No Access Modifiers
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,expectedInterface,java.rmi.Remote,@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,classHasExactlyOneInterface,comp533.client.ClientRemoteObject,No Tag
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\client\ClientRemoteObject.java,expectedMethodCall,stringProcessors.HalloweenCommandProcessor!processCommand:String->void,Some method (inCoupler:String->void),comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameNotInDictionary,comp533.nondistributedTrickOrTreat.Main,nondistributed
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,comp
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,trick
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,or
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,treat
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,main
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,args,args
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,tags,comp533.registry.TrickOrTreatRegistry,@DistributedTags.REGISTRY+@DistributedTags.RMI
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,comp
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,registry
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,trick
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,or
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,treat
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,SERVER_PORT,server
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,SERVER_PORT,port
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,rmiRegistry,rmi
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,rmiRegistry,registry
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,scanner,scanner
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,args,args
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedMethodCall,java.lang.Throwable!printStackTrace:->void,Some method (main:String[]->void),comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedMethodCall,java.rmi.registry.LocateRegistry!createRegistry:int->Registry,Some method (main:String[]->void),comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedMethodCall,java.util.Scanner!nextLine:->String,Some method (main:String[]->void),comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,missingMethodCall,assignments.util.mainArgs.RegistryArgsProcessor!getRegistryPort:String[]->int,No method,comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,missingMethodCall,util.trace.port.rpc.rmi.RMIRegistryCreated!newCase:Object;int->RMIRegistryCreated,No method,comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedSignature,main:String[]->void,comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\Server.java,tags,comp533.server.Server,@DistributedTags.SERVER+@DistributedTags.RMI
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\Server.java,nameInDictionary,comp533.server.Server,comp
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\Server.java,nameInDictionary,comp533.server.Server,server
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\Server.java,nameInDictionary,server,server
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\Server.java,nameInDictionary,args,args
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\Server.java,variableHasClassType,ServerRemoteObject,server
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\Server.java,expectedMethodCall,@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI!.*:String[]->void,Some method (main:String[]->void),comp533.server.Server:[@DistributedTags.SERVER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\Server.java,expectedSignature,main:String[]->void,comp533.server.Server:[@DistributedTags.SERVER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,tags,comp533.server.ServerConfigurer,@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,nameNotInDictionary,comp533.server.ServerConfigurer,configurer
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,nameInDictionary,comp533.server.ServerConfigurer,comp
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,nameInDictionary,comp533.server.ServerConfigurer,server
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingSignature,.*:String[]->void,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingSignature,quit:int->void,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingSuperType,assignments.util.inputParameters.AnAbstractSimulationParametersBean,@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.interactiveMethodInvocation.SimulationParametersControllerFactory!addSimulationParameterListener:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,assignments.util.mainArgs.ServerArgsProcessor!getRegistryPort:String[]->int,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.rpc.rmi.RMIRegistryLocated!newCase:Object;String;int;java.rmi.registry.Registry->RMIRegistryLocated,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,assignments.util.inputParameters.AnAbstractSimulationParametersBean!trace:boolean->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.lang.Throwable!printStackTrace:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,assignments.util.mainArgs.ServerArgsProcessor!getRegistryHost:String[]->String,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.factories.FactoryTraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.interactiveMethodInvocation.SimulationParametersControllerFactory!getSingleton:->SimulationParametersController,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.rpc.rmi.RMIObjectRegistered!newCase:Object;String;Object;java.rmi.registry.Registry->RMIObjectRegistered,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.rmi.registry.Registry!.*bind:String;java.rmi.Remote->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.misc.ThreadDelayed!enablePrint:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.PortTraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.io.PrintStream!println:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.rmi.registry.LocateRegistry!getRegistry:String;int->Registry,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.lang.System!exit:int->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.rmi.server.UnicastRemoteObject!exportObject:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.interactiveMethodInvocation.SimulationParametersControllerFactory!processCommands:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.rpc.rmi.RMITraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.consensus.ConsensusTraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteInterface.java,tags,comp533.server.ServerRemoteInterface,@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,comp
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,server
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,remote
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,interface
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aClient,a
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aClient,client
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,originalClient,original
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,originalClient,client
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteInterface.java,variableHasInterfaceType,ClientRemoteInterface,aClient
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteInterface.java,variableHasInterfaceType,ClientRemoteInterface,originalClient
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,tags,comp533.server.ServerRemoteObject,@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,comp
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,server
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,remote
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,object
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,clientList,client
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,clientList,list
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,rmi
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,server
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,host
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,name
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,rmi
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,server
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,port
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,SERVER_NAME,server
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,SERVER_NAME,name
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,args,args
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aClient,a
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aClient,client
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,client,client
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,originalClient,original
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,originalClient,client
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,rmiRegistry,rmi
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,rmiRegistry,registry
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,server,server
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ClientRemoteInterface,aClient
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ClientRemoteInterface,originalClient
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ClientRemoteInterface,client
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ServerRemoteInterface,server
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,methodAccessModifierMatched,init:String[]->void,protected,[comp533.server.ServerRemoteObject],[protected]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,classDecomposition,[[public  processArgs:String[]->void, protected  init:String[]->void], [public  broadcast:String;comp533.client.ClientRemoteInterface->void, public  registerClient:comp533.client.ClientRemoteInterface->void]]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedInterface,java.rmi.Remote,@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedMethodCall,@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI!.*:*->.*,Some method (processArgs:String[]->void),comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedMethodCall,@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI!.*:*->.*,Some method (processArgs:String[]->void),comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,publicMethodsDoNotOverride,[public  processArgs:String[]->void]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedSignature,.*:String;@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI->void,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,classHasAtLeastOneInterface,comp533.server.ServerRemoteObject,No Tag
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,noSpuriousMethodCall,java.rmi.registry.Registry!lookup:String->Remote,No method,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,classHasExactlyOneInterface,comp533.server.ServerRemoteObject,No Tag
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,missingSignature,.*:String;String->void,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,missingMethodCall,util.trace.port.consensus.ProposalLearnedNotificationSent!newCase:Object;String;float;Object->ProposalLearnedNotificationSent,No method,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 18:17:51 EDT 2022,true,comp533\server\ServerRemoteObject.java,missingMethodCall,util.trace.port.consensus.RemoteProposeRequestReceived!newCase:Object;String;float;Object->RemoteProposeRequestReceived,No method,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:03 EDT 2022,true,comp533\checks\Checks.java,expectedTypes,[@DistributedTags.CLIENT+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.REGISTRY+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI, @DistributedTags.SERVER+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\checks\Checks.java,expectedTypes,[@DistributedTags.CLIENT+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.REGISTRY+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI, @DistributedTags.SERVER+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,comp533.checks.Checks,comp
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,comp533.checks.Checks,checks
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,traces,traces
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,length,length
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,time,time
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,timer,timer
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,args,args
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\Client.java,tags,comp533.client.Client,@DistributedTags.CLIENT+@DistributedTags.RMI
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\Client.java,nameInDictionary,comp533.client.Client,comp
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\Client.java,nameInDictionary,comp533.client.Client,client
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\Client.java,nameInDictionary,client,client
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\Client.java,nameInDictionary,args,args
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\Client.java,variableHasClassType,ClientRemoteObject,client
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\Client.java,expectedMethodCall,@DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI!.*:String[]->void,Some method (main:String[]->void),comp533.client.Client:[@DistributedTags.CLIENT+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\Client.java,expectedSignature,main:String[]->void,comp533.client.Client:[@DistributedTags.CLIENT+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientConfigurer.java,nameNotInDictionary,comp533.client.ClientConfigurer,configurer
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientConfigurer.java,nameInDictionary,comp533.client.ClientConfigurer,comp
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientConfigurer.java,nameInDictionary,comp533.client.ClientConfigurer,client
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,tags,comp533.client.ClientOutCoupler,@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,comp
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,client
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,out
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,coupler
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,ObservingServer,observing
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,ObservingServer,server
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,originalClient,original
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,originalClient,client
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,newCommand,new
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,newCommand,command
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,anEvent,an
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,anEvent,event
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasInterfaceType,ServerRemoteInterface,ObservingServer
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasInterfaceType,ClientRemoteInterface,originalClient
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasInterfaceType,ServerRemoteInterface,anObservingServer
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasClassType,ClientRemoteObject,aClient
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,missingMethodCall,util.trace.port.consensus.RemoteProposeRequestSent!newCase:Object;String;float;Object->RemoteProposeRequestSent,No method,comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,missingMethodCall,util.misc.ThreadSupport!sleep:long->void,No method,comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,missingMethodCall,assignments.util.inputParameters.AnAbstractSimulationParametersBean!getDelay:->int,No method,comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedInterface,java.beans.PropertyChangeListener,@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedMethodCall,java.beans.PropertyChangeEvent!getPropertyName:->String,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedMethodCall,java.beans.PropertyChangeEvent!getNewValue:->Object,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedMethodCall,@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI!.*:*->.*,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,publicMethodsOverride,[]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientOutCoupler.java,classHasAtLeastOneInterface,comp533.client.ClientOutCoupler,No Tag
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteInterface.java,tags,comp533.client.ClientRemoteInterface,@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,comp
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,client
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,remote
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,interface
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,tags,comp533.client.ClientRemoteObject,@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,comp
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,client
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,remote
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,object
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,commandProcessor,command
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,commandProcessor,processor
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,NUM_EXPERIMENT_COMMANDS,num
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,NUM_EXPERIMENT_COMMANDS,experiment
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,NUM_EXPERIMENT_COMMANDS,commands
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_1,experiment
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_1,command
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_2,experiment
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_2,command
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,simulationCoupler,simulation
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,simulationCoupler,coupler
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,server,server
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aProposalNumber,a
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aProposalNumber,proposal
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aProposalNumber,number
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,rmi
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,server
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,host
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,name
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,rmi
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,server
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,port
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,SERVER_NAME,server
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,SERVER_NAME,name
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,CLIENT_NAME,client
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,CLIENT_NAME,name
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aPrefix,a
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aPrefix,prefix
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,args,args
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,rmiRegistry,rmi
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,rmiRegistry,registry
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,clientOutCoupler,client
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,clientOutCoupler,out
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,clientOutCoupler,coupler
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,variableHasInterfaceType,ServerRemoteInterface,server
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,variableHasClassType,ClientOutCoupler,clientOutCoupler
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,expectedInterface,java.rmi.Remote,@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,methodAccessModifierUnmatched,createSimulation:String->HalloweenCommandProcessor,protected,private,2,[comp533.client.ClientRemoteObject],[private]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,methodAccessModifierUnmatched,init:String[]->void,protected,None,3,No Referencing Method,No Access Modifiers
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,expectedSignature,.*:String->void,comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,classHasExactlyOneInterface,comp533.client.ClientRemoteObject,No Tag
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,expectedMethodCall,util.trace.port.consensus.ProposedStateSet!newCase:Object;String;float;Object->ProposedStateSet,Some method (inCoupler:String->void),comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,expectedMethodCall,stringProcessors.HalloweenCommandProcessor!processCommand:String->void,Some method (inCoupler:String->void),comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,expectedMethodCall,util.trace.port.consensus.ProposalLearnedNotificationReceived!newCase:Object;String;float;Object->ProposalLearnedNotificationReceived,Some method (inCoupler:String->void),comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,publicMethodsDoNotOverride,[public  processArgs:String[]->void]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\client\ClientRemoteObject.java,classHasAtLeastOneInterface,comp533.client.ClientRemoteObject,No Tag
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameNotInDictionary,comp533.nondistributedTrickOrTreat.Main,nondistributed
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,comp
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,trick
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,or
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,treat
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,main
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,args,args
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,tags,comp533.registry.TrickOrTreatRegistry,@DistributedTags.REGISTRY+@DistributedTags.RMI
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,comp
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,registry
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,trick
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,or
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,treat
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,SERVER_PORT,server
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,SERVER_PORT,port
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,rmiRegistry,rmi
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,rmiRegistry,registry
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,scanner,scanner
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,args,args
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedMethodCall,java.lang.Throwable!printStackTrace:->void,Some method (main:String[]->void),comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedMethodCall,assignments.util.mainArgs.RegistryArgsProcessor!getRegistryPort:String[]->int,Some method (main:String[]->void),comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedMethodCall,java.rmi.registry.LocateRegistry!createRegistry:int->Registry,Some method (main:String[]->void),comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedMethodCall,java.util.Scanner!nextLine:->String,Some method (main:String[]->void),comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedSignature,main:String[]->void,comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,missingMethodCall,util.trace.port.rpc.rmi.RMIRegistryCreated!newCase:Object;int->RMIRegistryCreated,No method,comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\Server.java,tags,comp533.server.Server,@DistributedTags.SERVER+@DistributedTags.RMI
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\Server.java,nameInDictionary,comp533.server.Server,comp
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\Server.java,nameInDictionary,comp533.server.Server,server
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\Server.java,nameInDictionary,server,server
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\Server.java,nameInDictionary,args,args
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\Server.java,variableHasClassType,ServerRemoteObject,server
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\Server.java,expectedSignature,main:String[]->void,comp533.server.Server:[@DistributedTags.SERVER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\Server.java,expectedMethodCall,@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI!.*:String[]->void,Some method (main:String[]->void),comp533.server.Server:[@DistributedTags.SERVER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,tags,comp533.server.ServerConfigurer,@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,nameNotInDictionary,comp533.server.ServerConfigurer,configurer
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,nameInDictionary,comp533.server.ServerConfigurer,comp
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,nameInDictionary,comp533.server.ServerConfigurer,server
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingSuperType,assignments.util.inputParameters.AnAbstractSimulationParametersBean,@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.interactiveMethodInvocation.SimulationParametersControllerFactory!addSimulationParameterListener:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,assignments.util.mainArgs.ServerArgsProcessor!getRegistryPort:String[]->int,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.rpc.rmi.RMIRegistryLocated!newCase:Object;String;int;java.rmi.registry.Registry->RMIRegistryLocated,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,assignments.util.inputParameters.AnAbstractSimulationParametersBean!trace:boolean->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.lang.Throwable!printStackTrace:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,assignments.util.mainArgs.ServerArgsProcessor!getRegistryHost:String[]->String,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.factories.FactoryTraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.interactiveMethodInvocation.SimulationParametersControllerFactory!getSingleton:->SimulationParametersController,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.rpc.rmi.RMIObjectRegistered!newCase:Object;String;Object;java.rmi.registry.Registry->RMIObjectRegistered,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.rmi.registry.Registry!.*bind:String;java.rmi.Remote->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.misc.ThreadDelayed!enablePrint:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.PortTraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.io.PrintStream!println:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.rmi.registry.LocateRegistry!getRegistry:String;int->Registry,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.lang.System!exit:int->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.rmi.server.UnicastRemoteObject!exportObject:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.interactiveMethodInvocation.SimulationParametersControllerFactory!processCommands:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.rpc.rmi.RMITraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.consensus.ConsensusTraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingSignature,.*:String[]->void,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerConfigurer.java,missingSignature,quit:int->void,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,tags,comp533.server.ServerRemoteInterface,@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,comp
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,server
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,remote
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,interface
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aClient,a
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aClient,client
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,originalClient,original
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,originalClient,client
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,variableHasInterfaceType,ClientRemoteInterface,aClient
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteInterface.java,variableHasInterfaceType,ClientRemoteInterface,originalClient
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,tags,comp533.server.ServerRemoteObject,@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,comp
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,server
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,remote
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,object
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,clientList,client
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,clientList,list
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,rmi
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,server
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,host
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,name
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,rmi
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,server
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,port
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,SERVER_NAME,server
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,SERVER_NAME,name
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,args,args
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aClient,a
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aClient,client
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,client,client
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,originalClient,original
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,originalClient,client
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,rmiRegistry,rmi
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,rmiRegistry,registry
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,server,server
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ClientRemoteInterface,aClient
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ClientRemoteInterface,originalClient
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ClientRemoteInterface,client
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ServerRemoteInterface,server
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedInterface,java.rmi.Remote,@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,missingSignature,.*:String;String->void,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedSignature,.*:String;@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI->void,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,noSpuriousMethodCall,java.rmi.registry.Registry!lookup:String->Remote,No method,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedMethodCall,@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI!.*:*->.*,Some method (processArgs:String[]->void),comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedMethodCall,@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI!.*:*->.*,Some method (processArgs:String[]->void),comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,classHasExactlyOneInterface,comp533.server.ServerRemoteObject,No Tag
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,publicMethodsDoNotOverride,[public  processArgs:String[]->void]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,methodAccessModifierMatched,init:String[]->void,protected,[comp533.server.ServerRemoteObject],[protected]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,classHasAtLeastOneInterface,comp533.server.ServerRemoteObject,No Tag
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,classDecomposition,[[public  processArgs:String[]->void, protected  init:String[]->void], [public  registerClient:comp533.client.ClientRemoteInterface->void, public  broadcast:String;comp533.client.ClientRemoteInterface->void]]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,missingMethodCall,util.trace.port.consensus.ProposalLearnedNotificationSent!newCase:Object;String;float;Object->ProposalLearnedNotificationSent,No method,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 19:13:04 EDT 2022,true,comp533\server\ServerRemoteObject.java,missingMethodCall,util.trace.port.consensus.RemoteProposeRequestReceived!newCase:Object;String;float;Object->RemoteProposeRequestReceived,No method,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:56 EDT 2022,true,comp533\checks\Checks.java,expectedTypes,[@DistributedTags.CLIENT+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.REGISTRY+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI, @DistributedTags.SERVER+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\checks\Checks.java,expectedTypes,[@DistributedTags.CLIENT+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI, @DistributedTags.REGISTRY+@DistributedTags.RMI, @DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI, @DistributedTags.SERVER+@DistributedTags.RMI, @DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI, @DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,comp533.checks.Checks,comp
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,comp533.checks.Checks,checks
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,traces,traces
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,length,length
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,time,time
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,timer,timer
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\checks\Checks.java,nameInDictionary,args,args
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\Client.java,tags,comp533.client.Client,@DistributedTags.CLIENT+@DistributedTags.RMI
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\Client.java,nameInDictionary,comp533.client.Client,comp
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\Client.java,nameInDictionary,comp533.client.Client,client
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\Client.java,nameInDictionary,client,client
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\Client.java,nameInDictionary,args,args
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\Client.java,variableHasClassType,ClientRemoteObject,client
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\Client.java,expectedMethodCall,@DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI!.*:String[]->void,Some method (main:String[]->void),comp533.client.Client:[@DistributedTags.CLIENT+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\Client.java,expectedSignature,main:String[]->void,comp533.client.Client:[@DistributedTags.CLIENT+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientConfigurer.java,nameInDictionary,comp533.client.ClientConfigurer,comp
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientConfigurer.java,nameInDictionary,comp533.client.ClientConfigurer,client
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientConfigurer.java,nameNotInDictionary,comp533.client.ClientConfigurer,configurer
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,tags,comp533.client.ClientOutCoupler,@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,comp
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,client
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,out
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,comp533.client.ClientOutCoupler,coupler
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,ObservingServer,observing
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,ObservingServer,server
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,originalClient,original
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,originalClient,client
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,newCommand,new
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,newCommand,command
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,anEvent,an
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,nameInDictionary,anEvent,event
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasInterfaceType,ServerRemoteInterface,ObservingServer
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasInterfaceType,ClientRemoteInterface,originalClient
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasInterfaceType,ServerRemoteInterface,anObservingServer
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,variableHasClassType,ClientRemoteObject,aClient
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,missingMethodCall,util.trace.port.consensus.RemoteProposeRequestSent!newCase:Object;String;float;Object->RemoteProposeRequestSent,No method,comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,missingMethodCall,util.misc.ThreadSupport!sleep:long->void,No method,comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,missingMethodCall,assignments.util.inputParameters.AnAbstractSimulationParametersBean!getDelay:->int,No method,comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedMethodCall,java.beans.PropertyChangeEvent!getPropertyName:->String,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedMethodCall,java.beans.PropertyChangeEvent!getNewValue:->Object,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedMethodCall,@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI!.*:*->.*,Some method (propertyChange:java.beans.PropertyChangeEvent->void),comp533.client.ClientOutCoupler:[@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,expectedInterface,java.beans.PropertyChangeListener,@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,publicMethodsOverride,[]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientOutCoupler.java,classHasAtLeastOneInterface,comp533.client.ClientOutCoupler,No Tag
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteInterface.java,tags,comp533.client.ClientRemoteInterface,@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,comp
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,client
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,remote
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,comp533.client.ClientRemoteInterface,interface
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteInterface.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,tags,comp533.client.ClientRemoteObject,@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,comp
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,client
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,remote
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,comp533.client.ClientRemoteObject,object
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,commandProcessor,command
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,commandProcessor,processor
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,NUM_EXPERIMENT_COMMANDS,num
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,NUM_EXPERIMENT_COMMANDS,experiment
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,NUM_EXPERIMENT_COMMANDS,commands
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_1,experiment
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_1,command
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_2,experiment
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,EXPERIMENT_COMMAND_2,command
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,simulationCoupler,simulation
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,simulationCoupler,coupler
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,server,server
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aProposalNumber,a
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aProposalNumber,proposal
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aProposalNumber,number
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,rmi
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,server
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,host
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,name
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,rmi
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,server
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,port
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,SERVER_NAME,server
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,SERVER_NAME,name
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,CLIENT_NAME,client
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,CLIENT_NAME,name
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aPrefix,a
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aPrefix,prefix
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,args,args
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,rmiRegistry,rmi
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,rmiRegistry,registry
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,clientOutCoupler,client
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,clientOutCoupler,out
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,clientOutCoupler,coupler
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aCommand,a
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,nameInDictionary,aCommand,command
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,variableHasInterfaceType,ServerRemoteInterface,server
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,variableHasClassType,ClientOutCoupler,clientOutCoupler
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,classHasExactlyOneInterface,comp533.client.ClientRemoteObject,No Tag
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,expectedSignature,.*:String->void,comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,expectedMethodCall,util.trace.port.consensus.ProposedStateSet!newCase:Object;String;float;Object->ProposedStateSet,Some method (inCoupler:String->void),comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,expectedMethodCall,stringProcessors.HalloweenCommandProcessor!processCommand:String->void,Some method (inCoupler:String->void),comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,expectedMethodCall,util.trace.port.consensus.ProposalLearnedNotificationReceived!newCase:Object;String;float;Object->ProposalLearnedNotificationReceived,Some method (inCoupler:String->void),comp533.client.ClientRemoteObject:[@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,publicMethodsDoNotOverride,[public  processArgs:String[]->void]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,expectedInterface,java.rmi.Remote,@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,classHasAtLeastOneInterface,comp533.client.ClientRemoteObject,No Tag
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,methodAccessModifierUnmatched,createSimulation:String->HalloweenCommandProcessor,protected,private,2,[comp533.client.ClientRemoteObject],[private]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\client\ClientRemoteObject.java,methodAccessModifierUnmatched,init:String[]->void,protected,None,3,No Referencing Method,No Access Modifiers
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,comp
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,trick
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,or
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,treat
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,comp533.nondistributedTrickOrTreat.Main,main
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameInDictionary,args,args
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\nondistributedTrickOrTreat\Main.java,nameNotInDictionary,comp533.nondistributedTrickOrTreat.Main,nondistributed
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,tags,comp533.registry.TrickOrTreatRegistry,@DistributedTags.REGISTRY+@DistributedTags.RMI
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,comp
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,registry
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,trick
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,or
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,comp533.registry.TrickOrTreatRegistry,treat
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,SERVER_PORT,server
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,SERVER_PORT,port
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,rmiRegistry,rmi
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,rmiRegistry,registry
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,scanner,scanner
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,nameInDictionary,args,args
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedSignature,main:String[]->void,comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,missingMethodCall,util.trace.port.rpc.rmi.RMIRegistryCreated!newCase:Object;int->RMIRegistryCreated,No method,comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedMethodCall,java.lang.Throwable!printStackTrace:->void,Some method (main:String[]->void),comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedMethodCall,assignments.util.mainArgs.RegistryArgsProcessor!getRegistryPort:String[]->int,Some method (main:String[]->void),comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedMethodCall,java.rmi.registry.LocateRegistry!createRegistry:int->Registry,Some method (main:String[]->void),comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\registry\TrickOrTreatRegistry.java,expectedMethodCall,java.util.Scanner!nextLine:->String,Some method (main:String[]->void),comp533.registry.TrickOrTreatRegistry:[@DistributedTags.REGISTRY+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\Server.java,tags,comp533.server.Server,@DistributedTags.SERVER+@DistributedTags.RMI
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\Server.java,nameInDictionary,comp533.server.Server,comp
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\Server.java,nameInDictionary,comp533.server.Server,server
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\Server.java,nameInDictionary,server,server
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\Server.java,nameInDictionary,args,args
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\Server.java,variableHasClassType,ServerRemoteObject,server
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\Server.java,expectedMethodCall,@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI!.*:String[]->void,Some method (main:String[]->void),comp533.server.Server:[@DistributedTags.SERVER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\Server.java,expectedSignature,main:String[]->void,comp533.server.Server:[@DistributedTags.SERVER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,tags,comp533.server.ServerConfigurer,@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,nameInDictionary,comp533.server.ServerConfigurer,comp
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,nameInDictionary,comp533.server.ServerConfigurer,server
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,nameNotInDictionary,comp533.server.ServerConfigurer,configurer
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingSuperType,assignments.util.inputParameters.AnAbstractSimulationParametersBean,@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.interactiveMethodInvocation.SimulationParametersControllerFactory!addSimulationParameterListener:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,assignments.util.mainArgs.ServerArgsProcessor!getRegistryPort:String[]->int,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.rpc.rmi.RMIRegistryLocated!newCase:Object;String;int;java.rmi.registry.Registry->RMIRegistryLocated,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,assignments.util.inputParameters.AnAbstractSimulationParametersBean!trace:boolean->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.lang.Throwable!printStackTrace:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,assignments.util.mainArgs.ServerArgsProcessor!getRegistryHost:String[]->String,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.factories.FactoryTraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.interactiveMethodInvocation.SimulationParametersControllerFactory!getSingleton:->SimulationParametersController,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.rpc.rmi.RMIObjectRegistered!newCase:Object;String;Object;java.rmi.registry.Registry->RMIObjectRegistered,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.rmi.registry.Registry!.*bind:String;java.rmi.Remote->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.misc.ThreadDelayed!enablePrint:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.PortTraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.io.PrintStream!println:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.rmi.registry.LocateRegistry!getRegistry:String;int->Registry,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.lang.System!exit:int->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,java.rmi.server.UnicastRemoteObject!exportObject:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.interactiveMethodInvocation.SimulationParametersControllerFactory!processCommands:*->.*,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.rpc.rmi.RMITraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingMethodCall,util.trace.port.consensus.ConsensusTraceUtility!setTracing:->void,No method,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingSignature,.*:String[]->void,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerConfigurer.java,missingSignature,quit:int->void,comp533.server.ServerConfigurer:[@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteInterface.java,tags,comp533.server.ServerRemoteInterface,@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,comp
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,server
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,remote
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,comp533.server.ServerRemoteInterface,interface
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aClient,a
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aClient,client
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,originalClient,original
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteInterface.java,nameInDictionary,originalClient,client
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteInterface.java,variableHasInterfaceType,ClientRemoteInterface,aClient
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteInterface.java,variableHasInterfaceType,ClientRemoteInterface,originalClient
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,tags,comp533.server.ServerRemoteObject,@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,comp
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,server
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,remote
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,comp533.server.ServerRemoteObject,object
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,clientList,client
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,clientList,list
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,rmi
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,server
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,host
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_HOST_NAME,name
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,rmi
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,server
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,RMI_SERVER_PORT,port
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,SERVER_NAME,server
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,SERVER_NAME,name
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,args,args
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aClient,a
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aClient,client
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,client,client
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aNewCommand,a
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aNewCommand,new
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,aNewCommand,command
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,originalClient,original
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,originalClient,client
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,rmiRegistry,rmi
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,rmiRegistry,registry
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,nameInDictionary,server,server
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ClientRemoteInterface,aClient
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ClientRemoteInterface,originalClient
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ClientRemoteInterface,client
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,variableHasInterfaceType,ServerRemoteInterface,server
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,missingMethodCall,util.trace.port.consensus.ProposalLearnedNotificationSent!newCase:Object;String;float;Object->ProposalLearnedNotificationSent,No method,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,missingMethodCall,util.trace.port.consensus.RemoteProposeRequestReceived!newCase:Object;String;float;Object->RemoteProposeRequestReceived,No method,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,classHasExactlyOneInterface,comp533.server.ServerRemoteObject,No Tag
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedSignature,.*:String;@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI->void,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,missingSignature,.*:String;String->void,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedInterface,java.rmi.Remote,@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedMethodCall,@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI!.*:*->.*,Some method (processArgs:String[]->void),comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,expectedMethodCall,@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI!.*:*->.*,Some method (processArgs:String[]->void),comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,publicMethodsDoNotOverride,[public  processArgs:String[]->void]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,classHasAtLeastOneInterface,comp533.server.ServerRemoteObject,No Tag
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,classDecomposition,[[protected  init:String[]->void, public  processArgs:String[]->void], [public  broadcast:String;comp533.client.ClientRemoteInterface->void, public  registerClient:comp533.client.ClientRemoteInterface->void]]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,methodAccessModifierMatched,init:String[]->void,protected,[comp533.server.ServerRemoteObject],[protected]
+1,Sun Mar 20 21:36:57 EDT 2022,true,comp533\server\ServerRemoteObject.java,noSpuriousMethodCall,java.rmi.registry.Registry!lookup:String->Remote,No method,comp533.server.ServerRemoteObject:[@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI]
