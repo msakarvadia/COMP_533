@@ -1,4 +1,4 @@
-package comp533.client;
+package client;
 
 import util.annotations.Tags;
 import util.misc.ThreadSupport;
@@ -13,15 +13,22 @@ import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 
 import assignments.util.mainArgs.ClientArgsProcessor;
-import comp533.server.ServerRemoteInterface;
 import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;
 import coupledsims.Simulation;
 import coupledsims.Simulation1;
 import main.BeauAndersonFinalProject;
+import server.ServerRemoteInterface;
 import stringProcessors.HalloweenCommandProcessor;
-
+import util.trace.factories.FactoryTraceUtility;
+import util.trace.misc.ThreadDelayed;
+import util.trace.port.PortTraceUtility;
+import util.trace.port.consensus.ConsensusTraceUtility;
 import util.trace.port.consensus.ProposalLearnedNotificationReceived;
 import util.trace.port.consensus.ProposedStateSet;
+import util.trace.port.nio.NIOTraceUtility;
+import util.trace.port.rpc.rmi.RMIObjectLookedUp;
+import util.trace.port.rpc.rmi.RMIRegistryLocated;
+import util.trace.port.rpc.rmi.RMITraceUtility;
 
 @Tags({ DistributedTags.CLIENT_REMOTE_OBJECT, DistributedTags.RMI })
 public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulations implements ClientRemoteInterface {
@@ -31,7 +38,7 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 	public static final String EXPERIMENT_COMMAND_2 = "undo";
 	protected PropertyChangeListener simulationCoupler;
 	ServerRemoteInterface server = null;
-	int aProposalNumber = 0;
+	
 
 	private static String RMI_SERVER_HOST_NAME;
 	private static int RMI_SERVER_PORT;
@@ -62,6 +69,17 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 				//ClientArgsProcessor.getServerHost(args);
 		CLIENT_NAME = ClientArgsProcessor.getClientName(args);
 	}
+	
+	@Override
+	protected void setTracing() {
+		PortTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();		
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		trace(true);
+	}
 
 	@Override
 	protected void init(String[] args) {
@@ -75,6 +93,7 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 		Registry rmiRegistry = null;
 		try {
 			rmiRegistry = LocateRegistry.getRegistry(RMI_SERVER_HOST_NAME, RMI_SERVER_PORT);
+			RMIRegistryLocated.newCase(this, RMI_SERVER_HOST_NAME, RMI_SERVER_PORT, rmiRegistry);
 		} catch (RemoteException e3) {
 			// TODO Auto-generated catch block
 			e3.printStackTrace();
@@ -83,6 +102,7 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 		
 		try {
 			server = (ServerRemoteInterface) rmiRegistry.lookup(SERVER_NAME);
+			RMIObjectLookedUp.newCase(this, server, SERVER_NAME, rmiRegistry);
 		} catch (AccessException e2) {
 			// TODO Auto-generated catch block
 			e2.printStackTrace();
@@ -107,7 +127,7 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 			e.printStackTrace();
 		}
 
-		clientOutCoupler = new ClientOutCoupler(server, this);
+		clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME);
 		// Add propertyChangeListener
 		commandProcessor.addPropertyChangeListener(clientOutCoupler);
 		
@@ -115,13 +135,13 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 	}
 
 	@Override
-	public void inCoupler(String aNewCommand) {
+	public void inCoupler(String aNewCommand, int proposalNumber) {
+		//final int aProposalNumber = proposalNumber;
 		System.out.println("recieved broadcased command: "+ aNewCommand);
-		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, aNewCommand);
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);
 		commandProcessor.processCommand(aNewCommand);
-		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, aNewCommand);
+		ProposedStateSet.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);
 		System.out.println("executed command");
-		aProposalNumber++;
 		
 	}
 	
@@ -135,6 +155,11 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 		//	ThreadSupport.sleep(aDelay);
 		//}
 		commandProcessor.setInputString(aCommand); // all commands go to the first command window
+	}
+	
+	@Override	
+	public void quit(int aCode) {
+		System.exit(aCode);
 	}
 	
 	@Override

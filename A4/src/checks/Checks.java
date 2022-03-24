@@ -1,4 +1,4 @@
-package comp533.checks;
+package checks;
 
 import grader.basics.execution.BasicProjectExecution;
 import gradingTools.comp533s22.assignment4.S22Assignment4Suite;

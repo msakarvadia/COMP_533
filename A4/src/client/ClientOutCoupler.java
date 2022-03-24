@@ -1,23 +1,29 @@
-package comp533.client;
+package client;
 
 import util.annotations.Tags;
 import util.tags.DistributedTags;
+import util.trace.port.consensus.RemoteProposeRequestSent;
 import util.trace.trickOrTreat.LocalCommandObserved;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.rmi.RemoteException;
 
-import comp533.server.ServerRemoteInterface;
+import server.ServerRemoteInterface;
 
 @Tags({DistributedTags.CLIENT_OUT_COUPLER, DistributedTags.RMI})
 public class ClientOutCoupler implements PropertyChangeListener{
 	ServerRemoteInterface ObservingServer;
 	ClientRemoteInterface originalClient;
+	String ORIGINAL_CLIENT_NAME;
 	
-	public ClientOutCoupler (ServerRemoteInterface anObservingServer, ClientRemoteObject aClient) {
+	int aProposalNumber = 0;
+	
+	public ClientOutCoupler (ServerRemoteInterface anObservingServer, ClientRemoteObject aClient, String aClientName) {
 		ObservingServer = anObservingServer;
 		originalClient = aClient;
+		ORIGINAL_CLIENT_NAME = aClientName;
+		
 		
 	}
 	
@@ -28,11 +34,13 @@ public class ClientOutCoupler implements PropertyChangeListener{
 		LocalCommandObserved.newCase(this, newCommand);
 		
 		System.out.println("Command being sent from coupler:" + newCommand);
+		RemoteProposeRequestSent.newCase(originalClient, ORIGINAL_CLIENT_NAME, aProposalNumber, newCommand);
 		try {
-			ObservingServer.broadcast(newCommand, originalClient);
+			ObservingServer.broadcast(newCommand, originalClient, aProposalNumber);
 		} catch (RemoteException e) {
 			e.printStackTrace();
 		}
+		aProposalNumber++;
 	
 	}
 

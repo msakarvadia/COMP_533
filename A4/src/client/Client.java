@@ -1,4 +1,4 @@
-package comp533.client;
+package client;
 
 import util.annotations.Tags;
 import util.tags.DistributedTags;

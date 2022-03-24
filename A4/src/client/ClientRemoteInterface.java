@@ -1,4 +1,4 @@
-package comp533.client;
+package client;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
@@ -11,6 +11,6 @@ public interface ClientRemoteInterface  extends Remote{
 
 	//void processArgs(String[] args);
 	
-	void inCoupler(String aNewCommand) throws RemoteException;
+	void inCoupler(String aNewCommand, int aProposalNumber) throws RemoteException;
 
 }
