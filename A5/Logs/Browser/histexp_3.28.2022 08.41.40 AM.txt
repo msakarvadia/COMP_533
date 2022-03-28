@@ -1,0 +1,28 @@
+3/28/2022 08:45:56 AM	Lectures - Google Drive	https://drive.google.com/drive/folders/14bIoaPQLNDP9Oxv1-LtgKhevNiICuqPr
+3/28/2022 08:50:16 AM	Assignments - Google Drive	https://drive.google.com/drive/folders/14bJKIkxmF-1OjeBLhW7bPJKULjSxNv9j
+3/28/2022 08:56:12 AM	Re-Reading Tanenbaum’s Critique of RPC 30 Years Later | Computer Science	https://www.bu.edu/csmet/2018/08/30/re-reading-tanenbaums-critique-of-rpc-30-years-later/
+3/28/2022 09:07:07 AM	5DistributedGIPCTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kUgVYMyEzNH6k1ArifT8lh4hnByFHhiH/edit
+3/28/2022 09:45:00 AM	java enum - Google Search	https://www.google.com/search?q=java+enum&rlz=1C1CHBF_enUS939US939&oq=java+enum&aqs=chrome..69i57.2155j0j7&sourceid=chrome&ie=UTF-8
+3/28/2022 09:45:03 AM	Enum Types (The Java™ Tutorials > Learning the Java Language > Classes and Objects)	https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
+3/28/2022 09:58:27 AM	GIPC/src/examples/gipc/counter/simple at master · pdewan/GIPC	https://github.com/pdewan/GIPC/tree/master/src/examples/gipc/counter/simple
+3/28/2022 09:58:29 AM	GIPC/ASimpleGIPCRegistryAndCounterServer.java at master · pdewan/GIPC	https://github.com/pdewan/GIPC/blob/master/src/examples/gipc/counter/simple/ASimpleGIPCRegistryAndCounterServer.java
+3/28/2022 10:11:09 AM	Lectures - Google Drive	https://drive.google.com/drive/folders/14bIoaPQLNDP9Oxv1-LtgKhevNiICuqPr
+3/28/2022 10:41:18 AM	GIPC/src/examples/gipc/counter/simple at master · pdewan/GIPC	https://github.com/pdewan/GIPC/tree/master/src/examples/gipc/counter/simple
+3/28/2022 10:41:20 AM	GIPC/ASimpleGIPCCounterClient.java at master · pdewan/GIPC	https://github.com/pdewan/GIPC/blob/master/src/examples/gipc/counter/simple/ASimpleGIPCCounterClient.java
+3/28/2022 11:09:13 AM	GIPC/src/examples/gipc/counter/simple at master · pdewan/GIPC	https://github.com/pdewan/GIPC/tree/master/src/examples/gipc/counter/simple
+3/28/2022 11:09:17 AM	GIPC/ASimpleGIPCRegistryAndCounterServer.java at master · pdewan/GIPC	https://github.com/pdewan/GIPC/blob/master/src/examples/gipc/counter/simple/ASimpleGIPCRegistryAndCounterServer.java
+3/28/2022 11:09:11 AM	GIPC/ASimpleGIPCCounterClient.java at master · pdewan/GIPC	https://github.com/pdewan/GIPC/blob/master/src/examples/gipc/counter/simple/ASimpleGIPCCounterClient.java
+3/28/2022 11:35:17 AM	COMP 533 (16 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7
+3/28/2022 11:35:02 AM	COMP 533 (16 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=111
+3/28/2022 12:15:27 PM	5DistributedGIPCTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kUgVYMyEzNH6k1ArifT8lh4hnByFHhiH/edit
+3/28/2022 12:19:07 PM	5DistributedGIPCTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kUgVYMyEzNH6k1ArifT8lh4hnByFHhiH/edit
+3/28/2022 12:19:08 PM	(Server)java.net.BindException: Address already in use: bind - Google Search	https://www.google.com/search?q=(Server)java.net.BindException%3A+Address+already+in+use%3A+bind&rlz=1C1CHBF_enUS939US939&oq=(Server)java.net.BindException%3A+Address+already+in+use%3A+bind&aqs=chrome..69i57.291j0j7&sourceid=chrome&ie=UTF-8
+3/28/2022 12:19:11 PM	Java.net.BindException: Address already in use: JVM_Bind:8080 Solution	https://javarevisited.blogspot.com/2011/12/address-already-use-jvm-bind-exception.html#:~:text=1.-,Address%20already%20in%20use%3A%20JVM_Bind%3A8080,here%20its%208080%2C%20is%20failed.
+3/28/2022 12:30:17 PM	TrickOrTreat/CoupledTrickOrTreat/src/coupledsims at master · pdewan/TrickOrTreat	https://github.com/pdewan/TrickOrTreat/tree/master/CoupledTrickOrTreat/src/coupledsims
+3/28/2022 12:30:18 PM	TrickOrTreat/AStandAloneTwoCoupledHalloweenSimulations.java at master · pdewan/TrickOrTreat	https://github.com/pdewan/TrickOrTreat/blob/master/CoupledTrickOrTreat/src/coupledsims/AStandAloneTwoCoupledHalloweenSimulations.java
+3/28/2022 13:14:15 PM	enum java - Google Search	https://www.google.com/search?q=enum+java&rlz=1C1CHBF_enUS939US939&oq=enum+java&aqs=chrome..69i57j69i60.2179j0j4&sourceid=chrome&ie=UTF-8
+3/28/2022 13:14:18 PM	Java Enums	https://www.w3schools.com/java/java_enums.asp
+3/28/2022 13:14:21 PM	Java Tryit Editor v1.0	https://www.w3schools.com/java/tryjava.asp?filename=demo_enums
+3/28/2022 13:21:18 PM	java.lang.IllegalArgumentException: argument type mismatch - Google Search	https://www.google.com/search?q=java.lang.IllegalArgumentException%3A+argument+type+mismatch&rlz=1C1CHBF_enUS939US939&oq=java.lang.IllegalArgumentException%3A+argument+type+mismatch&aqs=chrome..69i57.239j0j4&sourceid=chrome&ie=UTF-8
+3/28/2022 13:21:06 PM	java.lang.IllegalArgumentException: argument type mismatch while using Reflection - Stack Overflow	https://stackoverflow.com/questions/13438369/java-lang-illegalargumentexception-argument-type-mismatch-while-using-reflectio
+3/28/2022 13:21:21 PM	ERROR: "java.lang.IllegalArgumentException: argument type mismatch" while creating an item in PIM	https://knowledge.informatica.com/s/article/566871?language=en_US

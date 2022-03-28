@@ -1,0 +1,12 @@
+server.remote.ServerRemoteInterfaceRMI,@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI
+client.ClientOutCoupler,@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI+@DistributedTags.GIPC
+server.remote.ServerRemoteInterfaceGIPC,@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.GIPC
+server.ServerConfigure,@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI+@DistributedTags.GIPC
+registry.TrickOrTreatRegistry,@DistributedTags.REGISTRY+@DistributedTags.RMI
+client.ClientRemoteInterfaceRMI,@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI
+client.ClientRemoteInterfaceGIPC,@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.GIPC
+client.ClientConfigure,@DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI+@DistributedTags.GIPC
+server.Server,@DistributedTags.SERVER+@DistributedTags.RMI+@DistributedTags.GIPC
+client.Client,@DistributedTags.CLIENT+@DistributedTags.RMI+@DistributedTags.GIPC
+client.ClientRemoteObject,@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.GIPC
+server.remote.ServerRemoteObjectGIPC,@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.GIPC

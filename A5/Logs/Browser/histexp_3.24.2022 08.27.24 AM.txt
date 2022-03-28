@@ -1,0 +1,36 @@
+3/24/2022 08:39:01 AM	COMP 533 (17 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=91
+3/24/2022 08:39:05 AM	4DistributedRMITrickOrTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1k4cSrsK1ea7qF8PmW7vw9vFUZblXaU6b?rtpof=true&authuser=dewan%40cs.unc.edu&usp=drive_fs
+3/24/2022 08:39:05 AM	4DistributedRMITrickOrTreat_s22.docx - Google Docs	https://docs.google.com/document/u/0/d/1k4cSrsK1ea7qF8PmW7vw9vFUZblXaU6b/edit?rtpof=true&usp=drive_fs
+3/24/2022 08:39:05 AM	4DistributedRMITrickOrTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1k4cSrsK1ea7qF8PmW7vw9vFUZblXaU6b/edit?rtpof=true
+3/24/2022 08:39:14 AM	4DistributedRMITrickOrTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1k4cSrsK1ea7qF8PmW7vw9vFUZblXaU6b/edit
+3/24/2022 08:39:18 AM	4DistributedRMITrickOrTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1k4cSrsK1ea7qF8PmW7vw9vFUZblXaU6b/edit#heading=h.gjdgxs
+3/24/2022 08:39:52 AM	4DistributedRMITrickOrTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1k4cSrsK1ea7qF8PmW7vw9vFUZblXaU6b/edit#
+3/24/2022 08:38:26 AM	COMP 533 (17 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=112
+3/24/2022 08:38:29 AM	5DistributedGIPCTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kUgVYMyEzNH6k1ArifT8lh4hnByFHhiH?rtpof=true&authuser=dewan%40cs.unc.edu&usp=drive_fs
+3/24/2022 08:38:30 AM	5DistributedGIPCTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/u/0/d/1kUgVYMyEzNH6k1ArifT8lh4hnByFHhiH/edit?rtpof=true&usp=drive_fs
+3/24/2022 08:38:30 AM	5DistributedGIPCTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kUgVYMyEzNH6k1ArifT8lh4hnByFHhiH/edit?rtpof=true
+3/24/2022 08:38:38 AM	5DistributedGIPCTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kUgVYMyEzNH6k1ArifT8lh4hnByFHhiH/edit
+3/24/2022 08:46:35 AM	TrickOrTreat/CoupledTrickOrTreat at master · pdewan/TrickOrTreat	https://github.com/pdewan/TrickOrTreat/tree/master/CoupledTrickOrTreat
+3/24/2022 08:46:35 AM	TrickOrTreat/CoupledTrickOrTreat/src at master · pdewan/TrickOrTreat	https://github.com/pdewan/TrickOrTreat/tree/master/CoupledTrickOrTreat/src
+3/24/2022 08:46:38 AM	TrickOrTreat/CoupledTrickOrTreat/src/coupledsims at master · pdewan/TrickOrTreat	https://github.com/pdewan/TrickOrTreat/tree/master/CoupledTrickOrTreat/src/coupledsims
+3/24/2022 08:46:40 AM	TrickOrTreat/AStandAloneTwoCoupledHalloweenSimulations.java at master · pdewan/TrickOrTreat	https://github.com/pdewan/TrickOrTreat/blob/master/CoupledTrickOrTreat/src/coupledsims/AStandAloneTwoCoupledHalloweenSimulations.java
+3/24/2022 08:46:32 AM	TrickOrTreat/CoupledTrickOrTreat at master · pdewan/TrickOrTreat	https://www.google.com/url?q=https://github.com/pdewan/TrickOrTreat/tree/master/CoupledTrickOrTreat&sa=D&source=docs&ust=1648129589721920&usg=AOvVaw1AAsVvp1zThX898zhGOvN9
+3/24/2022 09:48:58 AM	4DistributedRMITrickOrTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1k4cSrsK1ea7qF8PmW7vw9vFUZblXaU6b/edit#
+3/24/2022 10:44:28 AM	5DistributedGIPCTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kUgVYMyEzNH6k1ArifT8lh4hnByFHhiH/edit
+3/24/2022 10:44:28 AM	4DistributedRMITrickOrTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1k4cSrsK1ea7qF8PmW7vw9vFUZblXaU6b/edit#heading=h.1ke8j2uydff5
+3/24/2022 12:29:29 PM	COMP 533 (17 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=6
+3/24/2022 13:42:02 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+3/24/2022 13:42:01 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1
+3/24/2022 13:42:09 PM	Sakai @ UNC-Chapel Hill : COMP533.001.SP22 : Overview	https://sakai.unc.edu/portal/site/85a5fe43-6f9a-4650-b9b0-ad54401fbda1
+3/24/2022 13:42:11 PM	Sakai @ UNC-Chapel Hill : COMP533.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/85a5fe43-6f9a-4650-b9b0-ad54401fbda1/tool/6fdb19b7-0a65-4d5a-a320-8cc3c858c33a
+3/24/2022 13:41:59 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=fZJbT4MwGIb%2FCun9KMeQNYMEtwuXTEcGeuGN6eBTGkuL%2FYqHfy8bc5mJ2XXfQ98n3wJ5J3uWD7ZVO3gfAK3z1UmF7PiQksEopjkKZIp3gMzWrMzvNixwPdYbbXWtJXFyRDBWaLXUCocOTAnmQ9TwsNukpLW2R0Yp8jcu3EHVLjQDLVux32sJtnURNT2EBrTYlhVxVuMvhOKHvAs36rNXND0dy1%2BEhJNxB40wUFtallvirFcpeQ4TP%2FYghqgJkzBM6jnnCfCAJ1HURPEcRhniAGuFliubksALgpkXzoKo8hMW%2BSyePxGnOG28EaoR6vU6kP0kQnZbVcVsGvMIBo9DRgHJFges7FhsLkBfj%2BW%2FdEn2P0s8s1zQi4KprWf3Y%2BJ6VWgp6m8nl1J%2FLg1wCynxCc0my98byH4A&RelayState=ss%3Amem%3Ac272fb8d192081918dfe3c9bc03183474be259c20f37fb60bd502bf41dc191eb&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=oF3SWhCptHoUqKaJXU0fvuipnlaDu6%2Boh%2FbLxgFndBXc6UwgkMKb74i9Gw0VjhDhUQy3MHbHaiOXC3bhphJ9ht6v0NQQu2TssTwIomqBye7NzZuMWTTqeOyXCcDvcgYZ1t5DiTGdhTlH8qXKzw3beo0NZgl0hChtGzHgHvHoroXT0l4idsPTyK47yOXSrFqklRN%2BZkRWtVWo7yGSrobytBN61BThQj0HdJXoPJjOUtDh4k2vizbO35%2FLFLu7a1SNeku0kZzgwMCrQi%2BEBac1QjRbYAB7w0FQ40Grz5p6s%2BdsJCgJ6RLzwAhDBkPJI5VR%2Fl6%2B9QKxCOUadi5TBMdrDA%3D%3D
+3/24/2022 13:53:38 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Overview	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049
+3/24/2022 13:53:39 PM		https://sakai.unc.edu/portal/tool/dade49b9-d1b7-4801-97e0-e2e750d0c69b/synMainLite?time=1
+3/24/2022 13:53:40 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625
+3/24/2022 13:52:01 PM	5DistributedGIPCTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kUgVYMyEzNH6k1ArifT8lh4hnByFHhiH/edit
+3/24/2022 13:52:00 PM	4DistributedRMITrickOrTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1k4cSrsK1ea7qF8PmW7vw9vFUZblXaU6b/edit#heading=h.1ke8j2uydff5
+3/24/2022 14:02:32 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+3/24/2022 14:02:34 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049
+3/24/2022 14:02:37 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Resources	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/6bf90033-4f8a-4790-8abe-66175494add4
+3/24/2022 14:02:34 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625
+3/24/2022 15:03:40 PM	UNC-Chapel Hill Single Sign-On	https://sakai.unc.edu/Shibboleth.sso/Logout?return=https://sso.unc.edu/idp/logout.jsp
