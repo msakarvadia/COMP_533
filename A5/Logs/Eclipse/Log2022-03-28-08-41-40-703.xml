@@ -31514,3 +31514,41 @@ Enter (prefixes of) print, quit or a method and its parameters separated by comm
     <nextType><![CDATA[Other]]></nextType>
     <next><![CDATA[BalloonCommand]]></next>
   </Command>
+  <Command __id="8774" _type="ProgramExecutionEvent" className="(Unknown)" date="Mon Mar 28 14:02:58 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1648471300703" timestamp="19277733" type="Run" />
+  <Command __id="8777" _type="PauseCommand" date="Mon Mar 28 14:03:54 EDT 2022" range="30s-1m" starttimestamp="1648471300703" timestamp="19334116">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[56383]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="8782" _type="ProgramExecutionEvent" className="(Unknown)" date="Mon Mar 28 14:05:20 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1648471300703" timestamp="19419975" type="Run" />
+  <Command __id="8785" _type="PauseCommand" date="Mon Mar 28 15:31:04 EDT 2022" range=">1h" starttimestamp="1648471300703" timestamp="24563947">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[5143972]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[BalloonCommand]]></next>
+  </Command>
+  <Command __id="8784" _type="BalloonCommand" date="Mon Mar 28 15:31:04 EDT 2022" message="*******************************************
+Worked 0 minutes(fixed)/4 minutes(context based) from
+Mon Mar 28 13:41:40 EDT 2022 to Mon Mar 28 14:05:20 EDT 2022
+Edited 0 Projects: 
+Edited 0 Files: 
+Number of insert: 0
+Number of delete: 0
+" starttimestamp="1648471300703" timestamp="24563947">
+    <fineGrainedWorkTime><![CDATA[4]]></fineGrainedWorkTime>
+    <insert><![CDATA[0]]></insert>
+    <startTime><![CDATA[1648489300890]]></startTime>
+    <endTime><![CDATA[1648490720678]]></endTime>
+    <workTime><![CDATA[0]]></workTime>
+    <delete><![CDATA[0]]></delete>
+  </Command>
+  <Command __id="8787" _type="PauseCommand" date="Mon Mar 28 23:50:15 EDT 2022" range=">1h" starttimestamp="1648471300703" timestamp="54514540">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[BalloonCommand]]></prev>
+    <pause><![CDATA[29950590]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>

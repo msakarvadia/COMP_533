@@ -20,6 +20,6 @@ public interface ClientRemoteInterfaceGIPC  extends Remote{
 
 	HalloweenCommandProcessor createSimulation(String aPrefix) throws RemoteException;
 
-	void broadcastMetaState(boolean bool) throws RemoteException;
+	void broadcastMetaState(boolean broadcast) throws RemoteException;
 
 }

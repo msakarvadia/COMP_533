@@ -1,6 +1,7 @@
 package client;
 
 import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
 import util.misc.ThreadSupport;
 import util.tags.DistributedTags;
 
@@ -177,8 +178,7 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 			e.printStackTrace();
 		}
 		
-	
-
+		
 		clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME);
 		//clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);
 		// Add propertyChangeListener
@@ -207,6 +207,19 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 		//if (aDelay > 0) {
 		//	ThreadSupport.sleep(aDelay);
 		//}
+		IPCMechanism mechanism = getIPCMechanism();
+		System.out.println("IPC Mechanism");
+		System.out.println(mechanism);
+		if(mechanism.equals("GIPC")) {
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+		}
+		if(mechanism.equals("RMI")) {
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME);
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+		}
 		commandProcessor.setInputString(aCommand); // all commands go to the first command window
 	}
 	
@@ -228,7 +241,7 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 	}
 	
 	@Override
-	public void broadcastMetaState(boolean bool) {
+	public void broadcastMetaState(boolean broadcast) {
 		System.out.print("HERE in broadcase meta method");
 		//Broadcast meta State via RMI always
 	}
