@@ -14,7 +14,6 @@ import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 
 
-import assignments.util.inputParameters.SimulationParametersListener;
 import assignments.util.mainArgs.ClientArgsProcessor;
 import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;
 import coupledsims.Simulation;
@@ -61,6 +60,7 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 	private static int GIPC_SERVER_PORT;
 	protected static GIPCRegistry gipcRegistry;
 	private static String GIPC_SERVER_NAME ;
+	private static boolean broadcastIPCMechansim = false;
 	
 	PropertyChangeListener clientOutCoupler;
 
@@ -210,7 +210,10 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 		IPCMechanism mechanism = getIPCMechanism();
 		System.out.println("IPC Mechanism");
 		System.out.println(mechanism);
+		
 		if(mechanism.equals("GIPC")) {
+			//TODO if IPC mechanism changes
+			
 			commandProcessor.removePropertyChangeListener(clientOutCoupler);
 			clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);
 			commandProcessor.addPropertyChangeListener(clientOutCoupler);
@@ -242,8 +245,16 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 	
 	@Override
 	public void broadcastMetaState(boolean broadcast) {
-		System.out.print("HERE in broadcase meta method");
-		//Broadcast meta State via RMI always
+		broadcastIPCMechanism = broadcast;
+		
+	}
+	
+	@Override
+	public void changeIPCMechanism(IPCMechanism mechanism, int proposalNumber) {
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, proposalNumber, mechanism);
+		setIPCMechanism(mechanism);
+		ProposedStateSet.newCase(this, CLIENT_NAME, proposalNumber, mechanism);
+		
 	}
 
 

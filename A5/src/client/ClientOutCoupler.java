@@ -38,6 +38,8 @@ public class ClientOutCoupler implements PropertyChangeListener{
 		System.out.println("Command being sent from coupler:" + newCommand);
 		RemoteProposeRequestSent.newCase(originalClient, ORIGINAL_CLIENT_NAME, aProposalNumber, newCommand);
 		try {
+			//TODO need the client type to be that of a simulationParameterBean
+			//ObservingServer.broadcastIPCMechanism(IPCMechanism, originalClient, aProposalNumber, broadcast);
 			ObservingServer.broadcast(newCommand, originalClient, aProposalNumber);
 		} catch (RemoteException e) {
 			e.printStackTrace();

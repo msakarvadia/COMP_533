@@ -6,6 +6,7 @@ import java.rmi.RemoteException;
 import client.ClientRemoteInterfaceGIPC;
 import client.ClientRemoteInterfaceRMI;
 import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
 import util.tags.DistributedTags;
 
 @Tags({DistributedTags.SERVER_REMOTE_INTERFACE, DistributedTags.GIPC})
@@ -20,6 +21,9 @@ public interface ServerRemoteInterfaceGIPC  extends Remote{
 	void fakeMethodTwo(String stringOne, ClientRemoteInterfaceRMI client) throws RemoteException;
 
 	void createGIPCRegistry() throws RemoteException;
+
+	void broadcastIPCMechanism(IPCMechanism mechanism, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber,
+			boolean broadcast) throws RemoteException;
 	
 	
 

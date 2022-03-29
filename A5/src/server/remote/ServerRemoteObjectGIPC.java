@@ -12,6 +12,7 @@ import assignments.util.mainArgs.ServerArgsProcessor;
 import client.ClientRemoteInterfaceGIPC;
 import client.ClientRemoteInterfaceRMI;
 import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
 import util.misc.ThreadSupport;
 import util.tags.DistributedTags;
 
@@ -31,25 +32,23 @@ import util.trace.port.rpc.rmi.RMITraceUtility;
 import util.trace.port.rpc.gipc.GIPCObjectRegistered;
 import util.trace.port.rpc.gipc.GIPCRPCTraceUtility;
 import util.trace.port.rpc.gipc.GIPCRegistryCreated;
-import 	util.trace.port.rpc.rmi.RMIObjectRegistered;
+import util.trace.port.rpc.rmi.RMIObjectRegistered;
 
-@Tags({DistributedTags.SERVER_REMOTE_OBJECT, DistributedTags.RMI, DistributedTags.GIPC})
-public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements ServerRemoteInterfaceGIPC{
-	
+@Tags({ DistributedTags.SERVER_REMOTE_OBJECT, DistributedTags.RMI, DistributedTags.GIPC })
+public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements ServerRemoteInterfaceGIPC {
+
 	List<ClientRemoteInterfaceGIPC> clientListGIPC = new ArrayList<ClientRemoteInterfaceGIPC>();
-	
-	private static  String RMI_SERVER_HOST_NAME;
+
+	private static String RMI_SERVER_HOST_NAME;
 	private static int RMI_SERVER_PORT;
 	private static String SERVER_NAME;
-	
-	//A5
+
+	// A5
 	private static int GIPC_SERVER_PORT;
 	protected static GIPCRegistry gipcRegistry;
-	
-	//int aProposalNumber = 0;
-	
 
-	
+	// int aProposalNumber = 0;
+
 	@Override
 	public void processArgs(String[] args) {
 		System.out.println("Registry host:" + ClientArgsProcessor.getRegistryHost(args));
@@ -65,13 +64,10 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 		RMI_SERVER_PORT = ServerArgsProcessor.getRegistryPort(args);
 		SERVER_NAME = "SERVER";
 		GIPC_SERVER_PORT = ServerArgsProcessor.getGIPCServerPort(args);
-				//ClientArgsProcessor.getServerHost(args);
-		
-		
-		
+		// ClientArgsProcessor.getServerHost(args);
+
 	}
-	
-	
+
 	@Override
 	public void registerClientGIPC(ClientRemoteInterfaceGIPC aClient) {
 		clientListGIPC.add(aClient);
@@ -79,40 +75,71 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 	}
 
 	@Override
-	public void broadcast(String aNewCommand, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber) throws RemoteException {
-		
-		//TODO Check is this is where delay is needed
-		long aDelay = getDelay(); 
+	public void broadcast(String aNewCommand, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber)
+			throws RemoteException {
+
+		// TODO Check is this is where delay is needed
+		long aDelay = getDelay();
 		if (aDelay > 0) {
 			ThreadSupport.sleep(aDelay);
 		}
-		
-		System.out.println("Command recieved for broadcast: "+ aNewCommand);
+
+		System.out.println("Command recieved for broadcast: " + aNewCommand);
 		RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
-		
+
 		for (ClientRemoteInterfaceGIPC client : clientListGIPC) {
-			if(client.equals(originalClient)) {
+			if (client.equals(originalClient)) {
 				if (aNewCommand.charAt(0) == 'q') {
-					//Need to quit
+					// Need to quit
 					this.quit(0);
 				}
 				continue;
 			}
-			
+
 			client.inCoupler(aNewCommand, aProposalNumber);
 			ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
-			
+
 			if (aNewCommand.charAt(0) == 'q') {
-				//Need to quit
+				// Need to quit
 				this.quit(0);
 			}
 		}
-				
+
 	}
-	
+
+	@Override
+	public void broadcastIPCMechanism(IPCMechanism mechanism, ClientRemoteInterfaceGIPC originalClient,
+			int aProposalNumber, boolean broadcast) throws RemoteException {
+
+		// TODO Check is this is where delay is needed
+		long aDelay = getDelay();
+		if (aDelay > 0) {
+			ThreadSupport.sleep(aDelay);
+		}
+
+		System.out.println("Command recieved for broadcast: " + mechanism);
+		setIPCMechanism(mechanism);
+		setBroadcastMetaState(broadcast);
+		
+		RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, mechanism);
+
+		if (broadcast) {
+
+			for (ClientRemoteInterfaceGIPC client : clientListGIPC) {
+				if (client.equals(originalClient)) {
+					continue;
+				}
+
+				client.changeIPCMechanism(mechanism, aProposalNumber);
+				ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, mechanism);
+			}
+		}
+
+	}
+
 	@Override
 	protected void setTracing() {
-		//A5
+		// A5
 		FactoryTraceUtility.setTracing();
 		BeanTraceUtility.setTracing();
 		RMITraceUtility.setTracing();
@@ -120,12 +147,12 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 		ThreadDelayed.enablePrint();
 		GIPCRPCTraceUtility.setTracing();
 		NIOTraceUtility.setTracing();
-				
-		//A4
+
+		// A4
 		PortTraceUtility.setTracing();
 		RMITraceUtility.setTracing();
 		NIOTraceUtility.setTracing();
-		FactoryTraceUtility.setTracing();		
+		FactoryTraceUtility.setTracing();
 		ConsensusTraceUtility.setTracing();
 		ThreadDelayed.enablePrint();
 		trace(true);
@@ -133,65 +160,61 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 
 	@Override
 	protected void init(String[] args) {
-		
+
 		setTracing();
 
 		this.processArgs(args);
 		createGIPCRegistry();
-		
-		
+
 		try {
 			final Registry rmiRegistry = LocateRegistry.getRegistry(RMI_SERVER_HOST_NAME, RMI_SERVER_PORT);
 			RMIRegistryLocated.newCase(this, RMI_SERVER_HOST_NAME, RMI_SERVER_PORT, rmiRegistry);
-			//Create remote server object
-			
-			//create proxy of remote server object
-			//UnicastRemoteObject.exportObject(server, 0);
+			// Create remote server object
+
+			// create proxy of remote server object
+			// UnicastRemoteObject.exportObject(server, 0);
 			UnicastRemoteObject.exportObject(this, 0);
-			//send server to RMI server
-			//rmiRegistry.rebind(SERVER_NAME, server);
+			// send server to RMI server
+			// rmiRegistry.rebind(SERVER_NAME, server);
 			rmiRegistry.rebind(SERVER_NAME, this);
-			
+
 			RMIObjectRegistered.newCase(this, SERVER_NAME, (ServerRemoteInterfaceRMI) this, rmiRegistry);
-			
+
 			System.out.println("Server proxy sent to RMI Registry");
-			
-			
-			
-		} catch(Exception e){
+
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+
 	}
-	
+
 	@Override
-	public void  start (String[] args) {
+	public void start(String[] args) {
 		init(args);
-		
 
 	}
 
 	@Override
-	public void fakeMethod(String stringOne, String stringTwo){
+	public void fakeMethod(String stringOne, String stringTwo) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void fakeMethodTwo(String stringOne, ClientRemoteInterfaceRMI client) {
 		// TODO Auto-generated method stub
-		
+
 	}
-	
+
 	@Override
 	public void createGIPCRegistry() {
 		System.out.println("GIPC_SERVER_PORT: ");
 		System.out.println(GIPC_SERVER_PORT);
 		gipcRegistry = GIPCLocateRegistry.createRegistry(GIPC_SERVER_PORT);
 		GIPCRegistryCreated.newCase(this, GIPC_SERVER_PORT);
-		
+
 		final ServerRemoteInterfaceRMI server = new ServerRemoteObjectGIPC();
-		gipcRegistry.rebind(SERVER_NAME, server);	
+		gipcRegistry.rebind(SERVER_NAME, server);
 		GIPCObjectRegistered.newCase(this, SERVER_NAME, this, gipcRegistry);
 		gipcRegistry.getInputPort().addConnectionListener(new ATracingConnectionListener(gipcRegistry.getInputPort()));
 	}

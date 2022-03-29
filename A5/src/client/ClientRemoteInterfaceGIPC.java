@@ -5,6 +5,7 @@ import java.rmi.RemoteException;
 
 import stringProcessors.HalloweenCommandProcessor;
 import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
 import util.tags.DistributedTags;
 
 @Tags({DistributedTags.CLIENT_REMOTE_INTERFACE, DistributedTags.GIPC})
@@ -21,5 +22,7 @@ public interface ClientRemoteInterfaceGIPC  extends Remote{
 	HalloweenCommandProcessor createSimulation(String aPrefix) throws RemoteException;
 
 	void broadcastMetaState(boolean broadcast) throws RemoteException;
+
+	void changeIPCMechanism(IPCMechanism mechanism, int aProposalNumber) throws RemoteException;
 
 }
