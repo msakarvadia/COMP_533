@@ -14,7 +14,9 @@ public interface ServerRemoteInterfaceGIPC  extends Remote{
 	public void registerClient(ClientRemoteInterfaceRMI aClient) throws RemoteException;
 	
 	void registerClientGIPC(ClientRemoteInterfaceGIPC aClient) throws RemoteException;
+	
 	public void broadcast(String aNewCommand, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber) throws RemoteException;
+	
 	void processArgs(String[] args) throws RemoteException;
 	public void start(String[] args) throws RemoteException;
 	void fakeMethod(String stringOne, String stringTwo) throws RemoteException;
@@ -24,6 +26,8 @@ public interface ServerRemoteInterfaceGIPC  extends Remote{
 
 	void broadcastIPCMechanism(IPCMechanism mechanism, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber,
 			boolean broadcast) throws RemoteException;
+
+	void registerClientRMI(ClientRemoteInterfaceGIPC aClient) throws RemoteException;
 	
 	
 

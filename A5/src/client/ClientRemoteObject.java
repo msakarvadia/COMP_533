@@ -173,7 +173,7 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 
 		// have the server register the exported client
 		try {
-			server.registerClient(this);
+			server.registerClientRMI(this);
 		} catch (RemoteException e) {
 			e.printStackTrace();
 		}
@@ -211,16 +211,19 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 		System.out.println("IPC Mechanism");
 		System.out.println(mechanism);
 		
-		if(mechanism.equals("GIPC")) {
+		
+		if(mechanism.toString().equals("GIPC")) {
 						
 			commandProcessor.removePropertyChangeListener(clientOutCoupler);
 			clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);
 			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			System.out.println("using gipc proxy server");
 		}
-		if(mechanism.equals("RMI")) {
+		if(mechanism.toString().equals("RMI")) {
 			commandProcessor.removePropertyChangeListener(clientOutCoupler);
 			clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME);
 			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			System.out.println("using RMI proxy server");
 		}
 		commandProcessor.setInputString(aCommand); // all commands go to the first command window
 	}

@@ -38,6 +38,7 @@ import util.trace.port.rpc.rmi.RMIObjectRegistered;
 public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements ServerRemoteInterfaceGIPC {
 
 	List<ClientRemoteInterfaceGIPC> clientListGIPC = new ArrayList<ClientRemoteInterfaceGIPC>();
+	List<ClientRemoteInterfaceGIPC> clientListRMI = new ArrayList<ClientRemoteInterfaceGIPC>();
 
 	private static String RMI_SERVER_HOST_NAME;
 	private static int RMI_SERVER_PORT;
@@ -76,11 +77,20 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 		System.out.println(aClient);
 		System.out.println(clientListGIPC);
 	}
+	
+	@Override
+	public void registerClientRMI(ClientRemoteInterfaceGIPC aClient) {
+		
+		clientListRMI.add(aClient);
+		System.out.println("Client registered RMI");
+		System.out.println(aClient);
+		System.out.println(clientListRMI);
+	}
 
 	@Override
-	public void broadcast(String aNewCommand, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber)
-			throws RemoteException {
-
+	public void broadcast(String aNewCommand, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber){
+		List<ClientRemoteInterfaceGIPC> clientList = clientListGIPC;
+		
 		// TODO Check is this is where delay is needed
 		long aDelay = getDelay();
 		if (aDelay > 0) {
@@ -89,8 +99,13 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 
 		System.out.println("Command recieved for broadcast: " + aNewCommand);
 		RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
-		System.out.println(clientListGIPC);
-		for (ClientRemoteInterfaceGIPC client : clientListGIPC) {
+		
+		if(clientListGIPC.isEmpty()) {
+			clientList = clientListRMI;
+		}
+		System.out.println(clientList);
+		System.out.println(clientList.size());
+		for (ClientRemoteInterfaceGIPC client : clientList) {
 			System.out.println(client);
 			if (client.equals(originalClient)) {
 				if (aNewCommand.charAt(0) == 'q') {
@@ -100,7 +115,12 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 				continue;
 			}
 
-			client.inCoupler(aNewCommand, aProposalNumber);
+			try {
+				client.inCoupler(aNewCommand, aProposalNumber);
+			} catch (RemoteException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
 
 			if (aNewCommand.charAt(0) == 'q') {
