@@ -212,8 +212,7 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 		System.out.println(mechanism);
 		
 		if(mechanism.equals("GIPC")) {
-			//TODO if IPC mechanism changes
-			
+						
 			commandProcessor.removePropertyChangeListener(clientOutCoupler);
 			clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);
 			commandProcessor.addPropertyChangeListener(clientOutCoupler);

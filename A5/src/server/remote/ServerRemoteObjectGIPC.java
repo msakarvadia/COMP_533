@@ -70,8 +70,11 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 
 	@Override
 	public void registerClientGIPC(ClientRemoteInterfaceGIPC aClient) {
+		
 		clientListGIPC.add(aClient);
 		System.out.println("Client registered GIPC");
+		System.out.println(aClient);
+		System.out.println(clientListGIPC);
 	}
 
 	@Override
@@ -86,8 +89,9 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 
 		System.out.println("Command recieved for broadcast: " + aNewCommand);
 		RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
-
+		System.out.println(clientListGIPC);
 		for (ClientRemoteInterfaceGIPC client : clientListGIPC) {
+			System.out.println(client);
 			if (client.equals(originalClient)) {
 				if (aNewCommand.charAt(0) == 'q') {
 					// Need to quit
@@ -117,7 +121,7 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 			ThreadSupport.sleep(aDelay);
 		}
 
-		System.out.println("Command recieved for broadcast: " + mechanism);
+		System.out.println("IPC Mechanism recieved for broadcast: " + mechanism);
 		setIPCMechanism(mechanism);
 		setBroadcastMetaState(broadcast);
 		
