@@ -61,6 +61,7 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 	protected static GIPCRegistry gipcRegistry;
 	private static String GIPC_SERVER_NAME ;
 	private static boolean broadcastIPCMechansim = false;
+	private static int aProposalNumber;
 	
 	PropertyChangeListener clientOutCoupler;
 
@@ -225,11 +226,22 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 			commandProcessor.addPropertyChangeListener(clientOutCoupler);
 			System.out.println("using RMI proxy server");
 		}
+		
+		//IPC Mechanism Change
+		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
+		try {
+			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		commandProcessor.setInputString(aCommand); // all commands go to the first command window
 	}
 	
 	@Override	
 	public void quit(int aCode) {
+		//commandProcessor.setInputString("quit");
+		
 		System.exit(aCode);
 	}
 	
@@ -252,11 +264,11 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 	}
 	
 	@Override
-	public void changeIPCMechanism(IPCMechanism mechanism, int proposalNumber) {
-		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, proposalNumber, mechanism);
+	public void changeIPCMechanism(IPCMechanism mechanism) {
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
 		setIPCMechanism(mechanism);
-		ProposedStateSet.newCase(this, CLIENT_NAME, proposalNumber, mechanism);
-		
+		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
+		aProposalNumber++;
 	}
 
 

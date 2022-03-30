@@ -102,6 +102,11 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 		
 		if(clientListGIPC.isEmpty()) {
 			clientList = clientListRMI;
+			System.out.println("USING RMI IN SERVER");
+		}
+		else {
+			clientList = clientListGIPC;
+			System.out.println("USING GIPC IN SERVER");
 		}
 		System.out.println(clientList);
 		System.out.println(clientList.size());
@@ -110,7 +115,23 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 			if (client.equals(originalClient)) {
 				if (aNewCommand.charAt(0) == 'q') {
 					// Need to quit
-					this.quit(0);
+					try {
+						client.quit(0);
+					} catch (RemoteException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+				continue;
+			}
+			
+			if (aNewCommand.charAt(0) == 'q') {
+
+				try {
+					client.quit(0);
+				} catch (RemoteException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
 				}
 				continue;
 			}
@@ -123,18 +144,22 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 			}
 			ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
 
-			if (aNewCommand.charAt(0) == 'q') {
+			//if (aNewCommand.charAt(0) == 'q') {
 				// Need to quit
-				this.quit(0);
-			}
+			//	this.quit(0);
+			//}
+		}
+		if (aNewCommand.charAt(0) == 'q') {
+			// Need to quit
+			this.quit(0);
 		}
 
 	}
 
 	@Override
-	public void broadcastIPCMechanism(IPCMechanism mechanism, ClientRemoteInterfaceGIPC originalClient,
-			int aProposalNumber, boolean broadcast) throws RemoteException {
-
+	public void broadcastIPCMechanism(IPCMechanism mechanism, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber, boolean broadcast) {
+		List<ClientRemoteInterfaceGIPC> clientList;
+		
 		// TODO Check is this is where delay is needed
 		long aDelay = getDelay();
 		if (aDelay > 0) {
@@ -147,14 +172,28 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 		
 		RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, mechanism);
 
+		if(clientListGIPC.isEmpty()) {
+			clientList = clientListRMI;
+			System.out.println("USING RMI IN SERVER");
+		}
+		else {
+			clientList = clientListGIPC;
+			System.out.println("USING GIPC IN SERVER");
+		}
+		
 		if (broadcast) {
 
-			for (ClientRemoteInterfaceGIPC client : clientListGIPC) {
+			for (ClientRemoteInterfaceGIPC client : clientList) {
 				if (client.equals(originalClient)) {
 					continue;
 				}
 
-				client.changeIPCMechanism(mechanism, aProposalNumber);
+				try {
+					client.changeIPCMechanism(mechanism);
+				} catch (RemoteException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, mechanism);
 			}
 		}
