@@ -9,10 +9,12 @@ import java.util.List;
 
 import assignments.util.mainArgs.ClientArgsProcessor;
 import assignments.util.mainArgs.ServerArgsProcessor;
+import client.ClientOutCoupler;
 import client.ClientRemoteInterfaceGIPC;
 import client.ClientRemoteInterfaceRMI;
 import util.annotations.Tags;
 import util.interactiveMethodInvocation.IPCMechanism;
+import util.interactiveMethodInvocation.SimulationParametersControllerFactory;
 import util.misc.ThreadSupport;
 import util.tags.DistributedTags;
 
@@ -25,6 +27,7 @@ import util.trace.misc.ThreadDelayed;
 import util.trace.port.PortTraceUtility;
 import util.trace.port.consensus.ConsensusTraceUtility;
 import util.trace.port.consensus.ProposalLearnedNotificationSent;
+import util.trace.port.consensus.ProposedStateSet;
 import util.trace.port.consensus.RemoteProposeRequestReceived;
 import util.trace.port.rpc.rmi.RMIRegistryLocated;
 import util.trace.port.nio.NIOTraceUtility;
@@ -99,6 +102,7 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 
 		System.out.println("Command recieved for broadcast: " + aNewCommand);
 		RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
+		ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
 		
 		if(clientListGIPC.isEmpty()) {
 			clientList = clientListRMI;
@@ -142,7 +146,7 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
+			//ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
 
 			//if (aNewCommand.charAt(0) == 'q') {
 				// Need to quit
@@ -170,7 +174,7 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 		setIPCMechanism(mechanism);
 		setBroadcastMetaState(broadcast);
 		
-		RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, mechanism);
+		
 
 		if(clientListGIPC.isEmpty()) {
 			clientList = clientListRMI;
@@ -182,7 +186,8 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 		}
 		
 		if (broadcast) {
-
+			RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, mechanism);
+			
 			for (ClientRemoteInterfaceGIPC client : clientList) {
 				if (client.equals(originalClient)) {
 					continue;
@@ -254,6 +259,11 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 	@Override
 	public void start(String[] args) {
 		init(args);
+		// register a callback to process actions denoted by the user commands
+		SimulationParametersControllerFactory.getSingleton().addSimulationParameterListener(this);
+		// use the calling back library
+		SimulationParametersControllerFactory.getSingleton().processCommands();		
+		//init(args);
 
 	}
 
@@ -281,5 +291,6 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 		GIPCObjectRegistered.newCase(this, SERVER_NAME, this, gipcRegistry);
 		gipcRegistry.getInputPort().addConnectionListener(new ATracingConnectionListener(gipcRegistry.getInputPort()));
 	}
+	
 
 }

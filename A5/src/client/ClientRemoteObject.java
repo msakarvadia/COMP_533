@@ -60,7 +60,7 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 	private static int GIPC_SERVER_PORT;
 	protected static GIPCRegistry gipcRegistry;
 	private static String GIPC_SERVER_NAME ;
-	private static boolean broadcastIPCMechansim = false;
+	private static boolean broadcastIPCMechanism = false;
 	private static int aProposalNumber;
 	
 	PropertyChangeListener clientOutCoupler;

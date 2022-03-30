@@ -27267,3 +27267,26 @@ Test execution time (ms):112601
     <nextType><![CDATA[IO]]></nextType>
     <next><![CDATA[ConsoleOutput]]></next>
   </Command>
+  <Command __id="10427" _type="ConsoleOutput" date="Wed Mar 30 00:19:44 EDT 2022" overflow="false" starttimestamp="1648594670066" timestamp="19314180" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s20.assignment5.testcases.GIPCRMIServerMetaStateNoBroadcast@50ef7d6b . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s20.assignment5.testcases.GIPCRMIServerMetaStateNoBroadcast@50ef7d6b . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="10430" _type="PauseCommand" date="Wed Mar 30 00:23:00 EDT 2022" range="2m-5m" starttimestamp="1648594670066" timestamp="19510512">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[196332]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="10429" _type="ShellCommand" date="Wed Mar 30 00:23:00 EDT 2022" starttimestamp="1648594670066" timestamp="19510512" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="10431" _type="ShellCommand" date="Wed Mar 30 00:23:00 EDT 2022" starttimestamp="1648594670066" timestamp="19510600" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="10432" _type="EclipseCommand" commandID="" date="Wed Mar 30 00:23:01 EDT 2022" starttimestamp="1648594670066" timestamp="19511211" />
+  <Command __id="10433" _type="EclipseCommand" commandID="" date="Wed Mar 30 00:23:01 EDT 2022" starttimestamp="1648594670066" timestamp="19511215" />
+  <Command __id="10435" _type="PauseCommand" date="Wed Mar 30 00:23:02 EDT 2022" range="1s-2s" starttimestamp="1648594670066" timestamp="19512366">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1151]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>

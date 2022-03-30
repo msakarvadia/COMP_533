@@ -1,0 +1,9 @@
+3/30/2022 08:40:10 AM	COMP 533 (16 unread)	https://piazza.com/class/kxx594eo8fl3y2
+3/30/2022 08:39:50 AM	Assignments - Google Drive	https://drive.google.com/drive/folders/14bJKIkxmF-1OjeBLhW7bPJKULjSxNv9j
+3/30/2022 08:39:56 AM	5DistributedGIPCTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kUgVYMyEzNH6k1ArifT8lh4hnByFHhiH/edit?rtpof=true
+3/30/2022 08:40:04 AM	5DistributedGIPCTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kUgVYMyEzNH6k1ArifT8lh4hnByFHhiH/edit
+3/30/2022 08:39:56 AM	5DistributedGIPCTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kUgVYMyEzNH6k1ArifT8lh4hnByFHhiH/edit?usp=drive_web&ouid=115705987000692215284&rtpof=true
+3/30/2022 08:54:56 AM	COMP 533 (16 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=6
+3/30/2022 08:55:00 AM	COMP 533 (16 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7
+3/30/2022 09:44:43 AM	TrickOrTreat/CoupledTrickOrTreat/src/coupledsims at master · pdewan/TrickOrTreat	https://github.com/pdewan/TrickOrTreat/tree/master/CoupledTrickOrTreat/src/coupledsims
+3/30/2022 09:44:43 AM	TrickOrTreat/AStandAloneTwoCoupledHalloweenSimulations.java at master · pdewan/TrickOrTreat	https://github.com/pdewan/TrickOrTreat/blob/master/CoupledTrickOrTreat/src/coupledsims/AStandAloneTwoCoupledHalloweenSimulations.java
