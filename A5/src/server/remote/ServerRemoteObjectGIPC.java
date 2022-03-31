@@ -278,7 +278,25 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 		// TODO Auto-generated method stub
 
 	}
+	
+	@Override
+	public void fakeMethodThree(String stringOne, ClientRemoteInterfaceGIPC client) {
+		// TODO Auto-generated method stub
 
+	}
+	
+	@Override
+	public void fakeMethodFour(String stringOne, boolean trueFalse) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	@Override
+	public void fakeMethodFive(String stringOne, IPCMechanism mechanism) {
+		// TODO Auto-generated method stub
+
+	}
+	
 	@Override
 	public void createGIPCRegistry() {
 		System.out.println("GIPC_SERVER_PORT: ");

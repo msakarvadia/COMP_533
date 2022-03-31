@@ -9,11 +9,13 @@ import java.util.List;
 
 import assignments.util.mainArgs.ClientArgsProcessor;
 import assignments.util.mainArgs.ServerArgsProcessor;
+import client.ClientRemoteInterfaceGIPC;
 import client.ClientRemoteInterfaceRMI;
 import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;
 import server.remote.ServerRemoteInterfaceRMI;
 import server.remote.ServerRemoteObjectRMI;
 import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
 import util.misc.ThreadSupport;
 import util.tags.DistributedTags;
 import util.trace.factories.FactoryTraceUtility;
@@ -158,6 +160,24 @@ public class ServerConfigure extends AStandAloneTwoCoupledHalloweenSimulations i
 
 	@Override
 	public void fakeMethodTwo(String stringOne, ClientRemoteInterfaceRMI client) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void fakeMethodThree(String stringOne, ClientRemoteInterfaceGIPC client) throws RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void fakeMethodFour(String stringOne, boolean trueFalse) throws RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void fakeMethodFive(String stringOne, IPCMechanism mechanism) throws RemoteException {
 		// TODO Auto-generated method stub
 		
 	}

@@ -9,8 +9,10 @@ import java.util.List;
 
 import assignments.util.mainArgs.ClientArgsProcessor;
 import assignments.util.mainArgs.ServerArgsProcessor;
+import client.ClientRemoteInterfaceGIPC;
 import client.ClientRemoteInterfaceRMI;
 import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
 import util.misc.ThreadSupport;
 import util.tags.DistributedTags;
 import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;
@@ -170,6 +172,10 @@ public class ServerRemoteObjectRMI extends AStandAloneTwoCoupledHalloweenSimulat
 	@Override
 	public void fakeMethod(String stringOne, String stringTwo){
 		// TODO Auto-generated method stub
+		IPCMechanism mechanism = getIPCMechanism();
+		setIPCMechanism(mechanism);
+		boolean broadcast = true;
+		setBroadcastMetaState(broadcast);
 		
 	}
 
@@ -177,6 +183,24 @@ public class ServerRemoteObjectRMI extends AStandAloneTwoCoupledHalloweenSimulat
 	public void fakeMethodTwo(String stringOne, ClientRemoteInterfaceRMI client) {
 		// TODO Auto-generated method stub
 		
+	}
+	
+	@Override
+	public void fakeMethodThree(String stringOne, ClientRemoteInterfaceGIPC client) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	@Override
+	public void fakeMethodFour(String stringOne, boolean trueFalse) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	@Override
+	public void fakeMethodFive(String stringOne, IPCMechanism mechanism) {
+		// TODO Auto-generated method stub
+
 	}
 
 }

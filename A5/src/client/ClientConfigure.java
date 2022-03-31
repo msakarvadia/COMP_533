@@ -225,6 +225,12 @@ public class ClientConfigure  extends AStandAloneTwoCoupledHalloweenSimulations 
 			
 		}
 	}
+	
+	@Override
+	public void broadcastMetaState(boolean broadcast) {
+		broadcastIPCMechanism = broadcast;
+		
+	}
 
 
 }

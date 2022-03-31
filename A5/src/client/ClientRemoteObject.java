@@ -260,6 +260,7 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 	@Override
 	public void broadcastMetaState(boolean broadcast) {
 		broadcastIPCMechanism = broadcast;
+		setBroadcastMetaState(broadcast);
 		
 	}
 	

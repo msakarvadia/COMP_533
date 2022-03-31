@@ -4025,3 +4025,118 @@ Attempting to match to the structure:
     <nextType><![CDATA[IO]]></nextType>
     <next><![CDATA[ConsoleOutput]]></next>
   </Command>
+  <Command __id="789" _type="ProgramExecutionEvent" className="(Unknown)" date="Wed Mar 30 09:56:00 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1648643986594" timestamp="4573575" type="Debug" />
+  <Command __id="791" _type="ProgramExecutionEvent" className="(Unknown)" date="Wed Mar 30 09:56:00 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1648643986594" timestamp="4573575" type="Debug" />
+  <Command __id="792" _type="ProgramExecutionEvent" className="/A5/src/checks/Checks.java" date="Wed Mar 30 09:56:00 EDT 2022" kind="HitBreakPoint" projectName="A5" starttimestamp="1648643986594" timestamp="4573575" type="Run" />
+  <Command __id="794" _type="PauseCommand" date="Wed Mar 30 10:13:48 EDT 2022" range="10m-20m" starttimestamp="1648643986594" timestamp="5641564">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[1067989]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="793" _type="ShellCommand" date="Wed Mar 30 10:13:48 EDT 2022" starttimestamp="1648643986594" timestamp="5641564" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="796" _type="PauseCommand" date="Wed Mar 30 12:20:39 EDT 2022" range=">1h" starttimestamp="1648643986594" timestamp="13252670">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[7611106]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[BalloonCommand]]></next>
+  </Command>
+  <Command __id="795" _type="BalloonCommand" date="Wed Mar 30 12:20:39 EDT 2022" message="*******************************************
+Worked 2 minutes(fixed)/14 minutes(context based) from
+Wed Mar 30 09:39:47 EDT 2022 to Wed Mar 30 10:13:48 EDT 2022
+Edited 1 Projects: 
+	A5
+Edited 1 Files: 
+	C:\Users\mannu\COMP_533\A5\src\server\remote\ServerRemoteObjectGIPC.java
+Number of insert: 86
+Number of delete: 151
+" starttimestamp="1648643986594" timestamp="13252670">
+    <fineGrainedWorkTime><![CDATA[14]]></fineGrainedWorkTime>
+    <insert><![CDATA[86]]></insert>
+    <startTime><![CDATA[1648647587719]]></startTime>
+    <endTime><![CDATA[1648649628158]]></endTime>
+    <workTime><![CDATA[2]]></workTime>
+    <delete><![CDATA[151]]></delete>
+  </Command>
+  <Command __id="798" _type="PauseCommand" date="Wed Mar 30 13:10:53 EDT 2022" range="30m-1h" starttimestamp="1648643986594" timestamp="16266740">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[BalloonCommand]]></prev>
+    <pause><![CDATA[3014070]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="797" _type="ShellCommand" date="Wed Mar 30 13:10:53 EDT 2022" starttimestamp="1648643986594" timestamp="16266740" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="800" _type="PauseCommand" date="Wed Mar 30 13:16:00 EDT 2022" range="5m-10m" starttimestamp="1648643986594" timestamp="16574378">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[307638]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="799" _type="ShellCommand" date="Wed Mar 30 13:16:00 EDT 2022" starttimestamp="1648643986594" timestamp="16574378" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="801" _type="EclipseCommand" commandID="" date="Wed Mar 30 13:16:01 EDT 2022" starttimestamp="1648643986594" timestamp="16575195" />
+  <Command __id="802" _type="EclipseCommand" commandID="" date="Wed Mar 30 13:16:01 EDT 2022" starttimestamp="1648643986594" timestamp="16575203" />
+  <Command __id="804" _type="PauseCommand" date="Wed Mar 30 13:16:02 EDT 2022" range="1s-2s" starttimestamp="1648643986594" timestamp="16576334">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1131]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="803" _type="ShellCommand" date="Wed Mar 30 13:16:02 EDT 2022" starttimestamp="1648643986594" timestamp="16576334" type="ECLIPSE_MINIMIZED" />
+  <Command __id="805" _type="ShellCommand" date="Wed Mar 30 13:16:02 EDT 2022" starttimestamp="1648643986594" timestamp="16576356" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="807" _type="PauseCommand" date="Wed Mar 30 13:20:39 EDT 2022" range="2m-5m" starttimestamp="1648643986594" timestamp="16852672">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[276316]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[BalloonCommand]]></next>
+  </Command>
+  <Command __id="806" _type="BalloonCommand" date="Wed Mar 30 13:20:39 EDT 2022" message="*******************************************
+Worked 0 minutes(fixed)/5 minutes(context based) from
+Wed Mar 30 12:20:39 EDT 2022 to Wed Mar 30 13:16:02 EDT 2022
+Edited 0 Projects: 
+Edited 0 Files: 
+Number of insert: 0
+Number of delete: 0
+" starttimestamp="1648643986594" timestamp="16852672">
+    <fineGrainedWorkTime><![CDATA[5]]></fineGrainedWorkTime>
+    <insert><![CDATA[0]]></insert>
+    <startTime><![CDATA[1648657239264]]></startTime>
+    <endTime><![CDATA[1648660562950]]></endTime>
+    <workTime><![CDATA[0]]></workTime>
+    <delete><![CDATA[0]]></delete>
+  </Command>
+  <Command __id="809" _type="PauseCommand" date="Wed Mar 30 20:56:58 EDT 2022" range=">1h" starttimestamp="1648643986594" timestamp="44231933">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[BalloonCommand]]></prev>
+    <pause><![CDATA[27379246]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="808" _type="ShellCommand" date="Wed Mar 30 20:56:58 EDT 2022" starttimestamp="1648643986594" timestamp="44231918" type="ECLIPSE_MAXIMIZED" />
+  <Command __id="811" _type="PauseCommand" date="Wed Mar 30 20:56:59 EDT 2022" range="1s-2s" starttimestamp="1648643986594" timestamp="44232918">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1000]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="810" _type="ShellCommand" date="Wed Mar 30 20:56:59 EDT 2022" starttimestamp="1648643986594" timestamp="44232918" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="813" _type="PauseCommand" date="Wed Mar 30 20:57:12 EDT 2022" range="10s-20s" starttimestamp="1648643986594" timestamp="44246297">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[13379]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="812" _type="ShellCommand" date="Wed Mar 30 20:57:12 EDT 2022" starttimestamp="1648643986594" timestamp="44246297" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="815" _type="PauseCommand" date="Wed Mar 30 20:57:18 EDT 2022" range="5s-10s" starttimestamp="1648643986594" timestamp="44251513">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[5216]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>

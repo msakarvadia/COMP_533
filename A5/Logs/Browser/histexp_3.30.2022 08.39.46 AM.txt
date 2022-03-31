@@ -7,3 +7,16 @@
 3/30/2022 08:55:00 AM	COMP 533 (16 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7
 3/30/2022 09:44:43 AM	TrickOrTreat/CoupledTrickOrTreat/src/coupledsims at master · pdewan/TrickOrTreat	https://github.com/pdewan/TrickOrTreat/tree/master/CoupledTrickOrTreat/src/coupledsims
 3/30/2022 09:44:43 AM	TrickOrTreat/AStandAloneTwoCoupledHalloweenSimulations.java at master · pdewan/TrickOrTreat	https://github.com/pdewan/TrickOrTreat/blob/master/CoupledTrickOrTreat/src/coupledsims/AStandAloneTwoCoupledHalloweenSimulations.java
+3/30/2022 12:20:03 PM	5DistributedGIPCTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kUgVYMyEzNH6k1ArifT8lh4hnByFHhiH/edit
+3/30/2022 12:23:00 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+3/30/2022 12:23:00 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1
+3/30/2022 12:23:02 PM	Sakai @ UNC-Chapel Hill : MATH548.001.SP22 : Overview	https://sakai.unc.edu/portal/site/a088058d-2645-421e-9a8c-45b33b2daeb9
+3/30/2022 12:23:03 PM		https://sakai.unc.edu/portal/tool/1cc4c680-0289-4ce7-b1e7-8d4648d4bee0/synMainLite?time=1
+3/30/2022 12:23:04 PM	Sakai @ UNC-Chapel Hill : MATH548.001.SP22 : Resources	https://sakai.unc.edu/portal/site/a088058d-2645-421e-9a8c-45b33b2daeb9/tool/0a65398b-61bc-4d7a-ba5e-1c1da04ce540
+3/30/2022 12:22:58 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=fZJdT8IwFIb%2FytJ76CgIW8NIEC4kQSFseuGN6dqDa9za2dP58e8dDAkmhuu%2BH32fnCmKqqz5vPGF2cF7A%2BiDr6o0yI8PCWmc4VagRm5EBci95On8fs1ZP%2BS1s95KW5JgjgjOa2sW1mBTgUvBfWgJj7t1Qgrva%2BSUongTut8Y2QfV0LTQeW5L8EUf0dJDKKPbTZqRYNn%2BQhtxyLtwoz17tappW77XJZyMO1DagfQ0TTckWC0T8iIno7ESUZznezlRuRyOonDCZBxHQkGsWCtDbGBl0AvjE8JCxnrhsDcMs8GYM8ZvomcSbE8bb7VR2rxeB5J3IuR3WbbtdWOewOFxSCsgs%2BkBKz8WuwvQ12PFL10y%2B58lnllO6UVB11bzhzZxtdzaUsvvYF6W9nPhQHhIyIDQWWf5ewOzHw%3D%3D&RelayState=ss%3Amem%3A7ee49d5830c0b03b1bbac11e4ec31b72a68e9daa8d060b114acbfd69711b123f&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=EHo9l6J9U03b%2Bs9FShmu3TUOV%2FpL5%2B3c5hxGGwHgHN8ya5EYvJSQWQTgd2QuuiHm1RFuxS9YllEhNR9mJOAnKl%2BPSW9vvE4P0LcKTxlO%2F2y0GnfHhp3udYJqSXByWoauNMExesgIMKI%2BKNco47lVwomuWtb6C0MIX9zL0cSVuVndQ49Vj7kuPP5eJW%2BeNhGWc%2BC3Evv43Kzlv%2BqD21ioKf00IGQyNdRvmWtGlQAgWEkUwJE5m0eTaMoPWepp9%2FVD9OUjpRUKehcL5zzprQonncHU02AQ%2FncsS77ccBgk6TFnJHS%2Bp9GtraxmqMOhWyHQJ8IEY%2BL3ERtoBzlSlUZJcA%3D%3D
+3/30/2022 13:23:29 PM	UNC-Chapel Hill Single Sign-On	https://sakai.unc.edu/Shibboleth.sso/Logout?return=https://sso.unc.edu/idp/logout.jsp
+3/30/2022 15:32:16 PM	5DistributedGIPCTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kUgVYMyEzNH6k1ArifT8lh4hnByFHhiH/edit
+3/30/2022 15:32:55 PM	5DistributedGIPCTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kUgVYMyEzNH6k1ArifT8lh4hnByFHhiH/edit
+3/30/2022 15:41:29 PM	Chase - Carolina Dining Services	https://dining.unc.edu/locations/chase/
+3/30/2022 15:42:38 PM	Top of Lenoir - Carolina Dining Services	https://dining.unc.edu/locations/top-of-lenoir/
+3/30/2022 19:46:51 PM	5DistributedGIPCTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kUgVYMyEzNH6k1ArifT8lh4hnByFHhiH/edit

@@ -28,6 +28,12 @@ public interface ServerRemoteInterfaceGIPC  extends Remote{
 			boolean broadcast) throws RemoteException;
 
 	void registerClientRMI(ClientRemoteInterfaceGIPC aClient) throws RemoteException;
+
+	void fakeMethodThree(String stringOne, ClientRemoteInterfaceGIPC client) throws RemoteException;
+
+	void fakeMethodFour(String stringOne, boolean trueFalse) throws RemoteException;
+
+	void fakeMethodFive(String stringOne, IPCMechanism mechanism) throws RemoteException;
 	
 	
 
