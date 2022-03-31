@@ -14613,3 +14613,139 @@ Test execution time (ms):5
     <nextType><![CDATA[IO]]></nextType>
     <next><![CDATA[ConsoleOutput]]></next>
   </Command>
+  <Command __id="3001" _type="ConsoleOutput" date="Thu Mar 31 11:20:06 EDT 2022" overflow="false" starttimestamp="1648737385020" timestamp="2620981" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):22578
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):2257"), Diff(DELETE,"4"), Diff(INSERT,"8"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="3004" _type="PauseCommand" date="Thu Mar 31 11:20:48 EDT 2022" range="30s-1m" starttimestamp="1648737385020" timestamp="2663151">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[42170]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="3008" _type="ProgramExecutionEvent" className="(Unknown)" date="Thu Mar 31 11:21:25 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1648737385020" timestamp="2700608" type="Debug" />
+  <Command __id="3010" _type="ProgramExecutionEvent" className="/A5/src/checks/Checks.java" date="Thu Mar 31 11:21:25 EDT 2022" kind="HitBreakPoint" projectName="A5" starttimestamp="1648737385020" timestamp="2700608" type="Run" />
+  <Command __id="3011" _type="ProgramExecutionEvent" className="(Unknown)" date="Thu Mar 31 11:21:25 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1648737385020" timestamp="2700608" type="Debug" />
+  <Command __id="3012" _type="ProgramExecutionEvent" className="/A5/src/checks/Checks.java" date="Thu Mar 31 11:21:25 EDT 2022" kind="HitBreakPoint" projectName="A5" starttimestamp="1648737385020" timestamp="2700608" type="Run" />
+  <Command __id="3014" _type="PauseCommand" date="Thu Mar 31 12:26:07 EDT 2022" range=">1h" starttimestamp="1648737385020" timestamp="6582606">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[3881998]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="3020" _type="ProgramExecutionEvent" className="(Unknown)" date="Thu Mar 31 12:26:23 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1648737385020" timestamp="6598734" type="Debug" />
+  <Command __id="3022" _type="ProgramExecutionEvent" className="(Unknown)" date="Thu Mar 31 12:26:23 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1648737385020" timestamp="6598734" type="Debug" />
+  <Command __id="3023" _type="ProgramExecutionEvent" className="/A5/src/checks/Checks.java" date="Thu Mar 31 12:26:23 EDT 2022" kind="HitBreakPoint" projectName="A5" starttimestamp="1648737385020" timestamp="6598734" type="Run" />
+  <Command __id="3025" _type="PauseCommand" date="Thu Mar 31 12:26:25 EDT 2022" range="1s-2s" starttimestamp="1648737385020" timestamp="6600030">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[1296]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="3028" _type="ProgramExecutionEvent" className="/A5/src/checks/Checks.java" date="Thu Mar 31 12:26:28 EDT 2022" kind="HitBreakPoint" projectName="A5" starttimestamp="1648737385020" timestamp="6603571" type="Run" />
+  <Command __id="3030" _type="RunCommand" className="/A5/src/checks/Checks.java" date="Thu Mar 31 12:26:28 EDT 2022" kind="HitBreakPoint" projectName="A5" starttimestamp="1648737385020" timestamp="6603571" type="Run" />
+  <Command __id="3031" _type="ProgramExecutionEvent" className="(Unknown)" date="Thu Mar 31 12:26:28 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1648737385020" timestamp="6603780" type="Run" />
+  <Command __id="3032" _type="ProgramExecutionEvent" className="(Unknown)" date="Thu Mar 31 12:26:28 EDT 2022" kind="StepInto" projectName="(Unknown)" starttimestamp="1648737385020" timestamp="6603816" type="Run" />
+  <Command __id="3033" _type="ProgramExecutionEvent" className="(Unknown)" date="Thu Mar 31 12:26:28 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1648737385020" timestamp="6603823" type="Run" />
+  <Command __id="3035" _type="PauseCommand" date="Thu Mar 31 12:26:32 EDT 2022" range="2s-5s" starttimestamp="1648737385020" timestamp="6607460">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[3637]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="3046" _type="ProgramExecutionEvent" className="(Unknown)" date="Thu Mar 31 12:26:42 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1648737385020" timestamp="6617133" type="Run" />
+  <Command __id="3048" _type="ProgramExecutionEvent" className="(Unknown)" date="Thu Mar 31 12:26:42 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1648737385020" timestamp="6617135" type="Run" />
+  <Command __id="3050" _type="PauseCommand" date="Thu Mar 31 12:26:48 EDT 2022" range="5s-10s" starttimestamp="1648737385020" timestamp="6623333">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[6198]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="3049" _type="ShellCommand" date="Thu Mar 31 12:26:48 EDT 2022" starttimestamp="1648737385020" timestamp="6623333" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="3052" _type="SelectTextCommand" caretOffset="8234" date="Thu Mar 31 12:26:50 EDT 2022" end="8234" start="263" starttimestamp="1648737385020" timestamp="6625005" />
+  <Command __id="3053" _type="MoveCaretCommand" caretOffset="7699" date="Thu Mar 31 12:26:50 EDT 2022" docOffset="9233" starttimestamp="1648737385020" timestamp="6625517" />
+  <Command __id="3055" _type="PauseCommand" date="Thu Mar 31 12:27:21 EDT 2022" range="30s-1m" starttimestamp="1648737385020" timestamp="6656654">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[31137]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="3066" _type="ProgramExecutionEvent" className="(Unknown)" date="Thu Mar 31 12:27:49 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1648737385020" timestamp="6684760" type="Run" />
+  <Command __id="3068" _type="ProgramExecutionEvent" className="(Unknown)" date="Thu Mar 31 12:27:49 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1648737385020" timestamp="6684763" type="Run" />
+  <Command __id="3070" _type="PauseCommand" date="Thu Mar 31 12:28:13 EDT 2022" range="20s-30s" starttimestamp="1648737385020" timestamp="6708145">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[23382]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="3069" _type="ShellCommand" date="Thu Mar 31 12:28:13 EDT 2022" starttimestamp="1648737385020" timestamp="6708145" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="3072" _type="PauseCommand" date="Thu Mar 31 12:28:17 EDT 2022" range="2s-5s" starttimestamp="1648737385020" timestamp="6712407">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[4262]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="3071" _type="ShellCommand" date="Thu Mar 31 12:28:17 EDT 2022" starttimestamp="1648737385020" timestamp="6712407" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="3074" _type="PauseCommand" date="Thu Mar 31 12:28:44 EDT 2022" range="20s-30s" starttimestamp="1648737385020" timestamp="6739815">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[27408]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[BalloonCommand]]></next>
+  </Command>
+  <Command __id="3124" _type="ProgramExecutionEvent" className="(Unknown)" date="Thu Mar 31 12:30:50 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1648737385020" timestamp="6865251" type="Run" />
+  <Command __id="3126" _type="ProgramExecutionEvent" className="(Unknown)" date="Thu Mar 31 12:30:50 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1648737385020" timestamp="6865257" type="Run" />
+  <Command __id="3128" _type="PauseCommand" date="Thu Mar 31 12:31:05 EDT 2022" range="10s-20s" starttimestamp="1648737385020" timestamp="6880340">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[15083]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="3127" _type="ConsoleOutput" date="Thu Mar 31 12:31:05 EDT 2022" overflow="false" starttimestamp="1648737385020" timestamp="6880340" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):22598
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):2259"), Diff(DELETE,"0"), Diff(INSERT,"8"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="3130" _type="PauseCommand" date="Thu Mar 31 12:32:29 EDT 2022" range="1m-2m" starttimestamp="1648737385020" timestamp="6964931">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[84591]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="3129" _type="ShellCommand" date="Thu Mar 31 12:32:29 EDT 2022" starttimestamp="1648737385020" timestamp="6964931" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="3132" _type="PauseCommand" date="Thu Mar 31 12:32:30 EDT 2022" range="1s-2s" starttimestamp="1648737385020" timestamp="6965946">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1015]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="3131" _type="ShellCommand" date="Thu Mar 31 12:32:30 EDT 2022" starttimestamp="1648737385020" timestamp="6965946" type="ECLIPSE_MINIMIZED" />
+  <Command __id="3133" _type="ShellCommand" date="Thu Mar 31 12:32:30 EDT 2022" starttimestamp="1648737385020" timestamp="6965973" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="3135" _type="PauseCommand" date="Thu Mar 31 12:33:49 EDT 2022" range="1m-2m" starttimestamp="1648737385020" timestamp="7044294">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[78321]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="3134" _type="ShellCommand" date="Thu Mar 31 12:33:49 EDT 2022" starttimestamp="1648737385020" timestamp="7044294" type="ECLIPSE_MAXIMIZED" />
+  <Command __id="3136" _type="ShellCommand" date="Thu Mar 31 12:33:49 EDT 2022" starttimestamp="1648737385020" timestamp="7044379" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="3138" _type="PauseCommand" date="Thu Mar 31 12:33:59 EDT 2022" range="5s-10s" starttimestamp="1648737385020" timestamp="7054251">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[9872]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
