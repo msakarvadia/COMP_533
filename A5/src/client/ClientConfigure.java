@@ -12,14 +12,19 @@ import assignments.util.mainArgs.ClientArgsProcessor;
 import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;
 import coupledsims.Simulation;
 import coupledsims.Simulation1;
+import inputport.rpc.GIPCLocateRegistry;
+import inputport.rpc.GIPCRegistry;
 import main.BeauAndersonFinalProject;
 import server.remote.ServerRemoteInterfaceGIPC;
 import server.remote.ServerRemoteInterfaceRMI;
+import server.remote.ServerRemoteObjectGIPC;
 import server.remote.ServerRemoteObjectRMI;
 import stringProcessors.HalloweenCommandProcessor;
 import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
 import util.tags.DistributedTags;
 import util.trace.Tracer;
+import util.trace.bean.BeanTraceUtility;
 import util.trace.factories.FactoryTraceUtility;
 import util.trace.misc.ThreadDelayed;
 import util.trace.port.PerformanceExperimentEnded;
@@ -29,6 +34,9 @@ import util.trace.port.consensus.ConsensusTraceUtility;
 import util.trace.port.consensus.ProposalLearnedNotificationReceived;
 import util.trace.port.consensus.ProposedStateSet;
 import util.trace.port.nio.NIOTraceUtility;
+import util.trace.port.rpc.gipc.GIPCObjectLookedUp;
+import util.trace.port.rpc.gipc.GIPCRPCTraceUtility;
+import util.trace.port.rpc.gipc.GIPCRegistryLocated;
 import util.trace.port.rpc.rmi.RMIObjectLookedUp;
 import util.trace.port.rpc.rmi.RMIRegistryLocated;
 import util.trace.port.rpc.rmi.RMITraceUtility;
@@ -41,13 +49,21 @@ public class ClientConfigure  extends AStandAloneTwoCoupledHalloweenSimulations 
 	public static final String EXPERIMENT_COMMAND_1 = "move 1 -1";
 	public static final String EXPERIMENT_COMMAND_2 = "undo";
 	protected PropertyChangeListener simulationCoupler;
-	ServerRemoteInterfaceRMI server = null;
+	ServerRemoteInterfaceGIPC server = null;
+	ServerRemoteInterfaceGIPC serverGIPC = null;
 	
 
 	private static String RMI_SERVER_HOST_NAME;
 	private static int RMI_SERVER_PORT;
 	private static String SERVER_NAME;
 	private static String CLIENT_NAME;
+	
+	//A5
+	private static int GIPC_SERVER_PORT;
+	protected static GIPCRegistry gipcRegistry;
+	private static String GIPC_SERVER_NAME ;
+	private static boolean broadcastIPCMechanism = false;
+	private static int aProposalNumber;
 	
 	PropertyChangeListener clientOutCoupler;
 
@@ -74,10 +90,31 @@ public class ClientConfigure  extends AStandAloneTwoCoupledHalloweenSimulations 
 		SERVER_NAME = "SERVER";
 				//ClientArgsProcessor.getServerHost(args);
 		CLIENT_NAME = ClientArgsProcessor.getClientName(args);
+
+
+		//A5
+		GIPC_SERVER_PORT = ClientArgsProcessor.getGIPCPort(args);
+		GIPC_SERVER_NAME = ClientArgsProcessor.getServerHost(args);
+		
+	}
+	
+	@Override
+	public void atomicBroadcast(boolean fake) {
+		return;
 	}
 	
 	@Override
 	protected void setTracing() {
+		//A5
+		FactoryTraceUtility.setTracing();
+		BeanTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		GIPCRPCTraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+
+		//A4
 		PortTraceUtility.setTracing();
 		RMITraceUtility.setTracing();
 		NIOTraceUtility.setTracing();
@@ -94,20 +131,36 @@ public class ClientConfigure  extends AStandAloneTwoCoupledHalloweenSimulations 
 		this.processArgs(args);
 		// Ideally the prefixes should be main args
 		commandProcessor = createSimulation(Simulation1.SIMULATION1_PREFIX);
-
-		// Locate Server
+		
+		//Locate GIPC Server
+		gipcRegistry = GIPCLocateRegistry.getRegistry(GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);
+		GIPCRegistryLocated.newCase(this, GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);
+		
+		//Get GIPC server here
+		serverGIPC = (ServerRemoteInterfaceGIPC) gipcRegistry.lookup(ServerRemoteObjectGIPC.class, SERVER_NAME);
+		GIPCObjectLookedUp.newCase(this, serverGIPC, ServerRemoteObjectGIPC.class, SERVER_NAME, gipcRegistry);
+		
+		//Register Client with GIPC Proxy
+		try {
+			serverGIPC.registerClientGIPC((ClientRemoteInterfaceGIPC) this);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		// Locate RMI Server
 		Registry rmiRegistry = null;
 		try {
 			rmiRegistry = LocateRegistry.getRegistry(RMI_SERVER_HOST_NAME, RMI_SERVER_PORT);
 			RMIRegistryLocated.newCase(this, RMI_SERVER_HOST_NAME, RMI_SERVER_PORT, rmiRegistry);
 		} catch (RemoteException e3) {
-			// TODO Auto-generated catch block
 			e3.printStackTrace();
 		}
-		// Get server here
+		// Get RMI server here
 		
 		try {
-			server = (ServerRemoteInterfaceRMI) rmiRegistry.lookup(SERVER_NAME);
+			server = (ServerRemoteInterfaceGIPC) rmiRegistry.lookup(SERVER_NAME);
 			RMIObjectLookedUp.newCase(this, server, SERVER_NAME, rmiRegistry);
 		} catch (AccessException e2) {
 			// TODO Auto-generated catch block
@@ -128,62 +181,18 @@ public class ClientConfigure  extends AStandAloneTwoCoupledHalloweenSimulations 
 
 		// have the server register the exported client
 		try {
-			server.registerClient(this);
+			server.registerClientRMI((ClientRemoteInterfaceGIPC) this);
 		} catch (RemoteException e) {
 			e.printStackTrace();
 		}
 		
 		
-		//NOTE This is just a hacky way of satisfying tests
-		ClientRemoteInterfaceGIPC aClient = new ClientRemoteObject();
-		clientOutCoupler = new ClientOutCoupler((ServerRemoteInterfaceGIPC) server, aClient, CLIENT_NAME);
+		clientOutCoupler = new ClientOutCoupler(server, (ClientRemoteInterfaceGIPC) this, CLIENT_NAME);
+		//clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);
 		// Add propertyChangeListener
 		commandProcessor.addPropertyChangeListener(clientOutCoupler);
 		
 		System.out.println("added server as a property change listener of client");
-	}
-	
-	
-	@Override	
-	public void trace(boolean newValue) {
-		super.trace(newValue);
-		Tracer.showInfo(isTrace());
-	}
-	
-	@Override
-	public void experimentInput() {
-		long aStartTime = System.currentTimeMillis();
-		PerformanceExperimentStarted.newCase(this, aStartTime, NUM_EXPERIMENT_COMMANDS);
-		boolean anOldValue = isTrace();
-		this.trace(false);
-		for (int i = 0; i < NUM_EXPERIMENT_COMMANDS; i++) {
-			commandProcessor.setInputString(EXPERIMENT_COMMAND_1);
-		
-		}
-		trace(anOldValue);
-		long anEndTime = System.currentTimeMillis();
-		PerformanceExperimentEnded.newCase(this, aStartTime, anEndTime, anEndTime - aStartTime, NUM_EXPERIMENT_COMMANDS);
-		
-	}
-	
-	@Override
-	/*
-	 * This override is not really needed, provided here to show that this method
-	 * exists.
-	 */
-	public void delaySends(int aMillisecondDelay) {
-		// getDelay() can be used to determine the delay
-		// in other parts of the program
-		super.delaySends(aMillisecondDelay);
-	}
-	
-	@Override
-	/**
-	 * Relevant in consistency assignments only 
-	 */
-	public void atomicBroadcast(boolean newValue) {
-		super.atomicBroadcast(newValue);
-		commandProcessor.setConnectedToSimulation(!isAtomicBroadcast());
 	}
 
 	@Override
@@ -206,11 +215,40 @@ public class ClientConfigure  extends AStandAloneTwoCoupledHalloweenSimulations 
 		//if (aDelay > 0) {
 		//	ThreadSupport.sleep(aDelay);
 		//}
+		IPCMechanism mechanism = getIPCMechanism();
+		System.out.println("IPC Mechanism");
+		System.out.println(mechanism);
+		
+		
+		if(mechanism.toString().equals("GIPC")) {
+						
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			clientOutCoupler = new ClientOutCoupler(serverGIPC, (ClientRemoteInterfaceGIPC) this, CLIENT_NAME);
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			System.out.println("using gipc proxy server");
+		}
+		if(mechanism.toString().equals("RMI")) {
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			clientOutCoupler = new ClientOutCoupler(server, (ClientRemoteInterfaceGIPC) this, CLIENT_NAME);
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			System.out.println("using RMI proxy server");
+		}
+		
+		//IPC Mechanism Change
+		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
+		try {
+			server.broadcastIPCMechanism(mechanism, (ClientRemoteInterfaceGIPC) this, aProposalNumber, broadcastIPCMechanism);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		commandProcessor.setInputString(aCommand); // all commands go to the first command window
 	}
 	
 	@Override	
 	public void quit(int aCode) {
+		//commandProcessor.setInputString("quit");
+		
 		System.exit(aCode);
 	}
 	
@@ -229,8 +267,16 @@ public class ClientConfigure  extends AStandAloneTwoCoupledHalloweenSimulations 
 	@Override
 	public void broadcastMetaState(boolean broadcast) {
 		broadcastIPCMechanism = broadcast;
+		setBroadcastMetaState(broadcast);
 		
 	}
-
+	
+	@Override
+	public void changeIPCMechanism(IPCMechanism mechanism) {
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
+		setIPCMechanism(mechanism);
+		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
+		aProposalNumber++;
+	}
 
 }

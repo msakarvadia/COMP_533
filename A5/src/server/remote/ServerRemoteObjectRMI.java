@@ -203,4 +203,36 @@ public class ServerRemoteObjectRMI extends AStandAloneTwoCoupledHalloweenSimulat
 
 	}
 
+	@Override
+	public void createGIPCRegistry() throws RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void registerClientRMI(ClientRemoteInterfaceGIPC aClient) throws RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void registerClientGIPC(ClientRemoteInterfaceGIPC aClient) throws RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void broadcast(String aNewCommand, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber)
+			throws RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void broadcastIPCMechanism(IPCMechanism mechanism, ClientRemoteInterfaceGIPC originalClient,
+			int aProposalNumber, boolean broadcast) throws RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
