@@ -1,0 +1,14 @@
+registry.TrickOrTreatRegistry,@DistributedTags.REGISTRY+@DistributedTags.RMI
+server.Server,@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO+@DistributedTags.SERVER
+server.ServerConfigure,@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO
+server.remote.ServerRemoteObjectGIPC,@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.GIPC
+server.remote.ServerRemoteInterfaceGIPC,@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.GIPC
+readThread.ServerReadThread,@DistributedTags.SERVER_READ_THREAD+@DistributedTags.NIO
+readThread.ReadThreadInterface,@DistributedTags.READ_THREAD_INTERFACE+@DistributedTags.NIO
+client.Client,@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO+@DistributedTags.CLIENT
+client.ClientOutCoupler,@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO
+client.ClientConfigure,@DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO
+client.ClientRemoteInterfaceRMI,@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI
+client.ClientRemoteInterfaceGIPC,@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.GIPC
+client.ClientRemoteObject,@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.GIPC
+readThread.ClientReadThread,@DistributedTags.CLIENT_READ_THREAD+@DistributedTags.NIO

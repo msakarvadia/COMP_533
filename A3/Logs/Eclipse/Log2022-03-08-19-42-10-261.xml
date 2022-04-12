@@ -1,0 +1,50 @@
+<Events startTimestamp="1646786530261" logVersion="1.0.0.202111260825">
+  <Command __id="1" _type="MoveCaretCommand" caretOffset="0" date="Tue Mar 08 19:43:07 EST 2022" docOffset="0" starttimestamp="1646786530261" timestamp="57479" />
+  <Command __id="0" _type="DiffBasedFileOpenCommand" date="Tue Mar 08 19:43:07 EST 2022" docASTNodeCount="119" docActiveCodeLength="883" docExpressionCount="77" docLength="1274" projectName="A1" starttimestamp="1646786530261" timestamp="57050">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\A1Tests.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+
+import grader.basics.execution.BasicProjectExecution;
+import gradingTools.comp533s22.assignment1.S22Assignment1Suite;
+import trace.grader.basics.GraderBasicsTraceUtility;
+import util.trace.Tracer;
+
+public class A1Tests {
+	public static void main(final String[] args) {
+		Tracer.showInfo(true);
+		GraderBasicsTraceUtility.setBufferTracedMessages(false);
+		final int traces = 8000;
+		Tracer.setMaxTraces(traces);
+		
+		// if you set this to false, grader steps will not be traced
+		GraderBasicsTraceUtility.setTracerShowInfo(true);	
+		// if you set this to false, all grader steps will be traced,
+		// not just the ones that failed		
+		
+		GraderBasicsTraceUtility.setBufferTracedMessages(false);
+		// Change this number if a test trace gets longer than 600 and is clipped
+		
+		final int length = 600;
+		GraderBasicsTraceUtility.setMaxPrintedTraces(length);
+		// Change this number if all traces together are longer than 600
+		
+		final int time = 4000;
+		GraderBasicsTraceUtility.setMaxTraces(time);
+		// Change this number if your process times out prematurely
+		
+		final int timer = 5;
+		BasicProjectExecution.setProcessTimeOut(timer);
+		// You need to always call such a method
+		S22Assignment1Suite.main(args);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="3" _type="PauseCommand" date="Tue Mar 08 19:43:12 EST 2022" range="2s-5s" starttimestamp="1646786530261" timestamp="62114">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[4621]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>

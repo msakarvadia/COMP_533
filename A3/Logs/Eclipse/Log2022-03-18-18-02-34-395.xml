@@ -1,0 +1,154 @@
+<Events startTimestamp="1647640954395" logVersion="1.0.0.202111260825">
+  <Command __id="125" _type="ShellCommand" date="Fri Mar 18 21:47:55 EDT 2022" starttimestamp="1647640954395" timestamp="13521101" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="0" _type="DiffBasedFileOpenCommand" date="Fri Mar 18 18:02:37 EDT 2022" docASTNodeCount="82" docActiveCodeLength="530" docExpressionCount="41" docLength="530" projectName="A1" starttimestamp="1647640954395" timestamp="3318">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A1\src\comp533\mvc\ReducerFactory.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+import gradingTools.comp533s19.assignment0.AMapReduceTracer; 
+
+public class ReducerFactory extends AMapReduceTracer{
+	private static ReducerInterface<String, Integer> reducer;
+	
+	public static ReducerInterface<String, Integer> getReducer() {
+		if (reducer == null) {
+			reducer = new Reducer();
+		}
+		return reducer;
+	}
+	
+	public static void setReducer(final ReducerInterface<String, Integer> newReducer) {
+		reducer = newReducer;
+		traceSingletonChange(ReducerFactory.class, reducer);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="128" _type="PauseCommand" date="Fri Mar 18 21:48:19 EDT 2022" range="20s-30s" starttimestamp="1647640954395" timestamp="13544957">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[23856]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="129" _type="MoveCaretCommand" caretOffset="0" date="Fri Mar 18 21:48:19 EDT 2022" docOffset="0" starttimestamp="1647640954395" timestamp="13545383" />
+  <Command __id="131" _type="PauseCommand" date="Fri Mar 18 21:48:22 EDT 2022" range="2s-5s" starttimestamp="1647640954395" timestamp="13547960">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[2577]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="148" _type="MoveCaretCommand" caretOffset="50" date="Fri Mar 18 21:48:57 EDT 2022" docOffset="50" starttimestamp="1647640954395" timestamp="13583249" />
+  <Command __id="127" _type="DiffBasedFileOpenCommand" date="Fri Mar 18 21:48:19 EDT 2022" docASTNodeCount="119" docActiveCodeLength="884" docExpressionCount="77" docLength="1275" projectName="A3" starttimestamp="1647640954395" timestamp="13544957">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A3\src\comp533\mvc\A3Tests.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.mvc;
+
+import grader.basics.execution.BasicProjectExecution;
+import gradingTools.comp533s22.assignment3.S22Assignment3Suite;
+import trace.grader.basics.GraderBasicsTraceUtility;
+import util.trace.Tracer;
+
+public class A3Tests {
+	public static void main(final String[] args) {
+		Tracer.showInfo(true);
+		GraderBasicsTraceUtility.setBufferTracedMessages(false);
+		final int traces = 8000;
+		Tracer.setMaxTraces(traces);
+		
+		// if you set this to false, grader steps will not be traced
+		GraderBasicsTraceUtility.setTracerShowInfo(true);	
+		// if you set this to false, all grader steps will be traced,
+		// not just the ones that failed		
+		
+		GraderBasicsTraceUtility.setBufferTracedMessages(false);
+		// Change this number if a test trace gets longer than 600 and is clipped
+		
+		final int length = 600;
+		GraderBasicsTraceUtility.setMaxPrintedTraces(length);
+		// Change this number if all traces together are longer than 600
+		
+		final int time = 4000;
+		GraderBasicsTraceUtility.setMaxTraces(time);
+		// Change this number if your process times out prematurely
+		
+		final int timer = 50;
+		BasicProjectExecution.setProcessTimeOut(timer);
+		// You need to always call such a method
+		S22Assignment3Suite.main(args);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="146" _type="DiffBasedFileOpenCommand" date="Fri Mar 18 21:48:54 EDT 2022" docASTNodeCount="8" docActiveCodeLength="55" docExpressionCount="4" docLength="55" projectName="A4" starttimestamp="1647640954395" timestamp="13580252">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A4\src\comp533\checks\Checks.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.checks;
+
+public class Checks {
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="151" _type="PauseCommand" date="Fri Mar 18 21:49:01 EDT 2022" range="2s-5s" starttimestamp="1647640954395" timestamp="13587555">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[4306]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="152" _type="SelectTextCommand" caretOffset="1129" date="Fri Mar 18 21:49:02 EDT 2022" end="1129" start="0" starttimestamp="1647640954395" timestamp="13587795" />
+  <Command __id="154" _type="PauseCommand" date="Fri Mar 18 21:49:03 EDT 2022" range="1s-2s" starttimestamp="1647640954395" timestamp="13589432">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[1637]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="153" _type="MoveCaretCommand" caretOffset="183" date="Fri Mar 18 21:49:03 EDT 2022" docOffset="329" starttimestamp="1647640954395" timestamp="13589432" />
+  <Command __id="156" _type="PauseCommand" date="Fri Mar 18 21:49:09 EDT 2022" range="5s-10s" starttimestamp="1647640954395" timestamp="13594889">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[5457]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="161" _type="MoveCaretCommand" caretOffset="25" date="Fri Mar 18 21:49:12 EDT 2022" docOffset="25" starttimestamp="1647640954395" timestamp="13597768" />
+  <Command __id="164" _type="InsertStringCommand" date="Fri Mar 18 21:49:12 EDT 2022" starttimestamp="1647640954395" timestamp="13598064" timestamp2="13598064">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="166" _type="PasteCommand" date="Fri Mar 18 21:49:12 EDT 2022" starttimestamp="1647640954395" timestamp="13598481" />
+  <Command __id="168" _type="InsertStringCommand" date="Fri Mar 18 21:49:13 EDT 2022" starttimestamp="1647640954395" timestamp="13598891" timestamp2="13598891">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="169" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Fri Mar 18 21:49:13 EDT 2022" starttimestamp="1647640954395" timestamp="13599549" />
+  <Command __id="170" _type="EclipseCommand" commandID="" date="Fri Mar 18 21:49:14 EDT 2022" starttimestamp="1647640954395" timestamp="13599642" />
+  <Command __id="171" _type="EclipseCommand" commandID="" date="Fri Mar 18 21:49:14 EDT 2022" starttimestamp="1647640954395" timestamp="13599686" />
+  <Command __id="158" _type="DiffBasedFileOpenCommand" date="Fri Mar 18 21:49:10 EDT 2022" docASTNodeCount="8" docActiveCodeLength="55" docExpressionCount="4" docLength="55" projectName="A4" starttimestamp="1647640954395" timestamp="13596317">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A4\src\comp533\checks\Checks.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package comp533.checks;¶¶public class Checks {¶¶}¶")]]]></diff>
+  </Command>
+  <DocumentChange __id="163" _type="Insert" date="Fri Mar 18 21:49:12 EDT 2022" docASTNodeCount="38" docActiveCodeLength="258" docExpressionCount="30" docLength="258" length="203" offset="25" repeat="3" starttimestamp="1647640954395" timestamp="13598055" timestamp2="13598884">
+    <text><![CDATA[
+import grader.basics.execution.BasicProjectExecution;
+import gradingTools.comp533s22.assignment3.S22Assignment3Suite;
+import trace.grader.basics.GraderBasicsTraceUtility;
+import util.trace.Tracer;
+]]></text>
+  </DocumentChange>
+  <Command __id="173" _type="PauseCommand" date="Fri Mar 18 21:49:15 EDT 2022" range="1s-2s" starttimestamp="1647640954395" timestamp="13601201">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1515]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="174" _type="SelectTextCommand" caretOffset="24" date="Fri Mar 18 21:49:15 EDT 2022" end="223" start="24" starttimestamp="1647640954395" timestamp="13601395" />
+  <Command __id="176" _type="PauseCommand" date="Fri Mar 18 21:49:20 EDT 2022" range="2s-5s" starttimestamp="1647640954395" timestamp="13605924">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[4529]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+</Events>

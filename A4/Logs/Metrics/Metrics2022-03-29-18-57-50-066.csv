@@ -1,0 +1,5 @@
+Id,Prediction,Date,File,StartTime,ElapsedTime,BusyTime,Commands,editOrInsertPercentage,debugPercentage,navigationPercentage,focusPercentage,removePercentage,editPercentage,COMMAND_RATE,NAVIGATION_RATE,DEBUG_RATE,FOCUS_RATE,EDIT_RATE,REMOVE_RATE,INSERT_RATE,webLinkTimes,Web Page Visits
+78,,Tue Mar 29 20:25:59 EDT 2022,ServerRemoteObjectGIPC.java,1648599959186,5773,5773,(D)4,0.0,100.0,0.0,0.0,0.0,0.0,0.8,0.0,0.8,0.0,0.0,0.0,0.0,0.0,[]
+79,,Tue Mar 29 20:26:04 EDT 2022,ServerRemoteObjectGIPC.java,1648599964959,25714,0,(F)2(D)1(F)2(D)1(F)2,0.0,25.0,0.0,75.0,0.0,0.0,0.32,0.0,0.08,0.24,0.0,0.0,0.0,0.0,[]
+81,,Tue Mar 29 20:26:42 EDT 2022,Server.java,1648600002348,-112813,-112813,(F)1(R)1(I)1,0.3333333333333333,0.0,0.0,33.33333333333333,0.0,0.0,0.0,0.0,0.0,0.0,0.0,null,0.0,0.0,[]
+82,,Tue Mar 29 20:24:50 EDT 2022,ServerRemoteObject.java,1648599890658,309450,0,(I)6(D)2,0.75,25.0,0.0,0.0,0.0,0.0,0.025889967637540454,0.0,0.006472491909385114,0.0,0.0,0.0,0.019417475728155338,0.0,[]

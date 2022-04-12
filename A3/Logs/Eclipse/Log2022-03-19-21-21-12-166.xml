@@ -1,0 +1,103 @@
+<Events startTimestamp="1647739272166" logVersion="1.0.0.202111260825">
+  <Command __id="577" _type="ConsoleOutput" date="Sat Mar 19 23:36:11 EDT 2022" overflow="false" starttimestamp="1647739272166" timestamp="8099273" type="ConsoleOutput">
+    <outputString><![CDATA[trace [true, false]
+rejectMetaStateChange [true, false]
+waitForBroadcastConsensus [true, false]
+waitForIPCMechanismConsensus [true, false]
+localProcessingOnly [true, false]
+quit null
+simulationCommand null
+delaySends null
+experimentInput
+atomicBroadcast [true, false]
+consensusAlgorithm [NON_ATOMIC_ASYNCHRONOUS, NON_ATOMIC_SYNCHRONOUS, CENTRALIZED_ASYNCHRONOUS, CENTRALIZED_SYNCHRONOUS, BASIC_PAXOS, SEQUENTIAL_PAXOS]
+ipcMechanism [NIO, RMI, GIPC]
+broadcastMetaState [true, false]
+Enter (prefixes of) print, quit or a method and its parameters separated by commas:
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Command processor scanner opened"), Diff(INSERT,"trace [true, false]¶rejectMetaStateChange [true, false]¶waitForBroadcastConsensus [true, false]¶waitForIPCMechanismConsensus [true, false]¶localProcessingOnly [true, false]¶quit null¶simulationCommand null¶delaySends null¶experimentInput¶atomicBroadcast [true, false]¶consensusAlgorithm [NON_ATOMIC_ASYNCHRONOUS, NON_ATOMIC_SYNCHRONOUS, CENTRALIZED_ASYNCHRONOUS, CENTRALIZED_SYNCHRONOUS, BASIC_PAXOS, SEQUENTIAL_PAXOS]¶ipcMechanism [NIO, RMI, GIPC]¶broadcastMetaState [true, false]"), Diff(EQUAL,"¶Enter (prefixes of) print, quit or a method and its parameters separated by commas:¶")]]]></diff>
+  </Command>
+  <Command __id="579" _type="ConsoleOutput" date="Sat Mar 19 23:36:11 EDT 2022" overflow="false" starttimestamp="1647739272166" timestamp="8099429" type="ConsoleOutput">
+    <outputString><![CDATA[trace [true, false]
+rejectMetaStateChange [true, false]
+waitForBroadcastConsensus [true, false]
+waitForIPCMechanismConsensus [true, false]
+localProcessingOnly [true, false]
+quit null
+simulationCommand null
+delaySends null
+experimentInput
+atomicBroadcast [true, false]
+consensusAlgorithm [NON_ATOMIC_ASYNCHRONOUS, NON_ATOMIC_SYNCHRONOUS, CENTRALIZED_ASYNCHRONOUS, CENTRALIZED_SYNCHRONOUS, BASIC_PAXOS, SEQUENTIAL_PAXOS]
+ipcMechanism [NIO, RMI, GIPC]
+broadcastMetaState [true, false]
+Enter (prefixes of) print, quit or a method and its parameters separated by commas:
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"trace [true, false]¶rejectMetaStateChange [true, false]¶waitForBroadcastConsensus [true, false]¶waitForIPCMechanismConsensus [true, false]¶localProcessingOnly [true, false]¶quit null¶simulationCommand null¶delaySends null¶experimentInput¶atomicBroadcast [true, false]¶consensusAlgorithm [NON_ATOMIC_ASYNCHRONOUS, NON_ATOMIC_SYNCHRONOUS, CENTRALIZED_ASYNCHRONOUS, CENTRALIZED_SYNCHRONOUS, BASIC_PAXOS, SEQUENTIAL_PAXOS]¶ipcMechanism [NIO, RMI, GIPC]¶broadcastMetaState [true, false]¶Enter (prefixes of) print, quit or a method and its parameters separated by commas:¶")]]]></diff>
+  </Command>
+  <Command __id="464" _type="DiffBasedFileOpenCommand" date="Sat Mar 19 23:31:23 EDT 2022" docASTNodeCount="8" docActiveCodeLength="55" docExpressionCount="4" docLength="55" projectName="A4" starttimestamp="1647739272166" timestamp="7811140">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A4\src\comp533\client\Client.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package comp533.client;¶¶public class Client {¶¶}¶")]]]></diff>
+  </Command>
+  <DocumentChange __id="469" _type="Insert" date="Sat Mar 19 23:31:25 EDT 2022" docASTNodeCount="29" docActiveCodeLength="191" docExpressionCount="23" docLength="191" length="136" offset="25" repeat="2" starttimestamp="1647739272166" timestamp="7813653" timestamp2="7814038">
+    <text><![CDATA[
+import util.annotations.Tags;
+import util.tags.DistributedTags;
+
+@Tags({DistributedTags.SERVER_REMOTE_OBJECT, DistributedTags.RMI})]]></text>
+  </DocumentChange>
+  <DocumentChange __id="475" _type="Replace" date="Sat Mar 19 23:31:29 EDT 2022" docASTNodeCount="29" docActiveCodeLength="172" docExpressionCount="23" docLength="172" endLine="5" insertionLength="1" int_docASTNodeCount="22" int_docActiveCodeLength="171" int_docExpressionCount="16" int_docLength="171" length="20" offset="118" startLine="5" starttimestamp="1647739272166" timestamp="7817232">
+    <deletedText><![CDATA[SERVER_REMOTE_OBJECT]]></deletedText>
+    <insertedText><![CDATA[C]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="477" _type="Insert" date="Sat Mar 19 23:31:29 EDT 2022" docASTNodeCount="29" docActiveCodeLength="177" docExpressionCount="23" docLength="177" length="5" offset="119" repeat="5" starttimestamp="1647739272166" timestamp="7817368" timestamp2="7817849">
+    <text><![CDATA[LIENT]]></text>
+  </DocumentChange>
+  <Command __id="515" _type="DiffBasedFileOpenCommand" date="Sat Mar 19 23:32:39 EDT 2022" docASTNodeCount="119" docActiveCodeLength="886" docExpressionCount="77" docLength="1277" projectName="A4" starttimestamp="1647739272166" timestamp="7886997">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A4\src\comp533\checks\Checks.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.checks;
+
+import grader.basics.execution.BasicProjectExecution;
+import gradingTools.comp533s22.assignment4.S22Assignment4Suite;
+import trace.grader.basics.GraderBasicsTraceUtility;
+import util.trace.Tracer;
+
+public class Checks {
+	public static void main(final String[] args) {
+		Tracer.showInfo(true);
+		GraderBasicsTraceUtility.setBufferTracedMessages(false);
+		final int traces = 8000;
+		Tracer.setMaxTraces(traces);
+		
+		// if you set this to false, grader steps will not be traced
+		GraderBasicsTraceUtility.setTracerShowInfo(true);	
+		// if you set this to false, all grader steps will be traced,
+		// not just the ones that failed		
+		
+		GraderBasicsTraceUtility.setBufferTracedMessages(false);
+		// Change this number if a test trace gets longer than 600 and is clipped
+		
+		final int length = 600;
+		GraderBasicsTraceUtility.setMaxPrintedTraces(length);
+		// Change this number if all traces together are longer than 600
+		
+		final int time = 4000;
+		GraderBasicsTraceUtility.setMaxTraces(time);
+		// Change this number if your process times out prematurely
+		
+		final int timer = 50;
+		BasicProjectExecution.setProcessTimeOut(timer);
+		// You need to always call such a method
+		S22Assignment4Suite.main(args);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="581" _type="PauseCommand" date="Sat Mar 19 23:36:30 EDT 2022" range="10s-20s" starttimestamp="1647739272166" timestamp="8118460">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[19031]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>

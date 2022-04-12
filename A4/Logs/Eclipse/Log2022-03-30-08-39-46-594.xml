@@ -1,0 +1,494 @@
+<Events startTimestamp="1648643986594" logVersion="1.0.0.202111260825">
+  <Command __id="814" _type="ShellCommand" date="Wed Mar 30 20:57:18 EDT 2022" starttimestamp="1648643986594" timestamp="44251513" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="514" _type="DiffBasedFileOpenCommand" date="Wed Mar 30 09:41:10 EDT 2022" docASTNodeCount="1130" docActiveCodeLength="8727" docExpressionCount="805" docLength="9596" projectName="A5" starttimestamp="1648643986594" timestamp="3684272">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A5\src\client\ClientRemoteObject.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package client;¶¶import util.annotations.Tags;¶import util.interactiveMethodInvocation.IPCMechanism;¶import util.misc.ThreadSupport;¶import util.tags.DistributedTags;¶¶import java.beans.PropertyChangeListener;¶import java.rmi.AccessException;¶import java.rmi.NotBoundException;¶import java.rmi.RemoteException;¶import java.rmi.registry.LocateRegistry;¶import java.rmi.registry.Registry;¶import java.rmi.server.UnicastRemoteObject;¶¶¶import assignments.util.mainArgs.ClientArgsProcessor;¶import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;¶import coupledsims.Simulation;¶import coupledsims.Simulation1;¶import inputport.rpc.GIPCLocateRegistry;¶import inputport.rpc.GIPCRegistry;¶import main.BeauAndersonFinalProject;¶import server.remote.ServerRemoteInterfaceRMI;¶import server.remote.ServerRemoteObjectGIPC;¶import server.remote.ServerRemoteInterfaceGIPC;¶import stringProcessors.HalloweenCommandProcessor;¶import util.trace.bean.BeanTraceUtility;¶import util.trace.factories.FactoryTraceUtility;¶import util.trace.misc.ThreadDelayed;¶import util.trace.port.PortTraceUtility;¶import util.trace.port.consensus.ConsensusTraceUtility;¶import util.trace.port.consensus.ProposalLearnedNotificationReceived;¶import util.trace.port.consensus.ProposedStateSet;¶import util.trace.port.nio.NIOTraceUtility;¶import util.trace.port.rpc.gipc.GIPCObjectLookedUp;¶import util.trace.port.rpc.gipc.GIPCRPCTraceUtility;¶import util.trace.port.rpc.gipc.GIPCRegistryLocated;¶import util.trace.port.rpc.rmi.RMIObjectLookedUp;¶import util.trace.port.rpc.rmi.RMIRegistryLocated;¶import util.trace.port.rpc.rmi.RMITraceUtility;¶¶@Tags({ DistributedTags.CLIENT_REMOTE_OBJECT, DistributedTags.RMI, DistributedTags.GIPC })¶public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulations implements ClientRemoteInterfaceRMI, ClientRemoteInterfaceGIPC {¶	HalloweenCommandProcessor commandProcessor;¶	protected int NUM_EXPERIMENT_COMMANDS = 500;¶	public static final String EXPERIMENT_COMMAND_1 = "move 1 -1";¶	public static final String EXPERIMENT_COMMAND_2 = "undo";¶	protected PropertyChangeListener simulationCoupler;¶	ServerRemoteInterfaceGIPC server = null;¶	ServerRemoteInterfaceGIPC serverGIPC = null;¶	¶¶	private static String RMI_SERVER_HOST_NAME;¶	private static int RMI_SERVER_PORT;¶	private static String SERVER_NAME;¶	private static String CLIENT_NAME;¶	¶	//A5¶	private static int GIPC_SERVER_PORT;¶	protected static GIPCRegistry gipcRegistry;¶	private static String GIPC_SERVER_NAME ;¶	private static boolean broadcastIPCMechanism = false;¶	private static int aProposalNumber;¶	¶	PropertyChangeListener clientOutCoupler;¶¶	@Override¶	public HalloweenCommandProcessor createSimulation(String aPrefix) {¶		return BeauAndersonFinalProject.createSimulation(aPrefix, Simulation1.SIMULATION1_X_OFFSET,¶				Simulation.SIMULATION_Y_OFFSET, Simulation.SIMULATION_WIDTH, Simulation.SIMULATION_HEIGHT,¶				Simulation1.SIMULATION1_X_OFFSET, Simulation.SIMULATION_Y_OFFSET);¶	}¶¶	@Override¶	public void processArgs(String[] args) {¶		System.out.println("Registry host:" + ClientArgsProcessor.getRegistryHost(args));¶		System.out.println("Registry port:" + ClientArgsProcessor.getRegistryPort(args));¶		System.out.println("Server host:" + ClientArgsProcessor.getServerHost(args));¶		System.out.println("Headless:" + ClientArgsProcessor.getHeadless(args));¶		System.out.println("Client name:" + ClientArgsProcessor.getClientName(args));¶¶		// Make sure you set this property when processing args¶		System.setProperty("java.awt.headless", ClientArgsProcessor.getHeadless(args));¶¶		RMI_SERVER_HOST_NAME = ClientArgsProcessor.getRegistryHost(args);¶		RMI_SERVER_PORT = ClientArgsProcessor.getRegistryPort(args);¶		SERVER_NAME = "SERVER";¶				//ClientArgsProcessor.getServerHost(args);¶		CLIENT_NAME = ClientArgsProcessor.getClientName(args);¶¶¶		//A5¶		GIPC_SERVER_PORT = ClientArgsProcessor.getGIPCPort(args);¶		GIPC_SERVER_NAME = ClientArgsProcessor.getServerHost(args);¶		¶	}¶	¶	@Override¶	protected void setTracing() {¶		//A5¶		FactoryTraceUtility.setTracing();¶		BeanTraceUtility.setTracing();¶		RMITraceUtility.setTracing();¶		ConsensusTraceUtility.setTracing();¶		ThreadDelayed.enablePrint();¶		GIPCRPCTraceUtility.setTracing();¶		NIOTraceUtility.setTracing();¶¶		//A4¶		PortTraceUtility.setTracing();¶		RMITraceUtility.setTracing();¶		NIOTraceUtility.setTracing();¶		FactoryTraceUtility.setTracing();		¶		ConsensusTraceUtility.setTracing();¶		ThreadDelayed.enablePrint();¶		trace(true);¶	}¶¶	@Override¶	public void init(String[] args) {¶		setTracing();¶¶		this.processArgs(args);¶		// Ideally the prefixes should be main args¶		commandProcessor = createSimulation(Simulation1.SIMULATION1_PREFIX);¶		¶		//Locate GIPC Server¶		gipcRegistry = GIPCLocateRegistry.getRegistry(GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);¶		GIPCRegistryLocated.newCase(this, GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);¶		¶		//Get GIPC server here¶		serverGIPC = (ServerRemoteInterfaceGIPC) gipcRegistry.lookup(ServerRemoteObjectGIPC.class, SERVER_NAME);¶		GIPCObjectLookedUp.newCase(this, serverGIPC, ServerRemoteObjectGIPC.class, SERVER_NAME, gipcRegistry);¶		¶		//Register Client with GIPC Proxy¶		try {¶			serverGIPC.registerClientGIPC(this);¶		} catch (RemoteException e) {¶			// TODO Auto-generated catch block¶			e.printStackTrace();¶		}¶		¶		¶		// Locate RMI Server¶		Registry rmiRegistry = null;¶		try {¶			rmiRegistry = LocateRegistry.getRegistry(RMI_SERVER_HOST_NAME, RMI_SERVER_PORT);¶			RMIRegistryLocated.newCase(this, RMI_SERVER_HOST_NAME, RMI_SERVER_PORT, rmiRegistry);¶		} catch (RemoteException e3) {¶			e3.printStackTrace();¶		}¶		// Get RMI server here¶		¶		try {¶			server = (ServerRemoteInterfaceGIPC) rmiRegistry.lookup(SERVER_NAME);¶			RMIObjectLookedUp.newCase(this, server, SERVER_NAME, rmiRegistry);¶		} catch (AccessException e2) {¶			// TODO Auto-generated catch block¶			e2.printStackTrace();¶		} catch (RemoteException e2) {¶¶			e2.printStackTrace();¶		} catch (NotBoundException e2) {¶			e2.printStackTrace();¶		}¶¶		// export client to create proxy¶		try {¶			UnicastRemoteObject.exportObject(this, 0);¶		} catch (RemoteException e1) {¶			e1.printStackTrace();¶		}¶¶		// have the server register the exported client¶		try {¶			server.registerClientRMI(this);¶		} catch (RemoteException e) {¶			e.printStackTrace();¶		}¶		¶		¶		clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME);¶		//clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);¶		// Add propertyChangeListener¶		commandProcessor.addPropertyChangeListener(clientOutCoupler);¶		¶		System.out.println("added server as a property change listener of client");¶	}¶¶	@Override¶	public void inCoupler(String aNewCommand, int proposalNumber) {¶		//final int aProposalNumber = proposalNumber;¶		System.out.println("recieved broadcased command: "+ aNewCommand);¶		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);¶		commandProcessor.processCommand(aNewCommand);¶		ProposedStateSet.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);¶		System.out.println("executed command");¶		¶	}¶	¶	@Override¶	/*¶	 * You will need to delay not command input but sends(non-Javadoc)¶	 */¶	public void simulationCommand(String aCommand) {¶		//long aDelay = getDelay(); ¶		//if (aDelay > 0) {¶		//	ThreadSupport.sleep(aDelay);¶		//}¶		IPCMechanism mechanism = getIPCMechanism();¶		System.out.println("IPC Mechanism");¶		System.out.println(mechanism);¶		¶		¶		if(mechanism.toString().equals("GIPC")) {¶						¶			commandProcessor.removePropertyChangeListener(clientOutCoupler);¶			clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);¶			commandProcessor.addPropertyChangeListener(clientOutCoupler);¶			System.out.println("using gipc proxy server");¶		}¶		if(mechanism.toString().equals("RMI")) {¶			commandProcessor.removePropertyChangeListener(clientOutCoupler);¶			clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME);¶			commandProcessor.addPropertyChangeListener(clientOutCoupler);¶			System.out.println("using RMI proxy server");¶		}¶		¶		//IPC Mechanism Change¶		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);¶		try {¶			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);¶		} catch (RemoteException e) {¶			// TODO Auto-generated catch block¶			e.printStackTrace();¶		}¶		commandProcessor.setInputString(aCommand); // all commands go to the first command window¶	}¶	¶	@Override	¶	public void quit(int aCode) {¶		//commandProcessor.setInputString("quit");¶		¶		System.exit(aCode);¶	}¶	¶	@Override¶	public void localProcessingOnly(boolean newValue) {¶		super.localProcessingOnly(newValue);¶		if (isLocalProcessingOnly()) {¶			commandProcessor.removePropertyChangeListener(clientOutCoupler);¶			¶		} else {¶			commandProcessor.addPropertyChangeListener(clientOutCoupler);¶			¶		}¶	}¶	¶	@Override¶	public void broadcastMetaState(boolean broadcast) {¶		broadcastIPCMechanism = broadcast;¶		¶	}¶	¶	@Override¶	public void changeIPCMechanism(IPCMechanism mechanism) {¶		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);¶		setIPCMechanism(mechanism);¶		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);¶		aProposalNumber++;¶	}¶¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="567" _type="DiffBasedFileOpenCommand" date="Wed Mar 30 09:46:38 EDT 2022" docASTNodeCount="1160" docActiveCodeLength="8288" docExpressionCount="825" docLength="9149" projectName="A5" starttimestamp="1648643986594" timestamp="4012226">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A5\src\server\remote\ServerRemoteObjectGIPC.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package server.remote;¶¶import java.rmi.RemoteException;¶import java.rmi.registry.LocateRegistry;¶import java.rmi.registry.Registry;¶import java.rmi.server.UnicastRemoteObject;¶import java.util.ArrayList;¶import java.util.List;¶¶import assignments.util.mainArgs.ClientArgsProcessor;¶import assignments.util.mainArgs.ServerArgsProcessor;¶import client.ClientOutCoupler;¶import client.ClientRemoteInterfaceGIPC;¶import client.ClientRemoteInterfaceRMI;¶import util.annotations.Tags;¶import util.interactiveMethodInvocation.IPCMechanism;¶import util.misc.ThreadSupport;¶import util.tags.DistributedTags;¶¶import inputport.rpc.GIPCLocateRegistry;¶import inputport.rpc.GIPCRegistry;¶import port.ATracingConnectionListener;¶import util.trace.bean.BeanTraceUtility;¶import util.trace.factories.FactoryTraceUtility;¶import util.trace.misc.ThreadDelayed;¶import util.trace.port.PortTraceUtility;¶import util.trace.port.consensus.ConsensusTraceUtility;¶import util.trace.port.consensus.ProposalLearnedNotificationSent;¶import util.trace.port.consensus.ProposedStateSet;¶import util.trace.port.consensus.RemoteProposeRequestReceived;¶import util.trace.port.rpc.rmi.RMIRegistryLocated;¶import util.trace.port.nio.NIOTraceUtility;¶import util.trace.port.rpc.rmi.RMITraceUtility;¶import util.trace.port.rpc.gipc.GIPCObjectRegistered;¶import util.trace.port.rpc.gipc.GIPCRPCTraceUtility;¶import util.trace.port.rpc.gipc.GIPCRegistryCreated;¶import util.trace.port.rpc.rmi.RMIObjectRegistered;¶¶@Tags({ DistributedTags.SERVER_REMOTE_OBJECT, DistributedTags.RMI, DistributedTags.GIPC })¶public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements ServerRemoteInterfaceGIPC {¶¶	List<ClientRemoteInterfaceGIPC> clientListGIPC = new ArrayList<ClientRemoteInterfaceGIPC>();¶	List<ClientRemoteInterfaceGIPC> clientListRMI = new ArrayList<ClientRemoteInterfaceGIPC>();¶¶	private static String RMI_SERVER_HOST_NAME;¶	private static int RMI_SERVER_PORT;¶	private static String SERVER_NAME;¶¶	// A5¶	private static int GIPC_SERVER_PORT;¶	protected static GIPCRegistry gipcRegistry;¶¶	// int aProposalNumber = 0;¶¶	@Override¶	public void processArgs(String[] args) {¶		System.out.println("Registry host:" + ClientArgsProcessor.getRegistryHost(args));¶		System.out.println("Registry port:" + ClientArgsProcessor.getRegistryPort(args));¶		System.out.println("Server host:" + ClientArgsProcessor.getServerHost(args));¶		System.out.println("Headless:" + ClientArgsProcessor.getHeadless(args));¶		System.out.println("Client name:" + ClientArgsProcessor.getClientName(args));¶¶		// Make sure you set this property when processing args¶		System.setProperty("java.awt.headless", ClientArgsProcessor.getHeadless(args));¶¶		RMI_SERVER_HOST_NAME = ServerArgsProcessor.getRegistryHost(args);¶		RMI_SERVER_PORT = ServerArgsProcessor.getRegistryPort(args);¶		SERVER_NAME = "SERVER";¶		GIPC_SERVER_PORT = ServerArgsProcessor.getGIPCServerPort(args);¶		// ClientArgsProcessor.getServerHost(args);¶¶	}¶¶	@Override¶	public void registerClientGIPC(ClientRemoteInterfaceGIPC aClient) {¶		¶		clientListGIPC.add(aClient);¶		System.out.println("Client registered GIPC");¶		System.out.println(aClient);¶		System.out.println(clientListGIPC);¶	}¶	¶	@Override¶	public void registerClientRMI(ClientRemoteInterfaceGIPC aClient) {¶		¶		clientListRMI.add(aClient);¶		System.out.println("Client registered RMI");¶		System.out.println(aClient);¶		System.out.println(clientListRMI);¶	}¶¶	@Override¶	public void broadcast(String aNewCommand, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber){¶		List<ClientRemoteInterfaceGIPC> clientList = clientListGIPC;¶		¶		// TODO Check is this is where delay is needed¶		long aDelay = getDelay();¶		if (aDelay > 0) {¶			ThreadSupport.sleep(aDelay);¶		}¶¶		System.out.println("Command recieved for broadcast: " + aNewCommand);¶		RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);¶		ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);¶		¶		if(clientListGIPC.isEmpty()) {¶			clientList = clientListRMI;¶			System.out.println("USING RMI IN SERVER");¶		}¶		else {¶			clientList = clientListGIPC;¶			System.out.println("USING GIPC IN SERVER");¶		}¶		System.out.println(clientList);¶		System.out.println(clientList.size());¶		for (ClientRemoteInterfaceGIPC client : clientList) {¶			System.out.println(client);¶			if (client.equals(originalClient)) {¶				if (aNewCommand.charAt(0) == 'q') {¶					// Need to quit¶					try {¶						client.quit(0);¶					} catch (RemoteException e) {¶						// TODO Auto-generated catch block¶						e.printStackTrace();¶					}¶				}¶				continue;¶			}¶			¶			if (aNewCommand.charAt(0) == 'q') {¶¶				try {¶					client.quit(0);¶				} catch (RemoteException e1) {¶					// TODO Auto-generated catch block¶					e1.printStackTrace();¶				}¶				continue;¶			}¶¶			try {¶				client.inCoupler(aNewCommand, aProposalNumber);¶			} catch (RemoteException e) {¶				// TODO Auto-generated catch block¶				e.printStackTrace();¶			}¶			//ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);¶¶			//if (aNewCommand.charAt(0) == 'q') {¶				// Need to quit¶			//	this.quit(0);¶			//}¶		}¶		if (aNewCommand.charAt(0) == 'q') {¶			// Need to quit¶			this.quit(0);¶		}¶¶	}¶¶	@Override¶	public void broadcastIPCMechanism(IPCMechanism mechanism, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber, boolean broadcast) {¶		List<ClientRemoteInterfaceGIPC> clientList;¶		¶		// TODO Check is this is where delay is needed¶		long aDelay = getDelay();¶		if (aDelay > 0) {¶			ThreadSupport.sleep(aDelay);¶		}¶¶		System.out.println("IPC Mechanism recieved for broadcast: " + mechanism);¶		setIPCMechanism(mechanism);¶		setBroadcastMetaState(broadcast);¶		¶		¶¶		if(clientListGIPC.isEmpty()) {¶			clientList = clientListRMI;¶			System.out.println("USING RMI IN SERVER");¶		}¶		else {¶			clientList = clientListGIPC;¶			System.out.println("USING GIPC IN SERVER");¶		}¶		¶		if (broadcast) {¶			RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, mechanism);¶			¶			for (ClientRemoteInterfaceGIPC client : clientList) {¶				if (client.equals(originalClient)) {¶					continue;¶				}¶¶				try {¶					client.changeIPCMechanism(mechanism);¶				} catch (RemoteException e) {¶					// TODO Auto-generated catch block¶					e.printStackTrace();¶				}¶				ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, mechanism);¶			}¶		}¶¶	}¶¶	@Override¶	protected void setTracing() {¶		// A5¶		FactoryTraceUtility.setTracing();¶		BeanTraceUtility.setTracing();¶		RMITraceUtility.setTracing();¶		ConsensusTraceUtility.setTracing();¶		ThreadDelayed.enablePrint();¶		GIPCRPCTraceUtility.setTracing();¶		NIOTraceUtility.setTracing();¶¶		// A4¶		PortTraceUtility.setTracing();¶		RMITraceUtility.setTracing();¶		NIOTraceUtility.setTracing();¶		FactoryTraceUtility.setTracing();¶		ConsensusTraceUtility.setTracing();¶		ThreadDelayed.enablePrint();¶		trace(true);¶	}¶¶	@Override¶	protected void init(String[] args) {¶¶		setTracing();¶¶		this.processArgs(args);¶		createGIPCRegistry();¶¶		try {¶			final Registry rmiRegistry = LocateRegistry.getRegistry(RMI_SERVER_HOST_NAME, RMI_SERVER_PORT);¶			RMIRegistryLocated.newCase(this, RMI_SERVER_HOST_NAME, RMI_SERVER_PORT, rmiRegistry);¶			// Create remote server object¶¶			// create proxy of remote server object¶			// UnicastRemoteObject.exportObject(server, 0);¶			UnicastRemoteObject.exportObject(this, 0);¶			// send server to RMI server¶			// rmiRegistry.rebind(SERVER_NAME, server);¶			rmiRegistry.rebind(SERVER_NAME, this);¶¶			RMIObjectRegistered.newCase(this, SERVER_NAME, (ServerRemoteInterfaceRMI) this, rmiRegistry);¶¶			System.out.println("Server proxy sent to RMI Registry");¶¶		} catch (Exception e) {¶			e.printStackTrace();¶		}¶¶	}¶¶	@Override¶	public void start(String[] args) {¶		init(args);¶¶	}¶¶	@Override¶	public void fakeMethod(String stringOne, String stringTwo) {¶		// TODO Auto-generated method stub¶¶	}¶¶	@Override¶	public void fakeMethodTwo(String stringOne, ClientRemoteInterfaceRMI client) {¶		// TODO Auto-generated method stub¶¶	}¶¶	@Override¶	public void createGIPCRegistry() {¶		System.out.println("GIPC_SERVER_PORT: ");¶		System.out.println(GIPC_SERVER_PORT);¶		gipcRegistry = GIPCLocateRegistry.createRegistry(GIPC_SERVER_PORT);¶		GIPCRegistryCreated.newCase(this, GIPC_SERVER_PORT);¶¶		final ServerRemoteInterfaceRMI server = new ServerRemoteObjectGIPC();¶		gipcRegistry.rebind(SERVER_NAME, server);¶		GIPCObjectRegistered.newCase(this, SERVER_NAME, this, gipcRegistry);¶		gipcRegistry.getInputPort().addConnectionListener(new ATracingConnectionListener(gipcRegistry.getInputPort()));¶	}¶	¶	public void simulationCommand(String aCommand) {¶	¶		commandProcessor.setInputString(aCommand); // all commands go to the first command window¶	}¶¶}¶")]]]></diff>
+  </Command>
+  <DocumentChange __id="571" _type="Delete" date="Wed Mar 30 09:46:43 EDT 2022" docASTNodeCount="1146" docActiveCodeLength="8183" docExpressionCount="818" docLength="8998" endLine="291" length="151" offset="8991" repeat="3" startLine="287" starttimestamp="1648643986594" timestamp="4016763" timestamp2="4017965">
+    <text><![CDATA[
+	public void simulationCommand(String aCommand) {
+	
+		commandProcessor.setInputString(aCommand); // all commands go to the first command window
+	}]]></text>
+  </DocumentChange>
+  <DocumentChange __id="591" _type="Insert" date="Wed Mar 30 09:47:07 EDT 2022" docASTNodeCount="1146" docActiveCodeLength="8187" docExpressionCount="818" docLength="9002" length="4" offset="8132" starttimestamp="1648643986594" timestamp="4041360">
+    <text><![CDATA[
+		]]></text>
+  </DocumentChange>
+  <DocumentChange __id="593" _type="Replace" date="Wed Mar 30 09:47:08 EDT 2022" docASTNodeCount="1163" docActiveCodeLength="8377" docExpressionCount="832" docLength="9293" endLine="259" insertionLength="293" int_docASTNodeCount="1146" int_docActiveCodeLength="8185" int_docExpressionCount="818" int_docLength="9000" length="2" offset="8134" startLine="259" starttimestamp="1648643986594" timestamp="4041874">
+    <deletedText><![CDATA[		]]></deletedText>
+    <insertedText><![CDATA[		init(args);
+		// register a callback to process actions denoted by the user commands
+		SimulationParametersControllerFactory.getSingleton().addSimulationParameterListener(this);
+		// use the calling back library
+		SimulationParametersControllerFactory.getSingleton().processCommands();		]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="601" _type="Insert" date="Wed Mar 30 09:47:12 EDT 2022" docASTNodeCount="1169" docActiveCodeLength="8457" docExpressionCount="837" docLength="9373" length="80" offset="548" repeat="2" starttimestamp="1648643986594" timestamp="4046009" timestamp2="4046011">
+    <text><![CDATA[
+import util.interactiveMethodInvocation.SimulationParametersControllerFactory;]]></text>
+  </DocumentChange>
+  <DocumentChange __id="606" _type="Insert" date="Wed Mar 30 09:47:19 EDT 2022" docASTNodeCount="1165" docActiveCodeLength="8446" docExpressionCount="834" docLength="9375" length="2" offset="8511" repeat="2" starttimestamp="1648643986594" timestamp="4052588" timestamp2="4052726">
+    <text><![CDATA[//]]></text>
+  </DocumentChange>
+  <Command __id="817" _type="PauseCommand" date="Wed Mar 30 20:57:34 EDT 2022" range="10s-20s" starttimestamp="1648643986594" timestamp="44268230">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[16716]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="818" _type="MoveCaretCommand" caretOffset="0" date="Wed Mar 30 20:57:35 EDT 2022" docOffset="0" starttimestamp="1648643986594" timestamp="44268681" />
+  <Command __id="820" _type="PauseCommand" date="Wed Mar 30 20:58:34 EDT 2022" range="30s-1m" starttimestamp="1648643986594" timestamp="44328384">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[59703]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="819" _type="MoveCaretCommand" caretOffset="374" date="Wed Mar 30 20:58:34 EDT 2022" docOffset="409" starttimestamp="1648643986594" timestamp="44328384" />
+  <Command __id="816" _type="DiffBasedFileOpenCommand" date="Wed Mar 30 20:57:34 EDT 2022" docASTNodeCount="65" docActiveCodeLength="391" docExpressionCount="37" docLength="414" projectName="A4" starttimestamp="1648643986594" timestamp="44268229">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A4\src\client\Client.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package client;
+
+import util.annotations.Tags;
+import util.tags.DistributedTags;
+
+@Tags({ DistributedTags.CLIENT, DistributedTags.RMI })
+public class Client {
+	public static void main(final String[] args) {
+		try {
+
+			// create client object
+			final ClientRemoteObject client = new ClientRemoteObject();
+
+			client.start(args);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="822" _type="PauseCommand" date="Wed Mar 30 20:59:04 EDT 2022" range="20s-30s" starttimestamp="1648643986594" timestamp="44357926">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[29542]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="823" _type="MoveCaretCommand" caretOffset="0" date="Wed Mar 30 20:59:05 EDT 2022" docOffset="0" starttimestamp="1648643986594" timestamp="44358510" />
+  <Command __id="825" _type="PauseCommand" date="Wed Mar 30 21:04:38 EDT 2022" range="5m-10m" starttimestamp="1648643986594" timestamp="44691606">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[333096]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="824" _type="ShellCommand" date="Wed Mar 30 21:04:38 EDT 2022" starttimestamp="1648643986594" timestamp="44691606" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="827" _type="PauseCommand" date="Wed Mar 30 21:05:30 EDT 2022" range="30s-1m" starttimestamp="1648643986594" timestamp="44743637">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[52031]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="826" _type="ShellCommand" date="Wed Mar 30 21:05:30 EDT 2022" starttimestamp="1648643986594" timestamp="44743637" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="828" _type="ShellCommand" date="Wed Mar 30 21:05:30 EDT 2022" starttimestamp="1648643986594" timestamp="44743697" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="830" _type="PauseCommand" date="Wed Mar 30 21:05:31 EDT 2022" range="1s-2s" starttimestamp="1648643986594" timestamp="44744940">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1243]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="829" _type="ShellCommand" date="Wed Mar 30 21:05:31 EDT 2022" starttimestamp="1648643986594" timestamp="44744940" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="831" _type="MoveCaretCommand" caretOffset="3516" date="Wed Mar 30 21:05:31 EDT 2022" docOffset="4678" starttimestamp="1648643986594" timestamp="44744981" />
+  <Command __id="821" _type="DiffBasedFileOpenCommand" date="Wed Mar 30 20:59:04 EDT 2022" docASTNodeCount="741" docActiveCodeLength="5544" docExpressionCount="523" docLength="6143" projectName="A4" starttimestamp="1648643986594" timestamp="44357926">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A4\src\client\ClientRemoteObject.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package client;
+
+import util.annotations.Tags;
+import util.misc.ThreadSupport;
+import util.tags.DistributedTags;
+
+import java.beans.PropertyChangeListener;
+import java.rmi.AccessException;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+
+import assignments.util.mainArgs.ClientArgsProcessor;
+import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;
+import coupledsims.Simulation;
+import coupledsims.Simulation1;
+import main.BeauAndersonFinalProject;
+import server.ServerRemoteInterface;
+import stringProcessors.HalloweenCommandProcessor;
+import util.trace.factories.FactoryTraceUtility;
+import util.trace.misc.ThreadDelayed;
+import util.trace.port.PortTraceUtility;
+import util.trace.port.consensus.ConsensusTraceUtility;
+import util.trace.port.consensus.ProposalLearnedNotificationReceived;
+import util.trace.port.consensus.ProposedStateSet;
+import util.trace.port.nio.NIOTraceUtility;
+import util.trace.port.rpc.rmi.RMIObjectLookedUp;
+import util.trace.port.rpc.rmi.RMIRegistryLocated;
+import util.trace.port.rpc.rmi.RMITraceUtility;
+
+@Tags({ DistributedTags.CLIENT_REMOTE_OBJECT, DistributedTags.RMI })
+public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulations implements ClientRemoteInterface {
+	HalloweenCommandProcessor commandProcessor;
+	protected int NUM_EXPERIMENT_COMMANDS = 500;
+	public static final String EXPERIMENT_COMMAND_1 = "move 1 -1";
+	public static final String EXPERIMENT_COMMAND_2 = "undo";
+	protected PropertyChangeListener simulationCoupler;
+	ServerRemoteInterface server = null;
+	
+
+	private static String RMI_SERVER_HOST_NAME;
+	private static int RMI_SERVER_PORT;
+	private static String SERVER_NAME;
+	private static String CLIENT_NAME;
+	
+	ClientOutCoupler clientOutCoupler;
+
+	protected HalloweenCommandProcessor createSimulation(String aPrefix) {
+		return BeauAndersonFinalProject.createSimulation(aPrefix, Simulation1.SIMULATION1_X_OFFSET,
+				Simulation.SIMULATION_Y_OFFSET, Simulation.SIMULATION_WIDTH, Simulation.SIMULATION_HEIGHT,
+				Simulation1.SIMULATION1_X_OFFSET, Simulation.SIMULATION_Y_OFFSET);
+	}
+
+	public void processArgs(String[] args) {
+		System.out.println("Registry host:" + ClientArgsProcessor.getRegistryHost(args));
+		System.out.println("Registry port:" + ClientArgsProcessor.getRegistryPort(args));
+		System.out.println("Server host:" + ClientArgsProcessor.getServerHost(args));
+		System.out.println("Headless:" + ClientArgsProcessor.getHeadless(args));
+		System.out.println("Client name:" + ClientArgsProcessor.getClientName(args));
+
+		// Make sure you set this property when processing args
+		System.setProperty("java.awt.headless", ClientArgsProcessor.getHeadless(args));
+
+		RMI_SERVER_HOST_NAME = ClientArgsProcessor.getRegistryHost(args);
+		RMI_SERVER_PORT = ClientArgsProcessor.getRegistryPort(args);
+		SERVER_NAME = "SERVER";
+				//ClientArgsProcessor.getServerHost(args);
+		CLIENT_NAME = ClientArgsProcessor.getClientName(args);
+	}
+	
+	@Override
+	protected void setTracing() {
+		PortTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();		
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		trace(true);
+	}
+
+	@Override
+	protected void init(String[] args) {
+		setTracing();
+
+		this.processArgs(args);
+		// Ideally the prefixes should be main args
+		commandProcessor = createSimulation(Simulation1.SIMULATION1_PREFIX);
+
+		// Locate Server
+		Registry rmiRegistry = null;
+		try {
+			rmiRegistry = LocateRegistry.getRegistry(RMI_SERVER_HOST_NAME, RMI_SERVER_PORT);
+			RMIRegistryLocated.newCase(this, RMI_SERVER_HOST_NAME, RMI_SERVER_PORT, rmiRegistry);
+		} catch (RemoteException e3) {
+			// TODO Auto-generated catch block
+			e3.printStackTrace();
+		}
+		// Get server here
+		
+		try {
+			server = (ServerRemoteInterface) rmiRegistry.lookup(SERVER_NAME);
+			RMIObjectLookedUp.newCase(this, server, SERVER_NAME, rmiRegistry);
+		} catch (AccessException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		} catch (RemoteException e2) {
+
+			e2.printStackTrace();
+		} catch (NotBoundException e2) {
+			e2.printStackTrace();
+		}
+
+		// export client to create proxy
+		try {
+			UnicastRemoteObject.exportObject(this, 0);
+		} catch (RemoteException e1) {
+			e1.printStackTrace();
+		}
+
+		// have the server register the exported client
+		try {
+			server.registerClient(this);
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		}
+
+		clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME);
+		// Add propertyChangeListener
+		commandProcessor.addPropertyChangeListener(clientOutCoupler);
+		
+		System.out.println("added server as a property change listener of client");
+	}
+
+	@Override
+	public void inCoupler(String aNewCommand, int proposalNumber) {
+		//final int aProposalNumber = proposalNumber;
+		System.out.println("recieved broadcased command: "+ aNewCommand);
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);
+		commandProcessor.processCommand(aNewCommand);
+		ProposedStateSet.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);
+		System.out.println("executed command");
+		
+	}
+	
+	@Override
+	/*
+	 * You will need to delay not command input but sends(non-Javadoc)
+	 */
+	public void simulationCommand(String aCommand) {
+		//long aDelay = getDelay(); 
+		//if (aDelay > 0) {
+		//	ThreadSupport.sleep(aDelay);
+		//}
+		commandProcessor.setInputString(aCommand); // all commands go to the first command window
+	}
+	
+	@Override	
+	public void quit(int aCode) {
+		System.exit(aCode);
+	}
+	
+	@Override
+	public void localProcessingOnly(boolean newValue) {
+		super.localProcessingOnly(newValue);
+		if (isLocalProcessingOnly()) {
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			
+		} else {
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			
+		}
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="833" _type="PauseCommand" date="Wed Mar 30 21:05:35 EDT 2022" range="2s-5s" starttimestamp="1648643986594" timestamp="44748737">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[3756]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="834" _type="MoveCaretCommand" caretOffset="0" date="Wed Mar 30 21:05:35 EDT 2022" docOffset="0" starttimestamp="1648643986594" timestamp="44749279" />
+  <Command __id="836" _type="PauseCommand" date="Wed Mar 30 21:05:59 EDT 2022" range="20s-30s" starttimestamp="1648643986594" timestamp="44772883">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[23604]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="835" _type="ShellCommand" date="Wed Mar 30 21:05:59 EDT 2022" starttimestamp="1648643986594" timestamp="44772883" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="838" _type="PauseCommand" date="Wed Mar 30 21:06:49 EDT 2022" range="30s-1m" starttimestamp="1648643986594" timestamp="44822974">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[50091]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="837" _type="ShellCommand" date="Wed Mar 30 21:06:49 EDT 2022" starttimestamp="1648643986594" timestamp="44822974" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="839" _type="MoveCaretCommand" caretOffset="1102" date="Wed Mar 30 21:06:49 EDT 2022" docOffset="1410" starttimestamp="1648643986594" timestamp="44823054" />
+  <Command __id="841" _type="PauseCommand" date="Wed Mar 30 21:07:18 EDT 2022" range="20s-30s" starttimestamp="1648643986594" timestamp="44851861">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[28807]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="840" _type="ShellCommand" date="Wed Mar 30 21:07:18 EDT 2022" starttimestamp="1648643986594" timestamp="44851861" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="843" _type="PauseCommand" date="Wed Mar 30 21:08:59 EDT 2022" range="1m-2m" starttimestamp="1648643986594" timestamp="44952631">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[100770]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="842" _type="ShellCommand" date="Wed Mar 30 21:08:59 EDT 2022" starttimestamp="1648643986594" timestamp="44952631" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="844" _type="MoveCaretCommand" caretOffset="1134" date="Wed Mar 30 21:08:59 EDT 2022" docOffset="1442" starttimestamp="1648643986594" timestamp="44952790" />
+  <Command __id="832" _type="DiffBasedFileOpenCommand" date="Wed Mar 30 21:05:35 EDT 2022" docASTNodeCount="193" docActiveCodeLength="1483" docExpressionCount="132" docLength="1483" projectName="A4" starttimestamp="1648643986594" timestamp="44748737">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A4\src\client\ClientOutCoupler.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package client;
+
+import util.annotations.Tags;
+import util.tags.DistributedTags;
+import util.trace.port.consensus.RemoteProposeRequestSent;
+import util.trace.trickOrTreat.LocalCommandObserved;
+
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.rmi.RemoteException;
+
+import server.ServerRemoteInterface;
+
+@Tags({DistributedTags.CLIENT_OUT_COUPLER, DistributedTags.RMI})
+public class ClientOutCoupler implements PropertyChangeListener{
+	ServerRemoteInterface ObservingServer;
+	ClientRemoteInterface originalClient;
+	String ORIGINAL_CLIENT_NAME;
+	
+	int aProposalNumber = 0;
+	
+	public ClientOutCoupler (ServerRemoteInterface anObservingServer, ClientRemoteObject aClient, String aClientName) {
+		ObservingServer = anObservingServer;
+		originalClient = aClient;
+		ORIGINAL_CLIENT_NAME = aClientName;
+		
+		
+	}
+	
+	@Override
+	public void propertyChange(PropertyChangeEvent anEvent) {
+		if (!anEvent.getPropertyName().equals("InputString")) return;
+		String newCommand = (String) anEvent.getNewValue();
+		LocalCommandObserved.newCase(this, newCommand);
+		
+		System.out.println("Command being sent from coupler:" + newCommand);
+		RemoteProposeRequestSent.newCase(originalClient, ORIGINAL_CLIENT_NAME, aProposalNumber, newCommand);
+		try {
+			ObservingServer.broadcast(newCommand, originalClient, aProposalNumber);
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		}
+		aProposalNumber++;
+	
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="846" _type="PauseCommand" date="Wed Mar 30 21:09:05 EDT 2022" range="5s-10s" starttimestamp="1648643986594" timestamp="44958722">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[5932]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="847" _type="MoveCaretCommand" caretOffset="0" date="Wed Mar 30 21:09:05 EDT 2022" docOffset="0" starttimestamp="1648643986594" timestamp="44959130" />
+  <Command __id="849" _type="PauseCommand" date="Wed Mar 30 21:09:24 EDT 2022" range="10s-20s" starttimestamp="1648643986594" timestamp="44977859">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[18729]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="848" _type="ShellCommand" date="Wed Mar 30 21:09:24 EDT 2022" starttimestamp="1648643986594" timestamp="44977859" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="851" _type="PauseCommand" date="Wed Mar 30 21:10:04 EDT 2022" range="30s-1m" starttimestamp="1648643986594" timestamp="45017433">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[39574]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="850" _type="ShellCommand" date="Wed Mar 30 21:10:04 EDT 2022" starttimestamp="1648643986594" timestamp="45017433" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="852" _type="MoveCaretCommand" caretOffset="540" date="Wed Mar 30 21:10:04 EDT 2022" docOffset="825" starttimestamp="1648643986594" timestamp="45017508" />
+  <Command __id="854" _type="PauseCommand" date="Wed Mar 30 21:10:10 EDT 2022" range="5s-10s" starttimestamp="1648643986594" timestamp="45023547">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[6039]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="853" _type="ShellCommand" date="Wed Mar 30 21:10:10 EDT 2022" starttimestamp="1648643986594" timestamp="45023547" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="856" _type="PauseCommand" date="Wed Mar 30 21:11:06 EDT 2022" range="30s-1m" starttimestamp="1648643986594" timestamp="45079727">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[56180]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="855" _type="ShellCommand" date="Wed Mar 30 21:11:06 EDT 2022" starttimestamp="1648643986594" timestamp="45079727" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="857" _type="MoveCaretCommand" caretOffset="460" date="Wed Mar 30 21:11:06 EDT 2022" docOffset="745" starttimestamp="1648643986594" timestamp="45079886" />
+  <Command __id="859" _type="PauseCommand" date="Wed Mar 30 21:11:17 EDT 2022" range="10s-20s" starttimestamp="1648643986594" timestamp="45090736">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[10850]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="858" _type="ShellCommand" date="Wed Mar 30 21:11:17 EDT 2022" starttimestamp="1648643986594" timestamp="45090736" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="861" _type="PauseCommand" date="Wed Mar 30 21:30:35 EDT 2022" range="10m-20m" starttimestamp="1648643986594" timestamp="46249242">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1158506]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="860" _type="ShellCommand" date="Wed Mar 30 21:30:35 EDT 2022" starttimestamp="1648643986594" timestamp="46249242" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="862" _type="ShellCommand" date="Wed Mar 30 21:30:36 EDT 2022" starttimestamp="1648643986594" timestamp="46250139" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="864" _type="PauseCommand" date="Wed Mar 30 21:51:08 EDT 2022" range="20m-30m" starttimestamp="1648643986594" timestamp="47481877">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1231738]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[BalloonCommand]]></next>
+  </Command>
+  <Command __id="863" _type="BalloonCommand" date="Wed Mar 30 21:51:08 EDT 2022" message="*******************************************
+Worked 5 minutes(fixed)/8 minutes(context based) from
+Wed Mar 30 20:56:58 EDT 2022 to Wed Mar 30 21:30:36 EDT 2022
+Edited 0 Projects: 
+Edited 0 Files: 
+Number of insert: 0
+Number of delete: 0
+" starttimestamp="1648643986594" timestamp="47481877">
+    <fineGrainedWorkTime><![CDATA[8]]></fineGrainedWorkTime>
+    <insert><![CDATA[0]]></insert>
+    <startTime><![CDATA[1648688218512]]></startTime>
+    <endTime><![CDATA[1648690236733]]></endTime>
+    <workTime><![CDATA[5]]></workTime>
+    <delete><![CDATA[0]]></delete>
+  </Command>
+  <Command __id="866" _type="PauseCommand" date="Thu Mar 31 00:26:41 EDT 2022" range=">1h" starttimestamp="1648643986594" timestamp="56814820">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[BalloonCommand]]></prev>
+    <pause><![CDATA[9332943]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="865" _type="ShellCommand" date="Thu Mar 31 00:26:41 EDT 2022" starttimestamp="1648643986594" timestamp="56814820" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="867" _type="ShellCommand" date="Thu Mar 31 00:26:42 EDT 2022" starttimestamp="1648643986594" timestamp="56815651" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="869" _type="PauseCommand" date="Thu Mar 31 00:26:45 EDT 2022" range="2s-5s" starttimestamp="1648643986594" timestamp="56818967">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3315]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="868" _type="ShellCommand" date="Thu Mar 31 00:26:45 EDT 2022" starttimestamp="1648643986594" timestamp="56818966" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="871" _type="PauseCommand" date="Thu Mar 31 00:26:54 EDT 2022" range="5s-10s" starttimestamp="1648643986594" timestamp="56827627">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[8661]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>

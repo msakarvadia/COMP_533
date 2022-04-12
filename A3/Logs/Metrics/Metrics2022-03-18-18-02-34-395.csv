@@ -1,0 +1,2 @@
+Id,Prediction,Date,File,StartTime,ElapsedTime,BusyTime,Commands,editOrInsertPercentage,debugPercentage,navigationPercentage,focusPercentage,removePercentage,editPercentage,COMMAND_RATE,NAVIGATION_RATE,DEBUG_RATE,FOCUS_RATE,EDIT_RATE,REMOVE_RATE,INSERT_RATE,webLinkTimes,Web Page Visits
+4,,Fri Mar 18 21:47:55 EDT 2022,A3Tests.java,1647654475496,59151,0,(F)1(I)3(F)4(I)2,0.5,0.0,0.0,50.0,0.0,0.0,0.1694915254237288,0.0,0.0,0.0847457627118644,0.0,0.0,0.0847457627118644,0.0,[]

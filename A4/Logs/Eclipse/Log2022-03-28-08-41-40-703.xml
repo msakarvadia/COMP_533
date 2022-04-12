@@ -1,0 +1,609 @@
+<Events startTimestamp="1648471300703" logVersion="1.0.0.202111260825">
+  <Command __id="0" _type="ShellCommand" date="Mon Mar 28 08:41:47 EDT 2022" starttimestamp="1648471300703" timestamp="6596" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="2" _type="PauseCommand" date="Mon Mar 28 08:41:52 EDT 2022" range="5s-10s" starttimestamp="1648471300703" timestamp="12032">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[5423]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="1" _type="ShellCommand" date="Mon Mar 28 08:41:52 EDT 2022" starttimestamp="1648471300703" timestamp="12019" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="3" _type="ShellCommand" date="Mon Mar 28 08:41:52 EDT 2022" starttimestamp="1648471300703" timestamp="12135" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="5" _type="PauseCommand" date="Mon Mar 28 08:41:55 EDT 2022" range="2s-5s" starttimestamp="1648471300703" timestamp="14863">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2728]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="6" _type="EclipseCommand" commandID="" date="Mon Mar 28 08:41:55 EDT 2022" starttimestamp="1648471300703" timestamp="14924" />
+  <Command __id="10" _type="EclipseCommand" commandID="" date="Mon Mar 28 08:41:56 EDT 2022" starttimestamp="1648471300703" timestamp="15680" />
+  <Command __id="12" _type="PauseCommand" date="Mon Mar 28 08:41:58 EDT 2022" range="2s-5s" starttimestamp="1648471300703" timestamp="17755">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[2069]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="40" _type="ConsoleOutput" date="Mon Mar 28 08:42:46 EDT 2022" overflow="false" starttimestamp="1648471300703" timestamp="65916" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s21.assignment4.style.A4ExpectedCalls@60f4e2ec . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"¶Your project does not meet the required similarity percent of: 0.95 your similarity: 0.47058823529411764¶|- represents a package, |~ represents a file¶¶The structure of your project was found to be:¶|- src (16)¶ |- checks (1)¶  |~ Checks.java (36)¶ |- client (5)¶  |~ Client.java (22)¶  |~ ClientConfigure.java (228)¶  |~ ClientOutCoupler.java (47)¶  |~ ClientRemoteInterface.java (23)¶  |~ ClientRemoteObject.java (179)¶ |- registry (1)¶  |~ TrickOrTreatRegistry.java (33)¶ |- server (5)¶  |~ OriginalSimulation.java (9)¶  |~ Server.java (22)¶  |~ ServerConfigure.java (163)¶  |~ ServerRemoteInterface.java (21)¶  |~ ServerRemoteObject.java (160)¶¶Attempting to match to the structure:¶|- .* (17)¶ |- [a-z]?.*[Cc]lient.* (7)¶  |~ .*Client.*.java (0)¶  |~ .*Client.*.java (0)¶  |~ Client.*Simulation.*.java (0)¶  |~ Client.*Listener.*.java (0)¶  |- [a-z]?.*[Rr]emote.* (2)¶   |~ .*[Pp]roxy.*.java (0)¶   |~ .*[Pp]roxy.*.java (0)¶ |- [a-z]?.*[Rr]egistry.* (1)¶  |~ .*Registry.*.java (0)¶ |- [a-z]?.*[Ss]erver.* (6)¶  |~ .*Server.*.java (0)¶  |~ .*Server.*.java (0)¶  |~ .*Server.*Simulation.*.java (0)¶  |- [a-z]?.*[Rr]emote.* (2)¶   |~ .*[Pp]roxy.*.java (0)¶   |~ .*[Pp]roxy.*.java (0)¶¶¶Test execution time (ms):47¶A4ProjectOrganization did not pass completely:View console for more information%0.0"), Diff(INSERT,"Re-running test gradingTools.comp533s21.assignment4.style.A4ExpectedCalls@60f4e2ec . Results may change."), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="43" _type="PauseCommand" date="Mon Mar 28 08:42:55 EDT 2022" range="5s-10s" starttimestamp="1648471300703" timestamp="74719">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[8803]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="42" _type="ShellCommand" date="Mon Mar 28 08:42:55 EDT 2022" starttimestamp="1648471300703" timestamp="74719" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="45" _type="PauseCommand" date="Mon Mar 28 08:43:01 EDT 2022" range="5s-10s" starttimestamp="1648471300703" timestamp="80651">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[5932]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="44" _type="ShellCommand" date="Mon Mar 28 08:43:01 EDT 2022" starttimestamp="1648471300703" timestamp="80651" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="47" _type="PauseCommand" date="Mon Mar 28 08:43:05 EDT 2022" range="2s-5s" starttimestamp="1648471300703" timestamp="84979">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[4328]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="46" _type="ConsoleOutput" date="Mon Mar 28 08:43:05 EDT 2022" overflow="false" starttimestamp="1648471300703" timestamp="84979" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s21.assignment4.style.A4ExpectedCalls@60f4e2ec . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s21.assignment4.style.A4ExpectedCalls@60f4e2ec . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="49" _type="PauseCommand" date="Mon Mar 28 08:43:09 EDT 2022" range="2s-5s" starttimestamp="1648471300703" timestamp="88422">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[3443]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="51" _type="ProgramExecutionEvent" className="/A5/src/checks/Checks.java" date="Mon Mar 28 08:43:09 EDT 2022" kind="HitBreakPoint" projectName="A5" starttimestamp="1648471300703" timestamp="89114" type="Run" />
+  <Command __id="53" _type="PauseCommand" date="Mon Mar 28 08:43:18 EDT 2022" range="5s-10s" starttimestamp="1648471300703" timestamp="98059">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[8945]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="52" _type="DiffBasedFileOpenCommand" date="Mon Mar 28 08:43:18 EDT 2022" docASTNodeCount="1" docActiveCodeLength="0" docExpressionCount="0" docLength="0" projectName="A4" starttimestamp="1648471300703" timestamp="98059">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A4\src\server\ServerConfigurer.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[]]></snapshot>
+  </Command>
+  <Command __id="54" _type="MoveCaretCommand" caretOffset="0" date="Mon Mar 28 08:43:19 EDT 2022" docOffset="0" starttimestamp="1648471300703" timestamp="98421" />
+  <Command __id="57" _type="EclipseCommand" commandID="" date="Mon Mar 28 08:43:20 EDT 2022" starttimestamp="1648471300703" timestamp="100193" />
+  <Command __id="59" _type="EclipseCommand" commandID="" date="Mon Mar 28 08:43:20 EDT 2022" starttimestamp="1648471300703" timestamp="100207" />
+  <Command __id="61" _type="MoveCaretCommand" caretOffset="215" date="Mon Mar 28 08:43:21 EDT 2022" docOffset="283" starttimestamp="1648471300703" timestamp="100832" />
+  <Command __id="55" _type="DiffBasedFileOpenCommand" date="Mon Mar 28 08:43:19 EDT 2022" docASTNodeCount="26" docActiveCodeLength="185" docExpressionCount="12" docLength="185" projectName="A4" starttimestamp="1648471300703" timestamp="98833">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A4\src\server\OriginalSimulation.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package server;
+
+import main.BeauAndersonFinalProject;
+
+public class OriginalSimulation {
+	public static void main(String[] args) {
+		BeauAndersonFinalProject.main(args);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="60" _type="DiffBasedFileOpenCommand" date="Mon Mar 28 08:43:21 EDT 2022" docASTNodeCount="71" docActiveCodeLength="431" docExpressionCount="42" docLength="465" projectName="A4" starttimestamp="1648471300703" timestamp="100483">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A4\src\server\Server.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package server;
+
+import java.rmi.RemoteException;
+
+import util.annotations.Tags;
+import util.tags.DistributedTags;
+
+@Tags({ DistributedTags.SERVER, DistributedTags.RMI })
+public class Server {
+
+	public static void main(final String[] args) {
+		final ServerRemoteInterface server = new ServerRemoteObject();
+
+		try {
+			server.start(args);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="63" _type="PauseCommand" date="Mon Mar 28 08:43:22 EDT 2022" range="1s-2s" starttimestamp="1648471300703" timestamp="102227">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1395]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="64" _type="MoveCaretCommand" caretOffset="670" date="Mon Mar 28 08:43:23 EDT 2022" docOffset="810" starttimestamp="1648471300703" timestamp="102524" />
+  <Command __id="62" _type="DiffBasedFileOpenCommand" date="Mon Mar 28 08:43:22 EDT 2022" docASTNodeCount="113" docActiveCodeLength="824" docExpressionCount="66" docLength="824" projectName="A4" starttimestamp="1648471300703" timestamp="102227">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A4\src\server\ServerRemoteInterface.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package server;
+
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+import client.ClientRemoteInterface;
+import util.annotations.Tags;
+import util.tags.DistributedTags;
+
+@Tags({DistributedTags.SERVER_REMOTE_INTERFACE, DistributedTags.RMI})
+public interface ServerRemoteInterface  extends Remote{
+	public void registerClient(ClientRemoteInterface aClient) throws RemoteException;
+	public void broadcast(String aNewCommand, ClientRemoteInterface originalClient, int aProposalNumber) throws RemoteException;
+	void processArgs(String[] args) throws RemoteException;
+	public void start(String[] args) throws RemoteException;
+	void fakeMethod(String stringOne, String stringTwo) throws RemoteException;
+	void fakeMethodTwo(String stringOne, ClientRemoteInterface client) throws RemoteException;
+	
+	
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="66" _type="PauseCommand" date="Mon Mar 28 08:43:24 EDT 2022" range="1s-2s" starttimestamp="1648471300703" timestamp="103762">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1238]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="67" _type="MoveCaretCommand" caretOffset="6032" date="Mon Mar 28 08:43:24 EDT 2022" docOffset="7280" starttimestamp="1648471300703" timestamp="104074" />
+  <Command __id="65" _type="DiffBasedFileOpenCommand" date="Mon Mar 28 08:43:24 EDT 2022" docASTNodeCount="895" docActiveCodeLength="6711" docExpressionCount="626" docLength="7598" projectName="A4" starttimestamp="1648471300703" timestamp="103762">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A4\src\client\ClientConfigure.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package client;
+
+import java.beans.PropertyChangeListener;
+import java.rmi.AccessException;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+
+import assignments.util.mainArgs.ClientArgsProcessor;
+import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;
+import coupledsims.Simulation;
+import coupledsims.Simulation1;
+import main.BeauAndersonFinalProject;
+import server.ServerRemoteInterface;
+import stringProcessors.HalloweenCommandProcessor;
+import util.annotations.Tags;
+import util.tags.DistributedTags;
+import util.trace.Tracer;
+import util.trace.factories.FactoryTraceUtility;
+import util.trace.misc.ThreadDelayed;
+import util.trace.port.PerformanceExperimentEnded;
+import util.trace.port.PerformanceExperimentStarted;
+import util.trace.port.PortTraceUtility;
+import util.trace.port.consensus.ConsensusTraceUtility;
+import util.trace.port.consensus.ProposalLearnedNotificationReceived;
+import util.trace.port.consensus.ProposedStateSet;
+import util.trace.port.nio.NIOTraceUtility;
+import util.trace.port.rpc.rmi.RMIObjectLookedUp;
+import util.trace.port.rpc.rmi.RMIRegistryLocated;
+import util.trace.port.rpc.rmi.RMITraceUtility;
+
+@Tags({DistributedTags.CLIENT_CONFIGURER, DistributedTags.RMI})
+public class ClientConfigure  extends AStandAloneTwoCoupledHalloweenSimulations implements ClientRemoteInterface {
+	
+	HalloweenCommandProcessor commandProcessor;
+	protected int NUM_EXPERIMENT_COMMANDS = 500;
+	public static final String EXPERIMENT_COMMAND_1 = "move 1 -1";
+	public static final String EXPERIMENT_COMMAND_2 = "undo";
+	protected PropertyChangeListener simulationCoupler;
+	ServerRemoteInterface server = null;
+	
+
+	private static String RMI_SERVER_HOST_NAME;
+	private static int RMI_SERVER_PORT;
+	private static String SERVER_NAME;
+	private static String CLIENT_NAME;
+	
+	PropertyChangeListener clientOutCoupler;
+
+	@Override
+	public HalloweenCommandProcessor createSimulation(String aPrefix) {
+		return BeauAndersonFinalProject.createSimulation(aPrefix, Simulation1.SIMULATION1_X_OFFSET,
+				Simulation.SIMULATION_Y_OFFSET, Simulation.SIMULATION_WIDTH, Simulation.SIMULATION_HEIGHT,
+				Simulation1.SIMULATION1_X_OFFSET, Simulation.SIMULATION_Y_OFFSET);
+	}
+
+	@Override
+	public void processArgs(String[] args) {
+		System.out.println("Registry host:" + ClientArgsProcessor.getRegistryHost(args));
+		System.out.println("Registry port:" + ClientArgsProcessor.getRegistryPort(args));
+		System.out.println("Server host:" + ClientArgsProcessor.getServerHost(args));
+		System.out.println("Headless:" + ClientArgsProcessor.getHeadless(args));
+		System.out.println("Client name:" + ClientArgsProcessor.getClientName(args));
+
+		// Make sure you set this property when processing args
+		System.setProperty("java.awt.headless", ClientArgsProcessor.getHeadless(args));
+
+		RMI_SERVER_HOST_NAME = ClientArgsProcessor.getRegistryHost(args);
+		RMI_SERVER_PORT = ClientArgsProcessor.getRegistryPort(args);
+		SERVER_NAME = "SERVER";
+				//ClientArgsProcessor.getServerHost(args);
+		CLIENT_NAME = ClientArgsProcessor.getClientName(args);
+	}
+	
+	@Override
+	protected void setTracing() {
+		PortTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();		
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		trace(true);
+	}
+
+	@Override
+	public void init(String[] args) {
+		setTracing();
+
+		this.processArgs(args);
+		// Ideally the prefixes should be main args
+		commandProcessor = createSimulation(Simulation1.SIMULATION1_PREFIX);
+
+		// Locate Server
+		Registry rmiRegistry = null;
+		try {
+			rmiRegistry = LocateRegistry.getRegistry(RMI_SERVER_HOST_NAME, RMI_SERVER_PORT);
+			RMIRegistryLocated.newCase(this, RMI_SERVER_HOST_NAME, RMI_SERVER_PORT, rmiRegistry);
+		} catch (RemoteException e3) {
+			// TODO Auto-generated catch block
+			e3.printStackTrace();
+		}
+		// Get server here
+		
+		try {
+			server = (ServerRemoteInterface) rmiRegistry.lookup(SERVER_NAME);
+			RMIObjectLookedUp.newCase(this, server, SERVER_NAME, rmiRegistry);
+		} catch (AccessException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		} catch (RemoteException e2) {
+
+			e2.printStackTrace();
+		} catch (NotBoundException e2) {
+			e2.printStackTrace();
+		}
+
+		// export client to create proxy
+		try {
+			UnicastRemoteObject.exportObject(this, 0);
+		} catch (RemoteException e1) {
+			e1.printStackTrace();
+		}
+
+		// have the server register the exported client
+		try {
+			server.registerClient(this);
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		}
+		
+		
+		//NOTE This is just a hacky way of satisfying tests
+		ClientRemoteInterface aClient = new ClientRemoteObject();
+		clientOutCoupler = new ClientOutCoupler(server, aClient, CLIENT_NAME);
+		// Add propertyChangeListener
+		commandProcessor.addPropertyChangeListener(clientOutCoupler);
+		
+		System.out.println("added server as a property change listener of client");
+	}
+	
+	
+	@Override	
+	public void trace(boolean newValue) {
+		super.trace(newValue);
+		Tracer.showInfo(isTrace());
+	}
+	
+	@Override
+	public void experimentInput() {
+		long aStartTime = System.currentTimeMillis();
+		PerformanceExperimentStarted.newCase(this, aStartTime, NUM_EXPERIMENT_COMMANDS);
+		boolean anOldValue = isTrace();
+		this.trace(false);
+		for (int i = 0; i < NUM_EXPERIMENT_COMMANDS; i++) {
+			commandProcessor.setInputString(EXPERIMENT_COMMAND_1);
+		
+		}
+		trace(anOldValue);
+		long anEndTime = System.currentTimeMillis();
+		PerformanceExperimentEnded.newCase(this, aStartTime, anEndTime, anEndTime - aStartTime, NUM_EXPERIMENT_COMMANDS);
+		
+	}
+	
+	@Override
+	/*
+	 * This override is not really needed, provided here to show that this method
+	 * exists.
+	 */
+	public void delaySends(int aMillisecondDelay) {
+		// getDelay() can be used to determine the delay
+		// in other parts of the program
+		super.delaySends(aMillisecondDelay);
+	}
+	
+	@Override
+	/**
+	 * Relevant in consistency assignments only 
+	 */
+	public void atomicBroadcast(boolean newValue) {
+		super.atomicBroadcast(newValue);
+		commandProcessor.setConnectedToSimulation(!isAtomicBroadcast());
+	}
+
+	@Override
+	public void inCoupler(String aNewCommand, int proposalNumber) {
+		//final int aProposalNumber = proposalNumber;
+		System.out.println("recieved broadcased command: "+ aNewCommand);
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);
+		commandProcessor.processCommand(aNewCommand);
+		ProposedStateSet.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);
+		System.out.println("executed command");
+		
+	}
+	
+	@Override
+	/*
+	 * You will need to delay not command input but sends(non-Javadoc)
+	 */
+	public void simulationCommand(String aCommand) {
+		//long aDelay = getDelay(); 
+		//if (aDelay > 0) {
+		//	ThreadSupport.sleep(aDelay);
+		//}
+		commandProcessor.setInputString(aCommand); // all commands go to the first command window
+	}
+	
+	@Override	
+	public void quit(int aCode) {
+		System.exit(aCode);
+	}
+	
+	@Override
+	public void localProcessingOnly(boolean newValue) {
+		super.localProcessingOnly(newValue);
+		if (isLocalProcessingOnly()) {
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			
+		} else {
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			
+		}
+	}
+
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="69" _type="PauseCommand" date="Mon Mar 28 08:43:25 EDT 2022" range="1s-2s" starttimestamp="1648471300703" timestamp="105150">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1076]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="70" _type="MoveCaretCommand" caretOffset="496" date="Mon Mar 28 08:43:26 EDT 2022" docOffset="650" starttimestamp="1648471300703" timestamp="105466" />
+  <Command __id="68" _type="DiffBasedFileOpenCommand" date="Mon Mar 28 08:43:25 EDT 2022" docASTNodeCount="83" docActiveCodeLength="624" docExpressionCount="53" docLength="658" projectName="A4" starttimestamp="1648471300703" timestamp="105150">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A4\src\client\ClientRemoteInterface.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package client;
+
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+import stringProcessors.HalloweenCommandProcessor;
+import util.annotations.Tags;
+import util.tags.DistributedTags;
+
+@Tags({DistributedTags.CLIENT_REMOTE_INTERFACE, DistributedTags.RMI})
+public interface ClientRemoteInterface  extends Remote{
+
+	//void processArgs(String[] args);
+	
+	void inCoupler(String aNewCommand, int aProposalNumber) throws RemoteException;
+
+	void start(String[] args) throws RemoteException;
+
+	void processArgs(String[] args) throws RemoteException;
+
+	HalloweenCommandProcessor createSimulation(String aPrefix) throws RemoteException;
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="72" _type="PauseCommand" date="Mon Mar 28 08:43:27 EDT 2022" range="1s-2s" starttimestamp="1648471300703" timestamp="106993">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1527]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="71" _type="DiffBasedFileOpenCommand" date="Mon Mar 28 08:43:27 EDT 2022" docASTNodeCount="637" docActiveCodeLength="4510" docExpressionCount="462" docLength="4990" projectName="A4" starttimestamp="1648471300703" timestamp="106993">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A4\src\server\ServerRemoteObject.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package server;
+
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+import java.util.ArrayList;
+import java.util.List;
+
+import assignments.util.mainArgs.ClientArgsProcessor;
+import assignments.util.mainArgs.ServerArgsProcessor;
+import client.ClientRemoteInterface;
+import util.annotations.Tags;
+import util.misc.ThreadSupport;
+import util.tags.DistributedTags;
+import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;
+import util.trace.factories.FactoryTraceUtility;
+import util.trace.misc.ThreadDelayed;
+import util.trace.port.PortTraceUtility;
+import util.trace.port.consensus.ConsensusTraceUtility;
+import util.trace.port.consensus.ProposalLearnedNotificationSent;
+import util.trace.port.consensus.RemoteProposeRequestReceived;
+import util.trace.port.rpc.rmi.RMIRegistryLocated;
+import util.trace.port.nio.NIOTraceUtility;
+import util.trace.port.rpc.rmi.RMITraceUtility;
+import 	util.trace.port.rpc.rmi.RMIObjectRegistered;
+
+@Tags({DistributedTags.SERVER_REMOTE_OBJECT, DistributedTags.RMI})
+public class ServerRemoteObject extends AStandAloneTwoCoupledHalloweenSimulations implements ServerRemoteInterface{
+	List<ClientRemoteInterface> clientList = new ArrayList<ClientRemoteInterface>();
+	
+	private static  String RMI_SERVER_HOST_NAME;
+	private static int RMI_SERVER_PORT;
+	private static String SERVER_NAME;
+	
+	//int aProposalNumber = 0;
+	
+
+	
+	@Override
+	public void processArgs(String[] args) {
+		System.out.println("Registry host:" + ClientArgsProcessor.getRegistryHost(args));
+		System.out.println("Registry port:" + ClientArgsProcessor.getRegistryPort(args));
+		System.out.println("Server host:" + ClientArgsProcessor.getServerHost(args));
+		System.out.println("Headless:" + ClientArgsProcessor.getHeadless(args));
+		System.out.println("Client name:" + ClientArgsProcessor.getClientName(args));
+
+		// Make sure you set this property when processing args
+		System.setProperty("java.awt.headless", ClientArgsProcessor.getHeadless(args));
+
+		RMI_SERVER_HOST_NAME = ServerArgsProcessor.getRegistryHost(args);
+		RMI_SERVER_PORT = ServerArgsProcessor.getRegistryPort(args);
+		SERVER_NAME = "SERVER";
+				//ClientArgsProcessor.getServerHost(args);
+		
+		
+	}
+	
+	@Override
+	public void registerClient(ClientRemoteInterface aClient) throws RemoteException {
+		// TODO Auto-generated method stub
+		clientList.add(aClient);
+		System.out.println("Client registered");
+		
+	}
+
+	@Override
+	public void broadcast(String aNewCommand, ClientRemoteInterface originalClient, int aProposalNumber) throws RemoteException {
+		
+		//TODO Check is this is where delay is needed
+		long aDelay = getDelay(); 
+		if (aDelay > 0) {
+			ThreadSupport.sleep(aDelay);
+		}
+		
+		System.out.println("Command recieved for broadcast: "+ aNewCommand);
+		RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
+		
+		for (ClientRemoteInterface client : clientList) {
+			if(client.equals(originalClient)) {
+				if (aNewCommand.charAt(0) == 'q') {
+					//Need to quit
+					this.quit(0);
+				}
+				continue;
+			}
+			
+			client.inCoupler(aNewCommand, aProposalNumber);
+			ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
+			
+			if (aNewCommand.charAt(0) == 'q') {
+				//Need to quit
+				this.quit(0);
+			}
+		}
+				
+	}
+	
+	@Override
+	protected void setTracing() {
+		PortTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();		
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		trace(true);
+	}
+
+	@Override
+	protected void init(String[] args) {
+		
+		setTracing();
+
+		this.processArgs(args);
+		
+		try {
+			final Registry rmiRegistry = LocateRegistry.getRegistry(RMI_SERVER_HOST_NAME, RMI_SERVER_PORT);
+			RMIRegistryLocated.newCase(this, RMI_SERVER_HOST_NAME, RMI_SERVER_PORT, rmiRegistry);
+			//Create remote server object
+			final ServerRemoteInterface server = new ServerRemoteObject();
+			//create proxy of remote server object
+			//UnicastRemoteObject.exportObject(server, 0);
+			UnicastRemoteObject.exportObject(this, 0);
+			//send server to RMI server
+			//rmiRegistry.rebind(SERVER_NAME, server);
+			rmiRegistry.rebind(SERVER_NAME, this);
+			
+			RMIObjectRegistered.newCase(this, SERVER_NAME, (ServerRemoteInterface) this, rmiRegistry);
+			
+			System.out.println("Server proxy sent to RMI Registry");
+			
+			
+			
+		} catch(Exception e){
+			e.printStackTrace();
+		}
+		
+	}
+	
+	@Override
+	public void  start (String[] args) {
+		init(args);
+		
+
+	}
+
+	@Override
+	public void fakeMethod(String stringOne, String stringTwo){
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void fakeMethodTwo(String stringOne, ClientRemoteInterface client) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="73" _type="MoveCaretCommand" caretOffset="3928" date="Mon Mar 28 08:43:28 EDT 2022" docOffset="4935" starttimestamp="1648471300703" timestamp="107487" />

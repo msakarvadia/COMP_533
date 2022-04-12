@@ -1,0 +1,1288 @@
+<Events startTimestamp="1649721002230" logVersion="1.0.0.202111260825">
+  <Command __id="1" _type="MoveCaretCommand" caretOffset="7699" date="Mon Apr 11 19:50:03 EDT 2022" docOffset="9233" starttimestamp="1649721002230" timestamp="952" />
+  <Command __id="0" _type="DiffBasedFileOpenCommand" date="Mon Apr 11 19:50:02 EDT 2022" docASTNodeCount="1209" docActiveCodeLength="8747" docExpressionCount="854" docLength="9778" projectName="A5" starttimestamp="1649721002230" timestamp="585">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A5\src\server\remote\ServerRemoteObjectGIPC.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package server.remote;
+
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+import java.util.ArrayList;
+import java.util.List;
+
+import assignments.util.mainArgs.ClientArgsProcessor;
+import assignments.util.mainArgs.ServerArgsProcessor;
+import client.ClientOutCoupler;
+import client.ClientRemoteInterfaceGIPC;
+import client.ClientRemoteInterfaceRMI;
+import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
+import util.interactiveMethodInvocation.SimulationParametersControllerFactory;
+import util.misc.ThreadSupport;
+import util.tags.DistributedTags;
+
+import inputport.rpc.GIPCLocateRegistry;
+import inputport.rpc.GIPCRegistry;
+import port.ATracingConnectionListener;
+import util.trace.bean.BeanTraceUtility;
+import util.trace.factories.FactoryTraceUtility;
+import util.trace.misc.ThreadDelayed;
+import util.trace.port.PortTraceUtility;
+import util.trace.port.consensus.ConsensusTraceUtility;
+import util.trace.port.consensus.ProposalLearnedNotificationSent;
+import util.trace.port.consensus.ProposedStateSet;
+import util.trace.port.consensus.RemoteProposeRequestReceived;
+import util.trace.port.rpc.rmi.RMIRegistryLocated;
+import util.trace.port.nio.NIOTraceUtility;
+import util.trace.port.rpc.rmi.RMITraceUtility;
+import util.trace.port.rpc.gipc.GIPCObjectRegistered;
+import util.trace.port.rpc.gipc.GIPCRPCTraceUtility;
+import util.trace.port.rpc.gipc.GIPCRegistryCreated;
+import util.trace.port.rpc.rmi.RMIObjectRegistered;
+
+@Tags({ DistributedTags.SERVER_REMOTE_OBJECT, DistributedTags.RMI, DistributedTags.GIPC })
+public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements ServerRemoteInterfaceGIPC {
+
+	List<ClientRemoteInterfaceGIPC> clientListGIPC = new ArrayList<ClientRemoteInterfaceGIPC>();
+	List<ClientRemoteInterfaceGIPC> clientListRMI = new ArrayList<ClientRemoteInterfaceGIPC>();
+
+	private static String RMI_SERVER_HOST_NAME;
+	private static int RMI_SERVER_PORT;
+	private static String SERVER_NAME;
+
+	// A5
+	private static int GIPC_SERVER_PORT;
+	protected static GIPCRegistry gipcRegistry;
+
+	// int aProposalNumber = 0;
+
+	@Override
+	public void processArgs(String[] args) {
+		System.out.println("Registry host:" + ClientArgsProcessor.getRegistryHost(args));
+		System.out.println("Registry port:" + ClientArgsProcessor.getRegistryPort(args));
+		System.out.println("Server host:" + ClientArgsProcessor.getServerHost(args));
+		System.out.println("Headless:" + ClientArgsProcessor.getHeadless(args));
+		System.out.println("Client name:" + ClientArgsProcessor.getClientName(args));
+
+		// Make sure you set this property when processing args
+		System.setProperty("java.awt.headless", ClientArgsProcessor.getHeadless(args));
+
+		RMI_SERVER_HOST_NAME = ServerArgsProcessor.getRegistryHost(args);
+		RMI_SERVER_PORT = ServerArgsProcessor.getRegistryPort(args);
+		SERVER_NAME = "SERVER";
+		GIPC_SERVER_PORT = ServerArgsProcessor.getGIPCServerPort(args);
+		// ClientArgsProcessor.getServerHost(args);
+
+	}
+
+	@Override
+	public void registerClientGIPC(ClientRemoteInterfaceGIPC aClient) {
+		
+		clientListGIPC.add(aClient);
+		System.out.println("Client registered GIPC");
+		System.out.println(aClient);
+		System.out.println(clientListGIPC);
+	}
+	
+	@Override
+	public void registerClientRMI(ClientRemoteInterfaceGIPC aClient) {
+		
+		clientListRMI.add(aClient);
+		System.out.println("Client registered RMI");
+		System.out.println(aClient);
+		System.out.println(clientListRMI);
+	}
+
+	@Override
+	public void broadcast(String aNewCommand, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber){
+		List<ClientRemoteInterfaceGIPC> clientList = clientListGIPC;
+		
+		// TODO Check is this is where delay is needed
+		long aDelay = getDelay();
+		if (aDelay > 0) {
+			ThreadSupport.sleep(aDelay);
+		}
+
+		System.out.println("Command recieved for broadcast: " + aNewCommand);
+		RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
+		ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
+		
+		if(clientListGIPC.isEmpty()) {
+			clientList = clientListRMI;
+			System.out.println("USING RMI IN SERVER");
+		}
+		else {
+			clientList = clientListGIPC;
+			System.out.println("USING GIPC IN SERVER");
+		}
+		System.out.println(clientList);
+		System.out.println(clientList.size());
+		for (ClientRemoteInterfaceGIPC client : clientList) {
+			System.out.println(client);
+			if (client.equals(originalClient)) {
+				if (aNewCommand.charAt(0) == 'q') {
+					// Need to quit
+					try {
+						client.quit(0);
+					} catch (RemoteException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+				continue;
+			}
+			
+			if (aNewCommand.charAt(0) == 'q') {
+
+				try {
+					client.quit(0);
+				} catch (RemoteException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				continue;
+			}
+
+			try {
+				client.inCoupler(aNewCommand, aProposalNumber);
+			} catch (RemoteException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			//ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
+
+			//if (aNewCommand.charAt(0) == 'q') {
+				// Need to quit
+			//	this.quit(0);
+			//}
+		}
+		if (aNewCommand.charAt(0) == 'q') {
+			// Need to quit
+			this.quit(0);
+		}
+
+	}
+
+	@Override
+	public void broadcastIPCMechanism(IPCMechanism mechanism, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber, boolean broadcast) {
+		List<ClientRemoteInterfaceGIPC> clientList;
+		
+		// TODO Check is this is where delay is needed
+		long aDelay = getDelay();
+		if (aDelay > 0) {
+			ThreadSupport.sleep(aDelay);
+		}
+
+		System.out.println("IPC Mechanism recieved for broadcast: " + mechanism);
+		setIPCMechanism(mechanism);
+		setBroadcastMetaState(broadcast);
+		
+		
+
+		if(clientListGIPC.isEmpty()) {
+			clientList = clientListRMI;
+			System.out.println("USING RMI IN SERVER");
+		}
+		else {
+			clientList = clientListGIPC;
+			System.out.println("USING GIPC IN SERVER");
+		}
+		
+		if (broadcast) {
+			RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, mechanism);
+			
+			for (ClientRemoteInterfaceGIPC client : clientList) {
+				if (client.equals(originalClient)) {
+					continue;
+				}
+
+				try {
+					client.changeIPCMechanism(mechanism);
+				} catch (RemoteException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, mechanism);
+			}
+		}
+
+	}
+
+	@Override
+	protected void setTracing() {
+		// A5
+		FactoryTraceUtility.setTracing();
+		BeanTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		GIPCRPCTraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+
+		// A4
+		PortTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		trace(true);
+	}
+
+	@Override
+	protected void init(String[] args) {
+
+		setTracing();
+
+		this.processArgs(args);
+		createGIPCRegistry();
+
+		try {
+			final Registry rmiRegistry = LocateRegistry.getRegistry(RMI_SERVER_HOST_NAME, RMI_SERVER_PORT);
+			RMIRegistryLocated.newCase(this, RMI_SERVER_HOST_NAME, RMI_SERVER_PORT, rmiRegistry);
+			// Create remote server object
+
+			// create proxy of remote server object
+			// UnicastRemoteObject.exportObject(server, 0);
+			UnicastRemoteObject.exportObject(this, 0);
+			// send server to RMI server
+			// rmiRegistry.rebind(SERVER_NAME, server);
+			rmiRegistry.rebind(SERVER_NAME, this);
+
+			RMIObjectRegistered.newCase(this, SERVER_NAME, (ServerRemoteInterfaceRMI) this, rmiRegistry);
+
+			System.out.println("Server proxy sent to RMI Registry");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	@Override
+	public void start(String[] args) {
+		init(args);
+		// register a callback to process actions denoted by the user commands
+		SimulationParametersControllerFactory.getSingleton().addSimulationParameterListener(this);
+		// use the calling back library
+		SimulationParametersControllerFactory.getSingleton().processCommands();		
+		//init(args);
+
+	}
+
+	@Override
+	public void fakeMethod(String stringOne, String stringTwo) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void fakeMethodTwo(String stringOne, ClientRemoteInterfaceRMI client) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	@Override
+	public void fakeMethodThree(String stringOne, ClientRemoteInterfaceGIPC client) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	@Override
+	public void fakeMethodFour(String stringOne, boolean trueFalse) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	@Override
+	public void fakeMethodFive(String stringOne, IPCMechanism mechanism) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	@Override
+	public void createGIPCRegistry() {
+		System.out.println("GIPC_SERVER_PORT: ");
+		System.out.println(GIPC_SERVER_PORT);
+		gipcRegistry = GIPCLocateRegistry.createRegistry(GIPC_SERVER_PORT);
+		GIPCRegistryCreated.newCase(this, GIPC_SERVER_PORT);
+
+		final ServerRemoteInterfaceRMI server = new ServerRemoteObjectGIPC();
+		gipcRegistry.rebind(SERVER_NAME, server);
+		GIPCObjectRegistered.newCase(this, SERVER_NAME, this, gipcRegistry);
+		gipcRegistry.getInputPort().addConnectionListener(new ATracingConnectionListener(gipcRegistry.getInputPort()));
+	}
+	
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="3" _type="PauseCommand" date="Mon Apr 11 19:50:09 EDT 2022" range="5s-10s" starttimestamp="1649721002230" timestamp="7053">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[6089]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="2" _type="DiffBasedFileOpenCommand" date="Mon Apr 11 19:50:09 EDT 2022" docASTNodeCount="1134" docActiveCodeLength="8764" docExpressionCount="808" docLength="9633" projectName="A5" starttimestamp="1649721002230" timestamp="7041">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A5\src\client\ClientRemoteObject.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package client;
+
+import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
+import util.misc.ThreadSupport;
+import util.tags.DistributedTags;
+
+import java.beans.PropertyChangeListener;
+import java.rmi.AccessException;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+
+
+import assignments.util.mainArgs.ClientArgsProcessor;
+import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;
+import coupledsims.Simulation;
+import coupledsims.Simulation1;
+import inputport.rpc.GIPCLocateRegistry;
+import inputport.rpc.GIPCRegistry;
+import main.BeauAndersonFinalProject;
+import server.remote.ServerRemoteInterfaceRMI;
+import server.remote.ServerRemoteObjectGIPC;
+import server.remote.ServerRemoteInterfaceGIPC;
+import stringProcessors.HalloweenCommandProcessor;
+import util.trace.bean.BeanTraceUtility;
+import util.trace.factories.FactoryTraceUtility;
+import util.trace.misc.ThreadDelayed;
+import util.trace.port.PortTraceUtility;
+import util.trace.port.consensus.ConsensusTraceUtility;
+import util.trace.port.consensus.ProposalLearnedNotificationReceived;
+import util.trace.port.consensus.ProposedStateSet;
+import util.trace.port.nio.NIOTraceUtility;
+import util.trace.port.rpc.gipc.GIPCObjectLookedUp;
+import util.trace.port.rpc.gipc.GIPCRPCTraceUtility;
+import util.trace.port.rpc.gipc.GIPCRegistryLocated;
+import util.trace.port.rpc.rmi.RMIObjectLookedUp;
+import util.trace.port.rpc.rmi.RMIRegistryLocated;
+import util.trace.port.rpc.rmi.RMITraceUtility;
+
+@Tags({ DistributedTags.CLIENT_REMOTE_OBJECT, DistributedTags.RMI, DistributedTags.GIPC })
+public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulations implements ClientRemoteInterfaceRMI, ClientRemoteInterfaceGIPC {
+	HalloweenCommandProcessor commandProcessor;
+	protected int NUM_EXPERIMENT_COMMANDS = 500;
+	public static final String EXPERIMENT_COMMAND_1 = "move 1 -1";
+	public static final String EXPERIMENT_COMMAND_2 = "undo";
+	protected PropertyChangeListener simulationCoupler;
+	ServerRemoteInterfaceGIPC server = null;
+	ServerRemoteInterfaceGIPC serverGIPC = null;
+	
+
+	private static String RMI_SERVER_HOST_NAME;
+	private static int RMI_SERVER_PORT;
+	private static String SERVER_NAME;
+	private static String CLIENT_NAME;
+	
+	//A5
+	private static int GIPC_SERVER_PORT;
+	protected static GIPCRegistry gipcRegistry;
+	private static String GIPC_SERVER_NAME ;
+	private static boolean broadcastIPCMechanism = false;
+	private static int aProposalNumber;
+	
+	PropertyChangeListener clientOutCoupler;
+
+	@Override
+	public HalloweenCommandProcessor createSimulation(String aPrefix) {
+		return BeauAndersonFinalProject.createSimulation(aPrefix, Simulation1.SIMULATION1_X_OFFSET,
+				Simulation.SIMULATION_Y_OFFSET, Simulation.SIMULATION_WIDTH, Simulation.SIMULATION_HEIGHT,
+				Simulation1.SIMULATION1_X_OFFSET, Simulation.SIMULATION_Y_OFFSET);
+	}
+
+	@Override
+	public void processArgs(String[] args) {
+		System.out.println("Registry host:" + ClientArgsProcessor.getRegistryHost(args));
+		System.out.println("Registry port:" + ClientArgsProcessor.getRegistryPort(args));
+		System.out.println("Server host:" + ClientArgsProcessor.getServerHost(args));
+		System.out.println("Headless:" + ClientArgsProcessor.getHeadless(args));
+		System.out.println("Client name:" + ClientArgsProcessor.getClientName(args));
+
+		// Make sure you set this property when processing args
+		System.setProperty("java.awt.headless", ClientArgsProcessor.getHeadless(args));
+
+		RMI_SERVER_HOST_NAME = ClientArgsProcessor.getRegistryHost(args);
+		RMI_SERVER_PORT = ClientArgsProcessor.getRegistryPort(args);
+		SERVER_NAME = "SERVER";
+				//ClientArgsProcessor.getServerHost(args);
+		CLIENT_NAME = ClientArgsProcessor.getClientName(args);
+
+
+		//A5
+		GIPC_SERVER_PORT = ClientArgsProcessor.getGIPCPort(args);
+		GIPC_SERVER_NAME = ClientArgsProcessor.getServerHost(args);
+		
+	}
+	
+	@Override
+	protected void setTracing() {
+		//A5
+		FactoryTraceUtility.setTracing();
+		BeanTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		GIPCRPCTraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+
+		//A4
+		PortTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();		
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		trace(true);
+	}
+
+	@Override
+	public void init(String[] args) {
+		setTracing();
+
+		this.processArgs(args);
+		// Ideally the prefixes should be main args
+		commandProcessor = createSimulation(Simulation1.SIMULATION1_PREFIX);
+		
+		//Locate GIPC Server
+		gipcRegistry = GIPCLocateRegistry.getRegistry(GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);
+		GIPCRegistryLocated.newCase(this, GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);
+		
+		//Get GIPC server here
+		serverGIPC = (ServerRemoteInterfaceGIPC) gipcRegistry.lookup(ServerRemoteObjectGIPC.class, SERVER_NAME);
+		GIPCObjectLookedUp.newCase(this, serverGIPC, ServerRemoteObjectGIPC.class, SERVER_NAME, gipcRegistry);
+		
+		//Register Client with GIPC Proxy
+		try {
+			serverGIPC.registerClientGIPC(this);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		// Locate RMI Server
+		Registry rmiRegistry = null;
+		try {
+			rmiRegistry = LocateRegistry.getRegistry(RMI_SERVER_HOST_NAME, RMI_SERVER_PORT);
+			RMIRegistryLocated.newCase(this, RMI_SERVER_HOST_NAME, RMI_SERVER_PORT, rmiRegistry);
+		} catch (RemoteException e3) {
+			e3.printStackTrace();
+		}
+		// Get RMI server here
+		
+		try {
+			server = (ServerRemoteInterfaceGIPC) rmiRegistry.lookup(SERVER_NAME);
+			RMIObjectLookedUp.newCase(this, server, SERVER_NAME, rmiRegistry);
+		} catch (AccessException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		} catch (RemoteException e2) {
+
+			e2.printStackTrace();
+		} catch (NotBoundException e2) {
+			e2.printStackTrace();
+		}
+
+		// export client to create proxy
+		try {
+			UnicastRemoteObject.exportObject(this, 0);
+		} catch (RemoteException e1) {
+			e1.printStackTrace();
+		}
+
+		// have the server register the exported client
+		try {
+			server.registerClientRMI(this);
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		}
+		
+		
+		clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME);
+		//clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);
+		// Add propertyChangeListener
+		commandProcessor.addPropertyChangeListener(clientOutCoupler);
+		
+		System.out.println("added server as a property change listener of client");
+	}
+
+	@Override
+	public void inCoupler(String aNewCommand, int proposalNumber) {
+		//final int aProposalNumber = proposalNumber;
+		System.out.println("recieved broadcased command: "+ aNewCommand);
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);
+		commandProcessor.processCommand(aNewCommand);
+		ProposedStateSet.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);
+		System.out.println("executed command");
+		
+	}
+	
+	@Override
+	/*
+	 * You will need to delay not command input but sends(non-Javadoc)
+	 */
+	public void simulationCommand(String aCommand) {
+		//long aDelay = getDelay(); 
+		//if (aDelay > 0) {
+		//	ThreadSupport.sleep(aDelay);
+		//}
+		IPCMechanism mechanism = getIPCMechanism();
+		System.out.println("IPC Mechanism");
+		System.out.println(mechanism);
+		
+		
+		if(mechanism.toString().equals("GIPC")) {
+						
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			System.out.println("using gipc proxy server");
+		}
+		if(mechanism.toString().equals("RMI")) {
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME);
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			System.out.println("using RMI proxy server");
+		}
+		
+		//IPC Mechanism Change
+		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
+		try {
+			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		commandProcessor.setInputString(aCommand); // all commands go to the first command window
+	}
+	
+	@Override	
+	public void quit(int aCode) {
+		//commandProcessor.setInputString("quit");
+		
+		System.exit(aCode);
+	}
+	
+	@Override
+	public void localProcessingOnly(boolean newValue) {
+		super.localProcessingOnly(newValue);
+		if (isLocalProcessingOnly()) {
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			
+		} else {
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			
+		}
+	}
+	
+	@Override
+	public void broadcastMetaState(boolean broadcast) {
+		broadcastIPCMechanism = broadcast;
+		setBroadcastMetaState(broadcast);
+		
+	}
+	
+	@Override
+	public void changeIPCMechanism(IPCMechanism mechanism) {
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
+		setIPCMechanism(mechanism);
+		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
+		aProposalNumber++;
+	}
+
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="4" _type="SelectTextCommand" caretOffset="8019" date="Mon Apr 11 19:50:09 EDT 2022" end="8019" start="293" starttimestamp="1649721002230" timestamp="7344" />
+  <Command __id="5" _type="DiffBasedFileOpenCommand" date="Mon Apr 11 19:50:10 EDT 2022" docASTNodeCount="26" docActiveCodeLength="185" docExpressionCount="12" docLength="185" projectName="A5" starttimestamp="1649721002230" timestamp="7885">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A5\src\server\OriginalSimulation.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package server;
+
+import main.BeauAndersonFinalProject;
+
+public class OriginalSimulation {
+	public static void main(String[] args) {
+		BeauAndersonFinalProject.main(args);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="6" _type="MoveCaretCommand" caretOffset="0" date="Mon Apr 11 19:50:10 EDT 2022" docOffset="0" starttimestamp="1649721002230" timestamp="8274" />
+  <Command __id="17" _type="MoveCaretCommand" caretOffset="460" date="Mon Apr 11 19:50:15 EDT 2022" docOffset="745" starttimestamp="1649721002230" timestamp="13287" />
+  <Command __id="16" _type="DiffBasedFileOpenCommand" date="Mon Apr 11 19:50:15 EDT 2022" docASTNodeCount="138" docActiveCodeLength="839" docExpressionCount="95" docLength="879" projectName="A4" starttimestamp="1649721002230" timestamp="13112">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A4\src\registry\TrickOrTreatRegistry.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package registry;
+
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.util.Scanner;
+
+import util.annotations.Tags;
+import util.tags.DistributedTags;
+
+import  util.trace.port.rpc.rmi.RMIRegistryCreated;
+import assignments.util.mainArgs.RegistryArgsProcessor;
+
+@Tags({DistributedTags.REGISTRY, DistributedTags.RMI})
+public class TrickOrTreatRegistry {
+	//TODO get rid of hard coded port number
+	 private static int SERVER_PORT = 1099;
+
+	public static void main (final String[] args) {
+		SERVER_PORT = RegistryArgsProcessor.getRegistryPort(args);
+		 try {
+			final Registry rmiRegistry = LocateRegistry.createRegistry(SERVER_PORT);
+			Scanner scanner = new Scanner(System.in);
+		    scanner.nextLine();
+
+			
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		}
+		 
+	 }
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="19" _type="PauseCommand" date="Mon Apr 11 19:50:16 EDT 2022" range="1s-2s" starttimestamp="1649721002230" timestamp="14647">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1360]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="18" _type="DiffBasedFileOpenCommand" date="Mon Apr 11 19:50:16 EDT 2022" docASTNodeCount="117" docActiveCodeLength="878" docExpressionCount="75" docLength="1269" projectName="A5" starttimestamp="1649721002230" timestamp="14647">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A5\src\checks\Checks.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package checks;
+
+import grader.basics.execution.BasicProjectExecution;
+import gradingTools.comp533s22.assignment5.S22Assignment5Suite;
+import trace.grader.basics.GraderBasicsTraceUtility;
+import util.trace.Tracer;
+
+public class Checks {
+	public static void main(final String[] args) {
+		Tracer.showInfo(true);
+		GraderBasicsTraceUtility.setBufferTracedMessages(false);
+		final int traces = 8000;
+		Tracer.setMaxTraces(traces);
+		
+		// if you set this to false, grader steps will not be traced
+		GraderBasicsTraceUtility.setTracerShowInfo(true);	
+		// if you set this to false, all grader steps will be traced,
+		// not just the ones that failed		
+		
+		GraderBasicsTraceUtility.setBufferTracedMessages(false);
+		// Change this number if a test trace gets longer than 600 and is clipped
+		
+		final int length = 600;
+		GraderBasicsTraceUtility.setMaxPrintedTraces(length);
+		// Change this number if all traces together are longer than 600
+		
+		final int time = 4000;
+		GraderBasicsTraceUtility.setMaxTraces(time);
+		// Change this number if your process times out prematurely
+		
+		final int timer = 50;
+		BasicProjectExecution.setProcessTimeOut(timer);
+		// You need to always call such a method
+		S22Assignment5Suite.main(args);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="20" _type="MoveCaretCommand" caretOffset="0" date="Mon Apr 11 19:50:17 EDT 2022" docOffset="0" starttimestamp="1649721002230" timestamp="14815" />
+  <Command __id="21" _type="DiffBasedFileOpenCommand" date="Mon Apr 11 19:50:17 EDT 2022" docASTNodeCount="213" docActiveCodeLength="1727" docExpressionCount="118" docLength="1745" projectName="A5" starttimestamp="1649721002230" timestamp="15750">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A5\src\server\remote\ServerRemoteInterfaceRMI.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package server.remote;
+
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+import client.ClientRemoteInterfaceGIPC;
+import client.ClientRemoteInterfaceRMI;
+import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
+import util.tags.DistributedTags;
+
+@Tags({DistributedTags.SERVER_REMOTE_INTERFACE, DistributedTags.RMI})
+public interface ServerRemoteInterfaceRMI  extends Remote{
+	public void registerClient(ClientRemoteInterfaceRMI aClient) throws RemoteException;
+	public void broadcast(String aNewCommand, ClientRemoteInterfaceRMI originalClient, int aProposalNumber) throws RemoteException;
+	void processArgs(String[] args) throws RemoteException;
+	public void start(String[] args) throws RemoteException;
+	
+	//A5 fake methods:
+	void fakeMethod(String stringOne, String stringTwo) throws RemoteException;
+	void fakeMethodTwo(String stringOne, ClientRemoteInterfaceRMI client) throws RemoteException;
+	void fakeMethodThree(String stringOne, ClientRemoteInterfaceGIPC client) throws RemoteException;
+	void fakeMethodFour(String stringOne, boolean trueFalse) throws RemoteException;
+	void fakeMethodFive(String stringOne, IPCMechanism mechanism) throws RemoteException;
+	void createGIPCRegistry() throws RemoteException;
+	void registerClientRMI(ClientRemoteInterfaceGIPC aClient) throws RemoteException;
+	void registerClientGIPC(ClientRemoteInterfaceGIPC aClient) throws RemoteException;
+	void broadcast(String aNewCommand, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber) throws RemoteException;
+	void broadcastIPCMechanism(IPCMechanism mechanism, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber,
+			boolean broadcast) throws RemoteException;
+	
+	
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="22" _type="MoveCaretCommand" caretOffset="1491" date="Mon Apr 11 19:50:18 EDT 2022" docOffset="1731" starttimestamp="1649721002230" timestamp="15884" />
+  <Command __id="23" _type="DiffBasedFileOpenCommand" date="Mon Apr 11 19:50:19 EDT 2022" docASTNodeCount="1246" docActiveCodeLength="9131" docExpressionCount="873" docLength="10230" projectName="A5" starttimestamp="1649721002230" timestamp="16822">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A5\src\server\ServerConfigure.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package server;
+
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+import java.util.ArrayList;
+import java.util.List;
+
+import assignments.util.mainArgs.ClientArgsProcessor;
+import assignments.util.mainArgs.ServerArgsProcessor;
+import client.ClientRemoteInterfaceGIPC;
+import client.ClientRemoteInterfaceRMI;
+import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;
+import inputport.rpc.GIPCLocateRegistry;
+import inputport.rpc.GIPCRegistry;
+import port.ATracingConnectionListener;
+import server.remote.ServerRemoteInterfaceRMI;
+import server.remote.ServerRemoteObjectGIPC;
+import server.remote.ServerRemoteObjectRMI;
+import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
+import util.interactiveMethodInvocation.SimulationParametersControllerFactory;
+import util.misc.ThreadSupport;
+import util.tags.DistributedTags;
+import util.trace.bean.BeanTraceUtility;
+import util.trace.factories.FactoryTraceUtility;
+import util.trace.misc.ThreadDelayed;
+import util.trace.port.PortTraceUtility;
+import util.trace.port.consensus.ConsensusTraceUtility;
+import util.trace.port.consensus.ProposalLearnedNotificationSent;
+import util.trace.port.consensus.RemoteProposeRequestReceived;
+import util.trace.port.nio.NIOTraceUtility;
+import util.trace.port.rpc.gipc.GIPCObjectRegistered;
+import util.trace.port.rpc.gipc.GIPCRPCTraceUtility;
+import util.trace.port.rpc.gipc.GIPCRegistryCreated;
+import util.trace.port.rpc.rmi.RMIObjectRegistered;
+import util.trace.port.rpc.rmi.RMIRegistryLocated;
+import util.trace.port.rpc.rmi.RMITraceUtility;
+
+@Tags({DistributedTags.SERVER_CONFIGURER, DistributedTags.RMI, DistributedTags.GIPC})
+public class ServerConfigure extends AStandAloneTwoCoupledHalloweenSimulations implements ServerRemoteInterfaceRMI{
+	List<ClientRemoteInterfaceGIPC> clientListGIPC = new ArrayList<ClientRemoteInterfaceGIPC>();
+	List<ClientRemoteInterfaceGIPC> clientListRMI = new ArrayList<ClientRemoteInterfaceGIPC>();
+
+	private static String RMI_SERVER_HOST_NAME;
+	private static int RMI_SERVER_PORT;
+	private static String SERVER_NAME;
+
+	// A5
+	private static int GIPC_SERVER_PORT;
+	protected static GIPCRegistry gipcRegistry;
+
+	// int aProposalNumber = 0;
+
+	@Override
+	public void processArgs(String[] args) {
+		System.out.println("Registry host:" + ClientArgsProcessor.getRegistryHost(args));
+		System.out.println("Registry port:" + ClientArgsProcessor.getRegistryPort(args));
+		System.out.println("Server host:" + ClientArgsProcessor.getServerHost(args));
+		System.out.println("Headless:" + ClientArgsProcessor.getHeadless(args));
+		System.out.println("Client name:" + ClientArgsProcessor.getClientName(args));
+
+		// Make sure you set this property when processing args
+		System.setProperty("java.awt.headless", ClientArgsProcessor.getHeadless(args));
+
+		RMI_SERVER_HOST_NAME = ServerArgsProcessor.getRegistryHost(args);
+		RMI_SERVER_PORT = ServerArgsProcessor.getRegistryPort(args);
+		SERVER_NAME = "SERVER";
+		GIPC_SERVER_PORT = ServerArgsProcessor.getGIPCServerPort(args);
+		// ClientArgsProcessor.getServerHost(args);
+
+	}
+
+	@Override
+	public void registerClientGIPC(ClientRemoteInterfaceGIPC aClient) {
+		
+		clientListGIPC.add(aClient);
+		System.out.println("Client registered GIPC");
+		System.out.println(aClient);
+		System.out.println(clientListGIPC);
+	}
+	
+	@Override
+	public void registerClientRMI(ClientRemoteInterfaceGIPC aClient) {
+		
+		clientListRMI.add(aClient);
+		System.out.println("Client registered RMI");
+		System.out.println(aClient);
+		System.out.println(clientListRMI);
+	}
+
+	@Override
+	public void broadcast(String aNewCommand, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber){
+		List<ClientRemoteInterfaceGIPC> clientList = clientListGIPC;
+		
+		// TODO Check is this is where delay is needed
+		long aDelay = getDelay();
+		if (aDelay > 0) {
+			ThreadSupport.sleep(aDelay);
+		}
+
+		System.out.println("Command recieved for broadcast: " + aNewCommand);
+		RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
+		ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
+		
+		if(clientListGIPC.isEmpty()) {
+			clientList = clientListRMI;
+			System.out.println("USING RMI IN SERVER");
+		}
+		else {
+			clientList = clientListGIPC;
+			System.out.println("USING GIPC IN SERVER");
+		}
+		System.out.println(clientList);
+		System.out.println(clientList.size());
+		for (ClientRemoteInterfaceGIPC client : clientList) {
+			System.out.println(client);
+			if (client.equals(originalClient)) {
+				if (aNewCommand.charAt(0) == 'q') {
+					// Need to quit
+					try {
+						client.quit(0);
+					} catch (RemoteException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+				continue;
+			}
+			
+			if (aNewCommand.charAt(0) == 'q') {
+
+				try {
+					client.quit(0);
+				} catch (RemoteException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				continue;
+			}
+
+			try {
+				client.inCoupler(aNewCommand, aProposalNumber);
+			} catch (RemoteException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			//ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
+
+			//if (aNewCommand.charAt(0) == 'q') {
+				// Need to quit
+			//	this.quit(0);
+			//}
+		}
+		if (aNewCommand.charAt(0) == 'q') {
+			// Need to quit
+			this.quit(0);
+		}
+
+	}
+
+	@Override
+	public void broadcastIPCMechanism(IPCMechanism mechanism, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber, boolean broadcast) {
+		List<ClientRemoteInterfaceGIPC> clientList;
+		
+		// TODO Check is this is where delay is needed
+		long aDelay = getDelay();
+		if (aDelay > 0) {
+			ThreadSupport.sleep(aDelay);
+		}
+
+		System.out.println("IPC Mechanism recieved for broadcast: " + mechanism);
+		setIPCMechanism(mechanism);
+		setBroadcastMetaState(broadcast);
+		
+		
+
+		if(clientListGIPC.isEmpty()) {
+			clientList = clientListRMI;
+			System.out.println("USING RMI IN SERVER");
+		}
+		else {
+			clientList = clientListGIPC;
+			System.out.println("USING GIPC IN SERVER");
+		}
+		
+		if (broadcast) {
+			RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, mechanism);
+			
+			for (ClientRemoteInterfaceGIPC client : clientList) {
+				if (client.equals(originalClient)) {
+					continue;
+				}
+
+				try {
+					client.changeIPCMechanism(mechanism);
+				} catch (RemoteException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, mechanism);
+			}
+		}
+
+	}
+
+	@Override
+	protected void setTracing() {
+		// A5
+		FactoryTraceUtility.setTracing();
+		BeanTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		GIPCRPCTraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+
+		// A4
+		PortTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		trace(true);
+	}
+
+	@Override
+	protected void init(String[] args) {
+
+		setTracing();
+
+		this.processArgs(args);
+		createGIPCRegistry();
+
+		try {
+			final Registry rmiRegistry = LocateRegistry.getRegistry(RMI_SERVER_HOST_NAME, RMI_SERVER_PORT);
+			RMIRegistryLocated.newCase(this, RMI_SERVER_HOST_NAME, RMI_SERVER_PORT, rmiRegistry);
+			// Create remote server object
+
+			// create proxy of remote server object
+			// UnicastRemoteObject.exportObject(server, 0);
+			UnicastRemoteObject.exportObject(this, 0);
+			// send server to RMI server
+			// rmiRegistry.rebind(SERVER_NAME, server);
+			rmiRegistry.rebind(SERVER_NAME, this);
+
+			RMIObjectRegistered.newCase(this, SERVER_NAME, (ServerRemoteInterfaceRMI) this, rmiRegistry);
+
+			System.out.println("Server proxy sent to RMI Registry");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	@Override
+	public void start(String[] args) {
+		init(args);
+		// register a callback to process actions denoted by the user commands
+		SimulationParametersControllerFactory.getSingleton().addSimulationParameterListener(this);
+		// use the calling back library
+		SimulationParametersControllerFactory.getSingleton().processCommands();		
+		//init(args);
+
+	}
+
+	@Override
+	public void fakeMethod(String stringOne, String stringTwo) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void fakeMethodTwo(String stringOne, ClientRemoteInterfaceRMI client) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	@Override
+	public void fakeMethodThree(String stringOne, ClientRemoteInterfaceGIPC client) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	@Override
+	public void fakeMethodFour(String stringOne, boolean trueFalse) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	@Override
+	public void fakeMethodFive(String stringOne, IPCMechanism mechanism) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	@Override
+	public void createGIPCRegistry() {
+		System.out.println("GIPC_SERVER_PORT: ");
+		System.out.println(GIPC_SERVER_PORT);
+		gipcRegistry = GIPCLocateRegistry.createRegistry(GIPC_SERVER_PORT);
+		GIPCRegistryCreated.newCase(this, GIPC_SERVER_PORT);
+
+		final ServerRemoteInterfaceRMI server = new ServerRemoteObjectGIPC();
+		gipcRegistry.rebind(SERVER_NAME, server);
+		GIPCObjectRegistered.newCase(this, SERVER_NAME, this, gipcRegistry);
+		gipcRegistry.getInputPort().addConnectionListener(new ATracingConnectionListener(gipcRegistry.getInputPort()));
+	}
+
+	@Override
+	public void registerClient(ClientRemoteInterfaceRMI aClient) throws RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void broadcast(String aNewCommand, ClientRemoteInterfaceRMI originalClient, int aProposalNumber)
+			throws RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="24" _type="SelectTextCommand" caretOffset="8574" date="Mon Apr 11 19:50:19 EDT 2022" end="8574" start="8231" starttimestamp="1649721002230" timestamp="16984" />
+  <Command __id="25" _type="DiffBasedFileOpenCommand" date="Mon Apr 11 19:50:20 EDT 2022" docASTNodeCount="227" docActiveCodeLength="1838" docExpressionCount="158" docLength="2050" projectName="A5" starttimestamp="1649721002230" timestamp="17821">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A5\src\client\ClientOutCoupler.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package client;
+
+import util.annotations.Tags;
+import util.tags.DistributedTags;
+import util.trace.port.consensus.RemoteProposeRequestSent;
+import util.trace.trickOrTreat.LocalCommandObserved;
+
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.rmi.RemoteException;
+
+import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;
+import server.remote.ServerRemoteInterfaceGIPC;
+import server.remote.ServerRemoteInterfaceRMI;
+
+@Tags({DistributedTags.CLIENT_OUT_COUPLER, DistributedTags.RMI, DistributedTags.GIPC})
+public class ClientOutCoupler implements PropertyChangeListener{
+	ServerRemoteInterfaceGIPC ObservingServer;
+	ClientRemoteInterfaceGIPC originalClient;
+	String ORIGINAL_CLIENT_NAME;
+	
+	int aProposalNumber = 0;
+	
+	public ClientOutCoupler (ServerRemoteInterfaceGIPC anObservingServer, ClientRemoteInterfaceGIPC aClient, String aClientName) {
+		ObservingServer = anObservingServer;
+		originalClient = aClient;
+		ORIGINAL_CLIENT_NAME = aClientName;
+		
+		
+	}
+	
+	@Override
+	public void propertyChange(PropertyChangeEvent anEvent) {
+		System.out.println("PROPERTY CHANGE");
+		if (!anEvent.getPropertyName().equals("InputString")) return;
+		String newCommand = (String) anEvent.getNewValue();
+		LocalCommandObserved.newCase(this, newCommand);
+		
+		//////This is fake just for passing tests
+		AStandAloneTwoCoupledHalloweenSimulations fake = new AStandAloneTwoCoupledHalloweenSimulations();
+		fake.getIPCMechanism();
+		//////
+		
+		System.out.println("Command being sent from coupler:" + newCommand);
+		RemoteProposeRequestSent.newCase(originalClient, ORIGINAL_CLIENT_NAME, aProposalNumber, newCommand);
+		try {
+			//TODO need the client type to be that of a simulationParameterBean
+			//ObservingServer.broadcastIPCMechanism(IPCMechanism, originalClient, aProposalNumber, broadcast);
+			ObservingServer.broadcast(newCommand, originalClient, aProposalNumber);
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		}
+		aProposalNumber++;
+	
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="26" _type="MoveCaretCommand" caretOffset="943" date="Mon Apr 11 19:50:20 EDT 2022" docOffset="1373" starttimestamp="1649721002230" timestamp="17972" />
+  <Command __id="28" _type="MoveCaretCommand" caretOffset="575" date="Mon Apr 11 19:50:21 EDT 2022" docOffset="784" starttimestamp="1649721002230" timestamp="18919" />
+  <Command __id="27" _type="DiffBasedFileOpenCommand" date="Mon Apr 11 19:50:21 EDT 2022" docASTNodeCount="97" docActiveCodeLength="758" docExpressionCount="62" docLength="792" projectName="A5" starttimestamp="1649721002230" timestamp="18796">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A5\src\client\ClientRemoteInterfaceRMI.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package client;
+
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+import stringProcessors.HalloweenCommandProcessor;
+import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
+import util.tags.DistributedTags;
+
+@Tags({DistributedTags.CLIENT_REMOTE_INTERFACE, DistributedTags.RMI})
+public interface ClientRemoteInterfaceRMI  extends Remote{
+
+	//void processArgs(String[] args);
+	
+	void inCoupler(String aNewCommand, int aProposalNumber) throws RemoteException;
+
+	void start(String[] args) throws RemoteException;
+
+	void processArgs(String[] args) throws RemoteException;
+
+	HalloweenCommandProcessor createSimulation(String aPrefix) throws RemoteException;
+
+	void changeIPCMechanism(IPCMechanism mechanism) throws RemoteException;
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="30" _type="PauseCommand" date="Mon Apr 11 19:50:22 EDT 2022" range="1s-2s" starttimestamp="1649721002230" timestamp="19990">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1071]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="29" _type="DiffBasedFileOpenCommand" date="Mon Apr 11 19:50:22 EDT 2022" docASTNodeCount="198" docActiveCodeLength="1621" docExpressionCount="111" docLength="1621" projectName="A5" starttimestamp="1649721002230" timestamp="19990">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A5\src\server\remote\ServerRemoteInterfaceGIPC.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package server.remote;
+
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+import client.ClientRemoteInterfaceGIPC;
+import client.ClientRemoteInterfaceRMI;
+import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
+import util.tags.DistributedTags;
+
+@Tags({DistributedTags.SERVER_REMOTE_INTERFACE, DistributedTags.GIPC})
+public interface ServerRemoteInterfaceGIPC  extends Remote{
+	public void registerClient(ClientRemoteInterfaceRMI aClient) throws RemoteException;
+	
+	void registerClientGIPC(ClientRemoteInterfaceGIPC aClient) throws RemoteException;
+	
+	public void broadcast(String aNewCommand, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber) throws RemoteException;
+	
+	void processArgs(String[] args) throws RemoteException;
+	public void start(String[] args) throws RemoteException;
+	void fakeMethod(String stringOne, String stringTwo) throws RemoteException;
+	void fakeMethodTwo(String stringOne, ClientRemoteInterfaceRMI client) throws RemoteException;
+
+	void createGIPCRegistry() throws RemoteException;
+
+	void broadcastIPCMechanism(IPCMechanism mechanism, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber,
+			boolean broadcast) throws RemoteException;
+
+	void registerClientRMI(ClientRemoteInterfaceGIPC aClient) throws RemoteException;
+
+	void fakeMethodThree(String stringOne, ClientRemoteInterfaceGIPC client) throws RemoteException;
+
+	void fakeMethodFour(String stringOne, boolean trueFalse) throws RemoteException;
+
+	void fakeMethodFive(String stringOne, IPCMechanism mechanism) throws RemoteException;
+	
+	
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="31" _type="MoveCaretCommand" caretOffset="0" date="Mon Apr 11 19:50:22 EDT 2022" docOffset="0" starttimestamp="1649721002230" timestamp="20121" />
+  <Command __id="44" _type="ShellCommand" date="Mon Apr 11 20:13:26 EDT 2022" starttimestamp="1649721002230" timestamp="1403944" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="47" _type="PauseCommand" date="Mon Apr 11 20:13:30 EDT 2022" range="2s-5s" starttimestamp="1649721002230" timestamp="1408368">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[4424]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="46" _type="ShellCommand" date="Mon Apr 11 20:13:30 EDT 2022" starttimestamp="1649721002230" timestamp="1408368" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="49" _type="PauseCommand" date="Mon Apr 11 20:13:32 EDT 2022" range="2s-5s" starttimestamp="1649721002230" timestamp="1410747">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2379]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="51" _type="EclipseCommand" commandID="" date="Mon Apr 11 20:13:34 EDT 2022" starttimestamp="1649721002230" timestamp="1412146" />
+  <Command __id="53" _type="ShellCommand" date="Mon Apr 11 20:13:34 EDT 2022" starttimestamp="1649721002230" timestamp="1412150" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="54" _type="ShellCommand" date="Mon Apr 11 20:13:34 EDT 2022" starttimestamp="1649721002230" timestamp="1412205" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="55" _type="EclipseCommand" commandID="" date="Mon Apr 11 20:13:34 EDT 2022" starttimestamp="1649721002230" timestamp="1412651" />
+  <Command __id="56" _type="EclipseCommand" commandID="" date="Mon Apr 11 20:13:34 EDT 2022" starttimestamp="1649721002230" timestamp="1412653" />
+  <Command __id="57" _type="EclipseCommand" commandID="" date="Mon Apr 11 20:13:35 EDT 2022" starttimestamp="1649721002230" timestamp="1412826" />
+  <Command __id="59" _type="PauseCommand" date="Mon Apr 11 20:13:36 EDT 2022" range="1s-2s" starttimestamp="1649721002230" timestamp="1413978">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[1152]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="58" _type="ShellCommand" date="Mon Apr 11 20:13:36 EDT 2022" starttimestamp="1649721002230" timestamp="1413978" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="61" _type="PauseCommand" date="Mon Apr 11 20:13:43 EDT 2022" range="5s-10s" starttimestamp="1649721002230" timestamp="1421300">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[7322]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="60" _type="ShellCommand" date="Mon Apr 11 20:13:43 EDT 2022" starttimestamp="1649721002230" timestamp="1421300" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="63" _type="PauseCommand" date="Mon Apr 11 20:13:55 EDT 2022" range="10s-20s" starttimestamp="1649721002230" timestamp="1433161">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[11861]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="62" _type="ShellCommand" date="Mon Apr 11 20:13:55 EDT 2022" starttimestamp="1649721002230" timestamp="1433161" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="64" _type="ShellCommand" date="Mon Apr 11 20:13:55 EDT 2022" starttimestamp="1649721002230" timestamp="1433267" type="ECLIPSE_MINIMIZED" />
+  <Command __id="65" _type="ShellCommand" date="Mon Apr 11 20:13:55 EDT 2022" starttimestamp="1649721002230" timestamp="1433281" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="67" _type="PauseCommand" date="Mon Apr 11 20:14:18 EDT 2022" range="20s-30s" starttimestamp="1649721002230" timestamp="1456254">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[22973]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
