@@ -8,7 +8,9 @@ import java.nio.channels.SelectionKey;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.util.Scanner;
+import java.util.concurrent.ArrayBlockingQueue;
 
+import assignments.util.MiscAssignmentUtils;
 import inputport.nio.manager.NIOManager;
 import inputport.nio.manager.NIOManagerFactory;
 import inputport.nio.manager.factories.classes.AConnectCommandFactory;
@@ -20,6 +22,7 @@ import inputport.nio.manager.listeners.SocketChannelAcceptListener;
 import inputport.nio.manager.listeners.SocketChannelConnectListener;
 import inputport.nio.manager.listeners.SocketChannelReadListener;
 import inputport.nio.manager.listeners.SocketChannelWriteListener;
+import readThread.ReadThreadInterface;
 import util.trace.factories.FactoryTraceUtility;
 import util.trace.port.nio.NIOTraceUtility;
 import util.trace.port.nio.SocketChannelBound;
@@ -29,6 +32,10 @@ SocketChannelAcceptListener, SocketChannelReadListener{
 	protected NIOManager nioManager = NIOManagerFactory.getSingleton();
 	protected SocketChannel socketChannel;
 	protected Scanner scanner = new Scanner(System.in);
+	
+	ArrayBlockingQueue<ByteBuffer> boundedBuffer = new ArrayBlockingQueue<ByteBuffer>(500);
+	ReadThreadInterface reader = null;
+	Thread readThread = null;
 
 	protected AnNIOManagerPrintClient(int aServerPort) {
 		setTracing();
@@ -68,6 +75,15 @@ SocketChannelAcceptListener, SocketChannelReadListener{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+		//Create new read thread Runnable
+		reader = new exampleClientReadThread(this);
+						
+		//Create new readThread
+		readThread = new Thread(reader);
+				
+		//Start thread and do some action
+		readThread.start();
 	}
 
 	@Override
@@ -87,17 +103,21 @@ SocketChannelAcceptListener, SocketChannelReadListener{
 	}
 
 	@Override
-	public void socketChannelRead(SocketChannel arg0, ByteBuffer arg1, int arg2) {
-		// TODO Auto-generated method stub
-		String aMessageString = new String(arg1.array(), arg1.position(),
-				arg2);
-		System.out.println(aMessageString + "<--" + arg0);
+	public void socketChannelRead(SocketChannel socketChannel, ByteBuffer aMessage, int aLength) {
+		ByteBuffer copy = MiscAssignmentUtils.deepDuplicate(aMessage);
+		boundedBuffer.add(copy);
 		
+		reader.notifyThread();		
 	}
 
 	@Override
 	public void socketChannelAccepted(ServerSocketChannel arg0, SocketChannel arg1) {
 				
+	}
+
+	public ArrayBlockingQueue<ByteBuffer> getBoundedBuffer() {
+		// TODO Auto-generated method stub
+		return boundedBuffer;
 	}
 
 }

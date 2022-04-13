@@ -9,12 +9,12 @@ import inputport.nio.manager.NIOManager;
 import inputport.nio.manager.NIOManagerFactory;
 import readThread.ReadThreadInterface;
 
-public class exampleServerReadThread implements ReadThreadInterface{
-	final NIOManagerPrintServer server;
+public class exampleClientReadThread implements ReadThreadInterface{
+	final AnNIOManagerPrintClient client;
 	protected NIOManager nioManager = NIOManagerFactory.getSingleton();
 	
-	public exampleServerReadThread (final NIOManagerPrintServer aServer) {
-		server = aServer;
+	public exampleClientReadThread (final AnNIOManagerPrintClient aClient) {
+		client = aClient;
 	}
 
 	@Override
@@ -39,9 +39,8 @@ public class exampleServerReadThread implements ReadThreadInterface{
 			
 			System.out.println("IN RUN METHOD OF READ THREAD");
 			
-			ArrayBlockingQueue<ByteBuffer> boundedBuffer = server.getBoundedBuffer();
-			List<SocketChannel> socketList = server.getSocketList();
-			SocketChannel currentSocket = server.getSocketChannel();
+			ArrayBlockingQueue<ByteBuffer> boundedBuffer = client.getBoundedBuffer();
+			
 			
 					
 			ByteBuffer originalMessage = null;
@@ -50,12 +49,9 @@ public class exampleServerReadThread implements ReadThreadInterface{
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			// Echo recieve message to all clients (except original message sender)
-			for (SocketChannel socket : socketList) {
-				if (!socket.equals(currentSocket)) {
-					nioManager.write(socket, originalMessage, server);
-				}
-			}
+			String aMessageString = new String(originalMessage.array());
+			System.out.println("SERVER MESSAGE RECIEVED: "+aMessageString);
+			
 		
 		}
 		

@@ -32,6 +32,7 @@ public class AnNIOManagerPrintServer implements NIOManagerPrintServer {
 	ArrayBlockingQueue<ByteBuffer> boundedBuffer = new ArrayBlockingQueue<ByteBuffer>(500);
 	ReadThreadInterface reader = null;
 	Thread readThread = null;
+	SocketChannel currentSocket = null;
 	
 	protected NIOManager nioManager = NIOManagerFactory.getSingleton();
 
@@ -64,7 +65,7 @@ public class AnNIOManagerPrintServer implements NIOManagerPrintServer {
 		}
 		
 		//Create new read thread Runnable
-		reader = new exampleServerReadThread();
+		reader = new exampleServerReadThread(this);
 				
 		//Create new readThread
 		readThread = new Thread(reader);
@@ -89,6 +90,8 @@ public class AnNIOManagerPrintServer implements NIOManagerPrintServer {
 		String aMessageString = new String(aMessage.array(), aMessage.position(), aLength);
 		System.out.println(aMessageString + "<--" + aSocketChannel);
 
+		currentSocket = aSocketChannel;
+		/*
 		// Pop value off the bounded buffer
 		ByteBuffer originalMessage = null;
 		try {
@@ -102,11 +105,27 @@ public class AnNIOManagerPrintServer implements NIOManagerPrintServer {
 				nioManager.write(socket, originalMessage, this);
 			}
 		}
-		
+		*/
 		System.out.println("notifying reader!!");
 		reader.notifyThread();
 		System.out.println("thread has completed action and is now waiting");
 
+	}
+	
+	@Override
+	public ArrayBlockingQueue<ByteBuffer> getBoundedBuffer(){
+		return boundedBuffer;
+		
+	}
+	
+	@Override
+	public List<SocketChannel> getSocketList(){
+		return socketList;
+	}
+	
+	@Override
+	public SocketChannel getSocketChannel() {
+		return currentSocket;
 	}
 
 	@Override
