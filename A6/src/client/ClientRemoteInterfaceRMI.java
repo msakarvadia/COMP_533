@@ -12,7 +12,7 @@ import inputport.nio.manager.listeners.SocketChannelConnectListener;
 import inputport.nio.manager.listeners.SocketChannelWriteListener;
 
 @Tags({DistributedTags.CLIENT_REMOTE_INTERFACE, DistributedTags.RMI})
-public interface ClientRemoteInterfaceRMI  extends SocketChannelConnectListener, SocketChannelWriteListener, Remote{
+public interface ClientRemoteInterfaceRMI  extends Remote{
 
 	//void processArgs(String[] args);
 	

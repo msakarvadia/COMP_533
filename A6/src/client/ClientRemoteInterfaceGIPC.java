@@ -12,7 +12,7 @@ import inputport.nio.manager.listeners.SocketChannelConnectListener;
 import inputport.nio.manager.listeners.SocketChannelWriteListener;
 
 @Tags({DistributedTags.CLIENT_REMOTE_INTERFACE, DistributedTags.GIPC})
-public interface ClientRemoteInterfaceGIPC  extends SocketChannelConnectListener, SocketChannelWriteListener, Remote{
+public interface ClientRemoteInterfaceGIPC  extends Remote{
 
 	//void processArgs(String[] args);
 	

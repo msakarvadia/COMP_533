@@ -3,12 +3,23 @@ package readThread;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 
+import inputport.nio.manager.NIOManager;
+import inputport.nio.manager.NIOManagerFactory;
+import nioExample.NIOManagerPrintServer;
+import server.remote.ServerRemoteObjectNIO;
 import util.annotations.Tags;
 import util.tags.DistributedTags;
 
 
 @Tags({DistributedTags.NIO, DistributedTags.SERVER_READ_THREAD})
 public class ServerReadThread implements ReadThreadInterface{
+	
+	final ServerRemoteObjectNIO server;
+	protected NIOManager nioManager = NIOManagerFactory.getSingleton();
+	
+	public ServerReadThread (final ServerRemoteObjectNIO aServer) {
+		server = aServer;
+	}
 
 	@Override
 	public void run() {

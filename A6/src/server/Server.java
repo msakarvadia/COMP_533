@@ -4,6 +4,7 @@ import java.rmi.RemoteException;
 
 import server.remote.ServerRemoteInterfaceRMI;
 import server.remote.ServerRemoteObjectGIPC;
+import server.remote.ServerRemoteObjectNIO;
 import server.remote.ServerRemoteObjectRMI;
 
 import util.annotations.Tags;
@@ -16,8 +17,8 @@ public class Server {
 	public static void main(final String[] args) {
 		
 		//GIPC Server is a subclass of RMI server, so we can just call super.method() on gipc
-		final ServerRemoteInterfaceRMI server = new ServerRemoteObjectGIPC();
-
+		//final ServerRemoteInterfaceRMI server = new ServerRemoteObjectGIPC();
+		final ServerRemoteInterfaceRMI server = new ServerRemoteObjectNIO();
 		
 		try {
 			server.start(args);

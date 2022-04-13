@@ -241,22 +241,4 @@ public class ServerRemoteObjectRMI extends AStandAloneTwoCoupledHalloweenSimulat
 	}
 
 
-	@Override
-	public void socketChannelAccepted(ServerSocketChannel arg0, SocketChannel arg1) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void socketChannelRead(SocketChannel arg0, ByteBuffer arg1, int arg2) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void written(SocketChannel arg0, ByteBuffer arg1, int arg2) {
-		// TODO Auto-generated method stub
-		
-	}
-
 }

@@ -69,7 +69,7 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 
 		RMI_SERVER_HOST_NAME = ServerArgsProcessor.getRegistryHost(args);
 		RMI_SERVER_PORT = ServerArgsProcessor.getRegistryPort(args);
-		SERVER_NAME = "SERVER";
+		//SERVER_NAME = "SERVER";
 		SERVER_NAME = ClientArgsProcessor.getServerHost(args);
 		GIPC_SERVER_PORT = ServerArgsProcessor.getGIPCServerPort(args);
 		// ClientArgsProcessor.getServerHost(args);
@@ -314,23 +314,6 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 		gipcRegistry.getInputPort().addConnectionListener(new ATracingConnectionListener(gipcRegistry.getInputPort()));
 	}
 
-	@Override
-	public void socketChannelAccepted(ServerSocketChannel arg0, SocketChannel arg1) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void socketChannelRead(SocketChannel arg0, ByteBuffer arg1, int arg2) {
-		// TODO Auto-generated method stub
-		
-	}
-	
-	@Override
-	public void written(SocketChannel arg0, ByteBuffer arg1, int arg2) {
-		// TODO Auto-generated method stub
-		
-	}
 	
 
 }

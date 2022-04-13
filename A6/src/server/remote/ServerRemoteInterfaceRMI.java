@@ -16,7 +16,7 @@ import inputport.nio.manager.listeners.SocketChannelReadListener;
 import inputport.nio.manager.listeners.SocketChannelWriteListener;
 
 @Tags({DistributedTags.SERVER_REMOTE_INTERFACE, DistributedTags.RMI})
-public interface ServerRemoteInterfaceRMI  extends SocketChannelWriteListener, SocketChannelAcceptListener, SocketChannelReadListener, Remote{
+public interface ServerRemoteInterfaceRMI  extends Remote{
 	public void registerClient(ClientRemoteInterfaceRMI aClient) throws RemoteException;
 	public void broadcast(String aNewCommand, ClientRemoteInterfaceRMI originalClient, int aProposalNumber) throws RemoteException;
 	void processArgs(String[] args) throws RemoteException;

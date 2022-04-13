@@ -9,8 +9,9 @@ public class Client {
 		try {
 
 			// create client object
-			final ClientRemoteInterfaceRMI client = new ClientRemoteObject();
-
+			//final ClientRemoteInterfaceRMI client = new ClientRemoteObject();
+			final ClientRemoteInterfaceRMI client = new ClientRemoteObjectNIO();
+			
 			client.start(args);
 
 		} catch (Exception e) {

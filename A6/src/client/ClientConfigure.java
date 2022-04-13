@@ -281,22 +281,4 @@ public class ClientConfigure  extends AStandAloneTwoCoupledHalloweenSimulations 
 		aProposalNumber++;
 	}
 
-	@Override
-	public void connected(SocketChannel arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void notConnected(SocketChannel arg0, Exception arg1) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void written(SocketChannel arg0, ByteBuffer arg1, int arg2) {
-		// TODO Auto-generated method stub
-		
-	}
-
 }

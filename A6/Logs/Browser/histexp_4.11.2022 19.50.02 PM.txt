@@ -83,3 +83,11 @@
 4/12/2022 15:23:51 PM	13-RemoteAssignment-5-NIOManager.pptx - Google Slides	https://docs.google.com/presentation/d/1kaV8Xj_U_9iRqFGmpUx6DglUN5z65_wi/edit#slide=id.p18
 4/12/2022 16:33:22 PM	Top of Lenoir - Carolina Dining Services	https://dining.unc.edu/locations/top-of-lenoir/
 4/12/2022 19:07:14 PM	13-RemoteAssignment-5-NIOManager.pptx - Google Slides	https://docs.google.com/presentation/d/1kaV8Xj_U_9iRqFGmpUx6DglUN5z65_wi/edit#slide=id.p18
+4/13/2022 10:30:25 AM	13-RemoteAssignment-5-NIOManager.pptx - Google Slides	https://docs.google.com/presentation/d/1kaV8Xj_U_9iRqFGmpUx6DglUN5z65_wi/edit#slide=id.p18
+4/13/2022 09:57:26 AM	Login	http://gradapp.gatech.edu/portal/status
+4/13/2022 09:57:28 AM	Applicant Status Portal	https://gradapp.gatech.edu/portal/status
+4/13/2022 09:57:26 AM	Login	https://gradapp.gatech.edu/account/login?r=https%3a%2f%2fgradapp.gatech.edu%2fportal%2fstatus
+4/13/2022 09:57:37 AM		https://gradapp.gatech.edu/apply/update
+4/13/2022 09:57:37 AM	Georgia Institute of Technology Graduate Studies	https://gradapp.gatech.edu/apply/update?id=e32c3f58-98b9-4948-bc5b-ed54e7b98622
+4/13/2022 10:44:50 AM	6DistributedNIOTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/15-G2ffLtb5MBg6PbgqnXr-v-s_nSm_zX/edit#
+4/13/2022 10:44:47 AM	13-RemoteAssignment-5-NIOManager.pptx - Google Slides	https://docs.google.com/presentation/d/1kaV8Xj_U_9iRqFGmpUx6DglUN5z65_wi/edit#slide=id.p18

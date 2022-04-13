@@ -14,7 +14,7 @@ import inputport.nio.manager.listeners.SocketChannelReadListener;
 import inputport.nio.manager.listeners.SocketChannelWriteListener;
 
 @Tags({DistributedTags.SERVER_REMOTE_INTERFACE, DistributedTags.GIPC, DistributedTags.RMI})
-public interface ServerRemoteInterfaceGIPC extends SocketChannelWriteListener, SocketChannelAcceptListener, SocketChannelReadListener, Remote{
+public interface ServerRemoteInterfaceGIPC extends Remote{
 	public void registerClient(ClientRemoteInterfaceRMI aClient) throws RemoteException;
 	
 	void registerClientGIPC(ClientRemoteInterfaceGIPC aClient) throws RemoteException;
