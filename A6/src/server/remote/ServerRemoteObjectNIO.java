@@ -10,13 +10,24 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
 
+import assignments.util.MiscAssignmentUtils;
 import assignments.util.mainArgs.ServerArgsProcessor;
 import inputport.nio.manager.NIOManager;
 import inputport.nio.manager.NIOManagerFactory;
 import nioExample.exampleServerReadThread;
 import readThread.ReadThreadInterface;
 import readThread.ServerReadThread;
+import util.trace.bean.BeanTraceUtility;
+import util.trace.factories.FactoryTraceUtility;
+import util.trace.misc.ThreadDelayed;
+import util.trace.port.PortTraceUtility;
+import util.trace.port.consensus.ConsensusTraceUtility;
+import util.trace.port.nio.NIOTraceUtility;
 import util.trace.port.nio.SocketChannelBound;
+import util.trace.port.rpc.gipc.GIPCRPCTraceUtility;
+import util.trace.port.rpc.rmi.RMITraceUtility;
+import inputport.nio.manager.factories.classes.AnAcceptCommandFactory;
+import inputport.nio.manager.factories.selectors.AcceptCommandFactorySelector;
 
 public class ServerRemoteObjectNIO extends ServerRemoteObjectGIPC implements ServerRemoteInterfaceNIO{
 	protected NIOManager nioManager = NIOManagerFactory.getSingleton();
@@ -30,9 +41,11 @@ public class ServerRemoteObjectNIO extends ServerRemoteObjectGIPC implements Ser
 	
 	@Override
 	protected void init(String[] args) {
-		super.init(args);
-		aServerPort = ServerArgsProcessor.getNIOServerPort(args);
+		setTracing();
+		setFactories();
 		
+		aServerPort = ServerArgsProcessor.getNIOServerPort(args);
+			
 		try {
 			ServerSocketChannel aServerFactoryChannel = ServerSocketChannel.open();
 			InetSocketAddress anInternetSocketAddress = new InetSocketAddress(aServerPort);
@@ -41,6 +54,8 @@ public class ServerRemoteObjectNIO extends ServerRemoteObjectGIPC implements Ser
 			nioManager.enableListenableAccepts(aServerFactoryChannel, SelectionKey.OP_READ, // allow incoming writes
 																							// that can be read
 					this);
+			
+			//SocketChannelBound.newCase(this, aServerFactoryChannel, anInternetSocketAddress);
 
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -54,17 +69,35 @@ public class ServerRemoteObjectNIO extends ServerRemoteObjectGIPC implements Ser
 		
 		//Start thread and do some action
 		readThread.start();
+		
+		super.init(args);
 	}
 	
 	@Override
-	public void socketChannelAccepted(ServerSocketChannel arg0, SocketChannel arg1) {
-		// TODO Auto-generated method stub
+	public void setFactories() {
+		AcceptCommandFactorySelector.setFactory(new AnAcceptCommandFactory(SelectionKey.OP_READ));
+	}
+	
+	@Override
+	public void socketChannelAccepted(ServerSocketChannel arg0, SocketChannel aSocketChannel) {
+		nioManager.addReadListener(aSocketChannel, this);
+
+		// save aSocketChannel
+		socketList.add(aSocketChannel);
 		
 	}
 
 	@Override
-	public void socketChannelRead(SocketChannel arg0, ByteBuffer arg1, int arg2) {
-		// TODO Auto-generated method stub
+	public void socketChannelRead(SocketChannel aSocketChannel, ByteBuffer aMessage, int aLength) {
+		ByteBuffer copy = MiscAssignmentUtils.deepDuplicate(aMessage);
+		boundedBuffer.add(copy);
+
+		String aMessageString = new String(aMessage.array(), aMessage.position(), aLength);
+		System.out.println(aMessageString + "<--" + aSocketChannel);
+
+		currentSocket = aSocketChannel;
+		
+		reader.notifyThread();
 		
 	}
 
@@ -77,19 +110,50 @@ public class ServerRemoteObjectNIO extends ServerRemoteObjectGIPC implements Ser
 	@Override
 	public ArrayBlockingQueue<ByteBuffer> getBoundedBuffer() {
 		// TODO Auto-generated method stub
-		return null;
+		return boundedBuffer;
 	}
 
 	@Override
 	public List<SocketChannel> getSocketList() {
 		// TODO Auto-generated method stub
-		return null;
+		return socketList;
 	}
 
 	@Override
 	public SocketChannel getSocketChannel() {
 		// TODO Auto-generated method stub
-		return null;
+		return currentSocket;
+	}
+	
+	@Override
+	protected void setTracing() {
+		//A6
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();
+		BeanTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		GIPCRPCTraceUtility.setTracing();
+
+		
+		// A5
+		FactoryTraceUtility.setTracing();
+		BeanTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		GIPCRPCTraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+
+		// A4
+		PortTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		trace(true);
 	}
 
 }

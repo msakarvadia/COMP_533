@@ -211,6 +211,16 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 
 	@Override
 	protected void setTracing() {
+		//A6
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();
+		BeanTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		GIPCRPCTraceUtility.setTracing();
+
+		
 		// A5
 		FactoryTraceUtility.setTracing();
 		BeanTraceUtility.setTracing();

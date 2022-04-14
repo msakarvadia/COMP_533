@@ -56,14 +56,15 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 	private static String RMI_SERVER_HOST_NAME;
 	private static int RMI_SERVER_PORT;
 	private static String SERVER_NAME;
-	private static String CLIENT_NAME;
+	public String CLIENT_NAME;
 	
 	//A5
 	private static int GIPC_SERVER_PORT;
 	protected static GIPCRegistry gipcRegistry;
 	private static String GIPC_SERVER_NAME ;
-	private static boolean broadcastIPCMechanism = false;
-	private static int aProposalNumber;
+	protected boolean broadcastIPCMechanism = false;
+	//protected int aProposalNumber;
+	public int aProposalNumber;
 	
 	PropertyChangeListener clientOutCoupler;
 
@@ -90,6 +91,8 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 		SERVER_NAME = "SERVER";
 		SERVER_NAME = ClientArgsProcessor.getServerHost(args);
 				//ClientArgsProcessor.getServerHost(args);
+		
+		//ServerArgsProcessor.ge;
 		CLIENT_NAME = ClientArgsProcessor.getClientName(args);
 
 
@@ -101,6 +104,16 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 	
 	@Override
 	protected void setTracing() {
+		//A6
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();
+		BeanTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		GIPCRPCTraceUtility.setTracing();
+
+		
 		//A5
 		FactoryTraceUtility.setTracing();
 		BeanTraceUtility.setTracing();
@@ -156,7 +169,9 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 		// Get RMI server here
 		
 		try {
+			System.out.println("WE ARE LOOKING UP server from RMI REGISTRY HERE: "+SERVER_NAME);
 			server = (ServerRemoteInterfaceGIPC) rmiRegistry.lookup(SERVER_NAME);
+			System.out.println("SERVER looked up in RMI registry:");
 			RMIObjectLookedUp.newCase(this, server, SERVER_NAME, rmiRegistry);
 		} catch (AccessException e2) {
 			// TODO Auto-generated catch block
@@ -212,7 +227,7 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 		//	ThreadSupport.sleep(aDelay);
 		//}
 		IPCMechanism mechanism = getIPCMechanism();
-		System.out.println("IPC Mechanism");
+		System.out.println("IPC Mechanism gotten from old GIPC simiulation command method");
 		System.out.println(mechanism);
 		
 		

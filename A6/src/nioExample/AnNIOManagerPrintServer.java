@@ -38,13 +38,13 @@ public class AnNIOManagerPrintServer implements NIOManagerPrintServer {
 
 	public AnNIOManagerPrintServer(int aServerPort) {
 		setTracing();
-//		setFactories();
+		setFactories();
 		initialize(aServerPort);
 	}
 
-//	protected void setFactories() {
-//		AcceptCommandFactorySelector.setFactory(new AnAcceptCommandFactory(SelectionKey.OP_READ));
-//	}
+	protected void setFactories() {
+		AcceptCommandFactorySelector.setFactory(new AnAcceptCommandFactory(SelectionKey.OP_READ));
+	}
 	protected void setTracing() {
 		FactoryTraceUtility.setTracing();
 		NIOTraceUtility.setTracing();

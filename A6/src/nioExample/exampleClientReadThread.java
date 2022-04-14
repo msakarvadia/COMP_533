@@ -37,7 +37,7 @@ public class exampleClientReadThread implements ReadThreadInterface{
 				}
 			}
 			
-			System.out.println("IN RUN METHOD OF READ THREAD");
+			System.out.println("IN RUN METHOD OF CLIENT READ THREAD");
 			
 			ArrayBlockingQueue<ByteBuffer> boundedBuffer = client.getBoundedBuffer();
 			

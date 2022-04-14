@@ -169,6 +169,7 @@ public class ServerRemoteObjectRMI extends AStandAloneTwoCoupledHalloweenSimulat
 	
 	@Override
 	public void  start (String[] args) {
+		System.out.println("inside RMI server start");
 		init(args);
 		
 

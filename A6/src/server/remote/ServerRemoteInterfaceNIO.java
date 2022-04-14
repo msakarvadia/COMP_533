@@ -18,4 +18,6 @@ public interface ServerRemoteInterfaceNIO extends SocketChannelAcceptListener, S
 
 	SocketChannel getSocketChannel();
 
+	void setFactories();
+
 }
