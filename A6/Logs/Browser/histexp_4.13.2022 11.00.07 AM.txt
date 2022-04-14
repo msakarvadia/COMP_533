@@ -40,3 +40,14 @@
 4/14/2022 13:26:46 PM	cassandra - java.lang.NumberFormatException - Stack Overflow	https://stackoverflow.com/questions/17270452/java-lang-numberformatexception
 4/14/2022 13:31:10 PM	GIPC/src/examples/nio/manager/print at master · pdewan/GIPC	https://github.com/pdewan/GIPC/tree/master/src/examples/nio/manager/print
 4/14/2022 13:31:13 PM	GIPC/NIOManagerPrintClientLauncher.java at master · pdewan/GIPC	https://github.com/pdewan/GIPC/blob/master/src/examples/nio/manager/print/NIOManagerPrintClientLauncher.java
+4/14/2022 14:25:53 PM	Slide 1	http://www.cs.unc.edu/~dewan/734/f15/lectures/9-GIPC-Dissection.pdf
+4/14/2022 14:29:22 PM	Lectures - Google Drive	https://drive.google.com/drive/folders/14bIoaPQLNDP9Oxv1-LtgKhevNiICuqPr
+4/14/2022 14:39:57 PM	InvocationTargetException (Java Platform SE 7 )	https://docs.oracle.com/javase/7/docs/api/java/lang/reflect/InvocationTargetException.html
+4/14/2022 15:09:51 PM	TrickOrTreat/AStandAloneTwoCoupledHalloweenSimulations.java at master · pdewan/TrickOrTreat	https://github.com/pdewan/TrickOrTreat/blob/master/CoupledTrickOrTreat/src/coupledsims/AStandAloneTwoCoupledHalloweenSimulations.java
+4/14/2022 15:33:47 PM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2
+4/14/2022 15:33:58 PM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7
+4/14/2022 15:37:24 PM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=122
+4/14/2022 15:40:51 PM	java.lang.reflect.InvocationTargetException - Google Search	https://www.google.com/search?q=java.lang.reflect.InvocationTargetException&rlz=1C1CHBF_enUS939US939&oq=java.lang.reflect.InvocationTargetException&aqs=chrome..69i57.226j0j7&sourceid=chrome&ie=UTF-8
+4/14/2022 15:40:52 PM	What Causes java.lang.reflect.InvocationTargetException? | Baeldung	https://www.baeldung.com/java-lang-reflect-invocationtargetexception
+4/14/2022 15:47:55 PM	er) at java.base/sun.nio.ch.Net.bind0 - Google Search	https://www.google.com/search?q=er)+at+java.base%2Fsun.nio.ch.Net.bind0&rlz=1C1CHBF_enUS939US939&oq=er)%09at+java.base%2Fsun.nio.ch.Net.bind0&aqs=chrome..69i57.291j0j4&sourceid=chrome&ie=UTF-8
+4/14/2022 15:47:57 PM	Sharing my fix for the error: "java.net.BindException: Address already in use" (Example) | Treehouse Community	https://teamtreehouse.com/community/sharing-my-fix-for-the-error-javanetbindexception-address-already-in-use

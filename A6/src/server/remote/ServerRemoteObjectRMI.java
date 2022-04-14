@@ -66,7 +66,7 @@ public class ServerRemoteObjectRMI extends AStandAloneTwoCoupledHalloweenSimulat
 		RMI_SERVER_HOST_NAME = ServerArgsProcessor.getRegistryHost(args);
 		RMI_SERVER_PORT = ServerArgsProcessor.getRegistryPort(args);
 		SERVER_NAME = "SERVER";
-		SERVER_NAME = ClientArgsProcessor.getServerHost(args);
+		//SERVER_NAME = ClientArgsProcessor.getServerHost(args);
 		
 		GIPC_SERVER_PORT = ServerArgsProcessor.getGIPCServerPort(args);
 				//ClientArgsProcessor.getServerHost(args);

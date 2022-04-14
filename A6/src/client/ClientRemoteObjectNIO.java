@@ -22,13 +22,18 @@ import nioExample.exampleClientReadThread;
 import readThread.ClientReadThread;
 import readThread.ReadThreadInterface;
 import stringProcessors.HalloweenCommandProcessor;
+import util.annotations.Tags;
 import util.interactiveMethodInvocation.IPCMechanism;
+import util.tags.DistributedTags;
+import util.trace.port.consensus.ProposalLearnedNotificationReceived;
 import util.trace.port.consensus.ProposedStateSet;
 
+@Tags({ DistributedTags.CLIENT_REMOTE_OBJECT, DistributedTags.RMI, DistributedTags.GIPC, DistributedTags.NIO })
 public class ClientRemoteObjectNIO extends ClientRemoteObject implements ClientRemoteInterfaceNIO{
 	protected NIOManager nioManager = NIOManagerFactory.getSingleton();
 	int aServerPort;
 	protected SocketChannel socketChannel;
+	protected boolean broadcastIPCMechanism = false;
 	
 	ArrayBlockingQueue<ByteBuffer> boundedBuffer = new ArrayBlockingQueue<ByteBuffer>(500);
 	ReadThreadInterface reader = null;
@@ -134,14 +139,17 @@ public class ClientRemoteObjectNIO extends ClientRemoteObject implements ClientR
 		ByteBuffer bufferCommand = ByteBuffer.wrap(aCommand.getBytes());
 		nioManager.write(socketChannel, bufferCommand, this);
 
+		
 		// IPC Mechanism Change
 		ProposedStateSet.newCase(this, super.CLIENT_NAME, super.aProposalNumber, mechanism);
 		try {
-			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, super.broadcastIPCMechanism);
+			
+			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);
 		} catch (RemoteException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 		commandProcessor.setInputString(aCommand); // all commands go to the first command window
 		
 		commandProcessor.addPropertyChangeListener(clientOutCoupler);
@@ -152,5 +160,6 @@ public class ClientRemoteObjectNIO extends ClientRemoteObject implements ClientR
 		return commandProcessor;
 	}
 		
+
 
 }

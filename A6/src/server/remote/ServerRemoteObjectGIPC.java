@@ -49,6 +49,7 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 	private static String RMI_SERVER_HOST_NAME;
 	private static int RMI_SERVER_PORT;
 	private static String SERVER_NAME;
+	private static int NIO_SERVER_PORT;
 
 	// A5
 	private static int GIPC_SERVER_PORT;
@@ -58,21 +59,23 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 
 	@Override
 	public void processArgs(String[] args) {
-		System.out.println("Registry host:" + ClientArgsProcessor.getRegistryHost(args));
-		System.out.println("Registry port:" + ClientArgsProcessor.getRegistryPort(args));
-		System.out.println("Server host:" + ClientArgsProcessor.getServerHost(args));
-		System.out.println("Headless:" + ClientArgsProcessor.getHeadless(args));
-		System.out.println("Client name:" + ClientArgsProcessor.getClientName(args));
+		
 
 		// Make sure you set this property when processing args
-		System.setProperty("java.awt.headless", ClientArgsProcessor.getHeadless(args));
+		//System.setProperty("java.awt.headless", ClientArgsProcessor.getHeadless(args));
+		
 
 		RMI_SERVER_HOST_NAME = ServerArgsProcessor.getRegistryHost(args);
 		RMI_SERVER_PORT = ServerArgsProcessor.getRegistryPort(args);
-		//SERVER_NAME = "SERVER";
-		SERVER_NAME = ClientArgsProcessor.getServerHost(args);
+		SERVER_NAME = "SERVER";
 		GIPC_SERVER_PORT = ServerArgsProcessor.getGIPCServerPort(args);
+		NIO_SERVER_PORT = ServerArgsProcessor.getNIOServerPort(args);
 		// ClientArgsProcessor.getServerHost(args);
+		System.out.println("RMI_SERVER_HOST_NAME: "+RMI_SERVER_HOST_NAME);
+		System.out.println("RMI_SERVER_PORT: "+RMI_SERVER_PORT);
+		System.out.println("GIPC_SERVER_PORT: "+GIPC_SERVER_PORT);
+		System.out.println("NIO_SERVER_PORT: "+NIO_SERVER_PORT);
+		
 
 	}
 
@@ -190,6 +193,7 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 		}
 		
 		if (broadcast) {
+			System.out.println("Broadcasting IPC mechanism: "+mechanism);
 			RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, mechanism);
 			
 			for (ClientRemoteInterfaceGIPC client : clientList) {
@@ -322,6 +326,7 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 		gipcRegistry.rebind(SERVER_NAME, server);
 		GIPCObjectRegistered.newCase(this, SERVER_NAME, this, gipcRegistry);
 		gipcRegistry.getInputPort().addConnectionListener(new ATracingConnectionListener(gipcRegistry.getInputPort()));
+		System.out.println("ADDED CONNECTION LISTENER");
 	}
 
 	

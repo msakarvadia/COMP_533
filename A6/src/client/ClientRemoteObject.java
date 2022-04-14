@@ -89,8 +89,6 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 		RMI_SERVER_HOST_NAME = ClientArgsProcessor.getRegistryHost(args);
 		RMI_SERVER_PORT = ClientArgsProcessor.getRegistryPort(args);
 		SERVER_NAME = "SERVER";
-		SERVER_NAME = ClientArgsProcessor.getServerHost(args);
-				//ClientArgsProcessor.getServerHost(args);
 		
 		//ServerArgsProcessor.ge;
 		CLIENT_NAME = ClientArgsProcessor.getClientName(args);
@@ -171,7 +169,7 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 		try {
 			System.out.println("WE ARE LOOKING UP server from RMI REGISTRY HERE: "+SERVER_NAME);
 			server = (ServerRemoteInterfaceGIPC) rmiRegistry.lookup(SERVER_NAME);
-			System.out.println("SERVER looked up in RMI registry:");
+			System.out.println("SERVER looked up in RMI registry!!");
 			RMIObjectLookedUp.newCase(this, server, SERVER_NAME, rmiRegistry);
 		} catch (AccessException e2) {
 			// TODO Auto-generated catch block
@@ -279,7 +277,7 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 	public void broadcastMetaState(boolean broadcast) {
 		broadcastIPCMechanism = broadcast;
 		setBroadcastMetaState(broadcast);
-		
+	
 	}
 	
 	@Override
