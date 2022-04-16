@@ -17,6 +17,7 @@ import util.trace.port.consensus.ProposedStateSet;
 
 @Tags({DistributedTags.NIO, DistributedTags.CLIENT_READ_THREAD})
 public class ClientReadThread implements ReadThreadInterface{
+	//final ClientRemoteObjectNIO client;
 	final ClientRemoteObjectNIO client;
 	protected NIOManager nioManager = NIOManagerFactory.getSingleton();
 	

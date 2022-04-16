@@ -27,6 +27,7 @@ import util.interactiveMethodInvocation.IPCMechanism;
 import util.tags.DistributedTags;
 import util.trace.port.consensus.ProposalLearnedNotificationReceived;
 import util.trace.port.consensus.ProposedStateSet;
+import util.trace.port.consensus.RemoteProposeRequestSent;
 
 @Tags({ DistributedTags.CLIENT_REMOTE_OBJECT, DistributedTags.RMI, DistributedTags.GIPC, DistributedTags.NIO })
 public class ClientRemoteObjectNIO extends ClientRemoteObject implements ClientRemoteInterfaceNIO{
@@ -126,33 +127,37 @@ public class ClientRemoteObjectNIO extends ClientRemoteObject implements ClientR
 	public void simulationCommand(String aCommand) {
 
 		IPCMechanism mechanism = getIPCMechanism();
-		System.out.println("IPC Mechanism: "+ mechanism.toString());
+		System.out.println("IPC Mechanism: " + mechanism.toString());
+
+		// IPC Mechanism Change
+		ProposedStateSet.newCase(this, super.CLIENT_NAME, super.aProposalNumber, mechanism);
+		try {
+
+			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		if (!mechanism.toString().equals("NIO")) {
 			System.out.println("IPC Mechanism is GIPC or RMI");
 			super.simulationCommand(aCommand);
 			return;
 		}
-		
+
 		commandProcessor.removePropertyChangeListener(clientOutCoupler);
 		
 		ByteBuffer bufferCommand = ByteBuffer.wrap(aCommand.getBytes());
+		RemoteProposeRequestSent.newCase(this, CLIENT_NAME, aProposalNumber, aCommand);
 		nioManager.write(socketChannel, bufferCommand, this);
 
 		
-		// IPC Mechanism Change
-		ProposedStateSet.newCase(this, super.CLIENT_NAME, super.aProposalNumber, mechanism);
-		try {
-			
-			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);
-		} catch (RemoteException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 		
 		commandProcessor.setInputString(aCommand); // all commands go to the first command window
 		
 		commandProcessor.addPropertyChangeListener(clientOutCoupler);
+		aProposalNumber = 1 + aProposalNumber;
 	}
 	
 	@Override

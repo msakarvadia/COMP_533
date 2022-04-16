@@ -1,0 +1,282 @@
+<Events startTimestamp="1650117113620" logVersion="1.0.0.202111260825">
+  <Command __id="1" _type="EclipseCommand" commandID="" date="Sat Apr 16 09:51:56 EDT 2022" starttimestamp="1650117113620" timestamp="2724" />
+  <Command __id="4" _type="ProgramExecutionEvent" className="/A6/src/checks/Checks.java" date="Sat Apr 16 09:52:00 EDT 2022" kind="HitBreakPoint" projectName="A6" starttimestamp="1650117113620" timestamp="6690" type="Run" />
+  <Command __id="6" _type="RunCommand" className="/A6/src/checks/Checks.java" date="Sat Apr 16 09:52:00 EDT 2022" kind="HitBreakPoint" projectName="A6" starttimestamp="1650117113620" timestamp="6691" type="Run" />
+  <Command __id="7" _type="MoveCaretCommand" caretOffset="0" date="Sat Apr 16 09:52:00 EDT 2022" docOffset="0" starttimestamp="1650117113620" timestamp="6727" />
+  <Command __id="9" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 09:52:01 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650117113620" timestamp="7786" type="Run" />
+  <Command __id="10" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 09:52:01 EDT 2022" kind="StepInto" projectName="(Unknown)" starttimestamp="1650117113620" timestamp="7870" type="Run" />
+  <Command __id="11" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 09:52:01 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650117113620" timestamp="7877" type="Run" />
+  <Command __id="12" _type="SelectTextCommand" caretOffset="3688" date="Sat Apr 16 09:52:02 EDT 2022" end="3688" start="161" starttimestamp="1650117113620" timestamp="8515" />
+  <Command __id="14" _type="PauseCommand" date="Sat Apr 16 09:52:14 EDT 2022" range="10s-20s" starttimestamp="1650117113620" timestamp="20662">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[12147]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="43" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 09:52:52 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650117113620" timestamp="58661" type="Run" />
+  <Command __id="45" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 09:52:52 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650117113620" timestamp="58668" type="Run" />
+  <Command __id="46" _type="ConsoleOutput" date="Sat Apr 16 09:52:52 EDT 2022" overflow="false" starttimestamp="1650117113620" timestamp="59222" type="ConsoleOutput">
+    <outputString><![CDATA[
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):13587"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="48" _type="PauseCommand" date="Sat Apr 16 09:53:49 EDT 2022" range="30s-1m" starttimestamp="1650117113620" timestamp="115774">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[56552]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="123" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 09:59:48 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650117113620" timestamp="474879" type="Run" />
+  <Command __id="125" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 09:59:48 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650117113620" timestamp="474881" type="Run" />
+  <Command __id="127" _type="PauseCommand" date="Sat Apr 16 10:01:33 EDT 2022" range="1m-2m" starttimestamp="1650117113620" timestamp="580004">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[105123]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="126" _type="ConsoleOutput" date="Sat Apr 16 10:01:33 EDT 2022" overflow="false" starttimestamp="1650117113620" timestamp="580004" type="ConsoleOutput">
+    <outputString><![CDATA[GIPCRMINIOServerMetaStateBroadcast did not pass completely:When giving 'i nio' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification;
+When giving 'i rmi' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification;
+When giving 'i gipc' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification%0.0
+
+Test execution time (ms):112614
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,"GIPCRMINIOServerMetaStateBroadcast did not pass completely:When giving 'i nio' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification;¶When giving 'i rmi' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification;¶When giving 'i gipc' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification%0.0¶¶"), Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"22586"), Diff(INSERT,"112614"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="129" _type="PauseCommand" date="Sat Apr 16 10:02:21 EDT 2022" range="30s-1m" starttimestamp="1650117113620" timestamp="627603">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[47599]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="128" _type="ConsoleOutput" date="Sat Apr 16 10:02:21 EDT 2022" overflow="false" starttimestamp="1650117113620" timestamp="627603" type="ConsoleOutput">
+    <outputString><![CDATA[Building symbol table and running first pass checks:Sat Apr 16 10:02:21 EDT 2022
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"GIPCRMINIOServerMetaStateBroadcast did not pass completely:When giving 'i nio' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification;¶When giving 'i rmi' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification;¶When giving 'i gipc' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification%0.0¶¶Test execution time (ms):112614"), Diff(INSERT,"Building symbol table and running first pass checks:Sat Apr 16 10:02:21 EDT 2022"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="131" _type="PauseCommand" date="Sat Apr 16 10:02:24 EDT 2022" range="2s-5s" starttimestamp="1650117113620" timestamp="630606">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[3003]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="133" _type="EclipseCommand" commandID="" date="Sat Apr 16 10:02:25 EDT 2022" starttimestamp="1650117113620" timestamp="632043" />
+  <Command __id="135" _type="EclipseCommand" commandID="" date="Sat Apr 16 10:02:25 EDT 2022" starttimestamp="1650117113620" timestamp="632053" />
+  <Command __id="136" _type="ShellCommand" date="Sat Apr 16 10:02:26 EDT 2022" starttimestamp="1650117113620" timestamp="632847" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="137" _type="ConsoleOutput" date="Sat Apr 16 10:02:26 EDT 2022" overflow="false" starttimestamp="1650117113620" timestamp="633040" type="ConsoleOutput">
+    <outputString><![CDATA[Finished second pass checks:Sat Apr 16 10:02:26 EDT 2022
+Generating checks:Sat Apr 16 10:02:26 EDT 2022
+Finished Generating checks:Sat Apr 16 10:02:26 EDT 2022
+Generating externals:Sat Apr 16 10:02:26 EDT 2022
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Symbol table size:125¶Running"), Diff(INSERT,"Finished"), Diff(EQUAL," second pass checks"), Diff(DELETE," "), Diff(INSERT,":"), Diff(EQUAL,"Sat Apr 16 10:02:2"), Diff(DELETE,"4"), Diff(INSERT,"6"), Diff(EQUAL," EDT 2022¶"), Diff(DELETE,"Start O(n2) inter- and intra class method call"), Diff(INSERT,"Generating checks:Sat Apr 16 10:02:26 EDT 2022¶Finished Generating check"), Diff(EQUAL,"s:Sat Apr 16 10:02:2"), Diff(DELETE,"4"), Diff(INSERT,"6"), Diff(EQUAL," EDT 2022¶"), Diff(DELETE,"End O(n2) inter- and intra class method cal"), Diff(INSERT,"Generating externa"), Diff(EQUAL,"ls:Sat Apr 16 10:02:2"), Diff(DELETE,"4"), Diff(INSERT,"6"), Diff(EQUAL," EDT 2022¶")]]]></diff>
+  </Command>
+  <Command __id="138" _type="EclipseCommand" commandID="" date="Sat Apr 16 10:02:27 EDT 2022" starttimestamp="1650117113620" timestamp="633497" />
+  <Command __id="139" _type="EclipseCommand" commandID="" date="Sat Apr 16 10:02:27 EDT 2022" starttimestamp="1650117113620" timestamp="633505" />
+  <Command __id="140" _type="ConsoleOutput" date="Sat Apr 16 10:02:27 EDT 2022" overflow="false" starttimestamp="1650117113620" timestamp="633887" type="ConsoleOutput">
+    <outputString><![CDATA[Finished Generating externals:Sat Apr 16 10:02:27 EDT 2022
+A6NoCheckstyleWarnings did not pass completely:Warnings found in checkstyle text, see traced console output%0.0
+
+Test execution time (ms):6300
+Test execution time (ms):33
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Finished "), Diff(DELETE,"second pass check"), Diff(INSERT,"Generating external"), Diff(EQUAL,"s:Sat Apr 16 10:02:2"), Diff(DELETE,"6"), Diff(INSERT,"7"), Diff(EQUAL," EDT 2022¶"), Diff(DELETE,"Generating checks:Sat Apr 16 10:02:26 EDT 2022¶Finished Generating checks:Sat Apr 16 10:02:26 EDT 2022¶Generating externals:Sat Apr 16 10:02:26 EDT 2022"), Diff(INSERT,"A6NoCheckstyleWarnings did not pass completely:Warnings found in checkstyle text, see traced console output%0.0¶¶Test execution time (ms):6300¶Test execution time (ms):33"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="141" _type="ConsoleOutput" date="Sat Apr 16 10:02:27 EDT 2022" overflow="false" starttimestamp="1650117113620" timestamp="633967" type="ConsoleOutput">
+    <outputString><![CDATA[A6PublicMethodsOverride did not pass completely:See console trace about lines failing  this check%0.9285714285714286
+
+Test execution time (ms):17
+
+A6InterfaceAsType did not pass completely:See console trace about lines failing  this check%0.9420289855072463
+Test execution time (ms):26
+Test execution time (ms):17
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Finished Generating externals:Sat Apr 16 10:02:27 EDT 2022¶A6NoCheckstyleWarnings did not pass completely:Warnings found in checkstyle text, see traced console output%0.0¶"), Diff(INSERT,"A6PublicMethodsOverride did not pass completely:See console trace about lines failing  this check%0.9285714285714286¶¶Test execution time (ms):17¶¶A6InterfaceAsType did not pass completely:See console trace about lines failing  this check%0.9420289855072463"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(INSERT,"2"), Diff(EQUAL,"6"), Diff(DELETE,"300"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"33"), Diff(INSERT,"17"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="142" _type="ConsoleOutput" date="Sat Apr 16 10:02:27 EDT 2022" overflow="false" starttimestamp="1650117113620" timestamp="634031" type="ConsoleOutput">
+    <outputString><![CDATA[
+A6AccessModifiersMatched did not pass completely:See console trace about lines failing  this check%0.23529411764705882
+Test execution time (ms):26
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"A6PublicMethodsOverride did not pass completely:See console trace about lines failing  this check%0.9285714285714286¶¶Test execution time (ms):17¶¶A6InterfaceAsType"), Diff(INSERT,"¶A6AccessModifiersMatched"), Diff(EQUAL," did not pass completely:See console trace about lines failing  this check%0."), Diff(DELETE,"9420289855072463"), Diff(INSERT,"23529411764705882"), Diff(EQUAL,"¶Test execution time (ms):26¶"), Diff(DELETE,"Test execution time (ms):17¶")]]]></diff>
+  </Command>
+  <Command __id="143" _type="EclipseCommand" commandID="" date="Sat Apr 16 10:02:28 EDT 2022" starttimestamp="1650117113620" timestamp="634920" />
+  <Command __id="144" _type="EclipseCommand" commandID="" date="Sat Apr 16 10:02:28 EDT 2022" starttimestamp="1650117113620" timestamp="634932" />
+  <Command __id="146" _type="PauseCommand" date="Sat Apr 16 10:02:32 EDT 2022" range="2s-5s" starttimestamp="1650117113620" timestamp="638587">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[3655]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="145" _type="ConsoleOutput" date="Sat Apr 16 10:02:32 EDT 2022" overflow="false" starttimestamp="1650117113620" timestamp="638587" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):4
+Test execution time (ms):13
+A6ExpectedCalls did not pass completely:See console trace about lines failing  this check%0.7586206896551724
+
+Test execution time (ms):15
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"¶A6AccessModifiersMatched"), Diff(INSERT,"Test execution time (ms):4¶Test execution time (ms):13¶A6ExpectedCalls"), Diff(EQUAL," did not pass completely:See console trace about lines failing  this check%0."), Diff(DELETE,"23529411764705882"), Diff(INSERT,"7586206896551724¶"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"26"), Diff(INSERT,"15"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="147" _type="ConsoleOutput" date="Sat Apr 16 10:02:32 EDT 2022" overflow="false" starttimestamp="1650117113620" timestamp="638704" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):13
+
+Your project does not meet the required similarity percent of: 0.95 your similarity: 0.5217391304347826
+|- represents a package, |~ represents a file
+
+The structure of your project was found to be:
+|- src (37)
+ |- checks (1)
+  |~ Checks.java (36)
+ |- client (8)
+  |~ Client.java (23)
+  |~ ClientConfigure.java (431)
+  |~ ClientOutCoupler.java (57)
+  |~ ClientRemoteInterfaceGIPC.java (33)
+  |~ ClientRemoteInterfaceNIO.java (21)
+  |~ ClientRemoteInterfaceRMI.java (29)
+  |~ ClientRemoteObject.java (294)
+  |~ ClientRemoteObjectNIO.java (170)
+ |- nioExample (8)
+  |~ AnNIOManagerPrintClient.java (125)
+  |~ AnNIOManagerPrintServer.java (138)
+  |~ exampleClientReadThread.java (67)
+  |~ exampleServerReadThread.java (70)
+  |~ FakeClientInterface.java (12)
+  |~ NIOManagerPrintClientLauncherNoFactory.java (10)
+  |~ NIOManagerPrintServer.java (20)
+  |~ NIOManagerPrintServerLauncherNoFactory.java (10)
+ |- readThread (3)
+  |~ ClientReadThread.java (82)
+  |~ ReadThreadInterface.java (13)
+  |~ ServerReadThread.java (76)
+ |- registry (1)
+  |~ TrickOrTreatRegistry.java (33)
+ |- server (10)
+  |~ OriginalSimulation.java (9)
+  |~ Server.java (33)
+  |~ ServerConfigure.java (469)
+  |- remote (6)
+   |~ ServerRemoteInterfaceGIPC.java (44)
+   |~ ServerRemoteInterfaceNIO.java (23)
+   |~ ServerRemoteInterfaceRMI.java (40)
+   |~ ServerRemoteObjectGIPC.java (335)
+   |~ ServerRemoteObjectNIO.java (159)
+   |~ ServerRemoteObjectRMI.java (245)
+
+Attempting to match to the structure:
+|- .* (23)
+ |- [a-z]?.*[Cc]lient.* (10)
+  |~ .*Client.*.java (0)
+  |~ .*Client.*.java (0)
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"4¶Test execution time (ms):13¶A6ExpectedCalls did not pass completely:See console trace about lines failing  this check%0.7586206896551724¶¶Test execution time (ms):15"), Diff(INSERT,"13¶¶Your project does not meet the required similarity percent of: 0.95 your similarity: 0.5217391304347826¶|- represents a package, |~ represents a file¶¶The structure of your project was found to be:¶|- src (37)¶ |- checks (1)¶  |~ Checks.java (36)¶ |- client (8)¶  |~ Client.java (23)¶  |~ ClientConfigure.java (431)¶  |~ ClientOutCoupler.java (57)¶  |~ ClientRemoteInterfaceGIPC.java (33)¶  |~ ClientRemoteInterfaceNIO.java (21)¶  |~ ClientRemoteInterfaceRMI.java (29)¶  |~ ClientRemoteObject.java (294)¶  |~ ClientRemoteObjectNIO.java (170)¶ |- nioExample (8)¶  |~ AnNIOManagerPrintClient.java (125)¶  |~ AnNIOManagerPrintServer.java (138)¶  |~ exampleClientReadThread.java (67)¶  |~ exampleServerReadThread.java (70)¶  |~ FakeClientInterface.java (12)¶  |~ NIOManagerPrintClientLauncherNoFactory.java (10)¶  |~ NIOManagerPrintServer.java (20)¶  |~ NIOManagerPrintServerLauncherNoFactory.java (10)¶ |- readThread (3)¶  |~ ClientReadThread.java (82)¶  |~ ReadThreadInterface.java (13)¶  |~ ServerReadThread.java (76)¶ |- registry (1)¶  |~ TrickOrTreatRegistry.java (33)¶ |- server (10)¶  |~ OriginalSimulation.java (9)¶  |~ Server.java (33)¶  |~ ServerConfigure.java (469)¶  |- remote (6)¶   |~ ServerRemoteInterfaceGIPC.java (44)¶   |~ ServerRemoteInterfaceNIO.java (23)¶   |~ ServerRemoteInterfaceRMI.java (40)¶   |~ ServerRemoteObjectGIPC.java (335)¶   |~ ServerRemoteObjectNIO.java (159)¶   |~ ServerRemoteObjectRMI.java (245)¶¶Attempting to match to the structure:¶|- .* (23)¶ |- [a-z]?.*[Cc]lient.* (10)¶  |~ .*Client.*.java (0)¶  |~ .*Client.*.java (0)"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="149" _type="PauseCommand" date="Sat Apr 16 10:02:41 EDT 2022" range="5s-10s" starttimestamp="1650117113620" timestamp="648187">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[9483]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="148" _type="ConsoleOutput" date="Sat Apr 16 10:02:41 EDT 2022" overflow="false" starttimestamp="1650117113620" timestamp="648187" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s21.assignment6.style.A6PublicMethodsOverride@66557938 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):13¶¶Your project does not meet the required similarity percent of: 0.95 your similarity: 0.5217391304347826¶|- represents a package, |~ represents a file¶¶The structure of your project was found to be:¶|- src (37)¶ |- checks (1)¶  |~ Checks.java (36)¶ |- client (8)¶  |~ Client.java (23)¶  |~ ClientConfigure.java (431)¶  |~ ClientOutCoupler.java (57)¶  |~ ClientRemoteInterfaceGIPC.java (33)¶  |~ ClientRemoteInterfaceNIO.java (21)¶  |~ ClientRemoteInterfaceRMI.java (29)¶  |~ ClientRemoteObject.java (294)¶  |~ ClientRemoteObjectNIO.java (170)¶ |- nioExample (8)¶  |~ AnNIOManagerPrintClient.java (125)¶  |~ AnNIOManagerPrintServer.java (138)¶  |~ exampleClientReadThread.java (67)¶  |~ exampleServerReadThread.java (70)¶  |~ FakeClientInterface.java (12)¶  |~ NIOManagerPrintClientLauncherNoFactory.java (10)¶  |~ NIOManagerPrintServer.java (20)¶  |~ NIOManagerPrintServerLauncherNoFactory.java (10)¶ |- readThread (3)¶  |~ ClientReadThread.java (82)¶  |~ ReadThreadInterface.java (13)¶  |~ ServerReadThread.java (76)¶ |- registry (1)¶  |~ TrickOrTreatRegistry.java (33)¶ |- server (10)¶  |~ OriginalSimulation.java (9)¶  |~ Server.java (33)¶  |~ ServerConfigure.java (469)¶  |- remote (6)¶   |~ ServerRemoteInterfaceGIPC.java (44)¶   |~ ServerRemoteInterfaceNIO.java (23)¶   |~ ServerRemoteInterfaceRMI.java (40)¶   |~ ServerRemoteObjectGIPC.java (335)¶   |~ ServerRemoteObjectNIO.java (159)¶   |~ ServerRemoteObjectRMI.java (245)¶¶Attempting to match to the structure:¶|- .* (23)¶ |- [a-z]?.*[Cc]lient.* (10)¶  |~ .*Client.*.java (0)¶  |~ .*Client.*.java (0)"), Diff(INSERT,"Re-running test gradingTools.comp533s21.assignment6.style.A6PublicMethodsOverride@66557938 . Results may change."), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="151" _type="PauseCommand" date="Sat Apr 16 10:02:43 EDT 2022" range="1s-2s" starttimestamp="1650117113620" timestamp="649586">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1399]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="150" _type="ConsoleOutput" date="Sat Apr 16 10:02:43 EDT 2022" overflow="false" starttimestamp="1650117113620" timestamp="649586" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s21.assignment6.style.A6PublicMethodsOverride@66557938 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s21.assignment6.style.A6PublicMethodsOverride@66557938 . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="153" _type="PauseCommand" date="Sat Apr 16 10:02:44 EDT 2022" range="1s-2s" starttimestamp="1650117113620" timestamp="650873">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1287]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="152" _type="ConsoleOutput" date="Sat Apr 16 10:02:44 EDT 2022" overflow="false" starttimestamp="1650117113620" timestamp="650873" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s21.assignment6.style.A6InterfaceAsType@16c1b807 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s21.assignment6.style.A6"), Diff(DELETE,"PublicMethodsOverride@66557938"), Diff(INSERT,"InterfaceAsType@16c1b807"), Diff(EQUAL," . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="155" _type="PauseCommand" date="Sat Apr 16 10:02:45 EDT 2022" range="1s-2s" starttimestamp="1650117113620" timestamp="652266">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1393]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="154" _type="ConsoleOutput" date="Sat Apr 16 10:02:45 EDT 2022" overflow="false" starttimestamp="1650117113620" timestamp="652266" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s21.assignment6.style.A6InterfaceAsType@16c1b807 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s21.assignment6.style.A6InterfaceAsType@16c1b807 . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="157" _type="PauseCommand" date="Sat Apr 16 10:02:47 EDT 2022" range="1s-2s" starttimestamp="1650117113620" timestamp="653882">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1616]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="156" _type="ConsoleOutput" date="Sat Apr 16 10:02:47 EDT 2022" overflow="false" starttimestamp="1650117113620" timestamp="653882" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s21.assignment6.style.A6AccessModifiersMatched@783c1339 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s21.assignment6.style.A6"), Diff(DELETE,"InterfaceAsType@16c1b807"), Diff(INSERT,"AccessModifiersMatched@783c1339"), Diff(EQUAL," . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="159" _type="PauseCommand" date="Sat Apr 16 10:02:49 EDT 2022" range="1s-2s" starttimestamp="1650117113620" timestamp="655450">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1568]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="158" _type="ConsoleOutput" date="Sat Apr 16 10:02:49 EDT 2022" overflow="false" starttimestamp="1650117113620" timestamp="655450" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s21.assignment6.style.A6AccessModifiersMatched@783c1339 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s21.assignment6.style.A6AccessModifiersMatched@783c1339 . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="161" _type="PauseCommand" date="Sat Apr 16 10:02:51 EDT 2022" range="2s-5s" starttimestamp="1650117113620" timestamp="657675">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2225]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="160" _type="ConsoleOutput" date="Sat Apr 16 10:02:51 EDT 2022" overflow="false" starttimestamp="1650117113620" timestamp="657675" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s21.assignment6.style.A6ExpectedCalls@5d836a03 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s21.assignment6.style.A6"), Diff(DELETE,"AccessModifiersMatched@783c1339"), Diff(INSERT,"ExpectedCalls@5d836a03"), Diff(EQUAL," . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="163" _type="PauseCommand" date="Sat Apr 16 10:03:03 EDT 2022" range="10s-20s" starttimestamp="1650117113620" timestamp="670097">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[12422]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="162" _type="ConsoleOutput" date="Sat Apr 16 10:03:03 EDT 2022" overflow="false" starttimestamp="1650117113620" timestamp="670097" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s21.assignment6.style.A6PublicMethodsOverride@66557938 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s21.assignment6.style.A6"), Diff(DELETE,"ExpectedCalls@5d836a03"), Diff(INSERT,"PublicMethodsOverride@66557938"), Diff(EQUAL," . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="165" _type="PauseCommand" date="Sat Apr 16 10:03:05 EDT 2022" range="1s-2s" starttimestamp="1650117113620" timestamp="671449">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1352]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>

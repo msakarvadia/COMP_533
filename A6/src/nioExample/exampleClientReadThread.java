@@ -10,10 +10,11 @@ import inputport.nio.manager.NIOManagerFactory;
 import readThread.ReadThreadInterface;
 
 public class exampleClientReadThread implements ReadThreadInterface{
-	final AnNIOManagerPrintClient client;
+	//final AnNIOManagerPrintClient client;
+	final FakeClientInterface client;
 	protected NIOManager nioManager = NIOManagerFactory.getSingleton();
 	
-	public exampleClientReadThread (final AnNIOManagerPrintClient aClient) {
+	public exampleClientReadThread (final FakeClientInterface aClient) {
 		client = aClient;
 	}
 

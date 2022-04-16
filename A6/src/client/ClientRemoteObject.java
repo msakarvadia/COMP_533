@@ -284,6 +284,7 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 	public void changeIPCMechanism(IPCMechanism mechanism) {
 		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
 		setIPCMechanism(mechanism);
+		System.out.print("GOT IPC MECHANISM CHANGE: "+mechanism);
 		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
 		aProposalNumber++;
 	}

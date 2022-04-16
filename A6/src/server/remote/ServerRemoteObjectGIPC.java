@@ -203,6 +203,7 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 
 				try {
 					client.changeIPCMechanism(mechanism);
+					System.out.println("SEND NEW MECHANISM TO A CLIENT FROM SERVER");
 				} catch (RemoteException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

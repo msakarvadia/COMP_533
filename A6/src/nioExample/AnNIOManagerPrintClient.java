@@ -28,7 +28,7 @@ import util.trace.port.nio.NIOTraceUtility;
 import util.trace.port.nio.SocketChannelBound;
 
 public class AnNIOManagerPrintClient implements SocketChannelConnectListener, SocketChannelWriteListener,
-SocketChannelAcceptListener, SocketChannelReadListener{
+SocketChannelAcceptListener, SocketChannelReadListener, FakeClientInterface{
 	protected NIOManager nioManager = NIOManagerFactory.getSingleton();
 	protected SocketChannel socketChannel;
 	protected Scanner scanner = new Scanner(System.in);
@@ -47,6 +47,7 @@ SocketChannelAcceptListener, SocketChannelReadListener{
 //		ConnectCommandFactorySelector.setFactory(new AConnectCommandFactory(0));
 //	}
 
+	@Override
 	public void processInput() {
 		scanner = new Scanner(System.in);
 		while (true) {
@@ -72,8 +73,8 @@ SocketChannelAcceptListener, SocketChannelReadListener{
 					//0, // do not allow any incoming messages
 					SelectionKey.OP_READ,
 					this);
-		} catch (IOException e) {
-			e.printStackTrace();
+		} catch (IOException exception) {
+			exception.printStackTrace();
 		}
 		
 		//Create new read thread Runnable
@@ -93,7 +94,7 @@ SocketChannelAcceptListener, SocketChannelReadListener{
 	}
 
 	@Override
-	public void notConnected(SocketChannel theSocketChannel, Exception e) {
+	public void notConnected(SocketChannel theSocketChannel, Exception exception) {
 
 	}
 
@@ -115,7 +116,7 @@ SocketChannelAcceptListener, SocketChannelReadListener{
 				
 	}
 
-	
+	@Override
 	public ArrayBlockingQueue<ByteBuffer> getBoundedBuffer() {
 		// TODO Auto-generated method stub
 		return boundedBuffer;
