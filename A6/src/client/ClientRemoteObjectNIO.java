@@ -28,6 +28,7 @@ import util.tags.DistributedTags;
 import util.trace.port.consensus.ProposalLearnedNotificationReceived;
 import util.trace.port.consensus.ProposalMade;
 import util.trace.port.consensus.ProposedStateSet;
+import util.trace.port.consensus.RemoteProposeRequestReceived;
 import util.trace.port.consensus.RemoteProposeRequestSent;
 import util.trace.port.consensus.communication.CommunicationStateNames;
 
@@ -127,6 +128,7 @@ public class ClientRemoteObjectNIO extends ClientRemoteObject implements ClientR
 		//boundedBuffer.add(bufferCommand);
 		
 		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, aMessageString);
+		//RemoteProposeRequestReceived.newCase(this, CLIENT_NAME, aProposalNumber, aMessageString);
 		reader.notifyThread();	
 		
 	}
@@ -143,17 +145,6 @@ public class ClientRemoteObjectNIO extends ClientRemoteObject implements ClientR
 		IPCMechanism mechanism = getIPCMechanism();
 		System.out.println("IPC Mechanism: " + mechanism.toString());
 
-		// IPC Mechanism Change
-		ProposedStateSet.newCase(this, super.CLIENT_NAME, super.aProposalNumber, mechanism);
-		try {
-			
-			RemoteProposeRequestSent.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
-			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);
-			
-		} catch (RemoteException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 
 		aProposalNumber = 1 + aProposalNumber;
 		System.out.println("A PROPOSAL NUMBER: "+aProposalNumber);
@@ -165,6 +156,10 @@ public class ClientRemoteObjectNIO extends ClientRemoteObject implements ClientR
 		}
 
 		commandProcessor.removePropertyChangeListener(clientOutCoupler);
+		clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME, true);
+		commandProcessor.addPropertyChangeListener(clientOutCoupler);
+		commandProcessor.setInputString(originalCommand); // all commands go to the first command window
+		
 		aCommand = aCommand.concat(String.valueOf(aProposalNumber));
 		System.out.println("COMMAND + PROPOSAL NUMBER:"+aCommand);
 		ByteBuffer bufferCommand = ByteBuffer.wrap(aCommand.getBytes());
@@ -176,9 +171,9 @@ public class ClientRemoteObjectNIO extends ClientRemoteObject implements ClientR
 		
 		
 		
-		commandProcessor.setInputString(originalCommand); // all commands go to the first command window
+		//commandProcessor.setInputString(originalCommand); // all commands go to the first command window
 		
-		commandProcessor.addPropertyChangeListener(clientOutCoupler);
+		//commandProcessor.addPropertyChangeListener(clientOutCoupler);
 		
 	}
 	

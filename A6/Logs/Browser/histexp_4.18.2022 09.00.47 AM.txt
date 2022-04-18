@@ -40,3 +40,10 @@
 4/18/2022 14:21:04 PM	6DistributedNIOTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/u/0/d/15-G2ffLtb5MBg6PbgqnXr-v-s_nSm_zX/edit?rtpof=true&usp=drive_fs
 4/18/2022 14:21:04 PM	6DistributedNIOTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/15-G2ffLtb5MBg6PbgqnXr-v-s_nSm_zX/edit?rtpof=true
 4/18/2022 14:21:17 PM	6DistributedNIOTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/15-G2ffLtb5MBg6PbgqnXr-v-s_nSm_zX/edit
+4/18/2022 15:07:49 PM	default arguments java method - Google Search	https://www.google.com/search?q=default+arguments+java+method&rlz=1C1CHBF_enUS939US939&oq=default+arguments+java+method&aqs=chrome..69i57.4923j0j7&sourceid=chrome&ie=UTF-8
+4/18/2022 15:07:37 PM	methods - Does Java support default parameter values? - Stack Overflow	https://stackoverflow.com/questions/997482/does-java-support-default-parameter-values
+4/18/2022 15:07:52 PM	Does Java have default parameters? | Dev in Web	http://dolszewski.com/java/java-default-parameters/
+4/18/2022 16:06:29 PM	6DistributedNIOTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/15-G2ffLtb5MBg6PbgqnXr-v-s_nSm_zX/edit
+4/18/2022 18:36:47 PM	6DistributedNIOTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/15-G2ffLtb5MBg6PbgqnXr-v-s_nSm_zX/edit
+4/18/2022 18:42:58 PM	6DistributedNIOTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/15-G2ffLtb5MBg6PbgqnXr-v-s_nSm_zX/edit
+4/18/2022 18:42:58 PM	COMP 533 (17 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=128

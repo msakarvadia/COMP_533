@@ -20,8 +20,9 @@ public class ClientOutCoupler implements PropertyChangeListener{
 	String ORIGINAL_CLIENT_NAME;
 	
 	int aProposalNumber = 0;
+	boolean nio = false;
 	
-	public ClientOutCoupler (ServerRemoteInterfaceGIPC anObservingServer, ClientRemoteInterfaceGIPC aClient, String aClientName) {
+	public ClientOutCoupler (ServerRemoteInterfaceGIPC anObservingServer, ClientRemoteInterfaceGIPC aClient, String aClientName, Boolean nio) {
 		ObservingServer = anObservingServer;
 		originalClient = aClient;
 		ORIGINAL_CLIENT_NAME = aClientName;
@@ -31,10 +32,14 @@ public class ClientOutCoupler implements PropertyChangeListener{
 	
 	@Override
 	public void propertyChange(PropertyChangeEvent anEvent) {
+		
 		System.out.println("PROPERTY CHANGE");
 		if (!anEvent.getPropertyName().equals("InputString")) return;
 		String newCommand = (String) anEvent.getNewValue();
 		LocalCommandObserved.newCase(this, newCommand);
+		if (nio) {
+			return;
+		}
 		
 		//////This is fake just for passing tests
 		AStandAloneTwoCoupledHalloweenSimulations fake = new AStandAloneTwoCoupledHalloweenSimulations();
