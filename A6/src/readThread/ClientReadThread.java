@@ -13,6 +13,7 @@ import util.annotations.Tags;
 import util.tags.DistributedTags;
 import util.trace.port.consensus.ProposalLearnedNotificationReceived;
 import util.trace.port.consensus.ProposedStateSet;
+import util.trace.port.consensus.RemoteProposeRequestReceived;
 
 
 @Tags({DistributedTags.NIO, DistributedTags.CLIENT_READ_THREAD})
@@ -63,7 +64,7 @@ public class ClientReadThread implements ReadThreadInterface{
 			HalloweenCommandProcessor commandProcessor = client.getCommandProcessor();
 			
 			
-			//ProposalLearnedNotificationReceived.newCase(this, client.CLIENT_NAME, client.aProposalNumber, aMessageString);
+			RemoteProposeRequestReceived.newCase(this, client.CLIENT_NAME, aProposalNumber, aMessageString);
 			commandProcessor.processCommand(aMessageString);
 			ProposedStateSet.newCase(this, client.CLIENT_NAME, aProposalNumber, aMessageString);
 			//client.aProposalNumber++;

@@ -11,6 +11,8 @@ import nioExample.NIOManagerPrintServer;
 import server.remote.ServerRemoteObjectNIO;
 import util.annotations.Tags;
 import util.tags.DistributedTags;
+import util.trace.port.consensus.ProposalMade;
+import util.trace.port.consensus.communication.CommunicationStateNames;
 
 
 @Tags({DistributedTags.NIO, DistributedTags.SERVER_READ_THREAD})
@@ -51,8 +53,12 @@ public class ServerReadThread implements ReadThreadInterface{
 				e.printStackTrace();
 			}
 			// Echo recieve message to all clients (except original message sender)
+			
+			ProposalMade.newCase(this, CommunicationStateNames.COMMAND, -1, originalMessage.array());
+			
 			for (SocketChannel socket : socketList) {
 				if (!socket.equals(currentSocket)) {
+					
 					nioManager.write(socket, originalMessage, server);
 				}
 			}

@@ -196,7 +196,7 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 		}
 		
 		
-		clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME);
+		clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME, false);
 		//clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);
 		// Add propertyChangeListener
 		commandProcessor.addPropertyChangeListener(clientOutCoupler);
@@ -233,13 +233,13 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 		if(mechanism.toString().equals("GIPC")) {
 						
 			commandProcessor.removePropertyChangeListener(clientOutCoupler);
-			clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);
+			clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME, false);
 			commandProcessor.addPropertyChangeListener(clientOutCoupler);
 			System.out.println("using gipc proxy server");
 		}
 		if(mechanism.toString().equals("RMI")) {
 			commandProcessor.removePropertyChangeListener(clientOutCoupler);
-			clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME);
+			clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME, false);
 			commandProcessor.addPropertyChangeListener(clientOutCoupler);
 			System.out.println("using RMI proxy server");
 		}
