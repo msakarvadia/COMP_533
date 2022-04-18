@@ -1,0 +1,4 @@
+Id,Prediction,Date,File,StartTime,ElapsedTime,BusyTime,Commands,editOrInsertPercentage,debugPercentage,navigationPercentage,focusPercentage,removePercentage,editPercentage,COMMAND_RATE,NAVIGATION_RATE,DEBUG_RATE,FOCUS_RATE,EDIT_RATE,REMOVE_RATE,INSERT_RATE,webLinkTimes,Web Page Visits
+1,,Sat Apr 16 12:14:50 EDT 2022,,1650125690871,230304,0,(F)6,0.0,0.0,0.0,100.0,0.0,0.0,0.02608695652173913,0.0,0.0,0.02608695652173913,0.0,0.0,0.0,0.0,[]
+,/modelData/A0UserStudy2010.arff,Sat Apr 16 12:14:50 EDT 2022,, 1650125690871
+2,,Sat Apr 16 12:18:43 EDT 2022,,1650125923188,143201,0,(F)3,0.0,0.0,0.0,100.0,0.0,0.0,0.02097902097902098,0.0,0.0,0.02097902097902098,0.0,0.0,0.0,6.0,[1650125938506 4 COMP 533 (16 unread) https://piazza.com/class/kxx594eo8fl3y2?cid=125]

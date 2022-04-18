@@ -15,6 +15,7 @@ import assignments.util.mainArgs.ServerArgsProcessor;
 import client.ClientOutCoupler;
 import client.ClientRemoteInterfaceGIPC;
 import client.ClientRemoteInterfaceRMI;
+import client.ClientRemoteObject;
 import util.annotations.Tags;
 import util.interactiveMethodInvocation.IPCMechanism;
 import util.interactiveMethodInvocation.SimulationParametersControllerFactory;
@@ -48,7 +49,7 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 
 	private static String RMI_SERVER_HOST_NAME;
 	private static int RMI_SERVER_PORT;
-	private static String SERVER_NAME;
+	protected static String SERVER_NAME;
 	private static int NIO_SERVER_PORT;
 
 	// A5
@@ -195,20 +196,20 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 		if (broadcast) {
 			System.out.println("Broadcasting IPC mechanism: "+mechanism);
 			RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, mechanism);
-			
+			ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, mechanism);
 			for (ClientRemoteInterfaceGIPC client : clientList) {
 				if (client.equals(originalClient)) {
 					continue;
 				}
 
 				try {
-					client.changeIPCMechanism(mechanism);
+					client.changeIPCMechanism(mechanism, aProposalNumber);
 					System.out.println("SEND NEW MECHANISM TO A CLIENT FROM SERVER");
 				} catch (RemoteException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, mechanism);
+				//ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, mechanism);
 			}
 		}
 
@@ -330,6 +331,15 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 		System.out.println("ADDED CONNECTION LISTENER");
 	}
 
-	
+	@Override
+	public void ipcMechanism(IPCMechanism mechanism) {
+		setIPCMechanism(mechanism);
+		
+		if(this.broadcastMetaState) {
+			int aProposalNumber = -1;
+			ClientRemoteInterfaceGIPC fake = new ClientRemoteObject();
+			broadcastIPCMechanism(mechanism, fake, aProposalNumber , this.broadcastMetaState);
+		}
+	}
 
 }

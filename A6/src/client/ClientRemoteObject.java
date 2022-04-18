@@ -212,6 +212,7 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 		commandProcessor.processCommand(aNewCommand);
 		ProposedStateSet.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);
 		System.out.println("executed command");
+		System.out.println("A PROPOSAL NUMBER: "+proposalNumber);
 		
 	}
 	
@@ -281,13 +282,32 @@ public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulation
 	}
 	
 	@Override
-	public void changeIPCMechanism(IPCMechanism mechanism) {
-		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
+	public void changeIPCMechanism(IPCMechanism mechanism, int proposalNumber) {
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, proposalNumber, mechanism);
 		setIPCMechanism(mechanism);
 		System.out.print("GOT IPC MECHANISM CHANGE: "+mechanism);
-		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
-		aProposalNumber++;
+		ProposedStateSet.newCase(this, CLIENT_NAME, proposalNumber, mechanism);
+		//aProposalNumber++;
+		
 	}
+	
+	@Override
+	public void ipcMechanism(IPCMechanism mechanism) {
+		setIPCMechanism(mechanism);
+		
+		if(this.broadcastMetaState) {
+			try {
+				server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);
+			} catch (RemoteException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+
+
+
+
 
 
 

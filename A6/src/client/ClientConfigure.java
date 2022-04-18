@@ -287,7 +287,7 @@ public class ClientConfigure  extends ClientRemoteObject implements ClientRemote
 	}
 	
 	@Override
-	public void changeIPCMechanism(IPCMechanism mechanism) {
+	public void changeIPCMechanism(IPCMechanism mechanism, int aProposalNumber) {
 		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
 		setIPCMechanism(mechanism);
 		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
@@ -329,6 +329,9 @@ public class ClientConfigure  extends ClientRemoteObject implements ClientRemote
 		//Create new readThread
 		readThread = new Thread(reader);
 				
+		final String clientName = "client";
+		readThread.setName(clientName);
+		
 		//Start thread and do some action
 		readThread.start();
 		

@@ -24,6 +24,6 @@ public interface ClientRemoteInterfaceRMI  extends Remote{
 
 	HalloweenCommandProcessor createSimulation(String aPrefix) throws RemoteException;
 
-	void changeIPCMechanism(IPCMechanism mechanism) throws RemoteException;
+	void changeIPCMechanism(IPCMechanism mechanism, int proposalNumber) throws RemoteException;
 
 }

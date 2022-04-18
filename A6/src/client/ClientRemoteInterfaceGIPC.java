@@ -26,7 +26,7 @@ public interface ClientRemoteInterfaceGIPC  extends Remote{
 
 	void broadcastMetaState(boolean broadcast) throws RemoteException;
 
-	void changeIPCMechanism(IPCMechanism mechanism) throws RemoteException;
+	void changeIPCMechanism(IPCMechanism mechanism, int proposalNumber) throws RemoteException;
 
 	void quit(int i) throws RemoteException;
 

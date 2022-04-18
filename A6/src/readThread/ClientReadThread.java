@@ -52,16 +52,21 @@ public class ClientReadThread implements ReadThreadInterface{
 				e.printStackTrace();
 			}
 			String aMessageString = new String(originalMessage.array());
+			
+			System.out.println(aMessageString);
+			int aProposalNumber = Integer.parseInt( aMessageString.substring(aMessageString.length()-1) );
+			aMessageString =  aMessageString.substring(0, aMessageString.length()-1);
+			
 			System.out.println("SERVER MESSAGE RECIEVED: "+aMessageString);
 			
 			
 			HalloweenCommandProcessor commandProcessor = client.getCommandProcessor();
 			
 			
-			ProposalLearnedNotificationReceived.newCase(this, client.CLIENT_NAME, client.aProposalNumber, aMessageString);
+			//ProposalLearnedNotificationReceived.newCase(this, client.CLIENT_NAME, client.aProposalNumber, aMessageString);
 			commandProcessor.processCommand(aMessageString);
-			ProposedStateSet.newCase(this, client.CLIENT_NAME, client.aProposalNumber, aMessageString);
-			client.aProposalNumber++;
+			ProposedStateSet.newCase(this, client.CLIENT_NAME, aProposalNumber, aMessageString);
+			//client.aProposalNumber++;
 		
 		}
 		

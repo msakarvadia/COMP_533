@@ -1,0 +1,1756 @@
+<Events startTimestamp="1650125638954" logVersion="1.0.0.202111260825">
+  <Command __id="19" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:14:09 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="11001" type="Run" />
+  <Command __id="21" _type="PauseCommand" date="Sat Apr 16 12:14:12 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="13935">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[2934]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="36" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:14:35 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="36807" type="Run" />
+  <Command __id="46" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:14:49 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="50384" type="Run" />
+  <Command __id="52" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:14:50 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="51927" type="Run" />
+  <Command __id="54" _type="PauseCommand" date="Sat Apr 16 12:15:47 EDT 2022" range="30s-1m" starttimestamp="1650125638954" timestamp="109011">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[57084]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="53" _type="ConsoleOutput" date="Sat Apr 16 12:15:47 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="109011" type="ConsoleOutput">
+    <outputString><![CDATA[GIPCRMINIOOneClientReadWriteNonAtomic did not pass completely:In Client writing to server via NIO, no line found matching regex: .*?\{main\}.*?SocketChannelWriteRequested.*
+GIPC is not checked because RMI failed%0.16666666666666666
+
+Test execution time (ms):58595
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,"GIPCRMINIOOneClientReadWriteNonAtomic did not pass completely:In Client writing to server via NIO, no line found matching regex: .*?\{main\}.*?SocketChannelWriteRequested.*¶GIPC is not checked because RMI failed%0.16666666666666666¶¶"), Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"13569"), Diff(INSERT,"58595"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="56" _type="PauseCommand" date="Sat Apr 16 12:15:51 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="112551">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[3540]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="55" _type="ConsoleOutput" date="Sat Apr 16 12:15:51 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="112551" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s20.assignment6.testcases.GIPCRMINIOOneClientReadWriteNonAtomic@4691ca97 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"GIPCRMINIOOneClientReadWriteNonAtomic did not pass completely:In Client writing to server via NIO, no line found matching regex: .*?\{main\}.*?SocketChannelWriteRequested.*¶GIPC is not checked because RMI failed%0.16666666666666666¶¶Test execution time (ms):58595"), Diff(INSERT,"Re-running test gradingTools.comp533s20.assignment6.testcases.GIPCRMINIOOneClientReadWriteNonAtomic@4691ca97 . Results may change."), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="58" _type="PauseCommand" date="Sat Apr 16 12:16:11 EDT 2022" range="20s-30s" starttimestamp="1650125638954" timestamp="132804">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[20253]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="57" _type="ShellCommand" date="Sat Apr 16 12:16:11 EDT 2022" starttimestamp="1650125638954" timestamp="132804" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="60" _type="PauseCommand" date="Sat Apr 16 12:17:05 EDT 2022" range="30s-1m" starttimestamp="1650125638954" timestamp="186076">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[53272]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="59" _type="ShellCommand" date="Sat Apr 16 12:17:05 EDT 2022" starttimestamp="1650125638954" timestamp="186076" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="62" _type="PauseCommand" date="Sat Apr 16 12:17:15 EDT 2022" range="10s-20s" starttimestamp="1650125638954" timestamp="196169">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[10093]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="61" _type="ShellCommand" date="Sat Apr 16 12:17:15 EDT 2022" starttimestamp="1650125638954" timestamp="196169" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="64" _type="PauseCommand" date="Sat Apr 16 12:17:20 EDT 2022" range="5s-10s" starttimestamp="1650125638954" timestamp="201329">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[5160]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="63" _type="ShellCommand" date="Sat Apr 16 12:17:20 EDT 2022" starttimestamp="1650125638954" timestamp="201329" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="66" _type="PauseCommand" date="Sat Apr 16 12:18:01 EDT 2022" range="30s-1m" starttimestamp="1650125638954" timestamp="242296">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[40967]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="65" _type="ShellCommand" date="Sat Apr 16 12:18:01 EDT 2022" starttimestamp="1650125638954" timestamp="242296" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="68" _type="PauseCommand" date="Sat Apr 16 12:18:10 EDT 2022" range="5s-10s" starttimestamp="1650125638954" timestamp="251521">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[9225]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="84" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:19:48 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="349316" type="Run" />
+  <Command __id="93" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:19:55 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="356869" type="Run" />
+  <Command __id="95" _type="PauseCommand" date="Sat Apr 16 12:20:15 EDT 2022" range="10s-20s" starttimestamp="1650125638954" timestamp="376337">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[19468]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="94" _type="ShellCommand" date="Sat Apr 16 12:20:15 EDT 2022" starttimestamp="1650125638954" timestamp="376337" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="97" _type="PauseCommand" date="Sat Apr 16 12:20:18 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="379168">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2831]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="96" _type="ShellCommand" date="Sat Apr 16 12:20:18 EDT 2022" starttimestamp="1650125638954" timestamp="379168" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="98" _type="ShellCommand" date="Sat Apr 16 12:20:18 EDT 2022" starttimestamp="1650125638954" timestamp="379257" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="100" _type="PauseCommand" date="Sat Apr 16 12:21:06 EDT 2022" range="30s-1m" starttimestamp="1650125638954" timestamp="427435">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[48178]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="104" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:21:40 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="461951" type="Run" />
+  <Command __id="117" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:22:03 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="484562" type="Run" />
+  <Command __id="130" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:23:56 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="597185" type="Run" />
+  <Command __id="143" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:24:18 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="619762" type="Run" />
+  <Command __id="152" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:24:26 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="627316" type="Run" />
+  <Command __id="154" _type="PauseCommand" date="Sat Apr 16 12:26:10 EDT 2022" range="1m-2m" starttimestamp="1650125638954" timestamp="731825">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[104509]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="153" _type="ShellCommand" date="Sat Apr 16 12:26:10 EDT 2022" starttimestamp="1650125638954" timestamp="731825" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="155" _type="ConsoleOutput" date="Sat Apr 16 12:26:11 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="732425" type="ConsoleOutput">
+    <outputString><![CDATA[
+GIPCRMINIOServerMetaStateBroadcast did not pass completely:When giving 'i nio' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification;
+When giving 'i rmi' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification;
+When giving 'i gipc' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification%0.0
+Test execution time (ms):112621
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,"¶GIPCRMINIOServerMetaStateBroadcast did not pass completely:When giving 'i nio' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification;¶When giving 'i rmi' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification;¶When giving 'i gipc' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification%0.0¶"), Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"2257"), Diff(INSERT,"11262"), Diff(EQUAL,"1¶")]]]></diff>
+  </Command>
+  <Command __id="157" _type="PauseCommand" date="Sat Apr 16 12:26:14 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="735667">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[3242]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="156" _type="ConsoleOutput" date="Sat Apr 16 12:26:14 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="735667" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s20.assignment6.testcases.GIPCRMINIOTwoClientReadWriteNonAtomic@5e2a07b5 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"¶GIPCRMINIOServerMetaStateBroadcast did not pass completely:When giving 'i nio' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification;¶When giving 'i rmi' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification;¶When giving 'i gipc' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification%0.0¶Test execution time (ms):112621"), Diff(INSERT,"Re-running test gradingTools.comp533s20.assignment6.testcases.GIPCRMINIOTwoClientReadWriteNonAtomic@5e2a07b5 . Results may change."), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="159" _type="PauseCommand" date="Sat Apr 16 12:26:20 EDT 2022" range="5s-10s" starttimestamp="1650125638954" timestamp="741850">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[6183]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="158" _type="ConsoleOutput" date="Sat Apr 16 12:26:20 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="741850" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s20.assignment6.testcases.GIPCRMINIOClientMetaStateBroadcast@25f26f91 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s20.assignment6.testcases.GIPCRMINIO"), Diff(DELETE,"Two"), Diff(EQUAL,"Client"), Diff(DELETE,"ReadWriteNonAtomic@5e2a07b5"), Diff(INSERT,"MetaStateBroadcast@25f26f91"), Diff(EQUAL," . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="161" _type="PauseCommand" date="Sat Apr 16 12:26:47 EDT 2022" range="20s-30s" starttimestamp="1650125638954" timestamp="768698">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[26848]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="160" _type="ConsoleOutput" date="Sat Apr 16 12:26:47 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="768698" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s20.assignment6.testcases.GIPCRMINIOServerMetaStateBroadcast@13d2fc32 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s20.assignment6.testcases.GIPCRMINIO"), Diff(DELETE,"Client"), Diff(INSERT,"Server"), Diff(EQUAL,"MetaStateBroadcast@"), Diff(DELETE,"25f26f91"), Diff(INSERT,"13d2fc32"), Diff(EQUAL," . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="163" _type="PauseCommand" date="Sat Apr 16 12:26:52 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="773269">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[4570]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="162" _type="ConsoleOutput" date="Sat Apr 16 12:26:52 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="773268" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s20.assignment6.testcases.GIPCRMINIOServerMetaStateBroadcast@13d2fc32 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s20.assignment6.testcases.GIPCRMINIOServerMetaStateBroadcast@13d2fc32 . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="165" _type="PauseCommand" date="Sat Apr 16 12:26:53 EDT 2022" range="1s-2s" starttimestamp="1650125638954" timestamp="774572">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1304]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="164" _type="ConsoleOutput" date="Sat Apr 16 12:26:53 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="774572" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s20.assignment6.testcases.GIPCRMINIOServerMetaStateNoBroadcast@173b69c3 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s20.assignment6.testcases.GIPCRMINIOServerMetaState"), Diff(INSERT,"No"), Diff(EQUAL,"Broadcast@1"), Diff(DELETE,"3d2f"), Diff(INSERT,"73b69"), Diff(EQUAL,"c3"), Diff(DELETE,"2"), Diff(EQUAL," . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="167" _type="PauseCommand" date="Sat Apr 16 12:26:56 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="777963">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[3391]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="166" _type="ConsoleOutput" date="Sat Apr 16 12:26:56 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="777963" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s20.assignment6.testcases.GIPCRMINIOServerMetaStateNoBroadcast@173b69c3 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s20.assignment6.testcases.GIPCRMINIOServerMetaStateNoBroadcast@173b69c3 . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="169" _type="PauseCommand" date="Sat Apr 16 12:27:06 EDT 2022" range="5s-10s" starttimestamp="1650125638954" timestamp="787685">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[9722]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="168" _type="ConsoleOutput" date="Sat Apr 16 12:27:06 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="787685" type="ConsoleOutput">
+    <outputString><![CDATA[Building symbol table and running first pass checks:Sat Apr 16 12:27:06 EDT 2022
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Re-running test gradingTools.comp533s20.assignment6.testcases.GIPCRMINIOServerMetaStateNoBroadcast@173b69c3 . Results may change."), Diff(INSERT,"Building symbol table and running first pass checks:Sat Apr 16 12:27:06 EDT 2022"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="171" _type="PauseCommand" date="Sat Apr 16 12:27:09 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="790714">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[3029]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="170" _type="ConsoleOutput" date="Sat Apr 16 12:27:09 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="790714" type="ConsoleOutput">
+    <outputString><![CDATA[Symbol table size:125
+Running second pass checks Sat Apr 16 12:27:09 EDT 2022
+Start O(n2) inter- and intra class method calls:Sat Apr 16 12:27:09 EDT 2022
+End O(n2) inter- and intra class method calls:Sat Apr 16 12:27:09 EDT 2022
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Building s"), Diff(INSERT,"S"), Diff(EQUAL,"ymbol table "), Diff(DELETE,"and r"), Diff(INSERT,"size:125¶R"), Diff(EQUAL,"unning "), Diff(DELETE,"first"), Diff(INSERT,"second"), Diff(EQUAL," pass checks"), Diff(DELETE,":Sat Apr 16 12:27:06"), Diff(INSERT," Sat Apr 16 12:27:09 EDT 2022¶Start O(n2) inter- and intra class method calls:Sat Apr 16 12:27:09 EDT 2022¶End O(n2) inter- and intra class method calls:Sat Apr 16 12:27:09"), Diff(EQUAL," EDT 2022¶")]]]></diff>
+  </Command>
+  <Command __id="173" _type="PauseCommand" date="Sat Apr 16 12:27:11 EDT 2022" range="1s-2s" starttimestamp="1650125638954" timestamp="792665">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1950]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="172" _type="ConsoleOutput" date="Sat Apr 16 12:27:11 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="792664" type="ConsoleOutput">
+    <outputString><![CDATA[Finished second pass checks:Sat Apr 16 12:27:11 EDT 2022
+Generating checks:Sat Apr 16 12:27:11 EDT 2022
+Finished Generating checks:Sat Apr 16 12:27:11 EDT 2022
+Generating externals:Sat Apr 16 12:27:11 EDT 2022
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Symbol table size:125¶Running"), Diff(INSERT,"Finished"), Diff(EQUAL," second pass checks"), Diff(DELETE," "), Diff(INSERT,":"), Diff(EQUAL,"Sat Apr 16 12:27:"), Diff(DELETE,"09"), Diff(INSERT,"11"), Diff(EQUAL," EDT 2022¶"), Diff(DELETE,"Start O(n2) inter- and intra class method call"), Diff(INSERT,"Generating checks:Sat Apr 16 12:27:11 EDT 2022¶Finished Generating check"), Diff(EQUAL,"s:Sat Apr 16 12:27:"), Diff(DELETE,"09"), Diff(INSERT,"11"), Diff(EQUAL," EDT 2022¶"), Diff(DELETE,"End O(n2) inter- and intra class method cal"), Diff(INSERT,"Generating externa"), Diff(EQUAL,"ls:Sat Apr 16 12:27:"), Diff(DELETE,"09"), Diff(INSERT,"11"), Diff(EQUAL," EDT 2022¶")]]]></diff>
+  </Command>
+  <Command __id="174" _type="ConsoleOutput" date="Sat Apr 16 12:27:12 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="793646" type="ConsoleOutput">
+    <outputString><![CDATA[Finished Generating externals:Sat Apr 16 12:27:12 EDT 2022
+
+A6NoCheckstyleWarnings did not pass completely:Warnings found in checkstyle text, see traced console output%0.0
+Test execution time (ms):5964
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Finished "), Diff(DELETE,"second pass check"), Diff(INSERT,"Generating external"), Diff(EQUAL,"s:Sat Apr 16 12:27:1"), Diff(DELETE,"1"), Diff(INSERT,"2"), Diff(EQUAL," EDT 2022¶"), Diff(DELETE,"Generating checks:Sat Apr 16 12:27:11 EDT 2022¶Finished Generat"), Diff(INSERT,"¶A6NoCheckstyleWarnings did not pass completely:Warnings found "), Diff(EQUAL,"in"), Diff(DELETE,"g"), Diff(EQUAL," checks"), Diff(DELETE,":Sat Apr 16 12:27:11 EDT 2022¶Generating externals:Sat Apr 16 12:27:11 EDT 2022"), Diff(INSERT,"tyle text, see traced console output%0.0¶Test execution time (ms):5964"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="175" _type="ConsoleOutput" date="Sat Apr 16 12:27:12 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="793733" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):39
+A6PublicMethodsOverride did not pass completely:See console trace about lines failing  this check%0.9285714285714286
+
+Test execution time (ms):29
+
+A6InterfaceAsType did not pass completely:See console trace about lines failing  this check%0.9420289855072463
+Test execution time (ms):20
+Test execution time (ms):13
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Finished Generating externals:Sat Apr 16 12:27:12 EDT 2022¶¶A6NoCheckstyleWarnings did not pass completely:Warnings found in checkstyle text, see traced console output%0.0¶Test execution time (ms):5964"), Diff(INSERT,"Test execution time (ms):39¶A6PublicMethodsOverride did not pass completely:See console trace about lines failing  this check%0.9285714285714286¶¶Test execution time (ms):29¶¶A6InterfaceAsType did not pass completely:See console trace about lines failing  this check%0.9420289855072463¶Test execution time (ms):20¶Test execution time (ms):13"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="176" _type="ConsoleOutput" date="Sat Apr 16 12:27:12 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="793841" type="ConsoleOutput">
+    <outputString><![CDATA[
+A6AccessModifiersMatched did not pass completely:See console trace about lines failing  this check%0.1875
+Test execution time (ms):18
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):39¶A6PublicMethodsOverride did not pass completely:See console trace about lines failing  this check%0.9285714285714286¶¶Test execution time (ms):29¶¶A6InterfaceAsType"), Diff(INSERT,"¶A6AccessModifiersMatched"), Diff(EQUAL," did not pass completely:See console trace about lines failing  this check%0."), Diff(DELETE,"9420289855072463¶Test execution time (ms):20"), Diff(INSERT,"1875"), Diff(EQUAL,"¶Test execution time (ms):1"), Diff(DELETE,"3"), Diff(INSERT,"8"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="178" _type="PauseCommand" date="Sat Apr 16 12:33:14 EDT 2022" range="5m-10m" starttimestamp="1650125638954" timestamp="1155526">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[361684]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="187" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:33:36 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1177514" type="Run" />
+  <Command __id="188" _type="ConsoleOutput" date="Sat Apr 16 12:33:36 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="1177619" type="ConsoleOutput">
+    <outputString><![CDATA[RMI_SERVER_HOST_NAME: localhost
+RMI_SERVER_PORT: 1099
+GIPC_SERVER_PORT: 10000
+NIO_SERVER_PORT: 9000
+GIPC_SERVER_PORT: 
+10000
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"¶A6AccessModifiersMatched did not pass completely:See console trace about lines failing  this check%0.1875¶Test execution time (ms):18"), Diff(INSERT,"RMI_SERVER_HOST_NAME: localhost¶RMI_SERVER_PORT: 1099¶GIPC_SERVER_PORT: 10000¶NIO_SERVER_PORT: 9000¶GIPC_SERVER_PORT: ¶10000"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="191" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:33:36 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1177961" type="Run" />
+  <Command __id="192" _type="ConsoleOutput" date="Sat Apr 16 12:33:37 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="1178050" type="ConsoleOutput">
+    <outputString><![CDATA[Server proxy sent to RMI Registry
+Command processor scanner opened
+Enter (prefixes of) print, quit or a method and its parameters separated by commas:
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"ADDED CONNECTION LISTENER"), Diff(INSERT,"Server proxy sent to RMI Registry¶Command processor scanner opened¶Enter (prefixes of) print, quit or a method and its parameters separated by commas:"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="194" _type="PauseCommand" date="Sat Apr 16 12:33:38 EDT 2022" range="1s-2s" starttimestamp="1650125638954" timestamp="1179933">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1883]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="197" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:33:51 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1193008" type="Run" />
+  <Command __id="199" _type="PauseCommand" date="Sat Apr 16 12:33:57 EDT 2022" range="5s-10s" starttimestamp="1650125638954" timestamp="1198113">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[5105]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="204" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:34:00 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1201489" type="Run" />
+  <Command __id="205" _type="ConsoleOutput" date="Sat Apr 16 12:34:00 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="1201557" type="ConsoleOutput">
+    <outputString><![CDATA[NIO SERVER PORT: 9000
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Server proxy sent to RMI Registry¶Command processor scanner opened¶Enter (prefixes of) print, quit or a method and its parameters separated by commas:"), Diff(INSERT,"NIO SERVER PORT: 9000"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="209" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:34:01 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1202257" type="Run" />
+  <Command __id="210" _type="ShellCommand" date="Sat Apr 16 12:34:01 EDT 2022" starttimestamp="1650125638954" timestamp="1202676" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="245" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:34:25 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1226932" type="Run" />
+  <Command __id="247" _type="PauseCommand" date="Sat Apr 16 12:34:27 EDT 2022" range="1s-2s" starttimestamp="1650125638954" timestamp="1228227">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[1295]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="246" _type="ConsoleInput" date="Sat Apr 16 12:34:27 EDT 2022" starttimestamp="1650125638954" timestamp="1228227" type="Exception">
+    <outputString><![CDATA[b true
+]]></outputString>
+  </Command>
+  <Command __id="249" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:34:28 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1229663" type="Run" />
+  <Command __id="252" _type="PauseCommand" date="Sat Apr 16 12:34:31 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="1232226">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[2563]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="251" _type="ShellCommand" date="Sat Apr 16 12:34:31 EDT 2022" starttimestamp="1650125638954" timestamp="1232226" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="254" _type="PauseCommand" date="Sat Apr 16 12:34:35 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="1236849">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[4623]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="260" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:34:43 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1244602" type="Run" />
+  <Command __id="261" _type="ShellCommand" date="Sat Apr 16 12:34:43 EDT 2022" starttimestamp="1650125638954" timestamp="1244883" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="263" _type="PauseCommand" date="Sat Apr 16 12:34:54 EDT 2022" range="10s-20s" starttimestamp="1650125638954" timestamp="1255714">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[10831]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="262" _type="ShellCommand" date="Sat Apr 16 12:34:54 EDT 2022" starttimestamp="1650125638954" timestamp="1255714" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="265" _type="PauseCommand" date="Sat Apr 16 12:34:56 EDT 2022" range="1s-2s" starttimestamp="1650125638954" timestamp="1257650">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1936]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="264" _type="ConsoleInput" date="Sat Apr 16 12:34:56 EDT 2022" starttimestamp="1650125638954" timestamp="1257650" type="Exception">
+    <outputString><![CDATA[i GIPC
+]]></outputString>
+  </Command>
+  <Command __id="266" _type="ConsoleOutput" date="Sat Apr 16 12:34:56 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="1257702" type="ConsoleOutput">
+    <outputString><![CDATA[public default void assignments.util.inputParameters.SimulationParametersListener.ipcMechanism(util.interactiveMethodInvocation.IPCMechanism)[GIPC]
+Enter (prefixes of) print, quit or a method and its parameters separated by commas:
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"public default void assignments.util.inputParameters.SimulationParametersListener."), Diff(DELETE,"broadcastMetaState(boolean)[true"), Diff(INSERT,"ipcMechanism(util.interactiveMethodInvocation.IPCMechanism)[GIPC"), Diff(EQUAL,"]¶Enter (prefixes of) print, quit or a method and its parameters separated by commas:¶")]]]></diff>
+  </Command>
+  <Command __id="268" _type="PauseCommand" date="Sat Apr 16 12:34:59 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="1260560">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2858]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="267" _type="ShellCommand" date="Sat Apr 16 12:34:59 EDT 2022" starttimestamp="1650125638954" timestamp="1260560" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="270" _type="PauseCommand" date="Sat Apr 16 12:35:03 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="1264380">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3820]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="269" _type="ShellCommand" date="Sat Apr 16 12:35:03 EDT 2022" starttimestamp="1650125638954" timestamp="1264380" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="272" _type="PauseCommand" date="Sat Apr 16 12:35:07 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="1268688">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[4308]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="271" _type="ShellCommand" date="Sat Apr 16 12:35:07 EDT 2022" starttimestamp="1650125638954" timestamp="1268688" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="274" _type="PauseCommand" date="Sat Apr 16 12:36:43 EDT 2022" range="1m-2m" starttimestamp="1650125638954" timestamp="1364199">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[95511]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="273" _type="ShellCommand" date="Sat Apr 16 12:36:43 EDT 2022" starttimestamp="1650125638954" timestamp="1364199" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="276" _type="PauseCommand" date="Sat Apr 16 12:36:45 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="1366750">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2551]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="278" _type="EclipseCommand" commandID="" date="Sat Apr 16 12:36:47 EDT 2022" starttimestamp="1650125638954" timestamp="1368326" />
+  <Command __id="280" _type="EclipseCommand" commandID="" date="Sat Apr 16 12:36:47 EDT 2022" starttimestamp="1650125638954" timestamp="1368335" />
+  <Command __id="282" _type="PauseCommand" date="Sat Apr 16 12:37:27 EDT 2022" range="30s-1m" starttimestamp="1650125638954" timestamp="1408187">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[39852]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="296" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:38:51 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1492975" type="Run" />
+  <Command __id="275" _type="DiffBasedFileOpenCommand" date="Sat Apr 16 12:36:45 EDT 2022" docASTNodeCount="1198" docActiveCodeLength="9334" docExpressionCount="863" docLength="10222" projectName="A6" starttimestamp="1650125638954" timestamp="1366750">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A6\src\client\ClientRemoteObject.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package client;
+
+import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
+import util.misc.ThreadSupport;
+import util.tags.DistributedTags;
+
+import java.beans.PropertyChangeListener;
+import java.nio.ByteBuffer;
+import java.nio.channels.SocketChannel;
+import java.rmi.AccessException;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+
+
+import assignments.util.mainArgs.ClientArgsProcessor;
+import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;
+import coupledsims.Simulation;
+import coupledsims.Simulation1;
+import inputport.rpc.GIPCLocateRegistry;
+import inputport.rpc.GIPCRegistry;
+import main.BeauAndersonFinalProject;
+import server.remote.ServerRemoteInterfaceRMI;
+import server.remote.ServerRemoteObjectGIPC;
+import server.remote.ServerRemoteInterfaceGIPC;
+import stringProcessors.HalloweenCommandProcessor;
+import util.trace.bean.BeanTraceUtility;
+import util.trace.factories.FactoryTraceUtility;
+import util.trace.misc.ThreadDelayed;
+import util.trace.port.PortTraceUtility;
+import util.trace.port.consensus.ConsensusTraceUtility;
+import util.trace.port.consensus.ProposalLearnedNotificationReceived;
+import util.trace.port.consensus.ProposedStateSet;
+import util.trace.port.nio.NIOTraceUtility;
+import util.trace.port.rpc.gipc.GIPCObjectLookedUp;
+import util.trace.port.rpc.gipc.GIPCRPCTraceUtility;
+import util.trace.port.rpc.gipc.GIPCRegistryLocated;
+import util.trace.port.rpc.rmi.RMIObjectLookedUp;
+import util.trace.port.rpc.rmi.RMIRegistryLocated;
+import util.trace.port.rpc.rmi.RMITraceUtility;
+
+@Tags({ DistributedTags.CLIENT_REMOTE_OBJECT, DistributedTags.RMI, DistributedTags.GIPC })
+public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulations implements ClientRemoteInterfaceRMI, ClientRemoteInterfaceGIPC {
+	HalloweenCommandProcessor commandProcessor;
+	protected int NUM_EXPERIMENT_COMMANDS = 500;
+	public static final String EXPERIMENT_COMMAND_1 = "move 1 -1";
+	public static final String EXPERIMENT_COMMAND_2 = "undo";
+	protected PropertyChangeListener simulationCoupler;
+	ServerRemoteInterfaceGIPC server = null;
+	ServerRemoteInterfaceGIPC serverGIPC = null;
+	
+
+	private static String RMI_SERVER_HOST_NAME;
+	private static int RMI_SERVER_PORT;
+	private static String SERVER_NAME;
+	public String CLIENT_NAME;
+	
+	//A5
+	private static int GIPC_SERVER_PORT;
+	protected static GIPCRegistry gipcRegistry;
+	private static String GIPC_SERVER_NAME ;
+	protected boolean broadcastIPCMechanism = false;
+	//protected int aProposalNumber;
+	public int aProposalNumber;
+	
+	PropertyChangeListener clientOutCoupler;
+
+	@Override
+	public HalloweenCommandProcessor createSimulation(String aPrefix) {
+		return BeauAndersonFinalProject.createSimulation(aPrefix, Simulation1.SIMULATION1_X_OFFSET,
+				Simulation.SIMULATION_Y_OFFSET, Simulation.SIMULATION_WIDTH, Simulation.SIMULATION_HEIGHT,
+				Simulation1.SIMULATION1_X_OFFSET, Simulation.SIMULATION_Y_OFFSET);
+	}
+
+	@Override
+	public void processArgs(String[] args) {
+		System.out.println("Registry host:" + ClientArgsProcessor.getRegistryHost(args));
+		System.out.println("Registry port:" + ClientArgsProcessor.getRegistryPort(args));
+		System.out.println("Server host:" + ClientArgsProcessor.getServerHost(args));
+		System.out.println("Headless:" + ClientArgsProcessor.getHeadless(args));
+		System.out.println("Client name:" + ClientArgsProcessor.getClientName(args));
+
+		// Make sure you set this property when processing args
+		System.setProperty("java.awt.headless", ClientArgsProcessor.getHeadless(args));
+
+		RMI_SERVER_HOST_NAME = ClientArgsProcessor.getRegistryHost(args);
+		RMI_SERVER_PORT = ClientArgsProcessor.getRegistryPort(args);
+		SERVER_NAME = "SERVER";
+		
+		//ServerArgsProcessor.ge;
+		CLIENT_NAME = ClientArgsProcessor.getClientName(args);
+
+
+		//A5
+		GIPC_SERVER_PORT = ClientArgsProcessor.getGIPCPort(args);
+		GIPC_SERVER_NAME = ClientArgsProcessor.getServerHost(args);
+		
+	}
+	
+	@Override
+	protected void setTracing() {
+		//A6
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();
+		BeanTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		GIPCRPCTraceUtility.setTracing();
+
+		
+		//A5
+		FactoryTraceUtility.setTracing();
+		BeanTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		GIPCRPCTraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+
+		//A4
+		PortTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();		
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		trace(true);
+	}
+
+	@Override
+	public void init(String[] args) {
+		setTracing();
+
+		this.processArgs(args);
+		// Ideally the prefixes should be main args
+		commandProcessor = createSimulation(Simulation1.SIMULATION1_PREFIX);
+		
+		//Locate GIPC Server
+		gipcRegistry = GIPCLocateRegistry.getRegistry(GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);
+		GIPCRegistryLocated.newCase(this, GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);
+		
+		//Get GIPC server here
+		serverGIPC = (ServerRemoteInterfaceGIPC) gipcRegistry.lookup(ServerRemoteObjectGIPC.class, SERVER_NAME);
+		GIPCObjectLookedUp.newCase(this, serverGIPC, ServerRemoteObjectGIPC.class, SERVER_NAME, gipcRegistry);
+		
+		//Register Client with GIPC Proxy
+		try {
+			serverGIPC.registerClientGIPC(this);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		// Locate RMI Server
+		Registry rmiRegistry = null;
+		try {
+			rmiRegistry = LocateRegistry.getRegistry(RMI_SERVER_HOST_NAME, RMI_SERVER_PORT);
+			RMIRegistryLocated.newCase(this, RMI_SERVER_HOST_NAME, RMI_SERVER_PORT, rmiRegistry);
+		} catch (RemoteException e3) {
+			e3.printStackTrace();
+		}
+		// Get RMI server here
+		
+		try {
+			System.out.println("WE ARE LOOKING UP server from RMI REGISTRY HERE: "+SERVER_NAME);
+			server = (ServerRemoteInterfaceGIPC) rmiRegistry.lookup(SERVER_NAME);
+			System.out.println("SERVER looked up in RMI registry!!");
+			RMIObjectLookedUp.newCase(this, server, SERVER_NAME, rmiRegistry);
+		} catch (AccessException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		} catch (RemoteException e2) {
+
+			e2.printStackTrace();
+		} catch (NotBoundException e2) {
+			e2.printStackTrace();
+		}
+
+		// export client to create proxy
+		try {
+			UnicastRemoteObject.exportObject(this, 0);
+		} catch (RemoteException e1) {
+			e1.printStackTrace();
+		}
+
+		// have the server register the exported client
+		try {
+			server.registerClientRMI(this);
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		}
+		
+		
+		clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME);
+		//clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);
+		// Add propertyChangeListener
+		commandProcessor.addPropertyChangeListener(clientOutCoupler);
+		
+		System.out.println("added server as a property change listener of client");
+	}
+
+	@Override
+	public void inCoupler(String aNewCommand, int proposalNumber) {
+		//final int aProposalNumber = proposalNumber;
+		System.out.println("recieved broadcased command: "+ aNewCommand);
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);
+		commandProcessor.processCommand(aNewCommand);
+		ProposedStateSet.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);
+		System.out.println("executed command");
+		
+	}
+	
+	@Override
+	/*
+	 * You will need to delay not command input but sends(non-Javadoc)
+	 */
+	public void simulationCommand(String aCommand) {
+		//long aDelay = getDelay(); 
+		//if (aDelay > 0) {
+		//	ThreadSupport.sleep(aDelay);
+		//}
+		IPCMechanism mechanism = getIPCMechanism();
+		System.out.println("IPC Mechanism gotten from old GIPC simiulation command method");
+		System.out.println(mechanism);
+		
+		
+		if(mechanism.toString().equals("GIPC")) {
+						
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			System.out.println("using gipc proxy server");
+		}
+		if(mechanism.toString().equals("RMI")) {
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME);
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			System.out.println("using RMI proxy server");
+		}
+		
+		//IPC Mechanism Change
+		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
+		try {
+			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		commandProcessor.setInputString(aCommand); // all commands go to the first command window
+	}
+	
+	@Override	
+	public void quit(int aCode) {
+		//commandProcessor.setInputString("quit");
+		
+		System.exit(aCode);
+	}
+	
+	@Override
+	public void localProcessingOnly(boolean newValue) {
+		super.localProcessingOnly(newValue);
+		if (isLocalProcessingOnly()) {
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			
+		} else {
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			
+		}
+	}
+	
+	@Override
+	public void broadcastMetaState(boolean broadcast) {
+		broadcastIPCMechanism = broadcast;
+		setBroadcastMetaState(broadcast);
+	
+	}
+	
+	@Override
+	public void changeIPCMechanism(IPCMechanism mechanism) {
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
+		setIPCMechanism(mechanism);
+		System.out.print("GOT IPC MECHANISM CHANGE: "+mechanism);
+		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
+		aProposalNumber++;
+	}
+
+
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="299" _type="PauseCommand" date="Sat Apr 16 12:39:03 EDT 2022" range="10s-20s" starttimestamp="1650125638954" timestamp="1504771">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[11796]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="310" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:39:28 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1529587" type="Run" />
+  <Command __id="312" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:39:28 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1529648" type="Run" />
+  <Command __id="314" _type="SelectTextCommand" caretOffset="1154" date="Sat Apr 16 12:39:29 EDT 2022" end="1154" start="1094" starttimestamp="1650125638954" timestamp="1530652" />
+  <Command __id="316" _type="PauseCommand" date="Sat Apr 16 12:39:33 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="1534379">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[3727]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="315" _type="ShellCommand" date="Sat Apr 16 12:39:33 EDT 2022" starttimestamp="1650125638954" timestamp="1534379" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="318" _type="PauseCommand" date="Sat Apr 16 12:39:50 EDT 2022" range="10s-20s" starttimestamp="1650125638954" timestamp="1551317">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[16938]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="317" _type="ShellCommand" date="Sat Apr 16 12:39:50 EDT 2022" starttimestamp="1650125638954" timestamp="1551317" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="320" _type="MoveCaretCommand" caretOffset="2821" date="Sat Apr 16 12:39:50 EDT 2022" docOffset="4122" starttimestamp="1650125638954" timestamp="1551702" />
+  <Command __id="322" _type="PauseCommand" date="Sat Apr 16 12:39:51 EDT 2022" range="1s-2s" starttimestamp="1650125638954" timestamp="1552711">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1009]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="321" _type="MoveCaretCommand" caretOffset="3307" date="Sat Apr 16 12:39:51 EDT 2022" docOffset="4608" starttimestamp="1650125638954" timestamp="1552711" />
+  <Command __id="324" _type="ShellCommand" date="Sat Apr 16 12:39:51 EDT 2022" starttimestamp="1650125638954" timestamp="1552977" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="325" _type="PasteCommand" date="Sat Apr 16 12:39:52 EDT 2022" starttimestamp="1650125638954" timestamp="1553394" />
+  <Command __id="326" _type="FindCommand" caseSensitive="false" date="Sat Apr 16 12:39:52 EDT 2022" forward="false" matchWord="false" offset="4608" regexp="false" replaceAll="false" selection="Find" selectionScope="false" starttimestamp="1650125638954" timestamp="1553796" wrapSearch="false">
+    <searchString><![CDATA[RemoteProposeRequestSent]]></searchString>
+    <replaceString><![CDATA[]]></replaceString>
+  </Command>
+  <Command __id="328" _type="PauseCommand" date="Sat Apr 16 12:39:57 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="1558736">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[FindCommand]]></prev>
+    <pause><![CDATA[4940]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="327" _type="ShellCommand" date="Sat Apr 16 12:39:57 EDT 2022" starttimestamp="1650125638954" timestamp="1558736" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="330" _type="PauseCommand" date="Sat Apr 16 12:40:04 EDT 2022" range="5s-10s" starttimestamp="1650125638954" timestamp="1565755">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[7019]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="329" _type="MoveCaretCommand" caretOffset="3808" date="Sat Apr 16 12:40:04 EDT 2022" docOffset="5109" starttimestamp="1650125638954" timestamp="1565755" />
+  <Command __id="298" _type="DiffBasedFileOpenCommand" date="Sat Apr 16 12:39:03 EDT 2022" docASTNodeCount="666" docActiveCodeLength="4842" docExpressionCount="468" docLength="5586" projectName="A6" starttimestamp="1650125638954" timestamp="1504771">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A6\src\client\ClientRemoteObjectNIO.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package client;
+
+import java.io.IOException;
+import java.net.InetAddress;
+import java.nio.ByteBuffer;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
+import java.rmi.RemoteException;
+import java.util.concurrent.ArrayBlockingQueue;
+
+import assignments.util.MiscAssignmentUtils;
+import assignments.util.mainArgs.ClientArgsProcessor;
+import assignments.util.mainArgs.ServerArgsProcessor;
+import inputport.nio.manager.NIOManager;
+import inputport.nio.manager.NIOManagerFactory;
+import inputport.nio.manager.factories.classes.AConnectCommandFactory;
+import inputport.nio.manager.factories.classes.AnAcceptCommandFactory;
+import inputport.nio.manager.factories.selectors.AcceptCommandFactorySelector;
+import inputport.nio.manager.factories.selectors.ConnectCommandFactorySelector;
+import nioExample.exampleClientReadThread;
+import readThread.ClientReadThread;
+import readThread.ReadThreadInterface;
+import stringProcessors.HalloweenCommandProcessor;
+import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
+import util.tags.DistributedTags;
+import util.trace.port.consensus.ProposalLearnedNotificationReceived;
+import util.trace.port.consensus.ProposedStateSet;
+import util.trace.port.consensus.RemoteProposeRequestSent;
+
+@Tags({ DistributedTags.CLIENT_REMOTE_OBJECT, DistributedTags.RMI, DistributedTags.GIPC, DistributedTags.NIO })
+public class ClientRemoteObjectNIO extends ClientRemoteObject implements ClientRemoteInterfaceNIO{
+	protected NIOManager nioManager = NIOManagerFactory.getSingleton();
+	int aServerPort;
+	protected SocketChannel socketChannel;
+	protected boolean broadcastIPCMechanism = false;
+	
+	ArrayBlockingQueue<ByteBuffer> boundedBuffer = new ArrayBlockingQueue<ByteBuffer>(500);
+	ReadThreadInterface reader = null;
+	Thread readThread = null;
+	
+	@Override
+	public void init(String[] args) {
+		setTracing();
+		setFactories();
+		
+		aServerPort = ClientArgsProcessor.getNIOServerPort(args);
+		System.out.println("NIO SERVER PORT: "+aServerPort);
+		
+		try {
+			socketChannel = SocketChannel.open();
+			InetAddress aServerAddress = InetAddress.getByName("localhost");
+			
+			nioManager.connect(socketChannel, aServerAddress, aServerPort, 
+					//0, // do not allow any incoming messages
+					SelectionKey.OP_READ,
+					this);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		//Create new read thread Runnable
+		reader = new ClientReadThread(this);
+						
+		//Create new readThread
+		readThread = new Thread(reader);
+				
+		//Start thread and do some action
+		readThread.start();
+		
+		//String aNextLine = "a new client has been initialized";
+		// wrap writes to the buffer and then flips it
+		//ByteBuffer aWriteMessage = ByteBuffer.wrap(aNextLine.getBytes());
+		//nioManager.write(socketChannel, aWriteMessage, this);
+		super.init(args);
+	}
+	
+	@Override
+	public void setFactories() {
+		ConnectCommandFactorySelector.setFactory(new AConnectCommandFactory(0));
+	}
+
+	@Override
+	public void connected(SocketChannel aSocketChannel) {
+		// TODO Auto-generated method stub
+		nioManager.addReadListener(aSocketChannel, this);
+		System.out.println("New Client connected to server!!!");
+		
+	}
+
+	@Override
+	public void notConnected(SocketChannel arg0, Exception arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void written(SocketChannel arg0, ByteBuffer arg1, int arg2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void socketChannelAccepted(ServerSocketChannel arg0, SocketChannel arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void socketChannelRead(SocketChannel arg0, ByteBuffer aMessage, int arg2) {
+		// TODO Auto-generated method stub
+		ByteBuffer copy = MiscAssignmentUtils.deepDuplicate(aMessage);
+		boundedBuffer.add(copy);
+		
+		
+		int aProposalNumber = 0;
+		String aMessageString = new String(aMessage.array());
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, aMessageString);
+		reader.notifyThread();	
+		
+	}
+	
+	@Override
+	public ArrayBlockingQueue<ByteBuffer> getBoundedBuffer() {
+		// TODO Auto-generated method stub
+		return boundedBuffer;
+	}
+	
+	@Override
+	public void simulationCommand(String aCommand) {
+
+		IPCMechanism mechanism = getIPCMechanism();
+		System.out.println("IPC Mechanism: " + mechanism.toString());
+
+		// IPC Mechanism Change
+		ProposedStateSet.newCase(this, super.CLIENT_NAME, super.aProposalNumber, mechanism);
+		try {
+
+			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		if (!mechanism.toString().equals("NIO")) {
+			System.out.println("IPC Mechanism is GIPC or RMI");
+			super.simulationCommand(aCommand);
+			return;
+		}
+
+		commandProcessor.removePropertyChangeListener(clientOutCoupler);
+		
+		ByteBuffer bufferCommand = ByteBuffer.wrap(aCommand.getBytes());
+		//RemoteProposeRequestSent.newCase(this, CLIENT_NAME, aProposalNumber, aCommand);
+		nioManager.write(socketChannel, bufferCommand, this);
+
+		
+		
+		
+		commandProcessor.setInputString(aCommand); // all commands go to the first command window
+		
+		commandProcessor.addPropertyChangeListener(clientOutCoupler);
+		aProposalNumber = 1 + aProposalNumber;
+	}
+	
+	@Override
+	public HalloweenCommandProcessor getCommandProcessor() {
+		return commandProcessor;
+	}
+		
+
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="313" _type="DiffBasedFileOpenCommand" date="Sat Apr 16 12:39:29 EDT 2022" docASTNodeCount="278" docActiveCodeLength="2069" docExpressionCount="185" docLength="2415" projectName="A6" starttimestamp="1650125638954" timestamp="1530473">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A6\src\readThread\ClientReadThread.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package readThread;
+
+import java.nio.ByteBuffer;
+import java.nio.channels.SocketChannel;
+import java.util.concurrent.ArrayBlockingQueue;
+
+import client.ClientRemoteObjectNIO;
+import inputport.nio.manager.NIOManager;
+import inputport.nio.manager.NIOManagerFactory;
+import nioExample.AnNIOManagerPrintClient;
+import stringProcessors.HalloweenCommandProcessor;
+import util.annotations.Tags;
+import util.tags.DistributedTags;
+import util.trace.port.consensus.ProposalLearnedNotificationReceived;
+import util.trace.port.consensus.ProposedStateSet;
+
+
+@Tags({DistributedTags.NIO, DistributedTags.CLIENT_READ_THREAD})
+public class ClientReadThread implements ReadThreadInterface{
+	//final ClientRemoteObjectNIO client;
+	final ClientRemoteObjectNIO client;
+	protected NIOManager nioManager = NIOManagerFactory.getSingleton();
+	
+	public ClientReadThread (final ClientRemoteObjectNIO aClient) {
+		client = aClient;
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		while(true) {
+			synchronized (this) {
+				try {
+					wait();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+					break; // this breaks out of run loop then thread terminates
+				}
+			}
+			
+			System.out.println("IN RUN METHOD OF CLIENT READ THREAD");
+			
+			ArrayBlockingQueue<ByteBuffer> boundedBuffer = client.getBoundedBuffer();
+			
+			
+					
+			ByteBuffer originalMessage = null;
+			try {
+				originalMessage = boundedBuffer.take();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			String aMessageString = new String(originalMessage.array());
+			System.out.println("SERVER MESSAGE RECIEVED: "+aMessageString);
+			
+			
+			HalloweenCommandProcessor commandProcessor = client.getCommandProcessor();
+			
+			
+			//ProposalLearnedNotificationReceived.newCase(this, client.CLIENT_NAME, client.aProposalNumber, aMessageString);
+			commandProcessor.processCommand(aMessageString);
+			ProposedStateSet.newCase(this, client.CLIENT_NAME, client.aProposalNumber, aMessageString);
+			client.aProposalNumber++;
+		
+		}
+		
+	}
+
+	@Override
+	public void socketChannelRead(SocketChannel arg0, ByteBuffer arg1, int arg2) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public synchronized void notifyThread() {
+		// TODO This should be when a line is read
+		this.notify();
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="319" _type="DiffBasedFileOpenCommand" date="Sat Apr 16 12:39:50 EDT 2022" docASTNodeCount="666" docActiveCodeLength="4842" docExpressionCount="468" docLength="5586" projectName="A6" starttimestamp="1650125638954" timestamp="1551525">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A6\src\client\ClientRemoteObjectNIO.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package client;¶¶import java.io.IOException;¶import java.net.InetAddress;¶import java.nio.ByteBuffer;¶import java.nio.channels.SelectionKey;¶import java.nio.channels.ServerSocketChannel;¶import java.nio.channels.SocketChannel;¶import java.rmi.RemoteException;¶import java.util.concurrent.ArrayBlockingQueue;¶¶import assignments.util.MiscAssignmentUtils;¶import assignments.util.mainArgs.ClientArgsProcessor;¶import assignments.util.mainArgs.ServerArgsProcessor;¶import inputport.nio.manager.NIOManager;¶import inputport.nio.manager.NIOManagerFactory;¶import inputport.nio.manager.factories.classes.AConnectCommandFactory;¶import inputport.nio.manager.factories.classes.AnAcceptCommandFactory;¶import inputport.nio.manager.factories.selectors.AcceptCommandFactorySelector;¶import inputport.nio.manager.factories.selectors.ConnectCommandFactorySelector;¶import nioExample.exampleClientReadThread;¶import readThread.ClientReadThread;¶import readThread.ReadThreadInterface;¶import stringProcessors.HalloweenCommandProcessor;¶import util.annotations.Tags;¶import util.interactiveMethodInvocation.IPCMechanism;¶import util.tags.DistributedTags;¶import util.trace.port.consensus.ProposalLearnedNotificationReceived;¶import util.trace.port.consensus.ProposedStateSet;¶import util.trace.port.consensus.RemoteProposeRequestSent;¶¶@Tags({ DistributedTags.CLIENT_REMOTE_OBJECT, DistributedTags.RMI, DistributedTags.GIPC, DistributedTags.NIO })¶public class ClientRemoteObjectNIO extends ClientRemoteObject implements ClientRemoteInterfaceNIO{¶	protected NIOManager nioManager = NIOManagerFactory.getSingleton();¶	int aServerPort;¶	protected SocketChannel socketChannel;¶	protected boolean broadcastIPCMechanism = false;¶	¶	ArrayBlockingQueue<ByteBuffer> boundedBuffer = new ArrayBlockingQueue<ByteBuffer>(500);¶	ReadThreadInterface reader = null;¶	Thread readThread = null;¶	¶	@Override¶	public void init(String[] args) {¶		setTracing();¶		setFactories();¶		¶		aServerPort = ClientArgsProcessor.getNIOServerPort(args);¶		System.out.println("NIO SERVER PORT: "+aServerPort);¶		¶		try {¶			socketChannel = SocketChannel.open();¶			InetAddress aServerAddress = InetAddress.getByName("localhost");¶			¶			nioManager.connect(socketChannel, aServerAddress, aServerPort, ¶					//0, // do not allow any incoming messages¶					SelectionKey.OP_READ,¶					this);¶		} catch (IOException e) {¶			e.printStackTrace();¶		}¶		¶		//Create new read thread Runnable¶		reader = new ClientReadThread(this);¶						¶		//Create new readThread¶		readThread = new Thread(reader);¶				¶		//Start thread and do some action¶		readThread.start();¶		¶		//String aNextLine = "a new client has been initialized";¶		// wrap writes to the buffer and then flips it¶		//ByteBuffer aWriteMessage = ByteBuffer.wrap(aNextLine.getBytes());¶		//nioManager.write(socketChannel, aWriteMessage, this);¶		super.init(args);¶	}¶	¶	@Override¶	public void setFactories() {¶		ConnectCommandFactorySelector.setFactory(new AConnectCommandFactory(0));¶	}¶¶	@Override¶	public void connected(SocketChannel aSocketChannel) {¶		// TODO Auto-generated method stub¶		nioManager.addReadListener(aSocketChannel, this);¶		System.out.println("New Client connected to server!!!");¶		¶	}¶¶	@Override¶	public void notConnected(SocketChannel arg0, Exception arg1) {¶		// TODO Auto-generated method stub¶		¶	}¶¶	@Override¶	public void written(SocketChannel arg0, ByteBuffer arg1, int arg2) {¶		// TODO Auto-generated method stub¶		¶	}¶¶	@Override¶	public void socketChannelAccepted(ServerSocketChannel arg0, SocketChannel arg1) {¶		// TODO Auto-generated method stub¶		¶	}¶¶	@Override¶	public void socketChannelRead(SocketChannel arg0, ByteBuffer aMessage, int arg2) {¶		// TODO Auto-generated method stub¶		ByteBuffer copy = MiscAssignmentUtils.deepDuplicate(aMessage);¶		boundedBuffer.add(copy);¶		¶		¶		int aProposalNumber = 0;¶		String aMessageString = new String(aMessage.array());¶		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, aMessageString);¶		reader.notifyThread();	¶		¶	}¶	¶	@Override¶	public ArrayBlockingQueue<ByteBuffer> getBoundedBuffer() {¶		// TODO Auto-generated method stub¶		return boundedBuffer;¶	}¶	¶	@Override¶	public void simulationCommand(String aCommand) {¶¶		IPCMechanism mechanism = getIPCMechanism();¶		System.out.println("IPC Mechanism: " + mechanism.toString());¶¶		// IPC Mechanism Change¶		ProposedStateSet.newCase(this, super.CLIENT_NAME, super.aProposalNumber, mechanism);¶		try {¶¶			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);¶		} catch (RemoteException e) {¶			// TODO Auto-generated catch block¶			e.printStackTrace();¶		}¶¶		if (!mechanism.toString().equals("NIO")) {¶			System.out.println("IPC Mechanism is GIPC or RMI");¶			super.simulationCommand(aCommand);¶			return;¶		}¶¶		commandProcessor.removePropertyChangeListener(clientOutCoupler);¶		¶		ByteBuffer bufferCommand = ByteBuffer.wrap(aCommand.getBytes());¶		//RemoteProposeRequestSent.newCase(this, CLIENT_NAME, aProposalNumber, aCommand);¶		nioManager.write(socketChannel, bufferCommand, this);¶¶		¶		¶		¶		commandProcessor.setInputString(aCommand); // all commands go to the first command window¶		¶		commandProcessor.addPropertyChangeListener(clientOutCoupler);¶		aProposalNumber = 1 + aProposalNumber;¶	}¶	¶	@Override¶	public HalloweenCommandProcessor getCommandProcessor() {¶		return commandProcessor;¶	}¶		¶¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="332" _type="PauseCommand" date="Sat Apr 16 12:40:08 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="1569616">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[3861]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Delete]]></next>
+  </Command>
+  <Command __id="339" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:40:11 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1572236" type="Run" />
+  <Command __id="341" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:40:11 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1572237" type="Run" />
+  <Command __id="343" _type="PauseCommand" date="Sat Apr 16 12:40:15 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="1577032">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[4795]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="342" _type="MoveCaretCommand" caretOffset="3305" date="Sat Apr 16 12:40:15 EDT 2022" docOffset="4606" starttimestamp="1650125638954" timestamp="1577032" />
+  <Command __id="345" _type="PauseCommand" date="Sat Apr 16 12:40:17 EDT 2022" range="1s-2s" starttimestamp="1650125638954" timestamp="1578061">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1029]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="344" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.LINE_DOWN" date="Sat Apr 16 12:40:17 EDT 2022" starttimestamp="1650125638954" timestamp="1578061" />
+  <Command __id="347" _type="InsertStringCommand" date="Sat Apr 16 12:40:17 EDT 2022" starttimestamp="1650125638954" timestamp="1579009" timestamp2="1579009">
+    <data><![CDATA[	]]></data>
+  </Command>
+  <Command __id="349" _type="PasteCommand" date="Sat Apr 16 12:40:18 EDT 2022" starttimestamp="1650125638954" timestamp="1579625" />
+  <DocumentChange __id="331" _type="Delete" date="Sat Apr 16 12:40:08 EDT 2022" docASTNodeCount="674" docActiveCodeLength="4921" docExpressionCount="475" docLength="5584" endLine="154" length="2" offset="5107" repeat="2" startLine="154" starttimestamp="1650125638954" timestamp="1569616" timestamp2="1569786">
+    <text><![CDATA[//]]></text>
+  </DocumentChange>
+  <DocumentChange __id="346" _type="Insert" date="Sat Apr 16 12:40:17 EDT 2022" docASTNodeCount="674" docActiveCodeLength="4924" docExpressionCount="475" docLength="5587" length="3" offset="4608" starttimestamp="1650125638954" timestamp="1579006">
+    <text><![CDATA[			]]></text>
+  </DocumentChange>
+  <DocumentChange __id="348" _type="Replace" date="Sat Apr 16 12:40:18 EDT 2022" docASTNodeCount="678" docActiveCodeLength="4948" docExpressionCount="476" docLength="5611" endLine="138" insertionLength="27" int_docASTNodeCount="674" int_docActiveCodeLength="4921" int_docExpressionCount="475" int_docLength="5584" length="3" offset="4608" startLine="138" starttimestamp="1650125638954" timestamp="1579620">
+    <deletedText><![CDATA[			]]></deletedText>
+    <insertedText><![CDATA[			RemoteProposeRequestSent]]></insertedText>
+  </DocumentChange>
+  <Command __id="351" _type="PauseCommand" date="Sat Apr 16 12:40:20 EDT 2022" range="1s-2s" starttimestamp="1650125638954" timestamp="1581369">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[PasteCommand]]></prev>
+    <pause><![CDATA[1744]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Replace]]></next>
+  </Command>
+  <Command __id="352" _type="UndoCommand" date="Sat Apr 16 12:40:20 EDT 2022" starttimestamp="1650125638954" timestamp="1581377" />
+  <Command __id="354" _type="PauseCommand" date="Sat Apr 16 12:40:26 EDT 2022" range="5s-10s" starttimestamp="1650125638954" timestamp="1587153">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[UndoCommand]]></prev>
+    <pause><![CDATA[5776]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="353" _type="SelectTextCommand" caretOffset="3809" date="Sat Apr 16 12:40:26 EDT 2022" end="3888" start="3809" starttimestamp="1650125638954" timestamp="1587153" />
+  <Command __id="355" _type="CopyCommand" date="Sat Apr 16 12:40:26 EDT 2022" starttimestamp="1650125638954" timestamp="1587302" />
+  <Command __id="357" _type="PauseCommand" date="Sat Apr 16 12:40:28 EDT 2022" range="1s-2s" starttimestamp="1650125638954" timestamp="1589252">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[CopyCommand]]></prev>
+    <pause><![CDATA[1950]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="356" _type="MoveCaretCommand" caretOffset="3310" date="Sat Apr 16 12:40:28 EDT 2022" docOffset="4611" starttimestamp="1650125638954" timestamp="1589252" />
+  <Command __id="359" _type="PasteCommand" date="Sat Apr 16 12:40:28 EDT 2022" starttimestamp="1650125638954" timestamp="1589434" />
+  <Command __id="361" _type="PauseCommand" date="Sat Apr 16 12:40:30 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="1591490">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[PasteCommand]]></prev>
+    <pause><![CDATA[2056]]></pause>
+    <nextType><![CDATA[Save]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="360" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Sat Apr 16 12:40:30 EDT 2022" starttimestamp="1650125638954" timestamp="1591490" />
+  <Command __id="362" _type="EclipseCommand" commandID="" date="Sat Apr 16 12:40:30 EDT 2022" starttimestamp="1650125638954" timestamp="1591633" />
+  <Command __id="363" _type="EclipseCommand" commandID="" date="Sat Apr 16 12:40:30 EDT 2022" starttimestamp="1650125638954" timestamp="1591689" />
+  <Command __id="364" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:40:30 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1591911" type="Run" />
+  <Command __id="365" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:40:30 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1591912" type="Run" />
+  <DocumentChange __id="350" _type="Replace" date="Sat Apr 16 12:40:20 EDT 2022" docASTNodeCount="674" docActiveCodeLength="4924" docExpressionCount="475" docLength="5587" endLine="138" insertionLength="3" int_docASTNodeCount="674" int_docActiveCodeLength="4921" int_docExpressionCount="475" int_docLength="5584" length="27" offset="4608" startLine="138" starttimestamp="1650125638954" timestamp="1581369">
+    <deletedText><![CDATA[			RemoteProposeRequestSent]]></deletedText>
+    <insertedText><![CDATA[			]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="358" _type="Replace" date="Sat Apr 16 12:40:28 EDT 2022" docASTNodeCount="682" docActiveCodeLength="5003" docExpressionCount="482" docLength="5666" endLine="138" insertionLength="82" int_docASTNodeCount="674" int_docActiveCodeLength="4921" int_docExpressionCount="475" int_docLength="5584" length="3" offset="4608" startLine="138" starttimestamp="1650125638954" timestamp="1589429">
+    <deletedText><![CDATA[			]]></deletedText>
+    <insertedText><![CDATA[			RemoteProposeRequestSent.newCase(this, CLIENT_NAME, aProposalNumber, aCommand);]]></insertedText>
+  </DocumentChange>
+  <Command __id="367" _type="PauseCommand" date="Sat Apr 16 12:40:32 EDT 2022" range="1s-2s" starttimestamp="1650125638954" timestamp="1593467">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[1555]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="368" _type="MoveCaretCommand" caretOffset="7461" date="Sat Apr 16 12:40:32 EDT 2022" docOffset="9136" starttimestamp="1650125638954" timestamp="1593667" />
+  <Command __id="366" _type="DiffBasedFileOpenCommand" date="Sat Apr 16 12:40:32 EDT 2022" docASTNodeCount="1198" docActiveCodeLength="9334" docExpressionCount="863" docLength="10222" projectName="A6" starttimestamp="1650125638954" timestamp="1593467">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A6\src\client\ClientRemoteObject.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package client;¶¶import util.annotations.Tags;¶import util.interactiveMethodInvocation.IPCMechanism;¶import util.misc.ThreadSupport;¶import util.tags.DistributedTags;¶¶import java.beans.PropertyChangeListener;¶import java.nio.ByteBuffer;¶import java.nio.channels.SocketChannel;¶import java.rmi.AccessException;¶import java.rmi.NotBoundException;¶import java.rmi.RemoteException;¶import java.rmi.registry.LocateRegistry;¶import java.rmi.registry.Registry;¶import java.rmi.server.UnicastRemoteObject;¶¶¶import assignments.util.mainArgs.ClientArgsProcessor;¶import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;¶import coupledsims.Simulation;¶import coupledsims.Simulation1;¶import inputport.rpc.GIPCLocateRegistry;¶import inputport.rpc.GIPCRegistry;¶import main.BeauAndersonFinalProject;¶import server.remote.ServerRemoteInterfaceRMI;¶import server.remote.ServerRemoteObjectGIPC;¶import server.remote.ServerRemoteInterfaceGIPC;¶import stringProcessors.HalloweenCommandProcessor;¶import util.trace.bean.BeanTraceUtility;¶import util.trace.factories.FactoryTraceUtility;¶import util.trace.misc.ThreadDelayed;¶import util.trace.port.PortTraceUtility;¶import util.trace.port.consensus.ConsensusTraceUtility;¶import util.trace.port.consensus.ProposalLearnedNotificationReceived;¶import util.trace.port.consensus.ProposedStateSet;¶import util.trace.port.nio.NIOTraceUtility;¶import util.trace.port.rpc.gipc.GIPCObjectLookedUp;¶import util.trace.port.rpc.gipc.GIPCRPCTraceUtility;¶import util.trace.port.rpc.gipc.GIPCRegistryLocated;¶import util.trace.port.rpc.rmi.RMIObjectLookedUp;¶import util.trace.port.rpc.rmi.RMIRegistryLocated;¶import util.trace.port.rpc.rmi.RMITraceUtility;¶¶@Tags({ DistributedTags.CLIENT_REMOTE_OBJECT, DistributedTags.RMI, DistributedTags.GIPC })¶public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulations implements ClientRemoteInterfaceRMI, ClientRemoteInterfaceGIPC {¶	HalloweenCommandProcessor commandProcessor;¶	protected int NUM_EXPERIMENT_COMMANDS = 500;¶	public static final String EXPERIMENT_COMMAND_1 = "move 1 -1";¶	public static final String EXPERIMENT_COMMAND_2 = "undo";¶	protected PropertyChangeListener simulationCoupler;¶	ServerRemoteInterfaceGIPC server = null;¶	ServerRemoteInterfaceGIPC serverGIPC = null;¶	¶¶	private static String RMI_SERVER_HOST_NAME;¶	private static int RMI_SERVER_PORT;¶	private static String SERVER_NAME;¶	public String CLIENT_NAME;¶	¶	//A5¶	private static int GIPC_SERVER_PORT;¶	protected static GIPCRegistry gipcRegistry;¶	private static String GIPC_SERVER_NAME ;¶	protected boolean broadcastIPCMechanism = false;¶	//protected int aProposalNumber;¶	public int aProposalNumber;¶	¶	PropertyChangeListener clientOutCoupler;¶¶	@Override¶	public HalloweenCommandProcessor createSimulation(String aPrefix) {¶		return BeauAndersonFinalProject.createSimulation(aPrefix, Simulation1.SIMULATION1_X_OFFSET,¶				Simulation.SIMULATION_Y_OFFSET, Simulation.SIMULATION_WIDTH, Simulation.SIMULATION_HEIGHT,¶				Simulation1.SIMULATION1_X_OFFSET, Simulation.SIMULATION_Y_OFFSET);¶	}¶¶	@Override¶	public void processArgs(String[] args) {¶		System.out.println("Registry host:" + ClientArgsProcessor.getRegistryHost(args));¶		System.out.println("Registry port:" + ClientArgsProcessor.getRegistryPort(args));¶		System.out.println("Server host:" + ClientArgsProcessor.getServerHost(args));¶		System.out.println("Headless:" + ClientArgsProcessor.getHeadless(args));¶		System.out.println("Client name:" + ClientArgsProcessor.getClientName(args));¶¶		// Make sure you set this property when processing args¶		System.setProperty("java.awt.headless", ClientArgsProcessor.getHeadless(args));¶¶		RMI_SERVER_HOST_NAME = ClientArgsProcessor.getRegistryHost(args);¶		RMI_SERVER_PORT = ClientArgsProcessor.getRegistryPort(args);¶		SERVER_NAME = "SERVER";¶		¶		//ServerArgsProcessor.ge;¶		CLIENT_NAME = ClientArgsProcessor.getClientName(args);¶¶¶		//A5¶		GIPC_SERVER_PORT = ClientArgsProcessor.getGIPCPort(args);¶		GIPC_SERVER_NAME = ClientArgsProcessor.getServerHost(args);¶		¶	}¶	¶	@Override¶	protected void setTracing() {¶		//A6¶		NIOTraceUtility.setTracing();¶		FactoryTraceUtility.setTracing();¶		BeanTraceUtility.setTracing();¶		RMITraceUtility.setTracing();¶		ConsensusTraceUtility.setTracing();¶		ThreadDelayed.enablePrint();¶		GIPCRPCTraceUtility.setTracing();¶¶		¶		//A5¶		FactoryTraceUtility.setTracing();¶		BeanTraceUtility.setTracing();¶		RMITraceUtility.setTracing();¶		ConsensusTraceUtility.setTracing();¶		ThreadDelayed.enablePrint();¶		GIPCRPCTraceUtility.setTracing();¶		NIOTraceUtility.setTracing();¶¶		//A4¶		PortTraceUtility.setTracing();¶		RMITraceUtility.setTracing();¶		NIOTraceUtility.setTracing();¶		FactoryTraceUtility.setTracing();		¶		ConsensusTraceUtility.setTracing();¶		ThreadDelayed.enablePrint();¶		trace(true);¶	}¶¶	@Override¶	public void init(String[] args) {¶		setTracing();¶¶		this.processArgs(args);¶		// Ideally the prefixes should be main args¶		commandProcessor = createSimulation(Simulation1.SIMULATION1_PREFIX);¶		¶		//Locate GIPC Server¶		gipcRegistry = GIPCLocateRegistry.getRegistry(GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);¶		GIPCRegistryLocated.newCase(this, GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);¶		¶		//Get GIPC server here¶		serverGIPC = (ServerRemoteInterfaceGIPC) gipcRegistry.lookup(ServerRemoteObjectGIPC.class, SERVER_NAME);¶		GIPCObjectLookedUp.newCase(this, serverGIPC, ServerRemoteObjectGIPC.class, SERVER_NAME, gipcRegistry);¶		¶		//Register Client with GIPC Proxy¶		try {¶			serverGIPC.registerClientGIPC(this);¶		} catch (RemoteException e) {¶			// TODO Auto-generated catch block¶			e.printStackTrace();¶		}¶		¶		¶		// Locate RMI Server¶		Registry rmiRegistry = null;¶		try {¶			rmiRegistry = LocateRegistry.getRegistry(RMI_SERVER_HOST_NAME, RMI_SERVER_PORT);¶			RMIRegistryLocated.newCase(this, RMI_SERVER_HOST_NAME, RMI_SERVER_PORT, rmiRegistry);¶		} catch (RemoteException e3) {¶			e3.printStackTrace();¶		}¶		// Get RMI server here¶		¶		try {¶			System.out.println("WE ARE LOOKING UP server from RMI REGISTRY HERE: "+SERVER_NAME);¶			server = (ServerRemoteInterfaceGIPC) rmiRegistry.lookup(SERVER_NAME);¶			System.out.println("SERVER looked up in RMI registry!!");¶			RMIObjectLookedUp.newCase(this, server, SERVER_NAME, rmiRegistry);¶		} catch (AccessException e2) {¶			// TODO Auto-generated catch block¶			e2.printStackTrace();¶		} catch (RemoteException e2) {¶¶			e2.printStackTrace();¶		} catch (NotBoundException e2) {¶			e2.printStackTrace();¶		}¶¶		// export client to create proxy¶		try {¶			UnicastRemoteObject.exportObject(this, 0);¶		} catch (RemoteException e1) {¶			e1.printStackTrace();¶		}¶¶		// have the server register the exported client¶		try {¶			server.registerClientRMI(this);¶		} catch (RemoteException e) {¶			e.printStackTrace();¶		}¶		¶		¶		clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME);¶		//clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);¶		// Add propertyChangeListener¶		commandProcessor.addPropertyChangeListener(clientOutCoupler);¶		¶		System.out.println("added server as a property change listener of client");¶	}¶¶	@Override¶	public void inCoupler(String aNewCommand, int proposalNumber) {¶		//final int aProposalNumber = proposalNumber;¶		System.out.println("recieved broadcased command: "+ aNewCommand);¶		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);¶		commandProcessor.processCommand(aNewCommand);¶		ProposedStateSet.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);¶		System.out.println("executed command");¶		¶	}¶	¶	@Override¶	/*¶	 * You will need to delay not command input but sends(non-Javadoc)¶	 */¶	public void simulationCommand(String aCommand) {¶		//long aDelay = getDelay(); ¶		//if (aDelay > 0) {¶		//	ThreadSupport.sleep(aDelay);¶		//}¶		IPCMechanism mechanism = getIPCMechanism();¶		System.out.println("IPC Mechanism gotten from old GIPC simiulation command method");¶		System.out.println(mechanism);¶		¶		¶		if(mechanism.toString().equals("GIPC")) {¶						¶			commandProcessor.removePropertyChangeListener(clientOutCoupler);¶			clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);¶			commandProcessor.addPropertyChangeListener(clientOutCoupler);¶			System.out.println("using gipc proxy server");¶		}¶		if(mechanism.toString().equals("RMI")) {¶			commandProcessor.removePropertyChangeListener(clientOutCoupler);¶			clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME);¶			commandProcessor.addPropertyChangeListener(clientOutCoupler);¶			System.out.println("using RMI proxy server");¶		}¶		¶		//IPC Mechanism Change¶		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);¶		try {¶			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);¶		} catch (RemoteException e) {¶			// TODO Auto-generated catch block¶			e.printStackTrace();¶		}¶		commandProcessor.setInputString(aCommand); // all commands go to the first command window¶	}¶	¶	@Override	¶	public void quit(int aCode) {¶		//commandProcessor.setInputString("quit");¶		¶		System.exit(aCode);¶	}¶	¶	@Override¶	public void localProcessingOnly(boolean newValue) {¶		super.localProcessingOnly(newValue);¶		if (isLocalProcessingOnly()) {¶			commandProcessor.removePropertyChangeListener(clientOutCoupler);¶			¶		} else {¶			commandProcessor.addPropertyChangeListener(clientOutCoupler);¶			¶		}¶	}¶	¶	@Override¶	public void broadcastMetaState(boolean broadcast) {¶		broadcastIPCMechanism = broadcast;¶		setBroadcastMetaState(broadcast);¶	¶	}¶	¶	@Override¶	public void changeIPCMechanism(IPCMechanism mechanism) {¶		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);¶		setIPCMechanism(mechanism);¶		System.out.print("GOT IPC MECHANISM CHANGE: "+mechanism);¶		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);¶		aProposalNumber++;¶	}¶¶¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="370" _type="PauseCommand" date="Sat Apr 16 12:40:43 EDT 2022" range="10s-20s" starttimestamp="1650125638954" timestamp="1604911">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[11244]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="371" _type="MoveCaretCommand" caretOffset="3389" date="Sat Apr 16 12:40:44 EDT 2022" docOffset="4690" starttimestamp="1650125638954" timestamp="1605080" />
+  <Command __id="373" _type="PauseCommand" date="Sat Apr 16 12:40:52 EDT 2022" range="5s-10s" starttimestamp="1650125638954" timestamp="1613671">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[8591]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="372" _type="SelectTextCommand" caretOffset="3379" date="Sat Apr 16 12:40:52 EDT 2022" end="3387" start="3379" starttimestamp="1650125638954" timestamp="1613671" />
+  <Command __id="369" _type="DiffBasedFileOpenCommand" date="Sat Apr 16 12:40:43 EDT 2022" docASTNodeCount="682" docActiveCodeLength="5003" docExpressionCount="482" docLength="5666" projectName="A6" starttimestamp="1650125638954" timestamp="1604911">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A6\src\client\ClientRemoteObjectNIO.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package client;¶¶import java.io.IOException;¶import java.net.InetAddress;¶import java.nio.ByteBuffer;¶import java.nio.channels.SelectionKey;¶import java.nio.channels.ServerSocketChannel;¶import java.nio.channels.SocketChannel;¶import java.rmi.RemoteException;¶import java.util.concurrent.ArrayBlockingQueue;¶¶import assignments.util.MiscAssignmentUtils;¶import assignments.util.mainArgs.ClientArgsProcessor;¶import assignments.util.mainArgs.ServerArgsProcessor;¶import inputport.nio.manager.NIOManager;¶import inputport.nio.manager.NIOManagerFactory;¶import inputport.nio.manager.factories.classes.AConnectCommandFactory;¶import inputport.nio.manager.factories.classes.AnAcceptCommandFactory;¶import inputport.nio.manager.factories.selectors.AcceptCommandFactorySelector;¶import inputport.nio.manager.factories.selectors.ConnectCommandFactorySelector;¶import nioExample.exampleClientReadThread;¶import readThread.ClientReadThread;¶import readThread.ReadThreadInterface;¶import stringProcessors.HalloweenCommandProcessor;¶import util.annotations.Tags;¶import util.interactiveMethodInvocation.IPCMechanism;¶import util.tags.DistributedTags;¶import util.trace.port.consensus.ProposalLearnedNotificationReceived;¶import util.trace.port.consensus.ProposedStateSet;¶import util.trace.port.consensus.RemoteProposeRequestSent;¶¶@Tags({ DistributedTags.CLIENT_REMOTE_OBJECT, DistributedTags.RMI, DistributedTags.GIPC, DistributedTags.NIO })¶public class ClientRemoteObjectNIO extends ClientRemoteObject implements ClientRemoteInterfaceNIO{¶	protected NIOManager nioManager = NIOManagerFactory.getSingleton();¶	int aServerPort;¶	protected SocketChannel socketChannel;¶	protected boolean broadcastIPCMechanism = false;¶	¶	ArrayBlockingQueue<ByteBuffer> boundedBuffer = new ArrayBlockingQueue<ByteBuffer>(500);¶	ReadThreadInterface reader = null;¶	Thread readThread = null;¶	¶	@Override¶	public void init(String[] args) {¶		setTracing();¶		setFactories();¶		¶		aServerPort = ClientArgsProcessor.getNIOServerPort(args);¶		System.out.println("NIO SERVER PORT: "+aServerPort);¶		¶		try {¶			socketChannel = SocketChannel.open();¶			InetAddress aServerAddress = InetAddress.getByName("localhost");¶			¶			nioManager.connect(socketChannel, aServerAddress, aServerPort, ¶					//0, // do not allow any incoming messages¶					SelectionKey.OP_READ,¶					this);¶		} catch (IOException e) {¶			e.printStackTrace();¶		}¶		¶		//Create new read thread Runnable¶		reader = new ClientReadThread(this);¶						¶		//Create new readThread¶		readThread = new Thread(reader);¶				¶		//Start thread and do some action¶		readThread.start();¶		¶		//String aNextLine = "a new client has been initialized";¶		// wrap writes to the buffer and then flips it¶		//ByteBuffer aWriteMessage = ByteBuffer.wrap(aNextLine.getBytes());¶		//nioManager.write(socketChannel, aWriteMessage, this);¶		super.init(args);¶	}¶	¶	@Override¶	public void setFactories() {¶		ConnectCommandFactorySelector.setFactory(new AConnectCommandFactory(0));¶	}¶¶	@Override¶	public void connected(SocketChannel aSocketChannel) {¶		// TODO Auto-generated method stub¶		nioManager.addReadListener(aSocketChannel, this);¶		System.out.println("New Client connected to server!!!");¶		¶	}¶¶	@Override¶	public void notConnected(SocketChannel arg0, Exception arg1) {¶		// TODO Auto-generated method stub¶		¶	}¶¶	@Override¶	public void written(SocketChannel arg0, ByteBuffer arg1, int arg2) {¶		// TODO Auto-generated method stub¶		¶	}¶¶	@Override¶	public void socketChannelAccepted(ServerSocketChannel arg0, SocketChannel arg1) {¶		// TODO Auto-generated method stub¶		¶	}¶¶	@Override¶	public void socketChannelRead(SocketChannel arg0, ByteBuffer aMessage, int arg2) {¶		// TODO Auto-generated method stub¶		ByteBuffer copy = MiscAssignmentUtils.deepDuplicate(aMessage);¶		boundedBuffer.add(copy);¶		¶		¶		int aProposalNumber = 0;¶		String aMessageString = new String(aMessage.array());¶		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, aMessageString);¶		reader.notifyThread();	¶		¶	}¶	¶	@Override¶	public ArrayBlockingQueue<ByteBuffer> getBoundedBuffer() {¶		// TODO Auto-generated method stub¶		return boundedBuffer;¶	}¶	¶	@Override¶	public void simulationCommand(String aCommand) {¶¶		IPCMechanism mechanism = getIPCMechanism();¶		System.out.println("IPC Mechanism: " + mechanism.toString());¶¶		// IPC Mechanism Change¶		ProposedStateSet.newCase(this, super.CLIENT_NAME, super.aProposalNumber, mechanism);¶		try {¶"), Diff(INSERT,"			RemoteProposeRequestSent.newCase(this, CLIENT_NAME, aProposalNumber, aCommand);"), Diff(EQUAL,"¶			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);¶		} catch (RemoteException e) {¶			// TODO Auto-generated catch block¶			e.printStackTrace();¶		}¶¶		if (!mechanism.toString().equals("NIO")) {¶			System.out.println("IPC Mechanism is GIPC or RMI");¶			super.simulationCommand(aCommand);¶			return;¶		}¶¶		commandProcessor.removePropertyChangeListener(clientOutCoupler);¶		¶		ByteBuffer bufferCommand = ByteBuffer.wrap(aCommand.getBytes());¶		"), Diff(DELETE,"//"), Diff(EQUAL,"RemoteProposeRequestSent.newCase(this, CLIENT_NAME, aProposalNumber, aCommand);¶		nioManager.write(socketChannel, bufferCommand, this);¶¶		¶		¶		¶		commandProcessor.setInputString(aCommand); // all commands go to the first command window¶		¶		commandProcessor.addPropertyChangeListener(clientOutCoupler);¶		aProposalNumber = 1 + aProposalNumber;¶	}¶	¶	@Override¶	public HalloweenCommandProcessor getCommandProcessor() {¶		return commandProcessor;¶	}¶		¶¶¶}¶")]]]></diff>
+    <snapshot><![CDATA[package client;
+
+import java.io.IOException;
+import java.net.InetAddress;
+import java.nio.ByteBuffer;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
+import java.rmi.RemoteException;
+import java.util.concurrent.ArrayBlockingQueue;
+
+import assignments.util.MiscAssignmentUtils;
+import assignments.util.mainArgs.ClientArgsProcessor;
+import assignments.util.mainArgs.ServerArgsProcessor;
+import inputport.nio.manager.NIOManager;
+import inputport.nio.manager.NIOManagerFactory;
+import inputport.nio.manager.factories.classes.AConnectCommandFactory;
+import inputport.nio.manager.factories.classes.AnAcceptCommandFactory;
+import inputport.nio.manager.factories.selectors.AcceptCommandFactorySelector;
+import inputport.nio.manager.factories.selectors.ConnectCommandFactorySelector;
+import nioExample.exampleClientReadThread;
+import readThread.ClientReadThread;
+import readThread.ReadThreadInterface;
+import stringProcessors.HalloweenCommandProcessor;
+import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
+import util.tags.DistributedTags;
+import util.trace.port.consensus.ProposalLearnedNotificationReceived;
+import util.trace.port.consensus.ProposedStateSet;
+import util.trace.port.consensus.RemoteProposeRequestSent;
+
+@Tags({ DistributedTags.CLIENT_REMOTE_OBJECT, DistributedTags.RMI, DistributedTags.GIPC, DistributedTags.NIO })
+public class ClientRemoteObjectNIO extends ClientRemoteObject implements ClientRemoteInterfaceNIO{
+	protected NIOManager nioManager = NIOManagerFactory.getSingleton();
+	int aServerPort;
+	protected SocketChannel socketChannel;
+	protected boolean broadcastIPCMechanism = false;
+	
+	ArrayBlockingQueue<ByteBuffer> boundedBuffer = new ArrayBlockingQueue<ByteBuffer>(500);
+	ReadThreadInterface reader = null;
+	Thread readThread = null;
+	
+	@Override
+	public void init(String[] args) {
+		setTracing();
+		setFactories();
+		
+		aServerPort = ClientArgsProcessor.getNIOServerPort(args);
+		System.out.println("NIO SERVER PORT: "+aServerPort);
+		
+		try {
+			socketChannel = SocketChannel.open();
+			InetAddress aServerAddress = InetAddress.getByName("localhost");
+			
+			nioManager.connect(socketChannel, aServerAddress, aServerPort, 
+					//0, // do not allow any incoming messages
+					SelectionKey.OP_READ,
+					this);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		//Create new read thread Runnable
+		reader = new ClientReadThread(this);
+						
+		//Create new readThread
+		readThread = new Thread(reader);
+				
+		//Start thread and do some action
+		readThread.start();
+		
+		//String aNextLine = "a new client has been initialized";
+		// wrap writes to the buffer and then flips it
+		//ByteBuffer aWriteMessage = ByteBuffer.wrap(aNextLine.getBytes());
+		//nioManager.write(socketChannel, aWriteMessage, this);
+		super.init(args);
+	}
+	
+	@Override
+	public void setFactories() {
+		ConnectCommandFactorySelector.setFactory(new AConnectCommandFactory(0));
+	}
+
+	@Override
+	public void connected(SocketChannel aSocketChannel) {
+		// TODO Auto-generated method stub
+		nioManager.addReadListener(aSocketChannel, this);
+		System.out.println("New Client connected to server!!!");
+		
+	}
+
+	@Override
+	public void notConnected(SocketChannel arg0, Exception arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void written(SocketChannel arg0, ByteBuffer arg1, int arg2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void socketChannelAccepted(ServerSocketChannel arg0, SocketChannel arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void socketChannelRead(SocketChannel arg0, ByteBuffer aMessage, int arg2) {
+		// TODO Auto-generated method stub
+		ByteBuffer copy = MiscAssignmentUtils.deepDuplicate(aMessage);
+		boundedBuffer.add(copy);
+		
+		
+		int aProposalNumber = 0;
+		String aMessageString = new String(aMessage.array());
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, aMessageString);
+		reader.notifyThread();	
+		
+	}
+	
+	@Override
+	public ArrayBlockingQueue<ByteBuffer> getBoundedBuffer() {
+		// TODO Auto-generated method stub
+		return boundedBuffer;
+	}
+	
+	@Override
+	public void simulationCommand(String aCommand) {
+
+		IPCMechanism mechanism = getIPCMechanism();
+		System.out.println("IPC Mechanism: " + mechanism.toString());
+
+		// IPC Mechanism Change
+		ProposedStateSet.newCase(this, super.CLIENT_NAME, super.aProposalNumber, mechanism);
+		try {
+			RemoteProposeRequestSent.newCase(this, CLIENT_NAME, aProposalNumber, aCommand);
+			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		if (!mechanism.toString().equals("NIO")) {
+			System.out.println("IPC Mechanism is GIPC or RMI");
+			super.simulationCommand(aCommand);
+			return;
+		}
+
+		commandProcessor.removePropertyChangeListener(clientOutCoupler);
+		
+		ByteBuffer bufferCommand = ByteBuffer.wrap(aCommand.getBytes());
+		RemoteProposeRequestSent.newCase(this, CLIENT_NAME, aProposalNumber, aCommand);
+		nioManager.write(socketChannel, bufferCommand, this);
+
+		
+		
+		
+		commandProcessor.setInputString(aCommand); // all commands go to the first command window
+		
+		commandProcessor.addPropertyChangeListener(clientOutCoupler);
+		aProposalNumber = 1 + aProposalNumber;
+	}
+	
+	@Override
+	public HalloweenCommandProcessor getCommandProcessor() {
+		return commandProcessor;
+	}
+		
+
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="375" _type="PauseCommand" date="Sat Apr 16 12:40:53 EDT 2022" range="1s-2s" starttimestamp="1650125638954" timestamp="1614883">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[1212]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[Replace]]></next>
+  </Command>
+  <DocumentChange __id="374" _type="Replace" date="Sat Apr 16 12:40:53 EDT 2022" docASTNodeCount="682" docActiveCodeLength="4996" docExpressionCount="482" docLength="5659" endLine="138" insertionLength="1" int_docASTNodeCount="682" int_docActiveCodeLength="4995" int_docExpressionCount="482" int_docLength="5658" length="8" offset="4680" startLine="138" starttimestamp="1650125638954" timestamp="1614883">
+    <deletedText><![CDATA[aCommand]]></deletedText>
+    <insertedText><![CDATA[m]]></insertedText>
+  </DocumentChange>
+  <Command __id="376" _type="InsertStringCommand" date="Sat Apr 16 12:40:53 EDT 2022" starttimestamp="1650125638954" timestamp="1614895" timestamp2="1614895">
+    <data><![CDATA[m]]></data>
+  </Command>
+  <Command __id="415" _type="ProgramExecutionEvent" className="/A6/src/server/Server.java" date="Sat Apr 16 12:41:26 EDT 2022" kind="HitBreakPoint" projectName="A6" starttimestamp="1650125638954" timestamp="1647932" type="Run" />
+  <Command __id="417" _type="RunCommand" className="/A6/src/server/Server.java" date="Sat Apr 16 12:41:26 EDT 2022" kind="HitBreakPoint" projectName="A6" starttimestamp="1650125638954" timestamp="1647933" type="Run" />
+  <Command __id="418" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:41:27 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1648137" type="Run" />
+  <Command __id="419" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:41:27 EDT 2022" kind="StepInto" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1648150" type="Run" />
+  <Command __id="420" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:41:27 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1648154" type="Run" />
+  <Command __id="421" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:41:27 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1648650" type="Run" />
+  <Command __id="422" _type="ConsoleOutput" date="Sat Apr 16 12:41:27 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="1648752" type="ConsoleOutput">
+    <outputString><![CDATA[RMI_SERVER_HOST_NAME: localhost
+RMI_SERVER_PORT: 1099
+GIPC_SERVER_PORT: 10000
+NIO_SERVER_PORT: 9000
+GIPC_SERVER_PORT: 
+10000
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"AReadCommand for java.nio.channels.SocketChannel[connected local=/127.0.0.1:9000 remote=/127.0.0.1:52413]:An existing connection was forcibly closed by the remote host¶AReadCommand for java.nio.channels.SocketChannel[connected local=/127.0.0.1:10000 remote=/127.0.0.1:52420]:An existing connection was forcibly closed by the remote host¶Server0<-->Generic Client:0.5317994983071633 (Closed)¶Explanation: An existing connection was forcibly closed by the remote host"), Diff(INSERT,"RMI_SERVER_HOST_NAME: localhost¶RMI_SERVER_PORT: 1099¶GIPC_SERVER_PORT: 10000¶NIO_SERVER_PORT: 9000¶GIPC_SERVER_PORT: ¶10000"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="423" _type="ConsoleOutput" date="Sat Apr 16 12:41:27 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="1648860" type="ConsoleOutput">
+    <outputString><![CDATA[ADDED CONNECTION LISTENER
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"RMI_SERVER_HOST_NAME: localhost¶RMI_SERVER_PORT: 1099¶GIPC_SERVER_PORT: 10000¶NIO_SERVER_PORT: 9000¶GIPC_SERVER_PORT: ¶10000"), Diff(INSERT,"ADDED CONNECTION LISTENER"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="424" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:41:27 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1648977" type="Run" />
+  <Command __id="425" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:41:27 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1649008" type="Run" />
+  <Command __id="426" _type="ConsoleOutput" date="Sat Apr 16 12:41:28 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="1649118" type="ConsoleOutput">
+    <outputString><![CDATA[Server proxy sent to RMI Registry
+Command processor scanner opened
+Enter (prefixes of) print, quit or a method and its parameters separated by commas:
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"ADDED CONNECTION LISTENER"), Diff(INSERT,"Server proxy sent to RMI Registry¶Command processor scanner opened¶Enter (prefixes of) print, quit or a method and its parameters separated by commas:"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="427" _type="MoveCaretCommand" caretOffset="3481" date="Sat Apr 16 12:41:29 EDT 2022" docOffset="4782" starttimestamp="1650125638954" timestamp="1650088" />
+  <Command __id="429" _type="InsertStringCommand" date="Sat Apr 16 12:41:29 EDT 2022" starttimestamp="1650125638954" timestamp="1650363" timestamp2="1650363">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="431" _type="InsertStringCommand" date="Sat Apr 16 12:41:29 EDT 2022" starttimestamp="1650125638954" timestamp="1650645" timestamp2="1650645">
+    <data><![CDATA[a]]></data>
+  </Command>
+  <Command __id="433" _type="InsertStringCommand" date="Sat Apr 16 12:41:30 EDT 2022" starttimestamp="1650125638954" timestamp="1651266" timestamp2="1651266">
+    <data><![CDATA[P]]></data>
+  </Command>
+  <Command __id="435" _type="InsertStringCommand" date="Sat Apr 16 12:41:30 EDT 2022" starttimestamp="1650125638954" timestamp="1651496" timestamp2="1651496">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="437" _type="InsertStringCommand" date="Sat Apr 16 12:41:30 EDT 2022" starttimestamp="1650125638954" timestamp="1651544" timestamp2="1651544">
+    <data><![CDATA[o]]></data>
+  </Command>
+  <Command __id="439" _type="InsertStringCommand" date="Sat Apr 16 12:41:30 EDT 2022" starttimestamp="1650125638954" timestamp="1651721" timestamp2="1651721">
+    <data><![CDATA[p]]></data>
+  </Command>
+  <Command __id="441" _type="InsertStringCommand" date="Sat Apr 16 12:41:30 EDT 2022" starttimestamp="1650125638954" timestamp="1651829" timestamp2="1651829">
+    <data><![CDATA[o]]></data>
+  </Command>
+  <Command __id="443" _type="InsertStringCommand" date="Sat Apr 16 12:41:30 EDT 2022" starttimestamp="1650125638954" timestamp="1651963" timestamp2="1651963">
+    <data><![CDATA[s]]></data>
+  </Command>
+  <Command __id="445" _type="InsertStringCommand" date="Sat Apr 16 12:41:31 EDT 2022" starttimestamp="1650125638954" timestamp="1652075" timestamp2="1652075">
+    <data><![CDATA[a]]></data>
+  </Command>
+  <Command __id="447" _type="InsertStringCommand" date="Sat Apr 16 12:41:31 EDT 2022" starttimestamp="1650125638954" timestamp="1652202" timestamp2="1652202">
+    <data><![CDATA[l]]></data>
+  </Command>
+  <Command __id="449" _type="InsertStringCommand" date="Sat Apr 16 12:41:31 EDT 2022" starttimestamp="1650125638954" timestamp="1652431" timestamp2="1652431">
+    <data><![CDATA[N]]></data>
+  </Command>
+  <Command __id="451" _type="InsertStringCommand" date="Sat Apr 16 12:41:31 EDT 2022" starttimestamp="1650125638954" timestamp="1652628" timestamp2="1652628">
+    <data><![CDATA[u]]></data>
+  </Command>
+  <Command __id="453" _type="InsertStringCommand" date="Sat Apr 16 12:41:31 EDT 2022" starttimestamp="1650125638954" timestamp="1652872" timestamp2="1652872">
+    <data><![CDATA[m]]></data>
+  </Command>
+  <Command __id="455" _type="InsertStringCommand" date="Sat Apr 16 12:41:31 EDT 2022" starttimestamp="1650125638954" timestamp="1652939" timestamp2="1652939">
+    <data><![CDATA[b]]></data>
+  </Command>
+  <Command __id="457" _type="InsertStringCommand" date="Sat Apr 16 12:41:32 EDT 2022" starttimestamp="1650125638954" timestamp="1653145" timestamp2="1653145">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="459" _type="InsertStringCommand" date="Sat Apr 16 12:41:32 EDT 2022" starttimestamp="1650125638954" timestamp="1653790" timestamp2="1653790">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="461" _type="InsertStringCommand" date="Sat Apr 16 12:41:33 EDT 2022" starttimestamp="1650125638954" timestamp="1654369" timestamp2="1654369">
+    <data><![CDATA[+]]></data>
+  </Command>
+  <Command __id="463" _type="InsertStringCommand" date="Sat Apr 16 12:41:33 EDT 2022" starttimestamp="1650125638954" timestamp="1654514" timestamp2="1654514">
+    <data><![CDATA[+]]></data>
+  </Command>
+  <Command __id="465" _type="InsertStringCommand" date="Sat Apr 16 12:41:33 EDT 2022" starttimestamp="1650125638954" timestamp="1654987" timestamp2="1654987">
+    <data><![CDATA[;]]></data>
+  </Command>
+  <Command __id="467" _type="PauseCommand" date="Sat Apr 16 12:41:35 EDT 2022" range="1s-2s" starttimestamp="1650125638954" timestamp="1656439">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[InsertStringCommand]]></prev>
+    <pause><![CDATA[1452]]></pause>
+    <nextType><![CDATA[Save]]></nextType>
+    <next><![CDATA[EclipseCommand]]></next>
+  </Command>
+  <Command __id="503" _type="ShellCommand" date="Sat Apr 16 12:41:55 EDT 2022" starttimestamp="1650125638954" timestamp="1677043" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="505" _type="ConsoleOutput" date="Sat Apr 16 12:41:56 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="1677717" type="ConsoleOutput">
+    <outputString><![CDATA[Server0<-->Generic Client:0.09159404812618632 (Opened)
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Client registered RMI¶Proxy[ClientRemoteInterfaceRMI,RemoteObjectInvocationHandler[UnicastRef [liveRef: [endpoint:[172.16.0.161:52502](remote),objID:[-4573c35f:18033409c79:-7ffe, 7216091010408468502]]]]]¶[Proxy[ClientRemoteInterfaceRMI,RemoteObjectInvocationHandler[UnicastRef [liveRef: [endpoint:[172.16.0.161:52502](remote),objID:[-4573c35f:18033409c79:-7ffe, 7216091010408468502]]]]]]"), Diff(INSERT,"Server0<-->Generic Client:0.09159404812618632 (Opened)"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="506" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:41:56 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1677867" type="Run" />
+  <Command __id="507" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:41:56 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1677902" type="Run" />
+  <Command __id="508" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:41:56 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1677956" type="Run" />
+  <Command __id="509" _type="ConsoleOutput" date="Sat Apr 16 12:41:56 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="1677996" type="ConsoleOutput">
+    <outputString><![CDATA[WE ARE LOOKING UP server from RMI REGISTRY HERE: SERVER
+SERVER looked up in RMI registry!!
+added server as a property change listener of client
+Command processor scanner opened
+Enter (prefixes of) print, quit or a method and its parameters separated by commas:
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Server0<-->Generic Client:0.09159404812618632 (Opened)"), Diff(INSERT,"WE ARE LOOKING UP server from RMI REGISTRY HERE: SERVER¶SERVER looked up in RMI registry!!¶added server as a property change listener of client¶Command processor scanner opened¶Enter (prefixes of) print, quit or a method and its parameters separated by commas:"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="510" _type="ConsoleOutput" date="Sat Apr 16 12:41:56 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="1678006" type="ConsoleOutput">
+    <outputString><![CDATA[Client registered GIPC
+com.sun.proxy.$Proxy1@368dc0f2
+[com.sun.proxy.$Proxy1@57cc8aa3, com.sun.proxy.$Proxy1@368dc0f2]
+Client registered RMI
+Proxy[ClientRemoteInterfaceRMI,RemoteObjectInvocationHandler[UnicastRef [liveRef: [endpoint:[172.16.0.161:52507](remote),objID:[13f3c658:1803340a6f4:-7ffe, -6941008073804728546]]]]]
+[Proxy[ClientRemoteInterfaceRMI,RemoteObjectInvocationHandler[UnicastRef [liveRef: [endpoint:[172.16.0.161:52502](remote),objID:[-4573c35f:18033409c79:-7ffe, 7216091010408468502]]]]], Proxy[ClientRemoteInterfaceRMI,RemoteObjectInvocationHandler[UnicastRef [liveRef: [endpoint:[172.16.0.161:52507](remote),objID:[13f3c658:1803340a6f4:-7ffe, -6941008073804728546]]]]]]
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"WE ARE LOOKING UP server from RMI REGISTRY HERE: SERVER¶SERVER looked up in RMI registry!!¶added server as a property change listener of client¶Command processor scanner opened¶Enter (prefixes of) print, quit or a method and its parameters separated by commas:"), Diff(INSERT,"Client registered GIPC¶com.sun.proxy.$Proxy1@368dc0f2¶[com.sun.proxy.$Proxy1@57cc8aa3, com.sun.proxy.$Proxy1@368dc0f2]¶Client registered RMI¶Proxy[ClientRemoteInterfaceRMI,RemoteObjectInvocationHandler[UnicastRef [liveRef: [endpoint:[172.16.0.161:52507](remote),objID:[13f3c658:1803340a6f4:-7ffe, -6941008073804728546]]]]]¶[Proxy[ClientRemoteInterfaceRMI,RemoteObjectInvocationHandler[UnicastRef [liveRef: [endpoint:[172.16.0.161:52502](remote),objID:[-4573c35f:18033409c79:-7ffe, 7216091010408468502]]]]], Proxy[ClientRemoteInterfaceRMI,RemoteObjectInvocationHandler[UnicastRef [liveRef: [endpoint:[172.16.0.161:52507](remote),objID:[13f3c658:1803340a6f4:-7ffe, -6941008073804728546]]]]]]"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="511" _type="ShellCommand" date="Sat Apr 16 12:41:57 EDT 2022" starttimestamp="1650125638954" timestamp="1678221" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="513" _type="PauseCommand" date="Sat Apr 16 12:42:02 EDT 2022" range="5s-10s" starttimestamp="1650125638954" timestamp="1683470">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[5249]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="512" _type="ConsoleInput" date="Sat Apr 16 12:42:02 EDT 2022" starttimestamp="1650125638954" timestamp="1683470" type="Exception">
+    <outputString><![CDATA[b true
+]]></outputString>
+  </Command>
+  <Command __id="514" _type="ConsoleOutput" date="Sat Apr 16 12:42:02 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="1683528" type="ConsoleOutput">
+    <outputString><![CDATA[public default void assignments.util.inputParameters.SimulationParametersListener.broadcastMetaState(boolean)[true]
+Enter (prefixes of) print, quit or a method and its parameters separated by commas:
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Client registered GIPC¶com.sun.proxy.$Proxy1@368dc0f2¶[com.sun.proxy.$Proxy1@57cc8aa3, com.sun.proxy.$Proxy1@368dc0f2]¶Client registered RMI¶Proxy[ClientRemoteInterfaceRMI,RemoteObjectInvocationHandler[UnicastRef [liveRef: [endpoint:[172.16.0.161:52507](remote),objID:[13f3c658:1803340a6f4:-7ffe, -6941008073804728546]]]]]¶[Proxy[ClientRemoteInterfaceRMI,RemoteObjectInvocationHandler[UnicastRef [liveRef: [endpoint:[172.16.0.161:52502](remote),objID:[-4573c35f:18033409c79:-7ffe, 7216091010408468502]]]]], Proxy[ClientRemoteInterfaceRMI,RemoteObjectInvocationHandler[UnicastRef [liveRef: [endpoint:[172.16.0.161:52507](remote),objID:[13f3c658:1803340a6f4:-7ffe, -6941008073804728546]]]]]]"), Diff(INSERT,"public default void assignments.util.inputParameters.SimulationParametersListener.broadcastMetaState(boolean)[true]¶Enter (prefixes of) print, quit or a method and its parameters separated by commas:"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="516" _type="PauseCommand" date="Sat Apr 16 12:42:04 EDT 2022" range="1s-2s" starttimestamp="1650125638954" timestamp="1685124">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1596]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="515" _type="ConsoleInput" date="Sat Apr 16 12:42:04 EDT 2022" starttimestamp="1650125638954" timestamp="1685124" type="Exception">
+    <outputString><![CDATA[i gipc
+]]></outputString>
+  </Command>
+  <Command __id="517" _type="ConsoleOutput" date="Sat Apr 16 12:42:04 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="1685178" type="ConsoleOutput">
+    <outputString><![CDATA[public default void assignments.util.inputParameters.SimulationParametersListener.ipcMechanism(util.interactiveMethodInvocation.IPCMechanism)[GIPC]
+Enter (prefixes of) print, quit or a method and its parameters separated by commas:
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"public default void assignments.util.inputParameters.SimulationParametersListener."), Diff(DELETE,"broadcastMetaState(boolean)[true"), Diff(INSERT,"ipcMechanism(util.interactiveMethodInvocation.IPCMechanism)[GIPC"), Diff(EQUAL,"]¶Enter (prefixes of) print, quit or a method and its parameters separated by commas:¶")]]]></diff>
+  </Command>
+  <Command __id="519" _type="PauseCommand" date="Sat Apr 16 12:42:09 EDT 2022" range="5s-10s" starttimestamp="1650125638954" timestamp="1690536">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[5358]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[ConsoleInput]]></next>
+  </Command>
+  <Command __id="538" _type="ShellCommand" date="Sat Apr 16 12:42:29 EDT 2022" starttimestamp="1650125638954" timestamp="1710678" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="541" _type="PauseCommand" date="Sat Apr 16 12:42:34 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="1715456">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[4778]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="540" _type="ShellCommand" date="Sat Apr 16 12:42:34 EDT 2022" starttimestamp="1650125638954" timestamp="1715456" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="543" _type="PauseCommand" date="Sat Apr 16 12:42:52 EDT 2022" range="10s-20s" starttimestamp="1650125638954" timestamp="1733809">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[18353]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="542" _type="ShellCommand" date="Sat Apr 16 12:42:52 EDT 2022" starttimestamp="1650125638954" timestamp="1733809" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="545" _type="PauseCommand" date="Sat Apr 16 12:42:57 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="1738792">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[4983]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="544" _type="ShellCommand" date="Sat Apr 16 12:42:57 EDT 2022" starttimestamp="1650125638954" timestamp="1738792" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="547" _type="PauseCommand" date="Sat Apr 16 12:42:59 EDT 2022" range="1s-2s" starttimestamp="1650125638954" timestamp="1740179">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1387]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="579" _type="ProgramExecutionEvent" className="/A6/src/checks/Checks.java" date="Sat Apr 16 12:43:25 EDT 2022" kind="HitBreakPoint" projectName="A6" starttimestamp="1650125638954" timestamp="1766896" type="Run" />
+  <Command __id="581" _type="RunCommand" className="/A6/src/checks/Checks.java" date="Sat Apr 16 12:43:25 EDT 2022" kind="HitBreakPoint" projectName="A6" starttimestamp="1650125638954" timestamp="1766911" type="Run" />
+  <Command __id="582" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:43:25 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1767014" type="Run" />
+  <Command __id="583" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:43:25 EDT 2022" kind="StepInto" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1767028" type="Run" />
+  <Command __id="584" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:43:25 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1767031" type="Run" />
+  <Command __id="586" _type="PauseCommand" date="Sat Apr 16 12:43:28 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="1769510">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[2479]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="587" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:43:30 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1771323" type="Run" />
+  <Command __id="589" _type="ConsoleOutput" date="Sat Apr 16 12:43:30 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="1771422" type="ConsoleOutput">
+    <outputString><![CDATA[Building symbol table and running first pass checks:Sat Apr 16 12:43:30 EDT 2022
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"AReadCommand for java.nio.channels.SocketChannel[connected local=/127.0.0.1:52498 remote=localhost/127.0.0.1:9000]:An existing connection was forcibly closed by the remote host¶AReadCommand for java.nio.channels.SocketChannel[connected local=/127.0.0.1:52504 remote=localhost/127.0.0.1:10000]:An existing connection was forcibly closed by the remote host"), Diff(INSERT,"Building symbol table and running first pass checks:Sat Apr 16 12:43:30 EDT 2022"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="591" _type="PauseCommand" date="Sat Apr 16 12:43:33 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="1774612">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[3190]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="590" _type="ConsoleOutput" date="Sat Apr 16 12:43:33 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="1774612" type="ConsoleOutput">
+    <outputString><![CDATA[Symbol table size:125
+Running second pass checks Sat Apr 16 12:43:33 EDT 2022
+Start O(n2) inter- and intra class method calls:Sat Apr 16 12:43:33 EDT 2022
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Building s"), Diff(INSERT,"S"), Diff(EQUAL,"ymbol table "), Diff(DELETE,"and r"), Diff(INSERT,"size:125¶R"), Diff(EQUAL,"unning "), Diff(DELETE,"first"), Diff(INSERT,"second"), Diff(EQUAL," pass checks"), Diff(DELETE,":"), Diff(INSERT," "), Diff(EQUAL,"Sat Apr 16 12:43:3"), Diff(DELETE,"0"), Diff(INSERT,"3 EDT 2022¶Start O(n2) inter- and intra class method calls:Sat Apr 16 12:43:33"), Diff(EQUAL," EDT 2022¶")]]]></diff>
+  </Command>
+  <Command __id="592" _type="ConsoleOutput" date="Sat Apr 16 12:43:33 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="1774724" type="ConsoleOutput">
+    <outputString><![CDATA[End O(n2) inter- and intra class method calls:Sat Apr 16 12:43:33 EDT 2022
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Symbol table size:125¶Running second pass checks Sat Apr 16 12:43:33 EDT 2022¶Start"), Diff(INSERT,"End"), Diff(EQUAL," O(n2) inter- and intra class method calls:Sat Apr 16 12:43:33 EDT 2022¶")]]]></diff>
+  </Command>
+  <Command __id="594" _type="PauseCommand" date="Sat Apr 16 12:43:35 EDT 2022" range="1s-2s" starttimestamp="1650125638954" timestamp="1776660">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1936]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="619" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:44:54 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1855119" type="Run" />
+  <Command __id="621" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:44:54 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="1855121" type="Run" />
+  <Command __id="623" _type="PauseCommand" date="Sat Apr 16 12:45:50 EDT 2022" range="30s-1m" starttimestamp="1650125638954" timestamp="1911710">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[56589]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="673" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:49:24 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="2125522" type="Run" />
+  <Command __id="675" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:49:24 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="2125525" type="Run" />
+  <Command __id="677" _type="PauseCommand" date="Sat Apr 16 12:51:09 EDT 2022" range="1m-2m" starttimestamp="1650125638954" timestamp="2230686">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[105161]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="676" _type="ConsoleOutput" date="Sat Apr 16 12:51:09 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="2230686" type="ConsoleOutput">
+    <outputString><![CDATA[GIPCRMINIOServerMetaStateBroadcast did not pass completely:When giving 'i nio' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification;
+When giving 'i rmi' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification;
+When giving 'i gipc' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification%0.0
+
+Test execution time (ms):112615
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,"GIPCRMINIOServerMetaStateBroadcast did not pass completely:When giving 'i nio' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification;¶When giving 'i rmi' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification;¶When giving 'i gipc' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification%0.0¶¶"), Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"22591"), Diff(INSERT,"112615"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="679" _type="PauseCommand" date="Sat Apr 16 12:58:02 EDT 2022" range="5m-10m" starttimestamp="1650125638954" timestamp="2643317">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[412631]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="678" _type="ConsoleOutput" date="Sat Apr 16 12:58:02 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="2643317" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s20.assignment6.testcases.GIPCRMINIOClientMetaStateBroadcast@73ae75b7 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"GIPCRMINIOServerMetaStateBroadcast did not pass completely:When giving 'i nio' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification;¶When giving 'i rmi' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification;¶When giving 'i gipc' as input to Server: Client 0 did not receive expected notification, Client 1 did not receive expected notification%0.0¶¶Test execution time (ms):112615"), Diff(INSERT,"Re-running test gradingTools.comp533s20.assignment6.testcases.GIPCRMINIOClientMetaStateBroadcast@73ae75b7 . Results may change."), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="681" _type="PauseCommand" date="Sat Apr 16 12:58:41 EDT 2022" range="30s-1m" starttimestamp="1650125638954" timestamp="2682826">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[39509]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="680" _type="ConsoleOutput" date="Sat Apr 16 12:58:41 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="2682826" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s20.assignment6.testcases.GIPCRMINIOClientMetaStateBroadcast@73ae75b7 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s20.assignment6.testcases.GIPCRMINIOClientMetaStateBroadcast@73ae75b7 . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="683" _type="PauseCommand" date="Sat Apr 16 12:58:55 EDT 2022" range="10s-20s" starttimestamp="1650125638954" timestamp="2696174">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[13348]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="682" _type="ConsoleOutput" date="Sat Apr 16 12:58:55 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="2696174" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s21.assignment6.style.A6InterfaceAsType@5e54f960 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s2"), Diff(DELETE,"0"), Diff(INSERT,"1"), Diff(EQUAL,".assignment6."), Diff(DELETE,"testcases.GIPCRMINIOClientMetaStateBroadcast@73ae75b7"), Diff(INSERT,"style.A6InterfaceAsType@5e54f960"), Diff(EQUAL," . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="685" _type="PauseCommand" date="Sat Apr 16 12:58:57 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="2698878">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2704]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="684" _type="ConsoleOutput" date="Sat Apr 16 12:58:57 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="2698878" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s21.assignment6.style.A6PublicMethodsOverride@695f0eb0 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s21.assignment6.style.A6"), Diff(DELETE,"InterfaceAsType@5e54f96"), Diff(INSERT,"PublicMethodsOverride@695f0eb"), Diff(EQUAL,"0 . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="686" _type="ConsoleOutput" date="Sat Apr 16 12:58:58 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="2699799" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s21.assignment6.style.A6PublicMethodsOverride@695f0eb0 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s21.assignment6.style.A6PublicMethodsOverride@695f0eb0 . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="688" _type="PauseCommand" date="Sat Apr 16 12:59:00 EDT 2022" range="1s-2s" starttimestamp="1650125638954" timestamp="2701329">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1530]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="687" _type="ConsoleOutput" date="Sat Apr 16 12:59:00 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="2701329" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s21.assignment6.style.A6AccessModifiersMatched@546f5ce1 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s21.assignment6.style.A6"), Diff(DELETE,"PublicMethodsOverride@695f0eb0"), Diff(INSERT,"AccessModifiersMatched@546f5ce1"), Diff(EQUAL," . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="690" _type="PauseCommand" date="Sat Apr 16 12:59:02 EDT 2022" range="1s-2s" starttimestamp="1650125638954" timestamp="2703105">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1776]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="689" _type="ConsoleOutput" date="Sat Apr 16 12:59:02 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="2703105" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s21.assignment6.style.A6AccessModifiersMatched@546f5ce1 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Re-running test gradingTools.comp533s21.assignment6.style.A6AccessModifiersMatched@546f5ce1 . Results may change.¶")]]]></diff>
+  </Command>
+  <Command __id="692" _type="PauseCommand" date="Sat Apr 16 12:59:05 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="2706314">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[3209]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="720" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:59:55 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="2756217" type="Run" />
+  <Command __id="722" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 12:59:55 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="2756220" type="Run" />
+  <Command __id="724" _type="PauseCommand" date="Sat Apr 16 13:00:52 EDT 2022" range="30s-1m" starttimestamp="1650125638954" timestamp="2813325">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[57105]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="723" _type="ConsoleOutput" date="Sat Apr 16 13:00:52 EDT 2022" overflow="false" starttimestamp="1650125638954" timestamp="2813325" type="ConsoleOutput">
+    <outputString><![CDATA[GIPCRMINIOOneClientReadWriteNonAtomic did not pass completely:In Client writing to server via NIO, no line found matching regex: .*?\{main\}.*?SocketChannelWriteRequested.*
+GIPC is not checked because RMI failed%0.16666666666666666
+
+Test execution time (ms):58594
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,"GIPCRMINIOOneClientReadWriteNonAtomic did not pass completely:In Client writing to server via NIO, no line found matching regex: .*?\{main\}.*?SocketChannelWriteRequested.*¶GIPC is not checked because RMI failed%0.16666666666666666¶¶"), Diff(EQUAL,"Test execution time (ms):"), Diff(DELETE,"13760"), Diff(INSERT,"58594"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="726" _type="PauseCommand" date="Sat Apr 16 13:13:59 EDT 2022" range="10m-20m" starttimestamp="1650125638954" timestamp="3600104">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[786779]]></pause>
+    <nextType><![CDATA[Other]]></nextType>
+    <next><![CDATA[BalloonCommand]]></next>
+  </Command>
+  <Command __id="727" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 14:05:51 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="6712907" type="Debug" />
+  <Command __id="729" _type="ProgramExecutionEvent" className="(Unknown)" date="Sat Apr 16 14:05:51 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650125638954" timestamp="6712908" type="Debug" />
+  <Command __id="730" _type="ProgramExecutionEvent" className="/A6/src/checks/Checks.java" date="Sat Apr 16 14:05:51 EDT 2022" kind="HitBreakPoint" projectName="A6" starttimestamp="1650125638954" timestamp="6712908" type="Run" />
+  <Command __id="732" _type="PauseCommand" date="Sat Apr 16 14:05:54 EDT 2022" range="2s-5s" starttimestamp="1650125638954" timestamp="6715068">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[2160]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="731" _type="ShellCommand" date="Sat Apr 16 14:05:54 EDT 2022" starttimestamp="1650125638954" timestamp="6715068" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="733" _type="ShellCommand" date="Sat Apr 16 14:05:54 EDT 2022" starttimestamp="1650125638954" timestamp="6715130" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="735" _type="PauseCommand" date="Sat Apr 16 14:05:55 EDT 2022" range="1s-2s" starttimestamp="1650125638954" timestamp="6716457">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[1327]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+</Events>

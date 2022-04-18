@@ -22,6 +22,8 @@ import util.trace.factories.FactoryTraceUtility;
 import util.trace.misc.ThreadDelayed;
 import util.trace.port.PortTraceUtility;
 import util.trace.port.consensus.ConsensusTraceUtility;
+import util.trace.port.consensus.ProposalLearnedNotificationSent;
+import util.trace.port.consensus.RemoteProposeRequestReceived;
 import util.trace.port.nio.NIOTraceUtility;
 import util.trace.port.nio.SocketChannelBound;
 import util.trace.port.rpc.gipc.GIPCRPCTraceUtility;
@@ -97,6 +99,13 @@ public class ServerRemoteObjectNIO extends ServerRemoteObjectGIPC implements Ser
 
 		currentSocket = aSocketChannel;
 		
+		int aProposalNumber = Integer.parseInt( aMessageString.substring(aMessageString.length()-1) );
+		aMessageString =  aMessageString.substring(0, aMessageString.length()-1);
+		System.out.println("COMMAND IN SERVER: "+ aMessageString);
+		
+		System.out.println("PROPOSAL NUMBER: "+aProposalNumber);
+		RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, aMessageString);
+		ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, aMessageString);
 		reader.notifyThread();
 		
 	}

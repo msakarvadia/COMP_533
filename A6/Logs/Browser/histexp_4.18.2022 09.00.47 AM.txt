@@ -1,0 +1,42 @@
+4/18/2022 09:01:50 AM	COMP 533 (17 unread)	https://piazza.com/class/kxx594eo8fl3y2
+4/18/2022 09:01:56 AM	COMP 533 (17 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=128
+4/18/2022 12:03:19 PM	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+4/18/2022 12:03:25 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/portal
+4/18/2022 12:03:19 PM	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1
+4/18/2022 12:16:05 PM	Java Convert int to String - javatpoint	https://www.javatpoint.com/java-int-to-string
+4/18/2022 12:16:04 PM	java int to string - Google Search	https://www.google.com/search?q=java+int+to+string&rlz=1C1CHBF_enUS939US939&oq=java+int+to+s&aqs=chrome.1.69i57j69i59j69i60l3.2512j0j7&sourceid=chrome&ie=UTF-8
+4/18/2022 12:17:34 PM	getting last char of string in java - Google Search	https://www.google.com/search?q=getting+last+char+of+string+in+java&rlz=1C1CHBF_enUS939US939&oq=getting+last+char+of+string+in+java&aqs=chrome..69i57.11322j0j4&sourceid=chrome&ie=UTF-8
+4/18/2022 12:17:34 PM	java - How do I get the last character of a string? - Stack Overflow	https://stackoverflow.com/questions/5163785/how-do-i-get-the-last-character-of-a-string
+4/18/2022 12:20:13 PM	Java String to Int – How to Convert a String to an Integer	https://www.freecodecamp.org/news/java-string-to-int-how-to-convert-a-string-to-an-integer/
+4/18/2022 12:19:22 PM	java indexing into string - Google Search	https://www.google.com/search?q=java+indexing+into+string&rlz=1C1CHBF_enUS939US939&oq=java+indexing+into+string&aqs=chrome..69i57.5677j0j7&sourceid=chrome&ie=UTF-8
+4/18/2022 12:21:32 PM	java getting first char of string - Google Search	https://www.google.com/search?q=java+getting+first+char+of+string&rlz=1C1CHBF_enUS939US939&oq=java+gettin&aqs=chrome.1.69i57j69i59l3.5817j0j4&sourceid=chrome&ie=UTF-8
+4/18/2022 12:21:41 PM	java get first 3 characters of string - Google Search	https://www.google.com/search?q=java+get+first+3+characters+of+string&rlz=1C1CHBF_enUS939US939&ei=C5BdYuSONa6XwbkP4t6wwAY&oq=java+getting+first+3+char+of+string&gs_lcp=Cgdnd3Mtd2l6EAMYADIFCAAQogQyBQgAEKIEOgcIABBHELADOgQIIRAKSgQIQRgASgQIRhgAUM0KWOULYP0ZaAJwAXgAgAFLiAGLAZIBATKYAQCgAQHIAQjAAQE&sclient=gws-wiz
+4/18/2022 12:21:42 PM	Get first 4 characters of String in Java - HowToDoInJava	https://howtodoinjava.com/java/string/get-first-4-characters/
+4/18/2022 12:28:12 PM	Online Survey Software | Qualtrics Survey Solutions	https://unc.us11.list-manage.com/track/click?u=9cc1f78d70aa64ee0f1b17641&id=a516b2b97e&e=66f1d5f83a
+4/18/2022 12:36:11 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+4/18/2022 12:36:10 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1
+4/18/2022 12:36:13 PM	Sakai @ UNC-Chapel Hill : MATH548.001.SP22 : Overview	https://sakai.unc.edu/portal/site/a088058d-2645-421e-9a8c-45b33b2daeb9
+4/18/2022 12:36:14 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Overview	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049
+4/18/2022 12:36:15 PM		https://sakai.unc.edu/portal/tool/dade49b9-d1b7-4801-97e0-e2e750d0c69b/synMainLite?time=1
+4/18/2022 12:37:16 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625
+4/18/2022 12:37:26 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625?panel=Main
+4/18/2022 12:36:18 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Gradebook	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/1c6cc270-68dc-4e05-b155-424a41ce73dd
+4/18/2022 12:37:26 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625?assignmentReference=/assignment/a/9a8c1503-90ae-4047-9576-bb2caf0f2049/3f7fc0e8-deef-441d-932b-a192db85c45c&sakai_action=doView_submission
+4/18/2022 12:36:08 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=fZJdT4MwFIb%2FCun91sJwYjNIcLtwyXRkoBfemAIHaYQWe4of%2F1425jITs%2Bu%2BH32fnAWKtul43Nta7eC9B7TOV9so5IeHkPRGcS1QIleiBeS24Gl8v%2BHelPHOaKsL3RAnRgRjpVZLrbBvwaRgPmQBj7tNSGprO%2BSUongTctqrYgplT9Na5rluwNZTRE33oR5NtmlGnNXwC6nEPu%2FMjfrklWVHh%2FJKNnA07qCUBgpL03RLnPUqJC9sBtX8hl0XgpWVl0Pgu25V%2BMBKduWLQAwyxB7WCq1QNiQe87wJ8ydukLlzPptzFjwTJzluvJWqlOr1MpB8FCG%2Fy7JkMo55AoOHIYOARIs9Vn4oNmegL8eKX7ok%2Bp8lnlgu6FnB2NbxhyFxvUp0I4tvJ24a%2Fbk0ICyExCU0Gi1%2FbyD6AQ%3D%3D&RelayState=ss%3Amem%3A2f49f6fc44d5b0709dcb15dc30770afc122235791cb4fd6d7fcff54915fb5e13&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=JEEmtpwBdRzUAaSgSj%2BInFr%2FXVrq%2FGEnlO%2BBR0Vn2WPZviuRRGBcNak602QhvQb8u%2FdxqHTZrBydiRjks0lhqzOcfTB5wylyY514oOlFbvdgj5JA7le9JRwvs1Y69AoFc7T3DHwK6xlVs3iUwjwf%2FT57Ag8TqAaMYr5%2FEwg1UVJ%2Fw9AoTtTZ2dWjIzzlVvwg%2FbeA4zlhqBW9cbQX57gYMZTg3pFAkRm1C56k36qaZ47dFVQR3d4DujHEaKFKYOBAahNKg1mpGDUvn4YuDlV5JBzgyv9fXmrvkaH88sggLx9p0%2Fpt6DPt9SHyWUg6cbJPuh2kHv9zhDaVrsor4ZQnww%3D%3D
+4/18/2022 13:29:18 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Gradebook	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/1c6cc270-68dc-4e05-b155-424a41ce73dd
+4/18/2022 13:41:43 PM	Sakai @ UNC-Chapel Hill : COMP533.001.SP22 : Overview	https://sakai.unc.edu/portal/site/85a5fe43-6f9a-4650-b9b0-ad54401fbda1
+4/18/2022 13:41:46 PM	Sakai @ UNC-Chapel Hill : COMP533.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/85a5fe43-6f9a-4650-b9b0-ad54401fbda1/tool/6fdb19b7-0a65-4d5a-a320-8cc3c858c33a
+4/18/2022 13:41:53 PM	Sakai @ UNC-Chapel Hill : COMP533.001.SP22 : Gradebook	https://sakai.unc.edu/portal/site/85a5fe43-6f9a-4650-b9b0-ad54401fbda1/tool/3d4e1918-5c52-4e81-bf44-bf57f34a2eb3
+4/18/2022 13:46:00 PM	COMP 533 (17 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7
+4/18/2022 14:09:05 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Gradebook	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049
+4/18/2022 14:09:29 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625
+4/18/2022 14:09:27 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625?panel=Main
+4/18/2022 14:09:29 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool-reset/fa572230-b29f-4781-bb97-8e292ad9f625
+4/18/2022 14:09:05 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Gradebook	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/1c6cc270-68dc-4e05-b155-424a41ce73dd
+4/18/2022 14:09:15 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625?assignmentReference=/assignment/a/9a8c1503-90ae-4047-9576-bb2caf0f2049/5f9fd747-2f9c-4d64-9aad-9bb1b0731436&sakai_action=doView_submission
+4/18/2022 14:09:27 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625?assignmentReference=/assignment/a/9a8c1503-90ae-4047-9576-bb2caf0f2049/4126fe47-3281-415c-aee2-6c51d8669a5c&sakai_action=doView_submission
+4/18/2022 14:21:01 PM	COMP 533 (17 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=119
+4/18/2022 14:21:03 PM	6DistributedNIOTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/15-G2ffLtb5MBg6PbgqnXr-v-s_nSm_zX?rtpof=true&authuser=dewan%40cs.unc.edu&usp=drive_fs
+4/18/2022 14:21:04 PM	6DistributedNIOTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/u/0/d/15-G2ffLtb5MBg6PbgqnXr-v-s_nSm_zX/edit?rtpof=true&usp=drive_fs
+4/18/2022 14:21:04 PM	6DistributedNIOTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/15-G2ffLtb5MBg6PbgqnXr-v-s_nSm_zX/edit?rtpof=true
+4/18/2022 14:21:17 PM	6DistributedNIOTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/15-G2ffLtb5MBg6PbgqnXr-v-s_nSm_zX/edit

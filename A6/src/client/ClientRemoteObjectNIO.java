@@ -26,8 +26,10 @@ import util.annotations.Tags;
 import util.interactiveMethodInvocation.IPCMechanism;
 import util.tags.DistributedTags;
 import util.trace.port.consensus.ProposalLearnedNotificationReceived;
+import util.trace.port.consensus.ProposalMade;
 import util.trace.port.consensus.ProposedStateSet;
 import util.trace.port.consensus.RemoteProposeRequestSent;
+import util.trace.port.consensus.communication.CommunicationStateNames;
 
 @Tags({ DistributedTags.CLIENT_REMOTE_OBJECT, DistributedTags.RMI, DistributedTags.GIPC, DistributedTags.NIO })
 public class ClientRemoteObjectNIO extends ClientRemoteObject implements ClientRemoteInterfaceNIO{
@@ -113,6 +115,18 @@ public class ClientRemoteObjectNIO extends ClientRemoteObject implements ClientR
 		ByteBuffer copy = MiscAssignmentUtils.deepDuplicate(aMessage);
 		boundedBuffer.add(copy);
 		
+		//TODO NEED TO PARSE THE PROPOSAL NUMBER
+		String aMessageString = new String(copy.array());
+		System.out.println(aMessageString);
+		int aProposalNumber = Integer.parseInt( aMessageString.substring(aMessageString.length()-1) );
+		aMessageString =  aMessageString.substring(0, aMessageString.length()-1);
+		System.out.println("CLIENT COMMAND: "+aMessageString);
+		//int aProposalNumber = 0;
+		
+		//ByteBuffer bufferCommand = ByteBuffer.wrap(aMessageString.getBytes());
+		//boundedBuffer.add(bufferCommand);
+		
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, aMessageString);
 		reader.notifyThread();	
 		
 	}
@@ -125,20 +139,25 @@ public class ClientRemoteObjectNIO extends ClientRemoteObject implements ClientR
 	
 	@Override
 	public void simulationCommand(String aCommand) {
-
+		String originalCommand = aCommand;
 		IPCMechanism mechanism = getIPCMechanism();
 		System.out.println("IPC Mechanism: " + mechanism.toString());
 
 		// IPC Mechanism Change
 		ProposedStateSet.newCase(this, super.CLIENT_NAME, super.aProposalNumber, mechanism);
 		try {
-
+			
+			RemoteProposeRequestSent.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
 			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);
+			
 		} catch (RemoteException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
+		aProposalNumber = 1 + aProposalNumber;
+		System.out.println("A PROPOSAL NUMBER: "+aProposalNumber);
+		
 		if (!mechanism.toString().equals("NIO")) {
 			System.out.println("IPC Mechanism is GIPC or RMI");
 			super.simulationCommand(aCommand);
@@ -146,18 +165,21 @@ public class ClientRemoteObjectNIO extends ClientRemoteObject implements ClientR
 		}
 
 		commandProcessor.removePropertyChangeListener(clientOutCoupler);
-		
+		aCommand = aCommand.concat(String.valueOf(aProposalNumber));
+		System.out.println("COMMAND + PROPOSAL NUMBER:"+aCommand);
 		ByteBuffer bufferCommand = ByteBuffer.wrap(aCommand.getBytes());
-		RemoteProposeRequestSent.newCase(this, CLIENT_NAME, aProposalNumber, aCommand);
+		//RemoteProposeRequestSent.newCase(this, CLIENT_NAME, aProposalNumber, aCommand);
+		ProposalMade.newCase(this, CommunicationStateNames.COMMAND, -1, originalCommand);
 		nioManager.write(socketChannel, bufferCommand, this);
+	
 
 		
 		
 		
-		commandProcessor.setInputString(aCommand); // all commands go to the first command window
+		commandProcessor.setInputString(originalCommand); // all commands go to the first command window
 		
 		commandProcessor.addPropertyChangeListener(clientOutCoupler);
-		aProposalNumber = 1 + aProposalNumber;
+		
 	}
 	
 	@Override

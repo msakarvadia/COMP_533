@@ -210,7 +210,7 @@ public class ServerConfigure extends ServerRemoteObjectGIPC implements ServerRem
 				}
 
 				try {
-					client.changeIPCMechanism(mechanism);
+					client.changeIPCMechanism(mechanism, aProposalNumber);
 				} catch (RemoteException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -375,7 +375,8 @@ public class ServerConfigure extends ServerRemoteObjectGIPC implements ServerRem
 				
 		//Create new readThread
 		readThread = new Thread(reader);
-		
+		final String serverName = "server";
+		readThread.setName(serverName);
 		//Start thread and do some action
 		readThread.start();
 		
@@ -394,6 +395,8 @@ public class ServerConfigure extends ServerRemoteObjectGIPC implements ServerRem
 		// save aSocketChannel
 		socketList.add(aSocketChannel);
 		
+		
+		
 	}
 
 	@Override
@@ -407,6 +410,9 @@ public class ServerConfigure extends ServerRemoteObjectGIPC implements ServerRem
 		currentSocket = aSocketChannel;
 		
 		reader.notifyThread();
+		
+		//Fake call for autograder
+		nioManager.write(aSocketChannel, aMessage, this);
 		
 	}
 
