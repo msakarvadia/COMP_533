@@ -1,0 +1,4 @@
+Id,Prediction,Date,File,StartTime,ElapsedTime,BusyTime,Commands,editOrInsertPercentage,debugPercentage,navigationPercentage,focusPercentage,removePercentage,editPercentage,COMMAND_RATE,NAVIGATION_RATE,DEBUG_RATE,FOCUS_RATE,EDIT_RATE,REMOVE_RATE,INSERT_RATE,webLinkTimes,Web Page Visits
+1,,Mon Apr 18 19:27:20 EDT 2022,ClientRemoteObjectNIO.java,1650324440219,1717558,0,(F)2,0.0,0.0,0.0,100.0,0.0,0.0,0.0011648223645894002,0.0,0.0,0.0011648223645894002,0.0,0.0,0.0,5.0,[]
+,/modelData/A0UserStudy2010.arff,Mon Apr 18 19:27:20 EDT 2022,ClientRemoteObjectNIO.java, 1650324440219
+2,,Mon Apr 18 19:55:57 EDT 2022,ClientRemoteObjectNIO.java,1650326157777,40099,0,(F)1(D)1(F)1,0.0,33.33333333333333,0.0,66.66666666666666,0.0,0.0,0.075,0.0,0.025,0.05,0.0,0.0,0.0,0.0,[]
