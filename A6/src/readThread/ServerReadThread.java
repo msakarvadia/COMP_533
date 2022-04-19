@@ -12,7 +12,9 @@ import nioExample.NIOManagerPrintServer;
 import server.remote.ServerRemoteObjectNIO;
 import util.annotations.Tags;
 import util.tags.DistributedTags;
+import util.trace.port.consensus.ProposalLearnedNotificationSent;
 import util.trace.port.consensus.ProposalMade;
+import util.trace.port.consensus.RemoteProposeRequestReceived;
 import util.trace.port.consensus.communication.CommunicationStateNames;
 
 
@@ -59,14 +61,24 @@ public class ServerReadThread implements ReadThreadInterface{
 			ByteBuffer copy = MiscAssignmentUtils.deepDuplicate(originalMessage);
 			ArrayBlockingQueue<ByteBuffer> boundedBufferFake = new ArrayBlockingQueue<ByteBuffer>(500);
 			boundedBufferFake.add(originalMessage);
+			
+			String aMessageString = new String(originalMessage.array());
+					
+			int aProposalNumber = Integer.parseInt( aMessageString.substring(aMessageString.length()-1) );
+			aMessageString =  aMessageString.substring(0, aMessageString.length()-1);
 			///
 			// Echo recieve message to all clients (except original message sender)
 			
-			ProposalMade.newCase(this, CommunicationStateNames.COMMAND, -1, originalMessage.array());
+			//ProposalMade.newCase(this, CommunicationStateNames.COMMAND, -1, originalMessage.array());
 			
 			for (SocketChannel socket : socketList) {
 				if (!socket.equals(currentSocket)) {
+					///
+					RemoteProposeRequestReceived.newCase(this, server.SERVER_NAME, aProposalNumber, aMessageString);
+					//ProposalMade.newCase(this, CommunicationStateNames.COMMAND, aProposalNumber, aMessageString);
+					ProposalLearnedNotificationSent.newCase(this, server.SERVER_NAME, aProposalNumber, aMessageString);
 					
+					///
 					nioManager.write(socket, originalMessage, server);
 				}
 			}

@@ -181,6 +181,18 @@ public class ClientRemoteObjectNIO extends ClientRemoteObject implements ClientR
 	public HalloweenCommandProcessor getCommandProcessor() {
 		return commandProcessor;
 	}
+
+	@Override
+	public void simulationCommand1(String aCommand) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void nioInit(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
 		
 
 

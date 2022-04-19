@@ -42,15 +42,16 @@ public class AnNIOManagerPrintServer implements NIOManagerPrintServer {
 		initialize(aServerPort);
 	}
 
-	protected void setFactories() {
+	void setFactories() {
 		AcceptCommandFactorySelector.setFactory(new AnAcceptCommandFactory(SelectionKey.OP_READ));
 	}
-	protected void setTracing() {
+	
+	void setTracing() {
 		FactoryTraceUtility.setTracing();
 		NIOTraceUtility.setTracing();
 	}
 
-	protected void initialize(int aServerPort) {
+	void initialize(int aServerPort) {
 		try {
 			ServerSocketChannel aServerFactoryChannel = ServerSocketChannel.open();
 			InetSocketAddress anInternetSocketAddress = new InetSocketAddress(aServerPort);

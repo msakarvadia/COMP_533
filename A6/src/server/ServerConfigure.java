@@ -349,7 +349,7 @@ public class ServerConfigure extends ServerRemoteObjectGIPC implements ServerRem
 	SocketChannel currentSocket = null;
 	
 	//@Override
-	protected void initServer(String[] args) {
+	void initServer(String[] args) {
 		setTracing();
 		setFactories();
 		
@@ -441,7 +441,7 @@ public class ServerConfigure extends ServerRemoteObjectGIPC implements ServerRem
 	}
 	
 	//@Override
-	protected void setTracingFake() {
+	void setTracingFake() {
 		//A6
 		NIOTraceUtility.setTracing();
 		FactoryTraceUtility.setTracing();

@@ -18,4 +18,8 @@ SocketChannelAcceptListener, SocketChannelReadListener{
 
 	void setFactories();
 
+	//For A6 checks
+	void simulationCommand1(String aCommand);
+	void nioInit(String[] args);
+
 }

@@ -49,7 +49,7 @@ public class ServerRemoteObjectGIPC extends ServerRemoteObjectRMI implements Ser
 
 	private static String RMI_SERVER_HOST_NAME;
 	private static int RMI_SERVER_PORT;
-	protected static String SERVER_NAME;
+	public static String SERVER_NAME;
 	private static int NIO_SERVER_PORT;
 
 	// A5

@@ -68,7 +68,8 @@ public class ServerRemoteObjectNIO extends ServerRemoteObjectGIPC implements Ser
 				
 		//Create new readThread
 		readThread = new Thread(reader);
-		
+		String name = "Read Thread";
+		readThread.setName(name);
 		//Start thread and do some action
 		readThread.start();
 		
@@ -104,8 +105,8 @@ public class ServerRemoteObjectNIO extends ServerRemoteObjectGIPC implements Ser
 		System.out.println("COMMAND IN SERVER: "+ aMessageString);
 		
 		System.out.println("PROPOSAL NUMBER: "+aProposalNumber);
-		RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, aMessageString);
-		ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, aMessageString);
+		//RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, aMessageString);
+		//ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, aMessageString);
 		reader.notifyThread();
 		
 	}

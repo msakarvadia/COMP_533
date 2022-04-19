@@ -59,12 +59,12 @@ SocketChannelAcceptListener, SocketChannelReadListener, FakeClientInterface{
 		}
 	}
 
-	protected void setTracing() {
+	void setTracing() {
 		FactoryTraceUtility.setTracing();
 		NIOTraceUtility.setTracing();
 	}
 
-	protected void initialize(int aServerPort) {
+	void initialize(int aServerPort) {
 		try {
 			socketChannel = SocketChannel.open();
 			InetAddress aServerAddress = InetAddress.getByName("localhost");

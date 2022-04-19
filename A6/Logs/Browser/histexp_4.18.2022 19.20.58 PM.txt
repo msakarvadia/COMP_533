@@ -1,0 +1,90 @@
+4/18/2022 20:43:21 PM	COMP 533 (17 unread)	https://piazza.com/class/kxx594eo8fl3y2
+4/18/2022 20:43:24 PM	COMP 533 (17 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7
+4/18/2022 22:07:10 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+4/18/2022 22:07:10 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1
+4/18/2022 22:07:17 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Overview	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049
+4/18/2022 22:07:18 PM		https://sakai.unc.edu/portal/tool/dade49b9-d1b7-4801-97e0-e2e750d0c69b/synMainLite?time=1
+4/18/2022 22:07:24 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625
+4/18/2022 22:07:19 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Gradebook	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/1c6cc270-68dc-4e05-b155-424a41ce73dd
+4/18/2022 22:07:07 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=fZJbb4IwGIb%2FCum9FBoZ0ggJ04uZuEmE7WI3S4XP0Qxa1q%2Fs8O%2BH4oxLFpPe9T30fdI5irbpeNrbWm3hvQe0zlfbKOTHi5j0RnEtUCJXogXktuR5er%2FmzPV4Z7TVpW6IkyKCsVKrhVbYt2ByMB%2ByhMftOia1tR1ySlG8Cen2qnSh6mley91ON2BrF1HTQyij2SYviLMcXiGVOORduFGfvbLq6FC%2Blw2cjFuopIHS0jzfEGe1jMmLv2f7kE2jwC8hYkHAhH8TRlFQzrww8mE2yBB7WCm0QtmYMI%2BxiTed%2BFHhMe6Fw3kmTnbaeCtVJdXrdSC7UYT8riiyyTjmCQwehwwCkswPWPmx2FyAvh4rfumS5H%2BWeGY5pxcFY1vHH4bE1TLTjSy%2FnbRp9OfCgLAQE5%2FQZLT8%2FQPJDw%3D%3D&RelayState=ss%3Amem%3A730afac725b454a3f7f3b72e76b01a402a6d725e592f9616e258f317ba6280f7&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=K2IZv6ECIddiPPKI58kZd4%2BNqVx54M57t6LA0xiV1VF4dM35K4zbpubM0hl3sa9mLY4D04i2RB9F9JYkmi7lrQlIZnh0eGL7L9GXzVyWExP3Ok1wQV1gH5i5TgaIx8mrb87MbzyyWYIizwcGmxAY2mhWHVUVgNxkC%2F8JS%2Fmlma%2BHInql5Xdsf3hD0DftB452llGRMuwobqCBl6H88zCvFYbky8b4%2FFhb5YHv%2BzVD2qeFLsPI7m0m2ruKEwqaTPmhDMyVnL6dvQvYOYofztuGTAnwJyeHF6nEhQV2tokLU9o%2F8euSjchysXQVYQlWQOwP4XhP0vk0q5iuIERTXdWt4A%3D%3D
+4/18/2022 22:53:30 PM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Overview	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e
+4/18/2022 22:53:31 PM		https://sakai.unc.edu/portal/tool/03d1a84e-4038-4d16-bc52-7670745b07af/synMainLite?time=1
+4/18/2022 22:54:00 PM	Sakai @ UNC-Chapel Hill : COMP533.001.SP22 : Overview	https://sakai.unc.edu/portal/site/85a5fe43-6f9a-4650-b9b0-ad54401fbda1
+4/18/2022 22:54:01 PM	Sakai @ UNC-Chapel Hill : COMP533.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/85a5fe43-6f9a-4650-b9b0-ad54401fbda1/tool/6fdb19b7-0a65-4d5a-a320-8cc3c858c33a
+4/18/2022 23:02:30 PM	Sakai @ UNC-Chapel Hill : COMP533.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/85a5fe43-6f9a-4650-b9b0-ad54401fbda1/tool/6fdb19b7-0a65-4d5a-a320-8cc3c858c33a?panel=Main
+4/18/2022 23:02:25 PM	Sakai @ UNC-Chapel Hill : COMP533.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/85a5fe43-6f9a-4650-b9b0-ad54401fbda1/tool/6fdb19b7-0a65-4d5a-a320-8cc3c858c33a?panel=Main#attachmentspanel
+4/18/2022 23:03:04 PM	7ConsensusAtomicityTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kghnprQ0qxu_MA3h5e_OfbHoiFH2PUUg/edit?rtpof=true
+4/18/2022 23:03:11 PM	7ConsensusAtomicityTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kghnprQ0qxu_MA3h5e_OfbHoiFH2PUUg/edit
+4/18/2022 22:54:03 PM	Sakai @ UNC-Chapel Hill : COMP533.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/85a5fe43-6f9a-4650-b9b0-ad54401fbda1/tool/6fdb19b7-0a65-4d5a-a320-8cc3c858c33a?assignmentReference=/assignment/a/85a5fe43-6f9a-4650-b9b0-ad54401fbda1/8b0be0aa-7069-470a-9cef-656bd989edf6&sakai_action=doView_assignment_honorPledge
+4/18/2022 23:02:59 PM	COMP 533 (16 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=130
+4/18/2022 23:03:04 PM	7ConsensusAtomicityTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kghnprQ0qxu_MA3h5e_OfbHoiFH2PUUg?rtpof=true&authuser=dewan%40cs.unc.edu&usp=drive_fs
+4/18/2022 23:03:04 PM	7ConsensusAtomicityTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/u/0/d/1kghnprQ0qxu_MA3h5e_OfbHoiFH2PUUg/edit?rtpof=true&usp=drive_fs
+4/18/2022 23:06:11 PM	Lectures - Google Drive	https://drive.google.com/drive/folders/14bIoaPQLNDP9Oxv1-LtgKhevNiICuqPr
+4/18/2022 23:06:19 PM	12-RemoteAssignment-NIO.pptx - Google Slides	https://docs.google.com/presentation/d/1kaEl7S1WcfzNu9kYHNrCJHJbiwNphaIv/edit?usp=drive_web&ouid=115705987000692215284&rtpof=true
+4/18/2022 23:06:19 PM	12-RemoteAssignment-NIO.pptx - Google Slides	https://docs.google.com/presentation/d/1kaEl7S1WcfzNu9kYHNrCJHJbiwNphaIv/edit?rtpof=true
+4/18/2022 23:06:21 PM	12-RemoteAssignment-NIO.pptx - Google Slides	https://docs.google.com/presentation/d/1kaEl7S1WcfzNu9kYHNrCJHJbiwNphaIv/edit
+4/18/2022 23:06:21 PM	12-RemoteAssignment-NIO.pptx - Google Slides	https://docs.google.com/presentation/d/1kaEl7S1WcfzNu9kYHNrCJHJbiwNphaIv/edit#slide=id.p1
+4/18/2022 23:06:24 PM	12-RemoteAssignment-NIO.pptx - Google Slides	https://docs.google.com/presentation/d/1kaEl7S1WcfzNu9kYHNrCJHJbiwNphaIv/edit#slide=id.p2
+4/18/2022 23:06:26 PM	12-RemoteAssignment-NIO.pptx - Google Slides	https://docs.google.com/presentation/d/1kaEl7S1WcfzNu9kYHNrCJHJbiwNphaIv/edit#slide=id.p3
+4/18/2022 23:15:30 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+4/18/2022 23:15:34 PM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Overview	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e
+4/18/2022 23:15:36 PM		https://sakai.unc.edu/portal/tool/03d1a84e-4038-4d16-bc52-7670745b07af/synMainLite?time=1
+4/18/2022 23:15:38 PM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Resources	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/tool/2993181b-1f9f-4173-a6fa-8ecf7045d843
+4/18/2022 23:15:42 PM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Resources	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/tool/2993181b-1f9f-4173-a6fa-8ecf7045d843#
+4/18/2022 23:15:42 PM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Resources	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/tool/2993181b-1f9f-4173-a6fa-8ecf7045d843?panel=Main
+4/18/2022 23:14:26 PM	12-RemoteAssignment-NIO-2.pptx - Google Slides	https://docs.google.com/presentation/d/1EospYt94TnB_0A9lMDIB9GlQ6kSbU7nG/edit?usp=drive_web&ouid=115705987000692215284&rtpof=true
+4/18/2022 23:14:26 PM	12-RemoteAssignment-NIO-2.pptx - Google Slides	https://docs.google.com/presentation/d/1EospYt94TnB_0A9lMDIB9GlQ6kSbU7nG/edit?rtpof=true
+4/18/2022 23:14:29 PM	12-RemoteAssignment-NIO-2.pptx - Google Slides	https://docs.google.com/presentation/d/1EospYt94TnB_0A9lMDIB9GlQ6kSbU7nG/edit
+4/18/2022 23:14:30 PM	12-RemoteAssignment-NIO-2.pptx - Google Slides	https://docs.google.com/presentation/d/1EospYt94TnB_0A9lMDIB9GlQ6kSbU7nG/edit#slide=id.p1
+4/18/2022 23:14:31 PM	12-RemoteAssignment-NIO-2.pptx - Google Slides	https://docs.google.com/presentation/d/1EospYt94TnB_0A9lMDIB9GlQ6kSbU7nG/edit#slide=id.p2
+4/18/2022 23:14:36 PM	12-RemoteAssignment-NIO-2.pptx - Google Slides	https://docs.google.com/presentation/d/1EospYt94TnB_0A9lMDIB9GlQ6kSbU7nG/edit#slide=id.p17
+4/18/2022 23:14:21 PM	12-RemoteAssignment-NIO.pptx - Google Slides	https://docs.google.com/presentation/d/1kaEl7S1WcfzNu9kYHNrCJHJbiwNphaIv/edit#slide=id.p34
+4/18/2022 23:14:43 PM	12-RemoteAssignment-NIO-2.pptx - Google Slides	https://docs.google.com/presentation/d/1EospYt94TnB_0A9lMDIB9GlQ6kSbU7nG/edit#slide=id.p22
+4/18/2022 23:15:30 PM		https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=fZJdT4MwFIb%2FCun9KDB0oxkkuF24ZDoy0AtvTCln0ggt9hQ%2F%2Fr1sTDMTs%2Bu%2BH32fnAXytulY2tta7eCtB7TOZ9soZMeHmPRGMc1RIlO8BWRWsDy927DA9VhntNVCN8RJEcFYqdVSK%2BxbMDmYdyngYbeJSW1th4xS5K9cur0SLlQ9zWtZlroBW7uImh5CA5pt84I4q%2BEXUvFD3pkb9a9XVh0dyveygZNxB5U0ICzN8y1x1quYPPvXPp9GPPL3cz8Us6AMRRiE0XzGPa%2BcRXyQIfawVmi5sjEJvCCYeOHEjwpvyvwrNvWeiJOdNt5IVUn1chlIOYqQ3RZFNhnHPILB45BBQJLFASs7Fpsz0Jdj%2BQ9dkvzPEn9ZLuhZwdjWsfshcb3KdCPFl5M2jf5YGuAWYuITmoyWvzeQfAM%3D&RelayState=ss%3Amem%3A319a004c56b869f74ff93804350a05a1a924d97611a0199ec9fbd4822fefec2b&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=OeHJP4Pc5PFoboBPFXhFm0zvE8%2FsMvnqpIP5F9ElCF6DJnNPAgE%2Ft1aJDoyNWvIKe1I8AFol2qu2%2BV6qfNHQkX8gkbzzz5eFhZj3vxLbCbS7YeLghJzyvv24q82NEZ42ibsZii%2FJCC9ZZTSw9O3i4ChxijaFa99XHjsRIUIj2SAzK1x8APu%2Fq6zAOg%2BZm79AGUmbXFC8a8234BXC3%2B1nygTjkBsOzEybR%2BpE616Vg%2FUfQDvqmtk55c8Uxiswc6IuhpsQb7POsgE5Z4eZGvvtI7uGOzTKgRRfYvh0v4uQK2PoCeLz6XAhl8DrupbRhlgKngzWLv7CaTha9hElVXH2mQ%3D%3D
+4/18/2022 23:15:37 PM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Messages	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/tool/d3c1ab40-53a7-43c1-99eb-9333dccdd3f8
+4/19/2022 09:02:44 AM	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+4/19/2022 09:02:51 AM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/portal
+4/19/2022 09:02:44 AM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1
+4/19/2022 09:56:02 AM	COMP 533 (16 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7
+4/19/2022 09:55:59 AM	7ConsensusAtomicityTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kghnprQ0qxu_MA3h5e_OfbHoiFH2PUUg/edit
+4/19/2022 10:00:03 AM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7
+4/19/2022 09:59:10 AM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=134
+4/19/2022 10:16:37 AM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7
+4/19/2022 10:17:17 AM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=119
+4/19/2022 10:17:20 AM	6DistributedNIOTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/15-G2ffLtb5MBg6PbgqnXr-v-s_nSm_zX?rtpof=true&authuser=dewan%40cs.unc.edu&usp=drive_fs
+4/19/2022 10:17:20 AM	6DistributedNIOTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/u/0/d/15-G2ffLtb5MBg6PbgqnXr-v-s_nSm_zX/edit?rtpof=true&usp=drive_fs
+4/19/2022 10:17:20 AM	6DistributedNIOTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/15-G2ffLtb5MBg6PbgqnXr-v-s_nSm_zX/edit?rtpof=true
+4/19/2022 10:17:29 AM	6DistributedNIOTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/15-G2ffLtb5MBg6PbgqnXr-v-s_nSm_zX/edit
+4/19/2022 10:16:43 AM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=134
+4/19/2022 10:18:43 AM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=135
+4/19/2022 10:22:54 AM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=105
+4/19/2022 10:22:46 AM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=118
+4/19/2022 10:28:26 AM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7
+4/19/2022 10:28:17 AM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=125
+4/19/2022 10:28:25 AM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=135
+4/19/2022 10:40:01 AM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7
+4/19/2022 10:40:05 AM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=135
+4/19/2022 12:04:49 PM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2
+4/19/2022 12:29:16 PM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=6
+4/19/2022 12:04:42 PM	Piazza • Ask. Answer. Explore. Whenever.	https://piazza.com/
+4/19/2022 13:13:05 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+4/19/2022 13:13:05 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1
+4/19/2022 13:13:09 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Overview	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049
+4/19/2022 13:13:10 PM		https://sakai.unc.edu/portal/tool/dade49b9-d1b7-4801-97e0-e2e750d0c69b/synMainLite?time=1
+4/19/2022 13:13:24 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/fa572230-b29f-4781-bb97-8e292ad9f625
+4/19/2022 13:13:33 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Gradebook	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/1c6cc270-68dc-4e05-b155-424a41ce73dd
+4/19/2022 13:13:03 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=fZJdT4MwFIb%2FCun9VkDmWDNIcLtwyXRkoBfemAIHaSwt9hQ%2F%2Fr1sTDMTs%2Bu%2BH32fnCXyVnYs6W2j9vDWA1rns5UK2fEhIr1RTHMUyBRvAZktWZbcbZk%2FdVlntNWllsRJEMFYodVKK%2BxbMBmYd1HCw34bkcbaDhmlyF%2B5mPaqnELV06wRRaEl2GaKqOkh1KfpLsuJsx5%2BIRQ%2F5J25Uf96RdXRobwWEk7GPVTCQGlplu2Is1lH5Nm%2F9ioIwiqoeR36LvdnRT0LYR4uoHJrDwYZYg8bhZYrGxHf9f2JG0y8Re7NmXfF3OCJOOlp441QlVAvl4EUowjZbZ6nk3HMIxg8DhkEJF4esLJjsTkDfTmW%2F9Al8f8s8Zflkp4VjG0dux8SN%2BtUS1F%2BOYmU%2BmNlgFuIiEdoPFr%2B3kD8DQ%3D%3D&RelayState=ss%3Amem%3Abfe5ece6f9a39398dfa87dfde8fc10c63b42a12274d3694ab313b9492d4677bd&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=nYlWIaS3CJbZ3a2jheeuay9bg1dA12BbMBp9qf%2F56XcmAlf7v%2BK1aCbCOo2m1%2Bt37MUlf2kn0twM7d8f7W4IgWA96lvQheA3CEkzl6S69GYxcxqLonRLp3cyUOfXhjCVrJYHZ9d%2BDhtPMecPk3Rwe3Jcob3fUN2fks9DWwK%2FLtXDlHA1VfuO50a4iltR%2BVz8yE7fC%2FPWGeAOoXEtPnRYEeoC%2B6V%2BMBUUyvBesMJBWeYJjeDOOytzbGm4LrjcZWP5GwACYiqK495wyopIskQC3zRqCvHbkGPCboM4zKGr0D512YPxauEjKglTOhYepbbAXEUYcbYWy8SFulMnsgA2JQ%3D%3D
+4/19/2022 13:22:19 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Gradebook	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/1c6cc270-68dc-4e05-b155-424a41ce73dd/gradebook
+4/19/2022 13:26:18 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Syllabus	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/f1f809c8-7550-4a87-bd54-9c3109f8b86f
+4/19/2022 13:26:20 PM	SPR2022 - Syllabus - MATH 566 - Introduction to Numerical Analysis - Google Docs	https://docs.google.com/document/d/1FqM5EdTDM3AdOUJWmfHBnUB5eBpMhv_4A0bdcEUvYTE/edit?usp=sharing
+4/19/2022 13:26:20 PM	SPR2022 - Syllabus - MATH 566 - Introduction to Numerical Analysis - Google Docs	https://docs.google.com/document/d/1FqM5EdTDM3AdOUJWmfHBnUB5eBpMhv_4A0bdcEUvYTE/edit
+4/19/2022 13:25:52 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Gradebook	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/1c6cc270-68dc-4e05-b155-424a41ce73dd/gradebook
+4/19/2022 13:33:12 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+4/19/2022 13:33:14 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Syllabus	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049
+4/19/2022 13:33:19 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Gradebook	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/1c6cc270-68dc-4e05-b155-424a41ce73dd
+4/19/2022 13:42:46 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+4/19/2022 13:42:50 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Gradebook	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049
+4/19/2022 13:54:55 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+4/19/2022 13:55:00 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Gradebook	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049
+4/19/2022 13:45:37 PM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=14
+4/19/2022 13:55:00 PM	Sakai @ UNC-Chapel Hill : MATH566.001.SP22 : Gradebook	https://sakai.unc.edu/portal/site/9a8c1503-90ae-4047-9576-bb2caf0f2049/tool/1c6cc270-68dc-4e05-b155-424a41ce73dd

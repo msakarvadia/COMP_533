@@ -221,7 +221,7 @@ public class ClientConfigure  extends ClientRemoteObject implements ClientRemote
 		
 	}
 	
-	//@Override
+	@Override
 	/*
 	 * You will need to delay not command input but sends(non-Javadoc)
 	 */
@@ -303,7 +303,7 @@ public class ClientConfigure  extends ClientRemoteObject implements ClientRemote
 	ReadThreadInterface reader = null;
 	Thread readThread = null;
 	
-	//@Override
+	@Override
 	public void nioInit(String[] args) {
 		setTracing();
 		setFactories();
