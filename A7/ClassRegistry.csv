@@ -1,0 +1,11 @@
+client.ClientConfigure,@DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT
+client.Client,@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO+@DistributedTags.CLIENT+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT
+client.ClientOutCoupler,@DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO
+server.remote.ServerRemoteInterfaceGIPC,@DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.GIPC
+registry.TrickOrTreatRegistry,@DistributedTags.REGISTRY+@DistributedTags.RMI
+client.ClientRemoteInterfaceRMI,@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI
+server.ServerConfigure,@DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT
+client.ClientRemoteInterfaceGIPC,@DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.GIPC
+client.ClientRemoteObject,@DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT
+server.Server,@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO+@DistributedTags.SERVER
+server.remote.ServerRemoteObjectGIPC,@DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT

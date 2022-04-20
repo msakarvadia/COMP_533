@@ -1,0 +1,2 @@
+Id,Prediction,Date,File,StartTime,ElapsedTime,BusyTime,Commands,editOrInsertPercentage,debugPercentage,navigationPercentage,focusPercentage,removePercentage,editPercentage,COMMAND_RATE,NAVIGATION_RATE,DEBUG_RATE,FOCUS_RATE,EDIT_RATE,REMOVE_RATE,INSERT_RATE,webLinkTimes,Web Page Visits
+7,,Wed Apr 13 10:59:01 EDT 2022,Client.java,1649861941259,27966,0,(F)1(I)2(F)5,0.25,0.0,0.0,75.0,0.0,0.0,0.2962962962962963,0.0,0.0,0.2222222222222222,0.0,0.0,0.07407407407407407,0.0,[]

@@ -1,0 +1,22 @@
+3/31/2022 12:29:10 PM	COMP 533 (16 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=6
+3/31/2022 12:29:37 PM	COMP 533 (16 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=13
+3/31/2022 12:29:40 PM	COMP 533 (16 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=14
+3/31/2022 12:29:35 PM	COMP 533 (16 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=94
+3/31/2022 12:43:12 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+3/31/2022 12:43:12 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1
+3/31/2022 12:43:18 PM	Sakai @ UNC-Chapel Hill : COMP533.001.SP22 : Overview	https://sakai.unc.edu/portal/site/85a5fe43-6f9a-4650-b9b0-ad54401fbda1
+3/31/2022 12:43:20 PM	Sakai @ UNC-Chapel Hill : COMP533.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/85a5fe43-6f9a-4650-b9b0-ad54401fbda1/tool/6fdb19b7-0a65-4d5a-a320-8cc3c858c33a
+3/31/2022 12:43:21 PM	Sakai @ UNC-Chapel Hill : COMP533.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/85a5fe43-6f9a-4650-b9b0-ad54401fbda1/tool/6fdb19b7-0a65-4d5a-a320-8cc3c858c33a?panel=Main
+3/31/2022 12:43:10 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=fZJdb4IwFIb%2FCum9FCjR2AgJ04uZuM0I28VulgLH0ay0rKfs498PxRmXLF73%2Fej75CxQtKrjWe8avYP3HtB5X63SyI8PCemt5kagRK5FC8hdxfPsbsMjP%2BCdNc5URhEvQwTrpNFLo7FvweZgP2QFj7tNQhrnOuSUongT0u915UPd07yRZWkUuMZHNPQQGtHtQ14QbzX8QmpxyLtwozl7Zd3RoXwvFZyMO6ilhcrRPH8g3nqVkBdRwZ5NWRmXUzEv94zVTMRhOI%2FjWTmDOh5kiD2sNTqhXUKiIIomAZuwsAinPGY8mD8Tb3vaeCN1LfXrdSDlKEJ%2BWxTbyTjmCSwehwwCki4OWPmx2F6Avh4rfumS9H%2BWeGa5oBcFY1vH74fE9WprlKy%2BvUwp87m0IBwkJCQ0HS1%2FbyD9AQ%3D%3D&RelayState=ss%3Amem%3A14043b3c6e5b7940d2a945b165f4118bd751b38d5781f8246b93abd4302830bc&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=ZRVk4fNvcHxRStdYy6YpVmoxvLQFhLlMLTUh9Hk7hoQqiDYwv1LSWZJdHmVYXhbrUuwpLdvFQ%2Bx3eegJ8IoJPFTx18uc4lP0pQvIUZuj6LS%2Big53Nl67hSaq0hX5QoSdHiFp4XGA4TpjEcopCjJVEKI7Dn49ccf4rsZ8RBXkhOJp7zrSdCSQl531a9Rh3Fh9%2F4fxdkr%2BB2P8e80DJTPu%2F94oV%2BFirRYtOch%2FCNuOgQwVE2HzRiZtNBISZLdsA%2F43%2Fd6Z5g38IH%2BNcGlGf%2Fo49uxr58qsciexvKdBs9PdEZ4IiGdgVcRxrpfIxR3p%2BgqsLWkfCWr09czH0LjA%2BbLI%2Bw%3D%3D
+3/31/2022 12:43:21 PM	Sakai @ UNC-Chapel Hill : COMP533.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/85a5fe43-6f9a-4650-b9b0-ad54401fbda1/tool/6fdb19b7-0a65-4d5a-a320-8cc3c858c33a?assignmentReference=/assignment/a/85a5fe43-6f9a-4650-b9b0-ad54401fbda1/87e85320-ac63-440a-9524-60ac1d600726&sakai_action=doView_submission
+3/31/2022 12:43:49 PM	Sakai @ UNC-Chapel Hill : COMP533.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/85a5fe43-6f9a-4650-b9b0-ad54401fbda1/tool/6fdb19b7-0a65-4d5a-a320-8cc3c858c33a?panel=Main
+3/31/2022 13:12:24 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+3/31/2022 13:12:26 PM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Overview	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e
+3/31/2022 13:12:27 PM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/tool/6c79219c-9d31-4623-990a-7a77dfc713dc
+3/31/2022 13:12:31 PM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/tool/6c79219c-9d31-4623-990a-7a77dfc713dc?panel=Main
+3/31/2022 14:18:21 PM	Top of Lenoir - Carolina Dining Services	https://dining.unc.edu/locations/top-of-lenoir/
+3/31/2022 17:01:33 PM	Graduate Student Housing Resources	https://apply-grad.uchicago.edu/share/view?id=e8f7c5fb-0062-4fd2-b85f-c9e649daf015
+3/31/2022 21:19:47 PM	HW6_soln.pdf	http://ramanujan.math.trinity.edu/rdaileda/teach/m4363s07/HW6_soln.pdf
+3/31/2022 21:28:25 PM	Microsoft Word - field.doc	http://homepages.math.uic.edu/~leon/mcs425-s08/handouts/field.pdf
+3/31/2022 21:33:45 PM	Microsoft Word - field.doc	http://homepages.math.uic.edu/~leon/mcs425-s08/handouts/field.pdf
+3/31/2022 22:38:14 PM	lecture23LatSq.pdf	https://www.math.uci.edu/~brusso/lecture23LatSq.pdf

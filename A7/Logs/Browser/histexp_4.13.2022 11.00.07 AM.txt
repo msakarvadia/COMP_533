@@ -1,0 +1,53 @@
+4/13/2022 12:53:35 PM	Sakai @ UNC-Chapel Hill : Home : Overview	https://sakai.unc.edu/sakai-login-tool/container?panel=Main
+4/13/2022 12:53:35 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1
+4/13/2022 12:53:37 PM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Overview	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e
+4/13/2022 12:53:39 PM		https://sakai.unc.edu/portal/tool/03d1a84e-4038-4d16-bc52-7670745b07af/synMainLite?time=1
+4/13/2022 12:54:05 PM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Assignments	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/tool/6c79219c-9d31-4623-990a-7a77dfc713dc
+4/13/2022 12:53:42 PM	Sakai @ UNC-Chapel Hill : MATH523.001.SP22 : Gradebook	https://sakai.unc.edu/portal/site/366d4da4-9b83-44a7-bbb1-3cfa53323c5e/tool/da6653c8-0435-4eaa-b233-ddc7b6c222ce
+4/13/2022 12:53:33 PM	UNC-Chapel Hill Single Sign-On	https://sso.unc.edu/idp/profile/SAML2/Redirect/SSO?SAMLRequest=fZJbb4IwGIb%2FCum9lIOoaYSE6cVM3EaE7WI3S4HP0ay0rF%2FZ4d8PxRmXLF73PfR98i2Rt7JjaW8btYP3HtA6X61UyI4PMemNYpqjQKZ4C8hsxfL0bssC12Od0VZXWhInRQRjhVYrrbBvweRgPkQFj7ttTBprO2SUIn%2Fjwu1V5ULd07wRZakl2MZF1PQQGtDsIS%2BIsx5%2BIRQ%2F5F24UZ%2B9ou7oUL4XEk7GHdTCQGVpnj8QZ7OOyQuHGZ%2FOZ14Q%2BWFZLTw%2F5FG0gDmvPQ7T%2FWKQIfawUWi5sjEJvCCYeNOJHxb%2BjEUhC4Nn4mSnjTdC1UK9XgdSjiJkt0WRTcYxT2DwOGQQkGR5wMqOxeYC9PVY%2FkuXJP%2BzxDPLJb0oGNs6dj8kbtaZlqL6dlIp9efKALcQE5%2FQZLT8vYHkBw%3D%3D&RelayState=ss%3Amem%3A394fb1c066cb0c04812f47a40ee86a2b3b6d3d16495997da3f6307451eb0632d&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=bbnP8ksbNCMuo1m%2FDUi%2FawQ3HMSpXzvC%2FNu0INHlr4Y7D1lwAS8tJouZISmC6L%2FH1P0XQ4hylx1NFA0XUF7XgMnjZbK8QBkh7qXu5C%2BwzuDHy9cb%2F%2FVIV8dW0fH5HzkekGwJT8xrLAXy8x7pyVkE%2BLpKTY8UxfAN5fyN%2FZ9%2FvahVJnAhQi3AemrY0wCLAYhdVV3Y%2BRbAK8Alf9%2FoNNj%2FkVg1nsRGs1MqLADPUTC9JaqCY9cWHVa0%2BOhXlvJPZb%2B7eyv23df8erG5zO8XP%2FNKs5KFKnPtl7f%2B5RwsICO7aM1goxgo%2FcRGmzxdLKKx3qztGS0fXbKvzDL9dKt0qnNg0A%3D%3D
+4/13/2022 16:55:25 PM	COMP 533 (16 unread)	https://piazza.com/class/kxx594eo8fl3y2
+4/13/2022 16:55:28 PM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=128
+4/13/2022 16:55:41 PM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=127
+4/13/2022 22:17:21 PM	School List - Google Docs	https://docs.google.com/document/d/1SNOY-Ihvq3EZI7HQdiUrR7yV2pHWt8nTYp4tx-0er2k/edit?usp=drive_web&ouid=115705987000692215284
+4/13/2022 22:17:29 PM	School List - Google Docs	https://docs.google.com/document/d/1SNOY-Ihvq3EZI7HQdiUrR7yV2pHWt8nTYp4tx-0er2k/edit
+4/14/2022 10:59:51 AM	School List - Google Docs	https://docs.google.com/document/d/1SNOY-Ihvq3EZI7HQdiUrR7yV2pHWt8nTYp4tx-0er2k/edit
+4/14/2022 11:27:21 AM	Draft_recommendation_letter_from_DrRizvi - Google Docs	https://docs.google.com/document/d/1K_kJe3uNXJkLys9phJ9ZpoL8pNimbZ_IlF96SAm8m2A/edit?usp=drive_web&ouid=115705987000692215284
+4/14/2022 11:29:18 AM	Draft_recommendation_letter_from_DrRizvi - Google Docs	https://docs.google.com/document/d/1K_kJe3uNXJkLys9phJ9ZpoL8pNimbZ_IlF96SAm8m2A/edit
+4/14/2022 11:34:50 AM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=128
+4/14/2022 12:05:56 PM	How to resolve java.rmi.NotBoundException: rmi://localhost//HelloWorld? - Stack Overflow	https://stackoverflow.com/questions/28341892/how-to-resolve-java-rmi-notboundexception-rmi-localhost-helloworld
+4/14/2022 12:05:53 PM	java.rmi.NotBoundException: localhost - Google Search	https://www.google.com/search?q=java.rmi.NotBoundException%3A+localhost&rlz=1C1CHBF_enUS939US939&oq=java.rmi.NotBoundException%3A+localhost&aqs=chrome.0.69i59.170j0j7&sourceid=chrome&ie=UTF-8
+4/14/2022 12:06:18 PM	java.rmi.NotBoundException: localhost - Google Search	https://www.google.com/search?q=java.rmi.NotBoundException%3A+localhost&rlz=1C1CHBF_enUS939US939&oq=java.rmi.NotBoundException%3A+localhost&aqs=chrome.0.69i59.170j0j7&sourceid=chrome&ie=UTF-8
+4/14/2022 12:06:21 PM	Why am I getting java.rmi.NotBoundException exception on localhost rmi test. (Distributed Java forum at Coderanch)	https://coderanch.com/t/581165/java/java-rmi-NotBoundException-exception-localhost
+4/14/2022 12:40:44 PM	6DistributedNIOTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/15-G2ffLtb5MBg6PbgqnXr-v-s_nSm_zX/edit#heading=h.30j0zll
+4/14/2022 12:40:49 PM	GIPC/src/examples/nio/manager/print/noFactory at master · pdewan/GIPC	https://github.com/pdewan/GIPC/tree/master/src/examples/nio/manager/print/noFactory
+4/14/2022 12:40:49 PM	GIPC/src/examples/nio/manager/print at master · pdewan/GIPC	https://github.com/pdewan/GIPC/tree/master/src/examples/nio/manager/print
+4/14/2022 12:40:45 PM	GIPC/src/examples/nio/manager/print/noFactory at master · pdewan/GIPC	https://www.google.com/url?q=https://github.com/pdewan/GIPC/tree/master/src/examples/nio/manager/print/noFactory&sa=D&source=docs&ust=1649958043602532&usg=AOvVaw20GbS-uDICGryjUx8gMesM
+4/14/2022 12:40:54 PM	GIPC/AnNIOManagerPrintServer.java at master · pdewan/GIPC	https://github.com/pdewan/GIPC/blob/master/src/examples/nio/manager/print/AnNIOManagerPrintServer.java
+4/14/2022 12:55:54 PM	GIPC/src/examples/nio/manager/print at master · pdewan/GIPC	https://github.com/pdewan/GIPC/tree/master/src/examples/nio/manager/print
+4/14/2022 12:55:57 PM	GIPC/AnNIOManagerPrintClient.java at master · pdewan/GIPC	https://github.com/pdewan/GIPC/blob/master/src/examples/nio/manager/print/AnNIOManagerPrintClient.java
+4/14/2022 13:01:58 PM	6DistributedNIOTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/15-G2ffLtb5MBg6PbgqnXr-v-s_nSm_zX/edit#
+4/14/2022 13:06:25 PM	GIPC/src/examples/nio/manager/print at master · pdewan/GIPC	https://github.com/pdewan/GIPC/tree/master/src/examples/nio/manager/print
+4/14/2022 13:05:01 PM	GIPC/AnNIOManagerPrintServer.java at master · pdewan/GIPC	https://github.com/pdewan/GIPC/blob/master/src/examples/nio/manager/print/AnNIOManagerPrintServer.java
+4/14/2022 13:06:27 PM	GIPC/NIOManagerPrintServerLauncher.java at master · pdewan/GIPC	https://github.com/pdewan/GIPC/blob/master/src/examples/nio/manager/print/NIOManagerPrintServerLauncher.java
+4/14/2022 13:20:17 PM	Lectures - Google Drive	https://drive.google.com/drive/folders/14bIoaPQLNDP9Oxv1-LtgKhevNiICuqPr
+4/14/2022 13:20:23 PM	Assignments - Google Drive	https://drive.google.com/drive/folders/14bJKIkxmF-1OjeBLhW7bPJKULjSxNv9j
+4/14/2022 13:20:28 PM	5DistributedGIPCTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kUgVYMyEzNH6k1ArifT8lh4hnByFHhiH/edit?rtpof=true
+4/14/2022 13:20:37 PM	5DistributedGIPCTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kUgVYMyEzNH6k1ArifT8lh4hnByFHhiH/edit
+4/14/2022 13:20:28 PM	5DistributedGIPCTrickOTreat_s22.docx - Google Docs	https://docs.google.com/document/d/1kUgVYMyEzNH6k1ArifT8lh4hnByFHhiH/edit?usp=drive_web&ouid=115705987000692215284&rtpof=true
+4/14/2022 13:25:13 PM	GIPC/src/examples/nio/manager/print at master · pdewan/GIPC	https://github.com/pdewan/GIPC/tree/master/src/examples/nio/manager/print
+4/14/2022 13:25:17 PM	GIPC/AnNIOManagerPrintClient.java at master · pdewan/GIPC	https://github.com/pdewan/GIPC/blob/master/src/examples/nio/manager/print/AnNIOManagerPrintClient.java
+4/14/2022 13:26:45 PM	(Client)java.lang.NumberFormatException: For input string: "localhost" - Google Search	https://www.google.com/search?q=(Client)java.lang.NumberFormatException%3A+For+input+string%3A+%22localhost%22&rlz=1C1CHBF_enUS939US939&oq=(Client)java.lang.NumberFormatException%3A+For+input+string%3A+%22localhost%22&aqs=chrome..69i57.252j0j7&sourceid=chrome&ie=UTF-8
+4/14/2022 13:26:46 PM	cassandra - java.lang.NumberFormatException - Stack Overflow	https://stackoverflow.com/questions/17270452/java-lang-numberformatexception
+4/14/2022 13:31:10 PM	GIPC/src/examples/nio/manager/print at master · pdewan/GIPC	https://github.com/pdewan/GIPC/tree/master/src/examples/nio/manager/print
+4/14/2022 13:31:13 PM	GIPC/NIOManagerPrintClientLauncher.java at master · pdewan/GIPC	https://github.com/pdewan/GIPC/blob/master/src/examples/nio/manager/print/NIOManagerPrintClientLauncher.java
+4/14/2022 14:25:53 PM	Slide 1	http://www.cs.unc.edu/~dewan/734/f15/lectures/9-GIPC-Dissection.pdf
+4/14/2022 14:29:22 PM	Lectures - Google Drive	https://drive.google.com/drive/folders/14bIoaPQLNDP9Oxv1-LtgKhevNiICuqPr
+4/14/2022 14:39:57 PM	InvocationTargetException (Java Platform SE 7 )	https://docs.oracle.com/javase/7/docs/api/java/lang/reflect/InvocationTargetException.html
+4/14/2022 15:09:51 PM	TrickOrTreat/AStandAloneTwoCoupledHalloweenSimulations.java at master · pdewan/TrickOrTreat	https://github.com/pdewan/TrickOrTreat/blob/master/CoupledTrickOrTreat/src/coupledsims/AStandAloneTwoCoupledHalloweenSimulations.java
+4/14/2022 15:33:47 PM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2
+4/14/2022 15:33:58 PM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=7
+4/14/2022 15:37:24 PM	COMP 533 (15 unread)	https://piazza.com/class/kxx594eo8fl3y2?cid=122
+4/14/2022 15:40:51 PM	java.lang.reflect.InvocationTargetException - Google Search	https://www.google.com/search?q=java.lang.reflect.InvocationTargetException&rlz=1C1CHBF_enUS939US939&oq=java.lang.reflect.InvocationTargetException&aqs=chrome..69i57.226j0j7&sourceid=chrome&ie=UTF-8
+4/14/2022 15:40:52 PM	What Causes java.lang.reflect.InvocationTargetException? | Baeldung	https://www.baeldung.com/java-lang-reflect-invocationtargetexception
+4/14/2022 15:47:55 PM	er) at java.base/sun.nio.ch.Net.bind0 - Google Search	https://www.google.com/search?q=er)+at+java.base%2Fsun.nio.ch.Net.bind0&rlz=1C1CHBF_enUS939US939&oq=er)%09at+java.base%2Fsun.nio.ch.Net.bind0&aqs=chrome..69i57.291j0j4&sourceid=chrome&ie=UTF-8
+4/14/2022 15:47:57 PM	Sharing my fix for the error: "java.net.BindException: Address already in use" (Example) | Treehouse Community	https://teamtreehouse.com/community/sharing-my-fix-for-the-error-javanetbindexception-address-already-in-use

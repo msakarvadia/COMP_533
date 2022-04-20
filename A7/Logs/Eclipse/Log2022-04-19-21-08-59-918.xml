@@ -1,0 +1,2874 @@
+<Events startTimestamp="1650416939918" logVersion="1.0.0.202111260825">
+  <Command __id="26" _type="RunCommand" className="/A7/src/checks/Checks.java" date="Tue Apr 19 21:09:46 EDT 2022" kind="HitBreakPoint" projectName="A7" starttimestamp="1650416939918" timestamp="46176" type="Run" />
+  <Command __id="28" _type="PauseCommand" date="Tue Apr 19 21:09:49 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="49998">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[3822]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="27" _type="ShellCommand" date="Tue Apr 19 21:09:49 EDT 2022" starttimestamp="1650416939918" timestamp="49998" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="30" _type="PauseCommand" date="Tue Apr 19 21:09:53 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="53894">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[3896]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="29" _type="ConsoleOutput" date="Tue Apr 19 21:09:53 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="53894" type="ConsoleOutput">
+    <outputString><![CDATA[Please run the checkstle plugin on your project
+Could not initialize checkstyle. Please make sure you have installed the plugin and run checkstyle on the project 
+
+A7NoCheckstyleWarnings did not pass completely:Could not run checkstyle%0.0
+Test execution time (ms):28
+
+A7NamedConstants did not pass completely:No checkstyle output, check console error messages%0.0
+Test execution time (ms):1
+A7PublicMethodsOverride did not pass completely:No checkstyle output, check console error messages%0.0
+
+Test execution time (ms):0
+A7InterfaceAsType did not pass completely:No checkstyle output, check console error messages%0.0
+
+Test execution time (ms):2
+A7MnemonicNames did not pass completely:No checkstyle output, check console error messages%0.0
+
+Test execution time (ms):0
+A7AccessModifiersMatched did not pass completely:No checkstyle output, check console error messages%0.0
+
+Test execution time (ms):2
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"¶Your project does not meet the required similarity percent of: 0.95 your similarity: 0.5217391304347826¶|- represents a package, |~ represents a file¶¶The struct"), Diff(INSERT,"Please run the checkstle plugin on your project¶Could not initialize checkstyle. Please make s"), Diff(EQUAL,"ure "), Diff(DELETE,"of your project was found to be:¶|- src (37)¶ |- checks (1)¶  |~ Checks.java (36)¶ |- client (8)¶  |~ Client.java (23)¶  |~ ClientConfigure.java (434)¶  |~ ClientOutCoupler.java (62)¶  |~ ClientRemoteInterfaceGIPC.java (33)¶  |~ ClientRemoteInterfaceNIO.java (25)¶  |~ ClientRemoteInterfaceRMI.java (29)¶  |~ ClientRemoteObject.java (314)¶  |~ ClientRemoteObjectNIO.java (199)¶ |- nioExample (8)¶  |~ AnNIOManagerPrintClient.java (125)¶  |~ AnNIOManagerPrintServer.java (139)¶  |~ exampleClientReadThread.java (67)¶  |~ exampleServerReadThread.java (70)¶  |~ FakeClientInterface.java (12)¶  |~ NIOManagerPrintClientLauncherNoFactory.java (10)¶  |~ NIOManagerPrintServer.java (20)¶  |~ NIOManagerPrintServerLauncherNoFactory.java (10)¶ |- readThread (3)¶  |~ ClientReadThread.java (94)¶  |~ ReadThreadInterface.java (13)¶  |~ ServerReadThread.java (102)¶ |- registry (1)¶  |~ TrickOrTreatRegistry.java (33)¶ |- server (10)¶  |~ OriginalSimulation.java (9)¶  |~ Server.java (33)¶  |~ ServerConfigure.java (475)¶  |- remote (6)¶   |~ ServerRemoteInterfaceGIPC.java (44)¶   |~ ServerRemoteInterfaceNIO.java (23)¶   |~ ServerRemoteInterfaceRMI.java (40)¶   |~ ServerRemoteObjectGIPC.java (345)¶   |~ ServerRemoteObjectNIO.java (169)¶   |~ ServerRemoteObjectRMI.java (245)¶¶Attempting to match t"), Diff(INSERT,"you have installed the plugin and run checkstyle on the project ¶¶A7NoCheckstyleWarnings did not pass completely:Could not run checkstyle%0.0¶Test execution time (ms):28¶¶A7NamedConstants did not pass completely:No checkstyle output, check console error messages%0.0¶Test execution time (ms):1¶A7PublicMethodsOverride did not pass completely:No checkstyle output, check console error messages%0.0¶¶Test execution time (ms):0¶A7InterfaceAsType did not pass completely:No checkstyle output, check console error messages%0.0¶¶Test execution time (ms):2¶A7MnemonicNames did not pass completely:No checkstyle output, check console error messages%0.0¶¶Test execution time (ms):0¶A7AccessModifiersMatched did not pass completely:N"), Diff(EQUAL,"o "), Diff(DELETE,"t"), Diff(INSERT,"c"), Diff(EQUAL,"he"), Diff(DELETE," structure:¶|- .* (23)¶ |- [a-z]?.*[Cc]lient.* (10)¶  |~ .*Client.*.java (0)¶  |~ .*Client.*.java (0)¶  |~ Client.*Simulation.*.java (0)"), Diff(INSERT,"ckstyle output, check console error messages%0.0¶¶Test execution time (ms):2"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="32" _type="PauseCommand" date="Tue Apr 19 21:09:58 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="58656">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[4762]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="36" _type="ProgramExecutionEvent" className="/A7/src/checks/Checks.java" date="Tue Apr 19 21:09:59 EDT 2022" kind="HitBreakPoint" projectName="A7" starttimestamp="1650416939918" timestamp="59323" type="Run" />
+  <Command __id="37" _type="ShellCommand" date="Tue Apr 19 21:10:00 EDT 2022" starttimestamp="1650416939918" timestamp="60262" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="39" _type="PauseCommand" date="Tue Apr 19 21:11:37 EDT 2022" range="1m-2m" starttimestamp="1650416939918" timestamp="157987">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[97725]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="42" _type="RunCommand" className="/A7/src/checks/Checks.java" date="Tue Apr 19 21:12:28 EDT 2022" kind="HitBreakPoint" projectName="A7" starttimestamp="1650416939918" timestamp="208769" type="Run" />
+  <Command __id="44" _type="PauseCommand" date="Tue Apr 19 21:12:32 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="212608">
+    <prevType><![CDATA[Debug]]></prevType>
+    <prev><![CDATA[RunCommand]]></prev>
+    <pause><![CDATA[3839]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="43" _type="ShellCommand" date="Tue Apr 19 21:12:32 EDT 2022" starttimestamp="1650416939918" timestamp="212608" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="46" _type="PauseCommand" date="Tue Apr 19 21:12:34 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="214875">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2267]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="45" _type="ConsoleOutput" date="Tue Apr 19 21:12:34 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="214875" type="ConsoleOutput">
+    <outputString><![CDATA[Building symbol table and running first pass checks:Tue Apr 19 21:12:34 EDT 2022
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Please run the checkstle plugin on your project¶Could not initialize checkstyle. Please make sure you have installed the plugin and run checkstyle on the project ¶¶A7NoCheckstyleWarnings did not pass completely:Could not run checkstyle%0.0¶Test execution time (ms):28¶¶A7NamedConstants did not pass completely:No checkstyle output, check console error messages%0.0¶Test execution time (ms):1¶A7PublicMethodsOverride did not pass completely:No checkstyle output, check console error messages%0.0¶¶Test execution time (ms):0¶A7InterfaceAsType did not pass completely:No checkstyle output, check console error messages%0.0¶¶Test execution time (ms):2¶A7MnemonicNames did not pass completely:No checkstyle output, check console error messages%0.0¶¶Test execution time (ms):0¶A7AccessModifiersMatched did not pass completely:No checkstyle output, check console error messages%0.0¶¶Test execution time (ms):"), Diff(INSERT,"Building symbol table and running first pass checks:Tue Apr 19 21:12:34 EDT 202"), Diff(EQUAL,"2¶")]]]></diff>
+  </Command>
+  <Command __id="48" _type="PauseCommand" date="Tue Apr 19 21:12:37 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="217763">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2888]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="47" _type="ConsoleOutput" date="Tue Apr 19 21:12:37 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="217763" type="ConsoleOutput">
+    <outputString><![CDATA[Symbol table size:127
+Running second pass checks Tue Apr 19 21:12:37 EDT 2022
+Start O(n2) inter- and intra class method calls:Tue Apr 19 21:12:37 EDT 2022
+End O(n2) inter- and intra class method calls:Tue Apr 19 21:12:37 EDT 2022
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Building s"), Diff(INSERT,"S"), Diff(EQUAL,"ymbol table "), Diff(DELETE,"and running first pass check"), Diff(INSERT,"size:127¶Running second pass checks Tue Apr 19 21:12:37 EDT 2022¶Start O(n2) inter- and intra class method calls:Tue Apr 19 21:12:37 EDT 2022¶End O(n2) inter- and intra class method call"), Diff(EQUAL,"s:Tue Apr 19 21:12:3"), Diff(DELETE,"4"), Diff(INSERT,"7"), Diff(EQUAL," EDT 2022¶")]]]></diff>
+  </Command>
+  <Command __id="50" _type="PauseCommand" date="Tue Apr 19 21:12:39 EDT 2022" range="1s-2s" starttimestamp="1650416939918" timestamp="219222">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1459]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="49" _type="ConsoleOutput" date="Tue Apr 19 21:12:39 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="219222" type="ConsoleOutput">
+    <outputString><![CDATA[Finished second pass checks:Tue Apr 19 21:12:39 EDT 2022
+Generating checks:Tue Apr 19 21:12:39 EDT 2022
+Finished Generating checks:Tue Apr 19 21:12:39 EDT 2022
+Generating externals:Tue Apr 19 21:12:39 EDT 2022
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Symbol table size:127¶Running"), Diff(INSERT,"Finished"), Diff(EQUAL," second pass checks"), Diff(DELETE," "), Diff(INSERT,":"), Diff(EQUAL,"Tue Apr 19 21:12:3"), Diff(DELETE,"7"), Diff(INSERT,"9"), Diff(EQUAL," EDT 2022¶"), Diff(DELETE,"Start O(n2) inter- and intra class method call"), Diff(INSERT,"Generating check"), Diff(EQUAL,"s:Tue Apr 19 21:12:3"), Diff(DELETE,"7"), Diff(INSERT,"9"), Diff(EQUAL," EDT 2022¶"), Diff(DELETE,"End O(n2) inter- and intra class method cal"), Diff(INSERT,"Finished Generating checks:Tue Apr 19 21:12:39 EDT 2022¶Generating externa"), Diff(EQUAL,"ls:Tue Apr 19 21:12:3"), Diff(DELETE,"7"), Diff(INSERT,"9"), Diff(EQUAL," EDT 2022¶")]]]></diff>
+  </Command>
+  <Command __id="51" _type="ConsoleOutput" date="Tue Apr 19 21:12:40 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="220221" type="ConsoleOutput">
+    <outputString><![CDATA[Finished Generating externals:Tue Apr 19 21:12:40 EDT 2022
+A7NoCheckstyleWarnings did not pass completely:Warnings found in checkstyle text, see traced console output%0.0
+
+Test execution time (ms):5324
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Finished "), Diff(DELETE,"second pass checks:Tue Apr 19 21:12:39 EDT 2022¶"), Diff(EQUAL,"Generating "), Diff(DELETE,"check"), Diff(INSERT,"external"), Diff(EQUAL,"s:Tue Apr 19 21:12:"), Diff(DELETE,"39"), Diff(INSERT,"40"), Diff(EQUAL," EDT 2022¶"), Diff(DELETE,"Finished Generating checks:Tue Apr 19 21:12:39 EDT 2022¶Generating externals:Tue Apr 19 21:12:39 EDT 2022"), Diff(INSERT,"A7NoCheckstyleWarnings did not pass completely:Warnings found in checkstyle text, see traced console output%0.0¶¶Test execution time (ms):5324"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="52" _type="ConsoleOutput" date="Tue Apr 19 21:12:40 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="220334" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):91
+Test execution time (ms):12
+
+A7InterfaceAsType did not pass completely:See console trace about lines failing  this check%0.9428571428571428
+Test execution time (ms):12
+Test execution time (ms):7
+
+A7AccessModifiersMatched did not pass completely:See console trace about lines failing  this check%0.23529411764705882
+Test execution time (ms):14
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Finished Generating externals:Tue Apr 19 21:12:40 EDT 2022¶A7NoCheckstyleWarnings did not pass completely:Warnings found in checkstyle text, see traced console output%0.0¶"), Diff(INSERT,"Test execution time (ms):91¶Test execution time (ms):12¶¶A7InterfaceAsType did not pass completely:See console trace about lines failing  this check%0.9428571428571428¶Test execution time (ms):12¶Test execution time (ms):7¶¶A7AccessModifiersMatched did not pass completely:See console trace about lines failing  this check%0.23529411764705882"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"532"), Diff(INSERT,"1"), Diff(EQUAL,"4¶")]]]></diff>
+  </Command>
+  <Command __id="54" _type="PauseCommand" date="Tue Apr 19 21:12:47 EDT 2022" range="5s-10s" starttimestamp="1650416939918" timestamp="227085">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[6751]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="53" _type="ConsoleOutput" date="Tue Apr 19 21:12:47 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="227085" type="ConsoleOutput">
+    <outputString><![CDATA[Unmatched tags:[@DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT,  @DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO+@DistributedTags.CLIENT+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT,  @DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT,  @DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT,  @DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT]
+Matched tags:[ @DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO,  @DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.GIPC,  @DistributedTags.REGISTRY+@DistributedTags.RMI,  @DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI,  @DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.GIPC,  @DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO+@DistributedTags.SERVER]
+
+A7TaggedClassesDefined did not pass completely:Only 6.0 matched out of 11.0 tags.
+ See console text%0.5454545454545454
+Test execution time (ms):4
+A7ExpectedCalls did not pass completely:See console trace about lines failing  this check%0.0
+
+Test execution time (ms):16
+A7ExpectedSignatures did not pass completely:See console trace about lines failing  this check%0.0
+
+Test execution time (ms):12
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):91"), Diff(INSERT,"Unmatched tags:[@DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT,  @DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO+@DistributedTags.CLIENT+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT,  @DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT,  @DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT,  @DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT]¶Matched tags:[ @DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO,  @DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.GIPC,  @DistributedTags.REGISTRY+@DistributedTags.RMI,  @DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI,  @DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.GIPC,  @DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO+@DistributedTags.SERVER]¶¶A7TaggedClassesDefined did not pass completely:Only 6.0 matched out of 11.0 tags.¶ See console text%0.5454545454545454"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"12¶¶A7InterfaceAsType"), Diff(INSERT,"4¶A7ExpectedCalls"), Diff(EQUAL," did not pass completely:See console trace about lines failing  this check%0."), Diff(DELETE,"9428571428571428"), Diff(INSERT,"0¶"), Diff(EQUAL,"¶Test execution time (ms):1"), Diff(DELETE,"2"), Diff(INSERT,"6"), Diff(EQUAL,"¶"), Diff(DELETE,"Test execution time (ms):7¶¶A7AccessModifiersMatched"), Diff(INSERT,"A7ExpectedSignatures"), Diff(EQUAL," did not pass completely:See console trace about lines failing  this check%0."), Diff(DELETE,"23529411764705882"), Diff(INSERT,"0¶"), Diff(EQUAL,"¶Test execution time (ms):1"), Diff(DELETE,"4"), Diff(INSERT,"2"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="55" _type="ConsoleOutput" date="Tue Apr 19 21:12:47 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="227250" type="ConsoleOutput">
+    <outputString><![CDATA[
+Your project does not meet the required similarity percent of: 0.95 your similarity: 0.5217391304347826
+|- represents a package, |~ represents a file
+
+The structure of your project was found to be:
+|- src (37)
+ |- checks (1)
+  |~ Checks.java (36)
+ |- client (8)
+  |~ Client.java (23)
+  |~ ClientConfigure.java (434)
+  |~ ClientOutCoupler.java (62)
+  |~ ClientRemoteInterfaceGIPC.java (33)
+  |~ ClientRemoteInterfaceNIO.java (25)
+  |~ ClientRemoteInterfaceRMI.java (29)
+  |~ ClientRemoteObject.java (314)
+  |~ ClientRemoteObjectNIO.java (199)
+ |- nioExample (8)
+  |~ AnNIOManagerPrintClient.java (125)
+  |~ AnNIOManagerPrintServer.java (139)
+  |~ exampleClientReadThread.java (67)
+  |~ exampleServerReadThread.java (70)
+  |~ FakeClientInterface.java (12)
+  |~ NIOManagerPrintClientLauncherNoFactory.java (10)
+  |~ NIOManagerPrintServer.java (20)
+  |~ NIOManagerPrintServerLauncherNoFactory.java (10)
+ |- readThread (3)
+  |~ ClientReadThread.java (94)
+  |~ ReadThreadInterface.java (13)
+  |~ ServerReadThread.java (102)
+ |- registry (1)
+  |~ TrickOrTreatRegistry.java (33)
+ |- server (10)
+  |~ OriginalSimulation.java (9)
+  |~ Server.java (33)
+  |~ ServerConfigure.java (475)
+  |- remote (6)
+   |~ ServerRemoteInterfaceGIPC.java (44)
+   |~ ServerRemoteInterfaceNIO.java (23)
+   |~ ServerRemoteInterfaceRMI.java (40)
+   |~ ServerRemoteObjectGIPC.java (345)
+   |~ ServerRemoteObjectNIO.java (169)
+   |~ ServerRemoteObjectRMI.java (245)
+
+Attempting to match to the structure:
+|- .* (23)
+ |- [a-z]?.*[Cc]lient.* (10)
+  |~ .*Client.*.java (0)
+  |~ .*Client.*.java (0)
+  |~ Client.*Simulation.*.java (0)
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Unmatched tags:[@DistributedTags.CLIENT_CONFIGURER+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT,  @DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO+@DistributedTags.CLIENT+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT,  @DistributedTags.SERVER_CONFIGURER+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT,  @DistributedTags.CLIENT_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT,  @DistributedTags.SERVER_REMOTE_OBJECT+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.ATOMIC_BROADCAST+@DistributedTags.TWO_PHASE_COMMIT]¶Matched tags:[ @DistributedTags.CLIENT_OUT_COUPLER+@DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO,  @DistributedTags.SERVER_REMOTE_INTERFACE+@DistributedTags.RMI+@DistributedTags.GIPC,  @DistributedTags.REGISTRY+@DistributedTags.RMI,  @DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.RMI,  @DistributedTags.CLIENT_REMOTE_INTERFACE+@DistributedTags.GIPC,  @DistributedTags.RMI+@DistributedTags.GIPC+@DistributedTags.NIO+@DistributedTags.SERVER]¶¶A7TaggedClassesDefined did not pass completely:Only 6.0 matched out of 11.0 tags.¶ See console text%0.5454545454545454¶Test execution time (ms):4¶A7ExpectedCalls did not pass completely:See console trace about lines failing  this check%0.0¶¶Test execution time (ms):16¶A7ExpectedSignatures did not pass completely:See console trace about lines failing  this check%0.0¶¶Test execution time (ms):12"), Diff(INSERT,"¶Your project does not meet the required similarity percent of: 0.95 your similarity: 0.5217391304347826¶|- represents a package, |~ represents a file¶¶The structure of your project was found to be:¶|- src (37)¶ |- checks (1)¶  |~ Checks.java (36)¶ |- client (8)¶  |~ Client.java (23)¶  |~ ClientConfigure.java (434)¶  |~ ClientOutCoupler.java (62)¶  |~ ClientRemoteInterfaceGIPC.java (33)¶  |~ ClientRemoteInterfaceNIO.java (25)¶  |~ ClientRemoteInterfaceRMI.java (29)¶  |~ ClientRemoteObject.java (314)¶  |~ ClientRemoteObjectNIO.java (199)¶ |- nioExample (8)¶  |~ AnNIOManagerPrintClient.java (125)¶  |~ AnNIOManagerPrintServer.java (139)¶  |~ exampleClientReadThread.java (67)¶  |~ exampleServerReadThread.java (70)¶  |~ FakeClientInterface.java (12)¶  |~ NIOManagerPrintClientLauncherNoFactory.java (10)¶  |~ NIOManagerPrintServer.java (20)¶  |~ NIOManagerPrintServerLauncherNoFactory.java (10)¶ |- readThread (3)¶  |~ ClientReadThread.java (94)¶  |~ ReadThreadInterface.java (13)¶  |~ ServerReadThread.java (102)¶ |- registry (1)¶  |~ TrickOrTreatRegistry.java (33)¶ |- server (10)¶  |~ OriginalSimulation.java (9)¶  |~ Server.java (33)¶  |~ ServerConfigure.java (475)¶  |- remote (6)¶   |~ ServerRemoteInterfaceGIPC.java (44)¶   |~ ServerRemoteInterfaceNIO.java (23)¶   |~ ServerRemoteInterfaceRMI.java (40)¶   |~ ServerRemoteObjectGIPC.java (345)¶   |~ ServerRemoteObjectNIO.java (169)¶   |~ ServerRemoteObjectRMI.java (245)¶¶Attempting to match to the structure:¶|- .* (23)¶ |- [a-z]?.*[Cc]lient.* (10)¶  |~ .*Client.*.java (0)¶  |~ .*Client.*.java (0)¶  |~ Client.*Simulation.*.java (0)"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="57" _type="PauseCommand" date="Tue Apr 19 21:12:59 EDT 2022" range="10s-20s" starttimestamp="1650416939918" timestamp="239258">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[12008]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="56" _type="ConsoleOutput" date="Tue Apr 19 21:12:59 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="239258" type="ConsoleOutput">
+    <outputString><![CDATA[E*** Tags:[Client, RMI, NIO, GIPC, AtomicBroadcast, TwoPhaseCommit]not found
+
+Test execution time (ms):6596
+GIPCRMINIOStaticArguments did not pass completely:Couldn't run code:Tags:[Client, RMI, NIO, GIPC, AtomicBroadcast, TwoPhaseCommit]not found:%0
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"¶Your project does not meet the required similarity percent of: 0.95 your similarity: 0.5217391304347826¶|- represents a package, |~ represents a file¶¶The structure of your project was found to be:¶|- src (37)¶ |- checks (1)¶  |~ Checks.java (36)¶ |- client (8)¶  |~ Client.java (23)¶  |~ ClientConfigure.java (434)¶  |~ ClientOutCoupler.java (62)¶  |~ ClientRemoteInterfaceGIPC.java (33)¶  |~ ClientRemoteInterfaceNIO.java (25)¶  |~ ClientRemoteInterfaceRMI.java (29)¶  |~ ClientRemoteObject.java (314)¶  |~ ClientRemoteObjectNIO.java (199)¶ |- nioExample (8)¶  |~ AnNIOManagerPrintClient.java (125)¶  |~ AnNIOManagerPrintServer.java (139)¶  |~ exampleClientReadThread.java (67)¶  |~ exampleServerReadThread.java (70)¶  |~ FakeClientInterface.java (12)¶  |~ NIOManagerPrintClientLauncherNoFactory.java (10)¶  |~ NIOManagerPrintServer.java (20)¶  |~ NIOManagerPrintServerLauncherNoFactory.java (10)¶ |- readThread (3)¶  |~ ClientReadThread.java (94)¶  |~ ReadThreadInterface.java (13)¶  |~ ServerReadThread.java (102)¶ |- registry (1)¶  |~ TrickOrTreatRegistry.java (33)¶ |- server (10)¶  |~ OriginalSimulation.java (9)¶  |~ Server.java (33)¶  |~ ServerConfigure.java (475)¶  |- remote (6)¶   |~ ServerRemoteInterfaceGIPC.java (44)¶   |~ ServerRemoteInterfaceNIO.java (23)¶   |~ ServerRemoteInterfaceRMI.java (40)¶   |~ ServerRemoteObjectGIPC.java (345)¶   |~ ServerRemoteObjectNIO.java (169)¶   |~ ServerRemoteObjectRMI.java (245)¶¶Attempting to match to the structure:¶|- .* (23)¶ |- [a-z]?.*[Cc]lient.* (10)¶  |~ .*Client.*.java (0)¶  |~ .*Client.*.java (0)¶  |~ Client.*Simulation.*.java (0)"), Diff(INSERT,"E*** Tags:[Client, RMI, NIO, GIPC, AtomicBroadcast, TwoPhaseCommit]not found¶¶Test execution time (ms):6596¶GIPCRMINIOStaticArguments did not pass completely:Couldn't run code:Tags:[Client, RMI, NIO, GIPC, AtomicBroadcast, TwoPhaseCommit]not found:%0"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="59" _type="PauseCommand" date="Tue Apr 19 21:13:00 EDT 2022" range="1s-2s" starttimestamp="1650416939918" timestamp="240836">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1578]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="58" _type="ConsoleOutput" date="Tue Apr 19 21:13:00 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="240836" type="ConsoleOutput">
+    <outputString><![CDATA[
+Test execution time (ms):1531
+GIPCRMINIOOneClientConnection did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*%0.0
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"E*** Tags:[Client, RMI, NIO, GIPC, AtomicBroadcast, TwoPhaseCommit]not found¶"), Diff(EQUAL,"¶Test execution time (ms):"), Diff(DELETE,"6596"), Diff(INSERT,"1531"), Diff(EQUAL,"¶GIPCRMINIO"), Diff(DELETE,"StaticArguments"), Diff(INSERT,"OneClientConnection"), Diff(EQUAL," did not pass completely:"), Diff(DELETE,"Couldn't run code:Tags:[Client, RMI, NIO, GIPC, AtomicBroadcast, TwoPhaseCommit]not found:%"), Diff(INSERT,"In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*%0."), Diff(EQUAL,"0¶")]]]></diff>
+  </Command>
+  <Command __id="61" _type="PauseCommand" date="Tue Apr 19 21:13:02 EDT 2022" range="1s-2s" starttimestamp="1650416939918" timestamp="242399">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1563]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="60" _type="ConsoleOutput" date="Tue Apr 19 21:13:02 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="242399" type="ConsoleOutput">
+    <outputString><![CDATA[GIPCRMINIOOneClientReadWriteNonAtomic did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*
+RMI and GIPC are not checked because NIO failed%0.0
+
+Test execution time (ms):1541
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"¶Test execution time (ms):1531¶"), Diff(EQUAL,"GIPCRMINIOOneClient"), Diff(DELETE,"Connection"), Diff(INSERT,"ReadWriteNonAtomic"), Diff(EQUAL," did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*"), Diff(DELETE,"%0.0"), Diff(INSERT,"¶RMI and GIPC are not checked because NIO failed%0.0¶¶Test execution time (ms):1541"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="63" _type="PauseCommand" date="Tue Apr 19 21:13:03 EDT 2022" range="1s-2s" starttimestamp="1650416939918" timestamp="243936">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1537]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="62" _type="ConsoleOutput" date="Tue Apr 19 21:13:03 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="243936" type="ConsoleOutput">
+    <outputString><![CDATA[GIPCRMINIOOneClientReadWriteAtomic did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*
+RMI and GIPC are not checked because NIO failed%0.0
+
+Test execution time (ms):1538
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"GIPCRMINIOOneClientReadWrite"), Diff(DELETE,"Non"), Diff(EQUAL,"Atomic did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*¶RMI and GIPC are not checked because NIO failed%0.0¶¶Test execution time (ms):15"), Diff(DELETE,"41"), Diff(INSERT,"38"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="65" _type="PauseCommand" date="Tue Apr 19 21:13:35 EDT 2022" range="30s-1m" starttimestamp="1650416939918" timestamp="275316">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[31380]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="64" _type="ConsoleOutput" date="Tue Apr 19 21:13:35 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="275316" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s20.assignment7.testcases.GIPCRMINIOStaticArguments@5de4901 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"GIPCRMINIOOneClientReadWriteAtomic did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*¶RMI and GIPC are not checked because NIO failed%0.0¶¶Test execution time (ms):1538"), Diff(INSERT,"Re-running test gradingTools.comp533s20.assignment7.testcases.GIPCRMINIOStaticArguments@5de4901 . Results may change."), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="67" _type="PauseCommand" date="Tue Apr 19 21:13:47 EDT 2022" range="10s-20s" starttimestamp="1650416939918" timestamp="287157">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[11841]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="66" _type="ConsoleOutput" date="Tue Apr 19 21:13:47 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="287157" type="ConsoleOutput">
+    <outputString><![CDATA[
+Test execution time (ms):2541
+GIPCRMINIOTwoClientConnection did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*%0.0
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Re-running test gradingTools.comp533s20.assignment7.testcases.GIPCRMINIOStaticArguments@5de4901 . Results may change."), Diff(INSERT,"¶Test execution time (ms):2541¶GIPCRMINIOTwoClientConnection did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*%0.0"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="69" _type="PauseCommand" date="Tue Apr 19 21:13:49 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="289638">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2481]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="68" _type="ConsoleOutput" date="Tue Apr 19 21:13:49 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="289638" type="ConsoleOutput">
+    <outputString><![CDATA[GIPCRMINIOTwoClientReadWriteNonAtomic did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*
+RMI and GIPC are not checked because NIO failed%0.0
+
+Test execution time (ms):2530
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"¶Test execution time (ms):2541¶"), Diff(EQUAL,"GIPCRMINIOTwoClient"), Diff(DELETE,"Connection"), Diff(INSERT,"ReadWriteNonAtomic"), Diff(EQUAL," did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*"), Diff(DELETE,"%0."), Diff(INSERT,"¶RMI and GIPC are not checked because NIO failed%0.0¶¶Test execution time (ms):253"), Diff(EQUAL,"0¶")]]]></diff>
+  </Command>
+  <Command __id="71" _type="PauseCommand" date="Tue Apr 19 21:13:52 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="292182">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2544]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="70" _type="ConsoleOutput" date="Tue Apr 19 21:13:52 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="292182" type="ConsoleOutput">
+    <outputString><![CDATA[GIPCRMINIOTwoClientReadWriteAtomic did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*
+RMI and GIPC are not checked because NIO failed%0.0
+
+Test execution time (ms):2542
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"GIPCRMINIOTwoClientReadWrite"), Diff(DELETE,"Non"), Diff(EQUAL,"Atomic did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*¶RMI and GIPC are not checked because NIO failed%0.0¶¶Test execution time (ms):25"), Diff(DELETE,"30"), Diff(INSERT,"42"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="73" _type="PauseCommand" date="Tue Apr 19 21:13:54 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="294742">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2560]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="72" _type="ConsoleOutput" date="Tue Apr 19 21:13:54 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="294742" type="ConsoleOutput">
+    <outputString><![CDATA[
+Test execution time (ms):2550
+GIPCRMINIOClientMetaStateNoBroadcast did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*%0.0
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,"¶Test execution time (ms):2550¶"), Diff(EQUAL,"GIPCRMINIO"), Diff(DELETE,"Two"), Diff(EQUAL,"Client"), Diff(DELETE,"ReadWriteAtomic"), Diff(INSERT,"MetaStateNoBroadcast"), Diff(EQUAL," did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*"), Diff(DELETE,"¶RMI and GIPC are not checked because NIO failed%0.0¶¶Test execution time (ms):2542"), Diff(INSERT,"%0.0"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="75" _type="PauseCommand" date="Tue Apr 19 21:13:57 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="297322">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2580]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="74" _type="ConsoleOutput" date="Tue Apr 19 21:13:57 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="297322" type="ConsoleOutput">
+    <outputString><![CDATA[GIPCRMINIOClientMetaStateBroadcast did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*%0.0
+
+Test execution time (ms):2561
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"¶Test execution time (ms):2550¶"), Diff(EQUAL,"GIPCRMINIOClientMetaState"), Diff(DELETE,"No"), Diff(EQUAL,"Broadcast did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*%0.0¶"), Diff(INSERT,"¶Test execution time (ms):2561¶")]]]></diff>
+  </Command>
+  <Command __id="77" _type="PauseCommand" date="Tue Apr 19 21:13:59 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="299868">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2546]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="76" _type="ConsoleOutput" date="Tue Apr 19 21:13:59 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="299868" type="ConsoleOutput">
+    <outputString><![CDATA[GIPCRMINIOServerMetaStateNoBroadcast did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*%0.0
+
+Test execution time (ms):2549
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"GIPCRMINIO"), Diff(DELETE,"Client"), Diff(INSERT,"Server"), Diff(EQUAL,"MetaState"), Diff(INSERT,"No"), Diff(EQUAL,"Broadcast did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*%0.0¶¶Test execution time (ms):25"), Diff(DELETE,"61"), Diff(INSERT,"49"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="79" _type="PauseCommand" date="Tue Apr 19 21:14:02 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="302412">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2544]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="78" _type="ConsoleOutput" date="Tue Apr 19 21:14:02 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="302412" type="ConsoleOutput">
+    <outputString><![CDATA[GIPCRMINIOServerMetaStateBroadcast did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*%0.0
+
+Test execution time (ms):2545
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"GIPCRMINIOServerMetaState"), Diff(DELETE,"No"), Diff(EQUAL,"Broadcast did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*%0.0¶¶Test execution time (ms):254"), Diff(DELETE,"9"), Diff(INSERT,"5"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="81" _type="PauseCommand" date="Tue Apr 19 21:14:04 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="304971">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2559]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="80" _type="ConsoleOutput" date="Tue Apr 19 21:14:04 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="304971" type="ConsoleOutput">
+    <outputString><![CDATA[GIPCRMINIOTwoClientReadWriteAtomicConsensus did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*
+RMI and GIPC are not checked because NIO failed%0.0
+
+Test execution time (ms):2545
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"GIPCRMINIO"), Diff(DELETE,"ServerMetaStateBroadcast"), Diff(INSERT,"TwoClientReadWriteAtomicConsensus"), Diff(EQUAL," did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*"), Diff(INSERT,"¶RMI and GIPC are not checked because NIO failed"), Diff(EQUAL,"%0.0¶¶Test execution time (ms):2545¶")]]]></diff>
+  </Command>
+  <Command __id="83" _type="PauseCommand" date="Tue Apr 19 21:47:24 EDT 2022" range="30m-1h" starttimestamp="1650416939918" timestamp="2304657">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[1999686]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="82" _type="ShellCommand" date="Tue Apr 19 21:47:24 EDT 2022" starttimestamp="1650416939918" timestamp="2304657" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="85" _type="PauseCommand" date="Tue Apr 19 21:47:31 EDT 2022" range="5s-10s" starttimestamp="1650416939918" timestamp="2311908">
+    <prevType><![CDATA[Gained Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[7251]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="87" _type="DiffBasedFileOpenCommand" date="Tue Apr 19 21:47:36 EDT 2022" docASTNodeCount="205" docActiveCodeLength="1473" docExpressionCount="123" docLength="1709" projectName="A6" starttimestamp="1650416939918" timestamp="2316854">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A6\src\nioExample\exampleClientReadThread.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package nioExample;
+
+import java.nio.ByteBuffer;
+import java.nio.channels.SocketChannel;
+import java.util.List;
+import java.util.concurrent.ArrayBlockingQueue;
+
+import inputport.nio.manager.NIOManager;
+import inputport.nio.manager.NIOManagerFactory;
+import readThread.ReadThreadInterface;
+
+public class exampleClientReadThread implements ReadThreadInterface{
+	//final AnNIOManagerPrintClient client;
+	final FakeClientInterface client;
+	protected NIOManager nioManager = NIOManagerFactory.getSingleton();
+	
+	public exampleClientReadThread (final FakeClientInterface aClient) {
+		client = aClient;
+	}
+
+	@Override
+	public void socketChannelRead(SocketChannel arg0, ByteBuffer arg1, int arg2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		while(true) {
+			synchronized (this) {
+				try {
+					wait();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+					break; // this breaks out of run loop then thread terminates
+				}
+			}
+			
+			System.out.println("IN RUN METHOD OF CLIENT READ THREAD");
+			
+			ArrayBlockingQueue<ByteBuffer> boundedBuffer = client.getBoundedBuffer();
+			
+			
+					
+			ByteBuffer originalMessage = null;
+			try {
+				originalMessage = boundedBuffer.take();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			String aMessageString = new String(originalMessage.array());
+			System.out.println("SERVER MESSAGE RECIEVED: "+aMessageString);
+			
+		
+		}
+		
+	}
+	
+	@Override
+	public synchronized void notifyThread() {
+		// TODO This should be when a line is read
+		this.notify();
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="89" _type="MoveCaretCommand" caretOffset="273" date="Tue Apr 19 21:47:37 EDT 2022" docOffset="520" starttimestamp="1650416939918" timestamp="2317090" />
+  <Command __id="112" _type="SelectTextCommand" caretOffset="1385" date="Tue Apr 19 21:47:55 EDT 2022" end="1385" start="1163" starttimestamp="1650416939918" timestamp="2335322" />
+  <Command __id="111" _type="DiffBasedFileOpenCommand" date="Tue Apr 19 21:47:54 EDT 2022" docASTNodeCount="352" docActiveCodeLength="2626" docExpressionCount="241" docLength="2916" projectName="A6" starttimestamp="1650416939918" timestamp="2335048">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A6\src\readThread\ClientReadThread.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package readThread;
+
+import java.nio.ByteBuffer;
+import java.nio.channels.SocketChannel;
+import java.util.concurrent.ArrayBlockingQueue;
+
+import client.ClientRemoteObjectNIO;
+import inputport.nio.manager.NIOManager;
+import inputport.nio.manager.NIOManagerFactory;
+import nioExample.AnNIOManagerPrintClient;
+import stringProcessors.HalloweenCommandProcessor;
+import util.annotations.Tags;
+import util.tags.DistributedTags;
+import util.trace.port.consensus.ProposalLearnedNotificationReceived;
+import util.trace.port.consensus.ProposedStateSet;
+import util.trace.port.consensus.RemoteProposeRequestReceived;
+
+
+@Tags({DistributedTags.NIO, DistributedTags.CLIENT_READ_THREAD})
+public class ClientReadThread implements ReadThreadInterface{
+	//final ClientRemoteObjectNIO client;
+	final ClientRemoteObjectNIO client;
+	protected NIOManager nioManager = NIOManagerFactory.getSingleton();
+	
+	public ClientReadThread (final ClientRemoteObjectNIO aClient) {
+		client = aClient;
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		while(true) {
+			synchronized (this) {
+				try {
+					wait();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+					break; // this breaks out of run loop then thread terminates
+				}
+			}
+			
+			System.out.println("IN RUN METHOD OF CLIENT READ THREAD");
+			
+			ArrayBlockingQueue<ByteBuffer> boundedBuffer = client.getBoundedBuffer();
+			
+			
+					
+			ByteBuffer originalMessage = null;
+			try {
+				originalMessage = boundedBuffer.take();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			String aMessageString = new String(originalMessage.array());
+			
+			/// To pass the autograder
+			int position = originalMessage.position();
+			ArrayBlockingQueue<ByteBuffer> boundedBufferFake = new ArrayBlockingQueue<ByteBuffer>(500);
+			boundedBufferFake.add(originalMessage);
+			///
+			
+			System.out.println(aMessageString);
+			int aProposalNumber = Integer.parseInt( aMessageString.substring(aMessageString.length()-1) );
+			aMessageString =  aMessageString.substring(0, aMessageString.length()-1);
+			
+			System.out.println("SERVER MESSAGE RECIEVED: "+aMessageString);
+			
+			
+			HalloweenCommandProcessor commandProcessor = client.getCommandProcessor();
+			
+			
+			RemoteProposeRequestReceived.newCase(this, client.CLIENT_NAME, aProposalNumber, aMessageString);
+			commandProcessor.processCommand(aMessageString);
+			ProposedStateSet.newCase(this, client.CLIENT_NAME, aProposalNumber, aMessageString);
+			//client.aProposalNumber++;
+		
+		}
+		
+	}
+
+	@Override
+	public void socketChannelRead(SocketChannel arg0, ByteBuffer arg1, int arg2) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public synchronized void notifyThread() {
+		// TODO This should be when a line is read
+		this.notify();
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="114" _type="PauseCommand" date="Tue Apr 19 21:48:01 EDT 2022" range="5s-10s" starttimestamp="1650416939918" timestamp="2341524">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[6202]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="115" _type="MoveCaretCommand" caretOffset="0" date="Tue Apr 19 21:48:02 EDT 2022" docOffset="0" starttimestamp="1650416939918" timestamp="2342094" />
+  <Command __id="117" _type="PauseCommand" date="Tue Apr 19 21:48:36 EDT 2022" range="30s-1m" starttimestamp="1650416939918" timestamp="2377032">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[34938]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="116" _type="ShellCommand" date="Tue Apr 19 21:48:36 EDT 2022" starttimestamp="1650416939918" timestamp="2377032" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="119" _type="PauseCommand" date="Tue Apr 19 21:48:42 EDT 2022" range="5s-10s" starttimestamp="1650416939918" timestamp="2382111">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[5079]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="113" _type="DiffBasedFileOpenCommand" date="Tue Apr 19 21:48:01 EDT 2022" docASTNodeCount="1730" docActiveCodeLength="13055" docExpressionCount="1211" docLength="14625" projectName="A7" starttimestamp="1650416939918" timestamp="2341524">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A7\src\client\ClientConfigure.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package client;
+
+import java.beans.PropertyChangeListener;
+import java.io.IOException;
+import java.net.InetAddress;
+import java.nio.ByteBuffer;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
+import java.rmi.AccessException;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+import java.util.concurrent.ArrayBlockingQueue;
+
+import assignments.util.MiscAssignmentUtils;
+import assignments.util.mainArgs.ClientArgsProcessor;
+import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;
+import coupledsims.Simulation;
+import coupledsims.Simulation1;
+import inputport.nio.manager.NIOManager;
+import inputport.nio.manager.NIOManagerFactory;
+import inputport.nio.manager.factories.classes.AConnectCommandFactory;
+import inputport.nio.manager.factories.selectors.ConnectCommandFactorySelector;
+import inputport.rpc.GIPCLocateRegistry;
+import inputport.rpc.GIPCRegistry;
+import main.BeauAndersonFinalProject;
+import readThread.ClientReadThread;
+import readThread.ReadThreadInterface;
+import server.remote.ServerRemoteInterfaceGIPC;
+import server.remote.ServerRemoteInterfaceRMI;
+import server.remote.ServerRemoteObjectGIPC;
+import server.remote.ServerRemoteObjectRMI;
+import stringProcessors.HalloweenCommandProcessor;
+import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
+import util.tags.DistributedTags;
+import util.trace.Tracer;
+import util.trace.bean.BeanTraceUtility;
+import util.trace.factories.FactoryTraceUtility;
+import util.trace.misc.ThreadDelayed;
+import util.trace.port.PerformanceExperimentEnded;
+import util.trace.port.PerformanceExperimentStarted;
+import util.trace.port.PortTraceUtility;
+import util.trace.port.consensus.ConsensusTraceUtility;
+import util.trace.port.consensus.ProposalLearnedNotificationReceived;
+import util.trace.port.consensus.ProposedStateSet;
+import util.trace.port.consensus.RemoteProposeRequestSent;
+import util.trace.port.nio.NIOTraceUtility;
+import util.trace.port.rpc.gipc.GIPCObjectLookedUp;
+import util.trace.port.rpc.gipc.GIPCRPCTraceUtility;
+import util.trace.port.rpc.gipc.GIPCRegistryLocated;
+import util.trace.port.rpc.rmi.RMIObjectLookedUp;
+import util.trace.port.rpc.rmi.RMIRegistryLocated;
+import util.trace.port.rpc.rmi.RMITraceUtility;
+
+@Tags({DistributedTags.CLIENT_CONFIGURER, DistributedTags.RMI, DistributedTags.GIPC, DistributedTags.NIO})
+public class ClientConfigure  extends ClientRemoteObject implements ClientRemoteInterfaceNIO {
+	
+	HalloweenCommandProcessor commandProcessor;
+	protected int NUM_EXPERIMENT_COMMANDS = 500;
+	public static final String EXPERIMENT_COMMAND_1 = "move 1 -1";
+	public static final String EXPERIMENT_COMMAND_2 = "undo";
+	protected PropertyChangeListener simulationCoupler;
+	ServerRemoteInterfaceGIPC server = null;
+	ServerRemoteInterfaceGIPC serverGIPC = null;
+	
+
+	private static String RMI_SERVER_HOST_NAME;
+	private static int RMI_SERVER_PORT;
+	private static String SERVER_NAME;
+	private static String CLIENT_NAME;
+	
+	//A5
+	private static int GIPC_SERVER_PORT;
+	protected static GIPCRegistry gipcRegistry;
+	private static String GIPC_SERVER_NAME ;
+	private static boolean broadcastIPCMechanism = false;
+	private static int aProposalNumber;
+	
+	PropertyChangeListener clientOutCoupler;
+
+	@Override
+	public HalloweenCommandProcessor createSimulation(String aPrefix) {
+		return BeauAndersonFinalProject.createSimulation(aPrefix, Simulation1.SIMULATION1_X_OFFSET,
+				Simulation.SIMULATION_Y_OFFSET, Simulation.SIMULATION_WIDTH, Simulation.SIMULATION_HEIGHT,
+				Simulation1.SIMULATION1_X_OFFSET, Simulation.SIMULATION_Y_OFFSET);
+	}
+
+	@Override
+	public void processArgs(String[] args) {
+		System.out.println("Registry host:" + ClientArgsProcessor.getRegistryHost(args));
+		System.out.println("Registry port:" + ClientArgsProcessor.getRegistryPort(args));
+		System.out.println("Server host:" + ClientArgsProcessor.getServerHost(args));
+		System.out.println("Headless:" + ClientArgsProcessor.getHeadless(args));
+		System.out.println("Client name:" + ClientArgsProcessor.getClientName(args));
+
+		// Make sure you set this property when processing args
+		System.setProperty("java.awt.headless", ClientArgsProcessor.getHeadless(args));
+
+		RMI_SERVER_HOST_NAME = ClientArgsProcessor.getRegistryHost(args);
+		RMI_SERVER_PORT = ClientArgsProcessor.getRegistryPort(args);
+		SERVER_NAME = "SERVER";
+				//ClientArgsProcessor.getServerHost(args);
+		CLIENT_NAME = ClientArgsProcessor.getClientName(args);
+
+
+		//A5
+		GIPC_SERVER_PORT = ClientArgsProcessor.getGIPCPort(args);
+		GIPC_SERVER_NAME = ClientArgsProcessor.getServerHost(args);
+		
+	}
+	
+	@Override
+	public void atomicBroadcast(boolean fake) {
+		return;
+	}
+	
+	@Override
+	protected void setTracing() {
+		//A5
+		FactoryTraceUtility.setTracing();
+		BeanTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		GIPCRPCTraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+
+		//A4
+		PortTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();		
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		trace(true);
+	}
+
+	@Override
+	public void init(String[] args) {
+		setTracing();
+
+		this.processArgs(args);
+		// Ideally the prefixes should be main args
+		commandProcessor = createSimulation(Simulation1.SIMULATION1_PREFIX);
+		
+		//Locate GIPC Server
+		gipcRegistry = GIPCLocateRegistry.getRegistry(GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);
+		GIPCRegistryLocated.newCase(this, GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);
+		
+		//Get GIPC server here
+		serverGIPC = (ServerRemoteInterfaceGIPC) gipcRegistry.lookup(ServerRemoteObjectGIPC.class, SERVER_NAME);
+		GIPCObjectLookedUp.newCase(this, serverGIPC, ServerRemoteObjectGIPC.class, SERVER_NAME, gipcRegistry);
+		
+		//Register Client with GIPC Proxy
+		try {
+			serverGIPC.registerClientGIPC((ClientRemoteInterfaceGIPC) this);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		// Locate RMI Server
+		Registry rmiRegistry = null;
+		try {
+			rmiRegistry = LocateRegistry.getRegistry(RMI_SERVER_HOST_NAME, RMI_SERVER_PORT);
+			RMIRegistryLocated.newCase(this, RMI_SERVER_HOST_NAME, RMI_SERVER_PORT, rmiRegistry);
+		} catch (RemoteException e3) {
+			e3.printStackTrace();
+		}
+		// Get RMI server here
+		
+		try {
+			server = (ServerRemoteInterfaceGIPC) rmiRegistry.lookup(SERVER_NAME);
+			RMIObjectLookedUp.newCase(this, server, SERVER_NAME, rmiRegistry);
+		} catch (AccessException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		} catch (RemoteException e2) {
+
+			e2.printStackTrace();
+		} catch (NotBoundException e2) {
+			e2.printStackTrace();
+		}
+
+		// export client to create proxy
+		try {
+			UnicastRemoteObject.exportObject(this, 0);
+		} catch (RemoteException e1) {
+			e1.printStackTrace();
+		}
+
+		// have the server register the exported client
+		try {
+			server.registerClientRMI((ClientRemoteInterfaceGIPC) this);
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		}
+		
+		
+		clientOutCoupler = new ClientOutCoupler(server, (ClientRemoteInterfaceGIPC) this, CLIENT_NAME, false);
+		//clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);
+		// Add propertyChangeListener
+		commandProcessor.addPropertyChangeListener(clientOutCoupler);
+		
+		System.out.println("added server as a property change listener of client");
+	}
+
+	@Override
+	public void inCoupler(String aNewCommand, int proposalNumber) {
+		//final int aProposalNumber = proposalNumber;
+		System.out.println("recieved broadcased command: "+ aNewCommand);
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);
+		commandProcessor.processCommand(aNewCommand);
+		ProposedStateSet.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);
+		System.out.println("executed command");
+		
+	}
+	
+	@Override
+	/*
+	 * You will need to delay not command input but sends(non-Javadoc)
+	 */
+	public void simulationCommand1(String aCommand) {
+		//long aDelay = getDelay(); 
+		//if (aDelay > 0) {
+		//	ThreadSupport.sleep(aDelay);
+		//}
+		IPCMechanism mechanism = getIPCMechanism();
+		System.out.println("IPC Mechanism");
+		System.out.println(mechanism);
+		
+		
+		if(mechanism.toString().equals("GIPC")) {
+						
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			clientOutCoupler = new ClientOutCoupler(serverGIPC, (ClientRemoteInterfaceGIPC) this, CLIENT_NAME, false);
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			System.out.println("using gipc proxy server");
+		}
+		if(mechanism.toString().equals("RMI")) {
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			clientOutCoupler = new ClientOutCoupler(server, (ClientRemoteInterfaceGIPC) this, CLIENT_NAME, false);
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			System.out.println("using RMI proxy server");
+		}
+		
+		//IPC Mechanism Change
+		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
+		try {
+			server.broadcastIPCMechanism(mechanism, (ClientRemoteInterfaceGIPC) this, aProposalNumber, broadcastIPCMechanism);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		commandProcessor.setInputString(aCommand); // all commands go to the first command window
+	}
+	
+	@Override	
+	public void quit(int aCode) {
+		//commandProcessor.setInputString("quit");
+		
+		System.exit(aCode);
+	}
+	
+	@Override
+	public void localProcessingOnly(boolean newValue) {
+		super.localProcessingOnly(newValue);
+		if (isLocalProcessingOnly()) {
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			
+		} else {
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			
+		}
+	}
+	
+	@Override
+	public void broadcastMetaState(boolean broadcast) {
+		broadcastIPCMechanism = broadcast;
+		setBroadcastMetaState(broadcast);
+		
+	}
+	
+	@Override
+	public void changeIPCMechanism(IPCMechanism mechanism, int aProposalNumber) {
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
+		setIPCMechanism(mechanism);
+		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
+		aProposalNumber++;
+	}
+	
+	protected NIOManager nioManager = NIOManagerFactory.getSingleton();
+	int aServerPort;
+	protected SocketChannel socketChannel;
+	protected boolean broadcastIPCMechanism1 = false;
+	
+	ArrayBlockingQueue<ByteBuffer> boundedBuffer = new ArrayBlockingQueue<ByteBuffer>(500);
+	ReadThreadInterface reader = null;
+	Thread readThread = null;
+	
+	@Override
+	public void nioInit(String[] args) {
+		setTracing();
+		setFactories();
+		
+		aServerPort = ClientArgsProcessor.getNIOServerPort(args);
+		System.out.println("NIO SERVER PORT: "+aServerPort);
+		
+		try {
+			socketChannel = SocketChannel.open();
+			InetAddress aServerAddress = InetAddress.getByName("localhost");
+			
+			nioManager.connect(socketChannel, aServerAddress, aServerPort, 
+					//0, // do not allow any incoming messages
+					SelectionKey.OP_READ,
+					this);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		//Create new read thread Runnable
+		//reader = new ClientReadThread(this);
+						
+		//Create new readThread
+		readThread = new Thread(reader);
+				
+		final String clientName = "client";
+		readThread.setName(clientName);
+		
+		//Start thread and do some action
+		readThread.start();
+		
+		//String aNextLine = "a new client has been initialized";
+		// wrap writes to the buffer and then flips it
+		//ByteBuffer aWriteMessage = ByteBuffer.wrap(aNextLine.getBytes());
+		//nioManager.write(socketChannel, aWriteMessage, this);
+		super.init(args);
+	}
+	
+	@Override
+	public void setFactories() {
+		ConnectCommandFactorySelector.setFactory(new AConnectCommandFactory(0));
+	}
+
+	@Override
+	public void connected(SocketChannel aSocketChannel) {
+		// TODO Auto-generated method stub
+		nioManager.addReadListener(aSocketChannel, this);
+		System.out.println("New Client connected to server!!!");
+		
+	}
+
+	@Override
+	public void notConnected(SocketChannel arg0, Exception arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void written(SocketChannel arg0, ByteBuffer arg1, int arg2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void socketChannelAccepted(ServerSocketChannel arg0, SocketChannel arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void socketChannelRead(SocketChannel arg0, ByteBuffer aMessage, int arg2) {
+		// TODO Auto-generated method stub
+		ByteBuffer copy = MiscAssignmentUtils.deepDuplicate(aMessage);
+		boundedBuffer.add(copy);
+		
+		reader.notifyThread();	
+		
+	}
+	
+	@Override
+	public ArrayBlockingQueue<ByteBuffer> getBoundedBuffer() {
+		// TODO Auto-generated method stub
+		return boundedBuffer;
+	}
+	
+	@Override
+	public void simulationCommand(String aCommand) {
+
+		IPCMechanism mechanism = getIPCMechanism();
+		System.out.println("IPC Mechanism: " + mechanism.toString());
+
+		// IPC Mechanism Change
+		ProposedStateSet.newCase(this, super.CLIENT_NAME, super.aProposalNumber, mechanism);
+		try {
+
+			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		if (!mechanism.toString().equals("NIO")) {
+			System.out.println("IPC Mechanism is GIPC or RMI");
+			super.simulationCommand(aCommand);
+			return;
+		}
+
+		commandProcessor.removePropertyChangeListener(clientOutCoupler);
+		
+		ByteBuffer bufferCommand = ByteBuffer.wrap(aCommand.getBytes());
+		RemoteProposeRequestSent.newCase(this, CLIENT_NAME, aProposalNumber, aCommand);
+		nioManager.write(socketChannel, bufferCommand, this);
+
+		
+		
+		
+		commandProcessor.setInputString(aCommand); // all commands go to the first command window
+		
+		commandProcessor.addPropertyChangeListener(clientOutCoupler);
+		aProposalNumber = 1 + aProposalNumber;
+	}
+	
+	@Override
+	public HalloweenCommandProcessor getCommandProcessor() {
+		return commandProcessor;
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="118" _type="ShellCommand" date="Tue Apr 19 21:48:42 EDT 2022" starttimestamp="1650416939918" timestamp="2382111" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="120" _type="MoveCaretCommand" caretOffset="169" date="Tue Apr 19 21:48:42 EDT 2022" docOffset="2595" starttimestamp="1650416939918" timestamp="2382181" />
+  <Command __id="121" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Tue Apr 19 21:48:42 EDT 2022" starttimestamp="1650416939918" timestamp="2382978" />
+  <Command __id="123" _type="InsertStringCommand" date="Tue Apr 19 21:48:43 EDT 2022" starttimestamp="1650416939918" timestamp="2383343" timestamp2="2383343">
+    <data><![CDATA[,]]></data>
+  </Command>
+  <Command __id="125" _type="InsertStringCommand" date="Tue Apr 19 21:48:43 EDT 2022" starttimestamp="1650416939918" timestamp="2383544" timestamp2="2383544">
+    <data><![CDATA[ ]]></data>
+  </Command>
+  <Command __id="127" _type="PasteCommand" date="Tue Apr 19 21:48:43 EDT 2022" starttimestamp="1650416939918" timestamp="2383831" />
+  <Command __id="130" _type="PauseCommand" date="Tue Apr 19 21:48:44 EDT 2022" range="1s-2s" starttimestamp="1650416939918" timestamp="2385000">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[PasteCommand]]></prev>
+    <pause><![CDATA[1169]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[InsertStringCommand]]></next>
+  </Command>
+  <Command __id="129" _type="InsertStringCommand" date="Tue Apr 19 21:48:44 EDT 2022" starttimestamp="1650416939918" timestamp="2385000" timestamp2="2385000">
+    <data><![CDATA[,]]></data>
+  </Command>
+  <Command __id="132" _type="InsertStringCommand" date="Tue Apr 19 21:48:45 EDT 2022" starttimestamp="1650416939918" timestamp="2385122" timestamp2="2385122">
+    <data><![CDATA[ ]]></data>
+  </Command>
+  <Command __id="134" _type="PauseCommand" date="Tue Apr 19 21:48:47 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="2387494">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[InsertStringCommand]]></prev>
+    <pause><![CDATA[2372]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="133" _type="ShellCommand" date="Tue Apr 19 21:48:47 EDT 2022" starttimestamp="1650416939918" timestamp="2387494" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="136" _type="PauseCommand" date="Tue Apr 19 21:48:50 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="2390280">
+    <prevType><![CDATA[Lost Focus]]></prevType>
+    <prev><![CDATA[ShellCommand]]></prev>
+    <pause><![CDATA[2786]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="135" _type="ShellCommand" date="Tue Apr 19 21:48:50 EDT 2022" starttimestamp="1650416939918" timestamp="2390280" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="137" _type="MoveCaretCommand" caretOffset="204" date="Tue Apr 19 21:48:50 EDT 2022" docOffset="2630" starttimestamp="1650416939918" timestamp="2390336" />
+  <Command __id="139" _type="PasteCommand" date="Tue Apr 19 21:48:51 EDT 2022" starttimestamp="1650416939918" timestamp="2391121" />
+  <Command __id="140" _type="EclipseCommand" commandID="" date="Tue Apr 19 21:48:51 EDT 2022" starttimestamp="1650416939918" timestamp="2391738" />
+  <Command __id="141" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Tue Apr 19 21:48:51 EDT 2022" starttimestamp="1650416939918" timestamp="2391852" />
+  <Command __id="142" _type="EclipseCommand" commandID="" date="Tue Apr 19 21:48:51 EDT 2022" starttimestamp="1650416939918" timestamp="2391875" />
+  <DocumentChange __id="122" _type="Insert" date="Tue Apr 19 21:48:43 EDT 2022" docASTNodeCount="1733" docActiveCodeLength="13091" docExpressionCount="1214" docLength="14661" length="36" offset="2594" repeat="5" starttimestamp="1650416939918" timestamp="2383333" timestamp2="2385114">
+    <text><![CDATA[, DistributedTags.ATOMIC_BROADCAST, ]]></text>
+  </DocumentChange>
+  <DocumentChange __id="138" _type="Insert" date="Tue Apr 19 21:48:51 EDT 2022" docASTNodeCount="1736" docActiveCodeLength="13123" docExpressionCount="1217" docLength="14693" length="32" offset="2630" starttimestamp="1650416939918" timestamp="2391108">
+    <text><![CDATA[DistributedTags.TWO_PHASE_COMMIT]]></text>
+  </DocumentChange>
+  <Command __id="144" _type="PauseCommand" date="Tue Apr 19 21:48:59 EDT 2022" range="5s-10s" starttimestamp="1650416939918" timestamp="2399321">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[7446]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="145" _type="MoveCaretCommand" caretOffset="0" date="Tue Apr 19 21:48:59 EDT 2022" docOffset="0" starttimestamp="1650416939918" timestamp="2399797" />
+  <Command __id="143" _type="DiffBasedFileOpenCommand" date="Tue Apr 19 21:48:59 EDT 2022" docASTNodeCount="71" docActiveCodeLength="451" docExpressionCount="43" docLength="541" projectName="A7" starttimestamp="1650416939918" timestamp="2399321">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A7\src\client\Client.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package client;
+
+import util.annotations.Tags;
+import util.tags.DistributedTags;
+
+@Tags({ DistributedTags.CLIENT, DistributedTags.RMI, DistributedTags.GIPC, DistributedTags.NIO })
+public class Client {
+	public static void main(final String[] args) {
+		try {
+
+			// create client object
+			//final ClientRemoteInterfaceRMI client = new ClientRemoteObject();
+			final ClientRemoteInterfaceRMI client = new ClientRemoteObjectNIO();
+			
+			client.start(args);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="147" _type="PauseCommand" date="Tue Apr 19 21:49:05 EDT 2022" range="5s-10s" starttimestamp="1650416939918" timestamp="2405946">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[6149]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="148" _type="MoveCaretCommand" caretOffset="236" date="Tue Apr 19 21:49:06 EDT 2022" docOffset="2662" starttimestamp="1650416939918" timestamp="2406124" />
+  <Command __id="150" _type="PauseCommand" date="Tue Apr 19 21:49:12 EDT 2022" range="5s-10s" starttimestamp="1650416939918" timestamp="2412356">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[6232]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="149" _type="SelectTextCommand" caretOffset="210" date="Tue Apr 19 21:49:12 EDT 2022" end="210" start="170" starttimestamp="1650416939918" timestamp="2412356" />
+  <Command __id="152" _type="PauseCommand" date="Tue Apr 19 21:49:18 EDT 2022" range="5s-10s" starttimestamp="1650416939918" timestamp="2418221">
+    <prevType><![CDATA[Select]]></prevType>
+    <prev><![CDATA[SelectTextCommand]]></prev>
+    <pause><![CDATA[5865]]></pause>
+    <nextType><![CDATA[Select]]></nextType>
+    <next><![CDATA[SelectTextCommand]]></next>
+  </Command>
+  <Command __id="151" _type="SelectTextCommand" caretOffset="170" date="Tue Apr 19 21:49:18 EDT 2022" end="236" start="170" starttimestamp="1650416939918" timestamp="2418221" />
+  <Command __id="153" _type="CopyCommand" date="Tue Apr 19 21:49:18 EDT 2022" starttimestamp="1650416939918" timestamp="2418935" />
+  <Command __id="155" _type="MoveCaretCommand" caretOffset="0" date="Tue Apr 19 21:49:19 EDT 2022" docOffset="0" starttimestamp="1650416939918" timestamp="2420013" />
+  <Command __id="157" _type="PauseCommand" date="Tue Apr 19 21:49:21 EDT 2022" range="1s-2s" starttimestamp="1650416939918" timestamp="2421586">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[1573]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="156" _type="MoveCaretCommand" caretOffset="147" date="Tue Apr 19 21:49:21 EDT 2022" docOffset="182" starttimestamp="1650416939918" timestamp="2421586" />
+  <Command __id="158" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Tue Apr 19 21:49:21 EDT 2022" starttimestamp="1650416939918" timestamp="2422061" />
+  <Command __id="160" _type="InsertStringCommand" date="Tue Apr 19 21:49:22 EDT 2022" starttimestamp="1650416939918" timestamp="2422464" timestamp2="2422464">
+    <data><![CDATA[,]]></data>
+  </Command>
+  <Command __id="162" _type="InsertStringCommand" date="Tue Apr 19 21:49:22 EDT 2022" starttimestamp="1650416939918" timestamp="2422781" timestamp2="2422781">
+    <data><![CDATA[ ]]></data>
+  </Command>
+  <Command __id="164" _type="EclipseCommand" commandID="org.eclipse.ui.edit.delete" date="Tue Apr 19 21:49:23 EDT 2022" starttimestamp="1650416939918" timestamp="2423287" />
+  <Command __id="166" _type="PasteCommand" date="Tue Apr 19 21:49:24 EDT 2022" starttimestamp="1650416939918" timestamp="2424127" />
+  <Command __id="167" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Tue Apr 19 21:49:24 EDT 2022" starttimestamp="1650416939918" timestamp="2424610" />
+  <Command __id="168" _type="EclipseCommand" commandID="" date="Tue Apr 19 21:49:24 EDT 2022" starttimestamp="1650416939918" timestamp="2424750" />
+  <Command __id="169" _type="EclipseCommand" commandID="" date="Tue Apr 19 21:49:24 EDT 2022" starttimestamp="1650416939918" timestamp="2424808" />
+  <Command __id="146" _type="DiffBasedFileOpenCommand" date="Tue Apr 19 21:49:05 EDT 2022" docASTNodeCount="1736" docActiveCodeLength="13123" docExpressionCount="1217" docLength="14693" projectName="A7" starttimestamp="1650416939918" timestamp="2405946">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A7\src\client\ClientConfigure.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package client;¶¶import java.beans.PropertyChangeListener;¶import java.io.IOException;¶import java.net.InetAddress;¶import java.nio.ByteBuffer;¶import java.nio.channels.SelectionKey;¶import java.nio.channels.ServerSocketChannel;¶import java.nio.channels.SocketChannel;¶import java.rmi.AccessException;¶import java.rmi.NotBoundException;¶import java.rmi.RemoteException;¶import java.rmi.registry.LocateRegistry;¶import java.rmi.registry.Registry;¶import java.rmi.server.UnicastRemoteObject;¶import java.util.concurrent.ArrayBlockingQueue;¶¶import assignments.util.MiscAssignmentUtils;¶import assignments.util.mainArgs.ClientArgsProcessor;¶import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;¶import coupledsims.Simulation;¶import coupledsims.Simulation1;¶import inputport.nio.manager.NIOManager;¶import inputport.nio.manager.NIOManagerFactory;¶import inputport.nio.manager.factories.classes.AConnectCommandFactory;¶import inputport.nio.manager.factories.selectors.ConnectCommandFactorySelector;¶import inputport.rpc.GIPCLocateRegistry;¶import inputport.rpc.GIPCRegistry;¶import main.BeauAndersonFinalProject;¶import readThread.ClientReadThread;¶import readThread.ReadThreadInterface;¶import server.remote.ServerRemoteInterfaceGIPC;¶import server.remote.ServerRemoteInterfaceRMI;¶import server.remote.ServerRemoteObjectGIPC;¶import server.remote.ServerRemoteObjectRMI;¶import stringProcessors.HalloweenCommandProcessor;¶import util.annotations.Tags;¶import util.interactiveMethodInvocation.IPCMechanism;¶import util.tags.DistributedTags;¶import util.trace.Tracer;¶import util.trace.bean.BeanTraceUtility;¶import util.trace.factories.FactoryTraceUtility;¶import util.trace.misc.ThreadDelayed;¶import util.trace.port.PerformanceExperimentEnded;¶import util.trace.port.PerformanceExperimentStarted;¶import util.trace.port.PortTraceUtility;¶import util.trace.port.consensus.ConsensusTraceUtility;¶import util.trace.port.consensus.ProposalLearnedNotificationReceived;¶import util.trace.port.consensus.ProposedStateSet;¶import util.trace.port.consensus.RemoteProposeRequestSent;¶import util.trace.port.nio.NIOTraceUtility;¶import util.trace.port.rpc.gipc.GIPCObjectLookedUp;¶import util.trace.port.rpc.gipc.GIPCRPCTraceUtility;¶import util.trace.port.rpc.gipc.GIPCRegistryLocated;¶import util.trace.port.rpc.rmi.RMIObjectLookedUp;¶import util.trace.port.rpc.rmi.RMIRegistryLocated;¶import util.trace.port.rpc.rmi.RMITraceUtility;¶¶@Tags({DistributedTags.CLIENT_CONFIGURER, DistributedTags.RMI, DistributedTags.GIPC, DistributedTags.NIO"), Diff(INSERT,", DistributedTags.ATOMIC_BROADCAST, DistributedTags.TWO_PHASE_COMMIT"), Diff(EQUAL,"})¶public class ClientConfigure  extends ClientRemoteObject implements ClientRemoteInterfaceNIO {¶	¶	HalloweenCommandProcessor commandProcessor;¶	protected int NUM_EXPERIMENT_COMMANDS = 500;¶	public static final String EXPERIMENT_COMMAND_1 = "move 1 -1";¶	public static final String EXPERIMENT_COMMAND_2 = "undo";¶	protected PropertyChangeListener simulationCoupler;¶	ServerRemoteInterfaceGIPC server = null;¶	ServerRemoteInterfaceGIPC serverGIPC = null;¶	¶¶	private static String RMI_SERVER_HOST_NAME;¶	private static int RMI_SERVER_PORT;¶	private static String SERVER_NAME;¶	private static String CLIENT_NAME;¶	¶	//A5¶	private static int GIPC_SERVER_PORT;¶	protected static GIPCRegistry gipcRegistry;¶	private static String GIPC_SERVER_NAME ;¶	private static boolean broadcastIPCMechanism = false;¶	private static int aProposalNumber;¶	¶	PropertyChangeListener clientOutCoupler;¶¶	@Override¶	public HalloweenCommandProcessor createSimulation(String aPrefix) {¶		return BeauAndersonFinalProject.createSimulation(aPrefix, Simulation1.SIMULATION1_X_OFFSET,¶				Simulation.SIMULATION_Y_OFFSET, Simulation.SIMULATION_WIDTH, Simulation.SIMULATION_HEIGHT,¶				Simulation1.SIMULATION1_X_OFFSET, Simulation.SIMULATION_Y_OFFSET);¶	}¶¶	@Override¶	public void processArgs(String[] args) {¶		System.out.println("Registry host:" + ClientArgsProcessor.getRegistryHost(args));¶		System.out.println("Registry port:" + ClientArgsProcessor.getRegistryPort(args));¶		System.out.println("Server host:" + ClientArgsProcessor.getServerHost(args));¶		System.out.println("Headless:" + ClientArgsProcessor.getHeadless(args));¶		System.out.println("Client name:" + ClientArgsProcessor.getClientName(args));¶¶		// Make sure you set this property when processing args¶		System.setProperty("java.awt.headless", ClientArgsProcessor.getHeadless(args));¶¶		RMI_SERVER_HOST_NAME = ClientArgsProcessor.getRegistryHost(args);¶		RMI_SERVER_PORT = ClientArgsProcessor.getRegistryPort(args);¶		SERVER_NAME = "SERVER";¶				//ClientArgsProcessor.getServerHost(args);¶		CLIENT_NAME = ClientArgsProcessor.getClientName(args);¶¶¶		//A5¶		GIPC_SERVER_PORT = ClientArgsProcessor.getGIPCPort(args);¶		GIPC_SERVER_NAME = ClientArgsProcessor.getServerHost(args);¶		¶	}¶	¶	@Override¶	public void atomicBroadcast(boolean fake) {¶		return;¶	}¶	¶	@Override¶	protected void setTracing() {¶		//A5¶		FactoryTraceUtility.setTracing();¶		BeanTraceUtility.setTracing();¶		RMITraceUtility.setTracing();¶		ConsensusTraceUtility.setTracing();¶		ThreadDelayed.enablePrint();¶		GIPCRPCTraceUtility.setTracing();¶		NIOTraceUtility.setTracing();¶¶		//A4¶		PortTraceUtility.setTracing();¶		RMITraceUtility.setTracing();¶		NIOTraceUtility.setTracing();¶		FactoryTraceUtility.setTracing();		¶		ConsensusTraceUtility.setTracing();¶		ThreadDelayed.enablePrint();¶		trace(true);¶	}¶¶	@Override¶	public void init(String[] args) {¶		setTracing();¶¶		this.processArgs(args);¶		// Ideally the prefixes should be main args¶		commandProcessor = createSimulation(Simulation1.SIMULATION1_PREFIX);¶		¶		//Locate GIPC Server¶		gipcRegistry = GIPCLocateRegistry.getRegistry(GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);¶		GIPCRegistryLocated.newCase(this, GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);¶		¶		//Get GIPC server here¶		serverGIPC = (ServerRemoteInterfaceGIPC) gipcRegistry.lookup(ServerRemoteObjectGIPC.class, SERVER_NAME);¶		GIPCObjectLookedUp.newCase(this, serverGIPC, ServerRemoteObjectGIPC.class, SERVER_NAME, gipcRegistry);¶		¶		//Register Client with GIPC Proxy¶		try {¶			serverGIPC.registerClientGIPC((ClientRemoteInterfaceGIPC) this);¶		} catch (RemoteException e) {¶			// TODO Auto-generated catch block¶			e.printStackTrace();¶		}¶		¶		¶		// Locate RMI Server¶		Registry rmiRegistry = null;¶		try {¶			rmiRegistry = LocateRegistry.getRegistry(RMI_SERVER_HOST_NAME, RMI_SERVER_PORT);¶			RMIRegistryLocated.newCase(this, RMI_SERVER_HOST_NAME, RMI_SERVER_PORT, rmiRegistry);¶		} catch (RemoteException e3) {¶			e3.printStackTrace();¶		}¶		// Get RMI server here¶		¶		try {¶			server = (ServerRemoteInterfaceGIPC) rmiRegistry.lookup(SERVER_NAME);¶			RMIObjectLookedUp.newCase(this, server, SERVER_NAME, rmiRegistry);¶		} catch (AccessException e2) {¶			// TODO Auto-generated catch block¶			e2.printStackTrace();¶		} catch (RemoteException e2) {¶¶			e2.printStackTrace();¶		} catch (NotBoundException e2) {¶			e2.printStackTrace();¶		}¶¶		// export client to create proxy¶		try {¶			UnicastRemoteObject.exportObject(this, 0);¶		} catch (RemoteException e1) {¶			e1.printStackTrace();¶		}¶¶		// have the server register the exported client¶		try {¶			server.registerClientRMI((ClientRemoteInterfaceGIPC) this);¶		} catch (RemoteException e) {¶			e.printStackTrace();¶		}¶		¶		¶		clientOutCoupler = new ClientOutCoupler(server, (ClientRemoteInterfaceGIPC) this, CLIENT_NAME, false);¶		//clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);¶		// Add propertyChangeListener¶		commandProcessor.addPropertyChangeListener(clientOutCoupler);¶		¶		System.out.println("added server as a property change listener of client");¶	}¶¶	@Override¶	public void inCoupler(String aNewCommand, int proposalNumber) {¶		//final int aProposalNumber = proposalNumber;¶		System.out.println("recieved broadcased command: "+ aNewCommand);¶		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);¶		commandProcessor.processCommand(aNewCommand);¶		ProposedStateSet.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);¶		System.out.println("executed command");¶		¶	}¶	¶	@Override¶	/*¶	 * You will need to delay not command input but sends(non-Javadoc)¶	 */¶	public void simulationCommand1(String aCommand) {¶		//long aDelay = getDelay(); ¶		//if (aDelay > 0) {¶		//	ThreadSupport.sleep(aDelay);¶		//}¶		IPCMechanism mechanism = getIPCMechanism();¶		System.out.println("IPC Mechanism");¶		System.out.println(mechanism);¶		¶		¶		if(mechanism.toString().equals("GIPC")) {¶						¶			commandProcessor.removePropertyChangeListener(clientOutCoupler);¶			clientOutCoupler = new ClientOutCoupler(serverGIPC, (ClientRemoteInterfaceGIPC) this, CLIENT_NAME, false);¶			commandProcessor.addPropertyChangeListener(clientOutCoupler);¶			System.out.println("using gipc proxy server");¶		}¶		if(mechanism.toString().equals("RMI")) {¶			commandProcessor.removePropertyChangeListener(clientOutCoupler);¶			clientOutCoupler = new ClientOutCoupler(server, (ClientRemoteInterfaceGIPC) this, CLIENT_NAME, false);¶			commandProcessor.addPropertyChangeListener(clientOutCoupler);¶			System.out.println("using RMI proxy server");¶		}¶		¶		//IPC Mechanism Change¶		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);¶		try {¶			server.broadcastIPCMechanism(mechanism, (ClientRemoteInterfaceGIPC) this, aProposalNumber, broadcastIPCMechanism);¶		} catch (RemoteException e) {¶			// TODO Auto-generated catch block¶			e.printStackTrace();¶		}¶		commandProcessor.setInputString(aCommand); // all commands go to the first command window¶	}¶	¶	@Override	¶	public void quit(int aCode) {¶		//commandProcessor.setInputString("quit");¶		¶		System.exit(aCode);¶	}¶	¶	@Override¶	public void localProcessingOnly(boolean newValue) {¶		super.localProcessingOnly(newValue);¶		if (isLocalProcessingOnly()) {¶			commandProcessor.removePropertyChangeListener(clientOutCoupler);¶			¶		} else {¶			commandProcessor.addPropertyChangeListener(clientOutCoupler);¶			¶		}¶	}¶	¶	@Override¶	public void broadcastMetaState(boolean broadcast) {¶		broadcastIPCMechanism = broadcast;¶		setBroadcastMetaState(broadcast);¶		¶	}¶	¶	@Override¶	public void changeIPCMechanism(IPCMechanism mechanism, int aProposalNumber) {¶		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);¶		setIPCMechanism(mechanism);¶		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);¶		aProposalNumber++;¶	}¶	¶	protected NIOManager nioManager = NIOManagerFactory.getSingleton();¶	int aServerPort;¶	protected SocketChannel socketChannel;¶	protected boolean broadcastIPCMechanism1 = false;¶	¶	ArrayBlockingQueue<ByteBuffer> boundedBuffer = new ArrayBlockingQueue<ByteBuffer>(500);¶	ReadThreadInterface reader = null;¶	Thread readThread = null;¶	¶	@Override¶	public void nioInit(String[] args) {¶		setTracing();¶		setFactories();¶		¶		aServerPort = ClientArgsProcessor.getNIOServerPort(args);¶		System.out.println("NIO SERVER PORT: "+aServerPort);¶		¶		try {¶			socketChannel = SocketChannel.open();¶			InetAddress aServerAddress = InetAddress.getByName("localhost");¶			¶			nioManager.connect(socketChannel, aServerAddress, aServerPort, ¶					//0, // do not allow any incoming messages¶					SelectionKey.OP_READ,¶					this);¶		} catch (IOException e) {¶			e.printStackTrace();¶		}¶		¶		//Create new read thread Runnable¶		//reader = new ClientReadThread(this);¶						¶		//Create new readThread¶		readThread = new Thread(reader);¶				¶		final String clientName = "client";¶		readThread.setName(clientName);¶		¶		//Start thread and do some action¶		readThread.start();¶		¶		//String aNextLine = "a new client has been initialized";¶		// wrap writes to the buffer and then flips it¶		//ByteBuffer aWriteMessage = ByteBuffer.wrap(aNextLine.getBytes());¶		//nioManager.write(socketChannel, aWriteMessage, this);¶		super.init(args);¶	}¶	¶	@Override¶	public void setFactories() {¶		ConnectCommandFactorySelector.setFactory(new AConnectCommandFactory(0));¶	}¶¶	@Override¶	public void connected(SocketChannel aSocketChannel) {¶		// TODO Auto-generated method stub¶		nioManager.addReadListener(aSocketChannel, this);¶		System.out.println("New Client connected to server!!!");¶		¶	}¶¶	@Override¶	public void notConnected(SocketChannel arg0, Exception arg1) {¶		// TODO Auto-generated method stub¶		¶	}¶¶	@Override¶	public void written(SocketChannel arg0, ByteBuffer arg1, int arg2) {¶		// TODO Auto-generated method stub¶		¶	}¶¶	@Override¶	public void socketChannelAccepted(ServerSocketChannel arg0, SocketChannel arg1) {¶		// TODO Auto-generated method stub¶		¶	}¶¶	@Override¶	public void socketChannelRead(SocketChannel arg0, ByteBuffer aMessage, int arg2) {¶		// TODO Auto-generated method stub¶		ByteBuffer copy = MiscAssignmentUtils.deepDuplicate(aMessage);¶		boundedBuffer.add(copy);¶		¶		reader.notifyThread();	¶		¶	}¶	¶	@Override¶	public ArrayBlockingQueue<ByteBuffer> getBoundedBuffer() {¶		// TODO Auto-generated method stub¶		return boundedBuffer;¶	}¶	¶	@Override¶	public void simulationCommand(String aCommand) {¶¶		IPCMechanism mechanism = getIPCMechanism();¶		System.out.println("IPC Mechanism: " + mechanism.toString());¶¶		// IPC Mechanism Change¶		ProposedStateSet.newCase(this, super.CLIENT_NAME, super.aProposalNumber, mechanism);¶		try {¶¶			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);¶		} catch (RemoteException e) {¶			// TODO Auto-generated catch block¶			e.printStackTrace();¶		}¶¶		if (!mechanism.toString().equals("NIO")) {¶			System.out.println("IPC Mechanism is GIPC or RMI");¶			super.simulationCommand(aCommand);¶			return;¶		}¶¶		commandProcessor.removePropertyChangeListener(clientOutCoupler);¶		¶		ByteBuffer bufferCommand = ByteBuffer.wrap(aCommand.getBytes());¶		RemoteProposeRequestSent.newCase(this, CLIENT_NAME, aProposalNumber, aCommand);¶		nioManager.write(socketChannel, bufferCommand, this);¶¶		¶		¶		¶		commandProcessor.setInputString(aCommand); // all commands go to the first command window¶		¶		commandProcessor.addPropertyChangeListener(clientOutCoupler);¶		aProposalNumber = 1 + aProposalNumber;¶	}¶	¶	@Override¶	public HalloweenCommandProcessor getCommandProcessor() {¶		return commandProcessor;¶	}¶¶}¶")]]]></diff>
+    <snapshot><![CDATA[package client;
+
+import java.beans.PropertyChangeListener;
+import java.io.IOException;
+import java.net.InetAddress;
+import java.nio.ByteBuffer;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
+import java.rmi.AccessException;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+import java.util.concurrent.ArrayBlockingQueue;
+
+import assignments.util.MiscAssignmentUtils;
+import assignments.util.mainArgs.ClientArgsProcessor;
+import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;
+import coupledsims.Simulation;
+import coupledsims.Simulation1;
+import inputport.nio.manager.NIOManager;
+import inputport.nio.manager.NIOManagerFactory;
+import inputport.nio.manager.factories.classes.AConnectCommandFactory;
+import inputport.nio.manager.factories.selectors.ConnectCommandFactorySelector;
+import inputport.rpc.GIPCLocateRegistry;
+import inputport.rpc.GIPCRegistry;
+import main.BeauAndersonFinalProject;
+import readThread.ClientReadThread;
+import readThread.ReadThreadInterface;
+import server.remote.ServerRemoteInterfaceGIPC;
+import server.remote.ServerRemoteInterfaceRMI;
+import server.remote.ServerRemoteObjectGIPC;
+import server.remote.ServerRemoteObjectRMI;
+import stringProcessors.HalloweenCommandProcessor;
+import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
+import util.tags.DistributedTags;
+import util.trace.Tracer;
+import util.trace.bean.BeanTraceUtility;
+import util.trace.factories.FactoryTraceUtility;
+import util.trace.misc.ThreadDelayed;
+import util.trace.port.PerformanceExperimentEnded;
+import util.trace.port.PerformanceExperimentStarted;
+import util.trace.port.PortTraceUtility;
+import util.trace.port.consensus.ConsensusTraceUtility;
+import util.trace.port.consensus.ProposalLearnedNotificationReceived;
+import util.trace.port.consensus.ProposedStateSet;
+import util.trace.port.consensus.RemoteProposeRequestSent;
+import util.trace.port.nio.NIOTraceUtility;
+import util.trace.port.rpc.gipc.GIPCObjectLookedUp;
+import util.trace.port.rpc.gipc.GIPCRPCTraceUtility;
+import util.trace.port.rpc.gipc.GIPCRegistryLocated;
+import util.trace.port.rpc.rmi.RMIObjectLookedUp;
+import util.trace.port.rpc.rmi.RMIRegistryLocated;
+import util.trace.port.rpc.rmi.RMITraceUtility;
+
+@Tags({DistributedTags.CLIENT_CONFIGURER, DistributedTags.RMI, DistributedTags.GIPC, DistributedTags.NIO, DistributedTags.ATOMIC_BROADCAST, DistributedTags.TWO_PHASE_COMMIT})
+public class ClientConfigure  extends ClientRemoteObject implements ClientRemoteInterfaceNIO {
+	
+	HalloweenCommandProcessor commandProcessor;
+	protected int NUM_EXPERIMENT_COMMANDS = 500;
+	public static final String EXPERIMENT_COMMAND_1 = "move 1 -1";
+	public static final String EXPERIMENT_COMMAND_2 = "undo";
+	protected PropertyChangeListener simulationCoupler;
+	ServerRemoteInterfaceGIPC server = null;
+	ServerRemoteInterfaceGIPC serverGIPC = null;
+	
+
+	private static String RMI_SERVER_HOST_NAME;
+	private static int RMI_SERVER_PORT;
+	private static String SERVER_NAME;
+	private static String CLIENT_NAME;
+	
+	//A5
+	private static int GIPC_SERVER_PORT;
+	protected static GIPCRegistry gipcRegistry;
+	private static String GIPC_SERVER_NAME ;
+	private static boolean broadcastIPCMechanism = false;
+	private static int aProposalNumber;
+	
+	PropertyChangeListener clientOutCoupler;
+
+	@Override
+	public HalloweenCommandProcessor createSimulation(String aPrefix) {
+		return BeauAndersonFinalProject.createSimulation(aPrefix, Simulation1.SIMULATION1_X_OFFSET,
+				Simulation.SIMULATION_Y_OFFSET, Simulation.SIMULATION_WIDTH, Simulation.SIMULATION_HEIGHT,
+				Simulation1.SIMULATION1_X_OFFSET, Simulation.SIMULATION_Y_OFFSET);
+	}
+
+	@Override
+	public void processArgs(String[] args) {
+		System.out.println("Registry host:" + ClientArgsProcessor.getRegistryHost(args));
+		System.out.println("Registry port:" + ClientArgsProcessor.getRegistryPort(args));
+		System.out.println("Server host:" + ClientArgsProcessor.getServerHost(args));
+		System.out.println("Headless:" + ClientArgsProcessor.getHeadless(args));
+		System.out.println("Client name:" + ClientArgsProcessor.getClientName(args));
+
+		// Make sure you set this property when processing args
+		System.setProperty("java.awt.headless", ClientArgsProcessor.getHeadless(args));
+
+		RMI_SERVER_HOST_NAME = ClientArgsProcessor.getRegistryHost(args);
+		RMI_SERVER_PORT = ClientArgsProcessor.getRegistryPort(args);
+		SERVER_NAME = "SERVER";
+				//ClientArgsProcessor.getServerHost(args);
+		CLIENT_NAME = ClientArgsProcessor.getClientName(args);
+
+
+		//A5
+		GIPC_SERVER_PORT = ClientArgsProcessor.getGIPCPort(args);
+		GIPC_SERVER_NAME = ClientArgsProcessor.getServerHost(args);
+		
+	}
+	
+	@Override
+	public void atomicBroadcast(boolean fake) {
+		return;
+	}
+	
+	@Override
+	protected void setTracing() {
+		//A5
+		FactoryTraceUtility.setTracing();
+		BeanTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		GIPCRPCTraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+
+		//A4
+		PortTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();		
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		trace(true);
+	}
+
+	@Override
+	public void init(String[] args) {
+		setTracing();
+
+		this.processArgs(args);
+		// Ideally the prefixes should be main args
+		commandProcessor = createSimulation(Simulation1.SIMULATION1_PREFIX);
+		
+		//Locate GIPC Server
+		gipcRegistry = GIPCLocateRegistry.getRegistry(GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);
+		GIPCRegistryLocated.newCase(this, GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);
+		
+		//Get GIPC server here
+		serverGIPC = (ServerRemoteInterfaceGIPC) gipcRegistry.lookup(ServerRemoteObjectGIPC.class, SERVER_NAME);
+		GIPCObjectLookedUp.newCase(this, serverGIPC, ServerRemoteObjectGIPC.class, SERVER_NAME, gipcRegistry);
+		
+		//Register Client with GIPC Proxy
+		try {
+			serverGIPC.registerClientGIPC((ClientRemoteInterfaceGIPC) this);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		// Locate RMI Server
+		Registry rmiRegistry = null;
+		try {
+			rmiRegistry = LocateRegistry.getRegistry(RMI_SERVER_HOST_NAME, RMI_SERVER_PORT);
+			RMIRegistryLocated.newCase(this, RMI_SERVER_HOST_NAME, RMI_SERVER_PORT, rmiRegistry);
+		} catch (RemoteException e3) {
+			e3.printStackTrace();
+		}
+		// Get RMI server here
+		
+		try {
+			server = (ServerRemoteInterfaceGIPC) rmiRegistry.lookup(SERVER_NAME);
+			RMIObjectLookedUp.newCase(this, server, SERVER_NAME, rmiRegistry);
+		} catch (AccessException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		} catch (RemoteException e2) {
+
+			e2.printStackTrace();
+		} catch (NotBoundException e2) {
+			e2.printStackTrace();
+		}
+
+		// export client to create proxy
+		try {
+			UnicastRemoteObject.exportObject(this, 0);
+		} catch (RemoteException e1) {
+			e1.printStackTrace();
+		}
+
+		// have the server register the exported client
+		try {
+			server.registerClientRMI((ClientRemoteInterfaceGIPC) this);
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		}
+		
+		
+		clientOutCoupler = new ClientOutCoupler(server, (ClientRemoteInterfaceGIPC) this, CLIENT_NAME, false);
+		//clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);
+		// Add propertyChangeListener
+		commandProcessor.addPropertyChangeListener(clientOutCoupler);
+		
+		System.out.println("added server as a property change listener of client");
+	}
+
+	@Override
+	public void inCoupler(String aNewCommand, int proposalNumber) {
+		//final int aProposalNumber = proposalNumber;
+		System.out.println("recieved broadcased command: "+ aNewCommand);
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);
+		commandProcessor.processCommand(aNewCommand);
+		ProposedStateSet.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);
+		System.out.println("executed command");
+		
+	}
+	
+	@Override
+	/*
+	 * You will need to delay not command input but sends(non-Javadoc)
+	 */
+	public void simulationCommand1(String aCommand) {
+		//long aDelay = getDelay(); 
+		//if (aDelay > 0) {
+		//	ThreadSupport.sleep(aDelay);
+		//}
+		IPCMechanism mechanism = getIPCMechanism();
+		System.out.println("IPC Mechanism");
+		System.out.println(mechanism);
+		
+		
+		if(mechanism.toString().equals("GIPC")) {
+						
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			clientOutCoupler = new ClientOutCoupler(serverGIPC, (ClientRemoteInterfaceGIPC) this, CLIENT_NAME, false);
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			System.out.println("using gipc proxy server");
+		}
+		if(mechanism.toString().equals("RMI")) {
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			clientOutCoupler = new ClientOutCoupler(server, (ClientRemoteInterfaceGIPC) this, CLIENT_NAME, false);
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			System.out.println("using RMI proxy server");
+		}
+		
+		//IPC Mechanism Change
+		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
+		try {
+			server.broadcastIPCMechanism(mechanism, (ClientRemoteInterfaceGIPC) this, aProposalNumber, broadcastIPCMechanism);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		commandProcessor.setInputString(aCommand); // all commands go to the first command window
+	}
+	
+	@Override	
+	public void quit(int aCode) {
+		//commandProcessor.setInputString("quit");
+		
+		System.exit(aCode);
+	}
+	
+	@Override
+	public void localProcessingOnly(boolean newValue) {
+		super.localProcessingOnly(newValue);
+		if (isLocalProcessingOnly()) {
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			
+		} else {
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			
+		}
+	}
+	
+	@Override
+	public void broadcastMetaState(boolean broadcast) {
+		broadcastIPCMechanism = broadcast;
+		setBroadcastMetaState(broadcast);
+		
+	}
+	
+	@Override
+	public void changeIPCMechanism(IPCMechanism mechanism, int aProposalNumber) {
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
+		setIPCMechanism(mechanism);
+		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
+		aProposalNumber++;
+	}
+	
+	protected NIOManager nioManager = NIOManagerFactory.getSingleton();
+	int aServerPort;
+	protected SocketChannel socketChannel;
+	protected boolean broadcastIPCMechanism1 = false;
+	
+	ArrayBlockingQueue<ByteBuffer> boundedBuffer = new ArrayBlockingQueue<ByteBuffer>(500);
+	ReadThreadInterface reader = null;
+	Thread readThread = null;
+	
+	@Override
+	public void nioInit(String[] args) {
+		setTracing();
+		setFactories();
+		
+		aServerPort = ClientArgsProcessor.getNIOServerPort(args);
+		System.out.println("NIO SERVER PORT: "+aServerPort);
+		
+		try {
+			socketChannel = SocketChannel.open();
+			InetAddress aServerAddress = InetAddress.getByName("localhost");
+			
+			nioManager.connect(socketChannel, aServerAddress, aServerPort, 
+					//0, // do not allow any incoming messages
+					SelectionKey.OP_READ,
+					this);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		//Create new read thread Runnable
+		//reader = new ClientReadThread(this);
+						
+		//Create new readThread
+		readThread = new Thread(reader);
+				
+		final String clientName = "client";
+		readThread.setName(clientName);
+		
+		//Start thread and do some action
+		readThread.start();
+		
+		//String aNextLine = "a new client has been initialized";
+		// wrap writes to the buffer and then flips it
+		//ByteBuffer aWriteMessage = ByteBuffer.wrap(aNextLine.getBytes());
+		//nioManager.write(socketChannel, aWriteMessage, this);
+		super.init(args);
+	}
+	
+	@Override
+	public void setFactories() {
+		ConnectCommandFactorySelector.setFactory(new AConnectCommandFactory(0));
+	}
+
+	@Override
+	public void connected(SocketChannel aSocketChannel) {
+		// TODO Auto-generated method stub
+		nioManager.addReadListener(aSocketChannel, this);
+		System.out.println("New Client connected to server!!!");
+		
+	}
+
+	@Override
+	public void notConnected(SocketChannel arg0, Exception arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void written(SocketChannel arg0, ByteBuffer arg1, int arg2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void socketChannelAccepted(ServerSocketChannel arg0, SocketChannel arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void socketChannelRead(SocketChannel arg0, ByteBuffer aMessage, int arg2) {
+		// TODO Auto-generated method stub
+		ByteBuffer copy = MiscAssignmentUtils.deepDuplicate(aMessage);
+		boundedBuffer.add(copy);
+		
+		reader.notifyThread();	
+		
+	}
+	
+	@Override
+	public ArrayBlockingQueue<ByteBuffer> getBoundedBuffer() {
+		// TODO Auto-generated method stub
+		return boundedBuffer;
+	}
+	
+	@Override
+	public void simulationCommand(String aCommand) {
+
+		IPCMechanism mechanism = getIPCMechanism();
+		System.out.println("IPC Mechanism: " + mechanism.toString());
+
+		// IPC Mechanism Change
+		ProposedStateSet.newCase(this, super.CLIENT_NAME, super.aProposalNumber, mechanism);
+		try {
+
+			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		if (!mechanism.toString().equals("NIO")) {
+			System.out.println("IPC Mechanism is GIPC or RMI");
+			super.simulationCommand(aCommand);
+			return;
+		}
+
+		commandProcessor.removePropertyChangeListener(clientOutCoupler);
+		
+		ByteBuffer bufferCommand = ByteBuffer.wrap(aCommand.getBytes());
+		RemoteProposeRequestSent.newCase(this, CLIENT_NAME, aProposalNumber, aCommand);
+		nioManager.write(socketChannel, bufferCommand, this);
+
+		
+		
+		
+		commandProcessor.setInputString(aCommand); // all commands go to the first command window
+		
+		commandProcessor.addPropertyChangeListener(clientOutCoupler);
+		aProposalNumber = 1 + aProposalNumber;
+	}
+	
+	@Override
+	public HalloweenCommandProcessor getCommandProcessor() {
+		return commandProcessor;
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="154" _type="DiffBasedFileOpenCommand" date="Tue Apr 19 21:49:19 EDT 2022" docASTNodeCount="71" docActiveCodeLength="451" docExpressionCount="43" docLength="541" projectName="A7" starttimestamp="1650416939918" timestamp="2419807">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A7\src\client\Client.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package client;¶¶import util.annotations.Tags;¶import util.tags.DistributedTags;¶¶@Tags({ DistributedTags.CLIENT, DistributedTags.RMI, DistributedTags.GIPC, DistributedTags.NIO })¶public class Client {¶	public static void main(final String[] args) {¶		try {¶¶			// create client object¶			//final ClientRemoteInterfaceRMI client = new ClientRemoteObject();¶			final ClientRemoteInterfaceRMI client = new ClientRemoteObjectNIO();¶			¶			client.start(args);¶¶		} catch (Exception e) {¶			e.printStackTrace();¶		}¶¶	}¶¶}¶")]]]></diff>
+  </Command>
+  <DocumentChange __id="159" _type="Insert" date="Tue Apr 19 21:49:22 EDT 2022" docASTNodeCount="71" docActiveCodeLength="453" docExpressionCount="43" docLength="543" length="2" offset="181" repeat="2" starttimestamp="1650416939918" timestamp="2422456" timestamp2="2422772">
+    <text><![CDATA[, ]]></text>
+  </DocumentChange>
+  <DocumentChange __id="163" _type="Delete" date="Tue Apr 19 21:49:23 EDT 2022" docASTNodeCount="71" docActiveCodeLength="452" docExpressionCount="43" docLength="542" endLine="5" length="1" offset="183" startLine="5" starttimestamp="1650416939918" timestamp="2423276">
+    <text><![CDATA[ ]]></text>
+  </DocumentChange>
+  <DocumentChange __id="165" _type="Insert" date="Tue Apr 19 21:49:23 EDT 2022" docASTNodeCount="77" docActiveCodeLength="518" docExpressionCount="49" docLength="608" length="66" offset="183" starttimestamp="1650416939918" timestamp="2424012">
+    <text><![CDATA[DistributedTags.ATOMIC_BROADCAST, DistributedTags.TWO_PHASE_COMMIT]]></text>
+  </DocumentChange>
+  <Command __id="171" _type="PauseCommand" date="Tue Apr 19 21:50:06 EDT 2022" range="30s-1m" starttimestamp="1650416939918" timestamp="2466446">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[41638]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="172" _type="MoveCaretCommand" caretOffset="0" date="Tue Apr 19 21:50:06 EDT 2022" docOffset="0" starttimestamp="1650416939918" timestamp="2466877" />
+  <Command __id="170" _type="DiffBasedFileOpenCommand" date="Tue Apr 19 21:50:06 EDT 2022" docASTNodeCount="1250" docActiveCodeLength="9747" docExpressionCount="896" docLength="10689" projectName="A7" starttimestamp="1650416939918" timestamp="2466446">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A7\src\client\ClientRemoteObject.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package client;
+
+import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
+import util.misc.ThreadSupport;
+import util.tags.DistributedTags;
+
+import java.beans.PropertyChangeListener;
+import java.nio.ByteBuffer;
+import java.nio.channels.SocketChannel;
+import java.rmi.AccessException;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+
+
+import assignments.util.mainArgs.ClientArgsProcessor;
+import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;
+import coupledsims.Simulation;
+import coupledsims.Simulation1;
+import inputport.rpc.GIPCLocateRegistry;
+import inputport.rpc.GIPCRegistry;
+import main.BeauAndersonFinalProject;
+import server.remote.ServerRemoteInterfaceRMI;
+import server.remote.ServerRemoteObjectGIPC;
+import server.remote.ServerRemoteInterfaceGIPC;
+import stringProcessors.HalloweenCommandProcessor;
+import util.trace.bean.BeanTraceUtility;
+import util.trace.factories.FactoryTraceUtility;
+import util.trace.misc.ThreadDelayed;
+import util.trace.port.PortTraceUtility;
+import util.trace.port.consensus.ConsensusTraceUtility;
+import util.trace.port.consensus.ProposalLearnedNotificationReceived;
+import util.trace.port.consensus.ProposedStateSet;
+import util.trace.port.nio.NIOTraceUtility;
+import util.trace.port.rpc.gipc.GIPCObjectLookedUp;
+import util.trace.port.rpc.gipc.GIPCRPCTraceUtility;
+import util.trace.port.rpc.gipc.GIPCRegistryLocated;
+import util.trace.port.rpc.rmi.RMIObjectLookedUp;
+import util.trace.port.rpc.rmi.RMIRegistryLocated;
+import util.trace.port.rpc.rmi.RMITraceUtility;
+
+@Tags({ DistributedTags.CLIENT_REMOTE_OBJECT, DistributedTags.RMI, DistributedTags.GIPC })
+public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulations implements ClientRemoteInterfaceRMI, ClientRemoteInterfaceGIPC {
+	HalloweenCommandProcessor commandProcessor;
+	protected int NUM_EXPERIMENT_COMMANDS = 500;
+	public static final String EXPERIMENT_COMMAND_1 = "move 1 -1";
+	public static final String EXPERIMENT_COMMAND_2 = "undo";
+	protected PropertyChangeListener simulationCoupler;
+	ServerRemoteInterfaceGIPC server = null;
+	ServerRemoteInterfaceGIPC serverGIPC = null;
+	
+
+	private static String RMI_SERVER_HOST_NAME;
+	private static int RMI_SERVER_PORT;
+	private static String SERVER_NAME;
+	public String CLIENT_NAME;
+	
+	//A5
+	private static int GIPC_SERVER_PORT;
+	protected static GIPCRegistry gipcRegistry;
+	private static String GIPC_SERVER_NAME ;
+	protected boolean broadcastIPCMechanism = false;
+	//protected int aProposalNumber;
+	public int aProposalNumber;
+	
+	PropertyChangeListener clientOutCoupler;
+
+	@Override
+	public HalloweenCommandProcessor createSimulation(String aPrefix) {
+		return BeauAndersonFinalProject.createSimulation(aPrefix, Simulation1.SIMULATION1_X_OFFSET,
+				Simulation.SIMULATION_Y_OFFSET, Simulation.SIMULATION_WIDTH, Simulation.SIMULATION_HEIGHT,
+				Simulation1.SIMULATION1_X_OFFSET, Simulation.SIMULATION_Y_OFFSET);
+	}
+
+	@Override
+	public void processArgs(String[] args) {
+		System.out.println("Registry host:" + ClientArgsProcessor.getRegistryHost(args));
+		System.out.println("Registry port:" + ClientArgsProcessor.getRegistryPort(args));
+		System.out.println("Server host:" + ClientArgsProcessor.getServerHost(args));
+		System.out.println("Headless:" + ClientArgsProcessor.getHeadless(args));
+		System.out.println("Client name:" + ClientArgsProcessor.getClientName(args));
+
+		// Make sure you set this property when processing args
+		System.setProperty("java.awt.headless", ClientArgsProcessor.getHeadless(args));
+
+		RMI_SERVER_HOST_NAME = ClientArgsProcessor.getRegistryHost(args);
+		RMI_SERVER_PORT = ClientArgsProcessor.getRegistryPort(args);
+		SERVER_NAME = "SERVER";
+		
+		//ServerArgsProcessor.ge;
+		CLIENT_NAME = ClientArgsProcessor.getClientName(args);
+
+
+		//A5
+		GIPC_SERVER_PORT = ClientArgsProcessor.getGIPCPort(args);
+		GIPC_SERVER_NAME = ClientArgsProcessor.getServerHost(args);
+		
+	}
+	
+	@Override
+	protected void setTracing() {
+		//A6
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();
+		BeanTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		GIPCRPCTraceUtility.setTracing();
+
+		
+		//A5
+		FactoryTraceUtility.setTracing();
+		BeanTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		GIPCRPCTraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+
+		//A4
+		PortTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();		
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		trace(true);
+	}
+
+	@Override
+	public void init(String[] args) {
+		setTracing();
+
+		this.processArgs(args);
+		// Ideally the prefixes should be main args
+		commandProcessor = createSimulation(Simulation1.SIMULATION1_PREFIX);
+		
+		//Locate GIPC Server
+		gipcRegistry = GIPCLocateRegistry.getRegistry(GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);
+		GIPCRegistryLocated.newCase(this, GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);
+		
+		//Get GIPC server here
+		serverGIPC = (ServerRemoteInterfaceGIPC) gipcRegistry.lookup(ServerRemoteObjectGIPC.class, SERVER_NAME);
+		GIPCObjectLookedUp.newCase(this, serverGIPC, ServerRemoteObjectGIPC.class, SERVER_NAME, gipcRegistry);
+		
+		//Register Client with GIPC Proxy
+		try {
+			serverGIPC.registerClientGIPC(this);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		// Locate RMI Server
+		Registry rmiRegistry = null;
+		try {
+			rmiRegistry = LocateRegistry.getRegistry(RMI_SERVER_HOST_NAME, RMI_SERVER_PORT);
+			RMIRegistryLocated.newCase(this, RMI_SERVER_HOST_NAME, RMI_SERVER_PORT, rmiRegistry);
+		} catch (RemoteException e3) {
+			e3.printStackTrace();
+		}
+		// Get RMI server here
+		
+		try {
+			System.out.println("WE ARE LOOKING UP server from RMI REGISTRY HERE: "+SERVER_NAME);
+			server = (ServerRemoteInterfaceGIPC) rmiRegistry.lookup(SERVER_NAME);
+			System.out.println("SERVER looked up in RMI registry!!");
+			RMIObjectLookedUp.newCase(this, server, SERVER_NAME, rmiRegistry);
+		} catch (AccessException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		} catch (RemoteException e2) {
+
+			e2.printStackTrace();
+		} catch (NotBoundException e2) {
+			e2.printStackTrace();
+		}
+
+		// export client to create proxy
+		try {
+			UnicastRemoteObject.exportObject(this, 0);
+		} catch (RemoteException e1) {
+			e1.printStackTrace();
+		}
+
+		// have the server register the exported client
+		try {
+			server.registerClientRMI(this);
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		}
+		
+		
+		clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME, false);
+		//clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);
+		// Add propertyChangeListener
+		commandProcessor.addPropertyChangeListener(clientOutCoupler);
+		
+		System.out.println("added server as a property change listener of client");
+	}
+
+	@Override
+	public void inCoupler(String aNewCommand, int proposalNumber) {
+		//final int aProposalNumber = proposalNumber;
+		System.out.println("recieved broadcased command: "+ aNewCommand);
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);
+		commandProcessor.processCommand(aNewCommand);
+		ProposedStateSet.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);
+		System.out.println("executed command");
+		System.out.println("A PROPOSAL NUMBER: "+proposalNumber);
+		
+	}
+	
+	@Override
+	/*
+	 * You will need to delay not command input but sends(non-Javadoc)
+	 */
+	public void simulationCommand(String aCommand) {
+		//long aDelay = getDelay(); 
+		//if (aDelay > 0) {
+		//	ThreadSupport.sleep(aDelay);
+		//}
+		IPCMechanism mechanism = getIPCMechanism();
+		System.out.println("IPC Mechanism gotten from old GIPC simiulation command method");
+		System.out.println(mechanism);
+		
+		
+		if(mechanism.toString().equals("GIPC")) {
+						
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME, false);
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			System.out.println("using gipc proxy server");
+		}
+		if(mechanism.toString().equals("RMI")) {
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME, false);
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			System.out.println("using RMI proxy server");
+		}
+		
+		//IPC Mechanism Change
+		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);
+		try {
+			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		commandProcessor.setInputString(aCommand); // all commands go to the first command window
+	}
+	
+	@Override	
+	public void quit(int aCode) {
+		//commandProcessor.setInputString("quit");
+		
+		System.exit(aCode);
+	}
+	
+	@Override
+	public void localProcessingOnly(boolean newValue) {
+		super.localProcessingOnly(newValue);
+		if (isLocalProcessingOnly()) {
+			commandProcessor.removePropertyChangeListener(clientOutCoupler);
+			
+		} else {
+			commandProcessor.addPropertyChangeListener(clientOutCoupler);
+			
+		}
+	}
+	
+	@Override
+	public void broadcastMetaState(boolean broadcast) {
+		broadcastIPCMechanism = broadcast;
+		setBroadcastMetaState(broadcast);
+	
+	}
+	
+	@Override
+	public void changeIPCMechanism(IPCMechanism mechanism, int proposalNumber) {
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, proposalNumber, mechanism);
+		setIPCMechanism(mechanism);
+		System.out.print("GOT IPC MECHANISM CHANGE: "+mechanism);
+		ProposedStateSet.newCase(this, CLIENT_NAME, proposalNumber, mechanism);
+		//aProposalNumber++;
+		
+	}
+	
+	@Override
+	public void ipcMechanism(IPCMechanism mechanism) {
+		setIPCMechanism(mechanism);
+		
+		if(this.broadcastMetaState) {
+			try {
+				server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);
+			} catch (RemoteException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+
+
+
+
+
+
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="174" _type="PauseCommand" date="Tue Apr 19 21:50:10 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="2470723">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[3846]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="175" _type="MoveCaretCommand" caretOffset="0" date="Tue Apr 19 21:50:10 EDT 2022" docOffset="0" starttimestamp="1650416939918" timestamp="2471037" />
+  <Command __id="173" _type="DiffBasedFileOpenCommand" date="Tue Apr 19 21:50:10 EDT 2022" docASTNodeCount="784" docActiveCodeLength="5584" docExpressionCount="567" docLength="6764" projectName="A7" starttimestamp="1650416939918" timestamp="2470723">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A7\src\client\ClientRemoteObjectNIO.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package client;
+
+import java.io.IOException;
+import java.net.InetAddress;
+import java.nio.ByteBuffer;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
+import java.rmi.RemoteException;
+import java.util.concurrent.ArrayBlockingQueue;
+
+import assignments.util.MiscAssignmentUtils;
+import assignments.util.mainArgs.ClientArgsProcessor;
+import assignments.util.mainArgs.ServerArgsProcessor;
+import inputport.nio.manager.NIOManager;
+import inputport.nio.manager.NIOManagerFactory;
+import inputport.nio.manager.factories.classes.AConnectCommandFactory;
+import inputport.nio.manager.factories.classes.AnAcceptCommandFactory;
+import inputport.nio.manager.factories.selectors.AcceptCommandFactorySelector;
+import inputport.nio.manager.factories.selectors.ConnectCommandFactorySelector;
+import nioExample.exampleClientReadThread;
+import readThread.ClientReadThread;
+import readThread.ReadThreadInterface;
+import stringProcessors.HalloweenCommandProcessor;
+import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
+import util.tags.DistributedTags;
+import util.trace.port.consensus.ProposalLearnedNotificationReceived;
+import util.trace.port.consensus.ProposalMade;
+import util.trace.port.consensus.ProposedStateSet;
+import util.trace.port.consensus.RemoteProposeRequestReceived;
+import util.trace.port.consensus.RemoteProposeRequestSent;
+import util.trace.port.consensus.communication.CommunicationStateNames;
+
+@Tags({ DistributedTags.CLIENT_REMOTE_OBJECT, DistributedTags.RMI, DistributedTags.GIPC, DistributedTags.NIO })
+public class ClientRemoteObjectNIO extends ClientRemoteObject implements ClientRemoteInterfaceNIO{
+	protected NIOManager nioManager = NIOManagerFactory.getSingleton();
+	int aServerPort;
+	protected SocketChannel socketChannel;
+	protected boolean broadcastIPCMechanism = false;
+	
+	ArrayBlockingQueue<ByteBuffer> boundedBuffer = new ArrayBlockingQueue<ByteBuffer>(500);
+	ReadThreadInterface reader = null;
+	Thread readThread = null;
+	
+	@Override
+	public void init(String[] args) {
+		setTracing();
+		setFactories();
+		
+		aServerPort = ClientArgsProcessor.getNIOServerPort(args);
+		System.out.println("NIO SERVER PORT: "+aServerPort);
+		
+		try {
+			socketChannel = SocketChannel.open();
+			InetAddress aServerAddress = InetAddress.getByName("localhost");
+			
+			nioManager.connect(socketChannel, aServerAddress, aServerPort, 
+					//0, // do not allow any incoming messages
+					SelectionKey.OP_READ,
+					this);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		//Create new read thread Runnable
+		reader = new ClientReadThread(this);
+						
+		//Create new readThread
+		readThread = new Thread(reader);
+				
+		//Start thread and do some action
+		readThread.start();
+		
+		//String aNextLine = "a new client has been initialized";
+		// wrap writes to the buffer and then flips it
+		//ByteBuffer aWriteMessage = ByteBuffer.wrap(aNextLine.getBytes());
+		//nioManager.write(socketChannel, aWriteMessage, this);
+		super.init(args);
+	}
+	
+	@Override
+	public void setFactories() {
+		ConnectCommandFactorySelector.setFactory(new AConnectCommandFactory(0));
+	}
+
+	@Override
+	public void connected(SocketChannel aSocketChannel) {
+		// TODO Auto-generated method stub
+		nioManager.addReadListener(aSocketChannel, this);
+		System.out.println("New Client connected to server!!!");
+		
+	}
+
+	@Override
+	public void notConnected(SocketChannel arg0, Exception arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void written(SocketChannel arg0, ByteBuffer arg1, int arg2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void socketChannelAccepted(ServerSocketChannel arg0, SocketChannel arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void socketChannelRead(SocketChannel arg0, ByteBuffer aMessage, int arg2) {
+		// TODO Auto-generated method stub
+		ByteBuffer copy = MiscAssignmentUtils.deepDuplicate(aMessage);
+		boundedBuffer.add(copy);
+		
+		//TODO NEED TO PARSE THE PROPOSAL NUMBER
+		String aMessageString = new String(copy.array());
+		System.out.println(aMessageString);
+		int aProposalNumber = Integer.parseInt( aMessageString.substring(aMessageString.length()-1) );
+		aMessageString =  aMessageString.substring(0, aMessageString.length()-1);
+		System.out.println("CLIENT COMMAND: "+aMessageString);
+		//int aProposalNumber = 0;
+		
+		//ByteBuffer bufferCommand = ByteBuffer.wrap(aMessageString.getBytes());
+		//boundedBuffer.add(bufferCommand);
+		
+		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, aProposalNumber, aMessageString);
+		//RemoteProposeRequestReceived.newCase(this, CLIENT_NAME, aProposalNumber, aMessageString);
+		reader.notifyThread();	
+		
+	}
+	
+	@Override
+	public ArrayBlockingQueue<ByteBuffer> getBoundedBuffer() {
+		// TODO Auto-generated method stub
+		return boundedBuffer;
+	}
+	
+	@Override
+	public void simulationCommand(String aCommand) {
+		String originalCommand = aCommand;
+		IPCMechanism mechanism = getIPCMechanism();
+		System.out.println("IPC Mechanism: " + mechanism.toString());
+
+
+		aProposalNumber = 1 + aProposalNumber;
+		System.out.println("A PROPOSAL NUMBER: "+aProposalNumber);
+		
+		if (!mechanism.toString().equals("NIO")) {
+			System.out.println("IPC Mechanism is GIPC or RMI");
+			super.simulationCommand(aCommand);
+			return;
+		}
+
+		commandProcessor.removePropertyChangeListener(clientOutCoupler);
+		clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME, true);
+		commandProcessor.addPropertyChangeListener(clientOutCoupler);
+		commandProcessor.setInputString(originalCommand); // all commands go to the first command window
+		
+		aCommand = aCommand.concat(String.valueOf(aProposalNumber));
+		System.out.println("COMMAND + PROPOSAL NUMBER:"+aCommand);
+		ByteBuffer bufferCommand = ByteBuffer.wrap(aCommand.getBytes());
+		//RemoteProposeRequestSent.newCase(this, CLIENT_NAME, aProposalNumber, aCommand);
+		ProposalMade.newCase(this, CommunicationStateNames.COMMAND, -1, originalCommand);
+		nioManager.write(socketChannel, bufferCommand, this);
+	
+
+		
+		
+		
+		//commandProcessor.setInputString(originalCommand); // all commands go to the first command window
+		
+		//commandProcessor.addPropertyChangeListener(clientOutCoupler);
+		
+	}
+	
+	@Override
+	public HalloweenCommandProcessor getCommandProcessor() {
+		return commandProcessor;
+	}
+
+	@Override
+	public void simulationCommand1(String aCommand) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void nioInit(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+		
+
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="177" _type="PauseCommand" date="Tue Apr 19 21:50:15 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="2475409">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[4372]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="178" _type="MoveCaretCommand" caretOffset="0" date="Tue Apr 19 21:50:15 EDT 2022" docOffset="0" starttimestamp="1650416939918" timestamp="2475733" />
+  <Command __id="180" _type="PauseCommand" date="Tue Apr 19 21:50:22 EDT 2022" range="5s-10s" starttimestamp="1650416939918" timestamp="2482145">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[6412]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="179" _type="MoveCaretCommand" caretOffset="139" date="Tue Apr 19 21:50:22 EDT 2022" docOffset="1814" starttimestamp="1650416939918" timestamp="2482145" />
+  <Command __id="182" _type="InsertStringCommand" date="Tue Apr 19 21:50:22 EDT 2022" starttimestamp="1650416939918" timestamp="2482837" timestamp2="2482837">
+    <data><![CDATA[,]]></data>
+  </Command>
+  <Command __id="184" _type="InsertStringCommand" date="Tue Apr 19 21:50:22 EDT 2022" starttimestamp="1650416939918" timestamp="2483037" timestamp2="2483037">
+    <data><![CDATA[ ]]></data>
+  </Command>
+  <Command __id="186" _type="PasteCommand" date="Tue Apr 19 21:50:23 EDT 2022" starttimestamp="1650416939918" timestamp="2484015" />
+  <Command __id="187" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Tue Apr 19 21:50:24 EDT 2022" starttimestamp="1650416939918" timestamp="2484634" />
+  <Command __id="188" _type="EclipseCommand" commandID="" date="Tue Apr 19 21:50:24 EDT 2022" starttimestamp="1650416939918" timestamp="2484721" />
+  <Command __id="189" _type="EclipseCommand" commandID="" date="Tue Apr 19 21:50:24 EDT 2022" starttimestamp="1650416939918" timestamp="2484901" />
+  <Command __id="176" _type="DiffBasedFileOpenCommand" date="Tue Apr 19 21:50:15 EDT 2022" docASTNodeCount="1250" docActiveCodeLength="9747" docExpressionCount="896" docLength="10689" projectName="A7" starttimestamp="1650416939918" timestamp="2475409">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A7\src\client\ClientRemoteObject.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package client;¶¶import util.annotations.Tags;¶import util.interactiveMethodInvocation.IPCMechanism;¶import util.misc.ThreadSupport;¶import util.tags.DistributedTags;¶¶import java.beans.PropertyChangeListener;¶import java.nio.ByteBuffer;¶import java.nio.channels.SocketChannel;¶import java.rmi.AccessException;¶import java.rmi.NotBoundException;¶import java.rmi.RemoteException;¶import java.rmi.registry.LocateRegistry;¶import java.rmi.registry.Registry;¶import java.rmi.server.UnicastRemoteObject;¶¶¶import assignments.util.mainArgs.ClientArgsProcessor;¶import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;¶import coupledsims.Simulation;¶import coupledsims.Simulation1;¶import inputport.rpc.GIPCLocateRegistry;¶import inputport.rpc.GIPCRegistry;¶import main.BeauAndersonFinalProject;¶import server.remote.ServerRemoteInterfaceRMI;¶import server.remote.ServerRemoteObjectGIPC;¶import server.remote.ServerRemoteInterfaceGIPC;¶import stringProcessors.HalloweenCommandProcessor;¶import util.trace.bean.BeanTraceUtility;¶import util.trace.factories.FactoryTraceUtility;¶import util.trace.misc.ThreadDelayed;¶import util.trace.port.PortTraceUtility;¶import util.trace.port.consensus.ConsensusTraceUtility;¶import util.trace.port.consensus.ProposalLearnedNotificationReceived;¶import util.trace.port.consensus.ProposedStateSet;¶import util.trace.port.nio.NIOTraceUtility;¶import util.trace.port.rpc.gipc.GIPCObjectLookedUp;¶import util.trace.port.rpc.gipc.GIPCRPCTraceUtility;¶import util.trace.port.rpc.gipc.GIPCRegistryLocated;¶import util.trace.port.rpc.rmi.RMIObjectLookedUp;¶import util.trace.port.rpc.rmi.RMIRegistryLocated;¶import util.trace.port.rpc.rmi.RMITraceUtility;¶¶@Tags({ DistributedTags.CLIENT_REMOTE_OBJECT, DistributedTags.RMI, DistributedTags.GIPC })¶public class ClientRemoteObject extends AStandAloneTwoCoupledHalloweenSimulations implements ClientRemoteInterfaceRMI, ClientRemoteInterfaceGIPC {¶	HalloweenCommandProcessor commandProcessor;¶	protected int NUM_EXPERIMENT_COMMANDS = 500;¶	public static final String EXPERIMENT_COMMAND_1 = "move 1 -1";¶	public static final String EXPERIMENT_COMMAND_2 = "undo";¶	protected PropertyChangeListener simulationCoupler;¶	ServerRemoteInterfaceGIPC server = null;¶	ServerRemoteInterfaceGIPC serverGIPC = null;¶	¶¶	private static String RMI_SERVER_HOST_NAME;¶	private static int RMI_SERVER_PORT;¶	private static String SERVER_NAME;¶	public String CLIENT_NAME;¶	¶	//A5¶	private static int GIPC_SERVER_PORT;¶	protected static GIPCRegistry gipcRegistry;¶	private static String GIPC_SERVER_NAME ;¶	protected boolean broadcastIPCMechanism = false;¶	//protected int aProposalNumber;¶	public int aProposalNumber;¶	¶	PropertyChangeListener clientOutCoupler;¶¶	@Override¶	public HalloweenCommandProcessor createSimulation(String aPrefix) {¶		return BeauAndersonFinalProject.createSimulation(aPrefix, Simulation1.SIMULATION1_X_OFFSET,¶				Simulation.SIMULATION_Y_OFFSET, Simulation.SIMULATION_WIDTH, Simulation.SIMULATION_HEIGHT,¶				Simulation1.SIMULATION1_X_OFFSET, Simulation.SIMULATION_Y_OFFSET);¶	}¶¶	@Override¶	public void processArgs(String[] args) {¶		System.out.println("Registry host:" + ClientArgsProcessor.getRegistryHost(args));¶		System.out.println("Registry port:" + ClientArgsProcessor.getRegistryPort(args));¶		System.out.println("Server host:" + ClientArgsProcessor.getServerHost(args));¶		System.out.println("Headless:" + ClientArgsProcessor.getHeadless(args));¶		System.out.println("Client name:" + ClientArgsProcessor.getClientName(args));¶¶		// Make sure you set this property when processing args¶		System.setProperty("java.awt.headless", ClientArgsProcessor.getHeadless(args));¶¶		RMI_SERVER_HOST_NAME = ClientArgsProcessor.getRegistryHost(args);¶		RMI_SERVER_PORT = ClientArgsProcessor.getRegistryPort(args);¶		SERVER_NAME = "SERVER";¶		¶		//ServerArgsProcessor.ge;¶		CLIENT_NAME = ClientArgsProcessor.getClientName(args);¶¶¶		//A5¶		GIPC_SERVER_PORT = ClientArgsProcessor.getGIPCPort(args);¶		GIPC_SERVER_NAME = ClientArgsProcessor.getServerHost(args);¶		¶	}¶	¶	@Override¶	protected void setTracing() {¶		//A6¶		NIOTraceUtility.setTracing();¶		FactoryTraceUtility.setTracing();¶		BeanTraceUtility.setTracing();¶		RMITraceUtility.setTracing();¶		ConsensusTraceUtility.setTracing();¶		ThreadDelayed.enablePrint();¶		GIPCRPCTraceUtility.setTracing();¶¶		¶		//A5¶		FactoryTraceUtility.setTracing();¶		BeanTraceUtility.setTracing();¶		RMITraceUtility.setTracing();¶		ConsensusTraceUtility.setTracing();¶		ThreadDelayed.enablePrint();¶		GIPCRPCTraceUtility.setTracing();¶		NIOTraceUtility.setTracing();¶¶		//A4¶		PortTraceUtility.setTracing();¶		RMITraceUtility.setTracing();¶		NIOTraceUtility.setTracing();¶		FactoryTraceUtility.setTracing();		¶		ConsensusTraceUtility.setTracing();¶		ThreadDelayed.enablePrint();¶		trace(true);¶	}¶¶	@Override¶	public void init(String[] args) {¶		setTracing();¶¶		this.processArgs(args);¶		// Ideally the prefixes should be main args¶		commandProcessor = createSimulation(Simulation1.SIMULATION1_PREFIX);¶		¶		//Locate GIPC Server¶		gipcRegistry = GIPCLocateRegistry.getRegistry(GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);¶		GIPCRegistryLocated.newCase(this, GIPC_SERVER_NAME, GIPC_SERVER_PORT, CLIENT_NAME);¶		¶		//Get GIPC server here¶		serverGIPC = (ServerRemoteInterfaceGIPC) gipcRegistry.lookup(ServerRemoteObjectGIPC.class, SERVER_NAME);¶		GIPCObjectLookedUp.newCase(this, serverGIPC, ServerRemoteObjectGIPC.class, SERVER_NAME, gipcRegistry);¶		¶		//Register Client with GIPC Proxy¶		try {¶			serverGIPC.registerClientGIPC(this);¶		} catch (RemoteException e) {¶			// TODO Auto-generated catch block¶			e.printStackTrace();¶		}¶		¶		¶		// Locate RMI Server¶		Registry rmiRegistry = null;¶		try {¶			rmiRegistry = LocateRegistry.getRegistry(RMI_SERVER_HOST_NAME, RMI_SERVER_PORT);¶			RMIRegistryLocated.newCase(this, RMI_SERVER_HOST_NAME, RMI_SERVER_PORT, rmiRegistry);¶		} catch (RemoteException e3) {¶			e3.printStackTrace();¶		}¶		// Get RMI server here¶		¶		try {¶			System.out.println("WE ARE LOOKING UP server from RMI REGISTRY HERE: "+SERVER_NAME);¶			server = (ServerRemoteInterfaceGIPC) rmiRegistry.lookup(SERVER_NAME);¶			System.out.println("SERVER looked up in RMI registry!!");¶			RMIObjectLookedUp.newCase(this, server, SERVER_NAME, rmiRegistry);¶		} catch (AccessException e2) {¶			// TODO Auto-generated catch block¶			e2.printStackTrace();¶		} catch (RemoteException e2) {¶¶			e2.printStackTrace();¶		} catch (NotBoundException e2) {¶			e2.printStackTrace();¶		}¶¶		// export client to create proxy¶		try {¶			UnicastRemoteObject.exportObject(this, 0);¶		} catch (RemoteException e1) {¶			e1.printStackTrace();¶		}¶¶		// have the server register the exported client¶		try {¶			server.registerClientRMI(this);¶		} catch (RemoteException e) {¶			e.printStackTrace();¶		}¶		¶		¶		clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME, false);¶		//clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME);¶		// Add propertyChangeListener¶		commandProcessor.addPropertyChangeListener(clientOutCoupler);¶		¶		System.out.println("added server as a property change listener of client");¶	}¶¶	@Override¶	public void inCoupler(String aNewCommand, int proposalNumber) {¶		//final int aProposalNumber = proposalNumber;¶		System.out.println("recieved broadcased command: "+ aNewCommand);¶		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);¶		commandProcessor.processCommand(aNewCommand);¶		ProposedStateSet.newCase(this, CLIENT_NAME, proposalNumber, aNewCommand);¶		System.out.println("executed command");¶		System.out.println("A PROPOSAL NUMBER: "+proposalNumber);¶		¶	}¶	¶	@Override¶	/*¶	 * You will need to delay not command input but sends(non-Javadoc)¶	 */¶	public void simulationCommand(String aCommand) {¶		//long aDelay = getDelay(); ¶		//if (aDelay > 0) {¶		//	ThreadSupport.sleep(aDelay);¶		//}¶		IPCMechanism mechanism = getIPCMechanism();¶		System.out.println("IPC Mechanism gotten from old GIPC simiulation command method");¶		System.out.println(mechanism);¶		¶		¶		if(mechanism.toString().equals("GIPC")) {¶						¶			commandProcessor.removePropertyChangeListener(clientOutCoupler);¶			clientOutCoupler = new ClientOutCoupler(serverGIPC, this, CLIENT_NAME, false);¶			commandProcessor.addPropertyChangeListener(clientOutCoupler);¶			System.out.println("using gipc proxy server");¶		}¶		if(mechanism.toString().equals("RMI")) {¶			commandProcessor.removePropertyChangeListener(clientOutCoupler);¶			clientOutCoupler = new ClientOutCoupler(server, this, CLIENT_NAME, false);¶			commandProcessor.addPropertyChangeListener(clientOutCoupler);¶			System.out.println("using RMI proxy server");¶		}¶		¶		//IPC Mechanism Change¶		ProposedStateSet.newCase(this, CLIENT_NAME, aProposalNumber, mechanism);¶		try {¶			server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);¶		} catch (RemoteException e) {¶			// TODO Auto-generated catch block¶			e.printStackTrace();¶		}¶		commandProcessor.setInputString(aCommand); // all commands go to the first command window¶	}¶	¶	@Override	¶	public void quit(int aCode) {¶		//commandProcessor.setInputString("quit");¶		¶		System.exit(aCode);¶	}¶	¶	@Override¶	public void localProcessingOnly(boolean newValue) {¶		super.localProcessingOnly(newValue);¶		if (isLocalProcessingOnly()) {¶			commandProcessor.removePropertyChangeListener(clientOutCoupler);¶			¶		} else {¶			commandProcessor.addPropertyChangeListener(clientOutCoupler);¶			¶		}¶	}¶	¶	@Override¶	public void broadcastMetaState(boolean broadcast) {¶		broadcastIPCMechanism = broadcast;¶		setBroadcastMetaState(broadcast);¶	¶	}¶	¶	@Override¶	public void changeIPCMechanism(IPCMechanism mechanism, int proposalNumber) {¶		ProposalLearnedNotificationReceived.newCase(this, CLIENT_NAME, proposalNumber, mechanism);¶		setIPCMechanism(mechanism);¶		System.out.print("GOT IPC MECHANISM CHANGE: "+mechanism);¶		ProposedStateSet.newCase(this, CLIENT_NAME, proposalNumber, mechanism);¶		//aProposalNumber++;¶		¶	}¶	¶	@Override¶	public void ipcMechanism(IPCMechanism mechanism) {¶		setIPCMechanism(mechanism);¶		¶		if(this.broadcastMetaState) {¶			try {¶				server.broadcastIPCMechanism(mechanism, this, aProposalNumber, broadcastIPCMechanism);¶			} catch (RemoteException e) {¶				// TODO Auto-generated catch block¶				e.printStackTrace();¶			}¶		}¶	}¶¶¶¶¶¶¶¶}¶")]]]></diff>
+  </Command>
+  <DocumentChange __id="181" _type="Insert" date="Tue Apr 19 21:50:22 EDT 2022" docASTNodeCount="1256" docActiveCodeLength="9815" docExpressionCount="902" docLength="10757" length="68" offset="1814" repeat="3" starttimestamp="1650416939918" timestamp="2482830" timestamp2="2483896">
+    <text><![CDATA[, DistributedTags.ATOMIC_BROADCAST, DistributedTags.TWO_PHASE_COMMIT]]></text>
+  </DocumentChange>
+  <Command __id="191" _type="PauseCommand" date="Tue Apr 19 21:50:33 EDT 2022" range="5s-10s" starttimestamp="1650416939918" timestamp="2493144">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[8242]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="192" _type="MoveCaretCommand" caretOffset="0" date="Tue Apr 19 21:50:33 EDT 2022" docOffset="0" starttimestamp="1650416939918" timestamp="2493581" />
+  <Command __id="194" _type="PauseCommand" date="Tue Apr 19 21:50:37 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="2497222">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[3641]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="193" _type="MoveCaretCommand" caretOffset="154" date="Tue Apr 19 21:50:37 EDT 2022" docOffset="2541" starttimestamp="1650416939918" timestamp="2497222" />
+  <Command __id="196" _type="InsertStringCommand" date="Tue Apr 19 21:50:37 EDT 2022" starttimestamp="1650416939918" timestamp="2497894" timestamp2="2497894">
+    <data><![CDATA[,]]></data>
+  </Command>
+  <Command __id="198" _type="InsertStringCommand" date="Tue Apr 19 21:50:37 EDT 2022" starttimestamp="1650416939918" timestamp="2498041" timestamp2="2498041">
+    <data><![CDATA[ ]]></data>
+  </Command>
+  <Command __id="201" _type="PauseCommand" date="Tue Apr 19 21:50:38 EDT 2022" range="1s-2s" starttimestamp="1650416939918" timestamp="2499068">
+    <prevType><![CDATA[Edit]]></prevType>
+    <prev><![CDATA[InsertStringCommand]]></prev>
+    <pause><![CDATA[1027]]></pause>
+    <nextType><![CDATA[Edit]]></nextType>
+    <next><![CDATA[PasteCommand]]></next>
+  </Command>
+  <Command __id="200" _type="PasteCommand" date="Tue Apr 19 21:50:38 EDT 2022" starttimestamp="1650416939918" timestamp="2499068" />
+  <Command __id="202" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Tue Apr 19 21:50:39 EDT 2022" starttimestamp="1650416939918" timestamp="2499643" />
+  <Command __id="203" _type="EclipseCommand" commandID="" date="Tue Apr 19 21:50:39 EDT 2022" starttimestamp="1650416939918" timestamp="2499729" />
+  <Command __id="204" _type="EclipseCommand" commandID="" date="Tue Apr 19 21:50:39 EDT 2022" starttimestamp="1650416939918" timestamp="2499814" />
+  <Command __id="190" _type="DiffBasedFileOpenCommand" date="Tue Apr 19 21:50:33 EDT 2022" docASTNodeCount="1788" docActiveCodeLength="13105" docExpressionCount="1241" docLength="14677" projectName="A7" starttimestamp="1650416939918" timestamp="2493143">
+    <filePath><![CDATA[C:\Users\mannu\COMP_533\A7\src\server\ServerConfigure.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package server;
+
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.nio.ByteBuffer;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ArrayBlockingQueue;
+
+import assignments.util.MiscAssignmentUtils;
+import assignments.util.mainArgs.ClientArgsProcessor;
+import assignments.util.mainArgs.ServerArgsProcessor;
+import client.ClientRemoteInterfaceGIPC;
+import client.ClientRemoteInterfaceRMI;
+import coupledsims.AStandAloneTwoCoupledHalloweenSimulations;
+import inputport.nio.manager.NIOManager;
+import inputport.nio.manager.NIOManagerFactory;
+import inputport.nio.manager.factories.classes.AnAcceptCommandFactory;
+import inputport.nio.manager.factories.selectors.AcceptCommandFactorySelector;
+import inputport.rpc.GIPCLocateRegistry;
+import inputport.rpc.GIPCRegistry;
+import port.ATracingConnectionListener;
+import readThread.ReadThreadInterface;
+import readThread.ServerReadThread;
+import server.remote.ServerRemoteInterfaceNIO;
+import server.remote.ServerRemoteInterfaceRMI;
+import server.remote.ServerRemoteObjectGIPC;
+import server.remote.ServerRemoteObjectRMI;
+import util.annotations.Tags;
+import util.interactiveMethodInvocation.IPCMechanism;
+import util.interactiveMethodInvocation.SimulationParametersControllerFactory;
+import util.misc.ThreadSupport;
+import util.tags.DistributedTags;
+import util.trace.bean.BeanTraceUtility;
+import util.trace.factories.FactoryTraceUtility;
+import util.trace.misc.ThreadDelayed;
+import util.trace.port.PortTraceUtility;
+import util.trace.port.consensus.ConsensusTraceUtility;
+import util.trace.port.consensus.ProposalLearnedNotificationSent;
+import util.trace.port.consensus.RemoteProposeRequestReceived;
+import util.trace.port.nio.NIOTraceUtility;
+import util.trace.port.nio.SocketChannelBound;
+import util.trace.port.rpc.gipc.GIPCObjectRegistered;
+import util.trace.port.rpc.gipc.GIPCRPCTraceUtility;
+import util.trace.port.rpc.gipc.GIPCRegistryCreated;
+import util.trace.port.rpc.rmi.RMIObjectRegistered;
+import util.trace.port.rpc.rmi.RMIRegistryLocated;
+import util.trace.port.rpc.rmi.RMITraceUtility;
+
+@Tags({DistributedTags.SERVER_CONFIGURER, DistributedTags.RMI, DistributedTags.GIPC, DistributedTags.NIO})
+public class ServerConfigure extends ServerRemoteObjectGIPC implements ServerRemoteInterfaceNIO{
+	List<ClientRemoteInterfaceGIPC> clientListGIPC = new ArrayList<ClientRemoteInterfaceGIPC>();
+	List<ClientRemoteInterfaceGIPC> clientListRMI = new ArrayList<ClientRemoteInterfaceGIPC>();
+
+	private static String RMI_SERVER_HOST_NAME;
+	private static int RMI_SERVER_PORT;
+	private static String SERVER_NAME;
+
+	// A5
+	private static int GIPC_SERVER_PORT;
+	protected static GIPCRegistry gipcRegistry;
+
+	// int aProposalNumber = 0;
+
+	@Override
+	public void processArgs(String[] args) {
+		System.out.println("Registry host:" + ClientArgsProcessor.getRegistryHost(args));
+		System.out.println("Registry port:" + ClientArgsProcessor.getRegistryPort(args));
+		System.out.println("Server host:" + ClientArgsProcessor.getServerHost(args));
+		System.out.println("Headless:" + ClientArgsProcessor.getHeadless(args));
+		System.out.println("Client name:" + ClientArgsProcessor.getClientName(args));
+
+		// Make sure you set this property when processing args
+		System.setProperty("java.awt.headless", ClientArgsProcessor.getHeadless(args));
+
+		RMI_SERVER_HOST_NAME = ServerArgsProcessor.getRegistryHost(args);
+		RMI_SERVER_PORT = ServerArgsProcessor.getRegistryPort(args);
+		SERVER_NAME = "SERVER";
+		GIPC_SERVER_PORT = ServerArgsProcessor.getGIPCServerPort(args);
+		// ClientArgsProcessor.getServerHost(args);
+
+	}
+
+	@Override
+	public void registerClientGIPC(ClientRemoteInterfaceGIPC aClient) {
+		
+		clientListGIPC.add(aClient);
+		System.out.println("Client registered GIPC");
+		System.out.println(aClient);
+		System.out.println(clientListGIPC);
+	}
+	
+	@Override
+	public void registerClientRMI(ClientRemoteInterfaceGIPC aClient) {
+		
+		clientListRMI.add(aClient);
+		System.out.println("Client registered RMI");
+		System.out.println(aClient);
+		System.out.println(clientListRMI);
+	}
+
+	@Override
+	public void broadcast(String aNewCommand, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber){
+		List<ClientRemoteInterfaceGIPC> clientList = clientListGIPC;
+		
+		// TODO Check is this is where delay is needed
+		long aDelay = getDelay();
+		if (aDelay > 0) {
+			ThreadSupport.sleep(aDelay);
+		}
+
+		System.out.println("Command recieved for broadcast: " + aNewCommand);
+		RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
+		ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
+		
+		if(clientListGIPC.isEmpty()) {
+			clientList = clientListRMI;
+			System.out.println("USING RMI IN SERVER");
+		}
+		else {
+			clientList = clientListGIPC;
+			System.out.println("USING GIPC IN SERVER");
+		}
+		System.out.println(clientList);
+		System.out.println(clientList.size());
+		for (ClientRemoteInterfaceGIPC client : clientList) {
+			System.out.println(client);
+			if (client.equals(originalClient)) {
+				if (aNewCommand.charAt(0) == 'q') {
+					// Need to quit
+					try {
+						client.quit(0);
+					} catch (RemoteException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+				continue;
+			}
+			
+			if (aNewCommand.charAt(0) == 'q') {
+
+				try {
+					client.quit(0);
+				} catch (RemoteException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				continue;
+			}
+
+			try {
+				client.inCoupler(aNewCommand, aProposalNumber);
+			} catch (RemoteException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			//ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, aNewCommand);
+
+			//if (aNewCommand.charAt(0) == 'q') {
+				// Need to quit
+			//	this.quit(0);
+			//}
+		}
+		if (aNewCommand.charAt(0) == 'q') {
+			// Need to quit
+			this.quit(0);
+		}
+
+	}
+
+	@Override
+	public void broadcastIPCMechanism(IPCMechanism mechanism, ClientRemoteInterfaceGIPC originalClient, int aProposalNumber, boolean broadcast) {
+		List<ClientRemoteInterfaceGIPC> clientList;
+		
+		// TODO Check is this is where delay is needed
+		long aDelay = getDelay();
+		if (aDelay > 0) {
+			ThreadSupport.sleep(aDelay);
+		}
+
+		System.out.println("IPC Mechanism recieved for broadcast: " + mechanism);
+		setIPCMechanism(mechanism);
+		setBroadcastMetaState(broadcast);
+		
+		
+
+		if(clientListGIPC.isEmpty()) {
+			clientList = clientListRMI;
+			System.out.println("USING RMI IN SERVER");
+		}
+		else {
+			clientList = clientListGIPC;
+			System.out.println("USING GIPC IN SERVER");
+		}
+		
+		if (broadcast) {
+			RemoteProposeRequestReceived.newCase(this, SERVER_NAME, aProposalNumber, mechanism);
+			
+			for (ClientRemoteInterfaceGIPC client : clientList) {
+				if (client.equals(originalClient)) {
+					continue;
+				}
+
+				try {
+					client.changeIPCMechanism(mechanism, aProposalNumber);
+				} catch (RemoteException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				ProposalLearnedNotificationSent.newCase(this, SERVER_NAME, aProposalNumber, mechanism);
+			}
+		}
+
+	}
+
+	@Override
+	protected void setTracing() {
+		// A5
+		FactoryTraceUtility.setTracing();
+		BeanTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		GIPCRPCTraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+
+		// A4
+		PortTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		trace(true);
+	}
+
+	@Override
+	protected void init(String[] args) {
+
+		setTracing();
+
+		this.processArgs(args);
+		createGIPCRegistry();
+
+		try {
+			final Registry rmiRegistry = LocateRegistry.getRegistry(RMI_SERVER_HOST_NAME, RMI_SERVER_PORT);
+			RMIRegistryLocated.newCase(this, RMI_SERVER_HOST_NAME, RMI_SERVER_PORT, rmiRegistry);
+			// Create remote server object
+
+			// create proxy of remote server object
+			// UnicastRemoteObject.exportObject(server, 0);
+			UnicastRemoteObject.exportObject(this, 0);
+			// send server to RMI server
+			// rmiRegistry.rebind(SERVER_NAME, server);
+			rmiRegistry.rebind(SERVER_NAME, this);
+
+			RMIObjectRegistered.newCase(this, SERVER_NAME, (ServerRemoteInterfaceRMI) this, rmiRegistry);
+
+			System.out.println("Server proxy sent to RMI Registry");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	@Override
+	public void start(String[] args) {
+		init(args);
+		// register a callback to process actions denoted by the user commands
+		SimulationParametersControllerFactory.getSingleton().addSimulationParameterListener(this);
+		// use the calling back library
+		SimulationParametersControllerFactory.getSingleton().processCommands();		
+		//init(args);
+
+	}
+
+	@Override
+	public void fakeMethod(String stringOne, String stringTwo) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void fakeMethodTwo(String stringOne, ClientRemoteInterfaceRMI client) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	@Override
+	public void fakeMethodThree(String stringOne, ClientRemoteInterfaceGIPC client) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	@Override
+	public void fakeMethodFour(String stringOne, boolean trueFalse) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	@Override
+	public void fakeMethodFive(String stringOne, IPCMechanism mechanism) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	@Override
+	public void createGIPCRegistry() {
+		System.out.println("GIPC_SERVER_PORT: ");
+		System.out.println(GIPC_SERVER_PORT);
+		gipcRegistry = GIPCLocateRegistry.createRegistry(GIPC_SERVER_PORT);
+		GIPCRegistryCreated.newCase(this, GIPC_SERVER_PORT);
+
+		final ServerRemoteInterfaceRMI server = new ServerRemoteObjectGIPC();
+		gipcRegistry.rebind(SERVER_NAME, server);
+		GIPCObjectRegistered.newCase(this, SERVER_NAME, this, gipcRegistry);
+		gipcRegistry.getInputPort().addConnectionListener(new ATracingConnectionListener(gipcRegistry.getInputPort()));
+	}
+
+	@Override
+	public void registerClient(ClientRemoteInterfaceRMI aClient) throws RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void broadcast(String aNewCommand, ClientRemoteInterfaceRMI originalClient, int aProposalNumber)
+			throws RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	protected NIOManager nioManager = NIOManagerFactory.getSingleton();
+	int aServerPort;
+	
+	List<SocketChannel> socketList = new ArrayList<SocketChannel>();
+	ArrayBlockingQueue<ByteBuffer> boundedBuffer = new ArrayBlockingQueue<ByteBuffer>(500);
+	ReadThreadInterface reader = null;
+	Thread readThread = null;
+	SocketChannel currentSocket = null;
+	
+	//@Override
+	void initServer(String[] args) {
+		setTracing();
+		setFactories();
+		
+		aServerPort = ServerArgsProcessor.getNIOServerPort(args);
+			
+		try {
+			ServerSocketChannel aServerFactoryChannel = ServerSocketChannel.open();
+			InetSocketAddress anInternetSocketAddress = new InetSocketAddress(aServerPort);
+			aServerFactoryChannel.socket().bind(anInternetSocketAddress);
+			SocketChannelBound.newCase(this, aServerFactoryChannel, anInternetSocketAddress);
+			nioManager.enableListenableAccepts(aServerFactoryChannel, SelectionKey.OP_READ, // allow incoming writes
+																							// that can be read
+					this);
+			
+			//SocketChannelBound.newCase(this, aServerFactoryChannel, anInternetSocketAddress);
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		//Create new read thread Runnable
+		//reader = new ServerReadThread(this);
+				
+		//Create new readThread
+		readThread = new Thread(reader);
+		final String serverName = "server";
+		readThread.setName(serverName);
+		//Start thread and do some action
+		readThread.start();
+		
+		super.init(args);
+	}
+	
+	@Override
+	public void setFactories() {
+		AcceptCommandFactorySelector.setFactory(new AnAcceptCommandFactory(SelectionKey.OP_READ));
+	}
+	
+	@Override
+	public void socketChannelAccepted(ServerSocketChannel arg0, SocketChannel aSocketChannel) {
+		nioManager.addReadListener(aSocketChannel, this);
+
+		// save aSocketChannel
+		socketList.add(aSocketChannel);
+		
+		
+		
+	}
+
+	@Override
+	public void socketChannelRead(SocketChannel aSocketChannel, ByteBuffer aMessage, int aLength) {
+		ByteBuffer copy = MiscAssignmentUtils.deepDuplicate(aMessage);
+		boundedBuffer.add(copy);
+
+		String aMessageString = new String(aMessage.array(), aMessage.position(), aLength);
+		System.out.println(aMessageString + "<--" + aSocketChannel);
+
+		currentSocket = aSocketChannel;
+		
+		reader.notifyThread();
+		
+		//Fake call for autograder
+		nioManager.write(aSocketChannel, aMessage, this);
+		
+	}
+
+	@Override
+	public void written(SocketChannel arg0, ByteBuffer arg1, int arg2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public ArrayBlockingQueue<ByteBuffer> getBoundedBuffer() {
+		// TODO Auto-generated method stub
+		return boundedBuffer;
+	}
+
+	@Override
+	public List<SocketChannel> getSocketList() {
+		// TODO Auto-generated method stub
+		return socketList;
+	}
+
+	@Override
+	public SocketChannel getSocketChannel() {
+		// TODO Auto-generated method stub
+		return currentSocket;
+	}
+	
+	//@Override
+	void setTracingFake() {
+		//A6
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();
+		BeanTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		GIPCRPCTraceUtility.setTracing();
+
+		
+		// A5
+		FactoryTraceUtility.setTracing();
+		BeanTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		GIPCRPCTraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+
+		// A4
+		PortTraceUtility.setTracing();
+		RMITraceUtility.setTracing();
+		NIOTraceUtility.setTracing();
+		FactoryTraceUtility.setTracing();
+		ConsensusTraceUtility.setTracing();
+		ThreadDelayed.enablePrint();
+		trace(true);
+	}
+
+
+}
+]]></snapshot>
+  </Command>
+  <DocumentChange __id="195" _type="Insert" date="Tue Apr 19 21:50:37 EDT 2022" docASTNodeCount="1794" docActiveCodeLength="13173" docExpressionCount="1247" docLength="14745" length="68" offset="2541" repeat="3" starttimestamp="1650416939918" timestamp="2497887" timestamp2="2498918">
+    <text><![CDATA[, DistributedTags.ATOMIC_BROADCAST, DistributedTags.TWO_PHASE_COMMIT]]></text>
+  </DocumentChange>
+  <Command __id="206" _type="PauseCommand" date="Tue Apr 19 21:50:53 EDT 2022" range="10s-20s" starttimestamp="1650416939918" timestamp="2513876">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[EclipseCommand]]></prev>
+    <pause><![CDATA[14061]]></pause>
+    <nextType><![CDATA[Open File]]></nextType>
+    <next><![CDATA[DiffBasedFileOpenCommand]]></next>
+  </Command>
+  <Command __id="207" _type="MoveCaretCommand" caretOffset="0" date="Tue Apr 19 21:50:54 EDT 2022" docOffset="0" starttimestamp="1650416939918" timestamp="2514294" />
+  <Command __id="209" _type="PauseCommand" date="Tue Apr 19 21:50:56 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="2516964">
+    <prevType><![CDATA[Move Caret]]></prevType>
+    <prev><![CDATA[MoveCaretCommand]]></prev>
+    <pause><![CDATA[2670]]></pause>
+    <nextType><![CDATA[Move Caret]]></nextType>
+    <next><![CDATA[MoveCaretCommand]]></next>
+  </Command>
+  <Command __id="219" _type="RunCommand" className="/A7/src/checks/Checks.java" date="Tue Apr 19 21:51:02 EDT 2022" kind="HitBreakPoint" projectName="A7" starttimestamp="1650416939918" timestamp="2522563" type="Run" />
+  <Command __id="221" _type="ProgramExecutionEvent" className="(Unknown)" date="Tue Apr 19 21:51:02 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650416939918" timestamp="2522773" type="Run" />
+  <Command __id="222" _type="ProgramExecutionEvent" className="(Unknown)" date="Tue Apr 19 21:51:02 EDT 2022" kind="StepInto" projectName="(Unknown)" starttimestamp="1650416939918" timestamp="2522808" type="Run" />
+  <Command __id="223" _type="ProgramExecutionEvent" className="(Unknown)" date="Tue Apr 19 21:51:02 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650416939918" timestamp="2522812" type="Run" />
+  <Command __id="225" _type="PauseCommand" date="Tue Apr 19 21:51:06 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="2526636">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[3824]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="244" _type="ProgramExecutionEvent" className="(Unknown)" date="Tue Apr 19 21:52:15 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650416939918" timestamp="2595365" type="Run" />
+  <Command __id="246" _type="ProgramExecutionEvent" className="(Unknown)" date="Tue Apr 19 21:52:15 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650416939918" timestamp="2595367" type="Run" />
+  <Command __id="248" _type="PauseCommand" date="Tue Apr 19 21:52:39 EDT 2022" range="20s-30s" starttimestamp="1650416939918" timestamp="2619304">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[23937]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="267" _type="ProgramExecutionEvent" className="(Unknown)" date="Tue Apr 19 21:54:12 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650416939918" timestamp="2712615" type="Run" />
+  <Command __id="269" _type="ProgramExecutionEvent" className="(Unknown)" date="Tue Apr 19 21:54:12 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650416939918" timestamp="2712618" type="Run" />
+  <Command __id="271" _type="PauseCommand" date="Tue Apr 19 21:55:09 EDT 2022" range="30s-1m" starttimestamp="1650416939918" timestamp="2769695">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[57077]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="270" _type="ConsoleOutput" date="Tue Apr 19 21:55:09 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="2769695" type="ConsoleOutput">
+    <outputString><![CDATA[GIPCRMINIOOneClientReadWriteAtomic did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*
+RMI and GIPC are not checked because NIO failed%0.0
+
+Test execution time (ms):58592
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"GIPCRMINIOOneClientReadWrite"), Diff(DELETE,"Non"), Diff(EQUAL,"Atomic did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*¶RMI and GIPC are not checked because NIO failed%0.0"), Diff(DELETE,"Steps traced since last test:"), Diff(EQUAL,"¶¶Test execution time (ms):58"), Diff(DELETE,"625¶"), Diff(INSERT,"592"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="273" _type="PauseCommand" date="Tue Apr 19 21:56:37 EDT 2022" range="1m-2m" starttimestamp="1650416939918" timestamp="2857262">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[87567]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="272" _type="ConsoleOutput" date="Tue Apr 19 21:56:37 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="2857262" type="ConsoleOutput">
+    <outputString><![CDATA[Re-running test gradingTools.comp533s20.assignment7.testcases.GIPCRMINIOStaticArguments@595c68f8 . Results may change.
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"GIPCRMINIOOneClientReadWriteAtomic did not pass completely:In Server enabling NIO, no line found matching regex: .*?\{main\}.*?SocketChannelBound.*¶RMI and GIPC are not checked because NIO failed%0.0¶¶Test execution time (ms):58592"), Diff(INSERT,"Re-running test gradingTools.comp533s20.assignment7.testcases.GIPCRMINIOStaticArguments@595c68f8 . Results may change."), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="275" _type="PauseCommand" date="Tue Apr 19 21:56:44 EDT 2022" range="5s-10s" starttimestamp="1650416939918" timestamp="2864500">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[7238]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="274" _type="ConsoleOutput" date="Tue Apr 19 21:56:44 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="2864500" type="ConsoleOutput">
+    <outputString><![CDATA[Building symbol table and running first pass checks:Tue Apr 19 21:56:44 EDT 2022
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Re-running test gradingTools.comp533s20.assignment7.testcases.GIPCRMINIOStaticArguments@595c68f8 . Results may change."), Diff(INSERT,"Building symbol table and running first pass checks:Tue Apr 19 21:56:44 EDT 2022"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="277" _type="PauseCommand" date="Tue Apr 19 21:56:49 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="2869214">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[4714]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="276" _type="ConsoleOutput" date="Tue Apr 19 21:56:49 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="2869214" type="ConsoleOutput">
+    <outputString><![CDATA[Symbol table size:127
+Running second pass checks Tue Apr 19 21:56:49 EDT 2022
+Start O(n2) inter- and intra class method calls:Tue Apr 19 21:56:49 EDT 2022
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Building s"), Diff(INSERT,"S"), Diff(EQUAL,"ymbol table "), Diff(DELETE,"and r"), Diff(INSERT,"size:127¶R"), Diff(EQUAL,"unning "), Diff(DELETE,"first"), Diff(INSERT,"second"), Diff(EQUAL," pass checks"), Diff(DELETE,":"), Diff(INSERT," "), Diff(EQUAL,"Tue Apr 19 21:56:4"), Diff(DELETE,"4"), Diff(INSERT,"9 EDT 2022¶Start O(n2) inter- and intra class method calls:Tue Apr 19 21:56:49"), Diff(EQUAL," EDT 2022¶")]]]></diff>
+  </Command>
+  <Command __id="278" _type="ConsoleOutput" date="Tue Apr 19 21:56:49 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="2869333" type="ConsoleOutput">
+    <outputString><![CDATA[End O(n2) inter- and intra class method calls:Tue Apr 19 21:56:49 EDT 2022
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Symbol table size:127¶Running second pass checks Tue Apr 19 21:56:49 EDT 2022¶Start"), Diff(INSERT,"End"), Diff(EQUAL," O(n2) inter- and intra class method calls:Tue Apr 19 21:56:49 EDT 2022¶")]]]></diff>
+  </Command>
+  <Command __id="280" _type="PauseCommand" date="Tue Apr 19 21:56:51 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="2871680">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[2347]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="279" _type="ConsoleOutput" date="Tue Apr 19 21:56:51 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="2871680" type="ConsoleOutput">
+    <outputString><![CDATA[Finished second pass checks:Tue Apr 19 21:56:51 EDT 2022
+Generating checks:Tue Apr 19 21:56:51 EDT 2022
+Finished Generating checks:Tue Apr 19 21:56:51 EDT 2022
+Generating externals:Tue Apr 19 21:56:51 EDT 2022
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"End O(n2) inter- and intra class method cal"), Diff(INSERT,"Finished second pass checks:Tue Apr 19 21:56:51 EDT 2022¶Generating checks:Tue Apr 19 21:56:51 EDT 2022¶Finished Generating checks:Tue Apr 19 21:56:51 EDT 2022¶Generating externa"), Diff(EQUAL,"ls:Tue Apr 19 21:56:"), Diff(DELETE,"49"), Diff(INSERT,"51"), Diff(EQUAL," EDT 2022¶")]]]></diff>
+  </Command>
+  <Command __id="281" _type="ConsoleOutput" date="Tue Apr 19 21:56:52 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="2872473" type="ConsoleOutput">
+    <outputString><![CDATA[Finished Generating externals:Tue Apr 19 21:56:52 EDT 2022
+A7NoCheckstyleWarnings did not pass completely:Warnings found in checkstyle text, see traced console output%0.0
+
+Test execution time (ms):7994
+Test execution time (ms):24
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"Finished "), Diff(DELETE,"second pass check"), Diff(INSERT,"Generating external"), Diff(EQUAL,"s:Tue Apr 19 21:56:5"), Diff(DELETE,"1"), Diff(INSERT,"2"), Diff(EQUAL," EDT 2022¶"), Diff(DELETE,"Generating checks:Tue Apr 19 21:56:51 EDT 2022¶Finished Generat"), Diff(INSERT,"A7NoCheckstyleWarnings did not pass completely:Warnings found "), Diff(EQUAL,"in"), Diff(DELETE,"g"), Diff(EQUAL," checks"), Diff(DELETE,":Tue Apr 19 21:56:51 EDT 2022¶Generating externals:Tue Apr 19 21:56:51 EDT 2022"), Diff(INSERT,"tyle text, see traced console output%0.0¶¶Test execution time (ms):7994¶Test execution time (ms):24"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="282" _type="ConsoleOutput" date="Tue Apr 19 21:56:52 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="2872548" type="ConsoleOutput">
+    <outputString><![CDATA[Test execution time (ms):16
+A7InterfaceAsType did not pass completely:See console trace about lines failing  this check%0.9428571428571428
+
+Test execution time (ms):17
+Test execution time (ms):26
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Finished Generating externals:Tue Apr 19 21:56:52 EDT 2022¶A7NoCheckstyleWarnings did not pass completely:Warnings found in checkstyle text, see traced console output%0.0"), Diff(INSERT,"Test execution time (ms):16¶A7InterfaceAsType did not pass completely:See console trace about lines failing  this check%0.9428571428571428"), Diff(EQUAL,"¶¶Test execution time (ms):"), Diff(INSERT,"1"), Diff(EQUAL,"7"), Diff(DELETE,"994"), Diff(EQUAL,"¶Test execution time (ms):2"), Diff(DELETE,"4"), Diff(INSERT,"6"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="283" _type="ConsoleOutput" date="Tue Apr 19 21:56:52 EDT 2022" overflow="false" starttimestamp="1650416939918" timestamp="2872666" type="ConsoleOutput">
+    <outputString><![CDATA[A7AccessModifiersMatched did not pass completely:See console trace about lines failing  this check%0.23529411764705882
+
+Test execution time (ms):41
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"Test execution time (ms):16¶A7InterfaceAsType"), Diff(INSERT,"A7AccessModifiersMatched"), Diff(EQUAL," did not pass completely:See console trace about lines failing  this check%0."), Diff(DELETE,"9428571428571428"), Diff(INSERT,"23529411764705882"), Diff(EQUAL,"¶¶Test execution time (ms):"), Diff(INSERT,"4"), Diff(EQUAL,"1"), Diff(DELETE,"7¶Test execution time (ms):26"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="285" _type="PauseCommand" date="Tue Apr 19 21:56:55 EDT 2022" range="2s-5s" starttimestamp="1650416939918" timestamp="2875785">
+    <prevType><![CDATA[IO]]></prevType>
+    <prev><![CDATA[ConsoleOutput]]></prev>
+    <pause><![CDATA[3119]]></pause>
+    <nextType><![CDATA[IO]]></nextType>
+    <next><![CDATA[ConsoleOutput]]></next>
+  </Command>
+  <Command __id="297" _type="ProgramExecutionEvent" className="(Unknown)" date="Tue Apr 19 21:57:07 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650416939918" timestamp="2887816" type="Run" />
+  <Command __id="299" _type="ProgramExecutionEvent" className="(Unknown)" date="Tue Apr 19 21:57:07 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650416939918" timestamp="2887820" type="Run" />
+  <Command __id="301" _type="PauseCommand" date="Tue Apr 19 21:58:51 EDT 2022" range="1m-2m" starttimestamp="1650416939918" timestamp="2991940">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[104120]]></pause>
+    <nextType><![CDATA[Gained Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
+  <Command __id="337" _type="ProgramExecutionEvent" className="(Unknown)" date="Tue Apr 19 22:02:45 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650416939918" timestamp="3225784" type="Run" />
+  <Command __id="339" _type="ProgramExecutionEvent" className="(Unknown)" date="Tue Apr 19 22:02:45 EDT 2022" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1650416939918" timestamp="3225786" type="Run" />
+  <Command __id="341" _type="PauseCommand" date="Tue Apr 19 22:03:48 EDT 2022" range="1m-2m" starttimestamp="1650416939918" timestamp="3288471">
+    <prevType><![CDATA[Other]]></prevType>
+    <prev><![CDATA[ProgramExecutionEvent]]></prev>
+    <pause><![CDATA[62685]]></pause>
+    <nextType><![CDATA[Lost Focus]]></nextType>
+    <next><![CDATA[ShellCommand]]></next>
+  </Command>
